@@ -20,7 +20,8 @@ npm run dev
 - `POSTGRES_PRISMA_URL` (opsiyonel fallback)
 - `STORAGE_POSTGRES_URL` (Vercel Neon integration kullanan projeler için desteklenir)
 - `STORAGE_POSTGRES_URL_NO_SSL` (opsiyonel fallback)
-- `ADMIN_READ_TOKEN` (admin okuma endpointlerini korur)
+- `ADMIN_KEY` (footer'daki admin panel giriş şifresi)
+- `ADMIN_READ_TOKEN` (opsiyonel, geriye dönük destek)
 
 Örnek değerler için `.env.example` dosyasını kullanabilirsiniz.
 
@@ -54,8 +55,13 @@ SELECT * FROM public.chat_messages ORDER BY created_at DESC;
 - `GET /api/admin/chat`
 
 İstekte aşağıdakilerden birini gönder:
-- Header: `x-admin-token: <ADMIN_READ_TOKEN>`
-- veya query: `?token=<ADMIN_READ_TOKEN>`
+- Header: `x-admin-token: <ADMIN_KEY>`
+- veya query: `?token=<ADMIN_KEY>`
+
+### 3) Site içindeki admin arayüzünden
+- Footer'ın en altındaki `dzy.` logosu artık butondur.
+- Tıklayınca şifre ekranı açılır.
+- `ADMIN_KEY` env değerini girince İş Teklifleri + Chat Mesajları paneli açılır.
 
 ## Hata Giderme
 

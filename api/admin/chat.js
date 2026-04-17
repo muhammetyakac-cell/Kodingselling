@@ -2,7 +2,8 @@ import { getSqlClient, isDbConfigured } from '../_lib/db.js';
 
 function isAuthorized(req) {
   const token = req.headers['x-admin-token'] || req.query?.token;
-  return Boolean(process.env.ADMIN_READ_TOKEN) && token === process.env.ADMIN_READ_TOKEN;
+  const expected = process.env.ADMIN_KEY || process.env.ADMIN_READ_TOKEN;
+  return Boolean(expected) && token === expected;
 }
 
 export default async function handler(req, res) {

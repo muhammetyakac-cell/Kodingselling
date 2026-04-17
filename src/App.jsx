@@ -218,6 +218,13 @@ const tabToPath = Object.fromEntries(Object.entries(pathToTab).map(([k, v]) => [
 export default function App() {
   const [activeTab, setActiveTab] = useState(pathToTab[window.location.pathname] || 'home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
+  const [adminToken, setAdminToken] = useState('');
+  const [adminError, setAdminError] = useState('');
+  const [isAdminLoading, setIsAdminLoading] = useState(false);
+  const [adminLeads, setAdminLeads] = useState([]);
+  const [adminChats, setAdminChats] = useState([]);
 
   useEffect(() => {
     const onPopState = () => {
@@ -233,6 +240,34 @@ export default function App() {
     const path = tabToPath[tab] || '/';
     window.history.pushState({}, '', path);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const loadAdminData = async (tokenValue) => {
+    setIsAdminLoading(true);
+    setAdminError('');
+    try {
+      const headers = { 'x-admin-token': tokenValue };
+      const [leadsRes, chatRes] = await Promise.all([
+        fetch(getApiUrl('/api/admin/leads'), { headers }),
+        fetch(getApiUrl('/api/admin/chat'), { headers })
+      ]);
+
+      if (!leadsRes.ok || !chatRes.ok) {
+        throw new Error('UNAUTHORIZED_OR_API_ERROR');
+      }
+
+      const leadsJson = await leadsRes.json();
+      const chatJson = await chatRes.json();
+
+      setAdminLeads(leadsJson.rows ?? []);
+      setAdminChats(chatJson.rows ?? []);
+      setIsAdminAuthenticated(true);
+    } catch (error) {
+      setIsAdminAuthenticated(false);
+      setAdminError('Şifre hatalı veya admin verilerine erişilemiyor.');
+    } finally {
+      setIsAdminLoading(false);
+    }
   };
 
   const renderView = () => {
@@ -305,7 +340,12 @@ export default function App() {
       <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <span className="text-2xl font-extrabold tracking-tighter text-white lowercase">dzy<span className="text-emerald-500">.</span></span>
+            <button
+              onClick={() => setIsAdminOpen(true)}
+              className="text-2xl font-extrabold tracking-tighter text-white lowercase hover:text-indigo-300 transition-colors"
+            >
+              dzy<span className="text-emerald-500">.</span>
+            </button>
             <p className="text-sm mt-2">Yazılımdan Fazlası. Yeni Nesil Teknoloji Danışmanlığı.</p>
           </div>
           <div className="text-sm">&copy; {new Date().getFullYear()} DZY Yazılım Danışma. Tüm Hakları Saklıdır.</div>
@@ -313,6 +353,105 @@ export default function App() {
       </footer>
 
       <ChatWidget />
+      <AdminPanelModal
+        isOpen={isAdminOpen}
+        onClose={() => setIsAdminOpen(false)}
+        isAuthenticated={isAdminAuthenticated}
+        adminToken={adminToken}
+        setAdminToken={setAdminToken}
+        adminError={adminError}
+        isLoading={isAdminLoading}
+        leads={adminLeads}
+        chats={adminChats}
+        onLogin={loadAdminData}
+      />
+    </div>
+  );
+}
+
+function AdminPanelModal({
+  isOpen,
+  onClose,
+  isAuthenticated,
+  adminToken,
+  setAdminToken,
+  adminError,
+  isLoading,
+  leads,
+  chats,
+  onLogin
+}) {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-[70] bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-white rounded-3xl border border-slate-200 shadow-2xl">
+        <div className="p-6 border-b border-slate-200 flex justify-between items-center">
+          <h3 className="text-2xl font-extrabold text-slate-900">DZY Yönetim Erişimi</h3>
+          <button onClick={onClose} className="text-slate-500 hover:text-slate-900">
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        {!isAuthenticated ? (
+          <div className="p-8 space-y-6">
+            <p className="text-slate-600">Bu alana erişmek için ENV'e eklenen admin şifresini girin (`ADMIN_KEY`).</p>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                onLogin(adminToken);
+              }}
+              className="space-y-4 max-w-md"
+            >
+              <input
+                type="password"
+                value={adminToken}
+                onChange={(e) => setAdminToken(e.target.value)}
+                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                placeholder="Admin şifresi"
+                required
+              />
+              {adminError && <p className="text-sm text-rose-600">{adminError}</p>}
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="px-6 py-3 rounded-xl bg-slate-900 text-white font-bold hover:bg-indigo-600 disabled:opacity-60"
+              >
+                {isLoading ? 'Kontrol ediliyor...' : 'Panele Gir'}
+              </button>
+            </form>
+          </div>
+        ) : (
+          <div className="p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
+              <h4 className="text-xl font-bold text-slate-900 mb-4">İş Teklifleri</h4>
+              <div className="space-y-3 max-h-[55vh] overflow-y-auto">
+                {leads.length === 0 && <p className="text-slate-500 text-sm">Henüz kayıt yok.</p>}
+                {leads.map((lead) => (
+                  <div key={lead.id} className="bg-white border border-slate-200 rounded-xl p-4">
+                    <p className="font-semibold text-slate-900">{lead.full_name} • {lead.email}</p>
+                    <p className="text-sm text-slate-600 mt-1">{lead.primary_need}</p>
+                    <p className="text-xs text-slate-500 mt-2">{new Date(lead.created_at).toLocaleString('tr-TR')}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
+              <h4 className="text-xl font-bold text-slate-900 mb-4">Chat Mesajları</h4>
+              <div className="space-y-3 max-h-[55vh] overflow-y-auto">
+                {chats.length === 0 && <p className="text-slate-500 text-sm">Henüz mesaj yok.</p>}
+                {chats.map((chat) => (
+                  <div key={chat.id} className="bg-white border border-slate-200 rounded-xl p-4">
+                    <p className="text-sm font-semibold text-slate-900">{chat.sender_type === 'user' ? 'Kullanıcı' : 'Bot'}</p>
+                    <p className="text-sm text-slate-700 mt-1">{chat.message}</p>
+                    <p className="text-xs text-slate-500 mt-2">{new Date(chat.created_at).toLocaleString('tr-TR')}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
