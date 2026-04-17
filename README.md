@@ -20,6 +20,7 @@ npm run dev
 - `POSTGRES_PRISMA_URL` (opsiyonel fallback)
 - `STORAGE_POSTGRES_URL` (Vercel Neon integration kullanan projeler için desteklenir)
 - `STORAGE_POSTGRES_URL_NO_SSL` (opsiyonel fallback)
+- `ADMIN_READ_TOKEN` (admin okuma endpointlerini korur)
 
 Örnek değerler için `.env.example` dosyasını kullanabilirsiniz.
 
@@ -35,8 +36,26 @@ Bu tablolar oluşturulur:
 
 - `POST /api/leads` → form lead kaydı
 - `POST /api/chat` → chat mesajı + bot yanıt kaydı
+- `GET /api/admin/leads` → son 100 lead kaydı (admin token gerekli)
+- `GET /api/admin/chat` → son 200 chat mesajı (admin token gerekli)
 
 Bu uçlar Vercel serverless function olarak çalışır.
+
+## Gelen Teklif/Mesajları Nereden Okurum?
+
+### 1) Neon SQL Editor'den
+```sql
+SELECT * FROM public.leads ORDER BY created_at DESC;
+SELECT * FROM public.chat_messages ORDER BY created_at DESC;
+```
+
+### 2) Güvenli admin endpoint ile JSON olarak
+- `GET /api/admin/leads`
+- `GET /api/admin/chat`
+
+İstekte aşağıdakilerden birini gönder:
+- Header: `x-admin-token: <ADMIN_READ_TOKEN>`
+- veya query: `?token=<ADMIN_READ_TOKEN>`
 
 ## Hata Giderme
 
