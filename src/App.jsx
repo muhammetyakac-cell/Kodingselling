@@ -538,9 +538,28 @@ function ContactView() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormStatus('sending');
-    setTimeout(() => {
-      setFormStatus('success');
-    }, 1300);
+    fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        primaryNeed: formData.primaryNeed,
+        company: formData.company,
+        budget: formData.budget,
+        summary: formData.summary
+      })
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Lead submission failed');
+        }
+        setFormStatus('success');
+      })
+      .catch(() => {
+        setFormStatus('idle');
+        alert('Mesaj gönderilirken bir sorun oluştu. Lütfen tekrar deneyin.');
+      });
   };
 
   return (
@@ -708,15 +727,27 @@ function ChatWidget() {
   const handleSend = (e) => {
     e.preventDefault();
     if (!inputValue.trim()) return;
-    setMessages((prev) => [...prev, { text: inputValue, sender: 'user', time: new Date() }]);
+    const userText = inputValue;
+    const sessionId = `session-${new Date().toISOString().slice(0, 10)}`;
+    setMessages((prev) => [...prev, { text: userText, sender: 'user', time: new Date() }]);
     setInputValue('');
-    setTimeout(() => {
-      setMessages((prev) => [...prev, {
-        text: 'Harika! Bu mesaj gerçek zamanlı altyapımız sayesinde anında admin panelimize düştü. İletişim sayfasından detay bırakırsanız hemen toplantı ayarlayabiliriz.',
-        sender: 'bot',
-        time: new Date()
-      }]);
-    }, 1500);
+    fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: userText, sessionId })
+    })
+      .then(async (response) => {
+        if (!response.ok) throw new Error('Chat submit failed');
+        const data = await response.json();
+        setMessages((prev) => [...prev, { text: data.reply, sender: 'bot', time: new Date() }]);
+      })
+      .catch(() => {
+        setMessages((prev) => [...prev, {
+          text: 'Mesajınız alındı. Ekibimiz en kısa sürede sizinle iletişime geçecek.',
+          sender: 'bot',
+          time: new Date()
+        }]);
+      });
   };
 
   return (
