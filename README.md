@@ -1,6 +1,6 @@
 # DZY Web Sitesi
 
-Bu proje React + Vite + Tailwind ile hazırlanmıştır.
+Bu proje React + Vite + Tailwind ile hazırlanmıştır ve backend tarafında Neon Postgres + Vercel Serverless API kullanır.
 
 ## Kurulum
 
@@ -11,9 +11,7 @@ npm run dev
 
 ## Environment Variables (Vercel)
 
-### Frontend (Supabase)
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
+### Frontend
 - `VITE_API_BASE_URL` (opsiyonel; backend farklı domaindeyse örn: `https://your-app.vercel.app`)
 
 ### Backend (Neon Postgres)
