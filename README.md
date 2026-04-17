@@ -18,6 +18,8 @@ npm run dev
 - `DATABASE_URL`
 - `POSTGRES_URL`
 - `POSTGRES_PRISMA_URL` (opsiyonel fallback)
+- `STORAGE_POSTGRES_URL` (Vercel Neon integration kullanan projeler için desteklenir)
+- `STORAGE_POSTGRES_URL_NO_SSL` (opsiyonel fallback)
 
 Örnek değerler için `.env.example` dosyasını kullanabilirsiniz.
 
@@ -45,4 +47,5 @@ Bu uçlar Vercel serverless function olarak çalışır.
 
 ### `Failed to load resource: ... 500 (/api/leads)`
 - `POSTGRES_URL` veya `DATABASE_URL` environment variable'ının Vercel'de tanımlı olduğunu kontrol edin.
+- Sadece `STORAGE_POSTGRES_URL` ekliyse de sistem artık bunu otomatik kullanır.
 - Neon üzerinde `db/schema.sql` dosyasını çalıştırdığınızdan emin olun.

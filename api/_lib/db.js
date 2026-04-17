@@ -5,6 +5,8 @@ export function getConnectionString() {
     process.env.POSTGRES_URL ||
     process.env.DATABASE_URL ||
     process.env.POSTGRES_PRISMA_URL ||
+    process.env.STORAGE_POSTGRES_URL ||
+    process.env.STORAGE_POSTGRES_URL_NO_SSL ||
     ''
   );
 }
