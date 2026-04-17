@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { getApiUrl } from './lib/api';
 import {
   Rocket, Shield, CreditCard, LayoutTemplate,
   Smartphone, Database, Cpu, Building2, UserCog,
@@ -538,7 +539,7 @@ function ContactView() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormStatus('sending');
-    fetch('/api/leads', {
+    fetch(getApiUrl('/api/leads'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -731,7 +732,7 @@ function ChatWidget() {
     const sessionId = `session-${new Date().toISOString().slice(0, 10)}`;
     setMessages((prev) => [...prev, { text: userText, sender: 'user', time: new Date() }]);
     setInputValue('');
-    fetch('/api/chat', {
+    fetch(getApiUrl('/api/chat'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text: userText, sessionId })

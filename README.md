@@ -14,6 +14,7 @@ npm run dev
 ### Frontend (Supabase)
 - `VITE_SUPABASE_URL`
 - `VITE_SUPABASE_ANON_KEY`
+- `VITE_API_BASE_URL` (opsiyonel; backend farklı domaindeyse örn: `https://your-app.vercel.app`)
 
 ### Backend (Neon Postgres)
 - `DATABASE_URL`
@@ -36,3 +37,14 @@ Bu tablolar oluşturulur:
 - `POST /api/chat` → chat mesajı + bot yanıt kaydı
 
 Bu uçlar Vercel serverless function olarak çalışır.
+
+## Hata Giderme
+
+### `Failed to load resource: ... 404 (/api/leads)`
+- Frontend farklı bir domainde çalışıyorsa `VITE_API_BASE_URL` tanımlayın.
+- Vercel deployunda `api/` klasörünün yayımlandığını doğrulayın.
+- Yerel geliştirmede yalnızca `vite` yerine `vercel dev` tercih edin (API fonksiyonları da ayağa kalkar).
+
+### `Failed to load resource: ... 500 (/api/leads)`
+- `POSTGRES_URL` veya `DATABASE_URL` environment variable'ının Vercel'de tanımlı olduğunu kontrol edin.
+- Neon üzerinde `db/schema.sql` dosyasını çalıştırdığınızdan emin olun.

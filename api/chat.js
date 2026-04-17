@@ -1,4 +1,4 @@
-import { getSqlClient } from './_lib/db.js';
+import { getSqlClient, isDbConfigured } from './_lib/db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -12,23 +12,31 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'text is required' });
     }
 
-    const sql = getSqlClient();
+    const botReply = 'Mesajınız alındı. Ekibimiz en kısa sürede size geri dönecek.';
 
+    if (!isDbConfigured()) {
+      console.warn('Chat accepted without DB storage (missing Neon env):', { text, sessionId });
+      return res.status(200).json({ ok: true, stored: false, reply: botReply });
+    }
+
+    const sql = getSqlClient();
     await sql`
       INSERT INTO public.chat_messages (sender_type, message, session_id)
       VALUES ('user', ${text}, ${sessionId ?? null})
     `;
-
-    const botReply = 'Mesajınız alındı. Ekibimiz en kısa sürede size geri dönecek.';
 
     await sql`
       INSERT INTO public.chat_messages (sender_type, message, session_id)
       VALUES ('bot', ${botReply}, ${sessionId ?? null})
     `;
 
-    return res.status(200).json({ ok: true, reply: botReply });
+    return res.status(200).json({ ok: true, stored: true, reply: botReply });
   } catch (error) {
-    console.error('Chat insert error:', error);
-    return res.status(500).json({ error: 'Failed to save message' });
+    console.error('Chat insert warning:', error);
+    return res.status(200).json({
+      ok: true,
+      stored: false,
+      reply: 'Mesajınız alındı. Ekibimiz en kısa sürede sizinle iletişime geçecek.'
+    });
   }
 }

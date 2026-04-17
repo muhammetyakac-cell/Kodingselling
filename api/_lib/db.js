@@ -1,14 +1,23 @@
 import { neon } from '@neondatabase/serverless';
 
-export function getSqlClient() {
-  const connectionString =
+export function getConnectionString() {
+  return (
     process.env.POSTGRES_URL ||
     process.env.DATABASE_URL ||
     process.env.POSTGRES_PRISMA_URL ||
-    '';
+    ''
+  );
+}
+
+export function isDbConfigured() {
+  return Boolean(getConnectionString());
+}
+
+export function getSqlClient() {
+  const connectionString = getConnectionString();
 
   if (!connectionString) {
-    throw new Error('Missing Neon connection string. Set POSTGRES_URL or DATABASE_URL.');
+    throw new Error('Neon is not configured. Set POSTGRES_URL or DATABASE_URL.');
   }
 
   return neon(connectionString);
