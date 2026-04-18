@@ -422,48 +422,129 @@ function AdminPanelModal({
             </form>
           </div>
         ) : (
-          <div className="p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
-              <h4 className="text-xl font-bold text-slate-900 mb-4">İş Teklifleri</h4>
-              <div className="space-y-3 max-h-[55vh] overflow-y-auto">
-                {leads.length === 0 && <p className="text-slate-500 text-sm">Henüz kayıt yok.</p>}
-                {leads.map((lead) => (
-                  <div key={lead.id} className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-indigo-200 transition-colors">
-                    <div className="flex justify-between items-start mb-2">
-                      <p className="font-bold text-slate-900">{lead.full_name}</p>
-                      <span className="text-[10px] font-medium px-2 py-0.5 bg-slate-100 rounded text-slate-500">ID: {lead.id}</span>
-                    </div>
-                    <div className="space-y-1">
-                      <p className="text-sm text-indigo-600 font-medium">{lead.email}</p>
-                      {lead.company && <p className="text-sm text-slate-700"><span className="font-semibold text-slate-500 text-xs uppercase mr-1">Şirket:</span> {lead.company}</p>}
-                      <p className="text-sm text-slate-700"><span className="font-semibold text-slate-500 text-xs uppercase mr-1">İhtiyaç:</span> {lead.primary_need}</p>
-                      {lead.budget && <p className="text-sm text-slate-700"><span className="font-semibold text-slate-500 text-xs uppercase mr-1">Bütçe:</span> {lead.budget}</p>}
+          <AdminDashboard leads={leads} chats={chats} />
+        )}
+      </div>
+    </div>
+  );
+}
+
+function AdminDashboard({ leads, chats }) {
+  const [expandedLeadId, setExpandedLeadId] = useState(null);
+  const [expandedChatId, setExpandedChatId] = useState(null);
+
+  return (
+    <div className="p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
+        <h4 className="text-xl font-bold text-slate-900 mb-4 flex items-center">
+          <Rocket className="w-5 h-5 mr-2 text-indigo-600" /> İş Teklifleri ({leads.length})
+        </h4>
+        <div className="space-y-2 max-h-[55vh] overflow-y-auto pr-2">
+          {leads.length === 0 && <p className="text-slate-500 text-sm italic">Henüz kayıt yok.</p>}
+          {leads.map((lead) => {
+            const isExpanded = expandedLeadId === lead.id;
+            return (
+              <div key={lead.id} className={`bg-white border transition-all rounded-xl overflow-hidden ${isExpanded ? 'border-indigo-400 shadow-md ring-2 ring-indigo-50' : 'border-slate-200 hover:border-slate-300 shadow-sm'}`}>
+                <button
+                  onClick={() => setExpandedLeadId(isExpanded ? null : lead.id)}
+                  className="w-full text-left px-4 py-3 flex justify-between items-center group"
+                >
+                  <div className="flex-1 min-w-0 mr-4">
+                    <p className="font-bold text-slate-900 truncate">{lead.full_name}</p>
+                    <p className="text-[10px] text-slate-500 font-medium">{new Date(lead.created_at).toLocaleDateString('tr-TR')}</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {!isExpanded && <span className="text-[10px] bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full font-bold">DETAY</span>}
+                    {isExpanded ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-indigo-500" />}
+                  </div>
+                </button>
+                {isExpanded && (
+                  <div className="px-4 pb-4 pt-2 border-t border-slate-100 bg-indigo-50/20 animate-in slide-in-from-top-1 duration-200">
+                    <div className="space-y-2 text-sm">
+                      <div className="flex flex-col">
+                        <span className="text-[10px] uppercase font-bold text-slate-400">E-Posta</span>
+                        <a href={`mailto:${lead.email}`} className="text-indigo-600 font-medium hover:underline">{lead.email}</a>
+                      </div>
+                      {lead.company && (
+                        <div className="flex flex-col">
+                          <span className="text-[10px] uppercase font-bold text-slate-400">Şirket</span>
+                          <span className="text-slate-700">{lead.company}</span>
+                        </div>
+                      )}
+                      <div className="flex flex-col">
+                        <span className="text-[10px] uppercase font-bold text-slate-400">İhtiyaç</span>
+                        <span className="text-slate-700 font-medium">{lead.primary_need}</span>
+                      </div>
+                      {lead.budget && (
+                        <div className="flex flex-col">
+                          <span className="text-[10px] uppercase font-bold text-slate-400">Bütçe</span>
+                          <span className="text-emerald-600 font-bold">{lead.budget}</span>
+                        </div>
+                      )}
                       {lead.summary && (
-                        <div className="mt-2 p-2 bg-slate-50 rounded text-sm text-slate-600 border-l-2 border-slate-300 italic">
-                          "{lead.summary}"
+                        <div className="flex flex-col mt-3">
+                          <span className="text-[10px] uppercase font-bold text-slate-400 mb-1">Proje Özeti</span>
+                          <div className="bg-white p-3 rounded-lg border border-indigo-100 text-slate-600 text-xs leading-relaxed italic">
+                            "{lead.summary}"
+                          </div>
                         </div>
                       )}
                     </div>
-                    <p className="text-[10px] text-slate-400 mt-3 text-right">{new Date(lead.created_at).toLocaleString('tr-TR')}</p>
                   </div>
-                ))}
+                )}
               </div>
-            </div>
-            <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
-              <h4 className="text-xl font-bold text-slate-900 mb-4">Chat Mesajları</h4>
-              <div className="space-y-3 max-h-[55vh] overflow-y-auto">
-                {chats.length === 0 && <p className="text-slate-500 text-sm">Henüz mesaj yok.</p>}
-                {chats.map((chat) => (
-                  <div key={chat.id} className="bg-white border border-slate-200 rounded-xl p-4">
-                    <p className="text-sm font-semibold text-slate-900">{chat.sender_type === 'user' ? 'Kullanıcı' : 'Bot'}</p>
-                    <p className="text-sm text-slate-700 mt-1">{chat.message}</p>
-                    <p className="text-xs text-slate-500 mt-2">{new Date(chat.created_at).toLocaleString('tr-TR')}</p>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
+        <h4 className="text-xl font-bold text-slate-900 mb-4 flex items-center">
+          <MessageSquare className="w-5 h-5 mr-2 text-emerald-600" /> Chat Mesajları ({chats.length})
+        </h4>
+        <div className="space-y-2 max-h-[55vh] overflow-y-auto pr-2">
+          {chats.length === 0 && <p className="text-slate-500 text-sm italic">Henüz mesaj yok.</p>}
+          {chats.map((chat) => {
+            const isExpanded = expandedChatId === chat.id;
+            return (
+              <div key={chat.id} className={`bg-white border transition-all rounded-xl overflow-hidden ${isExpanded ? 'border-emerald-400 shadow-md ring-2 ring-emerald-50' : 'border-slate-200 hover:border-slate-300 shadow-sm'}`}>
+                <button
+                  onClick={() => setExpandedChatId(isExpanded ? null : chat.id)}
+                  className="w-full text-left px-4 py-3 flex justify-between items-center group"
+                >
+                  <div className="flex-1 min-w-0 mr-4">
+                    <div className="flex items-center gap-2">
+                      <span className={`w-2 h-2 rounded-full ${chat.sender_type === 'user' ? 'bg-indigo-500' : 'bg-slate-300'}`}></span>
+                      <p className="font-bold text-slate-900 truncate">
+                        {chat.sender_type === 'user' ? 'Müşteri Mesajı' : 'Sistem Yanıtı'}
+                      </p>
+                    </div>
+                    <p className="text-[10px] text-slate-500 ml-4">{new Date(chat.created_at).toLocaleString('tr-TR')}</p>
                   </div>
-                ))}
+                  {isExpanded ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-emerald-500" />}
+                </button>
+                {isExpanded && (
+                  <div className="px-4 pb-4 pt-2 border-t border-slate-100 bg-emerald-50/20 animate-in slide-in-from-top-1 duration-200">
+                    <p className="text-xs text-slate-400 font-bold uppercase mb-1">İçerik</p>
+                    <div className="bg-white p-3 rounded-lg border border-emerald-100 text-slate-700 text-sm leading-relaxed">
+                      {chat.message}
+                    </div>
+                    <div className="mt-3 flex justify-between items-center">
+                      <span className="text-[10px] text-slate-400">Oturum: {chat.session_id}</span>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${chat.sender_type === 'user' ? 'bg-indigo-100 text-indigo-700' : 'bg-slate-100 text-slate-600'}`}>
+                        {chat.sender_type}
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
-            </div>
-          </div>
-        )}
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
       </div>
     </div>
   );
