@@ -14,105 +14,75 @@ import {
 const servicesData = [
   {
     icon: <Smartphone className="w-6 h-6 text-indigo-500" />,
-    title: 'Mobil ve Web Uygulamaları',
-    desc: 'Hem telefonlarda hem de bilgisayarlarda kusursuz çalışan kullanıcı dostu arayüzler.',
-    fullDesc: 'İşletmenizin dijital dünyadaki yüzünü baştan tasarlıyoruz. Uygulamalarınızın hem bilgisayar tarayıcılarında (Web) hem de mobil cihazlarda (iOS ve Android) tek bir modern altyapı üzerinden sorunsuz çalışmasını sağlıyoruz. Kullanıcı dostu arayüzler (UI), akıcı deneyim (UX) ve yüksek performans odaklı kodlama standartlarımız ile markanızın dijital etkileşim oranlarını artırıyoruz. Her ekran boyutuna tam uyumlu (responsive) ve arama motoru dostu platformlar teslim ediyoruz.'
+    title: 'Ölçeklenebilir Web ve Mobil Uygulama Geliştirme',
+    desc: 'Hız ve performans odaklı, her cihazda kusursuz çalışan modern dijital ürünler.',
+    fullDesc: 'İşletmenizin geleceğini modern teknolojilerle inşa ediyoruz. React, Next.js ve React Native kullanarak hem web platformlarında hem de iOS/Android dünyasında yüksek performanslı, SEO uyumlu ve kullanıcı deneyimi (UX) öncelikli uygulamalar geliştiriyoruz. Mimari yapımızı, milyonlarca kullanıcıya hizmet verebilecek ölçekte, güvenli ve hızlı olacak şekilde kurguluyoruz.'
   },
   {
     icon: <CreditCard className="w-6 h-6 text-emerald-500" />,
-    title: 'Ödeme ve Tahsilat Sistemleri',
-    desc: 'İnternetten güvenle ödeme almanızı sağlayan dijital cüzdan ve abonelik altyapıları.',
-    fullDesc: 'Nakit akışınızı ve tahsilat süreçlerinizi tamamen dijitalleştirip otomatikleştiriyoruz. E-ticaret siteniz veya uygulamanız için sanal POS (Stripe, Iyzico vb.), kredi kartı entegrasyonları, tekrarlayan abonelik modelleri ve dijital cüzdan sistemleri kuruyoruz.'
+    title: 'Fintech ve Akıllı Ödeme Sistemleri Entegrasyonu',
+    desc: 'Güvenli sanal POS, abonelik yönetimi ve karmaşık nakit akışları için uçtan uca çözümler.',
+    fullDesc: 'Ticaretinizi dijitalleştirirken güvenliği en üst seviyede tutuyoruz. Stripe, Iyzico, PayTR ve global ödeme ağlarıyla tam entegre; tekrarlayan ödemeler (subscription), dijital cüzdan ve gelişmiş faturalandırma sistemleri kuruyoruz. Finansal süreçlerinizi hatasız ve otomatik işleyen bir yapıya dönüştürüyoruz.'
   },
   {
     icon: <Activity className="w-6 h-6 text-rose-500" />,
-    title: 'Canlı Takip ve Yönetim Panelleri',
-    desc: 'Siparişleri, personeli ve işleyişi anlık olarak izleyebileceğiniz yönetici ekranları.',
-    fullDesc: 'Sipariş durumu, personel konumu ve satış verileri gibi operasyonları gerçek zamanlı yansıtan özel admin panelleri geliştiriyoruz.'
+    title: 'Real-Time Admin Panelleri ve ERP Çözümleri',
+    desc: 'Verilerinizi anlık takip edebileceğiniz, operasyonel hızı artıran yönetim merkezleri.',
+    fullDesc: 'Karmaşık iş süreçlerinizi sade ve güçlü dashboardlar ile yönetin. Sipariş yönetimi, stok takibi, personel verimliliği ve canlı veri analitiği sunan özel ERP/CRM panelleri geliştiriyoruz. WebSocket teknolojileri ile sahadaki veriyi saniyeler içinde ekranınıza taşıyoruz.'
   },
   {
     icon: <Shield className="w-6 h-6 text-slate-700" />,
-    title: 'Üst Düzey Veri Güvenliği',
-    desc: 'Müşteri verilerinizi ve ticari sırlarınızı siber saldırılara karşı koruyan bulut sistemleri.',
-    fullDesc: 'Row Level Security (RLS) ile kullanıcıların yalnızca yetkili olduğu verilere erişmesini sağlıyor, KVKK/GDPR uyumlu altyapılar kuruyoruz.'
+    title: 'Siber Güvenlik ve Veri Koruma (RLS) Mimarisi',
+    desc: 'KVKK ve GDPR uyumlu, veritabanı seviyesinde en üst düzey güvenlik katmanları.',
+    fullDesc: 'Veri sızıntılarına karşı proaktif savunma geliştiriyoruz. Row Level Security (RLS) ve gelişmiş yetkilendirme protokolleri ile verilerinizi doğrudan çekirdekte koruyoruz. Sadece yetkili kişilerin, yetkili olduğu veriye erişebildiği, denetlenebilir ve siber saldırılara dayanıklı altyapılar sunuyoruz.'
   },
   {
     icon: <Cpu className="w-6 h-6 text-amber-500" />,
-    title: 'Akıllı Cihaz ve Sensör Entegrasyonu',
-    desc: 'Fiziksel dünyadaki cihazları ve sensörleri internete bağlayan teknolojik sistemler.',
-    fullDesc: 'ESP32/Arduino tabanlı IoT altyapıları ile sahadan gelen verileri buluta aktararak canlı izleme ve otomasyon sağlıyoruz.'
+    title: 'Endüstriyel IoT ve Akıllı Sensör Çözümleri',
+    desc: 'Fiziksel dünyayı dijitalle birleştiren nesnelerin interneti ve otomasyon sistemleri.',
+    fullDesc: 'Fabrikalardan tarım arazilerine kadar her alanda fiziksel cihazları buluta bağlıyoruz. ESP32, Arduino ve endüstriyel gateway sistemleri ile sıcaklık, nem, konum veya basınç gibi verileri anlık toplayıp anlamlı raporlara dönüştürüyor, otonom kararlar alan sistemler inşa ediyoruz.'
   },
   {
     icon: <Building2 className="w-6 h-6 text-blue-500" />,
-    title: 'Eski Yazılımları Yenileme',
-    desc: 'Sadece tek bilgisayarda çalışan yavaş ve eski yazılımlarınızı modern buluta taşıyoruz.',
-    fullDesc: 'Legacy sistemlerinizi veri kaybı yaşamadan modern, güvenli ve her cihazdan erişilebilen bulut tabanlı yapılara dönüştürüyoruz.'
+    title: 'Legacy Sistem Modernizasyonu ve Bulut Dönüşümü',
+    desc: 'Eski ve yavaş yazılımlarınızı modern bulut teknolojilerine veri kaybı yaşamadan taşıyoruz.',
+    fullDesc: 'Yıllanmış, bakımı zor ve yavaş çalışan masaüstü veya eski web sistemlerinizi analiz ediyor, en güncel teknoloji yığınına (Modern Stack) migrate ediyoruz. Verimliliği artırırken operasyonel maliyetlerinizi düşürüyor, sisteminizi her yerden erişilebilir kılıyoruz.'
   },
   {
     icon: <UserCog className="w-6 h-6 text-indigo-600" />,
-    title: 'Dışarıdan Teknoloji Yöneticiliği',
-    desc: 'Şirketinize teknoloji kararlarında yol gösteren uzman yazılım danışmanlığı.',
-    fullDesc: 'Dışarıdan CTO modeliyle teknolojik kararlarınızı, altyapı planlarınızı ve yazılım kalitesini yönetmenize destek oluyoruz.'
+    title: 'Stratejik Teknoloji Danışmanlığı ve CTO-as-a-Service',
+    desc: 'Yazılım ekiplerinizi yöneten ve doğru teknoloji seçimlerini yapan uzman desteği.',
+    fullDesc: 'Büyük ölçekli teknoloji kararlarınızda yalnız değilsiniz. Mimari planlama, ekip yönetimi, kod kalitesi denetimi ve ürün stratejisi konularında dışarıdan CTO desteği veriyoruz. Yanlış yatırımların önüne geçerek bütçenizi en verimli şekilde kullanmanızı sağlıyoruz.'
   },
   {
     icon: <LayoutTemplate className="w-6 h-6 text-teal-500" />,
-    title: 'Şirkete Özel Yönetim Yazılımları',
-    desc: 'Piyasadaki hazır paketler yerine, tamamen işinize özel tasarlanmış otomasyonlar.',
-    fullDesc: 'ERP/CRM süreçlerinizi şirketinize özel iş kurallarıyla tasarlayarak tüm operasyonlarınızı tek dijital çatıya taşıyoruz.'
+    title: 'Şirkete Özel SaaS Platform Geliştirme',
+    desc: 'Kendi yazılım fikirlerinizi abonelik modeliyle pazara sunabileceğiniz altyapılar.',
+    fullDesc: 'Fikrinizi bir ürüne (Product) dönüştürüyoruz. Çok kiracılı (Multi-tenant) mimari, otomatik provizyon ve abonelik yönetim modülleriyle ölçeklenebilir SaaS platformları inşa ediyoruz. Global pazara açılmaya uygun kod yapısı ve performans odaklı backend sağlıyoruz.'
   },
   {
     icon: <Network className="w-6 h-6 text-purple-500" />,
-    title: 'Farklı Yazılımları Birbirine Bağlama',
-    desc: 'Muhasebe, e-ticaret ve kargo programlarınızı tam otomatik çalışacak şekilde birleştirme.',
-    fullDesc: 'API entegrasyonlarıyla satış, faturalama, stok ve kargo süreçlerini uçtan uca otomatikleştiriyoruz.'
+    title: 'API Entegrasyonları ve Sistem Otomasyonu',
+    desc: 'Farklı yazılımlarınızı birbiriyle konuşturan ve iş yükünü azaltan akıllı köprüler.',
+    fullDesc: 'Manuel işleri tarihe gömüyoruz. Muhasebe, CRM, E-ticaret ve lojistik programlarınızı API seviyesinde birbirine bağlıyoruz. Veri akışını otomatize ederek insan hatasını sıfıra indiriyor ve zaman tasarrufu sağlıyoruz.'
   },
   {
     icon: <BarChart3 className="w-6 h-6 text-cyan-500" />,
-    title: 'Veri Analizi ve Akıllı Raporlama',
-    desc: 'Şirketinizin karmaşık verilerini anlaşılır, yönetici sunumlarına hazır grafiklere çevirme.',
-    fullDesc: 'Ham verilerinizi işleyip karar almayı hızlandıran canlı BI panelleri ve performans raporlama altyapıları kuruyoruz.'
+    title: 'Gelişmiş Veri Analitiği ve İş Zekası (BI)',
+    desc: 'Büyük veriyi anlaşılır görsel raporlara ve stratejik içgörülere dönüştürüyoruz.',
+    fullDesc: 'Kararlarınızı verilere dayandırın. Şirketinizin ürettiği devasa veri havuzunu işleyip, yönetici sunumlarına hazır, canlı ve interaktif grafiklere döküyoruz. Satış trendleri, performans metrikleri ve gelecek tahminlemeleri ile rekabet avantajı kazandırıyoruz.'
   },
   {
     icon: <Store className="w-6 h-6 text-orange-500" />,
-    title: 'Pazaryeri ve Platform Kurulumu',
-    desc: 'Trendyol veya Sahibinden gibi çok satıcılı ve alıcılı pazar yeri sistemleri geliştirme.',
-    fullDesc: 'Çok satıcılı platform altyapıları, komisyon dağıtımı ve satıcı izolasyonu ile uçtan uca marketplace sistemleri geliştiriyoruz.'
-  },
-  {
-    icon: <Database className="w-6 h-6 text-indigo-400" />,
-    title: 'Abonelik Sistemli Yazılımlar (SaaS)',
-    desc: 'Kendi yazılım fikrinizi insanlara aylık üyelikle satabileceğiniz altyapılar.',
-    fullDesc: 'Multi-tenant mimari ile güvenli, ölçeklenebilir ve abonelik bazlı SaaS platformlarını sıfırdan geliştiriyoruz.'
+    title: 'E-Ticaret ve Marketplace (Pazaryeri) Mimarisi',
+    desc: 'Çok satıcılı, komisyon yönetimli ve yüksek trafik kapasiteli ticaret platformları.',
+    fullDesc: 'Sadece bir web sitesi değil, bir ekosistem kuruyoruz. On binlerce ürünün ve satıcının yönetilebildiği, karmaşık sepet ve ödeme kurgularının hatasız çalıştığı pazaryeri altyapıları geliştiriyoruz. Yüksek trafikli kampanya dönemlerinde bile kesintisiz hizmet garantisi veriyoruz.'
   },
   {
     icon: <Search className="w-6 h-6 text-green-600" />,
-    title: 'Arama Motoru ve Google Optimizasyonu',
-    desc: 'Web sitenizi arama motorlarında üst sıralara taşıyacak kod ve mimari iyileştirmeleri.',
-    fullDesc: 'Teknik SEO, performans optimizasyonu ve içerik yapısı iyileştirmeleriyle organik trafik kazanımınızı artırıyoruz.'
-  },
-  {
-    icon: <Truck className="w-6 h-6 text-slate-600" />,
-    title: 'Lojistik ve Filo Yönetim Yazılımları',
-    desc: 'Kargo, uluslararası taşımacılık ve araç filoları için özel takip ve operasyon sistemleri.',
-    fullDesc: 'Güzergah planlama, gümrük belge akışları ve GPS araç takibi ile lojistik operasyonlarınızı tek merkezden yönetiyoruz.'
-  },
-  {
-    icon: <Microscope className="w-6 h-6 text-fuchsia-500" />,
-    title: 'Bilimsel ve Akademik Arşiv Sistemleri',
-    desc: 'Araştırma verilerini, arkeolojik kazıları veya biyolojik numuneleri dijitalleştirme.',
-    fullDesc: 'Bilimsel envanterler için güvenli bulut arşiv, filtreleme ve yetkili paylaşım altyapıları geliştiriyoruz.'
-  },
-  {
-    icon: <Leaf className="w-6 h-6 text-lime-500" />,
-    title: 'Akıllı Tarım ve Çevre Takip Sistemleri',
-    desc: 'Tarım arazilerinden ve seralardan anlık veri alarak otomatik sulama/havalandırma yapma.',
-    fullDesc: 'Sensör verilerini analiz ederek uzaktan kontrol edilen sulama/havalandırma otomasyon sistemleri kuruyoruz.'
-  },
-  {
-    icon: <Globe className="w-6 h-6 text-blue-400" />,
-    title: 'Çok Dilli ve Uluslararası Altyapı',
-    desc: 'Uygulamalarınızı sadece çevirmekle kalmaz, yurt dışı standartlarına (Avrupa) uygun hazırlarız.',
-    fullDesc: 'Lokalizasyon, ödeme altyapıları ve GDPR uyumu ile uygulamalarınızı uluslararası pazarlara hazır hale getiriyoruz.'
+    title: 'Teknik SEO ve Performans Optimizasyonu',
+    desc: 'Google sıralamalarınızı yükselten kod mimarisi ve hız iyileştirmeleri.',
+    fullDesc: 'Arama motorlarının sevdiği, Core Web Vitals skorları mükemmel web siteleri tasarlıyoruz. Sayfa yükleme hızından semantik HTML yapısına kadar tüm teknik detayları optimize ederek organik trafiğinizi ve dönüşüm oranlarınızı artırıyoruz.'
   }
 ];
 
@@ -121,80 +91,80 @@ const homeBoxesData = [
     id: 1,
     icon: <Rocket className="w-7 h-7 text-indigo-600" />,
     bg: 'bg-indigo-50',
-    title: 'Uçtan Uca Geliştirme',
-    desc: 'Sadece kod yazmıyoruz; web, mobil ve bulut ekosisteminde birbirine tam entegre, yüksek performanslı dijital ürünler tasarlıyoruz.',
-    fullDesc: 'Modern web teknolojileri ve güvenilir backend altyapıları ile fikrinizi canlıya taşıyoruz.'
+    title: 'Full-Stack Dijital Dönüşüm',
+    desc: 'Fikirden ürüne; web, mobil ve cloud ekosisteminde ölçeklenebilir, yüksek performanslı mimariler inşa ediyoruz.',
+    fullDesc: 'Modern teknoloji yığını (React, Node.js, Cloud Native) ile işletmenizin dijital kaslarını güçlendiriyoruz. Sadece kod yazmıyoruz, sürdürülebilir bir dijital gelecek tasarlıyoruz.'
   },
   {
     id: 2,
     icon: <Shield className="w-7 h-7 text-slate-800" />,
     bg: 'bg-slate-50',
-    title: 'Satır Bazlı Veri Güvenliği',
-    desc: 'Verilerinizi doğrudan veritabanı seviyesinde, kırılmaz RLS kuralları ile koruma altına alıyoruz.',
-    fullDesc: 'Veri güvenliğini uygulama seviyesinden öteye taşıyarak bulut çekirdeğinde koruyoruz.'
+    title: 'Askeri Düzey Veri Güvenliği',
+    desc: 'Row Level Security (RLS) ve gelişmiş şifreleme protokolleri ile verilerinizi en derin katmanlarda koruyoruz.',
+    fullDesc: 'KVKK ve GDPR standartlarının ötesinde, siber tehditlere karşı proaktif savunma mekanizmaları ve yetkilendirme mimarileri kuruyoruz.'
   },
   {
     id: 3,
     icon: <CreditCard className="w-7 h-7 text-emerald-600" />,
     bg: 'bg-emerald-50',
-    title: 'Kesintisiz Ödeme',
-    desc: 'Global ödeme sistemleri, cüzdan altyapıları ve komisyon dağıtım modelleri ile nakit akışınızı otomatikleştiriyoruz.',
-    fullDesc: 'Abonelik ve tek seferlik ödeme modellerini güvenli şekilde entegre ediyoruz.'
+    title: 'Global Ödeme Mühendisliği',
+    desc: 'Sanal POS, dijital cüzdan ve çapraz sınır ödeme sistemleriyle finansal süreçlerinizi küresel ölçeğe taşıyoruz.',
+    fullDesc: 'Stripe, Iyzico ve özel banka entegrasyonları ile hatasız, hızlı ve güvenli tahsilat altyapıları oluşturuyoruz.'
   }
 ];
 
 const expertiseData = [
   {
     icon: <Truck className="w-10 h-10 text-indigo-600" />,
-    title: 'Otomotiv ve Lojistik Bilişimi',
-    desc: 'Uluslararası araç standartları ve filo yönetim ihtiyaçlarına hakim yapımızla lojistik yazılımlar geliştiriyoruz.',
+    title: 'Akıllı Lojistik ve Tedarik Zinciri',
+    desc: 'Uluslararası standartlarda filo takibi, rota optimizasyonu ve gerçek zamanlı lojistik yönetim yazılımları.',
     route: 'sector-logistics'
   },
   {
     icon: <Microscope className="w-10 h-10 text-emerald-500" />,
-    title: 'Bilimsel ve Akademik Bilişim',
-    desc: 'Biyolojik veri takibi, arkeolojik veri dijitalleşmesi ve envanter yönetimi için analitik çözümler üretiyoruz.',
+    title: 'Bilimsel Veri ve Arşiv Mühendisliği',
+    desc: 'Karmaşık araştırma verileri, dijital envanterler ve akademik arşivler için güvenli veri yönetim sistemleri.',
     route: 'sector-academic'
   },
   {
     icon: <Rocket className="w-10 h-10 text-fuchsia-600" />,
-    title: 'E-Ticaret ve SaaS Modelleri',
-    desc: 'Abonelikle satılabilecek çok kiracılı platformlar için anahtar teslim altyapılar geliştiriyoruz.',
+    title: 'Modern E-Ticaret ve SaaS Mimarisi',
+    desc: 'Global pazaryeri çözümleri, abonelik modelleri ve çok kiracılı (multi-tenant) platform geliştirme.',
     route: 'sector-saas'
   }
 ];
 
 const sectorPages = {
   'sector-logistics': {
-    title: 'Lojistik ve Filo Yönetimi Çözümleri',
-    subtitle: 'Uluslararası taşımacılık, rota optimizasyonu ve canlı filo takibi için özel platformlar.'
+    title: 'Geleceğin Lojistik ve Filo Yönetimi Çözümleri',
+    subtitle: 'Global nakliye, otonom rota planlama ve canlı araç takip sistemleriyle operasyonel maliyetlerinizi düşürün.'
   },
   'sector-saas': {
-    title: 'SaaS ve Platform Ürün Geliştirme',
-    subtitle: 'Abonelik bazlı ürününüzü hızlıca pazara çıkarmak için ölçeklenebilir SaaS mimarileri.'
+    title: 'Ölçeklenebilir SaaS ve Dijital Platform Geliştirme',
+    subtitle: 'Fikrinizi dünya çapında bir ürüne dönüştürün. Yüksek performanslı, güvenli ve abonelik odaklı SaaS altyapıları.'
   },
   'sector-academic': {
-    title: 'Akademik ve Bilimsel Dijital Arşiv Sistemleri',
-    subtitle: 'Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel çözümler.'
+    title: 'Akademik Arşiv ve Bilimsel Veri Yönetimi',
+    subtitle: 'Büyük veriyi, araştırma sonuçlarını ve tarihi envanterleri dijital dünyada güvenle saklayın ve yönetin.'
   }
 };
 
 const faqData = [
   {
-    q: 'Projenin kaynak kodları bize mi ait olacak?',
-    a: 'Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir.'
+    q: 'Projenin kaynak kodları ve fikri mülkiyet hakları kime ait?',
+    a: 'Geliştirilen tüm kaynak kodları, tasarım dosyaları ve veritabanı mimarisi, teslimat sonunda tamamen şirketinize devredilir. Bağımlılık yaratmayan, şeffaf bir teslimat süreci izliyoruz.'
   },
   {
-    q: 'Eski sistemimizdeki veriler kaybolmadan yeni sisteme geçebilir miyiz?',
-    a: 'Evet. Migration süreçlerinde veri kaybı olmaması için kontrollü geçiş planı uygularız.'
+    q: 'Eski ve hantal yazılımlarımızdan veri kaybı olmadan geçiş yapabilir miyiz?',
+    a: 'Kesinlikle. Legacy sistem modernizasyonu uzmanlık alanımızdır. Mevcut verilerinizi analiz eder, temizler ve modern bulut altyapısına sıfır veri kaybı ile migrate ederiz.'
   },
   {
-    q: 'Proje bittikten sonra teknik destek ve bakım veriyor musunuz?',
-    a: 'Evet. İsteğe bağlı SLA bakım paketleri ile canlı sisteminizin güvenli ve güncel kalmasını sağlarız.'
+    q: 'Yazılım tesliminden sonra destek ve güncelleme süreçleri nasıl işliyor?',
+    a: 'Projelerimizi yaşayan organizmalar olarak görüyoruz. İsteğe bağlı SLA (Service Level Agreement) anlaşmaları ile sisteminizin güvenliğini, güncelliğini ve performansını 7/24 takip ediyoruz.'
   },
   {
-    q: 'Hazır paket yazılımlar (Wordpress, Wix vb.) kullanıyor musunuz?',
-    a: 'Kurumsal projelerde genellikle özel (custom) geliştirme yapıyoruz; böylece performans ve ölçeklenebilirlik artıyor.'
+    q: 'Özel yazılım geliştirmek yerine neden hazır paket sistemleri tercih etmemeliyim?',
+    a: 'Hazır paketler (Wordpress, CRM vb.) işinizi kısıtlayabilir ve ölçeklenme sorunları yaratabilir. Özel yazılım, tamamen sizin iş süreçlerinize göre terzi usulü dikilir; daha hızlı, daha güvenli ve uzun vadede daha maliyet etkindir.'
   }
 ];
 
