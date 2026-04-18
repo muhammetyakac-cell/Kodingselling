@@ -137,15 +137,60 @@ const expertiseData = [
 const sectorPages = {
   'sector-logistics': {
     title: 'Geleceğin Lojistik ve Filo Yönetimi Çözümleri',
-    subtitle: 'Global nakliye, otonom rota planlama ve canlı araç takip sistemleriyle operasyonel maliyetlerinizi düşürün.'
+    subtitle: 'Global nakliye, otonom rota planlama ve canlı araç takip sistemleriyle operasyonel maliyetlerinizi minimize edin.',
+    content: [
+      {
+        head: 'Uçtan Uca Operasyonel Şeffaflık',
+        body: 'Karmaşık tedarik zinciri süreçlerini basitleştiriyoruz. Araçlarınızın nerede olduğunu, yakıt tüketimini ve teslimat sürelerini saniyeler içinde takip edebileceğiniz, IoT destekli kontrol kuleleri inşa ediyoruz.'
+      },
+      {
+        head: 'Yapay Zeka Destekli Rota Optimizasyonu',
+        body: 'Trafik verileri, hava durumu ve yük yoğunluğunu analiz ederek en verimli rotaları otomatik hesaplayan algoritmalar geliştiriyoruz. Bu sayede yakıt maliyetlerinde %25\'e varan tasarruf sağlıyoruz.'
+      },
+      {
+        head: 'Entegrasyon ve Otomasyon',
+        body: 'Mevcut ERP, SAP veya gümrük sistemlerinizle tam entegre çalışıyoruz. Manuel veri girişini ortadan kaldırarak hata payını sıfıra indiriyor ve faturalandırma süreçlerini otomatiğe bağlıyoruz.'
+      }
+    ],
+    features: ['Real-time GPS Takibi', 'Sürücü Performans Analitiği', 'Depo Yönetim Sistemi (WMS)', 'Mobil Sürücü Uygulamaları']
   },
   'sector-saas': {
     title: 'Ölçeklenebilir SaaS ve Dijital Platform Geliştirme',
-    subtitle: 'Fikrinizi dünya çapında bir ürüne dönüştürün. Yüksek performanslı, güvenli ve abonelik odaklı SaaS altyapıları.'
+    subtitle: 'Fikrinizi dünya çapında bir ürüne dönüştürün. Yüksek performanslı, güvenli ve abonelik odaklı modern SaaS altyapıları.',
+    content: [
+      {
+        head: 'Multi-Tenant Mimari Tasarımı',
+        body: 'Binlerce farklı şirketin (tenant) aynı altyapıyı güvenle ve birbirinden izole şekilde kullanabileceği, veritabanı seviyesinde ayrıştırılmış mimariler kuruyoruz.'
+      },
+      {
+        head: 'Dinamik Abonelik ve Ödeme Yönetimi',
+        body: 'Stripe, Iyzico veya PayTR gibi ödeme geçitleri üzerinden esnek paket yönetimi, deneme süreci tanımlama ve otomatik faturalandırma sistemleri entegre ediyoruz.'
+      },
+      {
+        head: 'Bulut Ölçeğinde Performans',
+        body: 'Kullanıcı sayınız arttıkça sistemin otomatik olarak genişlemesini (auto-scaling) sağlayan, yüksek erişilebilirlik (High Availability) garantili backend servisleri geliştiriyoruz.'
+      }
+    ],
+    features: ['Gelişmiş RBAC Yetkilendirme', 'Analitik Dashboardlar', 'Beyaz Etiket (White Label) Desteği', 'API-First Yaklaşım']
   },
   'sector-academic': {
     title: 'Akademik Arşiv ve Bilimsel Veri Yönetimi',
-    subtitle: 'Büyük veriyi, araştırma sonuçlarını ve tarihi envanterleri dijital dünyada güvenle saklayın ve yönetin.'
+    subtitle: 'Büyük veriyi, araştırma sonuçlarını ve tarihi envanterleri dijital dünyada uluslararası standartlarda güvenle saklayın.',
+    content: [
+      {
+        head: 'Uluslararası Arşiv Standartları',
+        body: 'Dublin Core, MARC21 ve OAI-PMH gibi global standartlara tam uyumlu dijital kütüphane ve arşiv sistemleri geliştiriyoruz. Verilerinizin keşfedilebilirliğini artırıyoruz.'
+      },
+      {
+        head: 'Gelişmiş Arama ve İndeksleme',
+        body: 'Elasticsearch altyapısı ile milyonlarca belge ve veri seti arasında milisaniyeler içinde tam metin arama (full-text search) yapabilme imkanı sunuyoruz.'
+      },
+      {
+        head: 'Veri Bütünlüğü ve Uzun Vadeli Koruma',
+        body: 'Kritik araştırma verilerinin bozulmadan saklanması için versiyonlama, checksum doğrulaması ve katmanlı yedekleme stratejileri uyguluyoruz.'
+      }
+    ],
+    features: ['Metadata Yönetimi', 'Kurumsal Repozitör Altyapısı', 'DOI ve Kalıcı Link Entegrasyonu', 'Güvenli Dosya Depolama']
   }
 };
 
@@ -662,7 +707,7 @@ function ExpertiseView({ nav }) {
               <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">{item.desc}</p>
               <button onClick={() => nav(item.route)} className="inline-flex items-center px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700">
-                Landing Sayfasını Gör
+                Daha Fazla Bilgi Al
                 <ChevronRight className="w-4 h-4 ml-2" />
               </button>
             </div>
@@ -678,14 +723,50 @@ function SectorLandingView({ tab, nav }) {
   if (!sector) return null;
 
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 p-10">
-      <button onClick={() => nav('expertise')} className="inline-flex items-center text-indigo-600 font-semibold mb-8">
-        <ArrowLeft className="w-4 h-4 mr-2" /> Sektörel Çözümlere Dön
-      </button>
-      <h1 className="text-4xl font-extrabold text-slate-900 mb-4">{sector.title}</h1>
-      <p className="text-lg text-slate-600 mb-8">{sector.subtitle}</p>
-      <div className="rounded-2xl bg-slate-50 border border-slate-200 p-6">
-        <p className="text-slate-700 leading-relaxed">Bu sayfa SEO ve dönüşüm odaklı ayrı landing yapısının bir parçası olarak hazırlandı. İçeriği sektörün ihtiyaçlarına göre derinleştirip formu da bu sektöre özel hale getirebiliriz.</p>
+    <div className="max-w-5xl mx-auto space-y-12 animate-in fade-in duration-700">
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-sm">
+        <button onClick={() => nav('expertise')} className="inline-flex items-center text-indigo-600 font-bold mb-10 hover:translate-x-[-4px] transition-transform">
+          <ArrowLeft className="w-5 h-5 mr-2" /> Sektörel Çözümlere Dön
+        </button>
+
+        <div className="max-w-3xl mb-12">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">{sector.title}</h1>
+          <p className="text-xl text-slate-600 leading-relaxed">{sector.subtitle}</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {sector.content.map((item, idx) => (
+            <div key={idx} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">{item.head}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{item.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-slate-900 rounded-3xl p-8 md:p-10 text-white relative overflow-hidden">
+          <div className="relative z-10 flex flex-col md:flex-row gap-10 items-center">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-6 flex items-center">
+                <Shield className="w-6 h-6 mr-3 text-emerald-400" /> Temel Yetkinlikler
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {sector.features.map((feat, idx) => (
+                  <div key={idx} className="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/10">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                    <span className="font-medium text-slate-200 text-sm">{feat}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="flex-shrink-0 text-center space-y-4">
+              <div className="text-indigo-400 text-sm font-bold tracking-widest uppercase">Danışmanlık Alın</div>
+              <button onClick={() => nav('contact')} className="px-8 py-4 bg-white text-slate-900 font-bold rounded-xl hover:bg-emerald-500 hover:text-white transition-all shadow-xl">
+                Projeyi Başlatalım
+              </button>
+            </div>
+          </div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 blur-[100px] -mr-32 -mt-32"></div>
+        </div>
       </div>
     </div>
   );
