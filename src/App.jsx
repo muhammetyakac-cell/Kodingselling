@@ -428,10 +428,23 @@ function AdminPanelModal({
               <div className="space-y-3 max-h-[55vh] overflow-y-auto">
                 {leads.length === 0 && <p className="text-slate-500 text-sm">Henüz kayıt yok.</p>}
                 {leads.map((lead) => (
-                  <div key={lead.id} className="bg-white border border-slate-200 rounded-xl p-4">
-                    <p className="font-semibold text-slate-900">{lead.full_name} • {lead.email}</p>
-                    <p className="text-sm text-slate-600 mt-1">{lead.primary_need}</p>
-                    <p className="text-xs text-slate-500 mt-2">{new Date(lead.created_at).toLocaleString('tr-TR')}</p>
+                  <div key={lead.id} className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-indigo-200 transition-colors">
+                    <div className="flex justify-between items-start mb-2">
+                      <p className="font-bold text-slate-900">{lead.full_name}</p>
+                      <span className="text-[10px] font-medium px-2 py-0.5 bg-slate-100 rounded text-slate-500">ID: {lead.id}</span>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-sm text-indigo-600 font-medium">{lead.email}</p>
+                      {lead.company && <p className="text-sm text-slate-700"><span className="font-semibold text-slate-500 text-xs uppercase mr-1">Şirket:</span> {lead.company}</p>}
+                      <p className="text-sm text-slate-700"><span className="font-semibold text-slate-500 text-xs uppercase mr-1">İhtiyaç:</span> {lead.primary_need}</p>
+                      {lead.budget && <p className="text-sm text-slate-700"><span className="font-semibold text-slate-500 text-xs uppercase mr-1">Bütçe:</span> {lead.budget}</p>}
+                      {lead.summary && (
+                        <div className="mt-2 p-2 bg-slate-50 rounded text-sm text-slate-600 border-l-2 border-slate-300 italic">
+                          "{lead.summary}"
+                        </div>
+                      )}
+                    </div>
+                    <p className="text-[10px] text-slate-400 mt-3 text-right">{new Date(lead.created_at).toLocaleString('tr-TR')}</p>
                   </div>
                 ))}
               </div>
