@@ -546,10 +546,6 @@ function AdminDashboard({ leads, chats }) {
     </div>
   );
 }
-      </div>
-    </div>
-  );
-}
 
 function HomeView({ nav }) {
   const [expandedBox, setExpandedBox] = useState(null);
