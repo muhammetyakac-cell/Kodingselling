@@ -404,113 +404,144 @@ function AdminDashboard({ leads, chats }) {
   const [expandedChatId, setExpandedChatId] = useState(null);
 
   return (
-    <div className="p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
-      <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
-        <h4 className="text-xl font-bold text-slate-900 mb-4 flex items-center">
-          <Rocket className="w-5 h-5 mr-2 text-indigo-600" /> İş Teklifleri ({leads.length})
-        </h4>
-        <div className="space-y-2 max-h-[55vh] overflow-y-auto pr-2">
-          {leads.length === 0 && <p className="text-slate-500 text-sm italic">Henüz kayıt yok.</p>}
-          {leads.map((lead) => {
-            const isExpanded = expandedLeadId === lead.id;
-            return (
-              <div key={lead.id} className={`bg-white border transition-all rounded-xl overflow-hidden ${isExpanded ? 'border-indigo-400 shadow-md ring-2 ring-indigo-50' : 'border-slate-200 hover:border-slate-300 shadow-sm'}`}>
-                <button
-                  onClick={() => setExpandedLeadId(isExpanded ? null : lead.id)}
-                  className="w-full text-left px-4 py-3 flex justify-between items-center group"
-                >
-                  <div className="flex-1 min-w-0 mr-4">
-                    <p className="font-bold text-slate-900 truncate">{lead.full_name}</p>
-                    <p className="text-[10px] text-slate-500 font-medium">{new Date(lead.created_at).toLocaleDateString('tr-TR')}</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    {!isExpanded && <span className="text-[10px] bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full font-bold">DETAY</span>}
-                    {isExpanded ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-indigo-500" />}
-                  </div>
-                </button>
-                {isExpanded && (
-                  <div className="px-4 pb-4 pt-2 border-t border-slate-100 bg-indigo-50/20 animate-in slide-in-from-top-1 duration-200">
-                    <div className="space-y-2 text-sm">
-                      <div className="flex flex-col">
-                        <span className="text-[10px] uppercase font-bold text-slate-400">E-Posta</span>
-                        <a href={`mailto:${lead.email}`} className="text-indigo-600 font-medium hover:underline">{lead.email}</a>
+    <div className="p-4 md:p-8 space-y-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* İş Teklifleri Section */}
+        <section>
+          <div className="flex items-center justify-between mb-6">
+            <h4 className="text-xl font-bold text-slate-900 flex items-center">
+              <Rocket className="w-5 h-5 mr-2 text-indigo-600" /> Aktif İş Teklifleri
+              <span className="ml-3 px-2 py-0.5 bg-indigo-50 text-indigo-600 text-xs rounded-full">
+                {leads.length} Kayıt
+              </span>
+            </h4>
+          </div>
+          <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+            {leads.length === 0 && (
+              <div className="text-center py-10 bg-slate-50 rounded-2xl border border-dashed border-slate-300 text-slate-400">
+                Henüz bir talep alınmadı.
+              </div>
+            )}
+            {leads.map((lead) => {
+              const isExpanded = expandedLeadId === lead.id;
+              return (
+                <div key={lead.id} className={`group bg-white border transition-all duration-300 rounded-2xl overflow-hidden ${isExpanded ? 'border-indigo-400 shadow-lg ring-4 ring-indigo-50' : 'border-slate-200 hover:border-indigo-200 hover:shadow-md'}`}>
+                  <button
+                    onClick={() => setExpandedLeadId(isExpanded ? null : lead.id)}
+                    className="w-full text-left p-4 flex items-center justify-between"
+                  >
+                    <div className="flex items-center gap-4 flex-1 min-w-0">
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${isExpanded ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-500'}`}>
+                        {lead.full_name.charAt(0).toUpperCase()}
                       </div>
-                      {lead.company && (
-                        <div className="flex flex-col">
-                          <span className="text-[10px] uppercase font-bold text-slate-400">Şirket</span>
-                          <span className="text-slate-700">{lead.company}</span>
-                        </div>
-                      )}
-                      <div className="flex flex-col">
-                        <span className="text-[10px] uppercase font-bold text-slate-400">İhtiyaç</span>
-                        <span className="text-slate-700 font-medium">{lead.primary_need}</span>
+                      <div className="truncate">
+                        <p className="font-bold text-slate-900">{lead.full_name}</p>
+                        <p className="text-xs text-slate-500">{lead.primary_need}</p>
                       </div>
-                      {lead.budget && (
-                        <div className="flex flex-col">
-                          <span className="text-[10px] uppercase font-bold text-slate-400">Bütçe</span>
-                          <span className="text-emerald-600 font-bold">{lead.budget}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-[10px] font-bold text-slate-400 hidden sm:block">
+                        {new Date(lead.created_at).toLocaleDateString('tr-TR')}
+                      </span>
+                      {isExpanded ? <ChevronUp className="w-5 h-5 text-indigo-600" /> : <ChevronDown className="w-5 h-5 text-slate-400 group-hover:text-indigo-500" />}
+                    </div>
+                  </button>
+                  {isExpanded && (
+                    <div className="px-5 pb-5 pt-2 border-t border-slate-100 bg-indigo-50/10 animate-in slide-in-from-top-2 duration-300">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-4">
+                        <div className="space-y-1">
+                          <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400">İletişim Bilgisi</label>
+                          <a href={`mailto:${lead.email}`} className="block text-indigo-600 font-semibold hover:underline truncate">{lead.email}</a>
                         </div>
-                      )}
+                        <div className="space-y-1">
+                          <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Şirket / Kurum</label>
+                          <p className="text-slate-700 font-medium">{lead.company || 'Belirtilmedi'}</p>
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Öngörülen Bütçe</label>
+                          <p className="text-emerald-600 font-bold">{lead.budget || 'Görüşülecek'}</p>
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Başvuru Tarihi</label>
+                          <p className="text-slate-700">{new Date(lead.created_at).toLocaleString('tr-TR')}</p>
+                        </div>
+                      </div>
                       {lead.summary && (
-                        <div className="flex flex-col mt-3">
-                          <span className="text-[10px] uppercase font-bold text-slate-400 mb-1">Proje Özeti</span>
-                          <div className="bg-white p-3 rounded-lg border border-indigo-100 text-slate-600 text-xs leading-relaxed italic">
-                            "{lead.summary}"
+                        <div className="space-y-2">
+                          <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Proje Özeti & Beklentiler</label>
+                          <div className="p-4 bg-white rounded-xl border border-indigo-100 text-slate-600 text-xs leading-relaxed shadow-inner">
+                            {lead.summary}
                           </div>
                         </div>
                       )}
                     </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
 
-      <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6">
-        <h4 className="text-xl font-bold text-slate-900 mb-4 flex items-center">
-          <MessageSquare className="w-5 h-5 mr-2 text-emerald-600" /> Chat Mesajları ({chats.length})
-        </h4>
-        <div className="space-y-2 max-h-[55vh] overflow-y-auto pr-2">
-          {chats.length === 0 && <p className="text-slate-500 text-sm italic">Henüz mesaj yok.</p>}
-          {chats.map((chat) => {
-            const isExpanded = expandedChatId === chat.id;
-            return (
-              <div key={chat.id} className={`bg-white border transition-all rounded-xl overflow-hidden ${isExpanded ? 'border-emerald-400 shadow-md ring-2 ring-emerald-50' : 'border-slate-200 hover:border-slate-300 shadow-sm'}`}>
-                <button
-                  onClick={() => setExpandedChatId(isExpanded ? null : chat.id)}
-                  className="w-full text-left px-4 py-3 flex justify-between items-center group"
-                >
-                  <div className="flex-1 min-w-0 mr-4">
-                    <div className="flex items-center gap-2">
-                      <span className={`w-2 h-2 rounded-full ${chat.sender_type === 'user' ? 'bg-indigo-500' : 'bg-slate-300'}`}></span>
-                      <p className="font-bold text-slate-900 truncate">
-                        {chat.sender_type === 'user' ? 'Müşteri Mesajı' : 'Sistem Yanıtı'}
-                      </p>
-                    </div>
-                    <p className="text-[10px] text-slate-500 ml-4">{new Date(chat.created_at).toLocaleString('tr-TR')}</p>
-                  </div>
-                  {isExpanded ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-emerald-500" />}
-                </button>
-                {isExpanded && (
-                  <div className="px-4 pb-4 pt-2 border-t border-slate-100 bg-emerald-50/20 animate-in slide-in-from-top-1 duration-200">
-                    <p className="text-xs text-slate-400 font-bold uppercase mb-1">İçerik</p>
-                    <div className="bg-white p-3 rounded-lg border border-emerald-100 text-slate-700 text-sm leading-relaxed">
-                      {chat.message}
-                    </div>
-                    <div className="mt-3 flex justify-between items-center">
-                      <span className="text-[10px] text-slate-400">Oturum: {chat.session_id}</span>
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${chat.sender_type === 'user' ? 'bg-indigo-100 text-indigo-700' : 'bg-slate-100 text-slate-600'}`}>
-                        {chat.sender_type}
-                      </span>
-                    </div>
-                  </div>
-                )}
+        {/* Chat Mesajları Section */}
+        <section>
+          <div className="flex items-center justify-between mb-6">
+            <h4 className="text-xl font-bold text-slate-900 flex items-center">
+              <MessageSquare className="w-5 h-5 mr-2 text-emerald-600" /> Canlı Sohbet Kayıtları
+              <span className="ml-3 px-2 py-0.5 bg-emerald-50 text-emerald-600 text-xs rounded-full">
+                {chats.length} Mesaj
+              </span>
+            </h4>
+          </div>
+          <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+            {chats.length === 0 && (
+              <div className="text-center py-10 bg-slate-50 rounded-2xl border border-dashed border-slate-300 text-slate-400">
+                Henüz mesaj trafiği yok.
               </div>
-            );
-          })}
-        </div>
+            )}
+            {chats.map((chat) => {
+              const isExpanded = expandedChatId === chat.id;
+              const isUser = chat.sender_type === 'user';
+              return (
+                <div key={chat.id} className={`group bg-white border transition-all duration-300 rounded-2xl overflow-hidden ${isExpanded ? 'border-emerald-400 shadow-lg ring-4 ring-emerald-50' : 'border-slate-200 hover:border-emerald-200 hover:shadow-md'}`}>
+                  <button
+                    onClick={() => setExpandedChatId(isExpanded ? null : chat.id)}
+                    className="w-full text-left p-4 flex items-center justify-between"
+                  >
+                    <div className="flex items-center gap-4 flex-1 min-w-0">
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${isUser ? 'bg-indigo-100 text-indigo-600' : 'bg-slate-100 text-slate-400'}`}>
+                        {isUser ? <UserCog className="w-5 h-5" /> : <Cpu className="w-5 h-5" />}
+                      </div>
+                      <div className="truncate">
+                        <p className="font-bold text-slate-900">{isUser ? 'Ziyaretçi Mesajı' : 'Yapay Zeka Yanıtı'}</p>
+                        <p className="text-[10px] text-slate-500">{new Date(chat.created_at).toLocaleString('tr-TR')}</p>
+                      </div>
+                    </div>
+                    {isExpanded ? <ChevronUp className="w-5 h-5 text-emerald-600" /> : <ChevronDown className="w-5 h-5 text-slate-400 group-hover:text-emerald-500" />}
+                  </button>
+                  {isExpanded && (
+                    <div className="px-5 pb-5 pt-2 border-t border-slate-100 bg-emerald-50/10 animate-in slide-in-from-top-2 duration-300">
+                      <div className="mb-4">
+                        <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400 block mb-2">Mesaj İçeriği</label>
+                        <div className={`p-4 rounded-xl text-sm leading-relaxed shadow-sm ${isUser ? 'bg-white border border-indigo-100 text-slate-700' : 'bg-white border border-emerald-100 text-slate-600 italic'}`}>
+                          {chat.message}
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between text-[10px]">
+                        <div className="flex items-center gap-2">
+                          <span className="font-bold text-slate-400">SESSION ID:</span>
+                          <code className="bg-slate-100 px-2 py-0.5 rounded text-slate-600">{chat.session_id}</code>
+                        </div>
+                        <span className={`px-2 py-0.5 rounded-full font-bold uppercase tracking-tighter ${isUser ? 'bg-indigo-600 text-white' : 'bg-slate-400 text-white'}`}>
+                          {chat.sender_type}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </div>
     </div>
   );
