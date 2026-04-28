@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { getApiUrl } from './lib/api';
 import {
   Rocket, Shield, CreditCard, LayoutTemplate,
@@ -365,6 +366,7 @@ export default function App() {
         chats={adminChats}
         onLogin={loadAdminData}
       />
+      <Analytics />
     </div>
   );
 }
