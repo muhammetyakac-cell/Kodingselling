@@ -800,10 +800,10 @@ function ContactView() {
                   <p className="text-slate-300 text-sm mt-1">SLA taahhüdümüzle talebinizi hızlıca aksiyona çeviriyoruz.</p>
                 </div>
                 <div className="space-y-6">
-                  <InfoRow icon={<MapPin className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Merkez Ofis" value="Buca, İzmir, Türkiye\n(AR-GE ve Operasyon Merkezi)" />
-                  <InfoRow icon={<Mail className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="E-Posta" value="hello@dzyyazilim.com" />
-                  <InfoRow icon={<Phone className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Telefon" value="+90 (5XX) XXX XX XX" />
-                  <InfoRow icon={<Clock className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Çalışma Saatleri" value="Pazartesi - Cuma\n09:00 - 18:00 (GMT+3)" />
+                  <InfoRow icon={<MapPin className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Merkez Ofis" value="270/4 sokak no 29 Buca, İzmir, Türkiye\n(AR-GE ve Operasyon Merkezi)" />
+                  <InfoRow icon={<Mail className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="E-Posta" value="info@dzydigital.com" />
+                  <InfoRow icon={<Phone className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Telefon" value="+90 (555) 208 30 92" />
+                  <InfoRow icon={<Clock className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Çalışma Saatleri" value="Pazartesi - Cuma\09:00 - 18:00 (GMT+3)" />
                 </div>
               </div>
               <div className="mt-12 pt-8 border-t border-slate-800">
