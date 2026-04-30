@@ -573,7 +573,7 @@ function ExpertiseView({ nav }) {
               <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">{item.desc}</p>
               <button onClick={() => nav(item.route)} className="inline-flex items-center px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700">
-                Landing Sayfasını Gör
+                Daha Fazla Bilgi Al
                 <ChevronRight className="w-4 h-4 ml-2" />
               </button>
             </div>
