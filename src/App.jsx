@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+
+const GOOGLE_ADS_CONVERSION_ID = 'AW-18130314578/0icoCPCp3aUcENLKmsVD';
 import { Analytics } from '@vercel/analytics/react';
 import { getApiUrl } from './lib/api';
 import {
@@ -695,6 +697,9 @@ function ContactView() {
       .then((response) => {
         if (!response.ok) {
           throw new Error('Lead submission failed');
+        }
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', { send_to: GOOGLE_ADS_CONVERSION_ID });
         }
         setFormStatus('success');
       })
