@@ -1,6 +1,6 @@
 # DZY Web Sitesi
 
-Bu proje React + Vite + Tailwind ile hazırlanmıştır.
+Bu proje React + Vite + Tailwind ile hazırlanmıştır ve backend tarafında Neon Postgres + Vercel Serverless API kullanır.
 
 ## Kurulum
 
@@ -9,11 +9,68 @@ npm install
 npm run dev
 ```
 
-## Vercel + Supabase Environment Variables
+## Environment Variables (Vercel)
 
-Vercel'de **Project Settings → Environment Variables** bölümüne aşağıdaki anahtarları ekleyin:
+### Frontend
+- `VITE_API_BASE_URL` (opsiyonel; backend farklı domaindeyse örn: `https://your-app.vercel.app`)
 
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
+### Backend (Neon Postgres)
+- `DATABASE_URL`
+- `POSTGRES_URL`
+- `POSTGRES_PRISMA_URL` (opsiyonel fallback)
+- `STORAGE_POSTGRES_URL` (Vercel Neon integration kullanan projeler için desteklenir)
+- `STORAGE_POSTGRES_URL_NO_SSL` (opsiyonel fallback)
+- `ADMIN_KEY` (footer'daki admin panel giriş şifresi)
+- `ADMIN_READ_TOKEN` (opsiyonel, geriye dönük destek)
 
 Örnek değerler için `.env.example` dosyasını kullanabilirsiniz.
+
+## Neon SQL Kurulumu
+
+`db/schema.sql` dosyasını Neon SQL Editor'de çalıştırın.
+
+Bu tablolar oluşturulur:
+- `public.leads`
+- `public.chat_messages`
+
+## Serverless API Uçları
+
+- `POST /api/leads` → form lead kaydı
+- `POST /api/chat` → chat mesajı + bot yanıt kaydı
+- `GET /api/admin/leads` → son 100 lead kaydı (admin token gerekli)
+- `GET /api/admin/chat` → son 200 chat mesajı (admin token gerekli)
+
+Bu uçlar Vercel serverless function olarak çalışır.
+
+## Gelen Teklif/Mesajları Nereden Okurum?
+
+### 1) Neon SQL Editor'den
+```sql
+SELECT * FROM public.leads ORDER BY created_at DESC;
+SELECT * FROM public.chat_messages ORDER BY created_at DESC;
+```
+
+### 2) Güvenli admin endpoint ile JSON olarak
+- `GET /api/admin/leads`
+- `GET /api/admin/chat`
+
+İstekte aşağıdakilerden birini gönder:
+- Header: `x-admin-token: <ADMIN_KEY>`
+- veya query: `?token=<ADMIN_KEY>`
+
+### 3) Site içindeki admin arayüzünden
+- Footer'ın en altındaki `dzy.` logosu artık butondur.
+- Tıklayınca şifre ekranı açılır.
+- `ADMIN_KEY` env değerini girince İş Teklifleri + Chat Mesajları paneli açılır.
+
+## Hata Giderme
+
+### `Failed to load resource: ... 404 (/api/leads)`
+- Frontend farklı bir domainde çalışıyorsa `VITE_API_BASE_URL` tanımlayın.
+- Vercel deployunda `api/` klasörünün yayımlandığını doğrulayın.
+- Yerel geliştirmede yalnızca `vite` yerine `vercel dev` tercih edin (API fonksiyonları da ayağa kalkar).
+
+### `Failed to load resource: ... 500 (/api/leads)`
+- `POSTGRES_URL` veya `DATABASE_URL` environment variable'ının Vercel'de tanımlı olduğunu kontrol edin.
+- Sadece `STORAGE_POSTGRES_URL` ekliyse de sistem artık bunu otomatik kullanır.
+- Neon üzerinde `db/schema.sql` dosyasını çalıştırdığınızdan emin olun.
