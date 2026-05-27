@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { getApiUrl } from './lib/api';
+import { blogPosts } from './blogData';
 import {
   Rocket, Shield, CreditCard, LayoutTemplate,
   Smartphone, Database, Cpu, Building2, UserCog,
@@ -359,12 +360,18 @@ const seoData = {
     description: 'Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel çözümler.',
     keywords: 'akademik veri arşivi, bilimsel envanter yazılımı, dijital kütüphane altyapısı, güvenli veri paylaşımı',
     path: '/sektor/akademik'
+  },
+  blog: {
+    title: 'Bilgi Bankası & Blog | Teknoloji ve Yazılım Trendleri - DZY Digital',
+    description: 'Yazılım mimarisi, dijital dönüşüm, bulut teknolojileri ve KOBİ\'ler için vaka analizleri barındıran bilgi bankamız.',
+    keywords: 'yazılım blogu, teknoloji makaleleri, dijital dönüşüm hataları, vaka analizi',
+    path: '/blog'
   }
 };
 
-function SEOManager({ activeTab }) {
+function SEOManager({ activeTab, dynamicSeo }) {
   useEffect(() => {
-    const currentSeo = seoData[activeTab] || seoData.home;
+    const currentSeo = dynamicSeo || seoData[activeTab] || seoData.home;
     const siteUrl = 'https://www.dzydigital.com';
     const fullUrl = `${siteUrl}${currentSeo.path}`;
 
@@ -425,6 +432,7 @@ const pathToTab = {
   '/sektorel-cozumler': 'expertise',
   '/hakkimizda': 'about',
   '/iletisim': 'contact',
+  '/blog': 'blog',
   '/sektor/lojistik': 'sector-logistics',
   '/sektor/saas': 'sector-saas',
   '/sektor/akademik': 'sector-academic'
@@ -433,7 +441,16 @@ const pathToTab = {
 const tabToPath = Object.fromEntries(Object.entries(pathToTab).map(([k, v]) => [v, k]));
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState(pathToTab[window.location.pathname] || 'home');
+  const getTabFromPath = (path) => {
+    if (path.startsWith('/blog/')) return 'blog-post';
+    return pathToTab[path] || 'home';
+  };
+  
+  const [activeTab, setActiveTab] = useState(getTabFromPath(window.location.pathname));
+  const [currentSlug, setCurrentSlug] = useState(() => {
+    if (window.location.pathname.startsWith('/blog/')) return window.location.pathname.split('/blog/')[1];
+    return null;
+  });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
@@ -445,16 +462,24 @@ export default function App() {
 
   useEffect(() => {
     const onPopState = () => {
-      setActiveTab(pathToTab[window.location.pathname] || 'home');
+      const path = window.location.pathname;
+      setActiveTab(getTabFromPath(path));
+      if (path.startsWith('/blog/')) {
+        setCurrentSlug(path.split('/blog/')[1]);
+      }
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
-  const nav = (tab) => {
+  const nav = (tab, slug = null) => {
     setActiveTab(tab);
     setIsMobileMenuOpen(false);
-    const path = tabToPath[tab] || '/';
+    let path = tabToPath[tab] || '/';
+    if (tab === 'blog-post' && slug) {
+      setCurrentSlug(slug);
+      path = '/blog/' + slug;
+    }
     window.history.pushState({}, '', path);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -493,13 +518,23 @@ export default function App() {
     if (activeTab === 'expertise') return <ExpertiseView nav={nav} />;
     if (activeTab === 'about') return <AboutView />;
     if (activeTab === 'contact') return <ContactView />;
+    if (activeTab === 'blog') return <BlogView nav={nav} />;
+    if (activeTab === 'blog-post') return <BlogPostView slug={currentSlug} nav={nav} />;
     if (activeTab.startsWith('sector-')) return <SectorLandingView tab={activeTab} nav={nav} />;
     return <HomeView nav={nav} />;
   };
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-indigo-100 selection:text-indigo-900">
-      <SEOManager activeTab={activeTab} />
+      <SEOManager 
+        activeTab={activeTab} 
+        dynamicSeo={activeTab === 'blog-post' ? {
+          title: blogPosts.find(p => p.slug === currentSlug)?.title + ' | DZY Digital',
+          description: blogPosts.find(p => p.slug === currentSlug)?.excerpt,
+          keywords: 'yazılım, dijital dönüşüm, teknoloji makalesi',
+          path: '/blog/' + currentSlug
+        } : null} 
+      />
       <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
@@ -509,17 +544,18 @@ export default function App() {
             </a>
 
             <nav className="hidden md:flex space-x-8" aria-label="Ana Navigasyon">
-              {['home', 'services', 'expertise', 'about', 'contact'].map((tab) => (
+              {['home', 'services', 'expertise', 'about', 'blog', 'contact'].map((tab) => (
                 <a
                   key={tab}
                   href={tabToPath[tab] || '/'}
                   onClick={(e) => { e.preventDefault(); nav(tab); }}
-                  className={`text-sm font-medium transition-colors hover:text-indigo-600 ${activeTab === tab ? 'text-indigo-600 font-bold' : 'text-slate-600'}`}
+                  className={`text-sm font-medium transition-colors hover:text-indigo-600 ${activeTab === tab || (activeTab === 'blog-post' && tab === 'blog') ? 'text-indigo-600 font-bold' : 'text-slate-600'}`}
                 >
                   {tab === 'home' && 'Ana Sayfa'}
                   {tab === 'services' && 'Hizmetlerimiz'}
                   {tab === 'expertise' && 'Sektörel Çözümler'}
                   {tab === 'about' && 'Hakkımızda'}
+                  {tab === 'blog' && 'Bilgi Bankası'}
                   {tab === 'contact' && 'İletişim'}
                 </a>
               ))}
@@ -536,17 +572,18 @@ export default function App() {
         {isMobileMenuOpen && (
           <nav className="md:hidden bg-white border-b border-slate-200" aria-label="Mobil Navigasyon">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {['home', 'services', 'expertise', 'about', 'contact'].map((tab) => (
+              {['home', 'services', 'expertise', 'about', 'blog', 'contact'].map((tab) => (
                 <a
                   key={tab}
                   href={tabToPath[tab] || '/'}
                   onClick={(e) => { e.preventDefault(); nav(tab); }}
-                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${activeTab === tab ? 'bg-indigo-50 text-indigo-700' : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'}`}
+                  className={`block px-3 py-2 rounded-md text-base font-medium ${activeTab === tab || (activeTab === 'blog-post' && tab === 'blog') ? 'text-indigo-600 bg-indigo-50' : 'text-slate-700 hover:text-indigo-600 hover:bg-slate-50'}`}
                 >
                   {tab === 'home' && 'Ana Sayfa'}
                   {tab === 'services' && 'Hizmetlerimiz'}
                   {tab === 'expertise' && 'Sektörel Çözümler'}
                   {tab === 'about' && 'Hakkımızda'}
+                  {tab === 'blog' && 'Bilgi Bankası'}
                   {tab === 'contact' && 'İletişim'}
                 </a>
               ))}
@@ -688,10 +725,10 @@ function HomeView({ nav }) {
           Sistemleriniz İçin Yeni Nesil Mimari
         </div>
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
-          Yazılımdan Fazlası:<br className="hidden md:block" /> İşletmeniz İçin <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600">Akıllı, Güvenli ve Ölçeklenebilir</span> Sistemler İnşa Ediyoruz.
+          Yazılımdan Fazlası:<br className="hidden md:block" /> İşletmeniz İçin <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600">Özel Yazılım ve Dijital Dönüşüm</span> Çözümleri
         </h1>
         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
-          DZY Yazılım Danışma ile fikirlerinizi yüksek performanslı mobil uygulamalara, gerçek zamanlı takip panellerine ve güvenli bulut mimarilerine dönüştürün.
+          DZY Yazılım Danışmanlığı ile KOBİ'ler ve kurumsal firmalar için yüksek performanslı web ve mobil uygulamalar, gerçek zamanlı paneller ve güvenli bulut mimarileri inşa ediyoruz. Özel yazılım geliştirme danışmanlığı ile süreçlerinizi optimize edin.
         </p>
         <a href="/iletisim" onClick={(e) => { e.preventDefault(); nav('contact'); }} className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-slate-900 rounded-xl hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-200">
           Projenizi Anlatın
@@ -755,8 +792,8 @@ function ServicesView() {
   return (
     <div className="animate-in fade-in duration-500">
       <div className="max-w-3xl mb-12">
-        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Hizmetlerimiz</h1>
-        <p className="text-xl text-slate-600">İşletmenizi dijitalleştirecek profesyonel hizmetlerimiz.</p>
+        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Profesyonel Yazılım Danışmanlığı Hizmetleri</h1>
+        <p className="text-xl text-slate-600">İşletmenizi dijitalleştirecek özel yazılım geliştirme, bulut mimarisi ve dijital dönüşüm danışmanlığı çözümlerimiz.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {servicesData.map((service, idx) => (
@@ -781,8 +818,8 @@ function ExpertiseView({ nav }) {
   return (
     <div className="animate-in fade-in duration-500">
       <div className="max-w-3xl mb-12 text-center mx-auto">
-        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Sektörel Çözümler</h1>
-        <p className="text-xl text-slate-600">Niş alanlara yönelik dikey uzmanlık çözümleri.</p>
+        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Sektörel Yazılım Çözümleri</h1>
+        <p className="text-xl text-slate-600">Lojistik, SaaS ve Akademi gibi niş alanlara yönelik uçtan uca özel yazılım ve entegrasyon çözümleri.</p>
       </div>
       <div className="space-y-8 max-w-5xl mx-auto">
         {expertiseData.map((item, idx) => (
@@ -912,10 +949,11 @@ function AboutView() {
             <span className="text-2xl font-extrabold text-slate-900 lowercase">dzy<span className="text-emerald-500">.</span></span>
           </div>
           <div className="mt-8">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Farklı Disiplinler, Tek Bir Analitik Yaklaşım.</h1>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">DZY Yazılım Danışmanlığı: Dijital Dönüşüm Ortağınız</h1>
+            <h2 className="text-xl font-bold text-slate-800 mb-4">Farklı Disiplinler, Tek Bir Analitik Yaklaşım.</h2>
             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
-              <p><strong className="text-slate-900">DZY Yazılım Danışma</strong> olarak teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyoruz.</p>
-              <p>Yazılımı sadece arayüz değil; veri akışı, güvenlik ve iş mantığını uçtan uca kurgulayan bir mühendislik disiplini olarak ele alıyoruz.</p>
+              <p><strong className="text-slate-900">DZY Yazılım Danışmanlığı</strong> firması olarak teknolojiyi şirketlerin dijital dönüşüm süreçlerindeki karmaşık sorunlarını çözen bir köprü olarak görüyoruz.</p>
+              <p>Yazılımı sadece bir arayüz değil; veri akışı, bulut güvenliği ve kurumsal iş mantığını uçtan uca kurgulayan profesyonel bir mühendislik disiplini olarak ele alıyoruz.</p>
             </div>
             <div className="mt-12 p-8 bg-indigo-50 rounded-2xl border border-indigo-100 flex flex-col md:flex-row gap-6 items-center">
               <Globe className="w-16 h-16 text-indigo-600 flex-shrink-0" />
@@ -1018,8 +1056,8 @@ function ContactView() {
     <div className="animate-in fade-in duration-500 max-w-6xl mx-auto space-y-16">
       <div>
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Operasyonunuzu Bir Üst Seviyeye Taşıyalım.</h1>
-          <p className="text-xl text-slate-600">Mimari vizyonumuzun projenize nasıl değer katabileceğini konuşalım.</p>
+          <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Dijital Dönüşüm Projenizi Birlikte Hayata Geçirelim</h1>
+          <p className="text-xl text-slate-600">Kurumsal yazılım mimarisi uzmanlığımızın operasyonel verimliliğinize nasıl değer katabileceğini konuşalım.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -1243,6 +1281,52 @@ function ChatWidget() {
         {!isOpen && <span className="absolute top-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>}
         {!isOpen && <span className="absolute right-full mr-4 bg-slate-800 text-white text-sm px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Bize Canlı Ulaşın</span>}
       </button>
+    </div>
+  );
+}
+
+function BlogView({ nav }) {
+  return (
+    <div className="animate-in fade-in duration-500 max-w-5xl mx-auto space-y-12">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Bilgi Bankası & Vaka Analizleri</h1>
+        <p className="text-xl text-slate-600">Teknoloji trendleri, mimari çözümlerimiz ve başarı hikayelerimiz.</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {blogPosts.map(post => (
+          <div key={post.id} className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+            <div className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-bold px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full">{post.category}</span>
+                <span className="text-xs text-slate-500">{post.readTime}</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 line-clamp-2">{post.title}</h3>
+              <p className="text-slate-600 mb-6 flex-1 line-clamp-3">{post.excerpt}</p>
+              <a href={'/blog/' + post.slug} onClick={(e) => { e.preventDefault(); nav('blog-post', post.slug); }} className="inline-flex items-center text-indigo-600 font-bold hover:text-indigo-800 transition-colors">
+                Yazıyı Oku <ChevronRight className="w-4 h-4 ml-1" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function BlogPostView({ slug, nav }) {
+  const post = blogPosts.find(p => p.slug === slug);
+  if (!post) return <div className="text-center py-20"><h1 className="text-2xl font-bold">Yazı Bulunamadı.</h1><button onClick={() => nav('blog')} className="mt-4 text-indigo-600 underline">Geri Dön</button></div>;
+
+  return (
+    <div className="animate-in fade-in duration-500 max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-sm">
+      <a href="/blog" onClick={(e) => { e.preventDefault(); nav('blog'); }} className="inline-flex items-center text-indigo-600 font-semibold mb-8 hover:text-indigo-800 transition-colors">
+        <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Bilgi Bankasına Dön
+      </a>
+      <div className="mb-8 flex items-center justify-between text-sm text-slate-500 border-b border-slate-100 pb-4">
+        <div><span className="font-bold text-indigo-600">{post.category}</span> &bull; {post.date}</div>
+        <div>{post.readTime}</div>
+      </div>
+      <div className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-indigo-600" dangerouslySetInnerHTML={{ __html: post.content }} />
     </div>
   );
 }
