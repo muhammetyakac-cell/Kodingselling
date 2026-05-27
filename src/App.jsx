@@ -503,16 +503,17 @@ export default function App() {
       <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center cursor-pointer group" onClick={() => nav('home')}>
+            <a href="/" onClick={(e) => { e.preventDefault(); nav('home'); }} className="flex items-center group" aria-label="DZY Anasayfa">
               <span className="text-3xl font-extrabold tracking-tighter text-slate-900 lowercase group-hover:text-indigo-950 transition-colors">dzy</span>
               <span className="text-4xl text-emerald-500 leading-none">.</span>
-            </div>
+            </a>
 
             <nav className="hidden md:flex space-x-8" aria-label="Ana Navigasyon">
               {['home', 'services', 'expertise', 'about', 'contact'].map((tab) => (
-                <button
+                <a
                   key={tab}
-                  onClick={() => nav(tab)}
+                  href={tabToPath[tab] || '/'}
+                  onClick={(e) => { e.preventDefault(); nav(tab); }}
                   className={`text-sm font-medium transition-colors hover:text-indigo-600 ${activeTab === tab ? 'text-indigo-600 font-bold' : 'text-slate-600'}`}
                 >
                   {tab === 'home' && 'Ana Sayfa'}
@@ -520,13 +521,13 @@ export default function App() {
                   {tab === 'expertise' && 'Sektörel Çözümler'}
                   {tab === 'about' && 'Hakkımızda'}
                   {tab === 'contact' && 'İletişim'}
-                </button>
+                </a>
               ))}
             </nav>
 
             <div className="md:hidden flex items-center">
               <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Menüyü Aç/Kapat">
-                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {isMobileMenuOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
               </button>
             </div>
           </div>
@@ -536,9 +537,10 @@ export default function App() {
           <nav className="md:hidden bg-white border-b border-slate-200" aria-label="Mobil Navigasyon">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {['home', 'services', 'expertise', 'about', 'contact'].map((tab) => (
-                <button
+                <a
                   key={tab}
-                  onClick={() => nav(tab)}
+                  href={tabToPath[tab] || '/'}
+                  onClick={(e) => { e.preventDefault(); nav(tab); }}
                   className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${activeTab === tab ? 'bg-indigo-50 text-indigo-700' : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'}`}
                 >
                   {tab === 'home' && 'Ana Sayfa'}
@@ -546,7 +548,7 @@ export default function App() {
                   {tab === 'expertise' && 'Sektörel Çözümler'}
                   {tab === 'about' && 'Hakkımızda'}
                   {tab === 'contact' && 'İletişim'}
-                </button>
+                </a>
               ))}
             </div>
           </nav>
@@ -691,10 +693,10 @@ function HomeView({ nav }) {
         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
           DZY Yazılım Danışma ile fikirlerinizi yüksek performanslı mobil uygulamalara, gerçek zamanlı takip panellerine ve güvenli bulut mimarilerine dönüştürün.
         </p>
-        <button onClick={() => nav('contact')} className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-slate-900 rounded-xl hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-200">
+        <a href="/iletisim" onClick={(e) => { e.preventDefault(); nav('contact'); }} className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-slate-900 rounded-xl hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-200">
           Projenizi Anlatın
-          <ChevronRight className="w-5 h-5 ml-2" />
-        </button>
+          <ChevronRight className="w-5 h-5 ml-2" aria-hidden="true" />
+        </a>
       </div>
 
       <div className="bg-slate-900 rounded-3xl p-8 md:p-12 shadow-xl border border-slate-800 text-white">
@@ -789,10 +791,10 @@ function ExpertiseView({ nav }) {
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">{item.desc}</p>
-              <button onClick={() => nav(item.route)} className="inline-flex items-center px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700">
+              <a href={tabToPath[item.route] || '/'} onClick={(e) => { e.preventDefault(); nav(item.route); }} className="inline-flex items-center px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700">
                 Daha Fazla Bilgi Al
-                <ChevronRight className="w-4 h-4 ml-2" />
-              </button>
+                <ChevronRight className="w-4 h-4 ml-2" aria-hidden="true" />
+              </a>
             </div>
           </div>
         ))}
@@ -805,15 +807,94 @@ function SectorLandingView({ tab, nav }) {
   const sector = sectorPages[tab];
   if (!sector) return null;
 
+  const getSectorDetails = () => {
+    switch (tab) {
+      case 'sector-logistics':
+        return {
+          desc: "Küresel taşımacılık, araç lojistiği ve akıllı filo yönetimi süreçlerini kolaylaştırmak için özel yazılımlar tasarlıyoruz. GPS tabanlı canlı veri entegrasyonu, yakıt ve sürücü performansı analizi ile lojistik maliyetlerinizi düşürürken operasyonel hızınızı en üst seviyeye çıkarıyoruz.",
+          features: [
+            { title: "Akıllı Rota Planlama & Optimizasyon", detail: "Yapay zeka destekli algoritmalarla yakıt tüketimini ve teslimat sürelerini en aza indirgeyen rotalar oluşturun." },
+            { title: "Gerçek Zamanlı GPS & Telemetri Entegrasyonu", detail: "Araç konumu, hız limitleri ve duraklama sürelerini canlı haritalar üzerinden saniye saniye izleyin." },
+            { title: "Gümrük ve İrsaliye Belge Akış Otomasyonu", detail: "Uluslararası taşımacılık için gereken resmi belgeleri, yükleme evraklarını ve faturaları otomatik üretin." },
+            { title: "Sipariş ve Müşteri Bildirim Altyapıları", detail: "Sipariş durumunu müşterilerinize e-posta, SMS veya canlı takip ekranlarıyla otomatik bildirin." }
+          ],
+          cta: "Lojistik Operasyonunuzu Dijitalleştirin"
+        };
+      case 'sector-saas':
+        return {
+          desc: "Kendi yazılım ürününüzü (SaaS) hızlı ve güvenli şekilde pazara sunmanızı sağlayacak uçtan uca altyapıları kuruyoruz. Çoklu kiracılı (multi-tenant) veri mimarisi, güvenli üyelik ve global abonelik modelleriyle projenizi sıfırdan ölçeklenebilir bir iş modeline dönüştürüyoruz.",
+          features: [
+            { title: "Güvenli Çoklu Kiracı Yapısı", detail: "Müşterilerinizin verilerini tamamen izole ederek, bağımsız erişim ve yüksek güvenlik standartları sunun." },
+            { title: "Abonelik ve Yinelenen Ödeme Entegrasyonu", detail: "Stripe ve Iyzico entegrasyonları ile aylık/yıllık üyelikler, faturalandırma ve cüzdan yapıları oluşturun." },
+            { title: "Satır Bazlı Güvenlik (Row-Level Security)", detail: "Bulut veritabanınızda (Supabase/PostgreSQL) RLS kuralları ile verilerinizi çekirdek seviyede koruyun." },
+            { title: "MRR / Churn Canlı Raporlama Paneli", detail: "Yönetici panelinde gelir akışınızı, aktif kullanıcı sayılarını ve abonelik kaybı (churn) oranlarını takip edin." }
+          ],
+          cta: "SaaS Girişiminizi Hemen Başlatın"
+        };
+      case 'sector-academic':
+        return {
+          desc: "Akademik kurumlar, müzeler, arşiv merkezleri ve laboratuvarlar için hassas verilerin, bilimsel envanterlerin ve dijital belgelerin güvenli saklanması ve filtrelenmesini sağlayan arşiv sistemleri tasarlıyoruz. Dublin Core ve KVKK uyumlu altyapılar ile verilerinizi geleceğe taşıyoruz.",
+          features: [
+            { title: "KVKK & GDPR Uyumlu Veri Arşivleme", detail: "Hassas bilimsel verileri, arkeolojik kayıtları veya numune envanterlerini uluslararası standartlarda koruyun." },
+            { title: "Gelişmiş Arama ve Filtreleme Motoru", detail: "Milyonlarca dijital dosya ve veri kaydı arasından saniyeler içinde kategori, tarih ve parametre bazlı arama yapın." },
+            { title: "Hiyerarşik Rol & Yetki Yönetimi", detail: "Ziyaretçiler, araştırmacılar ve kurum personelleri için farklı seviyelerde dosya indirme/görüntüleme yetkileri atayın." },
+            { title: "Uluslararası Akademik Entegrasyonlar", detail: "Dublin Core, OAI-PMH gibi standartlarla uyumlu veri paylaşım kanalları (API) kurgulayın." }
+          ],
+          cta: "Arşivinizi Dijital Dünyaya Taşıyın"
+        };
+      default:
+        return null;
+    }
+  };
+
+  const details = getSectorDetails();
+
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 p-10">
-      <button onClick={() => nav('expertise')} className="inline-flex items-center text-indigo-600 font-semibold mb-8">
-        <ArrowLeft className="w-4 h-4 mr-2" /> Sektörel Çözümlere Dön
-      </button>
-      <h1 className="text-4xl font-extrabold text-slate-900 mb-4">{sector.title}</h1>
-      <p className="text-lg text-slate-600 mb-8">{sector.subtitle}</p>
-      <div className="rounded-2xl bg-slate-50 border border-slate-200 p-6">
-        <p className="text-slate-700 leading-relaxed">Bu sayfa SEO ve dönüşüm odaklı ayrı landing yapısının bir parçası olarak hazırlandı. İçeriği sektörün ihtiyaçlarına göre derinleştirip formu da bu sektöre özel hale getirebiliriz.</p>
+    <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-sm animate-in fade-in duration-500">
+      <a href="/sektorel-cozumler" onClick={(e) => { e.preventDefault(); nav('expertise'); }} className="inline-flex items-center text-indigo-600 font-semibold mb-8 hover:text-indigo-800 transition-colors">
+        <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Sektörel Çözümlere Dön
+      </a>
+      
+      <div className="space-y-8">
+        <div>
+          <h1 className="text-4xl font-extrabold text-slate-900 mb-4 leading-tight">{sector.title}</h1>
+          <p className="text-xl text-slate-600 font-medium leading-relaxed">{sector.subtitle}</p>
+        </div>
+
+        {details && (
+          <>
+            <div className="prose prose-slate max-w-none">
+              <p className="text-lg text-slate-700 leading-relaxed">{details.desc}</p>
+            </div>
+
+            <div className="pt-6 border-t border-slate-100">
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">Öne Çıkan Özellikler</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {details.features.map((feat, i) => (
+                  <div key={i} className="p-5 bg-slate-50 rounded-2xl border border-slate-200 hover:border-indigo-200 transition-all">
+                    <h3 className="font-bold text-slate-900 mb-2 flex items-center">
+                      <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 mr-2.5"></span>
+                      {feat.title}
+                    </h3>
+                    <p className="text-sm text-slate-600 leading-relaxed">{feat.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-10 p-8 rounded-3xl bg-indigo-900 text-white text-center shadow-lg relative overflow-hidden">
+              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
+              <div className="relative z-10 space-y-6">
+                <h3 className="text-2xl font-bold">Projeniz İçin Teknik Mimari Analizi Alın</h3>
+                <p className="text-indigo-200 max-w-2xl mx-auto">Sektörünüze özel yazılım gereksinimleriniz için 48 saat içinde ücretsiz teknik ön analiz raporu hazırlayalım.</p>
+                <a href="/iletisim" onClick={(e) => { e.preventDefault(); nav('contact'); }} className="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold text-indigo-900 bg-white rounded-xl hover:bg-indigo-50 transition-all hover:shadow-md">
+                  {details.cta}
+                  <ChevronRight className="w-5 h-5 ml-2" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
