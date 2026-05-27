@@ -214,44 +214,58 @@ const seoData = {
     description: 'DZY Yazılım Danışma ile işletmeniz için özel web/mobil uygulamalar, canlı takip panelleri, güvenli bulut ve IoT entegrasyonları geliştirin. Yeni nesil teknoloji danışmanlığı.',
     keywords: 'yazılım danışmanlığı, özel yazılım geliştirme, mobil uygulama, web tasarım, bulut sistemleri, iot entegrasyonu, saas yazılımları, izmir yazılım firması, dzy digital',
     path: '/',
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Projenin kaynak kodları bize mi ait olacak?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Eski sistemimizdeki veriler kaybolmadan yeni sisteme geçebilir miyiz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet. Migration süreçlerinde veri kaybı olmaması için kontrollü geçiş planı uygularız."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Proje bittikten sonra teknik destek ve bakım veriyor musunuz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet. İsteğe bağlı SLA bakım paketleri ile canlı sisteminizin güvenli ve güncel kalmasını sağlarız."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Hazır paket yazılımlar (Wordpress, Wix vb.) kullanıyor musunuz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kurumsal projelerde genellikle özel (custom) geliştirme yapıyoruz; böylece performans ve ölçeklenebilirlik artıyor."
-          }
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DZY Yazılım Danışmanlığı",
+        "url": "https://www.dzydigital.com",
+        "logo": "https://www.dzydigital.com/og-image.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+90-555-208-3092",
+          "contactType": "customer service"
         }
-      ]
-    }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Projenin kaynak kodları bize mi ait olacak?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Eski sistemimizdeki veriler kaybolmadan yeni sisteme geçebilir miyiz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Migration süreçlerinde veri kaybı olmaması için kontrollü geçiş planı uygularız."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Proje bittikten sonra teknik destek ve bakım veriyor musunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. İsteğe bağlı SLA bakım paketleri ile canlı sisteminizin güvenli ve güncel kalmasını sağlarız."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hazır paket yazılımlar (Wordpress, Wix vb.) kullanıyor musunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kurumsal projelerde genellikle özel (custom) geliştirme yapıyoruz; böylece performans ve ölçeklenebilirlik artıyor."
+            }
+          }
+        ]
+      }
+    ]
   },
   services: {
     title: 'Hizmetlerimiz | Web, Mobil, Bulut ve Özel Otomasyon Geliştirme - DZY Digital',
@@ -294,58 +308,97 @@ const seoData = {
   expertise: {
     title: 'Sektörel Yazılım Çözümleri | Lojistik, SaaS ve Akademik Sistemler - DZY Digital',
     description: 'Otomotiv, lojistik bilişimi, akademik dijital arşivler ve SaaS modelleri gibi dikey sektörler için geliştirdiğimiz özel analitik ve operasyonel çözümler.',
-    keywords: 'lojistik yazılımları, filo yönetimi, akademik arşiv sistemleri, saas platform geliştirme, sektörel yazılımlar',
-    path: '/sektorel-cozumler'
+    keywords: 'lojistik yazılımları, filo yönetimi, akademik arşiv sistemleri, saas platform geliştirme, sektörel yazılımlar, b2b yazılım entegrasyonu, erp çözümleri',
+    path: '/sektorel-cozumler',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Sektörel Dijital Dönüşüm Çözümleri",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Lojistik ve Filo Yönetimi" },
+        { "@type": "ListItem", "position": 2, "name": "SaaS Platformları" },
+        { "@type": "ListItem", "position": 3, "name": "Akademik Dijital Arşiv Sistemleri" }
+      ]
+    }
   },
   about: {
-    title: 'Hakkımızda | Yeni Nesil Teknoloji Danışmanlığı - DZY Digital',
-    description: 'Teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyor, yazılımı uçtan uca mühendislik disipliniyle kurguluyoruz. Süreçlerimiz ve vizyonumuz.',
-    keywords: 'dzy yazılım kimdir, yazılım danışmanlığı izmir, yazılım geliştirme süreçleri, cto modelleri',
-    path: '/hakkimizda'
+    title: 'Hakkımızda | Kurumsal Teknoloji Vizyonu - DZY Digital',
+    description: 'Teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyor, yazılımı uçtan uca mühendislik disipliniyle kurguluyoruz. DZY Digital süreçlerimiz.',
+    keywords: 'dzy digital kimdir, kurumsal yazılım danışmanlığı, izmir yazılım ajansı, cto danışmanlığı, dijital dönüşüm uzmanı, teknoloji danışmanı',
+    path: '/hakkimizda',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "DZY Digital Hakkında",
+      "description": "Yeni nesil teknoloji danışmanlığı ve yazılım mühendisliği vizyonu."
+    }
   },
   contact: {
     title: 'İletişim | Projenizi Başlatın ve Teknoloji Danışmanlığı Alın - DZY Digital',
     description: 'DZY Digital İzmir operasyon merkezi iletişim bilgileri. Formu doldurarak projenizi anlatın, 24 saat içinde ücretsiz teknik ön analiz alın.',
     keywords: 'yazılım teklifi al, izmir yazılım iletişim, dzy digital telefon, yazılım firması adres',
     path: '/iletisim',
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Projenin kaynak kodları bize mi ait olacak?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir."
-          }
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "DZY Digital - Yazılım Danışmanlığı",
+        "image": "https://www.dzydigital.com/og-image.png",
+        "telephone": "+90-555-208-3092",
+        "email": "info@dzydigital.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "270/4 sokak no 29",
+          "addressLocality": "Buca",
+          "addressRegion": "İzmir",
+          "postalCode": "35390",
+          "addressCountry": "TR"
         },
-        {
-          "@type": "Question",
-          "name": "Eski sistemimizdeki veriler kaybolmadan yeni sisteme geçebilir miyiz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet. Migration süreçlerinde veri kaybı olmaması için kontrollü geçiş planı uygularız."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Proje bittikten sonra teknik destek ve bakım veriyor musunuz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet. İsteğe bağlı SLA bakım paketleri ile canlı sisteminizin güvenli ve güncel kalmasını sağlarız."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Hazır paket yazılımlar (Wordpress, Wix vb.) kullanıyor musunuz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kurumsal projelerde genellikle özel (custom) geliştirme yapıyoruz; böylece performans ve ölçeklenebilirlik artıyor."
-          }
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "38.3850",
+          "longitude": "27.1720"
         }
-      ]
-    }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Projenin kaynak kodları bize mi ait olacak?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Eski sistemimizdeki veriler kaybolmadan yeni sisteme geçebilir miyiz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Migration süreçlerinde veri kaybı olmaması için kontrollü geçiş planı uygularız."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Proje bittikten sonra teknik destek ve bakım veriyor musunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. İsteğe bağlı SLA bakım paketleri ile canlı sisteminizin güvenli ve güncel kalmasını sağlarız."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hazır paket yazılımlar (Wordpress, Wix vb.) kullanıyor musunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kurumsal projelerde genellikle özel (custom) geliştirme yapıyoruz; böylece performans ve ölçeklenebilirlik artıyor."
+            }
+          }
+        ]
+      }
+    ]
   },
   'sector-logistics': {
     title: 'Lojistik ve Filo Yönetimi Çözümleri | DZY Digital',
@@ -654,18 +707,48 @@ export default function App() {
         </AnimatePresence>
       </main>
 
-      <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
+      <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800" itemScope itemType="https://schema.org/LocalBusiness">
+        <meta itemProp="name" content="DZY Digital - Yazılım Danışmanlığı" />
+        <meta itemProp="image" content="https://www.dzydigital.com/og-image.png" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div className="mb-8 md:mb-0">
             <button
               onClick={() => setIsAdminOpen(true)}
-              className="text-2xl font-extrabold tracking-tighter text-white lowercase hover:text-indigo-300 transition-colors"
+              className="text-2xl font-extrabold tracking-tighter text-white lowercase hover:text-indigo-300 transition-colors block mb-4"
             >
               dzy<span className="text-emerald-500">.</span>
             </button>
-            <p className="text-sm mt-2">Yazılımdan Fazlası. Yeni Nesil Teknoloji Danışmanlığı.</p>
+            <p className="text-sm mb-4 max-w-sm">Yazılımdan Fazlası. Yeni Nesil Teknoloji Danışmanlığı ve Kurumsal Dijital Dönüşüm Merkezi.</p>
+            
+            <div className="flex flex-col space-y-2 text-sm text-slate-300">
+              <div className="flex items-start space-x-2">
+                <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-indigo-400" />
+                <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                  <span itemProp="streetAddress">270/4 sokak no 29</span>, 
+                  <span itemProp="addressLocality"> Buca</span>, 
+                  <span itemProp="addressRegion"> İzmir</span>, 
+                  <span itemProp="postalCode"> 35390</span>, 
+                  <span itemProp="addressCountry"> TR</span>
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="w-4 h-4 text-indigo-400" />
+                <a href="tel:+905552083092" className="hover:text-white transition-colors" itemProp="telephone">+90 (555) 208 30 92</a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="w-4 h-4 text-indigo-400" />
+                <a href="mailto:info@dzydigital.com" className="hover:text-white transition-colors" itemProp="email">info@dzydigital.com</a>
+              </div>
+            </div>
           </div>
-          <div className="text-sm">&copy; {new Date().getFullYear()} DZY Yazılım Danışma. Tüm Hakları Saklıdır.</div>
+
+          <div className="flex flex-col items-start md:items-end space-y-4">
+            <div className="flex space-x-4">
+              <a href="https://www.instagram.com/dzydigital" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
+              <a href="https://www.linkedin.com/company/dzy-digital" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+            <div className="text-sm text-slate-500">&copy; {new Date().getFullYear()} DZY Digital. Tüm Hakları Saklıdır.</div>
+          </div>
         </div>
       </footer>
 

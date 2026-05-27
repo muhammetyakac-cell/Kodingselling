@@ -113,5 +113,47 @@ export const blogPosts = [
         <p class="text-lg text-indigo-900 font-semibold m-0">Bir KOBİ veya kurumsal işletmeyseniz, teknolojiye yaptığınız yatırımın size tasarruf ve yeni müşteri olarak geri dönmesi en büyük hedeftir. Bu vaka analizi, doğru bir yazılım danışmanlık süreciyle bunun nasıl mümkün olduğunu göstermektedir.</p>
       </div>
     `
+  },
+  {
+    id: 4,
+    slug: 'kurumsal-dijital-donusum-rehberi',
+    title: 'Kurumsal Dijital Dönüşüm Rehberi (Pillar): 2026 ve Sonrası İçin Kapsamlı Mimari Yol Haritası',
+    category: 'Dijital Dönüşüm',
+    date: '28 Mayıs 2026',
+    readTime: '15 dk okuma',
+    excerpt: 'İşletmeler için A\'dan Z\'ye dijital dönüşüm süreçleri, yazılım mimarisi seçimleri, bulut stratejileri ve teknoloji danışmanlığının önemi üzerine devasa bir başucu rehberi.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Kurumsal Dijital Dönüşüm Rehberi: 2026 ve Sonrası İçin Kapsamlı Yol Haritası</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital dönüşüm (Digital Transformation), son on yılın en popüler ancak en çok yanlış anlaşılan kavramlarından biridir. Çoğu şirket için dijital dönüşüm, süreçleri "kağıttan ekrana" aktarmak veya hazır bir CRM yazılımı satın almak olarak algılanır. Oysa gerçek dönüşüm, teknoloji odaklı bir strateji ile iş modellerinin, kültürün ve müşteri deneyiminin yeniden yaratılmasıdır.</p>
+      
+      <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-xl mb-10">
+        <p class="text-lg text-indigo-900 font-medium m-0">Bu kapsamlı rehberde, DZY Digital'in yıllara yayılan danışmanlık ve mühendislik tecrübelerini harmanlayarak, bir işletmenin dijital dönüşüm sürecinde geçmesi gereken fazları, yapılması ve yapılmaması gerekenleri inceleyeceğiz.</p>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Bölüm 1: Dijital Dönüşüm Nedir ve Ne Değildir?</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Dijitalleşme (Digitization), verilerin dijital ortama aktarılmasıdır (Faturanın PDF yapılması). Dijitalleşme (Digitalization), mevcut süreçlerin yazılımlarla yürütülmesidir. Dijital Dönüşüm ise teknolojinin yardımıyla tamamen yeni değer teklifleri ve gelir modelleri oluşturmaktır.</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Dönüşüm Ne Değildir?</strong> Sadece web sitesi yenilemek, sosyal medyada hesap açmak veya Excel'den hazır bir bulut paketine geçmek değildir.</li>
+        <li><strong>Dönüşüm Nedir?</strong> Müşterinize sunduğunuz hizmetin veya ürünün, arka plandaki tüm lojistik, finans ve operasyonel verilerle anlık (real-time) konuşarak optimize edilmesidir.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Bölüm 2: Yazılım Mimarisi (Software Architecture) Seçimleri</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">KOBİ'lerin ve holdinglerin en çok zorlandığı nokta "Hangi altyapıyı seçeceğiz?" sorusudur. Monolitik mimari mi, Mikroservisler mi? Yoksa Serverless (Sunucusuz) mimari mi?</p>
+      
+      <h3 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Hazır Paket (COTS) vs Özel Yazılım (Custom Development)</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">İşletmenizin standart operasyonları (temel muhasebe vb.) için hazır paketler yeterli olabilir. Ancak rekabet avantajı sağladığınız "çekirdek işiniz" için <strong>Özel Yazılım</strong> geliştirilmelidir. Sizinle aynı paket programı kullanan yüzlerce rakibiniz varken nasıl fark yaratacaksınız? DZY Digital, size özel iş akışlarını ölçeklenebilir bulut mimarisinde inşa eder.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Bölüm 3: Bulut Teknolojileri ve Veri Güvenliği</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Sistemlerin on-premise (fiziksel sunucu) üzerinde tutulması artık güvenlik ve maliyet açısından mantıklı değildir. AWS, Google Cloud veya Azure gibi Public Cloud yapılarına geçiş, "Cloud-Native" (Doğuştan Bulut) mimarisiyle yapılmalıdır.</p>
+      
+      <h3 class="text-2xl font-bold text-slate-900 mt-8 mb-4">RLS (Row Level Security) Kavramı</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bir personelin, sadece kendi yetkisindeki müşterilerin verilerini görebilmesini sağlayan bu veritabanı seviyesi güvenlik önlemi (RLS), modern sistemlerin vazgeçilmezidir. Uygulama tarafında (Frontend) yapılan güvenlik kontrolleri kolayca aşılabilir, güvenlik doğrudan veritabanı seviyesinde çözülmelidir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Bölüm 4: CTO as a Service (Dışarıdan Teknoloji Yöneticisi)</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Her şirketin tam zamanlı ve oldukça yüksek maaşlı bir CTO (Chief Technology Officer) barındırması mümkün veya mantıklı olmayabilir. DZY Digital'in sunduğu dışarıdan teknoloji yönetimi modeliyle, projenizin teknolojik vizyonunu, mimari seçimlerini ve ekibin kod kalitesini bağımsız bir denetçi olarak biz üstleniyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuç: Geleceğe Yatırım Yapın</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Doğru dijital dönüşüm bir "gider" değil, işletmenizin piyasa değerini artıran "en güçlü varlığı"dır (Asset). Süreç analizi yapılmadan yazılan her satır kod, ileride "Teknik Borç" (Technical Debt) olarak size faiziyle geri dönecektir. Vizyonu yüksek bir yazılım partneriyle yola çıkmak en önemli ilk adımdır.</p>
+    `
   }
 ];
