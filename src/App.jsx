@@ -203,6 +203,222 @@ function Activity(props) {
   return <LineChart {...props} />;
 }
 
+const seoData = {
+  home: {
+    title: 'DZY Digital | Akıllı, Güvenli ve Ölçeklenebilir Yazılım Çözümleri',
+    description: 'DZY Yazılım Danışma ile işletmeniz için özel web/mobil uygulamalar, canlı takip panelleri, güvenli bulut ve IoT entegrasyonları geliştirin. Yeni nesil teknoloji danışmanlığı.',
+    keywords: 'yazılım danışmanlığı, özel yazılım geliştirme, mobil uygulama, web tasarım, bulut sistemleri, iot entegrasyonu, saas yazılımları, izmir yazılım firması, dzy digital',
+    path: '/',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Projenin kaynak kodları bize mi ait olacak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Eski sistemimizdeki veriler kaybolmadan yeni sisteme geçebilir miyiz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Migration süreçlerinde veri kaybı olmaması için kontrollü geçiş planı uygularız."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proje bittikten sonra teknik destek ve bakım veriyor musunuz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. İsteğe bağlı SLA bakım paketleri ile canlı sisteminizin güvenli ve güncel kalmasını sağlarız."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hazır paket yazılımlar (Wordpress, Wix vb.) kullanıyor musunuz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kurumsal projelerde genellikle özel (custom) geliştirme yapıyoruz; böylece performans ve ölçeklenebilirlik artıyor."
+          }
+        }
+      ]
+    }
+  },
+  services: {
+    title: 'Hizmetlerimiz | Web, Mobil, Bulut ve Özel Otomasyon Geliştirme - DZY Digital',
+    description: 'Mobil/web uygulamaları, ödeme sistemleri, yönetim panelleri, veri güvenliği ve ERP/CRM entegrasyonları dahil geniş hizmet yelpazemizi inceleyin.',
+    keywords: 'yazılım hizmetleri, mobil uygulama geliştirme, sanal pos entegrasyonu, veri güvenliği, legacy sistem yenileme, cto danışmanlığı, saas geliştirme, seo optimizasyonu',
+    path: '/hizmetler',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "DZY Digital Hizmetleri",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Mobil ve Web Uygulamaları"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ödeme ve Tahsilat Sistemleri"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Canlı Takip ve Yönetim Panelleri"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Üst Düzey Veri Güvenliği"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Akıllı Cihaz ve Sensör Entegrasyonu"
+        }
+      ]
+    }
+  },
+  expertise: {
+    title: 'Sektörel Yazılım Çözümleri | Lojistik, SaaS ve Akademik Sistemler - DZY Digital',
+    description: 'Otomotiv, lojistik bilişimi, akademik dijital arşivler ve SaaS modelleri gibi dikey sektörler için geliştirdiğimiz özel analitik ve operasyonel çözümler.',
+    keywords: 'lojistik yazılımları, filo yönetimi, akademik arşiv sistemleri, saas platform geliştirme, sektörel yazılımlar',
+    path: '/sektorel-cozumler'
+  },
+  about: {
+    title: 'Hakkımızda | Yeni Nesil Teknoloji Danışmanlığı - DZY Digital',
+    description: 'Teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyor, yazılımı uçtan uca mühendislik disipliniyle kurguluyoruz. Süreçlerimiz ve vizyonumuz.',
+    keywords: 'dzy yazılım kimdir, yazılım danışmanlığı izmir, yazılım geliştirme süreçleri, cto modelleri',
+    path: '/hakkimizda'
+  },
+  contact: {
+    title: 'İletişim | Projenizi Başlatın ve Teknoloji Danışmanlığı Alın - DZY Digital',
+    description: 'DZY Digital İzmir operasyon merkezi iletişim bilgileri. Formu doldurarak projenizi anlatın, 24 saat içinde ücretsiz teknik ön analiz alın.',
+    keywords: 'yazılım teklifi al, izmir yazılım iletişim, dzy digital telefon, yazılım firması adres',
+    path: '/iletisim',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Projenin kaynak kodları bize mi ait olacak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Eski sistemimizdeki veriler kaybolmadan yeni sisteme geçebilir miyiz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Migration süreçlerinde veri kaybı olmaması için kontrollü geçiş planı uygularız."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proje bittikten sonra teknik destek ve bakım veriyor musunuz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. İsteğe bağlı SLA bakım paketleri ile canlı sisteminizin güvenli ve güncel kalmasını sağlarız."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hazır paket yazılımlar (Wordpress, Wix vb.) kullanıyor musunuz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kurumsal projelerde genellikle özel (custom) geliştirme yapıyoruz; böylece performans ve ölçeklenebilirlik artıyor."
+          }
+        }
+      ]
+    }
+  },
+  'sector-logistics': {
+    title: 'Lojistik ve Filo Yönetimi Çözümleri | DZY Digital',
+    description: 'Uluslararası taşımacılık, rota optimizasyonu ve canlı filo takibi için özel platformlar.',
+    keywords: 'lojistik filo yönetimi, araç takip sistemi, rota optimizasyon yazılımı, gümrük belge akışı otomasyonu',
+    path: '/sektor/lojistik'
+  },
+  'sector-saas': {
+    title: 'SaaS ve Platform Ürün Geliştirme | DZY Digital',
+    description: 'Abonelik bazlı ürününüzü hızlıca pazara çıkarmak için ölçeklenebilir SaaS mimarileri.',
+    keywords: 'saas geliştirme, abonelik yazılımı, multi tenant mimari, stripe entegrasyonu, saas altyapısı',
+    path: '/sektor/saas'
+  },
+  'sector-academic': {
+    title: 'Akademik ve Bilimsel Dijital Arşiv Sistemleri | DZY Digital',
+    description: 'Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel çözümler.',
+    keywords: 'akademik veri arşivi, bilimsel envanter yazılımı, dijital kütüphane altyapısı, güvenli veri paylaşımı',
+    path: '/sektor/akademik'
+  }
+};
+
+function SEOManager({ activeTab }) {
+  useEffect(() => {
+    const currentSeo = seoData[activeTab] || seoData.home;
+    const siteUrl = 'https://www.dzydigital.com';
+    const fullUrl = `${siteUrl}${currentSeo.path}`;
+
+    // Update Title
+    document.title = currentSeo.title;
+
+    // Update Meta Description
+    let descMeta = document.querySelector('meta[name="description"]');
+    if (descMeta) descMeta.setAttribute('content', currentSeo.description);
+
+    let ogDescMeta = document.querySelector('meta[property="og:description"]');
+    if (ogDescMeta) ogDescMeta.setAttribute('content', currentSeo.description);
+
+    let twitterDescMeta = document.querySelector('meta[property="twitter:description"]');
+    if (twitterDescMeta) twitterDescMeta.setAttribute('content', currentSeo.description);
+
+    // Update Keywords
+    let keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (keywordsMeta) keywordsMeta.setAttribute('content', currentSeo.keywords);
+
+    // Update Canonical URL
+    let canonicalLink = document.getElementById('canonical-link');
+    if (canonicalLink) canonicalLink.setAttribute('href', fullUrl);
+
+    // Update Open Graph Title & URL
+    let ogTitleMeta = document.querySelector('meta[property="og:title"]');
+    if (ogTitleMeta) ogTitleMeta.setAttribute('content', currentSeo.title);
+
+    let ogUrlMeta = document.querySelector('meta[property="og:url"]');
+    if (ogUrlMeta) ogUrlMeta.setAttribute('content', fullUrl);
+
+    // Update Twitter Title & URL
+    let twitterTitleMeta = document.querySelector('meta[property="twitter:title"]');
+    if (twitterTitleMeta) twitterTitleMeta.setAttribute('content', currentSeo.title);
+
+    let twitterUrlMeta = document.querySelector('meta[property="twitter:url"]');
+    if (twitterUrlMeta) twitterUrlMeta.setAttribute('content', fullUrl);
+
+    // Update Dynamic JSON-LD Schema
+    let dynamicSchemaScript = document.getElementById('dynamic-schema');
+    if (dynamicSchemaScript) {
+      dynamicSchemaScript.textContent = currentSeo.schema ? JSON.stringify(currentSeo.schema) : '';
+    } else if (currentSeo.schema) {
+      const script = document.createElement('script');
+      script.id = 'dynamic-schema';
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(currentSeo.schema);
+      document.head.appendChild(script);
+    }
+  }, [activeTab]);
+
+  return null;
+}
+
 const pathToTab = {
   '/': 'home',
   '/hizmetler': 'services',
@@ -283,7 +499,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-indigo-100 selection:text-indigo-900">
-      <nav className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
+      <SEOManager activeTab={activeTab} />
+      <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center cursor-pointer group" onClick={() => nav('home')}>
@@ -291,7 +508,7 @@ export default function App() {
               <span className="text-4xl text-emerald-500 leading-none">.</span>
             </div>
 
-            <div className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-8" aria-label="Ana Navigasyon">
               {['home', 'services', 'expertise', 'about', 'contact'].map((tab) => (
                 <button
                   key={tab}
@@ -305,10 +522,10 @@ export default function App() {
                   {tab === 'contact' && 'İletişim'}
                 </button>
               ))}
-            </div>
+            </nav>
 
             <div className="md:hidden flex items-center">
-              <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-slate-600 hover:text-slate-900 focus:outline-none">
+              <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Menüyü Aç/Kapat">
                 {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
             </div>
@@ -316,7 +533,7 @@ export default function App() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-b border-slate-200">
+          <nav className="md:hidden bg-white border-b border-slate-200" aria-label="Mobil Navigasyon">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {['home', 'services', 'expertise', 'about', 'contact'].map((tab) => (
                 <button
@@ -332,9 +549,9 @@ export default function App() {
                 </button>
               ))}
             </div>
-          </div>
+          </nav>
         )}
-      </nav>
+      </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">{renderView()}</main>
 
@@ -536,7 +753,7 @@ function ServicesView() {
   return (
     <div className="animate-in fade-in duration-500">
       <div className="max-w-3xl mb-12">
-        <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Hizmetlerimiz</h2>
+        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Hizmetlerimiz</h1>
         <p className="text-xl text-slate-600">İşletmenizi dijitalleştirecek profesyonel hizmetlerimiz.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -562,7 +779,7 @@ function ExpertiseView({ nav }) {
   return (
     <div className="animate-in fade-in duration-500">
       <div className="max-w-3xl mb-12 text-center mx-auto">
-        <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Sektörel Çözümler</h2>
+        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Sektörel Çözümler</h1>
         <p className="text-xl text-slate-600">Niş alanlara yönelik dikey uzmanlık çözümleri.</p>
       </div>
       <div className="space-y-8 max-w-5xl mx-auto">
@@ -614,7 +831,7 @@ function AboutView() {
             <span className="text-2xl font-extrabold text-slate-900 lowercase">dzy<span className="text-emerald-500">.</span></span>
           </div>
           <div className="mt-8">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Farklı Disiplinler, Tek Bir Analitik Yaklaşım.</h2>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Farklı Disiplinler, Tek Bir Analitik Yaklaşım.</h1>
             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
               <p><strong className="text-slate-900">DZY Yazılım Danışma</strong> olarak teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyoruz.</p>
               <p>Yazılımı sadece arayüz değil; veri akışı, güvenlik ve iş mantığını uçtan uca kurgulayan bir mühendislik disiplini olarak ele alıyoruz.</p>
@@ -720,7 +937,7 @@ function ContactView() {
     <div className="animate-in fade-in duration-500 max-w-6xl mx-auto space-y-16">
       <div>
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Operasyonunuzu Bir Üst Seviyeye Taşıyalım.</h2>
+          <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Operasyonunuzu Bir Üst Seviyeye Taşıyalım.</h1>
           <p className="text-xl text-slate-600">Mimari vizyonumuzun projenize nasıl değer katabileceğini konuşalım.</p>
         </div>
 
@@ -832,7 +1049,7 @@ function ContactView() {
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="md:w-1/3">
             <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6"><HelpCircle className="w-7 h-7 text-indigo-600" /></div>
-            <h3 className="text-3xl font-extrabold text-slate-900 mb-4">Aklınıza Takılanlar</h3>
+            <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Aklınıza Takılanlar</h2>
             <p className="text-slate-600 leading-relaxed">Kurumsal proje öncesi en çok sorulan soruları şeffaflıkla cevapladık.</p>
           </div>
           <div className="md:w-2/3 w-full space-y-4">
