@@ -2,6 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { getApiUrl } from './lib/api';
 import { blogPosts } from './blogData';
+import { motion, AnimatePresence } from 'framer-motion';
+import Lenis from 'lenis';
+import { clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 import {
   Rocket, Shield, CreditCard, LayoutTemplate,
   Smartphone, Database, Cpu, Building2, UserCog,
@@ -440,6 +444,10 @@ const pathToTab = {
 
 const tabToPath = Object.fromEntries(Object.entries(pathToTab).map(([k, v]) => [v, k]));
 
+export function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
+
 export default function App() {
   const getTabFromPath = (path) => {
     if (path.startsWith('/blog/')) return 'blog-post';
@@ -461,6 +469,22 @@ export default function App() {
   const [adminChats, setAdminChats] = useState([]);
 
   useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
     const onPopState = () => {
       const path = window.location.pathname;
       setActiveTab(getTabFromPath(path));
@@ -469,7 +493,10 @@ export default function App() {
       }
     };
     window.addEventListener('popstate', onPopState);
-    return () => window.removeEventListener('popstate', onPopState);
+    return () => {
+      window.removeEventListener('popstate', onPopState);
+      lenis.destroy();
+    };
   }, []);
 
   const nav = (tab, slug = null) => {
@@ -535,11 +562,22 @@ export default function App() {
           path: '/blog/' + currentSlug
         } : null} 
       />
-      <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
+      <motion.header 
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="sticky top-0 z-40 w-full glass-panel border-b-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <a href="/" onClick={(e) => { e.preventDefault(); nav('home'); }} className="flex items-center group" aria-label="DZY Anasayfa">
-              <span className="text-3xl font-extrabold tracking-tighter text-slate-900 lowercase group-hover:text-indigo-950 transition-colors">dzy</span>
+              <motion.span 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-3xl font-extrabold tracking-tighter text-slate-900 lowercase group-hover:text-indigo-950 transition-colors"
+              >
+                dzy
+              </motion.span>
               <span className="text-4xl text-emerald-500 leading-none">.</span>
             </a>
 
@@ -549,7 +587,10 @@ export default function App() {
                   key={tab}
                   href={tabToPath[tab] || '/'}
                   onClick={(e) => { e.preventDefault(); nav(tab); }}
-                  className={`text-sm font-medium transition-colors hover:text-indigo-600 ${activeTab === tab || (activeTab === 'blog-post' && tab === 'blog') ? 'text-indigo-600 font-bold' : 'text-slate-600'}`}
+                  className={cn(
+                    "text-sm font-medium transition-all duration-300 hover:text-indigo-600 relative",
+                    activeTab === tab || (activeTab === 'blog-post' && tab === 'blog') ? "text-indigo-600 font-bold" : "text-slate-600"
+                  )}
                 >
                   {tab === 'home' && 'Ana Sayfa'}
                   {tab === 'services' && 'Hizmetlerimiz'}
@@ -557,6 +598,13 @@ export default function App() {
                   {tab === 'about' && 'Hakkımızda'}
                   {tab === 'blog' && 'Bilgi Bankası'}
                   {tab === 'contact' && 'İletişim'}
+                  {(activeTab === tab || (activeTab === 'blog-post' && tab === 'blog')) && (
+                    <motion.div 
+                      layoutId="activeTab"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-indigo-600 rounded-full"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
                 </a>
               ))}
             </nav>
@@ -590,9 +638,21 @@ export default function App() {
             </div>
           </nav>
         )}
-      </header>
+      </motion.header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">{renderView()}</main>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab === 'blog-post' ? `blog-post-${currentSlug}` : activeTab}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {renderView()}
+          </motion.div>
+        </AnimatePresence>
+      </main>
 
       <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
@@ -714,129 +774,232 @@ function AdminPanelModal({
   );
 }
 
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.15 } }
+};
+
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
+};
+
 function HomeView({ nav }) {
   const [expandedBox, setExpandedBox] = useState(null);
 
   return (
-    <div className="space-y-20 animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out">
-      <div className="text-center max-w-4xl mx-auto pt-10 pb-8">
-        <div className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-sm font-semibold mb-6 border border-indigo-100">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
+    <motion.div 
+      variants={staggerContainer}
+      initial="hidden"
+      animate="show"
+      className="space-y-24 relative"
+    >
+      {/* Background Video */}
+      <div className="absolute -top-32 left-[50%] -translate-x-[50%] w-[100vw] h-[900px] z-0 overflow-hidden pointer-events-none" style={{ maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-100"
+        >
+          <source src="/background.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/30 via-slate-50/80 to-slate-50"></div>
+      </div>
+
+      {/* Background Glows */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-96 bg-indigo-400/20 rounded-full blur-[100px] -z-10 mix-blend-multiply animate-blob"></div>
+      <div className="absolute top-40 left-1/4 w-72 h-72 bg-fuchsia-400/20 rounded-full blur-[100px] -z-10 mix-blend-multiply animate-blob" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-40 right-1/4 w-72 h-72 bg-emerald-400/20 rounded-full blur-[100px] -z-10 mix-blend-multiply animate-blob" style={{ animationDelay: '4s' }}></div>
+
+      <div className="text-center max-w-4xl mx-auto pt-20 pb-8 relative z-10">
+        <motion.div variants={fadeUpVariant} className="inline-flex items-center px-4 py-1.5 rounded-full glass-panel text-indigo-800 text-sm font-semibold mb-8 border border-white/40 shadow-sm">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
           Sistemleriniz İçin Yeni Nesil Mimari
-        </div>
-        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
-          Yazılımdan Fazlası:<br className="hidden md:block" /> İşletmeniz İçin <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600">Özel Yazılım ve Dijital Dönüşüm</span> Çözümleri
-        </h1>
-        <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
-          DZY Yazılım Danışmanlığı ile KOBİ'ler ve kurumsal firmalar için yüksek performanslı web ve mobil uygulamalar, gerçek zamanlı paneller ve güvenli bulut mimarileri inşa ediyoruz. Özel yazılım geliştirme danışmanlığı ile süreçlerinizi optimize edin.
-        </p>
-        <a href="/iletisim" onClick={(e) => { e.preventDefault(); nav('contact'); }} className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-slate-900 rounded-xl hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-200">
-          Projenizi Anlatın
-          <ChevronRight className="w-5 h-5 ml-2" aria-hidden="true" />
-        </a>
+        </motion.div>
+        
+        <motion.h1 variants={fadeUpVariant} className="text-5xl md:text-7xl font-extrabold tracking-tighter text-slate-900 mb-6 leading-[1.1]">
+          Yazılımdan Fazlası:<br className="hidden md:block" /> İşletmeniz İçin <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-fuchsia-500 to-indigo-600 bg-300% animate-gradient">Özel Çözümler</span>
+        </motion.h1>
+        
+        <motion.p variants={fadeUpVariant} className="text-xl md:text-2xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto font-medium">
+          DZY Yazılım Danışmanlığı ile KOBİ'ler ve kurumsal firmalar için yüksek performanslı web uygulamaları ve güvenli bulut mimarileri inşa ediyoruz.
+        </motion.p>
+        
+        <motion.div variants={fadeUpVariant}>
+          <motion.a 
+            href="/iletisim" 
+            onClick={(e) => { e.preventDefault(); nav('contact'); }} 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-shadow bg-slate-900 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_40px_rgb(79,70,229,0.4)] relative overflow-hidden group"
+          >
+            <span className="relative z-10 flex items-center">Projenizi Anlatın <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" /></span>
+            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-indigo-600 to-fuchsia-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </motion.a>
+        </motion.div>
       </div>
 
-      <div className="bg-slate-900 rounded-3xl p-8 md:p-12 shadow-xl border border-slate-800 text-white">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-800">
-          <div><div className="text-4xl font-extrabold text-emerald-400 mb-2">%300</div><div className="text-slate-400 text-sm font-medium">Operasyonel Hız Artışı</div></div>
-          <div><div className="text-4xl font-extrabold text-indigo-400 mb-2">Sıfır</div><div className="text-slate-400 text-sm font-medium">Veri Kaybı Riski</div></div>
-          <div><div className="text-4xl font-extrabold text-fuchsia-400 mb-2">7/24</div><div className="text-slate-400 text-sm font-medium">Kesintisiz İzleme</div></div>
-          <div><div className="text-4xl font-extrabold text-amber-400 mb-2">%100</div><div className="text-slate-400 text-sm font-medium">Özel Mülkiyet</div></div>
+      <motion.div variants={fadeUpVariant} className="glass-panel-dark rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-fuchsia-500/10 pointer-events-none"></div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10 relative z-10">
+          <div><div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-emerald-400 to-emerald-600 mb-2">%300</div><div className="text-slate-300 text-sm font-medium">Operasyonel Hız Artışı</div></div>
+          <div><div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-indigo-400 to-indigo-600 mb-2">Sıfır</div><div className="text-slate-300 text-sm font-medium">Veri Kaybı Riski</div></div>
+          <div><div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-fuchsia-400 to-fuchsia-600 mb-2">7/24</div><div className="text-slate-300 text-sm font-medium">Kesintisiz İzleme</div></div>
+          <div><div className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-amber-400 to-amber-600 mb-2">%100</div><div className="text-slate-300 text-sm font-medium">Özel Mülkiyet</div></div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+      <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }} className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
         {homeBoxesData.map((box) => (
-          <div key={box.id} onClick={() => setExpandedBox(expandedBox === box.id ? null : box.id)} className={`bg-white rounded-3xl p-8 shadow-[0_2px_20px_rgba(0,0,0,0.04)] border ${expandedBox === box.id ? 'border-indigo-300 ring-2 ring-indigo-50' : 'border-slate-100 hover:border-indigo-100 hover:-translate-y-1'} transition-all duration-300 cursor-pointer`}>
+          <motion.div 
+            variants={fadeUpVariant}
+            key={box.id} 
+            onClick={() => setExpandedBox(expandedBox === box.id ? null : box.id)} 
+            whileHover={{ y: -5, scale: 1.02 }}
+            className={cn(
+              "glass-panel rounded-3xl p-8 transition-all duration-500 cursor-pointer",
+              expandedBox === box.id ? "ring-2 ring-indigo-500/50 bg-white" : "hover:border-white/50"
+            )}
+          >
             <div className="flex justify-between items-start mb-6">
-              <div className={`w-14 h-14 ${box.bg} rounded-2xl flex items-center justify-center`}>{box.icon}</div>
-              {expandedBox === box.id ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+              <div className={`w-14 h-14 ${box.bg} rounded-2xl flex items-center justify-center shadow-sm`}>{box.icon}</div>
+              <motion.div animate={{ rotate: expandedBox === box.id ? 180 : 0 }} transition={{ type: "spring", stiffness: 200, damping: 20 }}>
+                <ChevronDown className="w-5 h-5 text-slate-400" />
+              </motion.div>
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-3">{box.title}</h3>
             <p className="text-slate-600 leading-relaxed font-medium">{box.desc}</p>
-            <div className={`overflow-hidden transition-all duration-500 ${expandedBox === box.id ? 'max-h-[300px] opacity-100 mt-4 pt-4 border-t border-slate-100' : 'max-h-0 opacity-0'}`}>
-              <p className="text-sm text-slate-500 leading-relaxed">{box.fullDesc}</p>
-            </div>
-          </div>
+            <AnimatePresence>
+              {expandedBox === box.id && (
+                <motion.div 
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="overflow-hidden"
+                >
+                  <p className="text-sm text-slate-500 leading-relaxed mt-4 pt-4 border-t border-slate-100">{box.fullDesc}</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      <div className="pt-10 border-t border-slate-200">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Üstün Teknoloji Yığınımız</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">Sistemlerinizi geleceğe hazırlamak için en güvenilir altyapıları kullanıyoruz.</p>
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} className="pt-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-4">Üstün Teknoloji Yığınımız</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto text-lg">Sistemlerinizi geleceğe hazırlamak için en güvenilir modern mimarileri kullanıyoruz.</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }} className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <TechCard icon={<Code2 className="w-8 h-8 text-indigo-500 mb-3" />} title="Modern Frontend" subtitle="React, Next.js, Tailwind" />
           <TechCard icon={<Server className="w-8 h-8 text-emerald-500 mb-3" />} title="Güçlü Backend" subtitle="Node.js, TypeScript, Python" />
           <TechCard icon={<Database className="w-8 h-8 text-fuchsia-500 mb-3" />} title="Bulut Veritabanı" subtitle="Supabase, PostgreSQL, Redis" />
           <TechCard icon={<Cloud className="w-8 h-8 text-amber-500 mb-3" />} title="DevOps & AI" subtitle="AWS, Docker, OpenAI" />
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
 
 function TechCard({ icon, title, subtitle }) {
   return (
-    <div className="bg-white p-6 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-center hover:border-indigo-300 transition-colors">
-      {icon}
+    <motion.div 
+      variants={fadeUpVariant}
+      whileHover={{ y: -5, scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="glass-panel p-6 rounded-3xl flex flex-col items-center justify-center text-center cursor-default group"
+    >
+      <div className="group-hover:scale-110 transition-transform duration-300 ease-[0.22,1,0.36,1]">
+        {icon}
+      </div>
       <h4 className="font-bold text-slate-900">{title}</h4>
-      <p className="text-xs text-slate-500 mt-1">{subtitle}</p>
-    </div>
+      <p className="text-sm text-slate-500 mt-1">{subtitle}</p>
+    </motion.div>
   );
 }
 
 function ServicesView() {
   const [expandedService, setExpandedService] = useState(null);
   return (
-    <div className="animate-in fade-in duration-500">
-      <div className="max-w-3xl mb-12">
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-7xl mx-auto">
+      <motion.div variants={fadeUpVariant} className="max-w-3xl mb-12">
         <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Profesyonel Yazılım Danışmanlığı Hizmetleri</h1>
         <p className="text-xl text-slate-600">İşletmenizi dijitalleştirecek özel yazılım geliştirme, bulut mimarisi ve dijital dönüşüm danışmanlığı çözümlerimiz.</p>
-      </div>
+      </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {servicesData.map((service, idx) => (
-          <div key={idx} onClick={() => setExpandedService(expandedService === idx ? null : idx)} className={`bg-white p-6 rounded-2xl shadow-sm border ${expandedService === idx ? 'border-indigo-400 shadow-md ring-4 ring-indigo-50/50' : 'border-slate-200 hover:shadow-md hover:border-indigo-200'} transition-all cursor-pointer`}>
+          <motion.div 
+            variants={fadeUpVariant}
+            whileHover={{ y: -5, scale: 1.02 }}
+            key={idx} 
+            onClick={() => setExpandedService(expandedService === idx ? null : idx)} 
+            className={cn(
+              "glass-panel p-6 rounded-3xl cursor-pointer transition-all duration-500",
+              expandedService === idx ? "ring-2 ring-indigo-500/50 bg-white" : "hover:border-white/50"
+            )}
+          >
             <div className="flex justify-between items-start mb-4">
-              <div className="p-3 bg-slate-50 rounded-xl inline-block">{service.icon}</div>
-              {expandedService === idx ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+              <div className="p-3 bg-indigo-50 rounded-2xl inline-block shadow-sm">{service.icon}</div>
+              <motion.div animate={{ rotate: expandedService === idx ? 180 : 0 }} transition={{ type: "spring", stiffness: 200, damping: 20 }}>
+                <ChevronDown className="w-5 h-5 text-slate-400" />
+              </motion.div>
             </div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
-            <p className={`text-sm leading-relaxed ${expandedService === idx ? 'text-slate-900 font-semibold' : 'text-slate-600'}`}>{service.desc}</p>
-            <div className={`transition-all overflow-hidden ${expandedService === idx ? 'max-h-[340px] opacity-100 mt-4 pt-4 border-t border-slate-100' : 'max-h-0 opacity-0'}`}>
-              <p className="text-sm text-slate-600 leading-relaxed">{service.fullDesc}</p>
-            </div>
-          </div>
+            <p className={cn("text-sm leading-relaxed", expandedService === idx ? "text-slate-900 font-semibold" : "text-slate-600")}>{service.desc}</p>
+            <AnimatePresence>
+              {expandedService === idx && (
+                <motion.div 
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="overflow-hidden"
+                >
+                  <p className="text-sm text-slate-600 leading-relaxed mt-4 pt-4 border-t border-slate-100">{service.fullDesc}</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
 function ExpertiseView({ nav }) {
   return (
-    <div className="animate-in fade-in duration-500">
-      <div className="max-w-3xl mb-12 text-center mx-auto">
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-7xl mx-auto">
+      <motion.div variants={fadeUpVariant} className="max-w-3xl mb-12 text-center mx-auto">
         <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Sektörel Yazılım Çözümleri</h1>
         <p className="text-xl text-slate-600">Lojistik, SaaS ve Akademi gibi niş alanlara yönelik uçtan uca özel yazılım ve entegrasyon çözümleri.</p>
-      </div>
+      </motion.div>
       <div className="space-y-8 max-w-5xl mx-auto">
         {expertiseData.map((item, idx) => (
-          <div key={idx} className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-slate-200 flex flex-col md:flex-row gap-8 items-start hover:shadow-lg transition-shadow">
-            <div className="flex-shrink-0 p-5 bg-slate-50 rounded-2xl border border-slate-100">{item.icon}</div>
+          <motion.div 
+            variants={fadeUpVariant}
+            key={idx} 
+            className="glass-panel rounded-3xl p-8 md:p-10 flex flex-col md:flex-row gap-8 items-start hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all"
+          >
+            <div className="flex-shrink-0 p-5 bg-indigo-50/50 rounded-2xl border border-indigo-100/50 shadow-sm">{item.icon}</div>
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">{item.desc}</p>
-              <a href={tabToPath[item.route] || '/'} onClick={(e) => { e.preventDefault(); nav(item.route); }} className="inline-flex items-center px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700">
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href={tabToPath[item.route] || '/'} 
+                onClick={(e) => { e.preventDefault(); nav(item.route); }} 
+                className="inline-flex items-center px-6 py-3 rounded-xl bg-slate-900 text-white font-bold hover:bg-indigo-600 transition-colors shadow-sm"
+              >
                 Daha Fazla Bilgi Al
-                <ChevronRight className="w-4 h-4 ml-2" aria-hidden="true" />
-              </a>
+                <ChevronRight className="w-5 h-5 ml-2" aria-hidden="true" />
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -887,7 +1050,7 @@ function SectorLandingView({ tab, nav }) {
   const details = getSectorDetails();
 
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-sm animate-in fade-in duration-500">
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-4xl mx-auto glass-panel rounded-3xl p-8 md:p-12">
       <a href="/sektorel-cozumler" onClick={(e) => { e.preventDefault(); nav('expertise'); }} className="inline-flex items-center text-indigo-600 font-semibold mb-8 hover:text-indigo-800 transition-colors">
         <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Sektörel Çözümlere Dön
       </a>
@@ -904,17 +1067,17 @@ function SectorLandingView({ tab, nav }) {
               <p className="text-lg text-slate-700 leading-relaxed">{details.desc}</p>
             </div>
 
-            <div className="pt-6 border-t border-slate-100">
+            <div className="pt-6 border-t border-slate-100/50">
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Öne Çıkan Özellikler</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {details.features.map((feat, i) => (
-                  <div key={i} className="p-5 bg-slate-50 rounded-2xl border border-slate-200 hover:border-indigo-200 transition-all">
+                  <motion.div variants={fadeUpVariant} whileHover={{ y: -5 }} key={i} className="p-5 bg-white/50 backdrop-blur-sm rounded-2xl border border-slate-200 hover:border-indigo-300 transition-all shadow-sm">
                     <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                      <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 mr-2.5"></span>
+                      <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 mr-2.5 shadow-[0_0_8px_rgba(99,102,241,0.6)]"></span>
                       {feat.title}
                     </h3>
                     <p className="text-sm text-slate-600 leading-relaxed">{feat.detail}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -933,14 +1096,14 @@ function SectorLandingView({ tab, nav }) {
           </>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
 function AboutView() {
   return (
-    <div className="animate-in fade-in duration-500 max-w-5xl mx-auto space-y-12">
-      <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200">
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-5xl mx-auto space-y-12">
+      <motion.div variants={fadeUpVariant} className="glass-panel rounded-3xl overflow-hidden relative">
         <div className="h-32 bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 w-full relative overflow-hidden">
           <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
         </div>
@@ -964,9 +1127,9 @@ function AboutView() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="bg-white rounded-3xl p-10 md:p-14 shadow-sm border border-slate-200">
+      <motion.div variants={fadeUpVariant} className="glass-panel rounded-3xl p-10 md:p-14">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Sıfırdan Canlıya Çalışma Sürecimiz</h2>
           <p className="text-lg text-slate-600">Şeffaf ve ölçülebilir adımlarla proje yönetimi.</p>
@@ -977,18 +1140,21 @@ function AboutView() {
           <StepCard step="3" title="Çevik Geliştirme" desc="Düzenli demolarla iteratif geliştirme." />
           <StepCard step={<CheckCircle2 className="w-6 h-6" />} title="Test ve Yayın" desc="Kapsamlı testlerin ardından canlıya güvenli geçiş." done />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
 function StepCard({ step, title, desc, done = false }) {
   return (
-    <div>
-      <div className={`w-12 h-12 ${done ? 'bg-emerald-100 text-emerald-600' : 'bg-indigo-100 text-indigo-600'} rounded-full flex items-center justify-center font-bold text-xl mb-4 border-4 border-white shadow-sm`}>{step}</div>
+    <motion.div whileHover={{ y: -5 }} className="group">
+      <div className={cn(
+        "w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mb-4 border-4 border-white shadow-sm transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3",
+        done ? "bg-emerald-100 text-emerald-600" : "bg-indigo-100 text-indigo-600"
+      )}>{step}</div>
       <h4 className="font-bold text-slate-900 mb-2">{title}</h4>
       <p className="text-sm text-slate-600">{desc}</p>
-    </div>
+    </motion.div>
   );
 }
 
@@ -1053,15 +1219,15 @@ function ContactView() {
   };
 
   return (
-    <div className="animate-in fade-in duration-500 max-w-6xl mx-auto space-y-16">
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-6xl mx-auto space-y-16">
       <div>
-        <div className="text-center mb-12">
+        <motion.div variants={fadeUpVariant} className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Dijital Dönüşüm Projenizi Birlikte Hayata Geçirelim</h1>
           <p className="text-xl text-slate-600">Kurumsal yazılım mimarisi uzmanlığımızın operasyonel verimliliğinize nasıl değer katabileceğini konuşalım.</p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-3 bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+          <motion.div variants={fadeUpVariant} className="lg:col-span-3 glass-panel rounded-3xl p-8">
             {formStatus !== 'success' ? (
               <>
                 <div className="mb-8">
@@ -1139,10 +1305,10 @@ function ContactView() {
                 </div>
               </div>
             )}
-          </div>
+          </motion.div>
 
-          <div className="lg:col-span-2 space-y-6">
-            <div className="bg-slate-900 text-white rounded-3xl p-8 shadow-lg h-full flex flex-col justify-between">
+          <motion.div variants={fadeUpVariant} className="lg:col-span-2 space-y-6">
+            <div className="glass-panel-dark text-white rounded-3xl p-8 shadow-lg h-full flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl font-bold mb-4">İletişim Bilgileri</h3>
                 <div className="mb-6 rounded-xl bg-emerald-500/10 border border-emerald-400/30 p-4">
@@ -1160,11 +1326,11 @@ function ContactView() {
                 <span className="text-3xl font-extrabold tracking-tighter text-white lowercase">dzy<span className="text-emerald-500">.</span></span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200">
+      <motion.div variants={fadeUpVariant} className="glass-panel rounded-3xl p-8 md:p-12">
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="md:w-1/3">
             <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6"><HelpCircle className="w-7 h-7 text-indigo-600" /></div>
@@ -1185,8 +1351,8 @@ function ContactView() {
             ))}
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
@@ -1287,14 +1453,14 @@ function ChatWidget() {
 
 function BlogView({ nav }) {
   return (
-    <div className="animate-in fade-in duration-500 max-w-5xl mx-auto space-y-12">
-      <div className="text-center mb-12">
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-5xl mx-auto space-y-12">
+      <motion.div variants={fadeUpVariant} className="text-center mb-12">
         <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Bilgi Bankası & Vaka Analizleri</h1>
         <p className="text-xl text-slate-600">Teknoloji trendleri, mimari çözümlerimiz ve başarı hikayelerimiz.</p>
-      </div>
+      </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map(post => (
-          <div key={post.id} className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+          <motion.div variants={fadeUpVariant} whileHover={{ y: -5 }} key={post.id} className="glass-panel rounded-3xl overflow-hidden flex flex-col group">
             <div className="p-6 flex-1 flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-bold px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full">{post.category}</span>
@@ -1306,10 +1472,10 @@ function BlogView({ nav }) {
                 Yazıyı Oku <ChevronRight className="w-4 h-4 ml-1" />
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -1318,7 +1484,7 @@ function BlogPostView({ slug, nav }) {
   if (!post) return <div className="text-center py-20"><h1 className="text-2xl font-bold">Yazı Bulunamadı.</h1><button onClick={() => nav('blog')} className="mt-4 text-indigo-600 underline">Geri Dön</button></div>;
 
   return (
-    <div className="animate-in fade-in duration-500 max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-sm">
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-4xl mx-auto glass-panel rounded-3xl p-8 md:p-12">
       <a href="/blog" onClick={(e) => { e.preventDefault(); nav('blog'); }} className="inline-flex items-center text-indigo-600 font-semibold mb-8 hover:text-indigo-800 transition-colors">
         <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Bilgi Bankasına Dön
       </a>
@@ -1327,6 +1493,6 @@ function BlogPostView({ slug, nav }) {
         <div>{post.readTime}</div>
       </div>
       <div className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-indigo-600" dangerouslySetInnerHTML={{ __html: post.content }} />
-    </div>
+    </motion.div>
   );
 }
