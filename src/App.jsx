@@ -795,17 +795,17 @@ function HomeView({ nav }) {
       className="space-y-24 relative"
     >
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-[800px] -z-20 overflow-hidden pointer-events-none" style={{ maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)' }}>
+      <div className="absolute top-0 left-0 w-full h-[800px] -z-20 overflow-hidden pointer-events-none" style={{ maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
         <video 
           autoPlay 
           loop 
           muted 
           playsInline 
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-15 mix-blend-luminosity"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
         >
           <source src="/background.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/40 via-slate-50/70 to-slate-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/30 via-slate-50/80 to-slate-50"></div>
       </div>
 
       {/* Background Glows */}
