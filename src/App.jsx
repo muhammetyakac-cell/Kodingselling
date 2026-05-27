@@ -795,7 +795,7 @@ function HomeView({ nav }) {
       className="space-y-24 relative"
     >
       {/* Background Video */}
-      <div className="absolute -top-12 left-[50%] -translate-x-[50%] w-[100vw] h-[800px] z-0 overflow-hidden pointer-events-none" style={{ maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
+      <div className="absolute -top-32 left-[50%] -translate-x-[50%] w-[100vw] h-[900px] z-0 overflow-hidden pointer-events-none" style={{ maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}>
         <video 
           autoPlay 
           loop 
