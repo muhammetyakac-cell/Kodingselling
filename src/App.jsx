@@ -794,6 +794,20 @@ function HomeView({ nav }) {
       animate="show"
       className="space-y-24 relative"
     >
+      {/* Background Video */}
+      <div className="absolute top-0 left-0 w-full h-[800px] -z-20 overflow-hidden pointer-events-none" style={{ maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)' }}>
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-15 mix-blend-luminosity"
+        >
+          <source src="/background.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/40 via-slate-50/70 to-slate-50"></div>
+      </div>
+
       {/* Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-96 bg-indigo-400/20 rounded-full blur-[100px] -z-10 mix-blend-multiply animate-blob"></div>
       <div className="absolute top-40 left-1/4 w-72 h-72 bg-fuchsia-400/20 rounded-full blur-[100px] -z-10 mix-blend-multiply animate-blob" style={{ animationDelay: '2s' }}></div>
