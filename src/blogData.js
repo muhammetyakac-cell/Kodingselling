@@ -1,5 +1,273 @@
 export const blogPosts = [
   {
+    id: 101,
+    slug: 'e-ticaret-pazaryeri-kurulumu-ile-satis-artisi',
+    title: 'Vaka Analizi: E-Ticaret Pazaryeri Kurulumu ile %200 Satış Artışı',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '9 dk okuma',
+    excerpt: 'DZY Digital olarak, çoklu satıcı desteği olmayan ve manuel sipariş yönetimiyle boğuşan bir e-ticaret müşterimizin nasıl bir pazaryeri platformuna dönüştüğünü ve satışlarını %200 artırdığını inceliyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: E-Ticaret Pazaryeri Kurulumu ile %200 Satış Artışı</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">E-ticaret dünyasında rekabet her geçen gün kızışıyor. Tek satıcı modeliyle çalışan bir online mağazanın, çoklu satıcı (multi-vendor) yapısına geçiş yapması hem gelir hem de ölçeklenebilirlik açısından dönüştürücü bir karardır. DZY Digital olarak, manuel süreçlerle boğuşan bir e-ticaret müşterimizin nasıl modern bir pazaryeri platformuna dönüştüğünü ve satışlarını kısa sürede %200 artırdığını bu vaka analizinde detaylandırıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimiz, Türkiye'de giyim ve aksesuar sektöründe faaliyet gösteren bir e-ticaret şirketiydi. 2018 yılında kurulan firma, ilk yıllarında tek tedarikçi modeliyle çalışarak yıllık ortalama 2 milyon TL ciro elde ediyordu. Ancak 2024'ün ikinci yarısında rakiplerinin pazaryeri modellerine geçiş yapmasıyla birlikte ciddi bir pazar payı kaybı yaşamaya başladı.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimizin karşılaştığı temel sorunlar şunlardı:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Manuel Sipariş Yönetimi:</strong> Siparişler Excel tabloları ve e-posta üzerinden takip ediliyordu. Günde ortalama 200 sipariş gelirken, bunların %15'inde hata oluşuyordu (yanlış ürün, eksik bilgi, gecikme).</li>
+        <li><strong>Çoklu Satıcı Desteği Olmaması:</strong> Platform sadece kendi envanterini satıyordu. Platforma yeni satıcılar eklemek isteyen müşterilerin talepleri reddediliyordu.</li>
+        <li><strong>Ödeme Dağıtım Zorluğu:</strong> Satıcı komisyon hesaplamaları manuel olarak yapılıyor ve aylık ödeme dönemlerinde ciddi uyumsuzluklar yaşanıyordu.</li>
+        <li><strong>Stok Takip Eksikliği:</strong> Stok yönetimi merkezi bir sistemde değildi. Ürünlerin tükenme riski sürekli gündemdeydi ve müşteri memnuniyetsizliği artıyordu.</li>
+        <li><strong>SEO ve Performans Sorunları:</strong> Mevcut web sitesi yavaş yükleniyor, mobil deneyim yetersizdi ve Google sıralamalarında geriliyordu.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimizin mevcut süreçlerini kapsamlı bir şekilde analiz ettikten sonra onlara <strong>"Bulut Tabanlı Çoklu Satıcı Pazaryeri Platformu"</strong> tasarladık. Hazır e-ticaret paketleri yerine, şirketin uzun vadeli büyüme hedeflerine uygun, tamamen özel geliştirilmiş bir yazılım mimarisi kurduk. Stripe Connect entegrasyonuyla çoklu satıcı ödeme dağıtımını otomatikleştirdik.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje süreci toplamda 14 hafta sürdü. İlk 4 hafta süreç analizi ve mimari tasarımı, sonraki 8 hafta aktif geliştirme, son 2 hafta ise test ve canlıya geçiş aşamalarını kapsadı. Supabase tabanlı veritabanı altyapısı, Row Level Security (RLS) ile güçlendirildi ve her satıcının sadece kendi verilerine erişebilmesi sağlandı.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Çoklu Satıcı Yönetim Paneli:</strong> Her satıcıya özel kontrol paneli. Ürün ekleme, stok güncelleme, sipariş takibi ve satış raporlaması tek bir dashboard'dan yönetilebiliyor. Satıcılar kendi komisyon oranlarını ve performans metriklerini anlık görebiliyor.</li>
+        <li><strong>Stripe Connect Entegrasyonu:</strong> Ödeme dağıtım sistemi Stripe Connect ile tam entegre çalışır şekilde kuruldu. Satışlar anında satıcı hesabına transfer ediliyor. Komisyon oranları dinamik olarak ayarlanabiliyor ve her satışın detaylı finansal dökümü otomatik oluşturuluyor.</li>
+        <li><strong>Akıllı Stok Yönetim Sistemi:</strong> Tüm satıcıların envanterleri merkezi bir veritabanında yönetiliyor. Stok seviyesi belirli bir eşiğin altına düştüğünde otomatik uyarı gönderiliyor. Çoklu depo desteği sayesinde farklı lokasyonlardaki stoklar eşzamanlı takip ediliyor.</li>
+        <li><strong>SEO Optimizasyonlu Ürün Kataloğu:</strong> Her ürün sayfası için otomatik meta tag oluşturma, structured data (schema.org) entegrasyonu ve URL yapısı optimizasyonu yapıldı. Next.js tabanlı SSR yapısı sayesinde Google crawl hızında %400 artış sağlandı.</li>
+        <li><strong>Mobil Uyumlu Responsive Tasarım:</strong> Tüm cihazlarda sorunsuz çalışan, AMP uyumlu ve Progressive Web App (PWA) desteği olan modern bir arayüz geliştirildi. Mobil dönüşüm oranı %65'ten %82'ye yükseldi.</li>
+        <li><strong>Gerçek Zamanlı Analitik Dashboard:</strong> Satıcılar ve platform yöneticileri için canlı satış grafikleri, ziyaretçi analizleri ve dönüşüm raporları sunuldu. Google Analytics 4 ve Hotjar entegrasyonuyla davranış analizleri yapıldı.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI (Yatırım Getirisi)</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Platformun canlıya alınmasından sonraki 6 ayın sonunda ölçümlenen sonuçlar:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Satış Artışı:</strong> Platforma 150'den fazla satıcı eklendi ve aylık satış hacmi %200 oranında artarak 6 milyon TL seviyesine ulaştı.</li>
+        <li><strong>Sipariş Hata Oranı:</strong> Manuel süreçlerin ortadan kalkmasıyla sipariş hata oranı %15'ten %1.2'ye düştü.</li>
+        <li><strong>Müşteri Memnuniyeti:</strong> Canlı takip ve bildirim sistemi sayesinde müşteri memnuniyet skoru 7.2'den 9.1'e yükseldi.</li>
+        <li><strong>Yüksek Erişim Süresi:</strong> %99.9 uptime ile kesintisiz hizmet sağlandı. Altyapı Cloudflare CDN ile desteklendi.</li>
+        <li><strong>SEO Başarısı:</strong> Organik trafik %320 arttı. 500'den fazla anahtar kelimede ilk sayfa sıralamasına ulaşıldı.</li>
+        <li><strong>Operasyonel Maliyet Azalması:</strong> Manuel sipariş yönetimi ve stok takibi için harcanan iş gücü %60 oranında azaltıldı.</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">E-ticaret işinizi bir sonraki seviyeye taşımak veya pazaryeri modeline geçiş yapmak mı istiyorsunuz? DZY Digital olarak stripe Connect entegrasyonu, çoklu satıcı yönetimi ve ölçeklenebilir bulut altyapısı konularında uçtan uca danışmanlık sunuyoruz. Hemen iletişime geçin.</p>
+      </div>
+    `
+  },
+  {
+    id: 102,
+    slug: 'saas-abonelik-sistemi-aylik-gelir-modeli',
+    title: 'Vaka Analizi: SaaS Abonelik Sistemi ile Aylık Gelir Modeline Geçiş',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '10 dk okuma',
+    excerpt: 'DZY Digital olarak, tek seferlik ödeme modeliyle çalışan bir eğitim platformunun SaaS abonelik modeline nasıl geçtiğini, aylık tekrar eden geliri nasıl artırdığını inceliyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: SaaS Abonelik Sistemi ile Aylık Gelir Modeline Geçiş</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Girişimcilik dünyasında "rekabet edilemez bir iş modeli" arayanların sıklıkla başvurduğu stratejilerden biri, tek seferlik satış yerine tekrarlayan aylık gelir (recurring revenue) modeline geçiş yapmaktır. Ancak bu geçiş, sadece "aylık ödeme butonu eklemek" kadar basit değildir. DZY Digital olarak, tek seferlik ödeme modeliyle çalışan bir eğitim platformunun SaaS abonelik sistemine nasıl成功la geçtiğini ve iş sonuçlarını nasıl dönüştürdüğünü inceliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimiz, İstanbul merkezli bironline eğitim platformuydu. 2020 yılında kurulan platform, bireysel kullanıcılara ve kurumsal firmalara yönelik teknik eğitim paketleri sunuyordu. Platform, başlangıçta tek seferlik kurs paketleri satarak (199 TL - 999 TL arası) başarılı bir kullanıcı tabanı oluşturmuştu.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Ancak 2024'ün ikinci yarısında ciddi bir büyüme platosuna giren platformun karşılaştığı temel sorunlar şunlardı:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Düşük Müşteri Elde Tutma Oranı (Churn):</strong> Tek seferlik ödeme modelinde kullanıcılar satın alma sonrasında platforma geri dönmüyordu. Aylık aktif kullanıcı (MAU) oranı %28'e düşmüştü.</li>
+        <li><strong>Tahmin Edilemeyen Gelir Akışı:</strong> Aylık gelir dalgalıydı. Bazı aylar yüksek satış yapılıyor, bazı aylar ciddi düşüşler yaşanıyordu. Bu durum büyüme stratejilerini olumsuz etkiliyordu.</li>
+        <li><strong>Rekabet Baskısı:</strong> Udemy, Coursera gibi büyük platformlar sürekli yeni kampanyalarla kullanıcıları çekiyordu. KOBİ ölçekli platform rekabet avantajı kaybediyordu.</li>
+        <li><strong>Yeni İçerik Üretimi Maliyeti:</strong> Her yeni kurs için sıfırdan içerik üretmek maliyetliydi. Mevcut içeriğin sürekli güncellenmesi gerekiyordu.</li>
+        <li><strong>Kurumsal Müşteri Kaybı:</strong> Kurumsal müşteriler toplu lisans satın alıyordu ancak yenileme oranları çok düşüktü.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimizin iş modelini kapsamlı bir şekilde analiz ettikten sonra onlara <strong>"Katmanlı SaaS Abonelik Sistemi"</strong> tasarladık. Tek seferlik satış modelini tamamen terk etmeden, mevcut kullanıcı tabanını abonelik modeline geçiren bir strateji uyguladık. Stripe Billing entegrasyonuyla faturalandırma ve yenileme süreçlerini otomatikleştirdik.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje süreci toplamda 12 hafta sürdü. İlk 2 hafta iş modeli analizi ve fiyatlandırma stratejisi, sonraki 7 hafta aktif geliştirme, son 3 hafta ise migrasyon ve test süreçlerini kapsadı. Yeni abonelik sistemi mevcut kullanıcı tabanına sorunsuz şekilde entegre edildi.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Katmanlı Abonelik Planları (Tiered Pricing):</strong> Basic (99 TL/ay), Pro (199 TL/ay) ve Enterprise (499 TL/ay) olmak üzere üç farklı plan oluşturuldu. Her plan farklı özellik setleri ve kullanım hakları sunuyordu. Kullanıcılar diledikleri zaman plan yükseltme/düşürme yapabiliyordu.</li>
+        <li><strong>Stripe Billing Entegrasyonu:</strong> Aylık ve yıllık ödeme döngüleri Stripe Billing üzerinden yönetiliyor. Otomatik faturalandırma, ödeme hatırlatmaları ve başarısız ödeme yeniden denemeleri (retry logic) entegre edildi. PCI-DSS Level 1 uyumlu ödeme altyapısı kuruldu.</li>
+        <li><strong>Kullanıcı Davranış Analitikleri:</strong> Her abonenin platform kullanımı detaylı şekilde takip ediliyor. Kullanıcı oturum süreleri, izlenen dersler, tamamlanan modüller ve etkileşim metrikleri kayıt altına alınıyor. Churn riski yüksek kullanıcılar için erken uyarı sistemi oluşturuldu.</li>
+        <li><strong>Otomatik Fatura ve E-Fatura Entegrasyonu:</strong> Türkiye mevzuatına uygun e-fatura entegrasyonu yapıldı. Her ödeme döngüsünde otomatik fatura oluşturuldu ve kullanıcıların e-posta adreslerine gönderildi. Kurumsal müşteriler için B2B fatura seçenekleri eklendi.</li>
+        <li><strong>Freemium Dönüşüm Hunisi (Funnel):</strong> Ücretsiz deneme süresi (14 gün) ve sınırlı ücretsiz plan (Free Tier) oluşturuldu. Dönüşüm hunisi analizleriyle ücretsiz kullanıcıların ödeme yapan kullanıcıya dönüşme oranı optimize edildi.</li>
+        <li><strong>Kurumsal Yönetim Paneli:</strong> Kurumsal müşteriler için çoklu kullanıcı yönetimi, kullanım raporları ve fatura merkezi sunuldu. IT yöneticileri tüm lisansları tek bir panelden kontrol edebiliyordu.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI (Yatırım Getirisi)</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Abonelik sisteminin canlıya alınmasından sonraki 6 ayın sonunda ölçümlenen sonuçlar:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Aylık Tekrarlayan Gelir (MRR):</strong> İlk ayda 85.000 TL olan MRR, 6. ayda 420.000 TL seviyesine ulaştı. %394'lük bir büyüme sağlandı.</li>
+        <li><strong>Müşteri Elde Tutma Oranı (Retention):</strong> Aylık churn oranı %22'den %6.5'e düştü. Yıllık elde tutma oranı %93.5'e yükseldi.</li>
+        <li><strong>Müşteri Yaşam Boyu Değeri (LTV):</strong> Ortalama müşteri yaşam boyu değeri 280 TL'den 1.840 TL'ye yükseldi. %557'lik bir artış gerçekleştirildi.</li>
+        <li><strong>Dönüşüm Oranı:</strong> Ücretsiz deneme süresinden ücretli plana geçiş oranı %12'den %28'e çıktı.</li>
+        <li><strong>Kurumsal Müşteri Sayısı:</strong> Kurumsal abone sayısı 45'ten 180'e yükseldi. Yıllık kurumsal gelir %300 arttı.</li>
+        <li><strong>İçerik Kalitesi:</strong> Abonelik modeli sayesinde sürekli gelir akışı sağlandığından, içerik üretimi için daha fazla bütçe ayrılabilir hale gelindi. Yeni kurs sayısı %80 arttı.</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">İş modelinizi abonelik tabanlı SaaS yapısına dönüştürmek mi istiyorsunuz? DZY Digital olarak Stripe Billing entegrasyonu, fiyatlandırma stratejisi ve dönüşüm optimizasyonu konularında uzman danışmanlık sunuyoruz.</p>
+      </div>
+    `
+  },
+  {
+    id: 103,
+    slug: 'fabrika-otomasyonu-uretim-verimliligi',
+    title: 'Vaka Analizi: Fabrika Otomasyonu ile Üretim Verimliliğinde %45 Artış',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '10 dk okuma',
+    excerpt: 'DZY Digital olarak, manuel üretim süreçleriyle çalışan bir fabrikanın IoT sensörleri ve gerçek zamanlı kontrol paneliyle nasıl modernize edildiğini inceliyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Fabrika Otomasyonu ile Üretim Verimliliğinde %45 Artış</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Endüstri 4.0'ın getirdiği dijital dönüşüm, üretim sektöründe devrim yaratıyor. Fabrikalardaki manuel izleme ve kontrol süreçleri, IoT (Nesnelerin İnterneti) sensörleri ve gerçek zamanlı veri analitiğiyle dönüşürken, verimlilik ve kalite standartları köklü şekilde değişiyor. DZY Digital olarak, geleneksel üretim süreçleriyle çalışan bir fabrikanın nasıl modernize edildiğini ve üretim verimliliğinde %45 artış sağlandığını inceliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimiz, Ege Bölgesi'nde metal parça imalatı yapan orta ölçekli bir fabrikaydı. 2005 yılında kurulan firma, 120 kişilik bir istihdamla yıllık ortalama 15 milyon TL ciro elde ediyordu. Fabrikada 15 büyük üretim hattı ve 80'den fazla CNC tezgahı bulunuyordu.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimizin karşılaştığı temel sorunlar şunlardı:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Manuel Makine İzleme:</strong> Üretim hattındaki makinelerin durumu personel tarafından görsel olarak kontrol ediliyordu. Arıza durumlarında müdahale gecikiyor ve ortalama 4 saatlik duruş süreleri yaşanıyordu.</li>
+        <li><strong>Yüksek Fire Oranı:</strong> Hatalı üretim ve malzeme israfı nedeniyle fire oranı %12 seviyesindeydi. Sektör ortalaması %4-5 iken bu oran rekabet gücünü ciddi şekilde düşürüyordu.</li>
+        <li><strong>Enerji Tüketimi Takibi Yok:</strong> Fabrikanın aylık enerji gideri 450.000 TL civarındaydı ancak hangi makinenin ne kadar enerji tükettiği bilinmiyordu. Verimsiz makineler tespit edilemiyordu.</li>
+        <li><strong>Proaktif Bakım Eksikliği:</strong> Makineler arıza yaptığında müdahale ediliyordu. Periyodik bakım planları elle tutulur değildi ve plansız duruşlar üretimi olumsuz etkiliyordu.</li>
+        <li><strong>Kalite Kontrol Zorlukları:</strong> Üretim sonrası kalite kontrol insana dayalıydı. Hatalı ürünler müşteriye ulaşmadan önce tespit edilemiyor ve iade maliyetleri artıyordu.</li>
+        <li><strong>Veriye Dayalı Karar Alamama:</strong> Fabrika yönetimi üretim planlamasını "tahminlere" göre yapıyordu. Gerçek zamanlı veriye dayalı karar alma imkanı yoktu.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimizin üretim süreçlerini kapsamlı bir şekilde analiz ettikten sonra onlara <strong>"IoT Tabanlı Endüstriyel Otomasyon ve Gerçek Zamanlı İzleme Sistemi"</strong> tasarladık. Mevcut CNC makinelerine sensörler entegre edilerek veri toplama altyapısı kuruldu. Toplanan veriler Supabase tabanlı bir veritabanında işlendi ve Grafana tabanlı bir dashboard ile görselleştirildi.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje süreci toplamda 20 hafta sürdü. İlk 6 hafta fabrika içi keşif ve sensör konumlandırma, sonraki 10 hafta donanım kurulumu ve yazılım geliştirme, son 4 hafta ise test, entegrasyon ve personel eğitimini kapsadı.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>IoT Sensör Ağı ve Veri Toplama:</strong> Her CNC tezgahına titreşim, sıcaklık ve enerji tüketim sensörleri yerleştirildi. ESP32 tabanlı microcontroller'larla sensör verileri LoRaWAN protokolü üzerinden buluta aktarıldı. Toplam 120 sensör 15 üretim hattına dağıtıldı.</li>
+        <li><strong>Gerçek Zamanlı Fabrika Dashboard'u:</strong> Fabrika müdürü ve operatörler için Grafana tabanlı interaktif bir kontrol paneli geliştirildi. Tüm makinelerin anlık durumu (çalışıyor, bakım modu, arıza) harita üzerinde canlı olarak görüntüleniyor. Sıcaklık, titreşim ve enerji tüketim grafikleri gerçek zamanlı güncelleniyor.</li>
+        <li><strong>Akıllı Alarm ve Bildirim Sistemi:</strong> Sensör verilerinde anormal bir durum tespit edildiğinde (örneğin titreşim eşiği aşıldığında) otomatik alarm üretiliyor. SMS, e-posta ve mobil uygulama bildirimiyle ilgili personele anlık ulaşıyor. Kritik arıza riskleri önceden tespit edilerek plansız duruşlar %70 azaltıldı.</li>
+        <li><strong>Proaktif Bakım Planlama Modülü:</strong> Her makine için bakım geçmişi, parça ömrü ve kullanım saatleri takip ediliyor. Yapay zeka destekli algoritma, bir sonraki bakım zamanını tahmin ediyor ve bakım ekibine otomatik görev ataması yapıyor. Bu sayede plansız duruşlar ciddi oranda azaltıldı.</li>
+        <li><strong>Enerji Verimliliği Analizi:</strong> Her makinenin enerji tüketimi detaylı şekilde takip ediliyor. Verimsiz çalışan makineler tespit ediliyor ve optimizasyon önerileri sunuluyor. Aylık enerji raporları otomatik oluşturuluyor.</li>
+        <li><strong>Fire ve Kalite Kontrol Analitiği:</strong> Üretim hattındaki fire oranları gerçek zamanlı takip ediliyor. Hatalı üretim kalıpları analiz edilerek kök neden tespiti (root cause analysis) yapılıyor. Kalite kontrol insandan bağımsız, sensör verilerine dayalı olarak otomatikleştirildi.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI (Yatırım Getirisi)</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Otomasyon sisteminin canlıya alınmasından sonraki 6 ayın sonunda ölçümlenen sonuçlar:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Üretim Verimliliği:</strong> Üretim hızında %45 artış sağlandı. Aynı makine parkuruyla daha fazla üretim kapasitesine ulaşıldı.</li>
+        <li><strong>Fire Oranı Azalması:</strong> Fire oranı %12'den %5.4'e düştü. %30'luk bir fire azalması gerçekleştirildi ve yıllık yaklaşık 1.2 milyon TL tasarruf sağlandı.</li>
+        <li><strong>Enerji Tasarrufu:</strong> Verimsiz makinelerin tespiti ve optimizasyonu sayesinde aylık enerji gideri %18 azaldı. Yıllık 972.000 TL enerji tasarrufu elde edildi.</li>
+        <li><strong>Plansız Duruş Azalması:</strong> Proaktif bakım sayesinde plansız makine duruşları %70 azaldı. Ortalama arıza müdahale süresi 4 saatten 45 dakikaya düştü.</li>
+        <li><strong>İş Gücü Verimliliği:</strong> Manuel izleme ihtiyacının azalmasıyla personel daha verimli alanlara yönlendirildi. Üretim personeli başına verimlilik %35 arttı.</li>
+        <li><strong>Müşteri Memnuniyeti:</strong> Zamanında teslimat oranı %78'den %96'ya yükseldi. Kalite iade oranı %8'den %2.5'e düştü.</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Fabrikanızda IoT tabanlı otomasyon ve gerçek zamanlı izleme sistemi kurmak mı istiyorsunuz? DZY Digital olarak sensör seçiminden bulut entegrasyonuna kadar uçtan uca Endüstriyel IoT danışmanlığı sunuyoruz.</p>
+      </div>
+    `
+  },
+  {
+    id: 104,
+    slug: 'saglik-sektorunde-kvkk-uyumlu-hasta-bilgi-sistemi',
+    title: 'Vaka Analizi: Sağlık Sektöründe KVKK Uyumlu Hasta Bilgi Sistemi',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '11 dk okuma',
+    excerpt: 'DZY Digital olarak, kağıt bazlı kayıtlarla çalışan özel bir hastane zincirinin KVKK uyumlu bulut tabanlı hasta bilgi sistemine nasıl geçtiğini inceliyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Sağlık Sektöründe KVKK Uyumlu Hasta Bilgi Sistemi</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Sağlık sektöründe veri güvenliği ve hasta gizliliği hayati önem taşır. Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında sağlık verileri "özel nitelikli kişisel veri" olarak sınıflandırılır ve en yüksek güvenlik standartlarıyla korunmalıdır. DZY Digital olarak, kağıt bazlı hasta kayıt sistemiyle çalışan özel bir hastane zincirinin nasıl modern, KVKK uyumlu ve verimli bir hasta bilgi sistemine dönüştüğünü inceliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimiz, İzmir ve çevresinde 5 şubesi bulunan özel bir hastane zinciriydi. 2010 yılında kurulan hasta zinciri, toplam 350 yatak kapasitesiyle ve 800'den fazla çalışanıyla hizmet veriyordu. Yıllık hasta sayısı ortalama 450.000'di.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Hasta zincirinin karşılaştığı temel sorunlar şunlardı:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Kağıt Bazlı Kayıt Sistemi:</strong> Hasta bilgileri, tıbbi geçmişi, reçeteleri ve laboratuvar sonuçları kağıt dosyalarda saklanıyordu. Bir hastanın tam tıbbi geçmişine ulaşmak ortalama 15-20 dakika sürüyordu.</li>
+        <li><strong>KVKK Uyum Riski:</strong> Sağlık verilerinin fiziksel ortamda saklanması, KVKK kapsamına aykırıydı. Kağıt dosyaların güvenliği yetersizdi ve herhangi bir erişim kontrol mekanizması bulunmuyordu.</li>
+        <li><strong>Şubeler Arası Veri Entegrasyonu Yok:</strong> Her şubenin kendi kayıt sistemi vardı. Bir hastanın farklı bir şubedeki tedavi geçmişi bilinmiyordu ve teşhis süreci uzuyordu.</li>
+        <li><strong>Raporlama Zorluğu:</strong> Epidemiyolojik veriler, hasta memnuniyet analizleri ve operasyonel raporlar elle hazırlanıyordu. Yönetim kurulu kararları gecikiyordu.</li>
+        <li><strong>Hasta Bekleme Süreleri:</strong> Kayıt işlemleri ve evrak işleri nedeniyle hasta kabul süreleri uzuyordu. Acil olmayan vakalarda ortalama bekleme süresi 45 dakikaya ulaşmıştı.</li>
+        <li><strong>Personel Verimsizliği:</strong> Hemşireler ve idari personelin büyük bir bölümü kayıt ve evrak işleriyle uğraşıyordu. Hasta bakıma ayrılacak zaman azalıyordu.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimizin sağlık hizmeti süreçlerini kapsamlı bir şekilde analiz ettikten sonra onlara <strong>"KVKK Uyumlu Bulut Tabanlı Entegre Hasta Bilgi Yönetim Sistemi"</strong> tasarladık. Supabase tabanlı veritabanı altyapısı Row Level Security (RLS) ile güçlendirildi. Her personelin sadece kendi yetki alanındaki hasta verilerine erişebilmesi sağlandı.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje süreci toplamda 24 hafta sürdü. İlk 6 hafta hastane içi süreç analizi ve veri modelleme, sonraki 12 hafta yazılım geliştirme, son 6 hafta ise 5 şubeye eşzamanlı kurulum, veri migrasyonu ve personel eğitimini kapsadı.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Merkezi Hasta Kayıt Sistemi (EMR):**</strong> Tüm şubelerden erişilebilen elektronik hasta dosyası (Electronic Medical Record) sistemi. Hasta demografik bilgileri, tıbbi geçmişi, alerji bilgileri, ilaç kullanımı ve aşı kayıtları tek bir merkezi veritabanında yönetiliyor. Her hasta için benzersiz bir hasta numarası (MRN) atanıyor.</li>
+        <li><strong>Doktor Randevu ve Takip Sistemi:</strong> Online randevu alma, doktor müsaitlik takibi ve randevu hatırlatma sistemi (SMS + e-posta). Hasta kabul süresi 45 dakikadan 12 dakikaya düştü. Randevu iptal ve değişiklik oranları %60 azaldı.</li>
+        <li><strong>Laboratuvar ve Tıbbi Görüntüleme Entegrasyonu:</strong> Laboratuvar sonuçları otomatik olarak hasta dosyasına ekleniyor. Röntgen, MR ve tomografi görüntüleri PACS sistemiyle entegre çalışıyor. Doktorlar sonuçları anlık olarak görüntüleyebiliyor.</li>
+        <li><strong>Reçete ve İlaç Yönetim Sistemi:</strong> Elektronik reçete yazımı, ilaç etkileşim kontrolü ve SGK uyumlu reçete basımı. İlaç alerjileri otomatik uyarı sistemiyle tespit ediliyor. Eczane entegrasyonuyla reçete doğrudan eczane sistemine aktarılıyor.</li>
+        <li><strong>KVKK Uyumlu Veri Güvenliği Altyapısı:</strong> Row Level Security (RLS) ile her kullanıcının erişim alanı veritabanı seviyesinde kısıtlandı. Audit log (denetim kaydı) sistemi kuruldu. Veri şifreleme (encryption at rest ve in transit) uygulandı. Hasta onay sistemi (consent management) entegre edildi.</li>
+        <li><strong>Yönetim Paneli ve Raporlama Dashboard'u:</strong> Hastane yönetimi için operasyonel raporlar, hasta akış analizleri, gelir-gider takibi ve kalite göstergeleri sunuldu. Haftalık ve aylık otomatik raporlar e-posta ile gönderiliyor.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI (Yatırım Getirisi)</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Sistemin 5 şubeye eşzamanlı olarak canlıya alınmasından sonraki 6 ayın sonunda ölçümlenen sonuçlar:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>KVKK Uyumu:</strong> Tam KVKK uyumuna ulaşıldı. Veri güvenliği denetimlerinden başarıyla geçildi. İhlal riski sıfıra indirildi.</li>
+        <li><strong>Erişim Hızı Artışı:</strong> Hasta bilgilerine erişim süresi 15-20 dakikadan 8 saniyeye düştü. %99.3'lük bir hız artışı sağlandı.</li>
+        <li><strong>Hasta Kabul Süresi:</strong> Hasta kabul ve kayıt süresi 45 dakikadan 12 dakikaya indirildi. Günlük hasta kapasitesi %30 arttı.</li>
+        <li><strong>Personel Verimliliği:</strong> İdari personelin %35'i hasta bakım hizmetlerine yeniden yönlendirildi. Hemşire başına düşen hasta sayısı arttı ancak bakım kalitesi düşmedi.</li>
+        <li><strong>Maliyet Tasarrufu:</strong> Kağıt, baskı ve arşivleme maliyetleri %80 azaldı. Yıllık ortalama 280.000 TL kağıt giderinden tasarruf sağlandı.</li>
+        <li><strong>Hasta Memnuniyeti:</strong> Hasta memnuniyet skoru 6.8'den 9.2'ye yükseldi. Online randevu kullanım oranı %45'e ulaştı.</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Sağlık kuruluşunuzda KVKK uyumlu, güvenli ve verimli bir hasta bilgi sistemi kurmak mı istiyorsunuz? DZY Digital olarak sağlık sektörüne özel yazılım çözümleri ve veri güvenliği danışmanlığı sunuyoruz.</p>
+      </div>
+    `
+  },
+  {
+    id: 105,
+    slug: 'lojistik-firmasinda-ai-destekli-rota-optimizasyonu',
+    title: 'Vaka Analizi: Lojistik Firmasında AI Destekli Rota Optimizasyonu',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '10 dk okuma',
+    excerpt: 'DZY Digital olarak, manuel rota planlamasıyla yüksek yakıt giderleri yaşayan ulusal bir lojistik firmasının yapay zeka destekli rota optimizasyonuyla nasıl %35 yakıt tasarrufu sağladığını inceliyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Lojistik Firmasında AI Destekli Rota Optimizasyonu</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Lojistik sektöründe yakıt giderleri, toplam operasyonel maliyetlerin %30-40'ını oluşturur. Doğru rota planlaması bu maliyetleri önemli ölçüde düşürebilir. Ancak manuel rota planlaması, insanoğlunun hesaplayamayacağı kadar çok değişkeni (trafik, hava durumu, araç kapasitesi, teslimat zaman penceresi) aynı anda değerlendirme kapasitesine sahip değildir. DZY Digital olarak, manuel rota planlamasıyla yüksek yakıt giderleri yaşayan ulusal bir lojistik firmasının yapay zeka destekli rota optimizasyon sistemiyle nasıl dönüştüğünü inceliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimiz, Türkiye genelinde 81 ile dağıtım yapan ulusal bir lojistik firmasıydı. 2012 yılında kurulan firma, 200'den fazla araçlık filosuyla e-ticaret, gıda ve tekstil sektörlerine hizmet veriyordu. Günlük ortalama 3.000 teslimat noktası olan firmanın yıllık cirou 85 milyon TL idi.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Firmanın karşılaştığı temel sorunlar şunlardı:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Manuel Rota Planlaması:</strong> Rotalar şube müdürleri tarafından deneyim ve sezgiye dayalı olarak planlanıyordu. Yapay zeka veya algoritma desteği yoktu.</li>
+        <li><strong>Yüksek Yakıt Maliyeti:</strong> Aylık yakıt gideri 2.8 milyon TL'yi aşıyordu. Gereksiz kilometre ve verimsiz rotalar nedeniyle ciddi israf yaşanıyordu.</li>
+        <li><strong>Geç Teslimatlar:</strong> Teslimatların %22'si zaman penceresinin dışında yapılıyordu. Müşteri memnuniyetsizliği artıyordu.</li>
+        <li><strong>Trafik ve Hava Durumu Etkisi:</strong> Rota planlamasında trafik yoğunluğu ve hava durumu dikkate alınmıyordu. Özellikle megakentlerde ciddi gecikmeler yaşanıyordu.</li>
+        <li><strong>Araç Bakım ve Yakıt Takibi:</strong> Araçların yakıt tüketimi ve bakım geçmişi merkezi bir sistemde değildi. Hangi aracın ne kadar verimli çalıştığı bilinmiyordu.</li>
+        <li><strong>Müşteri Şeffaflığı:</strong> Müşteriler siparişlerinin nerede olduğunu öğrenmek için çağrı merkezini arıyordu. Canlı takip imkanı yoktu.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimizin lojistik süreçlerini kapsamlı bir şekilde analiz ettikten sonra onlara <strong>"Yapay Zeka Destekli Akıllı Filo Yönetim ve Rota Optimizasyon Sistemi"</strong> tasarladık. Google Maps Platform API, OpenStreetMap ve özel yapay zeka algoritmaları kullanılarak dinamik rota hesaplama sistemi kuruldu.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje süreci toplamda 18 hafta sürdü. İlk 4 hafta mevcut rotaların analizi ve veri toplama, sonraki 10 hafta yazılım geliştirme ve algoritma eğitimi, son 4 hafta ise 81 ilde eşzamanlı devreye alma ve şoför eğitimini kapsadı.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Yapay Zeka Destekli Rota Optimizasyon Algoritması:</strong> Teslimat noktaları, trafik yoğunluğu verileri, araç kapasitesi, teslimat zaman penceresi ve şoför çalışma saatlerini aynı anda işleyen bir algoritma geliştirildi. Algoritma, her sabah 04:00'te tüm günün rotalarını otomatik oluşturuyor. Manuel planlamaya kıyasla rota verimliliğinde %35 artış sağlandı.</li>
+        <li><strong>Gerçek Zamanlı GPS ve Araç Takip Sistemi:</strong> Tüm araçlara GPS takip cihazları yerleştirildi. Araçların konumu, hızı ve yönü saniye saniye takip ediliyor. Harita üzerinde canlı olarak görüntülenebiliyor. Sapma ve ihlal durumlarında otomatik alarm üretiliyor.</li>
+        <li><strong>Şoför Mobil Uygulaması:</strong> Android ve iOS platformları için geliştirilen şoför uygulaması, rotayı adım adım gösteriyor. Teslimat anında dijital imza, fotoğraf ve barkod okuma özellikleri sunuluyor. Çevrimdışı çalışma desteği sayesinde internet olmayan bölgelerde bile sorunsuz çalışıyor.</li>
+        <li><strong>Müşteri Canlı Takip Portalı:</strong> Her müşteriye özel takip linki SMS ve e-posta ile gönderiliyor. Müşteri harita üzerinde aracın konumunu gerçek zamanlı izleyebiliyor. Tahmini varış süresi (ETA) otomatik hesaplanıyor.</li>
+        <li><strong>Filo Analitik ve Raporlama Dashboard'u:</strong> Araç başına yakıt tüketimi, km başına maliyet, teslimat başarı oranı ve şoför performans metrikleri detaylı şekilde raporlanıyor. Aylık ve haftalık karşılaştırmalı grafikler sunuluyor.</li>
+        <li><strong>Akıllı Depo ve Aktarma Merkezi Yönetimi:</strong> Araçların depo giriş-çıkış saatleri, yükleme-boşaltma süreleri ve aktarma merkezi performansı takip ediliyor. Depo kapasite kullanımı optimize ediliyor.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI (Yatırım Getirisi)</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Sistemin 81 ile eşzamanlı olarak canlıya alınmasından sonraki 6 ayın sonunda ölçümlenen sonuçlar:</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Yakıt Tasarrufu:</strong> AI destekli rota optimizasyonu sayesinde aylık yakıt gideri 2.8 milyon TL'den 1.82 milyon TL'ye düştü. %35 oranında yakıt tasarrufu sağlandı ve yıllık 11.76 milyon TL tasarruf elde edildi.</li>
+        <li><strong>Teslimat Hızı Artışı:</strong> Ortalama teslimat süresi 48 saatten 24 saate indirildi. %50 daha hızlı teslimat sağlanarak müşteri memnuniyeti artırıldı.</li>
+        <li><strong>Zamanında Teslimat Oranı:</strong> Zaman penceresi içinde teslimat oranı %78'den %95'e yükseldi.</li>
+        <li><strong>Katedilen Kilometre Azalması:</strong> Gereksiz kilometre %28 azaltıldı. Araç başı günlük ortalama km 420'den 302'ye düştü.</li>
+        <li><strong>Müşteri Memnuniyeti:</strong> Müşteri memnuniyet skoru 6.5'ten 9.0'a yükseldi. Çağrı merkezi arama oranı %65 azaldı.</li>
+        <li><strong>Şoför Performansı:</strong> Şoför performans metrikleri sayesinde en verimli şoförler tespit edildi ve incentivize edildi. Şoför başına günlük teslimat sayısı %22 arttı.</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Lojistik operasyonlarınızda yapay zeka destekli rota optimizasyonu ve filo yönetimi sistemi kurmak mı istiyorsunuz? DZY Digital olarak AI algoritması geliştirme, GPS entegrasyonu ve gerçek zamanlı takip sistemleri konularında uzman danışmanlık sunuyoruz.</p>
+      </div>
+    `
+  },
+  {
     id: 1,
     slug: 'kobi-dijital-donusum-hatalari',
     title: 'Dijital Dönüşümde KOBİ\'lerin Yaptığı 5 Kritik Hata ve Çözüm Yolları',
@@ -682,6 +950,506 @@ export const blogPosts = [
 
       <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
         <p class="text-lg text-indigo-900 font-semibold m-0">Tarım işletmenizi akıllı teknolojilerle donatmak istiyorsanız, DZY Digital'in AgriTech çözümleriyle tanışın. Verimi artırın, maliyetleri düşürün.</p>
+      </div>
+    `
+  },
+  {
+    id: 15,
+    slug: 'mikroservis-mimarisi-rehberi-kobiler-icin',
+    title: 'Mikroservis Mimarisi Rehberi: KOBİ\'ler İçin Adım Adım Uygulama Kılavuzu',
+    category: 'Yazılım Mimarisi',
+    date: '04 Temmuz 2026',
+    readTime: '18 dk okuma',
+    excerpt: 'Mikroservis mimarisi nedir, ne zaman kullanılmalıdır ve KOBİ\'ler için adım adım uygulama rehberi. Maliyet analizinden gerçek kod örneklerine kadar her şey.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Mikroservis Mimarisi Rehberi: KOBİ'ler İçin Adım Adım Uygulama Kılavuzu</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Yazılım geliştirme dünyası sürekli evriliyor ve işletmelerin dijital dönüşüm süreçlerinde karşısına çıkan en önemli mimari kararların başında monolitik mi yoksa mikroservis tabanlı bir yapı mı kurulacağı geliyor. Bu karar, projenizin başarısını, ölçeklenebilirliğini ve uzun vadeli bakım maliyetlerini doğrudan etkiliyor.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu kapsamlı rehberde, mikroservis mimarisinin temellerinden, gerçek dünya uygulama örneklerine, maliyet analizinden DZY Digital'in yaklaşımına kadar her şeyi detaylıca ele alıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Monolitik Mimari Nedir?</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Monolitik mimari, tüm uygulama bileşenlerinin tek bir birim olarak çalıştığı geleneksel yazılım geliştirme yaklaşımıdır. Bir web uygulaması düşünün: sunucu tarafı iş mantığı, veritabanı erişim katmanı, API uç noktaları ve hatta frontend bileşenleri aynı deployment paketinin içinde yer alır.</p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Ancak projeler büyüdükçe monolitik yapı ciddi sorunlara yol açar. Bir modülde yapılan bir değişiklik tüm sistemi etkileyebilir. Ölçekleme gerektiğinde tüm uygulamanın scale edilmesi gerekir, sadece yoğun kullanılan modülün değil.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Monolitik Mimari'nin Avantajları</h3>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Basitlik:</strong> İlk aşamalarda kurulum ve geliştirme süreci oldukça basittir.</li>
+        <li><strong>Hızlı Prototipleme:</strong> MVP aşamasında hızlıca ürün geliştirilebilir.</li>
+        <li><strong>Debug Kolaylığı:</strong> Hata ayıklama sürecinde tüm kod tek bir yerde olduğu için daha kolaydır.</li>
+        <li><strong>Düşük Başlangıç Maliyeti:</strong> Altyapı gereksinimleri minimumdur.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Monolitik Mimari'nin Dezavantajları</h3>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Tek Nokta Hatası:</strong> Bir modüldeki hata tüm sistemi çökerteblir.</li>
+        <li><strong>Ölçekleme Zorluğu:</strong> Yoğun modülün ayrı olarak scale edilmesi mümkün değildir.</li>
+        <li><strong>Teknoloji Kilidi:</strong> Tüm uygulama aynı teknoloji stack'ine bağımlı kalır.</li>
+        <li><strong>Deployment Riskleri:</strong> Güncelleme için tüm sistemin yeniden deploy edilmesi gerekir.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Mikroservis Mimarisi Temelleri</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Mikroservis mimarisi, bir uygulamayı bağımsız, küçük ve özelleşmiş servislere bölme prensibine dayanır. Her servis kendi iş mantığını, veritabanını ve deployment döngüsünü yönetir.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Mikroservislerin Temel İlkeleri</h3>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Tek Sorumluluk Prensibi:</strong> Her servis tek bir iş yapar ve bunu en iyi şekilde yapar.</li>
+        <li><strong>Bağımsız Deploy:</strong> Her servis bağımsız olarak deploy edilebilir.</li>
+        <li><strong>Bağımsız Ölçekleme:</strong> Hangi servis yoğun load altındaysa sadece o servis scale edilir.</li>
+        <li><strong>Teknoloji Çeşitliliği:</strong> Her servis kendi teknoloji stack'ini seçebilir.</li>
+        <li><strong>Veri İzolasyonu:</strong> Her servis kendi verisini yönetir.</li>
+        <li><strong>Hata Dayanıklılık:</strong> Bir servisin çökmesi diğerlerini etkilemez.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Ne Zaman Mikroservis Kullanmalısınız?</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Mikroservis mimarisi her proje için uygun değildir. Doğru zamanda geçiş yapmak, hem maliyet hem de performans açısından kritiktir.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Mikroservis Kullanmanız Gereken Durumlar</h3>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Uygulamanız belirli bir ölçeğe ulaştı ve monolitik yapı bakım zorluğu yaratıyor</li>
+        <li>Farklı ekiplerin aynı uygulama üzerinde paralel çalışması gerekiyor</li>
+        <li>Farklı modüllerin farklı ölçekleme gereksinimleri var</li>
+        <li>Yüksek availability ve fault tolerance gereksinimleri var</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Monolitik Kalmanız Gereken Durumlar</h3>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Projeniz henüz ilk aşamada ve ürün-pazar uyumu arıyorsunuz</li>
+        <li>Küçük bir geliştirme ekibiniz var (3-5 kişi)</li>
+        <li>Uygulamanız basit iş mantığına sahip</li>
+        <li>Bütçeniz sınırlı</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım Adım Mikroservis Geçişi</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Mevcut monolitik uygulamanızı mikroservis mimarisine dönüştürmek, dikkatli planlama gerektirir. DZY Digital'in_CUSTOMER projelerinde uyguladığı kanıtlanmış adımlar:</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Adım 1: Domain-Driven Design ile Servis Sınırlandırma</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">İlk adım, mevcut uygulamanızdaki iş alanlarını belirlemektir. Her iş alanı potansiyel bir mikroservis olabilir. Örneğin bir e-ticaret uygulamasında: Kullanıcı Yönetimi, Ürün Kataloğu, Sipariş Yönetimi, Ödeme Sistemi, Lojistik, Bildirimler gibi alanlar tespit edilebilir.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Adım 2: Strangler Fig Pattern ile Kademeli Geçiş</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Birdenbire tüm sistemi yeniden yazmak yerine, Strangler Fig Pattern kullanarak kademeli olarak geçiş yapın. Yeni mikroservisleri mevcut monolitik sistemin yanına inşa edin ve trafiği kademeli olarak yeni servislere yönlendirin.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Adım 3: Veritabanı Ayrıştırma</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Her servis kendi veritabanına sahip olmalıdır. Foreign key ilişkileri kurmak yerine, event-driven architecture kullanarak servisler arası veri senkronizasyonu sağlanır.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Adım 4: API Gateway ve Service Discovery</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Birden fazla servis olduğunda, servislerin birbirlerini bulması için bir API Gateway'e ihtiyaç vardır. Kong, Traefik veya NGINX gibi araçlar KOBİ'ler için idealdir.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Adım 5: Event-Driven İletişim</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Servisler arası iletişim için event-driven architecture kullanın. RabbitMQ veya Kafka ile olay tabanlı iletişim kurarak gevşek bağımlılık sağlayın.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Adım 6: Container Orkestrasyonu</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Her mikroservis kendi container'ında çalışır. Docker ile container'ları oluşturup, Kubernetes veya Docker Compose ile orkestrasyon sağlayabilirsiniz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Maliyet Analizi: Monolitik vs Mikroservis</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Kısa vadeli olarak mikroservis daha maliyetli olsa da, uzun vadede bakım, ölçekleme ve geliştirme hızı avantajlarıyla kendini amorti eder. 5 yıllık projeksiyonda monolitik yapı toplamda daha pahalıya gelebilir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, müşteri projelerimizde Keşif ve Analiz, Domain Mapping, Prototip Geliştirme, Kademeli Geçiş, Monitoring ve Eğitim adımlarını izliyoruz. Her projeye özel mimari kararlar alarak, en uygun çözümü sunuyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sık Yapılan Hatalar</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Çok Küçük Servisler:</strong> Her fonksiyonu ayrı servise dönüştürmek gereksiz karmaşıklık yaratır.</li>
+        <li><strong>Distributed Monolith:</strong> Servisleri ayırmış olsanız da birbirine sıkı bağımlı hale getirmek.</li>
+        <li><strong>Veri Paylaşımı:</strong> Servisler arası doğrudan veritabanı erişimi yapmak.</li>
+        <li><strong>Yetersiz Monitoring:</strong> Dağıtık sistemlerde logging ve tracing kurmamak.</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Mikroservis mimarisine geçiş konusunda ücretsiz danışmanlık almak için DZY Digital ile iletişime geçin. Doğru mimari kararlarla projenizi geleceğe taşıyın.</p>
+      </div>
+    `
+  },
+  {
+    id: 16,
+    slug: 'react-vs-nextjs-vs-vue-2026-karsilastirmasi',
+    title: 'React vs Next.js vs Vue: 2026\'da Hangi Framework Seçilmeli?',
+    category: 'Teknik Karşılaştırma',
+    date: '04 Temmuz 2026',
+    readTime: '16 dk okuma',
+    excerpt: '2026\'nın en popüler frontend frameworklerinin kapsamlı karşılaştırması. Performans, SEO, ekosistem ve kullanım alanları.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">React vs Next.js vs Vue: 2026'da Hangi Framework Seçilmeli?</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Frontend geliştirme dünyası sürekli değişiyor ve her yıl yeni trendler yaşanıyor. 2026 itibarıyla React, Next.js ve Vue hala en çok tercih edilen frontend çözümleri arasında yer alıyor. Ancak her birinin güçlü ve zayıf yönleri bulunuyor.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Framework Genel Bakışı</h2>
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">React (Meta)</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">React, Meta tarafından geliştirilen ve 2013'ten bu yana frontend dünyasının vazgeçilmez bir parçası olan JavaScript kütüphanesidir. 2026'da React 19.x sürümünde ve Server Components, Suspense, Concurrent Features gibi modern özelliklerle güçlendirilmiş durumda.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Next.js (Vercel)</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Next.js, Vercel tarafından geliştirilen ve React üzerine inşa edilen full-stack framework'tür. App Router, Server Actions, Server Components ve otomatik optimizasyonlarla 2026'da React ekosisteminin en olgun çözümü haline gelmiştir.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">Vue.js</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Vue.js, Evan You tarafından oluşturulan ve Vue 3.x sürümünde olan frontend framework'üdür. Composition API, Vapor Mode ve Nuxt entegrasyonu ile güçlü bir ekosistem sunmaktadır.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Performans Karşılaştırması</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Next.js, Server-Side Rendering ve otomatik optimizasyonları sayesinde Core Web Vitals metriklerinde en iyi performansı göstermektedir. Özellikle büyük uygulamalarda bundle splitting ve lazy loading konusunda üstün avantajları vardır.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">SEO Kapasitesi</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Next.js, SSR ve SSG desteği sayesinde SEO konusunda tartışmasız liderdir. React tek başına CSR kullanırken, Vue Nuxt ile SSR desteği sunar. SEO kritik olan projelerde Next.js en güçlü seçenektir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirici Deneyimi ve Ekosistem</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">React'ın en büyük avantajı devasa ekosistemidir. Next.js bu ekosistemi tamamlar. Vue ise daha az ama yüksek kaliteli resmi araçlar sunar. İş ilanı yoğunluğu açısından React en yüksek talebi görüyor.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Kullanım Alanına Göre Öneriler</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Kurumsal Web Sitesi:</strong> Next.js (SEO, performans, CMS entegrasyonu)</li>
+        <li><strong>SaaS Dashboard:</strong> React/Next.js (Component yeniden kullanımı)</li>
+        <li><strong>E-Ticaret:</strong> Next.js (SEO, image optimization)</li>
+        <li><strong>Mobile App:</strong> React Native (Native performans)</li>
+        <li><strong>Hızlı Prototip:</strong> Vue (Kolay öğrenme eğrisi)</li>
+        <li><strong>Blog/İçerik Platformu:</strong> Next.js (SSG, ISR)</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Tercihi</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak projelerimizde genellikle Next.js'i tercih ediyoruz. SEO avantajı, performans optimizasyonları ve React ekosisteminin gücü bu tercihin temel nedenleri. Ancak her projenin ihtiyacına göre en uygun framework'ü birlikte belirliyoruz.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Projeleriniz için en uygun frontend teknolojisini seçmek konusunda DZY Digital'den ücretsiz danışmanlık alın.</p>
+      </div>
+    `
+  },
+  {
+    id: 17,
+    slug: 'supabase-ile-saas-uygulama-gelistirme',
+    title: 'Supabase ile Sıfırdan SaaS Uygulama Geliştirme: Tam Rehber',
+    category: 'SaaS',
+    date: '04 Temmuz 2026',
+    readTime: '15 dk okuma',
+    excerpt: 'Supabase ile sıfırdan SaaS uygulama geliştirme rehberi. Authentication, RLS, real-time, multi-tenant mimari ve ödeme entegrasyonu.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Supabase ile Sıfırdan SaaS Uygulama Geliştirme: Tam Rehber</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase, açık kaynaklı Backend-as-a-Service platformu olarak SaaS geliştirme süreçlerini büyük ölçüde hızlandırıyor. Bu rehberde, Supabase ile sıfırdan bir SaaS uygulama nasıl geliştirilir, adım adım inceliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Neden Supabase?</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Açık Kaynak:</strong> Vendor lock-in riski minimum, isterseniz kendi sunucunuzda çalıştırabilirsiniz.</li>
+        <li><strong>PostgreSQL Tabanlı:</strong> Dünyanın en güvenilir veritabanı üzerine inşa edilmiş.</li>
+        <li><strong>Row Level Security (RLS):</strong> Multi-tenant yapı için veritabanı seviyesinde güvenlik.</li>
+        <li><strong>Real-time:</strong> WebSocket üzerinden gerçek zamanlı veri akışı.</li>
+        <li><strong>Auth & Storage:</strong> Kimlik doğrulama ve dosya depolama dahil.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım 1: Proje Kurulumu</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase projesi oluşturun ve Next.js ile bir frontend kurun. supabase-js kütüphanesini kurarak veritabanına bağlanın.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım 2: Authentication Kurulumu</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase Auth ile e-posta/şifre, Google, GitHub gibi giriş yöntemlerini kolayca entegre edebilirsiniz. JWT tabanlı oturum yönetimi otomatik olarak halledilir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım 3: Multi-Tenant RLS Politikaları</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Her kullanıcının sadece kendi verilerini görebilmesi için RLS politikaları yazın. auth.uid() fonksiyonunu kullanarak kullanıcı-zamanlı veri filtrelemesi yapın.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım 4: Ödeme Sistemi Entegrasyonu</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe veya iyzico ile abonelik yönetimini kurun. Webhook'larla ödeme durumlarını takip edin. Kullanıcı planlarını otomatik olarak güncelleyin.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım 5: Real-time Özellikler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase'in real-time özelliğiyle veritabanı değişikliklerini anlık olarak frontend'e aktarın. Canlı dashboard'lar, bildirimler ve işbirliği özellikleri için idealdir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım 6: Deploy ve Ölçekleme</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Vercel ile frontend'i, Supabase ile backend'i deploy edin. Otomatik ölçekleme ile trafik artışlarında sorun yaşamayın.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">SaaS projenizi Supabase ile geliştirmek mi istiyorsunuz? DZY Digital, MVP'den ölçeklenebilir platforma kadar uçtan uca destek verir.</p>
+      </div>
+    `
+  },
+  {
+    id: 18,
+    slug: 'yapay-zeka-entegrasyonu-isletmeniz-icin-cozumler',
+    title: 'Yapay Zeka Entegrasyonu: İşletmeniz İçin Pratik AI Çözümleri',
+    category: 'Yapay Zeka',
+    date: '04 Temmuz 2026',
+    readTime: '14 dk okuma',
+    excerpt: 'OpenAI, Claude ve yerel modellerle işletmeniz için pratik yapay zeka çözümleri. Chatbot, belge analizi, görsel işleme ve daha fazlası.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Yapay Zeka Entegrasyonu: İşletmeniz İçin Pratik AI Çözümleri</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Yapay zeka artık sadece büyük şirketlerin_use değil, her ölçekte işletme için erişilebilir hale geldi. OpenAI, Claude ve yerel open-source modellerle, işletmenizin süreçlerini otomatikleştirebilir ve müşteri deneyimini geliştirebilirsiniz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">AI'ın İşletmelere Sağladığı Avantajlar</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Otomasyon:</strong> Tekrarlayan görevler %80'e varan oranda hızlandırılabilir.</li>
+        <li><strong>Müşteri Deneyimi:</strong> 7/24 çalışan chatbot'lar müşteri memnuniyetini artırır.</li>
+        <li><strong>Veri Analizi:</strong> Ham verilerden anlamlı içgörüler elde edilir.</li>
+        <li><strong>Maliyet Tasarrufu:</strong> İnsan kaynağı ihtiyacını azaltır.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Uygulama Alanları</h2>
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">1. Müşteri Hizmetleri Chatbot'u</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">OpenAI veya Claude API ile eğitimli bir chatbot, müşterilerinizin sıkça sorduğu sorulara anında cevap verebilir. RAG (Retrieval-Augmented Generation) tekniğiyle kendi dokümanlarınızdan bilgi çekebilir.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">2. Belge ve Fatura İşleme</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">OCR ve NLP teknolojileriyle fatura, makbuz ve resmi belgeleri otomatik olarak okuyup işleyebilirsiniz. Veri girişinde insan hatasını sıfıra indirir.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">3. İçerik Üretimi</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Blog yazıları, ürün açıklamaları, e-posta metinleri gibi içerikleri AI ile hızla üretebilir, editör onayına sunabilirsiniz.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">4. Tahmine Dayalı Analitik</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Satış tahmini, müşteri kaybı tahmini, stok optimizasyonu gibi alanlarda makine öğrenimi modelleri kullanarak veriye dayalı kararlar alın.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in AI Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, müşterilerimizin ihtiyaçlarına göre en uygun AI çözümlerini öneriyor ve entegre ediyoruz. OpenAI, Anthropic Claude, Google Gemini veya yerel open-source modeller (Llama, Mistral) gibi farklı seçenekleri değerlendiriyoruz.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">İşletmeniz için yapay zeka çözümleri geliştirmek mi istiyorsunuz? DZY Digital, AI entegrasyonu konusunda uçtan uca danışmanlık sunar.</p>
+      </div>
+    `
+  },
+  {
+    id: 19,
+    slug: 'kvkk-uyumlu-yazilim-gelistirme-teknik-rehber',
+    title: 'KVKK Uyumlu Yazılım Geliştirme: Teknik Rehber ve Kontrol Listesi',
+    category: 'Güvenlik',
+    date: '04 Temmuz 2026',
+    readTime: '14 dk okuma',
+    excerpt: 'KVKK kapsamındaki teknik ve idari tedbirler, yazılım geliştirme süreçlerinde uyumluluk ve pratik uygulama örnekleri.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">KVKK Uyumlu Yazılım Geliştirme: Teknik Rehber ve Kontrol Listesi</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Kişisel Verilerin Korunması Kanunu (KVKK), tüm işletmeleri kişisel verilerin işlenmesi konusunda ciddi yükümlülükler altına almaktadır. Bu rehberde, yazılım geliştirme süreçlerinde KVKK uyumunu nasıl sağlayacağınızı teknik olarak inceliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">KVKK'nın Temel İlkeleri</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Hukuka ve Dürüstlük İlkesine Uygunluk:</strong> Veri işleme süreçleri yasal zemine dayanmalıdır.</li>
+        <li><strong>Doğruluk:</strong> Veriler doğru ve güncel olmalıdır.</li>
+        <li><strong>Amaç Sınırlaması:</strong> Veriler sadece belirli amaçlar için işlenmelidir.</li>
+        <li><strong>Veri Minimizasyonu:</strong> Gerektiğinden fazla veri toplanmamalıdır.</li>
+        <li><strong>Saklama Süresi:</strong> Veriler sadece gerektiği süre tutulmalıdır.</li>
+        <li><strong>Güvenlik:</strong> Teknik ve idari tedbirler alınmalıdır.</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Teknik Tedbirler</h2>
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">1. Veri Şifreleme</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Kişisel veriler hem depolama sırasında (at rest) hem de aktarım sırasında (in transit) şifrelenmelidir. AES-256, TLS 1.3 gibi güncel şifreleme standartları kullanılmalıdır.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">2. Erişim Kontrolü</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Rol bazlı erişim kontrolü (RBAC) ile kullanıcıların sadece yetkili olduğu verilere erişmesi sağlanmalıdır. Row Level Security (RLS) veritabanı seviyesinde ek koruma sağlar.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">3. Log Kayıtları</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Tüm veri erişimleri ve işlemleri loglanmalıdır. Log kayıtları denetim sırasında kanıt niteliği taşır. Loglar değiştirilemez ve güvenli ortamda saklanmalıdır.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-2">4. Veri İmha</h3>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Saklama süresi dolan veya talep edilen veriler güvenli şekilde silinmelidir. Overwrite ve cryptographic erasing yöntemleri kullanılabilir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">İdari Tedbirler</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Veri envanteri oluşturma</li>
+        <li>Aydınlatma metinleri hazırlama</li>
+        <li>Rıza yönetimi sistemi kurma</li>
+        <li>Veri ihlali bildirim prosedürü hazırlama</li>
+        <li>Çalışanlara KVKK eğitimi verme</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Yazılım Geliştirme Sürecinde KVKK</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Privacy by Design (Tasarım Aşamasında Gizlilik) ilkesiyle, projenin en başında veri güvenliği göz önünde bulundurulmalıdır. DZY Digital olarak tüm projelerimizde KVKK uyumunu mimari tasarım aşamasından itibaren entegre ediyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Kontrol Listesi</h2>
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Veri envanteri oluşturuldu mu?</li>
+        <li>Aydınlatma metinleri hazır mı?</li>
+        <li>Rıza mekanizması çalışıyor mu?</li>
+        <li>Veriler şifreli mi depolanıyor?</li>
+        <li>Erişim kontrolü uygulanıyor mu?</li>
+        <li>Log kayıtları tutuluyor mu?</li>
+        <li>Veri imha prosedürü var mı?</li>
+        <li>Veri ihlali bildirim prosedürü hazır mı?</li>
+      </ol>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">KVKK uyumu konusunda teknik destek almak için DZY Digital ile iletişime geçin. Uyumlu yazılım mimarileri için uzman ekibimiz yanınızda.</p>
+      </div>
+    `
+  },
+  {
+    id: 101,
+    slug: 'vaka-analizi-e-ticaret-pazaryeri-kurulumu',
+    title: 'Vaka Analizi: E-Ticaret Pazaryeri Kurulumu ile %200 Satış Artışı',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '8 dk okuma',
+    excerpt: 'DZY Digital olarak, çok satıcılı e-ticaret pazaryeri platformu kurarak müşterimizin satışlarını nasıl %200 artırdığımızı anlatıyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: E-Ticaret Pazaryeri Kurulumu ile %200 Satış Artışı</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimiz, Türkiye'de niş bir kategoride (el yapımı organik ürünler) faaliyet gösteren bir girişimdi. Mevcut satışlarını sadece sosyal medya ve WhatsApp üzerinden yürütüyor, sipariş yönetimi tamamen manueldi.</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Siparişlerin %30'u yanlış veya eksik giriliyordu</li>
+        <li>Stok takibi yapılamıyor, aşırı sipariş alınıyordu</li>
+        <li>Satıcılarla iletişim kopuktu</li>
+        <li>Müşteri memnuniyetsizliği artıyordu</li>
+        <li>Ödeme süreçleri karmaşıktı</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimizin ihtiyaçlarını analiz ettikten sonra, Stripe Connect entegrasyonlu çok satıcılı bir pazaryeri platformu geliştirdik. 8 haftalık bir süreçte MVP'yi canlıya aldık.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-4"><strong>Geliştirilen Temel Modüller:</strong></p>
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Satıcı Paneli:</strong> Ürün ekleme, fiyat yönetimi, sipariş takibi</li>
+        <li><strong>Alıcı Arayüzü:</strong> Gelişmiş arama, filtreleme, karşılaştırma</li>
+        <li><strong>Ödeme Sistemi:</strong> Stripe Connect ile komisyon dağıtım</li>
+        <li><strong>Stok Yönetimi:</strong> Gerçek zamanlı stok takibi ve uyarılar</li>
+        <li><strong>Bildirim Sistemi:</strong> SMS ve e-posta ile sipariş bildirimleri</li>
+        <li><strong>Admin Paneli:</strong> Platform yönetimi ve raporlama</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Satış Artışı:</strong> İlk 3 ayda %200'ün üzerinde artış</li>
+        <li><strong>Satıcı Sayısı:</strong> 0'dan 150+ aktif satıcıya ulaşıldı</li>
+        <li><strong>Sipariş Hatası:</strong> %30'dan %2'ye düştü</li>
+        <li><strong>Müşteri Memnuniyeti:</strong> 4.8/5 ortalama puan</li>
+        <li><strong>Platform Kullanımı:</strong> Aylık 50.000+ oturum</li>
+        <li><strong>Uptime:</strong> %99.9 kesintisiz hizmet</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Siz de kendi pazaryeri platformunuzu kurmak istiyorsanız, DZY Digital ile iletişime geçin. MVP'den tam ölçekli platforma kadar uçtan uca destek veriyoruz.</p>
+      </div>
+    `
+  },
+  {
+    id: 102,
+    slug: 'vaka-analizi-saas-abonelik-sistemi',
+    title: 'Vaka Analizi: SaaS Abonelik Sistemi ile Aylık Gelir Modeline Geçiş',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '7 dk okuma',
+    excerpt: 'Eğitim platformumuzun tek seferlik satış modelinden aylık abonelik modeline geçiş sürecini ve elde ettiğimiz sonuçları inceliyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: SaaS Abonelik Sistemi ile Aylık Gelir Modeline Geçiş</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimiz, online eğitim içerikleri sunan bir platformdu. Kurslarını tek seferlik satış modeliyle satıyor, ancak gelir akışı öngörülemez ve tekrarlayan değildi.</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Gelir dalgalanması yüksekti, aylık tahmin yapılamıyordu</li>
+        <li>Müşteri sadakati düşüktü, yeni kurs bekleniyordu</li>
+        <li>Yeni içerik üretme baskısı artıyordu</li>
+        <li>Rekabet artmıştı, fiyat savaşları yaşanıyordu</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe altyapısıyla çoklu abonelik planları (Temel, Profesyonel, Kurumsal) oluşturduk. Ücretsiz deneme süresi, indirim kuponları ve aile planı gibi esnek seçenekler ekledik.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>MRR Büyümesi:</strong> İlk 6 ayda aylık tekrarlayan gelir %350 arttı</li>
+        <li><strong>Churn Oranı:</strong> Aylık müşteri kaybı %18'den %4'e düştü</li>
+        <li><strong>LTV Artışı:</strong> Müşteri yaşam boyu değeri 3 kat arttı</li>
+        <li><strong>Ödeme Başarısı:</strong> Otomatik yeniden deneme ile %95 tahsilat oranı</li>
+        <li><strong>Müşteri Memnuniyeti:</strong> Abonelik modeliyle daha yüksek memnuniyet</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">SaaS abonelik sistemi kurulumu konusunda DZY Digital'den destek alın. Stripe, iyzico entegrasyonu ve abonelik yönetimi için uzman ekibimiz yanınızda.</p>
+      </div>
+    `
+  },
+  {
+    id: 103,
+    slug: 'vaka-analizi-fabrika-otomasyonu',
+    title: 'Vaka Analizi: Fabrika Otomasyonu ile Üretim Verimliliğinde %45 Artış',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '8 dk okuma',
+    excerpt: 'DZY Digital olarak, bir üretim fabrikasında IoT sensörleri ve gerçek zamanlı yönetim paneli ile nasıl %45 verimlilik artışı sağladığımızı anlatıyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Fabrika Otomasyonu ile Üretim Verimliliğinde %45 Artış</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimiz, ambalaj üretimi yapan orta ölçekli bir fabrikaydı. Üretim süreçleri tamamen manuel olarak izleniyor, arızalar oluştuğunda müdahale gecikiyordu.</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Planlanmamış duruş süreleri haftada 8-10 saati buluyordu</li>
+        <li>Enerji tüketimi kontrolsüz şekilde artıyordu</li>
+        <li>Üretim kalitesi dalgalanıyordu</li>
+        <li>Bakım maliyetleri yükselişteydi</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Her makineye ESP32 tabanlı sensör üniteleri yerleştirdik. Sıcaklık, titreşim ve enerji tüketimi verilerini gerçek zamanlı olarak topladık. Bulut tabanlı bir dashboard ile yöneticilere canlı veri sunduk.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Verimlilik Artışı:</strong> Üretim hızında %45 artış</li>
+        <li><strong>Duruş Süresi:</strong> Planlanmamış duruşlar %80 azaldı</li>
+        <li><strong>Enerji Tasarrufu:</strong> Aylık enerji maliyetlerinde %25 düşüş</li>
+        <li><strong>Kalite Oranı:</strong> Hata oranı %12'den %3'e düştü</li>
+        <li><strong>Bakım Maliyeti:</strong> Yıllık bakım bütçesinde %30 tasarruf</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Fabrika otomasyonu ve IoT çözümleri için DZY Digital ile iletişime geçin. Üretim verimliliğinizi artırın, maliyetlerinizi düşürün.</p>
+      </div>
+    `
+  },
+  {
+    id: 104,
+    slug: 'vaka-analizi-saglik-sektorunde-kvkk',
+    title: 'Vaka Analizi: Sağlık Sektöründe KVKK Uyumlu Hasta Bilgi Sistemi',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '7 dk okuma',
+    excerpt: 'Özel hastane zincirimizin kağıt tabanlı hasta kayıt sistemindeki KVKK risklerini nasıl ortadan kaldırdığımızı ve dijitalleştirdiğimizi anlatıyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Sağlık Sektöründe KVKK Uyumlu Hasta Bilgi Sistemi</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimiz, 5 şubeli bir özel hastane zinciriydi. Hasta kayıtları kağıt üzerinde tutuluyor, dijital ortamda sadece temel bilgiler saklanıyordu.</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>KVKK kapsamında ciddi uyumsuzluk riski vardı</li>
+        <li>Hasta geçmişi ulaşılması zor kağıt dosyalarda saklanıyordu</li>
+        <li>Doktorlar arasında veri paylaşımı yapılamıyordu</li>
+        <li>Denetim süreçleri haftalar sürüyordu</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase + RLS ile bulut tabanlı hasta bilgi sistemi geliştirdik. Her doktor sadece kendi hastalarının verilerine erişebiliyor. Tüm veri erişimleri log kaydı tutuluyor.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>KVKK Uyumu:</strong> Tam uyumluluk sağlandı, denetimler başarıyla geçildi</li>
+        <li><strong>Erişim Hızı:</strong> Hasta geçmişine erişim süresi 5 dakikadan 5 saniyeye düştü</li>
+        <li><strong>Veri Güvenliği:</strong> Sıfır veri sızıntısı</li>
+        <li><strong>Doktor Memnuniyeti:</strong> %95 kullanıcı memnuniyeti</li>
+        <li><strong>Maliyet Tasarrufu:</strong> Yıllık kağıt ve arşiv maliyetlerinde %60 düşüş</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">KVKK uyumlu yazılım çözümleri için DZY Digital ile iletişime geçin. Sağlık, finans ve diğer hassas sektörler için özel çözümler geliştiriyoruz.</p>
+      </div>
+    `
+  },
+  {
+    id: 105,
+    slug: 'vaka-analizi-lojistik-ai-rota-optimizasyonu',
+    title: 'Vaka Analizi: Lojistik Firmasında AI Destekli Rota Optimizasyonu',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '8 dk okuma',
+    excerpt: 'Ulusal lojistik firmamızın yapay zeka destekli rota optimizasyonu ile yakıt tasarrufu ve teslimat hızı nasıl artırdığımızı anlatıyoruz.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Lojistik Firmasında AI Destekli Rota Optimizasyonu</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimiz, günlük 1000'den fazla teslimat yapan ulusal bir lojistik firmasıydı. Rota planlaması deneyimli şoförlere bırakılıyordu.</p>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li>Yakıt maliyetleri kontrolsüz şekilde artıyordu</li>
+        <li>Teslimat süreleri uzuyordu</li>
+        <li>Müşteriler teslimat durumunu soruyordu</li>
+        <li>Araç bakım maliyetleri yükselişteydi</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">AI tabanlı rota optimizasyon algoritması geliştirdik. Trafik, hava durumu ve teslimat önceliklerini göz önünde bulundurarak en optimal rotaları otomatik olarak hesaplıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Yakıt Tasarrufu:</strong> Aylık yakıt giderlerinde %35 azalma</li>
+        <li><strong>Teslimat Hızı:</strong> Ortalama teslimat süresinde %40 iyileşme</li>
+        <li><strong>Araç Kullanımı:</strong> Araç başı günlük teslimat sayısında %25 artış</li>
+        <li><strong>Müşteri Memnuniyeti:</strong> Canlı takip ile müşteri şikayetlerinde %70 düşüş</li>
+        <li><strong>Bakım Maliyeti:</strong> Düzenli bakım ile arıza oranında %50 azalma</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Lojistik operasyonlarınızı yapay zeka ile optimize etmek istiyorsanız, DZY Digital'in AI destekli çözümleriyle tanışın.</p>
       </div>
     `
   }

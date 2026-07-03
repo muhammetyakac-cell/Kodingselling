@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { getApiUrl } from './lib/api';
 import { blogPosts } from './blogData';
+import { faqData } from './faqData';
 import { motion, AnimatePresence } from 'framer-motion';
 import Lenis from 'lenis';
 import { clsx } from 'clsx';
@@ -185,7 +186,7 @@ const sectorPages = {
   }
 };
 
-const faqData = [
+const contactFaqs = [
   {
     q: 'Projenin kaynak kodları bize mi ait olacak?',
     a: 'Evet. Teslimat sonunda tüm kaynak kodları ve veritabanı erişimleri şirketinize devredilir.'
@@ -1609,7 +1610,7 @@ function ContactView() {
             <p className="text-slate-600 leading-relaxed">Kurumsal proje öncesi en çok sorulan soruları şeffaflıkla cevapladık.</p>
           </div>
           <div className="md:w-2/3 w-full space-y-4">
-            {faqData.map((faq, idx) => (
+            {contactFaqs.map((faq, idx) => (
               <div key={idx} onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)} className="border border-slate-200 rounded-2xl overflow-hidden cursor-pointer hover:border-indigo-200 transition-colors">
                 <div className="p-5 flex justify-between items-center bg-slate-50">
                   <h4 className="font-bold text-slate-900 pr-4">{faq.q}</h4>
