@@ -211,7 +211,7 @@ function Activity(props) {
 const seoData = {
   home: {
     title: 'DZY Digital | Akıllı, Güvenli ve Ölçeklenebilir Yazılım Çözümleri',
-    description: 'DZY Yazılım Danışma ile işletmeniz için özel web/mobil uygulamalar, canlı takip panelleri, güvenli bulut ve IoT entegrasyonları geliştirin. Yeni nesil teknoloji danışmanlığı.',
+    description: 'DZY Digital ile web/mobil uygulamalar, bulut mimarisi, IoT entegrasyonu ve özel yazılım çözümleri. İzmir merkezli kurumsal teknoloji danışmanlığı.',
     keywords: 'yazılım danışmanlığı, özel yazılım geliştirme, mobil uygulama, web tasarım, bulut sistemleri, iot entegrasyonu, saas yazılımları, izmir yazılım firması, dzy digital',
     path: '/',
     schema: [
@@ -221,10 +221,20 @@ const seoData = {
         "name": "DZY Yazılım Danışmanlığı",
         "url": "https://www.dzydigital.com",
         "logo": "https://www.dzydigital.com/og-image.png",
+        "description": "Yeni nesil teknoloji danışmanlığı ve yazılım mühendisliği hizmetleri sunan kurumsal yazılım firması.",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+90-555-208-3092",
-          "contactType": "customer service"
+          "contactType": "customer service",
+          "availableLanguage": ["Turkish", "English"]
+        },
+        "sameAs": [
+          "https://www.instagram.com/dzydigital",
+          "https://www.linkedin.com/company/dzy-digital"
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "Türkiye"
         }
       },
       {
@@ -264,79 +274,113 @@ const seoData = {
             }
           }
         ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DZY Digital",
+        "url": "https://www.dzydigital.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.dzydigital.com/blog?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     ]
   },
   services: {
     title: 'Hizmetlerimiz | Web, Mobil, Bulut ve Özel Otomasyon Geliştirme - DZY Digital',
-    description: 'Mobil/web uygulamaları, ödeme sistemleri, yönetim panelleri, veri güvenliği ve ERP/CRM entegrasyonları dahil geniş hizmet yelpazemizi inceleyin.',
+    description: 'Mobil/web uygulamaları, sanal POS, veri güvenliği, ERP/CRM ve SaaS geliştirme hizmetleri. İzmir\'de kurumsal yazılım danışmanlığı.',
     keywords: 'yazılım hizmetleri, mobil uygulama geliştirme, sanal pos entegrasyonu, veri güvenliği, legacy sistem yenileme, cto danışmanlığı, saas geliştirme, seo optimizasyonu',
     path: '/hizmetler',
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "DZY Digital Hizmetleri",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Mobil ve Web Uygulamaları"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Ödeme ve Tahsilat Sistemleri"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Canlı Takip ve Yönetim Panelleri"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Üst Düzey Veri Güvenliği"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Akıllı Cihaz ve Sensör Entegrasyonu"
-        }
-      ]
-    }
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "DZY Digital Hizmetleri",
+        "description": "Kurumsal yazılım geliştirme, bulut mimarisi ve dijital dönüşüm hizmetleri.",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Mobil ve Web Uygulamaları" },
+          { "@type": "ListItem", "position": 2, "name": "Ödeme ve Tahsilat Sistemleri" },
+          { "@type": "ListItem", "position": 3, "name": "Canlı Takip ve Yönetim Panelleri" },
+          { "@type": "ListItem", "position": 4, "name": "Üst Düzey Veri Güvenliği" },
+          { "@type": "ListItem", "position": 5, "name": "Akıllı Cihaz ve Sensör Entegrasyonu" },
+          { "@type": "ListItem", "position": 6, "name": "Eski Yazılımları Yenileme" },
+          { "@type": "ListItem", "position": 7, "name": "Dışarıdan Teknoloji Yöneticiliği" },
+          { "@type": "ListItem", "position": 8, "name": "Şirkete Özel Yönetim Yazılımları" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Hizmetlerimiz", "item": "https://www.dzydigital.com/hizmetler" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Mobil ve Web Uygulamaları Geliştirme",
+        "description": "iOS ve Android için native ve çapraz platform mobil uygulamalar, responsive web siteleri ve PWA çözümleri.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Yazılım Geliştirme"
+      }
+    ]
   },
   expertise: {
     title: 'Sektörel Yazılım Çözümleri | Lojistik, SaaS ve Akademik Sistemler - DZY Digital',
-    description: 'Otomotiv, lojistik bilişimi, akademik dijital arşivler ve SaaS modelleri gibi dikey sektörler için geliştirdiğimiz özel analitik ve operasyonel çözümler.',
+    description: 'Lojistik filo yönetimi, SaaS platform geliştirme ve akademik arşiv sistemleri için özel sektörel yazılım çözümleri.',
     keywords: 'lojistik yazılımları, filo yönetimi, akademik arşiv sistemleri, saas platform geliştirme, sektörel yazılımlar, b2b yazılım entegrasyonu, erp çözümleri',
     path: '/sektorel-cozumler',
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Sektörel Dijital Dönüşüm Çözümleri",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Lojistik ve Filo Yönetimi" },
-        { "@type": "ListItem", "position": 2, "name": "SaaS Platformları" },
-        { "@type": "ListItem", "position": 3, "name": "Akademik Dijital Arşiv Sistemleri" }
-      ]
-    }
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Sektörel Dijital Dönüşüm Çözümleri",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Lojistik ve Filo Yönetimi" },
+          { "@type": "ListItem", "position": 2, "name": "SaaS Platformları" },
+          { "@type": "ListItem", "position": 3, "name": "Akademik Dijital Arşiv Sistemleri" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/sektorel-cozumler" }
+        ]
+      }
+    ]
   },
   about: {
     title: 'Hakkımızda | Kurumsal Teknoloji Vizyonu - DZY Digital',
-    description: 'Teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyor, yazılımı uçtan uca mühendislik disipliniyle kurguluyoruz. DZY Digital süreçlerimiz.',
+    description: 'Teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyor, yazılımı uçtan uca mühendislik disipliniyle kurguluyoruz.',
     keywords: 'dzy digital kimdir, kurumsal yazılım danışmanlığı, izmir yazılım ajansı, cto danışmanlığı, dijital dönüşüm uzmanı, teknoloji danışmanı',
     path: '/hakkimizda',
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "DZY Digital Hakkında",
-      "description": "Yeni nesil teknoloji danışmanlığı ve yazılım mühendisliği vizyonu."
-    }
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "DZY Digital Hakkında",
+        "description": "Yeni nesil teknoloji danışmanlığı ve yazılım mühendisliği vizyonu."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Hakkımızda", "item": "https://www.dzydigital.com/hakkimizda" }
+        ]
+      }
+    ]
   },
   contact: {
     title: 'İletişim | Projenizi Başlatın ve Teknoloji Danışmanlığı Alın - DZY Digital',
-    description: 'DZY Digital İzmir operasyon merkezi iletişim bilgileri. Formu doldurarak projenizi anlatın, 24 saat içinde ücretsiz teknik ön analiz alın.',
-    keywords: 'yazılım teklifi al, izmir yazılım iletişim, dzy digital telefon, yazılım firması adres',
+    description: 'DZY Digital İzmir iletişim. Formu doldurarak projenizi anlatın, 24 saat içinde ücretsiz teknik ön analiz raporu alın.',
+    keywords: 'yazılım teklifi al, izmir yazılım iletişim, dzy digital telefon, yazılım firması adres, ücretsiz danışmanlık',
     path: '/iletisim',
     schema: [
       {
@@ -358,7 +402,16 @@ const seoData = {
           "@type": "GeoCoordinates",
           "latitude": "38.3850",
           "longitude": "27.1720"
-        }
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "priceRange": "$$"
       },
       {
         "@context": "https://schema.org",
@@ -397,32 +450,125 @@ const seoData = {
             }
           }
         ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "İletişim", "item": "https://www.dzydigital.com/iletisim" }
+        ]
       }
     ]
   },
   'sector-logistics': {
     title: 'Lojistik ve Filo Yönetimi Çözümleri | DZY Digital',
-    description: 'Uluslararası taşımacılık, rota optimizasyonu ve canlı filo takibi için özel platformlar.',
-    keywords: 'lojistik filo yönetimi, araç takip sistemi, rota optimizasyon yazılımı, gümrük belge akışı otomasyonu',
-    path: '/sektor/lojistik'
+    description: 'GPS filo takibi, akıllı rota optimizasyonu ve gümrük belge otomasyonu ile lojistik operasyonlarınızı dijitalleştirin.',
+    keywords: 'lojistik filo yönetimi, araç takip sistemi, rota optimizasyon yazılımı, gümrük belge akışı otomasyonu, gps takip',
+    path: '/sektor/lojistik',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Lojistik ve Filo Yönetim Yazılımları",
+        "description": "Uluslararası taşımacılık, rota optimizasyonu ve canlı filo takibi için özel yazılım çözümleri.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Lojistik Yazılım Geliştirme"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/sektorel-cozumler" },
+          { "@type": "ListItem", "position": 3, "name": "Lojistik", "item": "https://www.dzydigital.com/sektor/lojistik" }
+        ]
+      }
+    ]
   },
   'sector-saas': {
     title: 'SaaS ve Platform Ürün Geliştirme | DZY Digital',
-    description: 'Abonelik bazlı ürününüzü hızlıca pazara çıkarmak için ölçeklenebilir SaaS mimarileri.',
-    keywords: 'saas geliştirme, abonelik yazılımı, multi tenant mimari, stripe entegrasyonu, saas altyapısı',
-    path: '/sektor/saas'
+    description: 'Multi-tenant SaaS altyapısı, Stripe abonelik entegrasyonu ve ölçeklenebilir bulut mimarisi ile ürününüzü pazara taşıyın.',
+    keywords: 'saas geliştirme, abonelik yazılımı, multi tenant mimari, stripe entegrasyonu, saas altyapısı, bulut platform',
+    path: '/sektor/saas',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "SaaS Platform Geliştirme",
+        "description": "Abonelik bazlı SaaS ürünleriniz için çoklu kiracılı, güvenli ve ölçeklenebilir bulut altyapıları.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "SaaS Geliştirme"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/sektorel-cozumler" },
+          { "@type": "ListItem", "position": 3, "name": "SaaS", "item": "https://www.dzydigital.com/sektor/saas" }
+        ]
+      }
+    ]
   },
   'sector-academic': {
     title: 'Akademik ve Bilimsel Dijital Arşiv Sistemleri | DZY Digital',
-    description: 'Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel çözümler.',
-    keywords: 'akademik veri arşivi, bilimsel envanter yazılımı, dijital kütüphane altyapısı, güvenli veri paylaşımı',
-    path: '/sektor/akademik'
+    description: 'KVKK uyumlu bilimsel veri arşivi, Dublin Core entegrasyonu ve güvenli akademik veri paylaşım altyapıları geliştirme.',
+    keywords: 'akademik veri arşivi, bilimsel envanter yazılımı, dijital kütüphane altyapısı, güvenli veri paylaşımı, dublin core',
+    path: '/sektor/akademik',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Akademik Dijital Arşiv Sistemleri",
+        "description": "Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel dijital arşiv çözümleri.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Akademik Yazılım Geliştirme"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/sektorel-cozumler" },
+          { "@type": "ListItem", "position": 3, "name": "Akademik", "item": "https://www.dzydigital.com/sektor/akademik" }
+        ]
+      }
+    ]
   },
   blog: {
     title: 'Bilgi Bankası & Blog | Teknoloji ve Yazılım Trendleri - DZY Digital',
-    description: 'Yazılım mimarisi, dijital dönüşüm, bulut teknolojileri ve KOBİ\'ler için vaka analizleri barındıran bilgi bankamız.',
-    keywords: 'yazılım blogu, teknoloji makaleleri, dijital dönüşüm hataları, vaka analizi',
-    path: '/blog'
+    description: 'Yazılım mimarisi, dijital dönüşüm, bulut teknolojileri ve KOBİ\'ler için vaka analizleri barındıran bilgi bankamızı keşfedin.',
+    keywords: 'yazılım blogu, teknoloji makaleleri, dijital dönüşüm hataları, vaka analizi, yazılım rehberi',
+    path: '/blog',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "DZY Digital Bilgi Bankası",
+        "url": "https://www.dzydigital.com/blog",
+        "description": "Yazılım, teknoloji ve dijital dönüşüm üzerine uzman içerikler.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "DZY Digital",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.dzydigital.com/og-image.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.dzydigital.com/blog" }
+        ]
+      }
+    ]
   }
 };
 
@@ -432,53 +578,54 @@ function SEOManager({ activeTab, dynamicSeo }) {
     const siteUrl = 'https://www.dzydigital.com';
     const fullUrl = `${siteUrl}${currentSeo.path}`;
 
-    // Update Title
     document.title = currentSeo.title;
 
-    // Update Meta Description
-    let descMeta = document.querySelector('meta[name="description"]');
-    if (descMeta) descMeta.setAttribute('content', currentSeo.description);
+    const setMeta = (selector, content, attr = 'content') => {
+      const el = document.querySelector(selector);
+      if (el) el.setAttribute(attr, content);
+    };
 
-    let ogDescMeta = document.querySelector('meta[property="og:description"]');
-    if (ogDescMeta) ogDescMeta.setAttribute('content', currentSeo.description);
+    setMeta('meta[name="description"]', currentSeo.description);
+    setMeta('meta[property="og:description"]', currentSeo.description);
+    setMeta('meta[property="og:title"]', currentSeo.title);
+    setMeta('meta[property="og:url"]', fullUrl);
+    setMeta('meta[name="keywords"]', currentSeo.keywords || currentSeo.description);
 
-    let twitterDescMeta = document.querySelector('meta[property="twitter:description"]');
-    if (twitterDescMeta) twitterDescMeta.setAttribute('content', currentSeo.description);
+    setMeta('meta[property="twitter:card"]', 'summary_large_image');
+    setMeta('meta[property="twitter:title"]', currentSeo.title);
+    setMeta('meta[property="twitter:description"]', currentSeo.description);
+    setMeta('meta[property="twitter:url"]', fullUrl);
+    setMeta('meta[property="twitter:site"]', '@dzydigital');
+    setMeta('meta[property="twitter:creator"]', '@dzydigital');
 
-    // Update Keywords
-    let keywordsMeta = document.querySelector('meta[name="keywords"]');
-    if (keywordsMeta) keywordsMeta.setAttribute('content', currentSeo.keywords);
-
-    // Update Canonical URL
     let canonicalLink = document.getElementById('canonical-link');
     if (canonicalLink) canonicalLink.setAttribute('href', fullUrl);
 
-    // Update Open Graph Title & URL
-    let ogTitleMeta = document.querySelector('meta[property="og:title"]');
-    if (ogTitleMeta) ogTitleMeta.setAttribute('content', currentSeo.title);
-
-    let ogUrlMeta = document.querySelector('meta[property="og:url"]');
-    if (ogUrlMeta) ogUrlMeta.setAttribute('content', fullUrl);
-
-    // Update Twitter Title & URL
-    let twitterTitleMeta = document.querySelector('meta[property="twitter:title"]');
-    if (twitterTitleMeta) twitterTitleMeta.setAttribute('content', currentSeo.title);
-
-    let twitterUrlMeta = document.querySelector('meta[property="twitter:url"]');
-    if (twitterUrlMeta) twitterUrlMeta.setAttribute('content', fullUrl);
-
-    // Update Dynamic JSON-LD Schema
     let dynamicSchemaScript = document.getElementById('dynamic-schema');
+    const schemaJson = currentSeo.schema ? JSON.stringify(currentSeo.schema) : '';
     if (dynamicSchemaScript) {
-      dynamicSchemaScript.textContent = currentSeo.schema ? JSON.stringify(currentSeo.schema) : '';
-    } else if (currentSeo.schema) {
+      dynamicSchemaScript.textContent = schemaJson;
+    } else if (schemaJson) {
       const script = document.createElement('script');
       script.id = 'dynamic-schema';
       script.type = 'application/ld+json';
-      script.textContent = JSON.stringify(currentSeo.schema);
+      script.textContent = schemaJson;
       document.head.appendChild(script);
     }
-  }, [activeTab]);
+
+    let robotsMeta = document.querySelector('meta[name="robots"]');
+    if (robotsMeta) robotsMeta.setAttribute('content', 'index, follow');
+
+    let ogTypeMeta = document.querySelector('meta[property="og:type"]');
+    if (ogTypeMeta) ogTypeMeta.setAttribute('content', currentSeo.path.startsWith('/blog/') ? 'article' : 'website');
+
+    let ogImageMeta = document.querySelector('meta[property="og:image"]');
+    if (ogImageMeta) ogImageMeta.setAttribute('content', 'https://www.dzydigital.com/og-image.png');
+
+    let twitterImageMeta = document.querySelector('meta[property="twitter:image"]');
+    if (twitterImageMeta) twitterImageMeta.setAttribute('content', 'https://www.dzydigital.com/og-image.png');
+
+  }, [activeTab, dynamicSeo]);
 
   return null;
 }
@@ -608,12 +755,53 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-indigo-100 selection:text-indigo-900">
       <SEOManager 
         activeTab={activeTab} 
-        dynamicSeo={activeTab === 'blog-post' ? {
-          title: blogPosts.find(p => p.slug === currentSlug)?.title + ' | DZY Digital',
-          description: blogPosts.find(p => p.slug === currentSlug)?.excerpt,
-          keywords: 'yazılım, dijital dönüşüm, teknoloji makalesi',
-          path: '/blog/' + currentSlug
-        } : null} 
+        dynamicSeo={activeTab === 'blog-post' ? (() => {
+          const post = blogPosts.find(p => p.slug === currentSlug);
+          if (!post) return null;
+          const siteUrl = 'https://www.dzydigital.com';
+          return {
+            title: post.title + ' | DZY Digital',
+            description: post.excerpt,
+            keywords: 'yazılım, dijital dönüşüm, teknoloji makalesi, ' + post.category.toLowerCase(),
+            path: '/blog/' + post.slug,
+            schema: [
+              {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": post.title,
+                "description": post.excerpt,
+                "datePublished": post.date,
+                "author": {
+                  "@type": "Organization",
+                  "name": "DZY Digital",
+                  "url": siteUrl
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "DZY Digital",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": siteUrl + '/og-image.png'
+                  }
+                },
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": siteUrl + '/blog/' + post.slug
+                },
+                "image": siteUrl + '/og-image.png'
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": siteUrl + "/" },
+                  { "@type": "ListItem", "position": 2, "name": "Blog", "item": siteUrl + "/blog" },
+                  { "@type": "ListItem", "position": 3, "name": post.title, "item": siteUrl + "/blog/" + post.slug }
+                ]
+              }
+            ]
+          };
+        })() : null} 
       />
       <motion.header 
         initial={{ y: -100 }}
