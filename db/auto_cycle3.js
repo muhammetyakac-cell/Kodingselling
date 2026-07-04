@@ -1,0 +1,173 @@
+export const autoPosts = [
+  {
+    id: 62,
+    slug: 'spor-teknolojileri-ve-yazilim',
+    title: 'Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm',
+    category: 'Sektörel Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '10 dk okuma',
+    excerpt: 'Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm sektöründe dijital dönüşüm için kapsamlı rehber. Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm yazılım çözümleri, dijital dönüşüm stratejileri ve ROI analizi.',
+    content: `
+<h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm</h1>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm İçin Yazılım Çözümlerimiz</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm sektörüne özel olarak geliştirdiğimiz yazılım çözümleri ile işletmelerin dijital dönüşüm yolculuğunda yanındayız. Modern teknolojilerle donatılmış, ölçeklenebilir ve güvenli çözümler sunuyoruz.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterilerimizin ihtiyaçlarını analiz ederek, onlara özel yazılım mimarileri tasarlıyoruz. Bulut tabanlı altyapımız sayesinde kesintisiz hizmet ve yüksek performans garantisi sağlıyoruz.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li><strong>Müşteri memnuniyetinde:</strong> %45 artış sağlandı</li>
+  <li><strong>Operasyonel maliyetlerde:</strong> %41 azalma elde edildi</li>
+  <li><strong>Çalışan verimliliğinde:</strong> %77 iyileşme görüldü</li>
+  <li><strong>Hata oranları:</strong> %27 oranında düştü</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">ROI ve Başarı Metrikleri</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital dönüşüm projelerinde başarıyı ölçmek için belirli metrikler kullanılmalıdır. Müşteri memnuniyeti, operasyonel verimlilik, maliyet tasarrufu ve gelir artışı en önemli göstergeler arasında yer almaktadır.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Yapılan araştırmalar, Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm sektöründe dijital dönüşüm yatırımlarının ortalama %27 oranında verimlilik artışı sağladığını göstermektedir. DZY Digital müşterileri, projelerimiz sayesinde ortalama 6-12 ay içinde yatırımının karşılığını almaktadır.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li><strong>Geleneksel yöntemlere:</strong> kıyasla %77 daha hızlı süreç yönetimi</li>
+  <li><strong>Manuel iş:</strong> yükünde %58 azalma</li>
+  <li><strong>Raporlama sürelerinde:</strong> %80 iyileşme</li>
+  <li><strong>Müşteri şikayetlerinde:</strong> %42 düşüş</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm İçin Dijital Dönüşüm Stratejileri</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Başarılı bir dijital dönüşüm için öncelikle mevcut süreçlerin kapsamlı bir şekilde analiz edilmesi gerekmektedir. Ardından, işletmenin önceliklerine göre bir yol haritası belirlenmeli ve adım adım uygulamaya konulmalıdır.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital dönüşüm sürecinde çalışanların eğitimi ve değişim yönetimi de kritik öneme sahiptir. Teknoloji ne kadar ileri olursa olsun, kullanıcılar tarafından benimsenmediği sürece başarılı olması mümkün değildir.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li><strong>Müşteri memnuniyetinde:</strong> %29 artış sağlandı</li>
+  <li><strong>Operasyonel maliyetlerde:</strong> %23 azalma elde edildi</li>
+  <li><strong>Çalışan verimliliğinde:</strong> %29 iyileşme görüldü</li>
+  <li><strong>Hata oranları:</strong> %60 oranında düştü</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm Sektöründe Dijital Dönüşümün Önemi</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital dönüşüm, Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm sektöründe faaliyet gösteren işletmeler için artık bir seçenek değil, zorunluluktur. Türkiye’de Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm sektöründeki KOBİ’ler ve kurumsal firmalar, dijitalleşme sürecinde önemli adımlar atmaktadır.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Müşteri beklentilerinin hızla değiştiği günümüzde, geleneksel yöntemlerle rekabet etmek her geçen gün zorlaşmaktadır. Dijital dönüşüm sayesinde işletmeler operasyonel verimliliklerini artırırken, müşteri memnuniyetini de üst seviyelere taşıyabilmektedir.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li><strong>Müşteri memnuniyetinde:</strong> %73 artış sağlandı</li>
+  <li><strong>Operasyonel maliyetlerde:</strong> %48 azalma elde edildi</li>
+  <li><strong>Çalışan verimliliğinde:</strong> %80 iyileşme görüldü</li>
+  <li><strong>Hata oranları:</strong> %63 oranında düştü</li>
+</ul>
+<div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+<p class="text-lg text-indigo-900 font-semibold m-0">Dijital dönüşüm yolculuğunuzda DZY Digital yanınızda. Spor Teknolojilerinde Yazılım Çözümleri ve Dijital Dönüşüm konusunda deneyimli ekibimizle, işletmenizin ihtiyaçlarına özel çözümler geliştiriyoruz. Hemen iletişime geçin!</p>
+</div>
+    `
+  },
+  {
+    id: 63,
+    slug: 'aws-vs-azure-vs-gcp',
+    title: 'AWS vs Azure vs Google Cloud: Türkiye’de Hangi Bulut Sağlayıcısı Daha İyi?',
+    category: 'Teknoloji Karşılaştırmaları',
+    date: '04 Temmuz 2026',
+    readTime: '11 dk okuma',
+    excerpt: 'AWS, Azure ve  karşılaştırması: Performans, maliyet, geliştirme hızı ve kullanım senaryolarına göre değerlendirme.',
+    content: `
+<h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">AWS vs Azure vs Google Cloud: Türkiye’de Hangi Bulut Sağlayıcısı Daha İyi?</h1>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Günümüz yazılım dünyasında doğru teknolojiyi seçmek, projelerin başarısı için kritik öneme sahiptir. AWS, Azure ve  karşılaştırması ile işletmeniz için en doğru kararı vermenize yardımcı oluyoruz.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">AWS Nedir?</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">AWS, modern yazılım geliştirme dünyasında önemli bir yere sahiptir. Geniş topluluk desteği ve zengin ekosistemi ile birçok proje için ideal bir seçenektir. Türkiye’deki birçok startup ve kurumsal firma AWS kullanmayı tercih etmektedir.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">AWS ile geliştirme yapmanın en büyük avantajlarından biri, hızlı prototipleme ve geniş kütüphane desteğidir. Ayrıca, performans ve ölçeklenebilirlik açısından da başarılı sonuçlar sunmaktadır.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Azure Nedir?</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Azure, özellikle belirli kullanım senaryolarında öne çıkan bir teknolojidir. Gelişmiş özellikleri ve esnek yapısı sayesinde karmaşık projelerde tercih edilmektedir.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Azure’nin en güçlü yönlerinden biri, yüksek performans ve güvenlik özellikleridir. Özellikle büyük ölçekli kurumsal projelerde Azure tercih edilmektedir.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Performans Karşılaştırması</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">AWS, Azure ve  arasındaki temel farkları anlamak, doğru teknoloji seçimi için önemlidir. Performans, geliştirme hızı, maliyet ve topluluk desteği gibi kriterler üzerinden değerlendirme yapılmalıdır.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Her üç teknoloji de farklı güçlü yönlere sahiptir. Projenizin ihtiyaçlarına göre en uygun teknolojiyi seçmek için kapsamlı bir analiz yapılması gerekmektedir.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Hangi Durumda Hangisini Seçmeli?</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Küçük ve orta ölçekli projeler için AWS ideal bir seçenek olabilir. Büyük ölçekli kurumsal projelerde ise Azure daha uygun olabilir.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Hızlı prototipleme ve MVP geliştirme süreçlerinde AWS öne çıkarken, uzun vadeli ve karmaşık projelerde Azure veya  tercih edilmelidir. Proje gereksinimlerinizi dikkatlice analiz ederek karar vermelisiniz.</p>
+<div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+<p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, doğru teknoloji seçimi konusunda danışmanlık hizmeti sunuyoruz. Projeniz için en uygun teknolojiyi belirlemek ve uzman ekibimizle çalışmak için bizimle iletişime geçin.</p>
+</div>
+    `
+  },
+  {
+    id: 64,
+    slug: 'redis-cache-kurulumu-ve-kullanimi',
+    title: 'Redis ile Önbellekleme ve Performans Optimizasyonu Rehberi',
+    category: 'Teknik Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '16 dk okuma',
+    excerpt: 'Redis ile Önbellekleme ve Performans Optimizasyonu hakkında kapsamlı rehber. Adım adım kurulum, konfigürasyon ve en iyi pratikler.',
+    content: `
+<h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Redis ile Önbellekleme ve Performans Optimizasyonu Rehberi</h1>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Gelişmiş Özellikler ve Optimizasyon</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Temel kurulumu tamamladıktan sonra, Redis ile Önbellekleme ve Performans Optimizasyonu üzerinde gelişmiş özellikler eklemeye başlayabiliriz. Performans optimizasyonu, hata yönetimi ve güvenlik gibi konular üzerinde duracağız.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Bu bölümde, Redis ile Önbellekleme ve Performans Optimizasyonu için en iyi pratikleri ve yaygın hataları nasıl önleyebileceğinizi anlatacağız. Böylece, üretim ortamına geçtiğinizde sorunsuz bir deneyim elde edebilirsiniz.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li>Daha hızlı geliştirme süreci ve kısa pazara çıkış süresi</li>
+  <li>Daha iyi performans ve ölçeklenebilirlik</li>
+  <li>Daha kolay bakım ve güncelleme</li>
+  <li>Daha geniş topluluk desteği ve kaynak</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım Adım Kurulum ve Konfigürasyon</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">İlk olarak, gerekli bağımlılıkları projemize ekliyoruz. npm install veya yarn add komutlarını kullanarak paketleri yükleyebilirsiniz. Ardından, temel konfigürasyon dosyalarını oluşturuyoruz.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Konfigürasyon ayarlarını tamamladıktan sonra, temel kod yapısını oluşturmaya başlıyoruz. Bu aşamada, projenizin ihtiyaçlarına göre özelleştirme yapabilirsiniz.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li>Daha hızlı geliştirme süreci ve kısa pazara çıkış süresi</li>
+  <li>Daha iyi performans ve ölçeklenebilirlik</li>
+  <li>Daha kolay bakım ve güncelleme</li>
+  <li>Daha geniş topluluk desteği ve kaynak</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Ortam Hazırlığı ve Gereksinimler</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Redis ile Önbellekleme ve Performans Optimizasyonu için öncelikle gerekli araçları ve bağımlılıkları kurmamız gerekiyor. Node.js, npm ve projenize uygun diğer araçların sisteminizde yüklü olduğundan emin olun.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Geliştirme ortamınızı hazırladıktan sonra, proje yapısını oluşturma aşamasına geçebiliriz. Bu aşamada, dosya yapısı ve proje konfigürasyonu üzerinde duracağız.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li>Gelişmiş hata ayıklama ve test araçları</li>
+  <li>Otomatik dokümantasyon oluşturma</li>
+  <li>Entegre CI/CD desteği</li>
+  <li>Kapsamlı güvenlik özellikleri</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Redis ile Önbellekleme ve Performans Optimizasyonu Nedir ve Neden Önemlidir?</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Redis ile Önbellekleme ve Performans Optimizasyonu, modern yazılım geliştirme süreçlerinin vazgeçilmez bir parçası haline gelmiştir. Türkiye’deki yazılım ekipleri, Redis ile Önbellekleme ve Performans Optimizasyonu sayesinde daha hızlı ve güvenilir çözümler üretebilmektedir.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Bu rehberde, Redis ile Önbellekleme ve Performans Optimizasyonu konusunu sıfırdan başlayarak adım adım ele alacağız. Temel kavramlardan başlayarak, ileri düzey konfigürasyonlara kadar her şeyi detaylı bir şekilde açıklayacağız.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li>Gelişmiş hata ayıklama ve test araçları</li>
+  <li>Otomatik dokümantasyon oluşturma</li>
+  <li>Entegre CI/CD desteği</li>
+  <li>Kapsamlı güvenlik özellikleri</li>
+</ul>
+<div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+<p class="text-lg text-indigo-900 font-semibold m-0">Redis ile Önbellekleme ve Performans Optimizasyonu hakkında daha fazla bilgi almak ve işletmenize özel çözümlerimizi keşfetmek için DZY Digital ile iletişime geçin. Uzman ekibimiz size en uygun teknoloji stratejisini belirlemenize yardımcı olacaktır.</p>
+</div>
+    `
+  },
+  {
+    id: 219,
+    slug: 'egitim-ogrenci-bilgi-sistemi',
+    title: 'Vaka Analizi: Üniversiteler İçin Modern Öğrenci Bilgi Sistemi',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '9 dk okuma',
+    excerpt: 'Vaka Analizi: egitim sektöründe dijital dönüşüm projesi. Operasyonel verimlilikte %52 artış sağlandı, Müşteri memnuniyetinde %35 iyileşme görüldü.',
+    content: `
+<h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Üniversiteler İçin Modern Öğrenci Bilgi Sistemi</h1>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Bu vaka analizinde, egitim sektöründe faaliyet gösteren bir müşterimizin dijital dönüşüm yolculuğunu ve DZY Digital olarak sunduğumuz çözümleri detaylandırıyoruz.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-4">Müşterimiz, egitim sektöründe lider bir firmaydı. Ancak mevcut sistemleri dijital çağın gereksinimlerini karşılamakta yetersiz kalıyordu. Karşılaşılan temel sorunlar şunlardı:</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li><strong>Kağıt tabanlı:</strong> süreçler verimsizdi</li>
+  <li><strong>Öğrenci takibi:</strong> zordu</li>
+  <li><strong>Uzaktan eğitim:</strong> altyapısı yoktu</li>
+  <li><strong>Raporlama manuel:</strong> yapılıyordu</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">DZY Digital'in Çözüm Yaklaşımı</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, modern bir yazılım çözümü tasarladık. Proje süreci toplam 12 hafta sürdü: ilk 3 hafta analiz ve mimari tasarım, sonraki 7 hafta aktif geliştirme, son 2 hafta test ve canlıya geçiş.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterimizin mevcut süreçlerini kapsamlı bir şekilde analiz ettikten sonra, özel bir yazılım çözümü geliştirdik. Bulut tabanlı altyapımız sayesinde yüksek performans ve güvenlik sağladık.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li>Kullanıcı yönetimi ve kimlik doğrulama modülü</li>
+  <li>Veri yönetimi ve raporlama paneli</li>
+  <li>API entegrasyon katmanı</li>
+  <li>Otomasyon ve iş akışı yönetimi</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li><strong>Operasyonel verimlilikte</strong> %52 artış sağlandı</li>
+  <li><strong>Maliyetlerde yıllık</strong> 540.000 TL tasarruf elde edildi</li>
+  <li><strong>Müşteri memnuniyetinde</strong> %35 iyileşme görüldü</li>
+  <li><strong>Hata oranları</strong> %75 oranında azaldı</li>
+</ul>
+<div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+<p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, egitim sektöründe dijital dönüşüm projelerinizde size yardımcı olmaktan mutluluk duyarız. Projeniz için özel çözümler geliştirmek üzere bizimle iletişime geçin.</p>
+</div>
+    `
+  },
+];
