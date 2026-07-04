@@ -4955,5 +4955,1686 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;</code></pre>
   <a href="https://dzydigital.com/iletisim" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">Ucretsiz Danismanlik Icin Iletisime Gecin</a>
 </div>
 `
+  },
+{
+    id: 40,
+    slug: 'nextjs-ile-blog-sitesi-kurulumu-adim-adim-rehber',
+    title: 'Next.js ile Blog Sitesi Kurulumu: Adim Adim Rehber (2026)',
+    category: 'Teknik Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '12 dk okuma',
+    excerpt: 'Next.js 15 ile modern bir blog sitesini sifirdan nasil kuracaginizi adim adim anlatiyoruz. App Router, MDX, SEO optimizasyonu ve Vercel deploy.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Next.js ile Blog Sitesi Kurulumu: Adim Adim Rehber (2026)</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern web dunyasinda, hizli ve SEO dostu bir blog sitesi kurmak her zamankinden daha onemli. Next.js 15, React tabanli framework'ler arasinda one cikan en guclu cozumlerden biri. App Router ile sunulan yenilikci yonlendirme sistemi, sunucu tarafli render (SSR) ve statik site olusturma (SSG) ozellikleriyle, blog siteleri icin ideal bir platform sunuyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Turkiye'deki KOBILer, startup'lar ve icerik ureticileri icin Next.js, hem kullanici deneyimi hem de arama motoru siralamalari acisindan buyuk avantajlar sagliyor. Bu adim adim rehberde, Next.js 15 ile sifirdan profesyonel bir blog sitesi kurmayi, MDX ile icerik yonetimini, SEO optimizasyonunu ve Vercel'e deployment surecini detayli bir sekilde ele alacagiz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Next.js 15 ve App Router Mimarisi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Next.js 15 ile birlikte gelen App Router, dosya tabanli routing sistemini kokten degistiriyor. Pages Router'dan farkli olarak, App Router React Server Components (RSC) uzerine insa edilmis ve daha esnek bir yapi sunuyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">App Router'in sundugu temel avantajlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Sunucu Bilesenleri:</strong> React Server Components sayesinde, istemci tarafi JavaScript yuku olmadan sunucuda render edilen bilesenler olusturabilirsiniz. Bu, blog sayfalarimizin cok daha hizli yuklenmesini saglar.</li>
+        <li><strong>Layout Sistemi:</strong> Paylasilan layout'lar, nested layout'lar ve template'ler ile tutarli bir kullanici arayuzu olusturmak cok kolay hale gelir.</li>
+        <li><strong>Loading ve Error UI:</strong> Otomatik loading state'leri ve error boundary'leri ile kullanici deneyimini iyilestirebilirsiniz.</li>
+        <li><strong>Parallel ve Intercepting Routes:</strong> Ayni sayfada birden fazla rotayi paralel olarak render edebilir veya modal benzeri gecisler olusturabilirsiniz.</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Ozellik</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Pages Router</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">App Router</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Bilesen Modeli</td>
+              <td class="border border-slate-200 px-4 py-3">Client Components</td>
+              <td class="border border-slate-200 px-4 py-3">Server + Client Components</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Data Fetching</td>
+              <td class="border border-slate-200 px-4 py-3">getServerSideProps / getStaticProps</td>
+              <td class="border border-slate-200 px-4 py-3">Server Components + async/await</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Layout Desteği</td>
+              <td class="border border-slate-200 px-4 py-3">Sinirli (_app.tsx)</td>
+              <td class="border border-slate-200 px-4 py-3">Nested Layouts ile tam destek</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Proje Olusturma ve Temel Yapilandirma</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Next.js projesi olusturmak icin create-next-app komutunu kullaniyoruz. Bu komut, TypeScript, ESLint, Tailwind CSS ve App Router gibi temel yapilandirmalari otomatik olarak kurar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Yeni bir Next.js projesi olusturma adimlari:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Proje Baslatma:</strong> <code>npx create-next-app@latest blog-app</code> komutunu calistirin ve TypeScript, ESLint, Tailwind CSS seceneklerini aktiflestirin</li>
+        <li><strong>App Router Kullanimi:</strong> <code>app/</code> dizini altinda sayfa ve layout dosyalarimizi olusturun. Her bir klasor bir route segmentini temsil eder</li>
+        <li><strong>Global Layout:</strong> <code>app/layout.tsx</code> dosyasinda meta veriler, fontlar ve global CSS yapilandirmasini tanimlayin</li>
+        <li><strong>Tailwind CSS Ayarlari:</strong> <code>tailwind.config.ts</code> dosyasinda ozel renkler, fontlar ve responsive breakpoint'leri yapilandirin</li>
+        <li><strong>Ortam Degiskenleri:</strong> <code>.env.local</code> dosyasinda veritabani baglantisi, API anahtarlari gibi hassas bilgileri saklayin</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">MDX ile Blog Icerigi Yonetimi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">MDX, Markdown icerisine JSX bilesenleri gommenizi saglayan bir format. Next.js ile MDX entegrasyonu, blog yazarlarinin teknik bilgi gerektirmeden icerik uretmesine olanak tanirken, gelistiricilerin ozel React bilesenleri eklemesine de izin veriyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">MDX kurulumu ve kullanimi icin izlenecek adimlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>MDX Paketlerini Yukleme:</strong> <code>@next/mdx</code> ve <code>@mdx-js/loader</code> paketlerini projeye ekleyin</li>
+        <li><strong>next.config.js Yapilandirmasi:</strong> MDX loader'ini Next.js yapilandirmasina ekleyerek <code>.mdx</code> dosyalarinin dogrudan import edilmesini saglayin</li>
+        <li><strong>MDX Bilesenleri:</strong> Ozel Image, CodeBlock, Callout gibi bilesenler olusturarak blog icerigini zenginlestirin</li>
+        <li><strong>Frontmatter Kullanimi:</strong> Her MDX dosyasinin basinda, title, date, category gibi meta verileri YAML formatinda tanimlayin</li>
+        <li><strong>Otomatik Icerik Derleme:</strong> Blog yazilarini <code>content/</code> dizininde tutarak, build sirasinda otomatik olarak derlenmelerini saglayin</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">SEO ve Meta Veri Optimizasyonu</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Arama motoru optimizasyonu, blog sitelerinin organik trafik elde etmesi icin kritik oneme sahip. Next.js, App Router ile birlikte guclu bir SEO altyapisi sunuyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Next.js ile SEO optimizasyonu icin temel stratejiler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Dinamik Meta Veriler:</strong> <code>generateMetadata</code> fonksiyonu ile her sayfa icin dinamik title, description, Open Graph ve Twitter card meta etiketleri olusturun</li>
+        <li><strong>JSON-LD Yapisal Veri:</strong> Blog gonderileri icin Article schema.org yapisal verisini JSON-LD formatinda sayfaya ekleyerek zengin snippet'ler elde edin</li>
+        <li><strong>Sitemap.xml Olusturma:</strong> Tum blog gonderilerini ve statik sayfalari iceren dinamik bir sitemap.xml dosyasi olusturarak arama motorlarinin sitenizi daha iyi indexlemesini saglayin</li>
+        <li><strong>SSR ve SSG Stratejisi:</strong> Blog gonderileri icin Static Site Generation (SSG), ana sayfa ve kategori sayfalari icin Incremental Static Regeneration (ISR) kullanin</li>
+        <li><strong>Kanonik URL Yonetimi:</strong> Her sayfa icin dogru canonical URL etiketini belirleyerek icerik kopyalama sorunlarinin onune gecin</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Performans Iyilestirmeleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Blog sitelerinde performans, hem kullanici deneyimi hem de SEO siralamalari icin belirleyici bir faktor. Next.js, performans optimizasyonu icin bircok yerlesik ozellik sunuyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Performans iyilestirme teknikleri:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Gorsel Optimizasyonu:</strong> Next.js Image bileseni ile WebP formatinda otomatik gorsel optimizasyonu, lazy loading ve responsive gorseller kullanin</li>
+        <li><strong>Font Optimizasyonu:</strong> <code>next/font</code> kullanarak Google Fonts'u self-host edin ve layout shift (CLS) sorununu ortadan kaldirin</li>
+        <li><strong>Kod Bolme:</strong> Dinamik import'lar ile buyuk JavaScript paketlerini sayfa yuklenirken degil, ihtiyac duyuldugunda yukleyin</li>
+        <li><strong>Onbellege Alma Stratejisi:</strong> ISR ile statik sayfalari belirli araliklarla yenileyerek, hem performans hem de guncellik dengesini saglayin</li>
+        <li><strong>CDN ve Edge Network:</strong> Vercel'in Edge Network'u sayesinde iceriginizi dunyanin dort bir yanindaki uc sunuculardan hizla servis edin</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Vercel'e Deployment ve Surekli Dagitim</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Vercel, Next.js'in yaraticisi tarafindan gelistirilen ve Next.js uygulamalari icin en iyi deployment platformudur. Git tabanli deployment sistemi sayesinde, her kod degisikliginiz otomatik olarak derlenir ve yayinlanir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Vercel deployment sureci adimlari:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>GitHub Baglantisi:</strong> Projenizi GitHub'a yukleyin ve Vercel hesabimizla GitHub reposunu baglayarak otomatik deployment'i aktiflestirin</li>
+        <li><strong>Proje Yapilandirmasi:</strong> Vercel dashboard'unda Framework Preset olarak Next.js'i secin ve build komutlarini dogrulayin</li>
+        <li><strong>Ortam Degiskenleri:</strong> Veritabani URL'si, API anahtarlari gibi hassas bilgileri Vercel Environment Variables bolumune ekleyin</li>
+        <li><strong>Preview Deployment:</strong> Her pull request icin otomatik olarak preview deployment olusturarak, degisiklikleri canliya cikmadan once test edin</li>
+        <li><strong>Custom Domain:</strong> Kendi alan adimizi Vercel'e baglayarak SSL sertifikasi ve DNS yonetimini otomatik hale getirin</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, Next.js tabanli blog ve kurumsal web uygulamalari gelistiriyoruz. Projeniz icin profesyonel bir web cozumu ariyorsaniz, ihtiyaclariniza ozel olarak tasarlanmis Next.js uygulamalari icin bizimle iletisime gecin. SEO dostu, hizli ve olceklenebilir cozumlerimizle dijital varliginizi guclendirelim.</p>
+      </div>
+    `
+  },
+  {
+    id: 41,
+    slug: 'supabase-ile-gercek-zamanli-uygulama-gelistirme',
+    title: 'Supabase ile Gercek Zamanli Uygulama Gelistirme: Kapsamli Rehber',
+    category: 'Teknik Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '14 dk okuma',
+    excerpt: 'Supabase ile gercek zamanli uygulamalar gelistirmek icin kapsamli rehber. Realtime subscriptions, RLS guvenlik politikalari, auth entegrasyonu ve Edge Functions.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Supabase ile Gercek Zamanli Uygulama Gelistirme: Kapsamli Rehber</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Gercek zamanli uygulamalar, kullanicilarin anlik veri akisi ile etkilesime gecmesini saglayan modern web ve mobil cozumlerdir. Sohbet uygulamalari, canli bildirim sistemleri, ortak calisma araclari ve gercek zamanli dashboard'lar, bu teknolojinin en yaygin kullanim orneklerindendir. Supabase, PostgreSQL tabanli acik kaynakli bir backend platformu olarak, gercek zamanli ozellikleri en dogal haliyle sunuyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Turkiye'deki startup'lar ve KOBILer icin Supabase, Firebase'e alternatif olarak one cikan en onemli cozumlerden biri. Acik kaynakli yapisi, PostgreSQL'in guvenilirligi ve olceklenebilir mimarisi sayesinde, hem kucuk olcekli projeler hem de kurumsal uygulamalar icin uygun bir altyapi sunuyor.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Supabase ve Gercek Zamanli Teknolojisi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase, gercek zamanli iletisim icin PostgreSQL'in yerlesik replication ozelligini kullanir. Veritabaninda bir degisiklik oldugunda, bu degisiklik WebSocket protokolu uzerinden istemcilere anlik olarak iletilir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase'in gercek zamanli mimarisinin temel bilesenleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>PostgreSQL Replication:</strong> Veritabanindaki her INSERT, UPDATE veya DELETE islemi, Write-Ahead Log (WAL) uzerinden izlenir ve istemcilere iletilir</li>
+        <li><strong>WebSocket Baglantisi:</strong> <code>@supabase/realtime-js</code> kutuphanesi ile kalici bir WebSocket baglantisi kurulur ve anlik veri akisi saglanir</li>
+        <li><strong>Kanal Bazli Abonelik:</strong> Her bir gercek zamanli baglanti, belirli bir kanala abone olarak yalnizca ilgili degisiklikleri alir</li>
+        <li><strong>Replication Modlari:</strong> Supabase, Logical Replication ve Broadcast olmak uzere iki farkli replication modu destekler</li>
+        <li><strong>Guvenlik Entegrasyonu:</strong> RLS politikalari ile gercek zamanli veri akisinda da kullanici bazli erisim kontrolu uygulanabilir</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Proje Olusturma ve Veritabani Kurulumu</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase projesi olusturmak icin supabase.com uzerinden yeni bir proje baslatabilir veya self-hosting secenegini kullanabilirsiniz. Self-hosting, ozellikle KVKK uyumlulugu gerektiren projeler icin onemli bir avantaj sunar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje kurulumu icin izlenecek adimlar:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Supabase Hesabi Olusturma:</strong> supabase.com adresine kaydolun ve yeni bir proje olusturun. Proje adi, veritabani sifresi ve bolge secimini yapin</li>
+        <li><strong>Istemci Kutuphanesini Kurma:</strong> Projenize <code>npm install @supabase/supabase-js</code> komutu ile Supabase istemci kutuphanesini ekleyin</li>
+        <li><strong>Baglanti Bilgilerini Yapilandirma:</strong> Supabase dashboard'undan alacaginiz proje URL ve anon key bilgilerini ortam degiskenlerine ekleyin</li>
+        <li><strong>Veritabani Semasini Olusturma:</strong> SQL Editor uzerinden tablolarinizi, iliskileri ve indeksleri tanimlayin</li>
+        <li><strong>Realtime Ozelligini Aktiflestirme:</strong> Supabase dashboard'undan Realtime bolumune giderek, gercek zamanli olarak izlenecek tablolari secin</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Realtime Subscriptions ile Canli Veri Senkronizasyonu</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Gercek zamanli abonelikler, istemci uygulamanizin veritabanindaki degisiklikleri anlik olarak almasini saglar. Supabase, bu islem icin basit ve guclu bir API sunuyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Realtime subscriptions kullanim senaryolari:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Canli Sohbet Uygulamasi:</strong> Mesaj tablosundaki her yeni kayit icin subscription olusturarak, kullanicilarin anlik mesajlasmasini saglayin</li>
+        <li><strong>Anlik Bildirimler:</strong> Bildirimler tablosundaki degisiklikleri izleyerek, kullanicilara push notification gonderebilirsiniz</li>
+        <li><strong>Ortak Calisma Araclari:</strong> Dokuman veya proje tablolarindaki degisiklikleri es zamanli olarak tum kullanicilara yansitin</li>
+        <li><strong>Canli Dashboard:</strong> Satis veya analitik verilerinin anlik guncellenmesini saglayarak gercek zamanli raporlama yapin</li>
+        <li><strong>Oyun Skor Tablosu:</strong> Oyuncu puanlarini ve siralamalari anlik olarak guncelleyin</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Subscription yapilandirmasinda dikkat etmeniz gereken temel parametreler: hangi tabloyu izleyeceginiz (table), hangi olay turlerini dinleyeceginiz (INSERT, UPDATE, DELETE) ve hangi filtreleri uygulayacaginiz (filter). Dogru yapilandirma ile gereksiz veri akisini onleyerek performansi artirabilirsiniz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Row Level Security ile Veri Guvenligi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Row Level Security (RLS), Supabase'in en guclu guvenlik ozelliklerinden biridir. Veritabani seviyesinde uygulanan bu politikalarla, her kullanicinin yalnizca erismeye yetkili oldugu verileri gormesi saglanir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">RLS politikalarinin temel ilkeleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Yetkilendirme Katmani:</strong> RLS, uygulama seviyesinde degil, veritabani seviyesinde calisir. Bu sayede hangi istemciden gelirse gelsin, guvenlik kurallari atlatilamaz</li>
+        <li><strong>Politika Bazli Erisim:</strong> Her tablo icin SELECT, INSERT, UPDATE, DELETE islemlerine ozel politikalar tanimlanabilir</li>
+        <li><strong>JWT Tabanli Dogrulama:</strong> Supabase Auth ile gelen JWT token'leri sayesinde, <code>auth.uid()</code> fonksiyonu ile kullanici kimligi dogrulanir</li>
+        <li><strong>Multi-Tenant Destegi:</strong> Ayni veritabaninda birden fazla musteriye hizmet veren uygulamalarda, her musteri yalnizca kendi verilerini gorur</li>
+        <li><strong>Realtime ile Uyumluluk:</strong> RLS politikalari, gercek zamanli subscriptions ile de tam uyumlu calisir</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Ornek bir RLS politikasi: Bir proje yonetimi uygulamasinda, kullanicilar yalnizca uyesi olduklari organizasyonlarin projelerini gorebilir. Bu politika, organizasyon uyelik tablosu uzerinden kontrol edilir ve yetkisiz erisim tamamen engellenir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Authentication ve Kullanici Yonetimi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase Auth, kullanici kaydi, giris yapma, sifre sifirlama ve sosyal medya ile giris gibi temel kimlik dogrulama islemlerini out-of-the-box olarak sunar. Supabase, eposta/sifre, telefon, OAuth (Google, GitHub, Apple) ve magic link gibi bircok farkli kimlik dogrulama yontemini destekler.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase Auth'in sundugu temel ozellikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Eposta/Sifre Kaydi:</strong> <code>signUp()</code> metodu ile kullanici kaydi olusturma ve eposta dogrulama</li>
+        <li><strong>Sosyal Medya Girisi:</strong> Google, GitHub, Apple ve Diger OAuth saglayicilari ile tek tikla giris</li>
+        <li><strong>Magic Link:</strong> Eposta adresine gonderilen sifresiz baglanti ile sifresiz giris yapma imkani</li>
+        <li><strong>Session Yonetimi:</strong> Otomatik token yenileme, oturum suresi dolumu ve coklu cihaz yonetimi</li>
+        <li><strong>Rol Tabanli Yetkilendirme:</strong> Kullanici profillerine app_metadata ekleyerek admin, moderator gibi roller tanimlama</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Edge Functions ile Sunucusuz API'ler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Supabase Edge Functions, Deno tabanli sunucusuz fonksiyonlardir. Veritabanina yakin bir noktada calisarak, du$uk gecikmeli ve olceklenebilir API'ler olusturmanizi saglar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Edge Functions ile yapabilecekleriniz:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Webhook Isleme:</strong> Stripe, PayPal gibi u$uncu parti servislerden gelen webhook'lari Edge Functions ile isleyin</li>
+        <li><strong>Veri Dogrulama:</strong> Karma$ik is kurallarini Edge Functions'da calistirarak veritabani yukunu azaltin</li>
+        <li><strong>Eposta Gonderme:</strong> Resend veya SendGrid entegrasyonu ile otomatik eposta bildirimleri gonderin</li>
+        <li><strong>Dosya Isleme:</strong> Supabase Storage'a yuklenen dosyalari otomatik olarak boyutlandirin veya optimize edin</li>
+        <li><strong>Ucuncu Parti Entegrasyon:</strong> Harici API'lere guvenli bir $ekilde baglanarak veri senkronizasyonu yapin</li>
+      </ol>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, Supabase tabanli gercek zamanli uygulamalar gelistiriyoruz. Sohbet uygulamalari, canli dashboard'lar, ortak calisma platformlari ve daha fazlasi icin bizimle iletisime gecin. Supabase uzmanligimizla projenizi bir ust seviyeye tasiyalim.</p>
+      </div>
+    `
+  },
+  {
+    id: 42,
+    slug: 'docker-ile-gelistirme-ortami-kurulumu',
+    title: 'Docker ile Gelistirme Ortami Kurulumu: Kapsamli Rehber (2026)',
+    category: 'Teknik Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '13 dk okuma',
+    excerpt: 'Docker ve Docker Compose ile profesyonel bir gelistirme ortami nasil kurulur? Multi-stage build, dev/prod ortamlari ve en iyi pratikler.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Docker ile Gelistirme Ortami Kurulumu: Kapsamli Rehber (2026)</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Yazilim gelistirme surecinde karsilasilan en buyuk sorunlardan biri, "benim makinemde calisiyor" sendromudur. Farkli gelistirme ortamlari, isletim sistemi farkliliklari ve bagimliliklarin yonetimi, ekiplerin verimliligini ciddi sekilde dusurebilir. Docker, bu sorunu kokten cozen bir container teknolojisi olarak, 2026 yilinda yazilim gelistirme sureclerinin vazgecilmez bir parcasi haline geldi.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Turkiye'deki yazilim ekipleri icin Docker, hem gelistirme hem de uretim ortamlarinda tutarlilik saglamak, CI/CD sureclerini standardize etmek ve ekip ici uyumu artirmak icin kritik bir arac. Bu rehberde, Docker ile sifirdan profesyonel bir gelistirme ortami kurmayi, multi-stage build stratejilerini ve dev/prod ortam yapilandirmasini adim adim ele aliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Docker ve Container Teknolojisine Giris</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Docker, uygulamalari ve onlarin bagimliliklarini hafif, tasinabilir container'lar halinde paketlemenizi saglayan bir platformdur. Geleneksel sanal makinelerden farkli olarak, Docker container'lari isletim sistemi cekirdegini paylasir, bu da onlari cok daha hafif ve hizli calistirilabilir hale getirir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Docker'in temel avantajlari:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Tasinabilirlik:</strong> Bir Docker container'i, Docker yuklu herhangi bir ortamda ayni sekilde calisir. Gelistirme, test ve uretim ortamlari arasinda tutarlilik saglanir</li>
+        <li><strong>Izolasyon:</strong> Her container kendi bagimliliklari, kutuphaneleri ve ayarlari ile izole bir ortamda calisir. Farkli projelerin bagimliliklari birbirine karismaz</li>
+        <li><strong>Hizli Baslangic:</strong> Container'lar saniyeler icinde baslatilabilir ve durdurulabilir. Bu, gelistirme ve test sureclerini onemli olcude hizlandirir</li>
+        <li><strong>Versiyon Kontrolu:</strong> Docker image'lari versiyonlanabilir ve bir registry'de (Docker Hub, GitHub Container Registry) saklanabilir</li>
+        <li><strong>Kaynak Verimliligi:</strong> Ayni fiziksel sunucuda, sanal makinelere gore cok daha fazla sayida container calistirilabilir</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Dockerfile ile Uygulama Dockerize Etme</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Dockerfile, bir Docker image'i olusturmak icin kullanilan talimatlar dosyasidir. Uygulamanizin calismasi icin gereken tum adimlari bu dosyada tanimlarsiniz: hangi temel image'in kullanilacagi, hangi paketlerin yuklenecegi, kaynak kodun nasil kopyalanacagi ve uygulamanin nasil baslatilacagi.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Iyi bir Dockerfile yazmak icin dikkat edilmesi gerekenler:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Dogru Base Image Secimi:</strong> Mumkun oldugunca kucuk ve guvenli bir base image secin. Alpine Linux tabanli image'lar, kucuk boyutlari ve guvenlik odakli yapilari ile ideal bir baslangic noktasidir</li>
+        <li><strong>Katman Optimizasyonu:</strong> Her Dockerfile komutu yeni bir katman olusturur. Az degisen komutlari (paket kurulumlari) ustte, sik degisen komutlari (kaynak kodu kopyalama) altta konumlandirin</li>
+        <li><strong>Cache Kullanimi:</strong> <code>COPY package.json</code> ve <code>RUN npm install</code> komutlarini, kaynak kod kopyalamadan once calistirarak Docker ozbelleginden yararlanin</li>
+        <li><strong>Guvenlik En Iyi Pratikleri:</strong> Root kullanicisi yerine ozel bir kullanici olusturun, gereksiz paketleri kurmayin ve sadece gerekli portlari acin</li>
+        <li><strong>Healthcheck Tanimlama:</strong> <code>HEALTHCHECK</code> talimati ile uygulamanizin durumunu duzenli olarak kontrol edin ve otomatik iyilestirme mekanizmalari kurun</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Multi-Stage Build ile Optimizasyon</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Multi-stage build, Docker image boyutunu minimize etmek icin kullanilan guclu bir tekniktir. Bir Dockerfile icinde birden fazla FROM talimati kullanarak, derleme asamasi icin gerekli araclari iceren bir stage, calistirma asamasi icin ise yalnizca calisma zamaninda ihtiyac duyulan dosyalari iceren bir stage olusturabilirsiniz.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Multi-stage build'in sagladigi avantajlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Kucuk Image Boyutu:</strong> Derleme araclari, test kutuphaneleri ve gecici dosyalar final image'da yer almaz. Ornegin, bir Go veya Rust uygulamasi icin image boyutu 500 MB'dan 10 MB'a kadar dusebilir</li>
+        <li><strong>Guvenlik Artisi:</strong> Saldiri yuzeyi azalir cunku gereksiz paketler ve araclar image'da bulunmaz</li>
+        <li><strong>Daha Hizli Deployment:</strong> Kucuk image'lar daha hizli indirilir, daha az depolama alani kaplar ve daha hizli baslatilir</li>
+        <li><strong>Daha Iyi Katman Yonetimi:</strong> Her stage kendi bagimliliklarini yonetir ve sadece final stage'deki dosyalar image'a dahil edilir</li>
+        <li><strong>Parallel Build Imkani:</strong> Bagimsiz stage'ler paralel olarak derlenebilir, bu da CI/CD sureclerinde zaman kazandirir</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Ornek bir multi-stage build yapisinda, ilk stage'de uygulama derlenir, ikinci stage'de testler calistirilir, ucuncu stage'de ise yalnizca derlenmis binary ve calisma zamanı bagimliliklari kopyalanir. Bu sayede final image yalnizca calismasi icin gereken en minimal dosyalari icerir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Docker Compose ile Coklu Servis Mimarisi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern uygulamalar genellikle birden fazla servisten olusur: bir web sunucusu, bir veritabani, bir bellek ici ozbellek (Redis), bir mesaj kuyrugu ve daha fazlasi. Docker Compose, bu servislerin tamamini tek bir yapilandirma dosyasi ile tanimlamanizi ve yonetmenizi saglar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Docker Compose ile yonetebileceginiz tipik bir mikroservis mimarisi:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Web Uygulamasi:</strong> Next.js, React veya Vue.js frontend'i icin bir container</li>
+        <li><strong>API Sunucusu:</strong> Node.js, Python veya Go backend servisi icin bir container</li>
+        <li><strong>PostgreSQL Veritabani:</strong> Kalici veri depolama icin bir container</li>
+        <li><strong>Redis Orbellek:</strong> Session yonetimi ve oran sinirlamasi icin bir container</li>
+        <li><strong>Nginx Reverse Proxy:</strong> Yuk dengeleme ve SSL terminasyonu icin bir container</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Gelistirme ve Uretim Ortami Yapilandirmasi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Docker Compose ile farkli ortamlar icin ayri yapilandirma dosyalari kullanmak, ortamlar arasi tutarliligi korumak icin en iyi pratiklerden biridir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Ortam yapilandirmasinda dikkat edilmesi gereken temel ilkeler:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Ortam Degiskenleri ile Yapilandirma:</strong> Baglanti bilgileri, API anahtarlari ve sifreler gibi hassas bilgileri asla Dockerfile icinde tanimlamayin. Bunun yerine .env dosyasi veya Docker Compose environment degiskenlerini kullanin</li>
+        <li><strong>Dev/Prod Ayrimi:</strong> <code>docker-compose.override.yml</code> dosyasi ile gelistirme ortamina ozel yapilandirmalari (port mapping, volume mount, hot reload) ayri bir dosyada tutun</li>
+        <li><strong>Volume Yonetimi:</strong> Gelistirme ortaminda bind mount ile kaynak kodun anlik senkronizasyonunu saglayin. Uretim ortaminda ise named volumes kullanarak veri kaliciligini garanti altina alin</li>
+        <li><strong>Ag Yapilandirmasi:</strong> Servisler arasi iletisim icin ozel Docker network'leri olusturun ve gereksiz port acilimlarini onleyin</li>
+        <li><strong>Kaynak Kisitlamalari:</strong> Her servis icin CPU ve bellek limitleri tanimlayarak kaynak tuketimini kontrol altinda tutun</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Volume, Network ve Veri Yonetimi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Docker volume'leri ve network'leri, container'larin kalici veri depolamasi ve birbirleriyle iletisimi icin kritik oneme sahiptir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Docker volume ve network yonetiminde en iyi pratikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Named Volumes:</strong> Veritabani gibi kalici veri gerektiren servisler icin named volumes kullanin. Bu volume'ler container silinse dahi verilerinizi korur</li>
+        <li><strong>Bind Mounts:</strong> Gelistirme sirasinda kaynak kodu container icinde anlik guncellemek icin bind mount kullanin. Bu, kod degisikliklerini container'i yeniden baslatmadan gormenizi saglar</li>
+        <li><strong>tmpfs Mounts:</strong> Gecici hassas veriler icin tmpfs mounts kullanarak verilerin sadece bellek icinde tutulmasini ve container durduruldugunda silinmesini saglayin</li>
+        <li><strong>Bridge Network:</strong> Ayni Docker host uzerindeki container'lar icin bridge network kullanarak izole bir iletisim agi olusturun</li>
+        <li><strong>Docker Compose Network:</strong> docker-compose ile olusturulan projelerde otomatik olarak bir network olusur ve tum servisler bu network uzerinden birbirine hostname ile erisebilir</li>
+      </ul>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, Docker tabanli mikroservis mimarileri ve container yonetimi konusunda uzmanlik hizmeti sunuyoruz. Projeniz icin en uygun container stratejisini belirlemek, Docker image'larinizi optimize etmek ve CI/CD sureclerinizi Docker ile entegre etmek icin bizimle iletisime gecin.</p>
+      </div>
+    `
+  },
+  {
+    id: 43,
+    slug: 'github-actions-ile-cicd-pipeline-kurulumu',
+    title: 'GitHub Actions ile CI/CD Pipeline Kurulumu: Adim Adim Rehber',
+    category: 'Teknik Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '15 dk okuma',
+    excerpt: 'GitHub Actions ile otomatik test, lint, build ve deployment pipeline\'i nasil kurulur? CI/CD en iyi pratikleri, guvenlik ve ortam yonetimi.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">GitHub Actions ile CI/CD Pipeline Kurulumu: Adim Adim Rehber</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Continuous Integration (CI) ve Continuous Deployment (CD), modern yazilim gelistirme sureclerinin temel taslarindandir. Her kod degisikliginin otomatik olarak test edilmesi, derlenmesi ve uretim ortamina gönderilmesi, ekiplerin daha hizli ve guvenilir bir sekilde yazilim teslim etmesini saglar. GitHub Actions, GitHub repositorlere dogrudan entegre olan guclu bir CI/CD platformudur.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Turkiye'deki KOBILer ve startup'lar icin GitHub Actions, ucretsiz kotasi ve kapsamli is akisi pazari sayesinde CI/CD'ye baslamak icin en erisilebilir cozumlerden biridir. Bu rehberde, GitHub Actions ile sifirdan profesyonel bir CI/CD pipeline'i kurmayi, test ve lint otomasyonunu, build ve deployment stratejilerini ve guvenlik en iyi pratiklerini adim adim ele aliyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">CI/CD Kavramlari ve Onemi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">CI/CD, yazilim gelistirme yasam dongusunu otomatiklestiren ve hizlandiran bir dizi pratiktir. Continuous Integration, gelistiricilerin kod degisikliklerini ana dala sik sik birlestirmesi ve her birlestirme isleminin otomatik olarak test edilmesi anlamina gelir. Continuous Deployment ise, testleri basariyla gecen her kod degisikliginin otomatik olarak uretim ortamina gonderilmesidir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">CI/CD pipeline'inin sagladigi faydalar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Hata Tespiti:</strong> Kod degisiklikleri ana dala birlestirilmeden once otomatik olarak test edilir, boylece hatalar erkenden tespit edilir ve duzeltilir</li>
+        <li><strong>Geri Bildirim Dongusu:</strong> Gelistiriciler, kodlarinin durumu hakkinda anlik geri bildirim alir. Basarisiz testler veya lint hatalari hemen bildirilir</li>
+        <li><strong>Manuel Is Yukunun Azalmasi:</strong> Test, derleme ve deployment islemleri otomatik hale getirilir, ekipler daha degerli islere odaklanabilir</li>
+        <li><strong>Tutarlilik:</strong> Her deployment ayni surecten gecer, insan hatasi olasiligi ortadan kalkar ve ortamlar arasinda tutarlilik saglanir</li>
+        <li><strong>Daha Hizli Teslimat:</strong> Otomatik pipeline'lar sayesinde yeni ozellikler ve hata duzeltmeleri dakikalar icinde uretime alinabilir</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">GitHub Actions Temel Kavramlar</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">GitHub Actions, is akislari (workflows) adi verilen otomatik surecleri calistirir. Her is akisi, reposunuzdaki <code>.github/workflows/</code> dizininde YAML formatinda tanimlanir ve belirli olaylar (push, pull request, schedule) tarafindan tetiklenir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">GitHub Actions'in temel bilesenleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Workflow:</strong> Bir veya birden fazla job'dan olusan otomatik surec. Her reposunuzda birden fazla workflow tanimlanabilir</li>
+        <li><strong>Event:</strong> Workflow'u tetikleyen olay. Ornegin: push, pull_request, issues, schedule (cron), workflow_dispatch</li>
+        <li><strong>Job:</strong> Ayni runner'da calisan bir dizi step. Job'lar birbirine bagimli olabilir veya paralel calisabilir</li>
+        <li><strong>Step:</strong> Bir job icindeki en kucuk calistirma birimi. Bir komut calistirir veya bir action kullanir</li>
+        <li><strong>Action:</strong> GitHub Actions marketplace'ten indirilebilen, tekrar kullanilabilir kod bloklari. Ornegin: actions/checkout, actions/setup-node</li>
+        <li><strong>Runner:</strong> Workflow'u calistiran sunucu. GitHub tarafindan yonetilen runner'lar veya kendi kendine barindirilan (self-hosted) runner'lar kullanilabilir</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Bilesen</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Gorev</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Ornek</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Workflow</td>
+              <td class="border border-slate-200 px-4 py-3">Otomatik surecleri tanimlar</td>
+              <td class="border border-slate-200 px-4 py-3">ci.yml, deploy.yml</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Event</td>
+              <td class="border border-slate-200 px-4 py-3">Tetikleyici olay</td>
+              <td class="border border-slate-200 px-4 py-3">push, pull_request</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Job</td>
+              <td class="border border-slate-200 px-4 py-3">Is parcacigi</td>
+              <td class="border border-slate-200 px-4 py-3">test, build, deploy</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Step</td>
+              <td class="border border-slate-200 px-4 py-3">En kucuk birim</td>
+              <td class="border border-slate-200 px-4 py-3">npm test, docker build</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Test ve Lint Otomasyonu</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">CI pipeline'inin ilk ve en kritik asamasi, kod kalitesini garanti altina almaktir. Test ve lint islemlerinin otomatik hale getirilmesi, kod tabaninin saglikli kalmasini saglar ve potansiyel sorunlari erkenden tespit eder.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Test ve lint pipeline'inda bulunmasi gereken asamaer:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Kod Kalite Kontrolu:</strong> ESLint (JavaScript/TypeScript), Ruff (Python) veya benzeri lint araclari ile kod standartlara uygunluk kontrolu yapin</li>
+        <li><strong>Unit Testler:</strong> Jest, Vitest veya pytest ile birim testlerini calistirin. Test kapsamini raporlayarak giderek artan bir kapsama hedefleyin</li>
+        <li><strong>Entegrasyon Testleri:</strong> Veritabani, harici API'ler veya diger servislerle etkilesim gerektiren entegrasyon testlerini calistirin</li>
+        <li><strong>Tip Kontrolu:</strong> TypeScript veya mypy ile statik tip kontrolu yaparak tip hatalarini derleme oncesinde tespit edin</li>
+        <li><strong>Guvenlik Taramasi:</strong> npm audit, pip audit veya Snyk gibi araclarla bagimlilik guvenlik aciklarini taratin</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Build ve Docker Image Pipeline'i</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Test asamasini basariyla gecen kod, build asamasina gecer. Bu asamada uygulama derlenir, Docker image'i olusturulur ve bir container registry'ye gonderilir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Build pipeline'inda dikkat edilmesi gerekenler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Cache Stratejisi:</strong> Docker layer caching ile tekrarli build sureclerini hizlandirin. GitHub Actions'da buildx cache'i kullanarak image katmanlarini orbellegin</li>
+        <li><strong>Multi-Stage Build:</strong> Gelistirme ve uretim image'larini ayristirarak, uretim image boyutunu minimumda tutun</li>
+        <li><strong>Image Tagleme:</strong> Semantic versioning (v1.2.3), git SHA (abc123) ve branch name (main, develop) gibi anlamli etiketler kullanin</li>
+        <li><strong>Scan ve Sign:</strong> Docker image'larini guvenlik taramasindan gecirin ve cosign ile dijital olarak imzalayin</li>
+        <li><strong>Registry Secimi:</strong> GitHub Container Registry (ghcr.io), Docker Hub veya ozel bir registry kullanarak image'lari guvenli bir sekilde saklayin</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Otomatik Deployment Stratejileri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Deployment asaması, CI pipeline'inin son halkasidir. Bu asamada, build edilen uygulama hedef ortama (test, staging, production) gonderilir. Dogru deployment stratejisi, kesinti suresini minimize eder ve geri almayi kolaylastirir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Populer deployment stratejileri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Rolling Deployment:</strong> Uygulamanin yeni versiyonu, eski versiyonun yerini yavas yavas alir. Bu strateji, sifir kesinti suresi hedeflenen ortamlar icin idealdir</li>
+        <li><strong>Blue-Green Deployment:</strong> Iki ozde$ ortam (blue ve green) arasinda gecis yapilir. Yeni versiyon green ortamda test edildikten sonra, trafik green ortama yonlendirilir</li>
+        <li><strong>Canary Release:</strong> Yeni versiyon, kullanicilarin kucuk bir yuzdesine sunulur. Hata orani ve performans metrikleri izlenir, basarili olursa tum kullanicilara yayilir</li>
+        <li><strong>GitHub Environments:</strong> Her ortam icin ayri GitHub Environment tanimlayarak, deployment onaylari ve branch korumalari ekleyin</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Secret Yonetimi ve Guvenlik</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">CI/CD pipeline'larinda API anahtarlari, veritabani sifreleri ve diger hassas bilgilerin guvenli bir sekilde yonetilmesi kritik oneme sahiptir. GitHub Actions, bu konuda cesitli guvenlik mekanizmalari sunar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Guvenli secret yonetimi icin en iyi pratikler:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Repository Secrets:</strong> API anahtarlari ve sifreler gibi hassas bilgileri GitHub repo ayarlarindan Secrets bolumune ekleyin. Bu bilgiler workflow logs'unda maskelenir</li>
+        <li><strong>Environment Secrets:</strong> Farkli ortamlar icin ayri secret'lar tanimlayarak, staging ve production bilgilerinin karismasini onleyin</li>
+        <li><strong>OpenID Connect (OIDC):</strong> AWS, Azure veya GCP'ye baglanmak icin uzun omurlu access key'ler yerine OIDC kullanarak gecici token'lar ile guvenligi artirin</li>
+        <li><strong>En Az Yetki Prensibi:</strong> Her workflow icin sadece ihtiyac duydugu izinleri tanimlayin. Ozel GitHub token permisyonlari ile gereksiz erisimleri kisitlayin</li>
+        <li><strong>Audit ve Monitoring:</strong> Workflow calisma gecmisini ve secret erisimlerini duzenli olarak denetleyin, anormal aktiviteleri tespit edin</li>
+      </ol>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, GitHub Actions ile CI/CD pipeline'i kurulumu ve yonetimi konusunda profesyonel danismanlik hizmeti sunuyoruz. Ekiplerinizin yazilim teslimat surecini hizlandirmak, test otomasyonunu kurmak ve guvenli deployment stratejileri olusturmak icin bizimle iletisime gecin.</p>
+      </div>
+    `
+  },
+  {
+    id: 44,
+    slug: 'stripe-ile-odeme-sistemi-entegrasyonu',
+    title: 'Stripe ile Odeme Sistemi Entegrasyonu: Kapsamli Rehber (2026)',
+    category: 'Teknik Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '16 dk okuma',
+    excerpt: 'Stripe ile web uygulamalariniza odeme sistemi nasil entegre edilir? Abonelik yonetimi, webhook, checkout session, iade ve iptal islemleri.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Stripe ile Odeme Sistemi Entegrasyonu: Kapsamli Rehber (2026)</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Online odeme sistemleri, eski ticaretin bel kemiğini olusturuyor. Turkiye'de dijital odeme hacmi 2026 yilinda 2 trilyon TL'yi asmis durumda. KOBILer ve startup'lar icin guvenli, hizli ve kullanici dostu bir odeme altyapisi kurmak, musteri guvenini kazanmak ve donusum oranlarini artirmak icin kritik oneme sahip. Stripe, dunyanin en populer online odeme platformlarindan biri olarak, bu ihtiyaca kapsamli bir cozum sunuyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu rehberde, Stripe ile web uygulamaniza odeme sistemi entegrasyonunu adim adim ele aliyoruz. Tek seferlik odemeler, abonelik yonetimi, webhook isleme, iade ve iptal surecleri gibi temel konulari, en iyi pratikler ve guvenlik onlemleri ile birlikte anlatiyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Stripe ve Online Odeme Altyapisi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe, gelistiriciler icin tasarlanmis modern bir odeme platformudur. PCI-DSS uyumlu altyapisi sayesinde, kart bilgileri dogrudan Stripe sunucularinda saklanir ve sizin sunucunuz hassas kredi karti verilerini hicbir zaman gormez. Bu, guvenlik yukumlulugunuzu buyuk olcude azaltir ve PCI sertifikasi ihtiyaci olmadan odeme kabul etmenizi saglar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe'in sundugu temel hizmetler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Stripe Checkout:</strong> Hazir odeme sayfasi ile dakikalar icinde odeme almaya baslayabilirsiniz. 30'dan fazla odeme yontemini destekler</li>
+        <li><strong>Stripe Elements:</strong> Ozellestirilebilir odeme formu bilesenleri ile markaniza uygun bir odeme deneyimi olusturun</li>
+        <li><strong>Payment Intents:</strong> 3D Secure dogrulama, taksitli odeme ve hata yonetimi gibi karmasik odeme senaryolarini yonetir</li>
+        <li><strong>Subscriptions:</strong> Yinelenen odemeler, abonelik planlari ve otomatik faturalandirma icin kapsamli API</li>
+        <li><strong>Stripe Connect:</strong> Pazar yeri platformlari icin platformdaki saticilara otomatik odeme dagitimi</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Stripe Hesabi ve API Entegrasyonu</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe entegrasyonuna baslamak icin once bir Stripe hesabi olusturmaniz ve API anahtarlarinizi almaniz gerekiyor. Stripe, test ve canli mod olmak uzere iki farkli ortam sunar. Test modunda, gercek para transferi yapmadan tum odeme senaryolarini test edebilirsiniz.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe entegrasyonu kurulum adimlari:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Stripe Hesabi Olusturma:</strong> dashboard.stripe.com adresine kaydolun ve hesabinizi aktiflestirin. Turkiye'deki banka hesaplari ve vergi bilgileri ile entegrasyonu tamamlayin</li>
+        <li><strong>API Anahtarlarini Alma:</strong> Stripe dashboard'undan publishable key (baslangic anahtari) ve secret key (gizli anahtar) bilgilerini alin. Secret key'i asla istemci tarafinda kullanmayin</li>
+        <li><strong>Stripe SDK Kurulumu:</strong> Backend projenize <code>npm install stripe</code> komutuyla Stripe Node.js kutuphanesini ekleyin</li>
+        <li><strong>Test Ortami:</strong> Test modunda calisirken, 4242 4242 4242 4242 gibi test karti numaralarini kullanarak odeme islemlerini test edin</li>
+        <li><strong>Webhook Gizli Anahtari:</strong> Stripe dashboard'undan Webhook bolumune giderek, yerel gelistirme icin CLI aracini kullanarak webhook secret key alin</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Checkout Session ile Odeme Alma</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe Checkout, en hizli ve en guvenli odeme alma yontemidir. Hazir bir odeme sayfasi sunan Checkout, mobil uyumlu, erisilebilir ve 30'dan fazla odeme yontemini destekler.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Checkout Session ile odeme alma sureci:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Session Olusturma:</strong> Backend'de <code>stripe.checkout.sessions.create</code> API cagrisi ile bir odeme oturumu olusturun. Musteri bilgileri, urun detaylari ve basari/yönlendirme URL'lerini belirtin</li>
+        <li><strong>Musteriye Yonlendirme:</strong> Olusturulan session'un URL'sine musteri yonlendirilir. Stripe, odeme sayfasinda kart bilgilerini guvenli bir sekilde toplar</li>
+        <li><strong>Basari veya Hata Yonetimi:</strong> Odeme tamamlandiginda musteri success_url'e, iptal edildiginde cancel_url'e yonlendirilir</li>
+        <li><strong>Line Items:</strong> Sepetteki her bir urunu price_id ile tanimlayin. Tek seferlik odemelerde <code>mode: payment</code>, aboneliklerde <code>mode: subscription</code> kullanin</li>
+        <li><strong>Musteri Metadata:</strong> Siparis numarasi, musteri ID'si gibi ozel verileri metadata alaninda saklayarak webhook islemlerinde kullanin</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Checkout entegrasyonunda dikkat edilmesi gereken en onemli nokta, fiyat ve urun bilgilerinin asla istemci tarafinda belirlenmemesidir. Tum fiyatlandirma mantigi backend'de, tercihen veritabaninda saklanan urun kayitlarindan cekilmelidir.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Webhook ile Odeme Bildirimleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Webhook'lar, Stripe'in uygulamaniza gercek zamanli bildirim gonderdigi HTTP geri cagrimlaridir. Odeme basarili oldugunda, abonelik yenilendiginde veya bir iade gerceklestiginde Stripe, webhook endpoint'inize bir POST istegi gonderir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Webhook yonetiminde kritik oneme sahip adimlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Event Dogrulama:</strong> Gelen her webhook istegini Stripe imzasi ile dogrulayarak, sadece gecerli Stripe isteklerini isleyin. Bu, sahte isteklerin engellenmesi icin en kritik guvenlik onlemidir</li>
+        <li><strong>Idempotency Anahtari:</strong> Ayni olayin birden fazla kez iletilmesi durumunda, idempotency anahtari ile ayni islemin tekrarini onleyin</li>
+        <li><strong>checkout.session.completed:</strong> Odemenin basariyla tamamlandigi bu olayda, musterinin siparisini onaylayin ve veritabaninda guncelleyin</li>
+        <li><strong>Hata Yonetimi:</strong> Webhook isleyiciniz hata verirse, Stripe otomatik olarak tekrar dener. Bu nedenle webhook endpoint'iniz idempotent olmali ve hata durumunda dogru HTTP status kodu donmelidir</li>
+        <li><strong>Yerel Test:</strong> Stripe CLI ile webhook'lari yerel ortamda test edebilir, <code>stripe listen</code> komutu ile canli olaylari dinleyebilirsiniz</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Abonelik ve Tekrarlayan Odemeler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Abonelik modeli, SaaS urunlerinden dijital icerik platformlarina kadar bircok is modelinin temelini olusturur. Stripe Subscriptions, yinelenen odemeleri, otomatik faturalandirmayi ve abonelik yonetimini basit bir API ile sunar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stripe ile abonelik yonetimi icin temel konseptler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Urun ve Fiyat Tanimlama:</strong> Stripe dashboard'unda veya API ile urun ve fiyat olusturun. Aylik, yillik veya ozel periyotlu fiyatlandirmalar tanimlayabilirsiniz</li>
+        <li><strong>Musteri Olusturma:</strong> Abonelik baslatmadan once bir musteri kaydi olusturun ve odeme yontemini ekleyin. Stripe, musteri kart bilgilerini guvenli bir sekilde saklar</li>
+        <li><strong>Abonelik Baslatma:</strong> Checkout Session ile musteriye abonelik planini gosterin. Odeme basarili oldugunda Stripe otomatik olarak abonelik kaydini olusturur</li>
+        <li><strong>Fatura ve Odeme Hatirlatmalari:</strong> Stripe, her abonelik donemi icin otomatik fatura olusturur. Odeme basarisiz olursa, Stripe yapilandirilan araliklarla tekrar dener ve e-posta bildirimi gonderir</li>
+        <li><strong>Abonelik Yonetimi:</strong> Musterilerin plan yukseltmesi, dusurmesi veya aboneliklerini iptal etmesi icin musteri portali veya API kullanabilirsiniz</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Ozellik</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Stripe ile</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Manuel Cozum</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Kurulum Suresi</td>
+              <td class="border border-slate-200 px-4 py-3">1-2 gun</td>
+              <td class="border border-slate-200 px-4 py-3">2-4 hafta</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">PCI Uyumlulugu</td>
+              <td class="border border-slate-200 px-4 py-3">Stripe tarafindan saglanir</td>
+              <td class="border border-slate-200 px-4 py-3">Kendiniz saglamalisiniz</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Basarisiz Odeme Yonetimi</td>
+              <td class="border border-slate-200 px-4 py-3">Otomatik (akilli tekrar deneme)</td>
+              <td class="border border-slate-200 px-4 py-3">Manuel gelistirme gerekli</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Desteklenen Odeme Yontemi</td>
+              <td class="border border-slate-200 px-4 py-3">30+ (kart, banka, cuzdan)</td>
+              <td class="border border-slate-200 px-4 py-3">Genelde sadece kart</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Iade ve Iptal Yonetimi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Iade ve iptal yonetimi, musteri memnuniyeti ve is surekliligi icin kritik oneme sahiptir. Stripe, hem tam hem de kismi iade, abonelik iptali ve otomatik geri odeme gibi islemleri destekler.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Iade ve iptal surecinde dikkat edilmesi gerekenler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Tam ve Kismi Iade:</strong> Stripe API ile <code>refund</code> cagrisi yaparak odemenin tamamini veya bir kismini iade edebilirsiniz. Iade islemi genellikle 5-10 is gunu icinde musteriye yansir</li>
+        <li><strong>Abonelik Iptali:</strong> Musteri abonelik iptali istediginde, <code>subscription.cancel</code> API cagrisi ile abonelik sonlandirilir. Mevcut donem sonuna kadar hizmet devam edebilir</li>
+        <li><strong>Iade Nedenleri:</strong> Iade islemlerinde neden bilgisi ekleyerek, is analizi yapin ve musteri kaybi nedenlerini anlayin</li>
+        <li><strong>Otomatik Iade Kurallari:</strong> Belirli kosullar altinda (ornegin, 14 gun icinde iade) otomatik iade islemini tetikleyen is kurallari tanimlayin</li>
+        <li><strong>Musteri Bildirimleri:</strong> Iade ve iptal islemlerinden sonra musteriye e-posta veya SMS ile bilgi gonderin. Bu, musteri deneyimini iyilestirir</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Guvenlik ve En Iyi Pratikler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Odeme sistemi entegrasyonunda guvenlik en ust onceliktir. Stripe, PCI-DSS Seviye 1 sertifikali bir platform olarak en ust duzey guvenlik standartlarini saglar. Ancak, kendi uygulamanizda da bazi guvenlik onlemlerini almaniz gerekir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Odeme sistemi entegrasyonunda guvenlik icin en iyi pratikler:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Secret Key Guvenligi:</strong> Stripe secret key'inizi asla istemci tarafinda kullanmayin. Sunucu tarafli ortam degiskenlerinde saklayin ve duzenli olarak donusturun</li>
+        <li><strong>Webhook Imza Dogrulamasi:</strong> Gelen tum webhook isteklerini Stripe imzasi ile dogrulayarak, ortadaki adam saldirilarina karsi korunun</li>
+        <li><strong>Rate Limiting:</strong> Stripe API cagrilari icin rate limiting uygulayarak, yanlislikla veya kotu niyetle yapilan coklu API cagrilarini engelleyin</li>
+        <li><strong>Log ve Izleme:</strong> Tum odeme islemlerini detayli bir sekilde loglayin. Anormal aktiviteleri tespit etmek icin monitoring ve alert sistemi kurun</li>
+        <li><strong>PCI Uyumlulugu:</strong> Kart bilgilerini asla kendi sunucunuzda saklamayin. Stripe.js ve Elements ile kart bilgileri dogrudan Stripe'a gonderilir</li>
+      </ol>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, Stripe entegrasyonu ve online odeme sistemleri konusunda uzmanlik hizmeti sunuyoruz. E-ticaret siteniz, SaaS uygulamaniz veya mobil uygulamaniz icin guvenli ve olceklenebilir bir odeme altyapisi kurmak, abonelik yonetimini otomatiklestirmek ve odeme sureclerinizi optimize etmek icin bizimle iletisime gecin.</p>
+      </div>
+    `
+  },
+{
+    id: 210,
+    slug: 'veri-odakli-reklam-yonetimi-pazarlama-platformu',
+    title: 'Vaka Analizi: Veri Odaklı Reklam Yönetimi ile Dijital Pazarlama Dönüşümü',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '11 dk okuma',
+    excerpt: 'Bir dijital pazarlama ajansının 15 farklı reklam kanalını tek platformda yönetmesini sağlayarak %40 verimlilik artışı ve yıllık 2,4 milyon TL operasyonel tasarruf elde ettik.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Veri Odaklı Reklam Yönetimi ile Dijital Pazarlama Dönüşümü</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye'nin önde gelen bağımsız dijital pazarlama ajanslarından biri olan müşterimiz, 8 yıllık geçmişinde 200'den fazla markaya hizmet vermiş ve 45 kişilik bir ekiple çalışıyordu. Ajans, performans pazarlaması, sosyal medya yönetimi, SEO ve içerik pazarlaması alanlarında hizmet veriyordu. Ancak büyüme sürecinde operasyonel verimlilik sorunları baş göstermişti.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Ajansın karşılaştığı başlıca problemler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Kanal karmaşası:</strong> Google Ads, Meta, TikTok, LinkedIn, Twitter, Pinterest ve 9 farklı reklam kanalının ayrı ayrı yönetilmesi, günde ortalama 6 saat sadece raporlama işlemlerine harcanıyordu</li>
+        <li><strong>Veri dağınıklığı:</strong> Her kanalın kendi raporlama arayüzü nedeniyle müşterilere sunulan performans raporlarının hazırlanması 2-3 iş günü sürüyordu</li>
+        <li><strong>Bütçe optimizasyonu eksikliği:</strong> 15 kanal arasında bütçe dağılımının manuel yapılması, reklam harcamalarının %18'inin düşük performanslı kanallara gitmesine neden oluyordu</li>
+        <li><strong>Müşteri raporlama beklentisi:</strong> Müşterilerin gerçek zamanlı veri talebi karşılanamıyor, haftalık toplantılarda sunulan raporlar güncelliğini yitirmiş oluyordu</li>
+        <li><strong>Ekip tükenmişliği:</strong> Tekrarlayan manuel işlemler nedeniyle çalışan memnuniyeti düşüyor, yıllık personel devir hızı %35 seviyesine ulaşıyordu</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Çözüm Yaklaşımı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, ajansın tüm reklam kanallarını tek bir çatı altında toplayan, yapay zeka destekli bütçe optimizasyonu ve otomatik raporlama yapan merkezi bir Reklam Yönetim Platformu geliştirmeye karar verdik. 6 hafta süren keşif ve planlama aşamasında, ajansın mevcut iş akışlarını detaylıca haritalandırdık ve her kanalın API altyapısını analiz ettik.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Platformun temel tasarım prensipleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>API-first mimari:</strong> Tüm reklam kanallarının API'leri ile uyumlu, genişletilebilir entegrasyon katmanı</li>
+        <li><strong>Gerçek zamanlı veri işleme:</strong> Reklam harcamaları, tıklama ve dönüşüm verilerinin 5 saniyeden kısa sürede platforma yansıması</li>
+        <li><strong>Yapay zeka odaklı optimizasyon:</strong> Makine öğrenmesi modelleri ile kanal bazında bütçe dağılımı ve teklif yönetimi</li>
+        <li><strong>White-label raporlama:</strong> Ajansın kendi markasıyla müşterilerine sunabileceği, tamamen özelleştirilebilir raporlama modülü</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje kapsamında geliştirdiğimiz ana modüller:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Çok Kanallı Reklam Yönetim Modülü:</strong> Google Ads, Meta Ads Manager, TikTok Ads, LinkedIn Campaign Manager, Twitter Ads, Pinterest Ads, Microsoft Advertising, Amazon Ads, Yahoo Gemini ve 6 yerel reklam kanalının tek arayüzden yönetimi. Kampanya oluşturma, duraklatma, bütçe güncelleme ve teklif ayarlama işlemleri toplu olarak yapılabiliyor.</li>
+        <li><strong>Akıllı Bütçe Optimizasyon Motoru:</strong> Her kanalın geçmiş performans verilerini, mevsimsel trendleri ve rekabet yoğunluğunu analiz ederek bütçe dağılımını otomatik optimize eden yapay zeka motoru. İlk 3 ayda reklam harcamalarının getirisini (ROAS) %32 artırdı.</li>
+        <li><strong>Otomatik Raporlama ve Dashboard Modülü:</strong> Müşteri bazında özelleştirilebilir, sürükle-bırak arayüzü ile rapor şablonu oluşturma. PDF, Excel ve canlı link olarak rapor paylaşımı. Otomatik haftalık ve aylık rapor e-posta gönderimi.</li>
+        <li><strong>Yaratıcı Performans Analizi Modülü:</strong> Reklam görseli ve video performanslarını A/B testi sonuçlarına göre analiz eden, en iyi performans gösteren yaratıcıları öneren sistem. Görsel tanıma teknolojisi ile marka renkleri ve logolarının doğru kullanımını denetleme.</li>
+        <li><strong>Müşteri Portali Modülü:</strong> Ajans müşterilerinin kampanya performanslarını gerçek zamanlı takip edebildiği, hedef bazlı ilerleme göstergeçlerini gördüğü ve talep oluşturabildiği self-servis portal.</li>
+        <li><strong>Rekabet Analizi Modülü:</strong> Rakiplerin reklam stratejilerini, harcama tahminlerini ve yaratıcı örneklerini analiz ederek ajansın stratejik kararlarını destekleyen modül. Sosyal dinleme entegrasyonu ile marka algısı takibi.</li>
+        <li><strong>Finans ve Fatura Yönetim Modülü:</strong> Medya harcamalarının ve ajans hizmet bedellerinin takibi, otomatik fatura oluşturma ve müşteri bazında karlılık analizi. Muhasebe yazılımları ile entegrasyon.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Teknik Altyapı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Platformu mikroservis mimarisi ile Node.js ve Python backend teknolojileri üzerine inşa ettik. Her reklam kanalı entegrasyonu için ayrı mikroservis geliştirildi ve bu servisler API Gateway üzerinden yönetildi. Veritabanı katmanında PostgreSQL (kampanya ve bütçe verileri) ve ClickHouse (zaman serisi performans verileri) birlikte kullanıldı.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Veri işleme için Apache Kafka kullanılarak saniyede 50.000'den fazla reklam olayının işlenmesi sağlandı. Frontend tarafında React.js ile geliştirilen arayüz, gerçek zamanlı veri güncellemeleri için WebSocket bağlantısı kullanıyor. Bulut altyapısı olarak AWS tercih edilirken, otomatik ölçeklendirme ile yoğun saatlerde kaynak kullanımı optimize edildi. Raporlama modülünde ise Apache Spark ile büyük veri işleme yapılarak rapor oluşturma süreleri saniyelere indirildi.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Platformun tam kapasite devreye alınmasından 12 ay sonra ölçümlenen sonuçlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>%40 verimlilik artışı:</strong> Raporlama ve kanal yönetim süreleri haftalık 30 saatten 18 saate düştü, ekip daha stratejik işlere odaklanmaya başladı</li>
+        <li><strong>%32 ROAS iyileşmesi:</strong> Akıllı bütçe optimizasyonu sayesinde müşteri reklam harcamalarının getirisi önemli ölçüde arttı</li>
+        <li><strong>%50 müşteri memnuniyeti artışı:</strong> Gerçek zamanlı raporlama ve müşteri portalı sayesinde NPS skoru 38'den 71'e yükseldi</li>
+        <li><strong>%60 yeni müşteri kazanımı:</strong> White-label raporlama ve şeffaf performans gösterimi sayesinde ajans, 12 ayda 38 yeni müşteri kazandı</li>
+        <li><strong>%45 personel memnuniyeti artışı:</strong> Manuel iş yükünün azalmasıyla yıllık personel devir hızı %35'ten %19'a düştü</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin toplam yatırım bedeli 1,6 milyon TL olurken, operasyonel tasarruflar ve yeni müşteri gelirleri sayesinde yıllık net fayda 2,4 milyon TL olarak gerçekleşti. Yatırımın geri dönüş süresi 8 ay olarak hesaplandı. Ayrıca, platform sayesinde ajansın yönettiği toplam reklam harcaması hacmi 12 ayda 45 milyon TL'den 78 milyon TL'ye yükseldi.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Ajans, bu dönüşüm sayesinde sadece operasyonel verimlilik kazanmakla kalmadı, aynı zamanda müşterilerine sunduğu hizmet kalitesini de üst seviyeye taşıdı. Platformun ikinci fazında TikTok Shop, Telegram Ads ve podcast reklam kanallarının entegrasyonu ile influencer pazarlama yönetim modülünün eklenmesi planlanıyor.</p>
+      </div>
+    `
+  },
+  {
+    id: 211,
+    slug: 'blockchain-web3-akilli-kontrat-dapp-platformu',
+    title: 'Vaka Analizi: Blockchain ve Web3 Teknolojileri ile Akıllı Kontrat ve DApp Platformu Geliştirme',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '12 dk okuma',
+    excerpt: 'Bir Web3 girişimi için Ethereum tabanlı NFT marketplace, cüzdan entegrasyonu ve akıllı kontrat altyapısı geliştirerek ilk yılda 150 bin kullanıcıya ve 25 milyon TL işlem hacmine ulaştık.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Blockchain ve Web3 Teknolojileri ile Akıllı Kontrat ve DApp Platformu Geliştirme</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye merkezli bir Web3 girişimi olan müşterimiz, dijital sanatçılar ve koleksiyonerler için bir NFT pazar yeri kurmayı hedefliyordu. 10 kişilik kurucu ekibin 7'si iş geliştirme ve pazarlama kökenliydi; blockchain geliştirme konusunda yeterli teknik kapasiteye sahip değillerdi. Girişim, Ethereum ekosisteminde akıllı kontrat geliştirme, cüzdan entegrasyonu ve merkeziyetsiz uygulama (DApp) mimarisi konularında dış destek ihtiyacı duyuyordu.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Girişimin karşılaştığı başlıca zorluklar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Teknik açık:</strong> Ekibin Solidity ve blockchain geliştirme konusunda deneyimsiz olması, akıllı kontrat güvenliği risklerini yönetememeleri</li>
+        <li><strong>Gaz ücretleri:</strong> Ethereum ana ağındaki yüksek işlem ücretleri nedeniyle kullanıcı deneyiminin olumsuz etkilenmesi, Layer 2 çözümlerine ihtiyaç duyulması</li>
+        <li><strong>Depolama:</strong> NFT görsel ve metadata dosyalarının merkeziyetsiz depolanması için IPFS/Filecoin altyapısı kurulumu gerekliliği</li>
+        <li><strong>Cüzdan entegrasyonu:</strong> MetaMask, WalletConnect ve yerel cüzdan desteğinin sağlanması, kullanıcıların farklı cüzdan seçeneklerini sorunsuz kullanabilmesi</li>
+        <li><strong>Pazara giriş hızı:</strong> Hızla büyüyen NFT pazarında rakiplerin gerisinde kalmamak için 4 ay içinde MVP çıkışı hedefi</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Çözüm Yaklaşımı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, girişimin teknik vizyonunu hayata geçirmek için kapsamlı bir blockchain geliştirme süreci yönettik. Projeyi üç ana aşamaya böldük: akıllı kontrat geliştirme ve güvenlik denetimi, DApp frontend ve backend altyapısı, ve Layer 2 ölçeklendirme çözümü. Her aşama için ayrı testnet ortamlarında kapsamlı testler gerçekleştirdik.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin temel tasarım prensipleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Güvenlik öncelikli:</strong> Tüm akıllı kontratların üçüncü taraf güvenlik firmaları tarafından denetlenmesi, bilinen saldırı vektörlerine karşı koruma</li>
+        <li><strong>Layer 2 stratejisi:</strong> Polygon (Matic) ağı üzerinde düşük maliyetli ve hızlı işlemler, Ethereum ana ağına köprü (bridge) desteği</li>
+        <li><strong>Mobil öncelikli DApp:</strong> Web3 teknolojilerinin mobil cihazlarda sorunsuz çalışması için optimize edilmiş PWA (Progressive Web App) çözümü</li>
+        <li><strong>Kullanıcı dostu onboarding:</strong> Kripto deneyimi olmayan kullanıcılar için kredi kartı ile NFT satın alma, e-posta ile hesap oluşturma gibi geleneksel giriş yöntemleri</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje kapsamında geliştirdiğimiz ana modüller:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Akıllı Kontrat Katmanı:</strong> Ethereum ve Polygon ağları için Solidity ile yazılmış, OpenZeppelin standartlarını temel alan akıllı kontratlar: ERC-721 ve ERC-1155 token standartları, açık artırma kontratı, royalty dağıtım kontratı ve köprü (bridge) kontratı. Tüm kontratlar bağımsız bir güvenlik firmasına denetlettirildi.</li>
+        <li><strong>NFT Marketplace Modülü:</strong> Sanatçıların eserlerini listeleyebildiği, koleksiyonerlerin teklif verebildiği ve doğrudan satın alma yapabildiği pazar yeri. Sabit fiyat, İngiliz açık artırması ve Hollanda açık artırması olmak üzere 3 farklı satış modeli destekleniyor.</li>
+        <li><strong>Cüzdan Entegrasyon Modülü:</strong> MetaMask, WalletConnect, Coinbase Wallet ve Trust Wallet desteği. Ayrıca, girişime özel olarak geliştirilen yerel web cüzdanı ile e-posta ve şifre ile kripto cüzdanı oluşturma imkanı.</li>
+        <li><strong>Mintleme (Basım) Modülü:</strong> Sanatçıların eserlerini kolayca NFT'ye dönüştürebildiği, görsel işleme ve metadata oluşturma araçları. Toplu mintleme, gecikmeli mintleme (reveal) ve özel koleksiyon oluşturma özellikleri.</li>
+        <li><strong>IPFS Depolama Modülü:</strong> NFT görsellerinin ve metadata dosyalarının Pinata ve Filecoin altyapısı ile merkeziyetsiz depolanması. Dosya bütünlüğü için içerik adresleme (CID) ve dosya sıkıştırma optimizasyonu.</li>
+        <li><strong>Kullanıcı Dashboard Modülü:</strong> Kullanıcıların koleksiyonlarını görüntülediği, tekliflerini yönettiği, işlem geçmişini takip ettiği ve portföy analizi yapabildiği kişisel dashboard.</li>
+        <li><strong>Analitik ve İşlem İzleme Modülü:</strong> Platform genelinde işlem hacmi, en popüler koleksiyonlar, taban fiyat trendleri ve kullanıcı büyüme metriklerini gösteren gerçek zamanlı analitik paneli. Blockchain gezgini (Etherscan/Polygonscan) entegrasyonu.</li>
+        <li><strong>Fiat On-Ramp Modülü:</strong> Kredi kartı ve banka havalesi ile kripto para satın alma imkanı sunan, BINANCE Pay ve Papara entegrasyonları. Türk kullanıcılar için TRY bazlı fiyatlandırma ve ödeme seçenekleri.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Teknik Altyapı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Blockchain katmanında Solidity ve Hardhat geliştirme ortamı kullanıldı. Akıllı kontrat testleri için Waffle ve Ether.js kullanılırken, kontratların ana ağa dağıtımı için Infura ve Alchemy node servislerinden yararlanıldı. DApp frontend'i Next.js ve wagmi.sh kütüphanesi ile geliştirilerek Web3 bağlantıları ve kontrat etkileşimleri yönetildi.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Backend tarafında Node.js ve Express kullanılırken, veritabanı olarak PostgreSQL (kullanıcı verileri, koleksiyon metadata'ları) ve MongoDB (işlem geçmişi, aktivite logları) birlikte kullanıldı. Aramalar için Elasticsearch entegrasyonu yapıldı. IPFS dosya yükleme işlemleri için Pinata API, dosya kalıcılığı için Filecoin web3.storage kullanıldı. Tüm sistem Docker konteynerler ile AWS EKS (Kubernetes) üzerinde çalışıyor.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Platformun lansmanından 12 ay sonra ölçümlenen sonuçlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>150.000 kayıtlı kullanıcı:</strong> Hedeflenen 100 bin kullanıcının %50 üzerine çıkılarak toplam 150 bin kullanıcıya ulaşıldı</li>
+        <li><strong>25 milyon TL işlem hacmi:</strong> Platform üzerinden gerçekleştirilen toplam NFT alım-satım hacmi 25 milyon TL'yi aştı</li>
+        <li><strong>8.500 basılan NFT:</strong> Platforma kayıtlı 1.200 sanatçı tarafından toplam 8.500 NFT basıldı ve listelendi</li>
+        <li><strong>45 TL ortalama gaz ücreti:</strong> Polygon Layer 2 sayesinde işlem başına gaz ücreti Ethereum ana ağına göre %98 daha düşük seviyede kaldı</li>
+        <li><strong>Sıfır güvenlik ihlali:</strong> Denetlenen akıllı kontratlar sayesinde 12 ayda herhangi bir güvenlik açığı veya fon kaybı yaşanmadı</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin toplam geliştirme maliyeti 2,8 milyon TL olurken, platform gelirleri (işlem komisyonları ve premium özellikler) ilk yılda 4,2 milyon TL'ye ulaştı. Kullanıcı başına ortalama işlem sayısı aylık 3,2 olarak gerçekleşti. Girişim, ikinci yılın başında iki büyük yatırım fonundan toplam 5 milyon dolar yatırım almayı başardı.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Web3 girişimi, DZY Digital'in teknik liderliğinde Türkiye'nin en büyük NFT platformlarından biri haline geldi. Platformun ikinci fazında DeFi entegrasyonu (stake etme, farming havuzları) ve kurumsal NFT çözümleri (sertifika, bilet, sadakat token'ları) modüllerinin eklenmesi planlanıyor.</p>
+      </div>
+    `
+  },
+  {
+    id: 212,
+    slug: 'multiplayer-oyun-sunucusu-ve-altyapisi',
+    title: 'Vaka Analizi: Multiplayer Oyun Sunucusu ve Altyapısı ile Gerçek Zamanlı Oyun Deneyimi',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '11 dk okuma',
+    excerpt: 'Bir oyun stüdyosu için 50.000 eşzamanlı oyuncuyu destekleyen, ölçeklenebilir multiplayer oyun sunucusu altyapısı kurarak %99,9 çalışma süresi ve 50 ms altı gecikme süresi elde ettik.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Multiplayer Oyun Sunucusu ve Altyapısı ile Gerçek Zamanlı Oyun Deneyimi</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye merkezli bağımsız bir oyun geliştirme stüdyosu olan müşterimiz, battle royale türünde mobil ve PC platformlarında yayınlanacak bir oyun geliştiriyordu. 25 kişilik ekip, oyun mekanikleri ve grafik konusunda önemli ilerleme kaydetmişti ancak oyunun en kritik bileşeni olan multiplayer altyapısı konusunda yetersiz kalıyordu.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Stüdyonun karşılaştığı başlıca problemler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Eşzamanlı oyuncu yönetimi:</strong> Mevcut prototip sunucu maksimum 500 eşzamanlı oyuncuyu kaldırabiliyordu, hedef ise en az 50.000 oyuncuydu</li>
+        <li><strong>Gecikme sorunları:</strong> Sunucuların yalnızca Frankfurt'ta bulunması, Türkiye ve Asya'daki oyuncular için 120-200 ms gecikmeye neden oluyordu</li>
+        <li><strong>Durum senkronizasyonu:</strong> Oyun içi nesnelerin ve oyuncu pozisyonlarının tüm kullanıcılarda tutarlı şekilde güncellenememesi, hile ve desync sorunları</li>
+        <li><strong>Ölçeklenebilirlik:</strong> Beklenmedik oyuncu patlamalarında sunucuların çökmesi, otomatik ölçeklendirme altyapısının olmaması</li>
+        <li><strong>Liderlik tablosu:</strong> Gerçek zamanlı güncellenen, 1 milyondan fazla oyuncuyu sıralayabilen bir liderlik tablosu sisteminin geliştirilmesi gerekliliği</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Çözüm Yaklaşımı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, oyun stüdyosuyla yakın işbirliği içinde çalışarak uçtan uca bir multiplayer oyun altyapısı tasarladık ve hayata geçirdik. Proje kapsamında oyun sunucuları, gerçek zamanlı iletişim katmanı, eşleştirme (matchmaking) sistemi ve operasyonel araçların tamamını geliştirdik.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Altyapının temel tasarım prensipleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Bölgesel dağıtım:</strong> İstanbul, Frankfurt, Londra, Dubai ve Singapur olmak üzere 5 farklı bölgede oyun sunucusu konumlandırması</li>
+        <li><strong>Authoritative sunucu modeli:</strong> Tüm oyun durumunun sunucuda hesaplandığı, istemcilerin yalnızca girdi gönderdiği güvenli mimari</li>
+        <li><strong>Yatay ölçekleme:</strong> Oyuncu sayısına göre otomatik yeni sunucu instance'ları oluşturan dinamik altyapı</li>
+        <li><strong>DDoS koruması:</strong> Oyun sunucularına yönelik saldırıları tespit eden ve otomatik önlem alan güvenlik katmanı</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje kapsamında geliştirdiğimiz ana modüller:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Oyun Sunucusu Motoru:</strong> C++ ve Go dillerinde geliştirilen, tek bir sunucu instance'ında 100 oyuncunun aynı anda sorunsuz oynayabildiği oyun sunucusu. 60 tick/saniye güncelleme hızı, physics hesaplamaları ve çarpışma tespiti sunucu tarafında gerçekleştiriliyor. Her oyuncu için bölgesel hit detection (lag compensation) algoritması uygulandı.</li>
+        <li><strong>Gerçek Zamanlı İletişim Katmanı:</strong> WebSocket ve UDP protokollerini birlikte kullanan hibrit iletişim altyapısı. Kritik oyun verileri (pozisyon, atış) için düşük gecikmeli UDP, güvenilir veri (envanter, puan) için WebSocket kullanılıyor. Mesaj sıkıştırma ile bant genişliği kullanımı %40 optimize edildi.</li>
+        <li><strong>Eşleştirme (Matchmaking) Sistemi:</strong> Oyuncuları MMR (Matchmaking Rating) puanına, bölgeye ve bağlantı kalitesine göre eşleştiren akıllı algoritma. Bekleme süresini minimuma indirmek için Elo tabanlı derecelendirme ve genişletilmiş eşleştirme aralığı stratejisi. Ortalama eşleştirme süresi 12 saniye.</li>
+        <li><strong>Liderlik Tablosu Modülü:</strong> Redis üzerinde sıralı küme (sorted set) veri yapısı kullanılarak geliştirilen, 1 milyon oyuncuyu gerçek zamanlı sıralayabilen liderlik tablosu. Haftalık, aylık ve sezonluk sıralama periyotları. Hile tespit sistemi ile otomatik diskalifiye mekanizması.</li>
+        <li><strong>Oyun Sunucu Yöneticisi (Orchestrator):</strong> Docker ve Kubernetes üzerinde çalışan, oyuncu talebine göre yeni oyun sunucusu instance'ları oluşturan, kullanılmayan sunucuları otomatik kapatarak maliyet optimizasyonu yapan yönetim katmanı. AWS GameLift entegrasyonu.</li>
+        <li><strong>Anti-Hile ve Güvenlik Modülü:</strong> İstemci tarafında hile yazılımlarını tespit eden, sunucu tarafında anomali analizi yapan çok katmanlı güvenlik sistemi. Aimbot, wallhack ve hız hilesi gibi yaygın hile türlerine karşı koruma. Anlık oyuncu verisi analizi ile şüpheli davranış tespiti.</li>
+        <li><strong>Operasyonel Araçlar ve Monitoring:</strong> Oyun sunucularının performans metriklerini (CPU, bellek, ağ, FPS, gecikme) gerçek zamanlı takip eden, oyuncu şikayetlerini otomatik kategorize eden operasyon dashboard'u. Prometheus ve Grafana altyapısı ile anlık görselleştirme.</li>
+        <li><strong>Oyuncu Veritabanı ve Profil Modülü:</strong> PostgreSQL tabanlı, 5 milyondan fazla oyuncu profilini yönetebilen veritabanı katmanı. Oyuncu istatistikleri, başarımlar, envanter ve maç geçmişi verilerinin optimize sorgularla yönetilmesi. Redis önbellekleme ile profil yükleme süresi 50 ms altına indirildi.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Teknik Altyapı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Oyun sunucuları C++ (Unreal Engine dedicated server) ve Go (arka plan servisleri) dillerinde geliştirildi. Gerçek zamanlı iletişim için WebSocket (Gorilla/ws) ve UDP (KCP protokolü) kullanıldı. Sunucu orkestrasyonu için Kubernetes üzerinde custom operator geliştirildi ve AWS GameLift ile entegre çalışacak şekilde yapılandırıldı.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Veritabanı katmanında PostgreSQL (oyuncu profilleri, kalıcı veriler), Redis (liderlik tablosu, oturum yönetimi, önbellek) ve ScyllaDB (maç geçmişi, yüksek yazma hacimli veriler) kullanıldı. Bölgesel dağıtım için AWS Global Accelerator ve Route 53 latency-based routing ile oyuncular en yakın sunucuya yönlendirildi. DDoS koruması için AWS Shield Advanced ve Cloudflare kullanıldı.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Oyunun erken erişim lansmanından 6 ay sonra ölçümlenen sonuçlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>50.000 eşzamanlı oyuncu:</strong> Altyapı, pik saatlerde 50.000 eşzamanlı oyuncuyu sorunsuz yönetti, kapasite testlerinde 80.000 oyuncuya kadar çıkıldı</li>
+        <li><strong>50 ms altı gecikme:</strong> Türkiye ve yakın bölgelerde ortalama gecikme 35 ms, en uzak bölgelerde 80 ms seviyesinde gerçekleşti</li>
+        <li><strong>%99,9 çalışma süresi:</strong> 6 aylık dönemde toplam 43 dakika planlanmamış kesinti, SLA hedefi olan %99,5'in üzerinde</li>
+        <li><strong>1,2 milyon kayıtlı oyuncu:</strong> Oyunun ilk 6 ayda toplam 1,2 milyon kayıtlı oyuncuya ulaşması, günlük aktif oyuncu sayısı ortalama 180 bin</li>
+        <li><strong>%0,8 hile tespit oranı:</strong> Anti-hile sistemi sayesinde tespit edilen hile kullanım oranı sektör ortalaması olan %2,5'in oldukça altında kaldı</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin toplam altyapı ve geliştirme bedeli 3,2 milyon TL olurken, oyun içi satın alımlardan elde edilen aylık gelir 1,8 milyon TL seviyesine ulaştı. Sunucu maliyetleri, otomatik ölçeklendirme sayesinde beklenenin %30 altında gerçekleşti. Yatırımın geri dönüş süresi 18 ay olarak hesaplanırken, stüdyo ikinci oyun projesi için yayıncı anlaşması imzaladı.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Bağımsız oyun stüdyosu, DZY Digital'in geliştirdiği altyapı sayesinde global pazarda rekabet edebilecek teknik kapasiteye kavuştu. Oyunun tam sürüm lansmanıyla birlikte 150.000 eşzamanlı oyuncu hedefine ulaşılması ve konsol platformlarına (PlayStation, Xbox) yayılması planlanıyor.</p>
+      </div>
+    `
+  },
+  {
+    id: 213,
+    slug: 'coklu-dil-destegi-olan-global-saas-platformu',
+    title: 'Vaka Analizi: Çoklu Dil Desteği ve Global Ödeme Altyapısı ile SaaS Platformu',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '12 dk okuma',
+    excerpt: 'Bir SaaS girişiminin 12 dil, 8 para birimi ve Stripe ile global ödeme altyapısını kurarak 6 ayda 15 ülkeye yayılmasını ve aylık tekrarlayan gelirini (MRR) %320 artırmasını sağladık.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Çoklu Dil Desteği ve Global Ödeme Altyapısı ile SaaS Platformu</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje yönetimi ve ekip işbirliği alanında hizmet veren yerli bir SaaS girişimi olan müşterimiz, Türkiye pazarında 2 yılda 5.000 kurumsal müşteriye ulaşmış ve aylık 450 bin TL tekrarlayan gelir elde ediyordu. Şirket, global pazara açılmak istiyor ancak mevcut platformu yalnızca Türkçe dil desteğine sahipti ve ödeme altyapısı yalnızca TRY ile sınırlıydı.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Girişimin globalleşme sürecinde karşılaştığı başlıca zorluklar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Tek dil mimarisi:</strong> Tüm kullanıcı arayüzü ve içeriğin yalnızca Türkçe olması, uluslararası kullanıcıların platformu kullanamaması</li>
+        <li><strong>Para birimi sınırlaması:</strong> Yalnızca TL cinsinden fiyatlandırma ve ödeme alınabilmesi, döviz kuru dalgalanmaları nedeniyle rekabetçi fiyatlandırma yapılamaması</li>
+        <li><strong>Ödeme altyapısı:</strong> Mevcut ödeme sistemi yalnızca Türk bankaları ve BKM Express ile çalışıyordu, uluslararası kredi kartları ve PayPal gibi yöntemler desteklenmiyordu</li>
+        <li><strong>Vergi ve yasal uyum:</strong> AB ülkeleri için KDV hesaplaması, ABD için eyalet bazlı satış vergisi ve diğer ülkelerin yerel vergi düzenlemelerine uyum gereksinimi</li>
+        <li><strong>Yerelleştirme yönetimi:</strong> 12 ayrı dil için çeviri sürecinin yönetilmesi, içerik güncellemelerinin tüm dillerde eşzamanlı yayınlanması ihtiyacı</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Çözüm Yaklaşımı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, SaaS platformunun global pazarlara açılması için kapsamlı bir dönüşüm projesi yönettik. Projeyi 3 ana faz halinde planladık: i18n altyapısı ve yerelleştirme, çoklu para birimi ve ödeme sistemleri, ve bölgesel uyumluluk katmanı.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Dönüşümün temel prensipleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Dil dosyası merkezi yönetimi:</strong> Tüm çevirilerin tek bir yerden yönetildiği, geliştirme sürecinden bağımsız güncellenebilen i18n sistemi</li>
+        <li><strong>Dinamik fiyatlandırma:</strong> Her ülke için ayrı fiyatlandırma stratejisi belirlenebilen, kur güncellemelerini otomatik yapan fiyat motoru</li>
+        <li><strong>Kesintisiz geçiş:</strong> Mevcut kullanıcıların hizmet kesintisi yaşamaması için kademeli geçiş stratejisi ve veri taşıma planı</li>
+        <li><strong>Yerel ödeme yöntemleri:</strong> Her bölgenin popüler ödeme yöntemlerinin entegrasyonu (ABD'de kart, AB'de SEPA, Asya'da Alipay vb.)</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje kapsamında geliştirdiğimiz ana modüller:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Uluslararasılaştırma (i18n) Altyapısı:</strong> Next.js'in built-in i18n desteği ile kurgulanan, 12 dil için ayrı namespace'lere sahip çeviri sistemi. İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce, Felemenkçe, Lehçe, Rusça, Arapça, Farsça ve Türkçe dilleri destekleniyor. Sağdan sola (RTL) okuma düzeni için ayrı CSS stilleri geliştirildi. Tarih, saat, para birimi ve sayı formatları otomatik bölgeselleştirme ile her dilde doğru biçimde görüntüleniyor.</li>
+        <li><strong>Çeviri Yönetim Platformu:</strong> Geliştiricilerden bağımsız çalışan, profesyonel çevirmenlerin ve topluluk katkılarının yönetilebildiği web tabanlı çeviri paneli. Anlık önizleme, bağlam görseli ve terim sözlüğü desteği. Toplam 50.000'den fazla metin anahtarı için çeviri yönetimi. Sürekli entegrasyon (CI) ile otomatik çeviri dağıtımı.</li>
+        <li><strong>Global Fiyatlandırma ve Abonelik Motoru:</strong> Her ülke için ayrı fiyatlandırma katmanları (Starter, Professional, Enterprise) tanımlanabilen, döviz kurlarını günlük güncelleyen dinamik fiyat motoru. Bölgesel satın alma gücü paritesine (PPP) göre optimize edilmiş fiyatlandırma stratejisi. Örneğin Türkiye'de 499 TL olan Professional plan, ABD'de 49 dolar, Almanya'da 45 euro olarak fiyatlandırıldı.</li>
+        <li><strong>Stripe Connect Ödeme Altyapısı:</strong> Stripe'in global ödeme ağını kullanan, 135'ten fazla para biriminde ödeme kabul edebilen altyapı. Kredi kartı (Visa, Mastercard, Amex), dijital cüzdan (Apple Pay, Google Pay), SEPA, iDEAL (Hollanda), Bancontact (Belçika), Alipay ve WeChat Pay entegrasyonları. 3D Secure 2.0 kimlik doğrulama ve anlık dolandırıcılık tespiti.</li>
+        <li><strong>Bölgesel Vergi Hesaplama Motoru:</strong> AB ülkeleri için birliğin MOSS (Mini One Stop Shop) sistemine uygun KDV hesaplama, ABD için eyalet bazlı satış vergisi oranları, İngiltere için VAT, Türkiye için KDV ve diğer ülkelerin yerel vergi düzenlemelerine uyumlu otomatik vergi hesaplama. Stripe Tax entegrasyonu ile gerçek zamanlı vergi oranı güncellemesi.</li>
+        <li><strong>Müşteri Yönetim ve Faturalama Modülü:</strong> Her ülke için ayrı fatura formatları (ABD'de elektronik fatura, AB'de e-fatura, Türkiye'de e-Arşiv), otomatik yinelenen faturalama ve dunning (gecikmiş ödeme yönetimi) süreçleri. Müşterilerin kendi fatura bilgilerini yönetebildiği self-servis portal.</li>
+        <li><strong>Bölgesel İçerik ve SEO Modülü:</strong> Her dil ve ülke için ayrı landing page, blog içeriği ve SEO meta verisi yönetimi. Hreflang etiketleri, ülke bazında domain yönlendirmeleri ve yerel arama motorları için optimize edilmiş içerik stratejisi. Toplam 48 farklı dil-ülke kombinasyonu için otomatik SEO yapılandırması.</li>
+        <li><strong>Analitik ve Raporlama Modülü:</strong> Ülke bazında kullanıcı edinimi, dönüşüm oranları, ortalama gelir (ARPU), churn oranı ve yaşam boyu değer (LTV) metriklerini gösteren global analitik dashboard'u. Para birimi dönüşümleri ile tek bir baz para biriminde (USD) konsolide raporlama.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Teknik Altyapı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Platform mevcut Next.js (React) frontend ve Node.js (NestJS) backend mimarisi üzerine inşa edildi. i18n altyapısı için next-intl kütüphanesi kullanılırken, çeviri dosyaları yerel depolama yerine cloud-based bir CDN üzerinden yayınlandı. Ödeme katmanında Stripe Connect, vergi hesaplama için Stripe Tax ve abonelik yönetimi için Stripe Billing entegrasyonları yapıldı.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Veritabanında PostgreSQL kullanılırken, fiyatlandırma ve kur bilgileri Redis önbelleğinde tutuldu. Global dağıtım için Vercel Edge Network kullanılarak sayfa yükleme süreleri dünya genelinde 100 ms altına indirildi. Tüm para birimi dönüşümleri için Open Exchange Rates API, güncel kur bilgisi için ise Merkez Bankası ve ECB verileri kullanıldı. GDPR ve KVKK uyumluluğu için veri saklama politikaları ve kullanıcı verisi silme mekanizmaları platforma entegre edildi.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Global lansmanın ardından 12 ay sonra ölçümlenen sonuçlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>15 ülkede faaliyet:</strong> Platform, 6 ayda 15 farklı ülkede aktif kullanıcı tabanına ulaştı, en hızlı büyüme Almanya, İngiltere ve BAE pazarlarında gerçekleşti</li>
+        <li><strong>%320 MRR büyümesi:</strong> Aylık tekrarlayan gelir 450 bin TL'den (55 bin dolar) 1,9 milyon TL'ye (230 bin dolar) yükseldi</li>
+        <li><strong>12.500 global müşteri:</strong> Türkiye dışından 7.500 yeni kurumsal müşteri kazanıldı, toplam müşteri sayısı 12.500'e ulaştı</li>
+        <li><strong>%40 daha düşük ortalama churn:</strong> Yerelleştirilmiş kullanıcı deneyimi sayesinde global müşterilerde churn oranı Türkiye'deki müşterilere kıyasla %40 daha düşük seyretti</li>
+        <li><strong>%80 ödeme başarı oranı:</strong> Stripe optimizasyonu ve yerel ödeme yöntemleri sayesinde ödeme başarı oranı %65'ten %80'e yükseldi</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin toplam yatırım bedeli 3,6 milyon TL olurken, global gelirler sayesinde yatırımın geri dönüş süresi 10 ay olarak gerçekleşti. Platformun yıllık tekrarlayan geliri (ARR) lansman öncesi 5,4 milyon TL iken, globalleşme sonrası 22,8 milyon TL'ye yükseldi. Girişim, seri A yatırım turunda 12 milyon dolar değerleme ile yatırım aldı.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">SaaS girişimi, DZY Digital'in geliştirdiği global altyapı sayesinde yerel bir oyuncudan uluslararası bir markaya dönüştü. Platformun ikinci fazında Asya-Pasifik pazarına odaklanılması ve Japonca, Korece, Çince dillerinin eklenmesi ile birlikte Stripe Connect yerine bölgeye özel ödeme sağlayıcılarının entegrasyonu planlanıyor.</p>
+      </div>
+    `
+  },
+  {
+    id: 214,
+    slug: 'akilli-sebeke-iot-enerji-yonetim-sistemi',
+    title: 'Vaka Analizi: Akıllı Şebeke IoT Yönetim Sistemi ile Enerji Sektöründe Dijital Dönüşüm',
+    category: 'Vaka Analizleri',
+    date: '04 Temmuz 2026',
+    readTime: '13 dk okuma',
+    excerpt: 'Bir enerji dağıtım şirketi için 50.000 IoT sensörü ve akıllı sayaç ile gerçek zamanlı şebeke izleme sistemi kurarak %25 kaçak kullanım azalması ve yıllık 12 milyon TL operasyonel tasarruf sağladık.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Akıllı Şebeke IoT Yönetim Sistemi ile Enerji Sektöründe Dijital Dönüşüm</h1>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Profili ve Problemler</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye'nin önde gelen elektrik dağıtım şirketlerinden biri olan müşterimiz, 1,2 milyon aboneye hizmet veriyor ve 35 bin kilometrekarelik bir bölgede faaliyet gösteriyordu. Şirket, 30 yıllık geçmişine rağmen şebeke yönetiminde geleneksel yöntemler kullanıyor, sahadan gelen verileri manuel olarak topluyor ve analiz ediyordu.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Şirketin karşılaştığı başlıca problemler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Kaçak kullanım:</strong> Şebekedeki kayıp-kaçak oranının %14 seviyesinde olması, bunun yıllık maliyetinin 45 milyon TL'yi bulması</li>
+        <li><strong>Kesinti yönetimi:</strong> Arızaların genellikle müşteri ihbarı ile tespit edilmesi, ortalama müdahale süresinin 120 dakika olması</li>
+        <li><strong>Veri toplama zorluğu:</strong> Saha ekiplerinin manuel sayaç okuma ve fiziksel rapor hazırlama süreçleri, verilerin güncelliğini kaybetmesi</li>
+        <li><strong>Talep tahmini:</strong> Enerji talebinin doğru tahmin edilememesi nedeniyle pik saatlerde aşırı yüklenme ve dağıtım kesintileri</li>
+        <li><strong>Yenilenebilir entegrasyonu:</strong> Artan güneş ve rüzgar enerjisi santrallerinin şebekeye entegrasyonunda yaşanan dalgalanma ve kararlılık sorunları</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Çözüm Yaklaşımı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, enerji dağıtım şirketi için uçtan uca bir Akıllı Şebeke IoT Yönetim Sistemi geliştirdik. Proje kapsamında 50.000 IoT cihazı ve akıllı sayaçtan oluşan sensör ağı kurulumu, gerçek zamanlı veri toplama ve analiz platformu, ve yapay zeka destekli karar destek sistemleri hayata geçirildi.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin temel tasarım prensipleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Katmanlı mimari:</strong> Sensör katmanı, edge computing katmanı, bulut veri işleme katmanı ve uygulama katmanı olmak üzere dört katmanlı güvenli mimari</li>
+        <li><strong>Gerçek zamanlı izleme:</strong> Tüm şebeke noktalarından saniyede 100.000'den fazla veri noktası toplanması ve anlık analiz</li>
+        <li><strong>Yapay zeka ile tahmin:</strong> Arıza tahmini, talep tahmini, kaçak kullanım tespiti ve yenilenebilir enerji üretim tahmini için makine öğrenmesi modelleri</li>
+        <li><strong>EPDK uyumluluğu:</strong> Enerji Piyasası Düzenleme Kurumu'nun tüm raporlama ve veri saklama gereksinimlerine tam uyum</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Geliştirilen Modüller</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Proje kapsamında geliştirdiğimiz ana modüller:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>IoT Sensör Ağı ve Edge Computing Katmanı:</strong> 50.000 akıllı sayaç, 8.500 trafo izleme cihazı, 2.200 hat sensörü ve 350 hava durumu istasyonundan oluşan kapsamlı sensör ağı. Edge computing cihazları, verileri yerel olarak işleyerek buluta yalnızca anlamlı verileri gönderiyor, bant genişliği kullanımını %70 azaltıyor. LoRaWAN ve NB-IoT protokolleri ile düşük güç tüketimli, geniş kapsama alanlı iletişim altyapısı.</li>
+        <li><strong>Gerçek Zamanlı Şebeke İzleme ve SCADA Modülü:</strong> Tüm şebeke noktalarının anlık durumunu (gerilim, akım, güç faktörü, frekans, sıcaklık) görselleştiren coğrafi bilgi sistemi (GIS) tabanlı harita arayüzü. Anormal durumlarda otomatik uyarı ve müdahale önerileri. Mevcut SCADA sistemleri ile tam entegrasyon.</li>
+        <li><strong>Kaçak Kullanım Tespit ve Analiz Modülü:</strong> Yapay zeka destekli anomali tespit algoritmaları ile anlık tüketim verilerini analiz ederek kaçak kullanımı yüksek olasılıkla tespit eden sistem. Tespit edilen noktaların otomatik olarak saha ekiplerine yönlendirilmesi ve müdahale sonuçlarının takibi. İlk 6 ayda 2.300 kaçak kullanım noktası tespit edildi.</li>
+        <li><strong>Talep Tahmini ve Yük Yönetim Modülü:</strong> Geçmiş tüketim verileri, hava durumu tahminleri, takvim etkileri ve özel günler gibi faktörleri dikkate alan derin öğrenme tabanlı talep tahmin modeli. 24 saat ve 7 günlük tahmin ufku ile şebeke operasyonlarının optimize edilmesi. Tahmin doğruluk oranı %96.</li>
+        <li><strong>Kesinti Yönetim ve Otomatik Müdahale Modülü:</strong> Arıza anında şebeke topolojisini analiz ederek en uygun hat yeniden yönlendirme planını otomatik oluşturan sistem. Müşteri bazında kesinti bildirimi (SMS, e-posta, mobil uygulama), saha ekiplerine otomatik iş emri ataması ve ortalama müdahale süresini 120 dakikadan 28 dakikaya düşüren mobil yönlendirme algoritması.</li>
+        <li><strong>Yenilenebilir Enerji Entegrasyon ve Tahmin Modülü:</strong> Bölgedeki güneş ve rüzgar santrallerinin üretim kapasitelerini hava durumu verileri ile tahmin eden, şebeke kararlılığını korumak için depolama sistemlerini yöneten modül. 450 MW kurulu güce sahip yenilenebilir enerji kaynaklarının şebekeye optimum entegrasyonu.</li>
+        <li><strong>Mobil Saha Ekipleri Uygulaması:</strong> Saha ekiplerinin mobil cihazlar üzerinden iş emirlerini görüntülemesi, arıza fotoğraflarını yüklemesi, yapılan müdahaleyi raporlaması ve malzeme talebi oluşturması için geliştirilen native mobil uygulama. Çevrimdışı çalışma desteği ve otomatik senkronizasyon.</li>
+        <li><strong>Enerji Verimliliği ve Müşteri Portalı:</strong> Abonelerin anlık tüketim verilerini görüntüleyebildiği, fatura tahmini alabildiği, verimlilik önerileri görebildiği ve kesinti bildirimlerini takip edebildiği self-servis web ve mobil portal. Karbon ayak izi hesaplama ve karşılaştırmalı tüketim analizi.</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Teknik Altyapı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">IoT katmanında, sensör verilerinin toplanması için MQTT ve AMQP protokolleri kullanıldı. Edge computing cihazları ARM tabanlı endüstriyel bilgisayarlar üzerinde çalışan, Rust ile geliştirilmiş gömülü yazılımlar ile yönetildi. Bulut altyapısında AWS IoT Core ve AWS Greengrass kullanılırken, veri işleme için Apache Flink (gerçek zamanlı) ve Apache Spark (batch) tercih edildi.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Makine öğrenmesi modelleri Python ve TensorFlow ile geliştirilerek Amazon SageMaker üzerinde eğitildi ve dağıtıldı. Zaman serisi verileri için TimescaleDB (PostgreSQL extension) ve InfluxDB kullanılırken, coğrafi veriler PostgreSQL/PostGIS üzerinde yönetildi. Şebeke topolojisi ve varlık yönetimi için Neo4j grafik veritabanı kullanıldı. Güvenlik tarafında, tüm IoT cihazları TLS/DTLS ile şifreli iletişim kurarken, cihaz kimlik doğrulaması için X.509 sertifikaları kullanıldı. Ayrıca, şebeke operasyonlarının sürekliliği için yedekli (redundant) iletişim hatları ve felaket kurtarma merkezi kuruldu.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin tam kapasite devreye alınmasından 18 ay sonra ölçümlenen sonuçlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>%25 kaçak kullanım azalması:</strong> Kayıp-kaçak oranı %14'ten %10,5'e geriledi, yıllık 11,2 milyon TL kaçak kaynaklı kaybın önüne geçildi</li>
+        <li><strong>%77 kesinti müdahale süresi iyileşmesi:</strong> Ortalama müdahale süresi 120 dakikadan 28 dakikaya düştü, müşteri şikayetleri %65 azaldı</li>
+        <li><strong>%15 operasyonel maliyet düşüşü:</strong> Saha ekiplerinin optimize yönlendirilmesi ve manuel süreçlerin otomasyonu sayesinde yıllık 12 milyon TL tasarruf</li>
+        <li><strong>%96 talep tahmin doğruluğu:</strong> Yapay zeka destekli tahmin modeli sayesinde enerji alım maliyetlerinde %8 optimizasyon, yıllık 8,5 milyon TL tasarruf</li>
+        <li><strong>%40 yenilenebilir enerji entegrasyon artışı:</strong> Şebekeye bağlanan yenilenebilir enerji kapasitesi 320 MW'dan 450 MW'a yükseldi, karbon emisyonu yıllık 120 bin ton azaldı</li>
+      </ul>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Projenin toplam yatırım bedeli 28 milyon TL (donanım, yazılım ve saha kurulumu dahil) olurken, yıllık toplam operasyonel tasarruf ve kayıp azalması 31,7 milyon TL seviyesinde gerçekleşti. Yatırımın geri dönüş süresi yalnızca 11 ay olarak hesaplandı. Ayrıca, akıllı şebeke sistemi sayesinde şirketin hizmet kalitesi puanı (KESİH-K) %40 iyileşerek sektörde ilk 3 arasına girdi.</p>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">Enerji dağıtım şirketi, DZY Digital ile gerçekleştirdiği bu dönüşüm sayesinde Türkiye'nin en akıllı şebeke altyapılarından birine sahip oldu. Projenin ikinci fazında elektrikli araç şarj istasyonu yönetimi, mikro şebeke çözümleri ve tüketicilere yönelik dinamik fiyatlandırma modülünün eklenmesi planlanıyor.</p>
+      </div>
+    `
+  },
+{
+    id: 45,
+    slug: 'turizm-ve-otelcilik-sektorunde-dijital-donusum',
+    title: 'Turizm ve Otelcilik Sektöründe Dijital Dönüşüm: Yazılım Çözümleri',
+    category: 'Sektörel Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '16 dk okuma',
+    excerpt: 'Turizm sektöründe rezervasyon sistemleri, PMS, channel manager, dynamic pricing ve müşteri deneyimi için kapsamlı yazılım rehberi.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Turizm ve Otelcilik Sektöründe Dijital Dönüşüm: Yazılım Çözümleri</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye turizm sektörü, 2026 yılı itibarıyla 60 milyonu aşan turist sayısı ve 50 milyar doları bulan gelirle dünyanın en önemli destinasyonları arasında yer alıyor. Kültür ve Turizm Bakanlığı verilerine göre, dijital dönüşüme yatırım yapan otellerin doluluk oranları, yatırım yapmayanlara göre ortalama %25 daha yüksek.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu rehberde, turizm ve otelcilik sektöründe faaliyet gösteren KOBİ'ler, zincir oteller ve butik tesisler için dijital dönüşüm stratejilerini, rezervasyon sistemlerinden dynamic pricing'e kadar tüm kritik yazılım çözümlerini ele alıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Otomasyon ve Rezervasyon Yönetim Sistemleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern otel rezervasyon sistemleri, sadece oda satışı yapmanın ötesinde, gelir yönetimi, kanal dağıtımı ve müşteri ilişkileri gibi kritik iş süreçlerini tek bir platformda birleştirir. Türkiye'deki otellerin %65'i hala geleneksel yöntemlerle rezervasyon yönetimi yaparken, dijital çözümlere geçenler rekabette önemli avantaj elde ediyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Kapsamlı bir rezervasyon yönetim sisteminin sağlaması gereken özellikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Merkezi Rezervasyon Sistemi (CRS):</strong> Tüm rezervasyon kanallarını tek bir ekrandan yönetme ve gerçek zamanlı oda durumu güncelleme</li>
+        <li><strong>Online Rezervasyon Motoru:</strong> Otel web sitesine entegre, mobil uyumlu, 7/24 çalışan güvenli rezervasyon arayüzü</li>
+        <li><strong>Akıllı Fiyatlandırma Motoru:</strong> Talep, sezon, doluluk ve rakip fiyatlarına göre otomatik fiyat optimizasyonu</li>
+        <li><strong>Ön Ödeme ve Depozito Yönetimi:</strong> Kredi kartı ön onayı, peşin ödeme ve iptal politikalarının otomatik yönetimi</li>
+        <li><strong>Grup ve Kurumsal Rezervasyon:</strong> Toplu oda blokajı, anlaşmalı kurum fiyatları ve özel kampanya yönetimi</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Özellik</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Manuel Süreç</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Dijital Çözüm</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Rezervasyon Süresi</td>
+              <td class="border border-slate-200 px-4 py-3">Ortalama 10-15 dk</td>
+              <td class="border border-slate-200 px-4 py-3">30 saniye</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Hata Oranı</td>
+              <td class="border border-slate-200 px-4 py-3">%8-12</td>
+              <td class="border border-slate-200 px-4 py-3">%1'den az</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Operasyonel Verimlilik</td>
+              <td class="border border-slate-200 px-4 py-3">Düşük</td>
+              <td class="border border-slate-200 px-4 py-3">%60 artış</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Property Management System (PMS) ve Channel Manager Entegrasyonu</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Property Management System (PMS), bir otelin tüm operasyonel süreçlerini yöneten merkezi yazılımdır. Ön büro, housekeeping, faturalama ve raporlama gibi modülleri tek bir çatı altında toplar. Channel Manager ise PMS'i Booking.com, Expedia, Airbnb gibi online seyahat acenteleriyle (OTA) entegre eder.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">PMS ve Channel Manager entegrasyonunun sunduğu avantajlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Gerçek Zamanlı Senkronizasyon:</strong> Tüm kanallarda oda stok ve fiyatlarının anlık olarak güncellenmesi, overbooking riskinin sıfırlanması</li>
+        <li><strong>Çoklu OTA Yönetimi:</strong> 20'den fazla satış kanalının tek panelden yönetilmesi ve performans takibi</li>
+        <li><strong>Housekeeping Modülü:</strong> Oda temizlik durumlarının anlık takibi, mobil cihazlarla güncelleme ve önceliklendirme</li>
+        <li><strong>Entegre Fatura ve Muhasebe:</strong> Gelir-gider takibi, KDV raporlaması ve e-fatura entegrasyonu</li>
+        <li><strong>Müşteri Geçmişi ve CRM Entegrasyonu:</strong> Misafir tercihlerinin kaydedilmesi, sadakat programı yönetimi ve kişiselleştirilmiş hizmet</li>
+      </ul>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Channel Manager kullanan otellerde doluluk oranı ortalama %18 artarken, gelir yönetiminde %35'e varan iyileşme sağlanmaktadır. Overbooking kaynaklı müşteri şikayetleri ise %90 oranında azalmaktadır.</p>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Dynamic Pricing ve Gelir Yönetimi Stratejileri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Dinamik fiyatlandırma, otelcilik sektöründe gelir optimizasyonunun en güçlü araçlarından biridir. Yapay zeka ve makine öğrenmesi algoritmalarıyla desteklenen dynamic pricing sistemleri, talep tahmini, rakip analizi ve geçmiş verilere dayanarak anlık fiyat optimizasyonu yapar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Başarılı bir gelir yönetimi stratejisi için kullanılan yazılım araçları:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Talep Tahmin Algoritmaları:</strong> Geçmiş rezervasyon verileri, sezonluk trendler ve bölgesel etkinlik takvimlerine göre gelecek talep tahmini</li>
+        <li><strong>Rakip Fiyat Takibi:</strong> Rakiplerin fiyatlarını otomatik olarak izleyen ve stratejik fiyatlandırma önerileri sunan araçlar</li>
+        <li><strong>Minimum Stay ve Kısıt Yönetimi:</strong> Yoğun dönemlerde minimum geceleme şartı, açılış-kapanış satışları ve erken rezervasyon indirimleri</li>
+        <li><strong>Segment Bazlı Fiyatlandırma:</strong> Kurumsal, bireysel, tur operatörü ve sadakat üyesi gibi müşteri segmentlerine özel fiyatlandırma</li>
+        <li><strong>Gelir Raporlama ve Dashboard:</strong> RevPAR, ADR ve Occupancy metriklerinin gerçek zamanlı görüntülenmesi ve karşılaştırmalı analiz</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Müşteri Deneyimi ve CRM Çözümleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Turizm sektöründe müşteri deneyimi, marka sadakatinin ve tekrar ziyaretlerin en belirleyici faktörüdür. Modern CRM çözümleri, misafirlerin tüm temas noktalarını kayıt altına alarak kişiselleştirilmiş bir deneyim sunmayı mümkün kılar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Turizm odaklı bir CRM sisteminin sahip olması gereken özellikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>360 Derece Müşteri Profili:</strong> Misafirlerin demografik bilgileri, tercihleri, geçmiş konaklamaları ve şikayet kayıtlarının tek bir ekranda görüntülenmesi</li>
+        <li><strong>Otomatik Pazarlama Otomasyonu:</strong> Doğum günü kampanyaları, sezonluk fırsatlar ve terk edilen rezervasyon hatırlatmaları için otomatik e-posta ve SMS gönderimi</li>
+        <li><strong>Sadakat Programı Yönetimi:</strong> Puan bazlı sadakat sistemleri, üyelik seviyeleri ve özel ayrıcalıkların otomatik yönetimi</li>
+        <li><strong>Anket ve Geri Bildirim Yönetimi:</strong> Konaklama sonrası memnuniyet anketleri, online yorum takibi ve aksiyon planı oluşturma</li>
+        <li><strong>Kişiselleştirilmiş Ön Bildirim:</strong> Misafir gelmeden önce tercihlerine göre oda hazırlığı, özel isteklerin karşılanması ve welcome amenities planlaması</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Restoran ve Etkinlik Yönetim Sistemleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Otellerin restoran, spa ve etkinlik gibi ek gelir kaynaklarının yönetimi, entegre bir yazılım altyapısı gerektirir. Özellikle butik oteller ve resort tesislerde, bu alanların verimli yönetimi toplam geliri önemli ölçüde etkiler.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Entegre restoran ve etkinlik yönetim çözümleri şu modülleri içermelidir:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Restoran Rezervasyon ve POS:</strong> Masa planı yönetimi, online restoran rezervasyonu, entegre POS ve stok takibi</li>
+        <li><strong>Toplantı ve Etkinlik Yönetimi:</strong> Salon takvimi, ekipman envanteri, catering menü planlaması ve fatura yönetimi</li>
+        <li><strong>Spa ve Wellness Modülü:</strong> Online randevu, hizmet kataloğu, paket program yönetimi ve sadakat entegrasyonu</li>
+        <li><strong>Mini Bar ve Oda İçi Hizmetler:</strong> Oda içi tüketim takibi, hızlı servis talebi ve otomatik fatura yansıtma</li>
+      </ul>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Dijital dönüşümünü tamamlamış oteller, ek gelir birimlerinden (F&B, spa, etkinlik) elde ettikleri geliri ortalama %40 artırmaktadır. Misafir başına harcama dijital çözümlerle %25 yükselmektedir.</p>
+      </div>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, turizm ve otelcilik sektörüne özel, PMS entegrasyonlu, dynamic pricing destekli ve CRM odaklı yazılım çözümleri geliştiriyoruz. Otelinizin dijital dönüşüm yolculuğunda size rehberlik etmek ve özel yazılım ihtiyaçlarınızı karşılamak için bizimle iletişime geçin.</p>
+      </div>
+    `
+  },
+  {
+    id: 46,
+    slug: 'tarim-teknolojileri-agritech-yazilim-cozumleri',
+    title: 'Tarım Teknolojileri (AgriTech) Yazılım Çözümleri ve Akıllı Tarım Uygulamaları',
+    category: 'Sektörel Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '15 dk okuma',
+    excerpt: 'Tarım sektöründe IoT sensörler, drone analizi, sulama otomasyonu, hasat tahmini ve akıllı tarım yazılımları hakkında kapsamlı rehber.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Tarım Teknolojileri (AgriTech) Yazılım Çözümleri ve Akıllı Tarım Uygulamaları</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye tarım sektörü, 2026 itibarıyla 70 milyar doları aşan büyüklüğü ve 20 milyondan fazla istihdam kapasitesiyle ekonominin temel taşlarından biridir. Tarım ve Orman Bakanlığı verilerine göre, akıllı tarım teknolojilerine yatırım yapan işletmelerde verimlilik ortalama %35 artarken, su tüketimi %40 oranında azalmaktadır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu kapsamlı rehberde, tarım teknolojileri (AgriTech) alanında faaliyet gösteren girişimler, çiftçiler ve tarım işletmeleri için yazılım çözümlerini, IoT sensör sistemlerinden drone tabanlı analize, sulama otomasyonundan hasat tahminine kadar tüm kritik teknolojileri ele alıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">IoT Sensörler ve Akıllı Tarım İzleme Sistemleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Nesnelerin İnterneti (IoT) teknolojileri, tarım sektöründe devrim niteliğinde bir dönüşüm yaratıyor. Tarlalara yerleştirilen sensörler, toprak nemi, sıcaklık, pH değeri, ışık seviyesi ve hava basıncı gibi kritik verileri anlık olarak topluyor ve merkezi bir platformda analiz edilmesini sağlıyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Akıllı tarım IoT sistemlerinin temel bileşenleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Toprak Sensörleri:</strong> Nem, sıcaklık, elektriksel iletkenlik ve pH ölçümü yapan çok fonksiyonlu toprak analiz cihazları</li>
+        <li><strong>Hava İstasyonları:</strong> Sıcaklık, nem, rüzgar hızı, yağış miktarı ve güneş radyasyonu ölçümü için entegre meteoroloji istasyonları</li>
+        <li><strong>Bitki Sağlığı Sensörleri:</strong> Yaprak ısısı, gövde çapı ve meyve büyüme hızı gibi bitki bazlı metrikleri izleyen sensörler</li>
+        <li><strong>Su Kalitesi Monitörleri:</strong> Sulama suyunun pH, tuzluluk ve sıcaklık değerlerini gerçek zamanlı izleyen su analiz cihazları</li>
+        <li><strong>LoRaWAN ve Mesh Ağ Altyapısı:</strong> Geniş tarım arazilerinde düşük güç tüketimiyle uzun menzilli veri iletimi sağlayan haberleşme protokolleri</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Sensör Tipi</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Ölçtüğü Değer</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Verimlilik Etkisi</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Toprak Nemi</td>
+              <td class="border border-slate-200 px-4 py-3">%0-100 nem oranı</td>
+              <td class="border border-slate-200 px-4 py-3">Su tasarrufu %40</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">NPK Sensörü</td>
+              <td class="border border-slate-200 px-4 py-3">Azot, Fosfor, Potasyum</td>
+              <td class="border border-slate-200 px-4 py-3">Gübre maliyeti %30 düşüş</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">İklim İstasyonu</td>
+              <td class="border border-slate-200 px-4 py-3">Sıcaklık, nem, rüzgar</td>
+              <td class="border border-slate-200 px-4 py-3">Ürün kaybı %25 azalma</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Yaprak Isısı</td>
+              <td class="border border-slate-200 px-4 py-3">Bitki stres seviyesi</td>
+              <td class="border border-slate-200 px-4 py-3">Hastalık tespiti %90</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Türkiye'de IoT tabanlı akıllı tarım sistemleri kullanan işletmelerin sayısı 2026 yılında 50 bini aşmıştır. Bu işletmelerde ortalama verim artışı %35, su tasarrufu ise %40 seviyesindedir.</p>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Drone Tabanlı Tarımsal Analiz ve Haritalama</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Drone teknolojisi, tarım arazilerinin havadan izlenmesi ve analiz edilmesinde çığır açıcı bir rol oynuyor. Multispektral kameralar ve termal sensörlerle donatılan tarım droneları, bitki sağlığı, sulama ihtiyacı ve hastalık tespiti konularında detaylı veri sağlıyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Drone tabanlı tarım yazılımlarının sunduğu analizler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>NDVI Analizi:</strong> Bitki örtüsü indeksi hesaplaması ile bitki sağlığı haritalarının oluşturulması ve sorunlu bölgelerin tespiti</li>
+        <li><strong>Hassas Tarım Haritalama:</strong> GPS koordinat bazlı ekim, gübreleme ve ilaçlama haritalarının çıkarılması</li>
+        <li><strong>Hastalık ve Zararlı Tespiti:</strong> Yapay zeka destekli görüntü analizi ile bitki hastalıklarının erken evrede tespit edilmesi</li>
+        <li><strong>Verim Tahmini:</strong> Bitki yoğunluğu ve meyve sayımı analizleri ile hasat öncesi verim tahmini yapılması</li>
+        <li><strong>Sulama Optimizasyonu:</strong> Termal kamera verileri ile su stresi haritalaması yaparak bölgesel sulama planlaması</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Akıllı Sulama Otomasyon Sistemleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Su kaynaklarının verimli kullanımı, özellikle kurak iklim koşullarında tarımın sürdürülebilirliği için kritik öneme sahiptir. Akıllı sulama sistemleri, toprak nem sensörleri, hava durumu verileri ve bitki su ihtiyacı modellerini birleştirerek otomatik sulama kararları alır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern bir sulama otomasyonu yazılımının özellikleri:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Gerçek Zamanlı Sulama Kontrolü:</strong> Mobil uygulama üzerinden vana ve sulama bölgelerinin uzaktan açılıp kapatılması</li>
+        <li><strong>Hava Durumu Entegrasyonu:</strong> Yağış tahminlerine göre sulama planlamasının otomatik olarak iptal edilmesi veya ertelenmesi</li>
+        <li><strong>Bölgesel Sulama Yönetimi:</strong> Farklı toprak tipleri ve ürün desenlerine göre ayrı ayrı sulama programı oluşturma</li>
+        <li><strong>Su Tüketimi Raporlaması:</strong> Anlık ve periyodik su tüketim raporları, kaçak tespiti ve su bütçesi yönetimi</li>
+        <li><strong>Gübre Enjeksiyon Entegrasyonu (Fertigasyon):</strong> Sulama suyuna otomatik gübre karıştırma ve dozaj kontrolü</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Hasat Tahmini ve Tedarik Zinciri Yönetimi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Yapay zeka ve makine öğrenmesi algoritmaları, geçmiş veriler, hava durumu modelleri ve bitki sağlığı verilerini analiz ederek yüksek doğrulukta hasat tahmini yapabilmektedir. Bu tahminler, tedarik zinciri planlaması ve fiyatlandırma stratejileri için kritik öneme sahiptir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Hasat sonrası süreçlerin dijitalleşmesi için yazılım çözümleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Hasat Zamanı Belirleme:</strong> Makine öğrenmesi modelleri ile optimum hasat zamanının belirlenmesi ve ürün kalitesinin maksimize edilmesi</li>
+        <li><strong>Depo ve Soğuk Zincir Yönetimi:</strong> Hasat sonrası ürünlerin depolanması, sıcaklık ve nem takibi, stok yönetimi</li>
+        <li><strong>Pazar Yeri Entegrasyonu:</strong> Hal, toptancı ve perakende kanallarına doğrudan satış için dijital pazar yeri bağlantıları</li>
+        <li><strong>İzlenebilirlik ve Sertifikasyon:</strong> Tohumdan tüketiciye kadar ürün yolculuğunun blokzincir tabanlı kayıt altına alınması ve organik sertifikasyon süreçlerinin yönetimi</li>
+        <li><strong>Talep Tahmini ve Fiyat Analizi:</strong> Pazar talebi ve güncel fiyat verilerine göre ürün bazında satış stratejisi belirleme</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Tarımsal Yönetim ve ERP Sistemleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Büyük ölçekli tarım işletmeleri, tüm operasyonel süreçlerini tek bir platformdan yönetmek için tarıma özel ERP (Kurumsal Kaynak Planlama) sistemlerine ihtiyaç duyar. Bu sistemler, finansal yönetimden ekipman takibine kadar geniş bir yelpazede çözüm sunar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Tarım ERP sistemlerinin sunduğu modüller:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Ekipman ve Makine Yönetimi:</strong> Traktör, biçerdöver ve diğer tarım makinelerinin bakım takvimi, yakıt tüketimi ve kullanım raporlaması</li>
+        <li><strong>İş Gücü Yönetimi:</strong> Mevsimlik işçi takibi, mesai saatleri, iş emirleri ve bordro yönetimi</li>
+        <li><strong>Tarla ve Parsel Yönetimi:</strong> Her parsele ait ekim, gübreleme, ilaçlama ve hasat kayıtlarının dijital ortamda tutulması</li>
+        <li><strong>Finans ve Muhasebe:</strong> Tarımsal üretim maliyetlerinin hesaplanması, Ziraat Bankası ve Tarım Kredi kooperatifi entegrasyonları</li>
+        <li><strong>Devlet Teşvik ve Destek Yönetimi:</strong> Tarımsal destekleme başvurularının takibi, Çiftçi Kayıt Sistemi (ÇKS) entegrasyonu</li>
+      </ul>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Dijital tarım yönetim sistemi kullanan işletmelerde işletme maliyetleri ortalama %25 düşmekte, ürün kayıpları %30 azalmakta ve karlılık %45 artmaktadır.</p>
+      </div>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, tarım sektörüne özel IoT entegrasyonlu, yapay zeka destekli ve kullanıcı dostu AgriTech yazılım çözümleri geliştiriyoruz. Akıllı sulama sistemleri, drone analiz platformları, hasat tahmini modelleri ve tarım ERP projeleriniz için bizimle iletişime geçin.</p>
+      </div>
+    `
+  },
+  {
+    id: 47,
+    slug: 'medya-ve-yayincilik-sektorunde-yazilim-cozumleri',
+    title: 'Medya ve Yayıncılık Sektöründe Yazılım Çözümleri',
+    category: 'Sektörel Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '15 dk okuma',
+    excerpt: 'Medya ve yayıncılık sektöründe içerik yönetimi, dijital abonelik, video streaming, reklam yönetimi ve dijital dönüşüm stratejileri hakkında kapsamlı rehber.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Medya ve Yayıncılık Sektöründe Yazılım Çözümleri</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye medya ve yayıncılık sektörü, 2026 itibarıyla 15 milyar doları aşan büyüklüğü ve dijital dönüşümün hız kazanmasıyla köklü bir değişim geçiriyor. RTÜK verilerine göre, dijital yayın platformlarının kullanıcı sayısı 30 milyonu aşarken, geleneksel medya kuruluşlarının dijital gelirleri toplam gelirin %45'ine ulaşmış durumda.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu kapsamlı rehberde, medya kuruluşları, yayıncılar, dijital içerik üreticileri ve yayın platformları için yazılım çözümlerini, içerik yönetim sistemlerinden abonelik platformlarına, video streaming altyapısından reklam teknolojilerine kadar tüm kritik bileşenleri ele alıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Modern İçerik Yönetim Sistemleri (CMS)</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Medya sektörünün kalbinde, içeriklerin üretilmesi, yönetilmesi ve çoklu kanallarda yayınlanmasını sağlayan güçlü bir içerik yönetim sistemi (CMS) yer alır. Günümüz medya CMS çözümleri, headless mimari ve yapay zeka entegrasyonu ile klasik CMS'lerin çok ötesine geçmiştir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern bir medya CMS'sinde bulunması gereken özellikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Headless ve API-First Mimari:</strong> Web, mobil, akıllı TV ve sosyal medya gibi tüm kanallara tek bir merkezden içerik dağıtımı</li>
+        <li><strong>Yapay Zeka Destekli İçerik Üretimi:</strong> Otomatik özet oluşturma, etiketleme, görsel seçimi ve SEO optimizasyonu asistanları</li>
+        <li><strong>Çoklu Medya Desteği:</strong> Yazı, fotoğraf, video, podcast, interaktif grafik ve canlı yayın gibi tüm içerik türlerinin yönetimi</li>
+        <li><strong>İş Akışı ve Onay Mekanizması:</strong> Editör, redaktör ve yayın yöneticisi rollerini içeren çok kademeli içerik onay süreçleri</li>
+        <li><strong>Versiyon Kontrolü ve Geçmiş:</strong> Tüm içerik değişikliklerinin kaydedilmesi, geri alma ve eski sürümlere dönme imkanı</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Özellik</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Geleneksel CMS</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Modern Medya CMS</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Mimari</td>
+              <td class="border border-slate-200 px-4 py-3">Monolitik</td>
+              <td class="border border-slate-200 px-4 py-3">Headless / Microservices</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">İçerik Dağıtımı</td>
+              <td class="border border-slate-200 px-4 py-3">Sadece web</td>
+              <td class="border border-slate-200 px-4 py-3">Omnichannel (web, mobile, TV, IoT)</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Yapay Zeka</td>
+              <td class="border border-slate-200 px-4 py-3">Yok</td>
+              <td class="border border-slate-200 px-4 py-3">Entegre AI asistan</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Performans</td>
+              <td class="border border-slate-200 px-4 py-3">Sayfa yükleme 3-5 sn</td>
+              <td class="border border-slate-200 px-4 py-3">Anlık yükleme (edge cached)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Headless CMS kullanan medya kuruluşlarında sayfa yükleme hızı %70 artarken, içerik üretim süresi yapay zeka araçlarıyla %50 kısalmaktadır. Dijital abone kazanım maliyeti ise %35 düşmektedir.</p>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Dijital Abonelik ve Ödeme Duvarı (Paywall) Çözümleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital medyada sürdürülebilir gelir modelinin temelini abonelik sistemleri oluşturuyor. Türkiye'de dijital haber platformlarına abone sayısı 2026 yılında 5 milyonu aşarken, ortalama abonelik geliri yıllık 800 TL seviyesine ulaşmıştır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Başarılı bir dijital abonelik platformunun bileşenleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Esnek Paywall Seçenekleri:</strong> Metreli, lead-in, hibrit, ölçülü ve tam duvar gibi farklı paywall stratejilerinin uygulanabilmesi</li>
+        <li><strong>Çoklu Fiyatlandırma Kademeleri:</strong> Temel, premium, kurumsal ve öğrenci gibi farklı abonelik paketlerinin yönetimi</li>
+        <li><strong>Ödeme Altyapısı Entegrasyonu:</strong> Kredi kartı, banka kartı, mobil ödeme ve dijital cüzdan desteği ile kesintisiz ödeme deneyimi</li>
+        <li><strong>Abone Analitiği:</strong> Abone kazanımı, churn oranı, dönüşüm metrikleri ve LTV (müşteri yaşam boyu değeri) takibi</li>
+        <li><strong>Ücretsiz Deneme ve Aktivasyon:</strong> Akıllı deneme süreleri, ücretsiz içerik stratejisi ve otomatik ücretliye geçiş mekanizmaları</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Video Streaming ve Canlı Yayın Altyapısı</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Video içerik, medya sektörünün en hızlı büyüyen segmentidir. Türkiye'de OTT (Over-The-Top) platform kullanıcıları 40 milyona yaklaşırken, canlı yayın ve video-on-demand talebi her geçen gün artmaktadır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern bir video streaming platformunun teknik gereksinimleri:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Adaptive Bitrate Streaming (ABR):</strong> Kullanıcının internet hızına göre otomatik kalite ayarı yapan HLS ve MPEG-DASH protokolleri</li>
+        <li><strong>İçerik Dağıtım Ağı (CDN):</strong> Düşük gecikme ve yüksek hız için Türkiye ve Avrupa'da stratejik olarak konumlandırılmış edge sunucular</li>
+        <li><strong>DRM ve İçerik Koruma:</strong> Widevine, FairPlay ve PlayReady gibi dijital hak yönetimi çözümleri ile içerik korsanlığının önlenmesi</li>
+        <li><strong>Canlı Yayın Altyapısı:</strong> Düşük gecikmeli (sub-3 saniye) canlı yayın desteği, m3u8 akış yönetimi ve yedekleme</li>
+        <li><strong>Video Analitiği:</strong> İzlenme süresi, tamponlama oranı, kullanıcı terk noktaları ve içerik performans raporları</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Reklam Teknolojileri ve Gelir Optimizasyonu</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Medya kuruluşlarının dijital gelirlerinin önemli bir kısmını reklam teknolojileri (AdTech) oluşturur. Programatik reklamcılık, header bidding ve yapay zeka destekli reklam hedefleme, modern medya platformlarının vazgeçilmez gelir kaynaklarıdır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Reklam geliri optimizasyonu için kullanılan teknolojiler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Google Ad Manager ve AdX Entegrasyonu:</strong> Google'ın reklam alışveriş platformu ile entegre reklam envanteri yönetimi</li>
+        <li><strong>Header Bidding (Prebid.js):</strong> Birden çok reklam ağının eşzamanlı teklif vermesiyle gelir maksimizasyonu sağlayan teknoloji</li>
+        <li><strong>Yapay Zeka Destekli Reklam Hedefleme:</strong> Kullanıcı davranışları ve içerik analizine dayalı kişiselleştirilmiş reklam gösterimi</li>
+        <li><strong>Reklam Sunucu Yönetimi:</strong> Reklam rotasyonu, frekans sınırlama, hedef kitle segmentasyonu ve A/B test altyapısı</li>
+        <li><strong>KVKK Uyumlu Veri Yönetimi:</strong> Açık rıza yönetimi, GDPR ve KVKK uyumlu kullanıcı verisi işleme ve raporlama</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Veri Analitiği ve İçerik Kişiselleştirme</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Medya sektöründe veri odaklı karar alma, içerik stratejisinin ve kullanıcı deneyiminin merkezinde yer alır. Gelişmiş analitik platformları, kullanıcı davranışlarını anlamak ve kişiselleştirilmiş içerik deneyimi sunmak için kritik öneme sahiptir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Medya analitiği ve kişiselleştirme çözümlerinin sunduğu yetenekler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Gerçek Zamanlı Kullanıcı Takibi:</strong> Sayfa görüntüleme, okuma süresi, kaydırma derinliği ve etkileşim metriklerinin anlık izlenmesi</li>
+        <li><strong>İçerik Öneri Motoru:</strong> Kullanıcının okuma geçmişi ve benzer kullanıcı profillerine göre kişiselleştirilmiş içerik önerileri</li>
+        <li><strong>A/B Test Platformu:</strong> Başlık, görsel, yerleşim ve fiyatlandırma gibi değişkenlerin optimize edilmesi için entegre test altyapısı</li>
+        <li><strong>SEO ve Trafik Analitiği:</strong> Arama motoru performansı, sosyal medya trafiği ve yönlendirme kaynaklarının detaylı analizi</li>
+        <li><strong>Kitle Segmentasyonu:</strong> Demografik ve davranışsal verilere göre kitle segmentleri oluşturma ve hedefli içerik stratejisi</li>
+      </ul>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Kişiselleştirilmiş içerik önerileri kullanan medya platformlarında sayfa görüntüleme sayısı %60, kullanıcı başına gelir %45 ve abonelik dönüşüm oranı %35 artmaktadır.</p>
+      </div>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, medya ve yayıncılık sektörüne özel, headless CMS, dijital abonelik platformları, video streaming altyapısı ve AdTeknoloji çözümleri geliştiriyoruz. Dijital yayın projeleriniz ve medya dönüşüm yolculuğunuzda size destek olmak için bizimle iletişime geçin.</p>
+      </div>
+    `
+  },
+  {
+    id: 48,
+    slug: 'otomotiv-ve-mobilite-sektorunde-yazilim-cozumleri',
+    title: 'Otomotiv ve Mobilite Sektöründe Yazılım Çözümleri',
+    category: 'Sektörel Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '16 dk okuma',
+    excerpt: 'Otomotiv ve mobilite sektöründe araç takip, filo yönetimi, IoT telematik, bakım tahmini ve otonom sürüş teknolojileri hakkında kapsamlı rehber.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Otomotiv ve Mobilite Sektöründe Yazılım Çözümleri</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye otomotiv sektörü, 2026 yılında 30 milyar doları aşan ihracat hacmi ve 1.5 milyon adet araç üretim kapasitesiyle Avrupa'nın en büyük üretim üslerinden biri olmaya devam ediyor. Otomotiv Sanayii Derneği (OSD) verilerine göre, bağlantılı araç (connected vehicle) pazarı yıllık %25 büyüme gösteriyor.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu rehberde, otomotiv üreticileri, filo yöneticileri, mobilite girişimleri ve oto servis işletmeleri için yazılım çözümlerini, araç takip sistemlerinden telematik platformlarına, filo yönetiminden yapay zeka destekli bakım tahminine kadar tüm kritik teknolojileri ele alıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Araç Takip ve GNSS/Telematik Platformları</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Araç takip sistemleri, mobilite sektörünün temel yapı taşlarından biridir. GPS ve GNSS teknolojileriyle donatılmış telematik cihazları, araçların konum, hız, yakıt tüketimi ve sürücü davranışı gibi kritik verilerini gerçek zamanlı olarak merkezi platformlara iletir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern bir araç takip platformunun sunduğu özellikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Gerçek Zamanlı Konum Takibi:</strong> 1 saniye aralıklarla güncellenen araç konumları, rota geçmişi ve canlı harita görüntüleme</li>
+        <li><strong>Jeofensing (Sanal Çit):</strong> Belirlenen bölgelere giriş-çıkışlarda anlık uyarı ve bildirim mekanizması</li>
+        <li><strong>Yakıt Takip ve Analizi:</strong> Anlık yakıt tüketimi, ortalama yakıt verimliliği ve anormal yakıt tüketimi tespiti</li>
+        <li><strong>Sürücü Davranışı Analizi:</strong> Hız ihlali, ani fren, sert dönüş ve rölanti gibi sürüş metriklerinin raporlanması</li>
+        <li><strong>CAN-Bus Entegrasyonu:</strong> Araç içi sistemlerden motor devri, hız, akü durumu ve hata kodlarının okunması</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Metrik</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Telematik Öncesi</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Telematik Sonrası</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Yakıt Tüketimi</td>
+              <td class="border border-slate-200 px-4 py-3">12 L/100km</td>
+              <td class="border border-slate-200 px-4 py-3">9 L/100km</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Kaza Oranı</td>
+              <td class="border border-slate-200 px-4 py-3">%100 baz</td>
+              <td class="border border-slate-200 px-4 py-3">%40 azalma</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Operasyonel Maliyet</td>
+              <td class="border border-slate-200 px-4 py-3">%100 baz</td>
+              <td class="border border-slate-200 px-4 py-3">%30 düşüş</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Araç Kullanım Oranı</td>
+              <td class="border border-slate-200 px-4 py-3">%65</td>
+              <td class="border border-slate-200 px-4 py-3">%92</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Telematik sistemi kullanan filolarda yakıt tasarrufu %25, bakım maliyetleri %35, kaza oranları %40 ve genel operasyonel maliyetler %30 oranında düşmektedir. 2026'da Türkiye'de 1 milyondan fazla araç telematik sistemiyle izlenmektedir.</p>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Filo Yönetim Sistemleri (FMS)</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Filo yönetim sistemleri, birden fazla aracı olan işletmelerin tüm operasyonel süreçlerini tek bir platformdan yönetmesini sağlar. Kiralık araç firmaları, lojistik şirketleri ve kurumsal filolar için vazgeçilmez bir araçtır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Kapsamlı bir filo yönetim sisteminin modülleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Araç Envanteri ve Doküman Yönetimi:</strong> Tüm araçlara ait ruhsat, sigorta, muayene ve kasko bilgilerinin dijital ortamda takibi ve vade uyarıları</li>
+        <li><strong>Bakım ve Onarım Takibi:</strong> Periyodik bakım hatırlatmaları, arıza kaydı, parça değişim takibi ve servis maliyeti analizi</li>
+        <li><strong>Yakıt ve Masraf Yönetimi:</strong> Akaryakıt alım kartları entegrasyonu, ortalama yakıt maliyeti hesaplama ve bütçe takibi</li>
+        <li><strong>Sürücü Yönetimi:</strong> Sürücü profilleri, ehliyet geçerlilik takibi, sürücü skor kartı ve eğitim kayıtları</li>
+        <li><strong>Raporlama ve Dashboard:</strong> Toplam sahip olma maliyeti (TCO), araç bazında karlılık, filo verimliliği ve karbon ayak izi raporları</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">IoT Telematik ve Bağlantılı Araç Teknolojileri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bağlantılı araç teknolojileri, otomotiv sektöründe yeni bir dönemi başlatmıştır. IoT telematik modülleri, araçların birbirleriyle ve merkezi sistemlerle sürekli iletişim halinde olmasını sağlar. Bu teknoloji, otonom sürüşten akıllı trafik yönetimine kadar geniş bir uygulama alanına sahiptir.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bağlantılı araç platformlarının sunduğu çözümler:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>OTA (Over-The-Air) Güncelleme:</strong> Araç yazılımlarının fiziksel servise gitmeden kablosuz olarak güncellenmesi</li>
+        <li><strong>eCall ve Acil Durum Sistemleri:</strong> Kaza anında otomatik acil çağrı, konum bilgisi paylaşımı ve sağlık ekiplerine bildirim</li>
+        <li><strong>Uzaktan Araç Kontrolü:</strong> Mobil uygulama üzerinden araç kilitleme/açma, motor çalıştırma, klima ve ısıtma kontrolü</li>
+        <li><strong>V2X (Vehicle-to-Everything) İletişim:</strong> Araçların birbirleriyle (V2V), altyapıyla (V2I) ve yayalarla (V2P) iletişimi</li>
+        <li><strong>Sigorta Telematic (UBI):</strong> Sürüş davranışına dayalı kullanım bazlı sigorta (Pay-How-You-Drive) altyapısı</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Yapay Zeka Destekli Bakım Tahmini ve Arıza Tespiti</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Öngörücü bakım (predictive maintenance), yapay zeka ve makine öğrenmesi algoritmaları kullanarak araç arızalarının henüz gerçekleşmeden tespit edilmesini sağlar. Bu teknoloji, plansız duruş sürelerini minimize eder ve bakım maliyetlerini optimize eder.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Yapay zeka destekli bakım çözümlerinin uygulama alanları:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Motor ve Aktarma Organı Analizi:</strong> Titreşim ve sıcaklık sensörleri ile motor bileşenlerindeki aşınmanın erken tespiti</li>
+        <li><strong>Fren Sistemi Tahmini:</strong> Balata ve disk aşınma oranlarının hesaplanarak değişim zamanının belirlenmesi</li>
+        <li><strong>Akü Sağlığı İzleme:</strong> Elektrikli araç bataryalarının kapasite kaybı ve sağlık durumu analizi</li>
+        <li><strong>Lastik Aşınma ve Basınç Takibi:</strong> TPMS sensörleri ile lastik basıncı ve diş derinliği takibi</li>
+        <li><strong>Arıza Kodları ve Teşhis:</strong> Hata kodlarının yapay zeka ile analizi, olası nedenlerin ve çözüm önerilerinin belirlenmesi</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Mobilite Uygulamaları ve Dijital Servis Platformları</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Mobilite sektöründe kullanıcı odaklı uygulamalar, araç sahipliğinden paylaşımlı mobiliteye geçişin temelini oluşturuyor. Türkiye'de mobilite uygulamalarının kullanıcı sayısı 2026 yılında 25 milyonu aşmış durumda.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Mobilite yazılım çözümlerinin kapsadığı alanlar:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Ride-Hailing ve Taksi Çağırma:</strong> Gerçek zamanlı araç çağırma, rota hesaplama, dinamik fiyatlandırma ve yolcu-sürücü eşleştirme</li>
+        <li><strong>Mikromobilite Platformları:</strong> E-scooter, e-bike ve elektrikli motosiklet kiralama için IoT entegrasyonlu kilit açma, kullanım ve şarj yönetimi</li>
+        <li><strong>Araç Paylaşımı (Car Sharing):</strong> Kısa süreli araç kiralama, rezervasyon, anahtarsız giriş ve kullanım bazlı faturalama</li>
+        <li><strong>Otopark Yönetimi:</strong> Akıllı park yeri bulma, park ücreti ödeme, rezervasyon ve süre uzatma hizmetleri</li>
+        <li><strong>Elektrikli Araç Şarj Ağı Yönetimi:</strong> Şarj istasyonu bulma, rezervasyon, şarj başlatma/durdurma ve ödeme entegrasyonu</li>
+      </ul>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Türkiye'de elektrikli araç sayısı 2026 yılında 500 bini aşmıştır. Mobilite uygulamaları pazarı 5 milyar dolara ulaşırken, bağlantılı araç hizmetleri geliri yıllık %35 büyüme göstermektedir.</p>
+      </div>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, otomotiv ve mobilite sektörüne özel, IoT telematik entegrasyonlu, yapay zeka destekli ve kullanıcı odaklı yazılım çözümleri geliştiriyoruz. Filo yönetim sistemleri, bağlantılı araç platformları, mobilite uygulamaları ve öngörücü bakım projeleriniz için bizimle iletişime geçin.</p>
+      </div>
+    `
+  },
+  {
+    id: 49,
+    slug: 'insan-kaynaklari-sureclerinde-dijital-donusum',
+    title: 'İnsan Kaynakları Süreçlerinde Dijital Dönüşüm: İK Yazılım Çözümleri',
+    category: 'Sektörel Rehberler',
+    date: '04 Temmuz 2026',
+    readTime: '15 dk okuma',
+    excerpt: 'İnsan kaynakları süreçlerinde dijital dönüşüm, işe alım, performans takibi, bordro yönetimi, çalışan deneyimi ve İK analitiği hakkında kapsamlı rehber.',
+    content: `
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">İnsan Kaynakları Süreçlerinde Dijital Dönüşüm: İK Yazılım Çözümleri</h1>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Türkiye'de insan kaynakları sektörü, 2026 itibarıyla 50 milyonu aşan çalışan nüfusu ve dijital dönüşümün hız kazanmasıyla büyük bir değişim yaşıyor. Deloitte İK Trendleri Raporu'na göre, dijital İK çözümlerine yatırım yapan şirketlerde çalışan bağlılığı %40, verimlilik ise %35 artmaktadır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu kapsamlı rehberde, KOBİ'lerden kurumsal firmalara kadar her ölçekteki işletme için insan kaynakları süreçlerinde dijital dönüşüm stratejilerini, işe alım platformlarından performans yönetimine, bordrodan çalışan deneyimine kadar tüm kritik yazılım çözümlerini ele alıyoruz.</p>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">İşe Alım (Recruitment) ve Aday Takip Sistemleri (ATS)</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Aday Takip Sistemleri (Applicant Tracking System - ATS), işe alım sürecinin baştan sona dijitalleştirilmesini sağlar. Türkiye'de kurumsal firmaların %80'i ATS kullanırken, KOBİ'lerde bu oran %25 seviyesindedir ve hızla artmaktadır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern bir ATS platformunun sahip olması gereken özellikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Çoklu Kanal Yayınlama:</strong> Kariyer sitesi, LinkedIn, Kariyer.net, İşkur, Indeed ve diğer platformlara tek tıkla iş ilanı yayınlama</li>
+        <li><strong>Yapay Zeka Destekli Ön Eleme:</strong> CV'lerin otomatik taranması, anahtar kelime eşleştirme ve aday puanlama algoritmaları</li>
+        <li><strong>Mülakat Planlama ve Video Mülakat:</strong> Takvim entegrasyonu, otomatik mülakat davetiye gönderimi ve entegre video mülakat modülü</li>
+        <li><strong>Yetkinlik Bazlı Değerlendirme:</strong> Online yetenek testleri, kişilik envanterleri ve durumsal mülakat soru bankası yönetimi</li>
+        <li><strong>Aday Havuzu ve CRM:</strong> Pasif aday veritabanı, yetenek havuzu segmentasyonu ve yeniden etkileşim kampanyaları</li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="min-w-full border-collapse border border-slate-200">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Metrik</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">Manuel Süreç</th>
+              <th class="border border-slate-200 px-4 py-3 text-left font-semibold text-slate-800">ATS ile</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">İşe Alım Süresi</td>
+              <td class="border border-slate-200 px-4 py-3">45-60 gün</td>
+              <td class="border border-slate-200 px-4 py-3">15-25 gün</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Aday Başına Maliyet</td>
+              <td class="border border-slate-200 px-4 py-3">2.500 TL</td>
+              <td class="border border-slate-200 px-4 py-3">800 TL</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">İlan Başına Başvuru</td>
+              <td class="border border-slate-200 px-4 py-3">80-120</td>
+              <td class="border border-slate-200 px-4 py-3">300-500</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 px-4 py-3">Eleme Süresi</td>
+              <td class="border border-slate-200 px-4 py-3">4-6 saat/ilan</td>
+              <td class="border border-slate-200 px-4 py-3">30 dakika/ilan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: Dijital işe alım sistemleri kullanan şirketlerde işe alım süresi %60 kısalırken, aday başına maliyet %70 düşmektedir. Yapay zeka destekli ön eleme ile doğru adayı bulma oranı %85'e yükselmektedir.</p>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Performans Yönetimi ve Hedef Takip Sistemleri</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Geleneksel yıllık performans değerlendirme dönemi yerini, sürekli geri bildirim ve çevik performans yönetimi modellerine bırakıyor. Modern İK yazılımları, OKR (Objectives and Key Results) ve 360 derece değerlendirme gibi farklı performans yönetimi yaklaşımlarını destekler.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital performans yönetimi platformlarının sunduğu özellikler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Hedef Belirleme ve Takip:</strong> Bireysel, takım ve şirket hedeflerinin tanımlanması, görsel takibi ve ilerleme raporlaması</li>
+        <li><strong>Sürekli Geri Bildirim:</strong> Anlık geri bildirim, teşekkürler, 360 derece değerlendirme ve çalışan memnuniyeti anketleri</li>
+        <li><strong>Yetkinlik ve Gelişim Haritası:</strong> Her çalışan için yetkinlik matrisi, eğitim ihtiyaç analizi ve kişisel gelişim planı</li>
+        <li><strong>Dönemsel Değerlendirme:</strong> Yarı yıl ve yıl sonu değerlendirmeleri, performans puanlama ve kariyer planlama</li>
+        <li><strong>Performans Analitiği:</strong> Takım bazında performans karşılaştırmaları, yüksek potansiyelli çalışan tespiti ve yetenek sıcaklık haritası</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Bordro, Özlük ve İdari İşler Yönetimi</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Bordro ve özlük işlemleri, İK departmanlarının en fazla zaman harcadığı ancak en kritik süreçlerdir. Dijital bordro sistemleri, hesaplama hatalarını minimize eder, yasal uyumluluğu garanti altına alır ve idari yükü önemli ölçüde azaltır.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Kapsamlı bir bordro ve özlük yönetim sisteminin modülleri:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Otomatik Bordro Hesaplama:</strong> Gelir vergisi, damga vergisi, SGK işçi-işveren payı, AGİ ve diğer kesintilerin otomatik hesaplanması</li>
+        <li><strong>İzin ve Devam Yönetimi:</strong> Yıllık izin, hastalık, ücretsiz izin ve diğer izin türlerinin dijital başvuru ve onay süreci</li>
+        <li><strong>Fazla Mesai ve Vardiya Yönetimi:</strong> Puantaj kayıtları, mesai hesaplama ve vardiya çizelgesi oluşturma</li>
+        <li><strong>SGK, İşsizlik ve İşkur Entegrasyonu:</strong> SGK bildirgesi, işe giriş-çıkış bildirimleri ve İşkur raporlamaları</li>
+        <li><strong>e-Fatura ve e-Defter Uyumu:</strong> Maliye ve SGK entegrasyonları, e-fatura, e-arşiv ve e-defter uyumluluğu</li>
+      </ul>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Çalışan Deneyimi (Employee Experience) ve İç İletişim Platformları</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Çalışan deneyimi, günümüz iş dünyasında yetenek çekme ve elde tutma stratejilerinin merkezinde yer alır. Dijital çalışan deneyimi platformları, çalışanların şirket kültürüne bağlanmasını, iç iletişimin güçlenmesini ve iş memnuniyetinin artmasını sağlar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Modern çalışan deneyimi platformlarının sunduğu araçlar:</p>
+
+      <ol class="list-decimal pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>Çalışan Mobil Uygulaması:</strong> İzin başvurusu, bordro görüntüleme, avans talebi ve yan hak yönetimi gibi tüm İK işlemlerinin mobil üzerinden yapılması</li>
+        <li><strong>İç İletişim ve Duyuru Platformu:</strong> Şirket duyuruları, etkinlik takvimi, sosyal gruplar ve çalışan takdir mesajları</li>
+        <li><strong>Yan Haklar ve Ödül Yönetimi:</strong> Yemek kartı, yol yardımı, özel sağlık sigortası, spor salonu üyelikleri ve esnek yan hak modülü</li>
+        <li><strong>Anket ve Pulse Ölçümleri:</strong> Düzenli çalışan memnuniyeti anketleri, eNPS ölçümü ve anlık duygu durumu pulse anketleri</li>
+        <li><strong>Dijital İşe Alıştırma (Onboarding):</strong> Yeni çalışanların oryantasyon sürecinin dijital olarak yönetilmesi, görev listeleri ve eğitim modülleri</li>
+      </ol>
+
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">İK Analitiği, Raporlama ve Stratejik Karar Destek</h2>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">Veri odaklı İK yönetimi, stratejik insan kaynakları planlamasının temelini oluşturur. People Analytics araçları, çalışan verilerini analiz ederek iş gücü planlaması, yetenek yönetimi ve organizasyonel verimlilik konularında içgörüler sağlar.</p>
+
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">İK analitiği platformlarının sunduğu yetenekler:</p>
+
+      <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+        <li><strong>İş Gücü Planlaması:</strong> Mevcut ve gelecek iş gücü ihtiyacının analizi, bütçe planlaması ve headcount yönetimi</li>
+        <li><strong>Yeteneğin Elde Tutulması (Retention):</strong> Churn tahmin modelleri, ayrılma riski yüksek çalışanların tespiti ve elde tutma stratejileri</li>
+        <li><strong>Çeşitlilik ve Kapsayıcılık Raporları:</strong> Cinsiyet, yaş, deneyim ve departman bazında çeşitlilik metriklerinin izlenmesi</li>
+        <li><strong>Organizasyon Şeması ve Raporlama:</strong> Dinamik organizasyon şeması, raporlama zinciri analizi ve org chart görselleştirme</li>
+        <li><strong>Maliyet Analizi:</strong> Çalışan başına maliyet, işe alım maliyeti, eğitim yatırım getirisi ve İK bütçe takibi</li>
+      </ul>
+
+      <div class="p-6 bg-amber-50 border border-amber-200 rounded-xl mb-6">
+        <p class="text-lg text-amber-900 font-semibold m-0">İstatistik: People Analytics kullanan şirketlerde çalışan bağlılığı %55 daha yüksek, yetenek kaybı %40 daha düşük ve İK operasyonel maliyetleri %50 daha azdır. Veri odaklı İK yönetimi, şirket performansını doğrudan %25 oranında iyileştirmektedir.</p>
+      </div>
+
+      <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
+        <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, insan kaynakları süreçlerinin dijitalleşmesi için kapsamlı İK yazılım çözümleri geliştiriyoruz. ATS, performans yönetimi, bordro otomasyonu, çalışan deneyimi platformları ve İK analitiği projeleriniz için bizimle iletişime geçin. Size özel dijital İK dönüşüm yol haritanızı birlikte oluşturalım.</p>
+      </div>
+    `
   }
 ];
