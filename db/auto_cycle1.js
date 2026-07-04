@@ -1,62 +1,62 @@
 export const autoPosts = [
   {
-    id: 50,
+    id: 56,
     slug: 'sigorta-sektorunde-dijital-donusum',
     title: 'Sigorta Sektöründe Dijital Dönüşüm ve Yazılım Çözümleri',
     category: 'Sektörel Rehberler',
     date: '04 Temmuz 2026',
-    readTime: '11 dk okuma',
+    readTime: '12 dk okuma',
     excerpt: 'Sigorta sektöründe dijital dönüşüm için kapsamlı rehber. Sigorta yazılım çözümleri, dijital dönüşüm stratejileri ve ROI analizi.',
     content: `
 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Sigorta Sektöründe Dijital Dönüşüm ve Yazılım Çözümleri</h1>
-<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">ROI ve Başarı Metrikleri</h2>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital dönüşüm projelerinde başarıyı ölçmek için belirli metrikler kullanılmalıdır. Müşteri memnuniyeti, operasyonel verimlilik, maliyet tasarrufu ve gelir artışı en önemli göstergeler arasında yer almaktadır.</p>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">Yapılan araştırmalar, Sigorta sektöründe dijital dönüşüm yatırımlarının ortalama %56 oranında verimlilik artışı sağladığını göstermektedir. DZY Digital müşterileri, projelerimiz sayesinde ortalama 6-12 ay içinde yatırımının karşılığını almaktadır.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sigorta İçin Yazılım Çözümlerimiz</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, Sigorta sektörüne özel olarak geliştirdiğimiz yazılım çözümleri ile işletmelerin dijital dönüşüm yolculuğunda yanındayız. Modern teknolojilerle donatılmış, ölçeklenebilir ve güvenli çözümler sunuyoruz.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterilerimizin ihtiyaçlarını analiz ederek, onlara özel yazılım mimarileri tasarlıyoruz. Bulut tabanlı altyapımız sayesinde kesintisiz hizmet ve yüksek performans garantisi sağlıyoruz.</p>
 <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
-  <li><strong>Müşteri memnuniyetinde:</strong> %49 artış sağlandı</li>
-  <li><strong>Operasyonel maliyetlerde:</strong> %44 azalma elde edildi</li>
-  <li><strong>Çalışan verimliliğinde:</strong> %71 iyileşme görüldü</li>
-  <li><strong>Hata oranları:</strong> %38 oranında düştü</li>
+  <li><strong>Müşteri memnuniyetinde:</strong> %74 artış sağlandı</li>
+  <li><strong>Operasyonel maliyetlerde:</strong> %57 azalma elde edildi</li>
+  <li><strong>Çalışan verimliliğinde:</strong> %61 iyileşme görüldü</li>
+  <li><strong>Hata oranları:</strong> %71 oranında düştü</li>
 </ul>
 <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sigorta Sektöründe Kullanılan Temel Teknolojiler</h2>
 <p class="text-lg text-slate-700 leading-relaxed mb-6">Sigorta sektöründe kullanılan başlıca teknolojiler arasında yapay zeka, IoT sensörleri, bulut bilişim ve mobil uygulamalar yer almaktadır. Bu teknolojiler işletmelere gerçek zamanlı veri analizi, uzaktan yönetim ve otomasyon imkanı sunmaktadır.</p>
 <p class="text-lg text-slate-700 leading-relaxed mb-6">Blokzincir teknolojisi, büyük veri analitiği ve nesnelerin interneti (IoT) gibi yenilikçi çözümler, Sigorta sektöründe çığır açan gelişmelere olanak sağlamaktadır. DZY Digital olarak, bu teknolojileri müşterilerimizin ihtiyaçlarına göre özelleştiriyoruz.</p>
 <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
-  <li><strong>Müşteri memnuniyetinde:</strong> %68 artış sağlandı</li>
-  <li><strong>Operasyonel maliyetlerde:</strong> %54 azalma elde edildi</li>
-  <li><strong>Çalışan verimliliğinde:</strong> %74 iyileşme görüldü</li>
-  <li><strong>Hata oranları:</strong> %75 oranında düştü</li>
+  <li><strong>Geleneksel yöntemlere:</strong> kıyasla %28 daha hızlı süreç yönetimi</li>
+  <li><strong>Manuel iş:</strong> yükünde %50 azalma</li>
+  <li><strong>Raporlama sürelerinde:</strong> %63 iyileşme</li>
+  <li><strong>Müşteri şikayetlerinde:</strong> %51 düşüş</li>
 </ul>
 <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sigorta İçin Dijital Dönüşüm Stratejileri</h2>
 <p class="text-lg text-slate-700 leading-relaxed mb-6">Başarılı bir dijital dönüşüm için öncelikle mevcut süreçlerin kapsamlı bir şekilde analiz edilmesi gerekmektedir. Ardından, işletmenin önceliklerine göre bir yol haritası belirlenmeli ve adım adım uygulamaya konulmalıdır.</p>
 <p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital dönüşüm sürecinde çalışanların eğitimi ve değişim yönetimi de kritik öneme sahiptir. Teknoloji ne kadar ileri olursa olsun, kullanıcılar tarafından benimsenmediği sürece başarılı olması mümkün değildir.</p>
 <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
-  <li><strong>Müşteri memnuniyetinde:</strong> %23 artış sağlandı</li>
-  <li><strong>Operasyonel maliyetlerde:</strong> %22 azalma elde edildi</li>
-  <li><strong>Çalışan verimliliğinde:</strong> %63 iyileşme görüldü</li>
-  <li><strong>Hata oranları:</strong> %73 oranında düştü</li>
+  <li><strong>Müşteri memnuniyetinde:</strong> %63 artış sağlandı</li>
+  <li><strong>Operasyonel maliyetlerde:</strong> %38 azalma elde edildi</li>
+  <li><strong>Çalışan verimliliğinde:</strong> %55 iyileşme görüldü</li>
+  <li><strong>Hata oranları:</strong> %49 oranında düştü</li>
 </ul>
-<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sigorta İçin Yazılım Çözümlerimiz</h2>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">DZY Digital olarak, Sigorta sektörüne özel olarak geliştirdiğimiz yazılım çözümleri ile işletmelerin dijital dönüşüm yolculuğunda yanındayız. Modern teknolojilerle donatılmış, ölçeklenebilir ve güvenli çözümler sunuyoruz.</p>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">Müşterilerimizin ihtiyaçlarını analiz ederek, onlara özel yazılım mimarileri tasarlıyoruz. Bulut tabanlı altyapımız sayesinde kesintisiz hizmet ve yüksek performans garantisi sağlıyoruz.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">ROI ve Başarı Metrikleri</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Dijital dönüşüm projelerinde başarıyı ölçmek için belirli metrikler kullanılmalıdır. Müşteri memnuniyeti, operasyonel verimlilik, maliyet tasarrufu ve gelir artışı en önemli göstergeler arasında yer almaktadır.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Yapılan araştırmalar, Sigorta sektöründe dijital dönüşüm yatırımlarının ortalama %48 oranında verimlilik artışı sağladığını göstermektedir. DZY Digital müşterileri, projelerimiz sayesinde ortalama 6-12 ay içinde yatırımının karşılığını almaktadır.</p>
 <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
-  <li><strong>Geleneksel yöntemlere:</strong> kıyasla %51 daha hızlı süreç yönetimi</li>
-  <li><strong>Manuel iş:</strong> yükünde %29 azalma</li>
-  <li><strong>Raporlama sürelerinde:</strong> %66 iyileşme</li>
-  <li><strong>Müşteri şikayetlerinde:</strong> %31 düşüş</li>
+  <li><strong>Müşteri memnuniyetinde:</strong> %64 artış sağlandı</li>
+  <li><strong>Operasyonel maliyetlerde:</strong> %44 azalma elde edildi</li>
+  <li><strong>Çalışan verimliliğinde:</strong> %34 iyileşme görüldü</li>
+  <li><strong>Hata oranları:</strong> %47 oranında düştü</li>
 </ul>
 <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
-<p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, Sigorta konusunda uzman ekibimizle size özel çözümler sunuyoruz. Projeniz için en uygun stratejiyi belirlemek ve dijital dönüşüm yolculuğunuza başlamak için bizimle iletişime geçin.</p>
+<p class="text-lg text-indigo-900 font-semibold m-0">Sigorta hakkında daha fazla bilgi almak ve işletmenize özel çözümlerimizi keşfetmek için DZY Digital ile iletişime geçin. Uzman ekibimiz size en uygun teknoloji stratejisini belirlemenize yardımcı olacaktır.</p>
 </div>
     `
   },
   {
-    id: 51,
+    id: 57,
     slug: 'angular-vs-react-vs-vue',
     title: 'Angular vs React vs Vue: 2026’da Hangi Frontend Framework’ü Seçmelisiniz?',
     category: 'Teknoloji Karşılaştırmaları',
     date: '04 Temmuz 2026',
-    readTime: '14 dk okuma',
+    readTime: '12 dk okuma',
     excerpt: 'Angular, React ve  karşılaştırması: Performans, maliyet, geliştirme hızı ve kullanım senaryolarına göre değerlendirme.',
     content: `
 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Angular vs React vs Vue: 2026’da Hangi Frontend Framework’ü Seçmelisiniz?</h1>
@@ -79,12 +79,12 @@ export const autoPosts = [
     `
   },
   {
-    id: 52,
+    id: 58,
     slug: 'nextjs-auth-sistemi-kurulumu',
     title: 'Next.js ile Kimlik Doğrulama Sistemi Kurulumu: Auth.js Rehberi',
     category: 'Teknik Rehberler',
     date: '04 Temmuz 2026',
-    readTime: '14 dk okuma',
+    readTime: '15 dk okuma',
     excerpt: 'Next.js ile Kimlik Doğrulama Sistemi Kurulumu hakkında kapsamlı rehber. Adım adım kurulum, konfigürasyon ve en iyi pratikler.',
     content: `
 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Next.js ile Kimlik Doğrulama Sistemi Kurulumu: Auth.js Rehberi</h1>
@@ -97,9 +97,18 @@ export const autoPosts = [
   <li>Entegre CI/CD desteği</li>
   <li>Kapsamlı güvenlik özellikleri</li>
 </ul>
-<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Ortam Hazırlığı ve Gereksinimler</h2>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">Next.js ile Kimlik Doğrulama Sistemi Kurulumu için öncelikle gerekli araçları ve bağımlılıkları kurmamız gerekiyor. Node.js, npm ve projenize uygun diğer araçların sisteminizde yüklü olduğundan emin olun.</p>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">Geliştirme ortamınızı hazırladıktan sonra, proje yapısını oluşturma aşamasına geçebiliriz. Bu aşamada, dosya yapısı ve proje konfigürasyonu üzerinde duracağız.</p>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Test Etme ve Canlıya Alma</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Tüm geliştirme sürecini tamamladıktan sonra, uygulamamızı test etme zamanı geldi. Birim testler, entegrasyon testleri ve uçtan uca testler ile sistemin doğru çalıştığından emin oluyoruz.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Test sürecini başarıyla tamamladıktan sonra, uygulamayı canlı ortama alabiliriz. CI/CD pipeline’ımız sayesinde otomatik derleme ve dağıtım süreci sorunsuz bir şekilde çalışacaktır.</p>
+<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
+  <li>Daha hızlı geliştirme süreci ve kısa pazara çıkış süresi</li>
+  <li>Daha iyi performans ve ölçeklenebilirlik</li>
+  <li>Daha kolay bakım ve güncelleme</li>
+  <li>Daha geniş topluluk desteği ve kaynak</li>
+</ul>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Adım Adım Kurulum ve Konfigürasyon</h2>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">İlk olarak, gerekli bağımlılıkları projemize ekliyoruz. npm install veya yarn add komutlarını kullanarak paketleri yükleyebilirsiniz. Ardından, temel konfigürasyon dosyalarını oluşturuyoruz.</p>
+<p class="text-lg text-slate-700 leading-relaxed mb-6">Konfigürasyon ayarlarını tamamladıktan sonra, temel kod yapısını oluşturmaya başlıyoruz. Bu aşamada, projenizin ihtiyaçlarına göre özelleştirme yapabilirsiniz.</p>
 <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
   <li>Daha hızlı geliştirme süreci ve kısa pazara çıkış süresi</li>
   <li>Daha iyi performans ve ölçeklenebilirlik</li>
@@ -110,33 +119,24 @@ export const autoPosts = [
 <p class="text-lg text-slate-700 leading-relaxed mb-6">Temel kurulumu tamamladıktan sonra, Next.js ile Kimlik Doğrulama Sistemi Kurulumu üzerinde gelişmiş özellikler eklemeye başlayabiliriz. Performans optimizasyonu, hata yönetimi ve güvenlik gibi konular üzerinde duracağız.</p>
 <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu bölümde, Next.js ile Kimlik Doğrulama Sistemi Kurulumu için en iyi pratikleri ve yaygın hataları nasıl önleyebileceğinizi anlatacağız. Böylece, üretim ortamına geçtiğinizde sorunsuz bir deneyim elde edebilirsiniz.</p>
 <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
-  <li>Gelişmiş hata ayıklama ve test araçları</li>
-  <li>Otomatik dokümantasyon oluşturma</li>
-  <li>Entegre CI/CD desteği</li>
-  <li>Kapsamlı güvenlik özellikleri</li>
-</ul>
-<h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Test Etme ve Canlıya Alma</h2>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">Tüm geliştirme sürecini tamamladıktan sonra, uygulamamızı test etme zamanı geldi. Birim testler, entegrasyon testleri ve uçtan uca testler ile sistemin doğru çalıştığından emin oluyoruz.</p>
-<p class="text-lg text-slate-700 leading-relaxed mb-6">Test sürecini başarıyla tamamladıktan sonra, uygulamayı canlı ortama alabiliriz. CI/CD pipeline’ımız sayesinde otomatik derleme ve dağıtım süreci sorunsuz bir şekilde çalışacaktır.</p>
-<ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
-  <li>Gelişmiş hata ayıklama ve test araçları</li>
-  <li>Otomatik dokümantasyon oluşturma</li>
-  <li>Entegre CI/CD desteği</li>
-  <li>Kapsamlı güvenlik özellikleri</li>
+  <li>Daha hızlı geliştirme süreci ve kısa pazara çıkış süresi</li>
+  <li>Daha iyi performans ve ölçeklenebilirlik</li>
+  <li>Daha kolay bakım ve güncelleme</li>
+  <li>Daha geniş topluluk desteği ve kaynak</li>
 </ul>
 <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
-<p class="text-lg text-indigo-900 font-semibold m-0">Dijital dönüşüm yolculuğunuzda DZY Digital yanınızda. Next.js ile Kimlik Doğrulama Sistemi Kurulumu konusunda deneyimli ekibimizle, işletmenizin ihtiyaçlarına özel çözümler geliştiriyoruz. Hemen iletişime geçin!</p>
+<p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, Next.js ile Kimlik Doğrulama Sistemi Kurulumu konusunda uzman ekibimizle size özel çözümler sunuyoruz. Projeniz için en uygun stratejiyi belirlemek ve dijital dönüşüm yolculuğunuza başlamak için bizimle iletişime geçin.</p>
 </div>
     `
   },
   {
-    id: 215,
+    id: 217,
     slug: 'saglik-hasta-randevu-sistemi',
     title: 'Vaka Analizi: Sağlık Sektöründe Akıllı Hasta Randevu Sistemi',
     category: 'Vaka Analizleri',
     date: '04 Temmuz 2026',
     readTime: '10 dk okuma',
-    excerpt: 'Vaka Analizi: sigorta sektöründe dijital dönüşüm projesi. İşlem sürelerinde %51 kısalma sağlandı, Operasyonel verimlilikte %42 artış sağlandı.',
+    excerpt: 'Vaka Analizi: sigorta sektöründe dijital dönüşüm projesi. Operasyonel verimlilikte %64 artış sağlandı, Maliyetlerde yıllık 687.000 TL tasarruf elde edildi.',
     content: `
 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Vaka Analizi: Sağlık Sektöründe Akıllı Hasta Randevu Sistemi</h1>
 <p class="text-lg text-slate-700 leading-relaxed mb-6">Bu vaka analizinde, sigorta sektöründe faaliyet gösteren bir müşterimizin dijital dönüşüm yolculuğunu ve DZY Digital olarak sunduğumuz çözümleri detaylandırıyoruz.</p>
@@ -160,10 +160,10 @@ export const autoPosts = [
 </ul>
 <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4">Sonuçlar ve ROI</h2>
 <ul class="list-disc pl-6 mb-6 text-lg text-slate-700 space-y-2">
-  <li><strong>Operasyonel verimlilikte</strong> %42 artış sağlandı</li>
-  <li><strong>Maliyetlerde yıllık</strong> 373.000 TL tasarruf elde edildi</li>
-  <li><strong>Müşteri memnuniyetinde</strong> %41 iyileşme görüldü</li>
-  <li><strong>Hata oranları</strong> %64 oranında azaldı</li>
+  <li><strong>Operasyonel verimlilikte</strong> %64 artış sağlandı</li>
+  <li><strong>Maliyetlerde yıllık</strong> 687.000 TL tasarruf elde edildi</li>
+  <li><strong>Müşteri memnuniyetinde</strong> %50 iyileşme görüldü</li>
+  <li><strong>Hata oranları</strong> %90 oranında azaldı</li>
 </ul>
 <div class="p-6 bg-indigo-50 border border-indigo-100 rounded-xl mt-8">
 <p class="text-lg text-indigo-900 font-semibold m-0">DZY Digital olarak, sigorta sektöründe dijital dönüşüm projelerinizde size yardımcı olmaktan mutluluk duyarız. Projeniz için özel çözümler geliştirmek üzere bizimle iletişime geçin.</p>
