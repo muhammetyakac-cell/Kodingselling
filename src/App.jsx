@@ -15,7 +15,8 @@ import {
   MapPin, Mail, Phone, Clock, MessageSquare,
   Send, X, Menu, ChevronDown, ChevronUp,
   Code2, Server, Cloud, CheckCircle2,
-  HelpCircle, ArrowLeft
+  HelpCircle, ArrowLeft, Building, GraduationCap,
+  PackageCheck, Shapes
 } from 'lucide-react';
 
 const servicesData = [
@@ -120,6 +121,30 @@ const servicesData = [
     title: 'Çok Dilli ve Uluslararası Altyapı',
     desc: 'Uygulamalarınızı sadece çevirmekle kalmaz, yurt dışı standartlarına (Avrupa) uygun hazırlarız.',
     fullDesc: 'Lokalizasyon, ödeme altyapıları ve GDPR uyumu ile uygulamalarınızı uluslararası pazarlara hazır hale getiriyoruz.'
+  },
+  {
+    icon: <Building className="w-6 h-6 text-sky-500" />,
+    title: 'Otel ve Konaklama Yönetimi (PMS)',
+    desc: 'Oteller için bulut tabanlı, çok kanallı ve mobil uyumlu yönetim sistemleri.',
+    fullDesc: 'Rezervasyon, housekeeping, faturalandırma ve müşteri ilişkilerini tek bir bulut merkezinde toplayan yeni nesil otel yazılımları geliştiriyoruz.'
+  },
+  {
+    icon: <GraduationCap className="w-6 h-6 text-amber-600" />,
+    title: 'Okul ve Eğitim Kurumları Sistemleri',
+    desc: 'Öğrenci, veli, öğretmen ve finans yönetimini birleştiren tam kapsamlı portal sistemleri.',
+    fullDesc: 'K-12 ve üniversiteler için online sınav entegreli, güvenli ödeme modüllü ve veli bilgilendirme odaklı dijital altyapılar.'
+  },
+  {
+    icon: <PackageCheck className="w-6 h-6 text-emerald-600" />,
+    title: 'B2B Sipariş ve Bayi Yönetimi',
+    desc: 'Karmaşık bayilik ağları ve çok kanallı toptan satış operasyonları için özel yazılımlar.',
+    fullDesc: 'Farklı carilere özel dinamik iskontolar, çoklu depo yönetimi ve DBS tahsilat entegrasyonlarını kapsayan sipariş orkestrasyonu.'
+  },
+  {
+    icon: <Shapes className="w-6 h-6 text-rose-400" />,
+    title: 'Niş Sektörel Yönetim Sistemleri',
+    desc: 'Hazır paket programların çözemediği spesifik ve karmaşık iş akışlarınıza %100 uyumlu yazılımlar.',
+    fullDesc: 'Laboratuvar analizlerinden özel mobilya üretimine kadar, sadece sizin firmanızın DNA\'sına göre çalışan, esnek mikroservis mimarileri.'
   }
 ];
 
