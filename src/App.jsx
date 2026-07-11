@@ -16,7 +16,8 @@ import {
   Send, X, Menu, ChevronDown, ChevronUp,
   Code2, Server, Cloud, CheckCircle2,
   HelpCircle, ArrowLeft, Building, GraduationCap,
-  PackageCheck, Shapes
+  PackageCheck, Shapes, Landmark, Wallet, Home,
+  Zap, Sprout, ShoppingCart
 } from 'lucide-react';
 
 const servicesData = [
@@ -223,6 +224,36 @@ const expertiseData = [
     title: 'Eğitim ve LMS Platformları',
     desc: 'Okullar ve kurslar için veli bilgilendirme, sınav analizi ve e-öğrenme odaklı eğitim yönetim portalları.',
     route: 'sector-education'
+  },
+  {
+    icon: <Landmark className="w-10 h-10 text-slate-800" />,
+    title: 'Finans Teknolojileri ve Açık Bankacılık',
+    desc: 'Banka entegrasyonları, cüzdan sistemleri ve açık bankacılık regülasyonlarına uygun API çözümleri.',
+    route: 'sector-fintech'
+  },
+  {
+    icon: <Home className="w-10 h-10 text-indigo-500" />,
+    title: 'Gayrimenkul ve PropTech',
+    desc: 'Emlak portföy yönetimi, akıllı bina otomasyonu ve dijital kira tahsilat sistemleri.',
+    route: 'sector-realestate'
+  },
+  {
+    icon: <Zap className="w-10 h-10 text-amber-400" />,
+    title: 'Akıllı Şehir ve Enerji',
+    desc: 'Enerji tüketim analizleri, akıllı şebeke izleme ve yenilenebilir enerji yönetim panelleri.',
+    route: 'sector-energy'
+  },
+  {
+    icon: <Sprout className="w-10 h-10 text-emerald-600" />,
+    title: 'Tarım Teknolojileri (Agrotech)',
+    desc: 'Sera otomasyonu, sensör bazlı sulama yönetimi ve tarladan sofraya izlenebilirlik yazılımları.',
+    route: 'sector-agritech'
+  },
+  {
+    icon: <ShoppingCart className="w-10 h-10 text-rose-500" />,
+    title: 'Perakende ve Mağazacılık (POS)',
+    desc: 'Çok şubeli mağazalar için bulut tabanlı POS ve sadakat (loyalty) programı yazılımları.',
+    route: 'sector-retail'
   }
 ];
 
@@ -258,6 +289,26 @@ const sectorPages = {
   'sector-education': {
     title: 'Okul, K-12 ve LMS Eğitim Platformları',
     subtitle: 'Online sınav, e-öğrenme ve veli iletişimini birleştiren uçtan uca okul sistemleri.'
+  },
+  'sector-fintech': {
+    title: 'Fintech ve Açık Bankacılık Çözümleri',
+    subtitle: 'Güvenli ödeme ağ geçitleri, e-cüzdanlar ve finansal API entegrasyonları.'
+  },
+  'sector-realestate': {
+    title: 'Gayrimenkul ve PropTech Yazılımları',
+    subtitle: 'Emlak portföy yönetimi, akıllı bina otomasyonu ve dijital kira tahsilat sistemleri.'
+  },
+  'sector-energy': {
+    title: 'Akıllı Şehir ve Enerji Otomasyonları',
+    subtitle: 'Enerji tüketim analizleri, akıllı şebeke izleme ve IoT destekli şehir sistemleri.'
+  },
+  'sector-agritech': {
+    title: 'Tarım Teknolojileri ve Agrotech Sistemleri',
+    subtitle: 'Sera otomasyonu, IoT sensör bazlı sulama yönetimi ve tarladan sofraya izlenebilirlik.'
+  },
+  'sector-retail': {
+    title: 'Perakende ve Mağazacılık (POS) Yazılımları',
+    subtitle: 'Çok şubeli mağazalar için bulut tabanlı POS ve sadakat programı yönetim paneller.'
   }
 };
 
@@ -700,6 +751,91 @@ const seoData = {
       }
     ]
   },
+  'sector-fintech': {
+    title: 'Finans Teknolojileri ve Açık Bankacılık | DZY Digital',
+    description: 'Dijital cüzdan, açık bankacılık regülasyonlarına uyumlu API ve ödeme geçidi çözümleri.',
+    keywords: 'fintech yazılımı, açık bankacılık api, ödeme geçidi entegrasyonu, dijital cüzdan yazılımı, sanal pos entegrasyon',
+    path: '/sektor/finans',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Finans Teknolojileri (FinTech)",
+        "description": "Banka entegrasyonları, cüzdan sistemleri ve açık bankacılık çözümleri.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Finans Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-realestate': {
+    title: 'Gayrimenkul ve PropTech Sistemleri | DZY Digital',
+    description: 'Büyük emlak portföylerini yönetmek için proptech çözümleri, kira tahsilat otomasyonu ve akıllı bina yazılımları.',
+    keywords: 'proptech yazılımı, gayrimenkul yönetim sistemi, akıllı bina otomasyonu, kira tahsilat yazılımı, emlak yazılımı',
+    path: '/sektor/gayrimenkul',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "PropTech ve Gayrimenkul Yazılımları",
+        "description": "Emlak portföy yönetimi ve akıllı bina yönetim sistemleri.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Gayrimenkul Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-energy': {
+    title: 'Akıllı Şehir ve Enerji Otomasyonları | DZY Digital',
+    description: 'IoT ile güçlendirilmiş akıllı şebeke izleme, enerji tüketim analizleri ve sürdürülebilir enerji yazılımları.',
+    keywords: 'akıllı şehir çözümleri, enerji otomasyonu, iot enerji takibi, akıllı şebeke yazılımı, enerji tüketim analizi',
+    path: '/sektor/enerji',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Enerji ve Akıllı Şehir Sistemleri",
+        "description": "Enerji tüketim analizleri ve IoT destekli akıllı şehir yazılımları.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Enerji Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-agritech': {
+    title: 'Tarım Teknolojileri ve Agrotech | DZY Digital',
+    description: 'Sera otomasyonu, sensör bazlı akıllı sulama ve tarladan sofraya üretim takip (AgriTech) yazılımları.',
+    keywords: 'agrotech yazılımı, akıllı tarım teknolojileri, sera otomasyonu, akıllı sulama sistemi, tarım iot',
+    path: '/sektor/tarim',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Tarım Teknolojileri (AgriTech)",
+        "description": "Sera otomasyonu ve sensör bazlı akıllı sulama sistemleri.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Tarım Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-retail': {
+    title: 'Perakende ve Mağazacılık (POS) Sistemleri | DZY Digital',
+    description: 'Çok şubeli perakende zincirleri için bulut POS, stok yönetimi, crm ve müşteri sadakat programları.',
+    keywords: 'bulut pos yazılımı, mağazacılık sistemi, perakende erp, müşteri sadakat programı yazılımı, çoklu şube yönetimi',
+    path: '/sektor/perakende',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Perakende ve POS Yazılımları",
+        "description": "Çok şubeli mağazalar için bulut tabanlı POS ve stok yönetim yazılımları.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Perakende Yazılım Geliştirme"
+      }
+    ]
+  },
   blog: {
     title: 'Bilgi Bankası & Blog | Teknoloji ve Yazılım Trendleri - DZY Digital',
     description: 'Yazılım mimarisi, dijital dönüşüm, bulut teknolojileri ve KOBİ\'ler için vaka analizleri barındıran bilgi bankamızı keşfedin.',
@@ -805,7 +941,12 @@ const pathToTab = {
   '/sektor/turizm': 'sector-tourism',
   '/sektor/uretim': 'sector-production',
   '/sektor/saglik': 'sector-health',
-  '/sektor/egitim': 'sector-education'
+  '/sektor/egitim': 'sector-education',
+  '/sektor/finans': 'sector-fintech',
+  '/sektor/gayrimenkul': 'sector-realestate',
+  '/sektor/enerji': 'sector-energy',
+  '/sektor/tarim': 'sector-agritech',
+  '/sektor/perakende': 'sector-retail'
 };
 
 const tabToPath = Object.fromEntries(Object.entries(pathToTab).map(([k, v]) => [v, k]));
@@ -1533,6 +1674,61 @@ function SectorLandingView({ tab, nav }) {
             { title: "Okul Tahsilat ve Sanal Pos Entegrasyonu", detail: "Kayıt ücretleri, taksitler ve yemekhane ödemelerinin veliler tarafından güvenli ödeme ağ geçitleriyle anlık ödenebildiği finans modülü." }
           ],
           cta: "Eğitim Kurumunuzu Dijitalleştirin"
+        };
+      case 'sector-fintech':
+        return {
+          desc: "Banka ve finans kurumları için regülasyonlara tam uyumlu, modern finansal teknolojiler (FinTech) ve Açık Bankacılık (Open Banking) API altyapıları geliştiriyoruz.",
+          features: [
+            { title: "Sanal POS ve Ödeme Geçidi", detail: "Kredi kartı işlemleri, tekrarlayan abonelik (recurring) ödemeleri ve cüzdan sistemleri (Stripe, Iyzico, iPara) entegrasyonları." },
+            { title: "Açık Bankacılık (Open Banking) API", detail: "Farklı bankalardaki hesap hareketlerini tek ekranda toplayan, otomatik mutabakat sağlayan PSD2 uyumlu güvenli API'ler." },
+            { title: "Kripto ve Blockchain Cüzdan", detail: "Web3 projeleri için akıllı kontratlar (smart contracts), token ekonomileri ve güvenli kripto saklama cüzdanları altyapısı." },
+            { title: "Regülasyon ve KYC/AML Süreçleri", detail: "Müşterini Tanı (KYC) ve Kara Para Aklamayı Önleme (AML) süreçlerini otomatize eden kimlik doğrulama sistemleri." }
+          ],
+          cta: "Fintech Çözümünüzü Canlandırın"
+        };
+      case 'sector-realestate':
+        return {
+          desc: "Klasik emlakçılığın ötesine geçen PropTech çözümleriyle; devasa gayrimenkul portföylerini, akıllı binaları ve kira tahsilatlarını tek merkezden otonom olarak yönetin.",
+          features: [
+            { title: "Kira Tahsilat Otomasyonu", detail: "Geciken kiraları tespit eden, sanal pos ile online kira ödeme imkanı sunan dijital mülk yönetim modülü." },
+            { title: "Akıllı Bina (Smart Building) Entegrasyonu", detail: "Bina asansörleri, aydınlatmaları ve iklimlendirme sistemleriyle IoT üzerinden haberleşen enerji yönetim panelleri." },
+            { title: "Emlak Portföy ve CRM", detail: "Satılık/kiralık mülklerin tapu bilgileriyle, müşteri taleplerini yapay zeka ile eşleştiren gelişmiş CRM sistemleri." },
+            { title: "Sanal Tur ve 3D Modelleme", detail: "Projelerin inşaat aşamasındayken VR (Sanal Gerçeklik) üzerinden gezilebilmesini sağlayan WebGL tabanlı gösterimler." }
+          ],
+          cta: "Gayrimenkul Portföyünüzü Dijitalleştirin"
+        };
+      case 'sector-energy':
+        return {
+          desc: "Karbon ayak izini düşüren, yenilenebilir enerji kaynaklarını yöneten ve akıllı şehir (Smart City) konseptini hayata geçiren endüstriyel otomasyon yazılımları geliştiriyoruz.",
+          features: [
+            { title: "Akıllı Şebeke (Smart Grid) İzleme", detail: "Enerji üretim santrallerinden ve dağıtım trafolarından saniyede binlerce veri alarak anlık yük analizi yapın." },
+            { title: "Enerji Tüketim Raporlaması", detail: "Fabrika veya binaların aylık enerji tüketimlerini makine bazlı izleyerek verimsiz noktaları tespit eden AI modülleri." },
+            { title: "Yenilenebilir Santral Yönetimi", detail: "GES (Güneş) ve RES (Rüzgar) santrallerinizin hava durumu tahminiyle üretim kapasitesini modelleyen izleme sistemleri." },
+            { title: "Karbon Ayak İzi Takibi", detail: "Şirketinizin yeşil dönüşüm belgeleri (Green Deal) için karbon salınım metriklerini ISO standartlarında raporlama." }
+          ],
+          cta: "Enerji Tüketiminizi Optimizasyon Edin"
+        };
+      case 'sector-agritech':
+        return {
+          desc: "Tarımda verimi artıran Agrotech (Tarım Teknolojileri) çözümleriyle; sensörler, dronlar ve uydu verilerini kullanarak çiftliklerinizi veri ile yönetmenizi sağlıyoruz.",
+          features: [
+            { title: "Sera Otomasyon Sistemleri", detail: "Nem, ısı ve CO2 sensörlerinden gelen veriye göre havalandırma ve sulamayı kendi kendine açıp kapatan IoT altyapısı." },
+            { title: "Tarladan Sofraya İzlenebilirlik", detail: "Ürünün tohumdan market rafına gelene kadarki tüm süreçlerini Blockchain tabanlı QR kodlar ile takip eden güven platformu." },
+            { title: "Uydu Destekli Verim Analizi", detail: "Uydu görüntüleriyle tarladaki bitki gelişimini analiz ederek, gübre ve su ihtiyacı olan spesifik bölgeleri tespit eden modül." },
+            { title: "Akıllı Lojistik ve Soğuk Zincir", detail: "Hasat sonrası ürünlerin taşınırken soğuk zincir kırılmalarını anlık bildiren araç içi telemetri entegrasyonu." }
+          ],
+          cta: "Tarım İşletmenizi Dijitalleştirin"
+        };
+      case 'sector-retail':
+        return {
+          desc: "Çok şubeli perakende zincirlerinin kasiyerlerinden (POS), merkez depoya kadar tüm bilgi akışını kesintisiz ve milisaniye hızında bağlayan modern mağazacılık sistemleri.",
+          features: [
+            { title: "Bulut Tabanlı Yeni Nesil POS", detail: "Sadece internete bağlanarak her tür tablet ve PC'de çalışabilen, anında yeni şube açabileceğiniz kasa yazılımı." },
+            { title: "Müşteri Sadakat (Loyalty) Programı", detail: "Müşterilerinize özel mobil uygulamalar üzerinden puan kazandırma, doğum günü kuponları ve hediye çeki altyapıları." },
+            { title: "Omnichannel Stok Yönetimi", detail: "Fiziksel mağaza stoku ile E-ticaret sitenizin stokunu canlı birleştirerek Click&Collect (tıkla-gel al) hizmetini sunun." },
+            { title: "Kasa Yanı Upsell Analitiği", detail: "Hangi ürünlerin beraber satıldığını (Market Basket Analysis) analiz ederek kasiyer ekranına anlık ürün önerme algoritması." }
+          ],
+          cta: "Mağazalarınızı Tek Merkezden Yönetin"
         };
       default:
         return null;
