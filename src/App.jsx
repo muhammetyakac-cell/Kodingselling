@@ -193,6 +193,36 @@ const expertiseData = [
     title: 'E-Ticaret ve SaaS Modelleri',
     desc: 'Abonelikle satılabilecek çok kiracılı platformlar için anahtar teslim altyapılar geliştiriyoruz.',
     route: 'sector-saas'
+  },
+  {
+    icon: <Store className="w-10 h-10 text-orange-500" />,
+    title: 'B2B E-Ticaret ve Pazaryeri',
+    desc: 'Bayi ağınızı yöneteceğiniz, tahsilatları ve siparişleri otomatize eden çok satıcılı B2B e-ticaret platformları.',
+    route: 'sector-ecommerce'
+  },
+  {
+    icon: <Building className="w-10 h-10 text-sky-500" />,
+    title: 'Otel ve Turizm Teknolojileri',
+    desc: 'Konaklama işletmeleri için rezervasyon (PMS), housekeeping ve online tahsilat sistemlerini bulutta birleştiriyoruz.',
+    route: 'sector-tourism'
+  },
+  {
+    icon: <Network className="w-10 h-10 text-teal-600" />,
+    title: 'Üretim Takip ve ERP',
+    desc: 'Üretim bandından anlık veri alarak fire oranlarını azaltan mikroservis tabanlı endüstriyel ERP çözümleri.',
+    route: 'sector-production'
+  },
+  {
+    icon: <HelpCircle className="w-10 h-10 text-rose-500" />,
+    title: 'Sağlık ve Hastane Bilgi Sistemleri',
+    desc: 'Klinik ve hastaneler için randevu takibi ve dijital arşiv sağlayan KVKK uyumlu otomasyonlar.',
+    route: 'sector-health'
+  },
+  {
+    icon: <GraduationCap className="w-10 h-10 text-amber-500" />,
+    title: 'Eğitim ve LMS Platformları',
+    desc: 'Okullar ve kurslar için veli bilgilendirme, sınav analizi ve e-öğrenme odaklı eğitim yönetim portalları.',
+    route: 'sector-education'
   }
 ];
 
@@ -208,6 +238,26 @@ const sectorPages = {
   'sector-academic': {
     title: 'Akademik ve Bilimsel Dijital Arşiv Sistemleri',
     subtitle: 'Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel çözümler.'
+  },
+  'sector-ecommerce': {
+    title: 'B2B E-Ticaret ve Pazaryeri Sistemleri',
+    subtitle: 'Kapalı devre bayi siparişleri ve çok satıcılı (marketplace) e-ticaret altyapıları.'
+  },
+  'sector-tourism': {
+    title: 'Otel ve Turizm Yönetim Yazılımları (PMS)',
+    subtitle: 'Rezervasyon, muhasebe ve kat hizmetlerini tek ekranda toplayan modern otel sistemleri.'
+  },
+  'sector-production': {
+    title: 'Endüstriyel Üretim Takip ve ERP Sistemleri',
+    subtitle: 'Sensör destekli IoT entegrasyonuyla fabrika üretim hatlarının dijitalleşmesi.'
+  },
+  'sector-health': {
+    title: 'Sağlık, Klinik ve Hastane Bilgi Sistemleri (HBS)',
+    subtitle: 'Hasta randevu takibi, e-reçete entegrasyonu ve KVKK odaklı güvenli hasta portalları.'
+  },
+  'sector-education': {
+    title: 'Okul, K-12 ve LMS Eğitim Platformları',
+    subtitle: 'Online sınav, e-öğrenme ve veli iletişimini birleştiren uçtan uca okul sistemleri.'
   }
 };
 
@@ -565,6 +615,91 @@ const seoData = {
       }
     ]
   },
+  'sector-ecommerce': {
+    title: 'B2B E-Ticaret ve Pazaryeri Sistemleri | DZY Digital',
+    description: 'Bayi ağınızı yönetin, tahsilatları ve B2B siparişleri otomatize edin. Özelleştirilebilir pazaryeri ve e-ticaret altyapıları.',
+    keywords: 'b2b e-ticaret yazılımı, pazaryeri yazılımı, çok satıcılı e-ticaret, b2b sipariş sistemi, bayi yönetim sistemi',
+    path: '/sektor/e-ticaret',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "B2B E-Ticaret Sistemleri",
+        "description": "Kapalı devre bayi siparişleri ve çok satıcılı e-ticaret (marketplace) altyapıları.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "E-Ticaret Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-tourism': {
+    title: 'Otel ve Turizm Yönetim Yazılımları (PMS) | DZY Digital',
+    description: 'Otelinizin tüm rezervasyon, online ödeme ve kat hizmetleri süreçlerini tek ekranda toplayan yeni nesil bulut PMS çözümleri.',
+    keywords: 'otel yönetim yazılımı, pms yazılımı, bulut otel programı, turizm teknolojileri, online rezervasyon sistemi',
+    path: '/sektor/turizm',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Otel Yönetim Yazılımları (PMS)",
+        "description": "Konaklama işletmeleri için rezervasyon ve muhasebe sistemlerini bulutta birleştiren yazılımlar.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Turizm Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-production': {
+    title: 'Endüstriyel Üretim Takip ve ERP Sistemleri | DZY Digital',
+    description: 'Fabrikanızdaki makinelerden canlı veri alın, üretim süreçlerinizi dijitalleştirin. Modern ve esnek ERP altyapıları.',
+    keywords: 'üretim takip sistemi, endüstriyel iot, modern erp programı, fabrika otomasyon yazılımı, fire analiz',
+    path: '/sektor/uretim',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Üretim Takip ve ERP Yazılımları",
+        "description": "Üretim bandından anlık veri alarak fire oranlarını azaltan ERP çözümleri.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "ERP Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-health': {
+    title: 'Sağlık, Klinik ve Hastane Bilgi Sistemleri (HBS) | DZY Digital',
+    description: 'KVKK uyumlu hasta kayıt portalı, randevu takip modülü ve e-reçete entegreli yeni nesil hastane yönetim programları.',
+    keywords: 'hastane bilgi sistemi, hbs yazılımı, klinik takip programı, kvkk uyumlu hasta portalı, sağlık teknolojileri',
+    path: '/sektor/saglik',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Sağlık ve Hastane Bilgi Sistemleri",
+        "description": "Klinik ve hastaneler için randevu takibi ve dijital arşiv sağlayan otomasyonlar.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Sağlık Yazılım Geliştirme"
+      }
+    ]
+  },
+  'sector-education': {
+    title: 'Okul, K-12 ve Eğitim Portalları (LMS) | DZY Digital',
+    description: 'Online sınav analizi, veli bilgilendirme sistemi ve e-öğrenme modüllerini tek bir çatıda toplayan okul yönetim altyapıları.',
+    keywords: 'okul yönetim sistemi, lms yazılımı, eğitim portalı geliştirme, online sınav yazılımı, öğrenci takip programı',
+    path: '/sektor/egitim',
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Eğitim ve LMS Platformları",
+        "description": "Okullar için veli bilgilendirme, sınav analizi ve e-öğrenme odaklı eğitim yönetim portalları.",
+        "provider": { "@type": "Organization", "name": "DZY Digital" },
+        "areaServed": "TR",
+        "serviceType": "Eğitim Yazılım Geliştirme"
+      }
+    ]
+  },
   blog: {
     title: 'Bilgi Bankası & Blog | Teknoloji ve Yazılım Trendleri - DZY Digital',
     description: 'Yazılım mimarisi, dijital dönüşüm, bulut teknolojileri ve KOBİ\'ler için vaka analizleri barındıran bilgi bankamızı keşfedin.',
@@ -665,7 +800,12 @@ const pathToTab = {
   '/blog': 'blog',
   '/sektor/lojistik': 'sector-logistics',
   '/sektor/saas': 'sector-saas',
-  '/sektor/akademik': 'sector-academic'
+  '/sektor/akademik': 'sector-academic',
+  '/sektor/e-ticaret': 'sector-ecommerce',
+  '/sektor/turizm': 'sector-tourism',
+  '/sektor/uretim': 'sector-production',
+  '/sektor/saglik': 'sector-health',
+  '/sektor/egitim': 'sector-education'
 };
 
 const tabToPath = Object.fromEntries(Object.entries(pathToTab).map(([k, v]) => [v, k]));
@@ -1338,6 +1478,61 @@ function SectorLandingView({ tab, nav }) {
             { title: "Uluslararası Akademik Entegrasyonlar", detail: "Dublin Core, OAI-PMH gibi standartlarla uyumlu veri paylaşım kanalları (API) kurgulayın." }
           ],
           cta: "Arşivinizi Dijital Dünyaya Taşıyın"
+        };
+      case 'sector-ecommerce':
+        return {
+          desc: "Sadece standart bir e-ticaret sitesi değil, bayilerinizin limit ve iskontolarıyla sipariş verebildiği karmaşık B2B portalları veya farklı satıcıların komisyonla ürün sattığı Pazaryeri (Marketplace) sistemleri kuruyoruz.",
+          features: [
+            { title: "Çok Satıcılı Pazaryeri Mimari", detail: "Satıcıların kendi mağazalarını yönetebildiği, komisyonların otomatik kesilip dağıtıldığı güvenli e-ticaret ekosistemleri." },
+            { title: "B2B Bayi Sipariş ve Cari Yönetimi", detail: "Her bayiye özel tanımlı iskontolar, açık hesap kotaları ve DBS (Doğrudan Borçlandırma Sistemi) entegrasyonu." },
+            { title: "Çoklu Depo ve Stok Senkronizasyonu", detail: "Farklı depo lokasyonlarındaki stokları anlık eşitleyen, yok satmayı engelleyen milisaniyelik kilit algoritmaları." },
+            { title: "ERP & Kargo Çift Yönlü Entegrasyon", detail: "Siparişlerin anında muhasebeye ve kargo firmasına aktarılıp, barkod ve faturaların otomatik basılması." }
+          ],
+          cta: "E-Ticaret Platformunuzu Tasarlayın"
+        };
+      case 'sector-tourism':
+        return {
+          desc: "Konaklama tesislerinin karmaşık operasyonlarını tek bir bulut çatıda toplayan, OTA (Booking, Expedia) platformlarıyla saniyelik çift yönlü entegre çalışan modern Otel Yönetim (PMS) mimarileri geliştiriyoruz.",
+          features: [
+            { title: "Kanal Yöneticisi (Channel Manager)", detail: "Odadaki son durumu tüm online platformlara saniyeler içinde göndererek Overbooking riskini sıfıra indirin." },
+            { title: "Temassız Check-in ve Mobil Deneyim", detail: "Misafirlerin akıllı telefonlarıyla odaya giriş yapabileceği, oda servisi isteyebileceği dijital ön büro sistemleri." },
+            { title: "Housekeeping Canlı İzleme Modülü", detail: "Odaların temizlik durumlarını kat görevlilerinin tabletlerinden anlık olarak resepsiyona aktaran entegre modüller." },
+            { title: "Dinamik Fiyatlandırma (Revenue Mgt)", detail: "Talep ve bölgedeki etkinlik yoğunluğuna göre oda fiyatlarınızı otomatik ayarlayan akıllı algoritmalar." }
+          ],
+          cta: "Otel Yazılımınızı Buluta Taşıyın"
+        };
+      case 'sector-production':
+        return {
+          desc: "Geleneksel, hantal ve karmaşık ERP paketlerinden kurtularak üretim hattınıza özel tasarlanmış, sensör verileriyle beslenen ve esnek mikroservislerle güçlendirilmiş endüstriyel yönetim sistemleri üretiyoruz.",
+          features: [
+            { title: "Makine ve Sensör IoT Entegrasyonu", detail: "Üretim hattındaki makinelerden anlık sıcaklık, titreşim ve hız verisi toplayarak üretim duruşlarını erken tahmin edin." },
+            { title: "Gerçek Zamanlı Fire ve Verimlilik Analizi", detail: "Üretim hatasından kaynaklı fire oranlarını anlık tespit ederek hangi vardiyada sorunun başladığını görselleştirin." },
+            { title: "Mobil Depo ve Barkod Süreçleri", detail: "Depo personelinin el terminalleriyle hatasız ürün giriş/çıkışını sağlayan hızlı ve sade mobil arayüzler." },
+            { title: "Mikroservis ERP Mimari", detail: "Tüm sistemi kapatmadan, sadece üretim modülünü veya finans modülünü güncelleyebileceğiniz modern yazılım altyapısı." }
+          ],
+          cta: "Üretim Hattınızı Dijitalleştirin"
+        };
+      case 'sector-health':
+        return {
+          desc: "Hasta verilerinin güvenliğinin en kritik olduğu sağlık sektöründe; KVKK ve GDPR uyumlu çalışan, hasta randevu, e-reçete ve tahlil süreçlerini bir araya getiren bulut tabanlı Klinik ve Hastane Bilgi Sistemleri (HBS) geliştiriyoruz.",
+          features: [
+            { title: "Dijital Hasta Kayıt ve Triyaj", detail: "Kağıtsız hastane vizyonuyla hastaların tıbbi geçmişinin, tahlillerinin ve tedavilerinin uçtan uca dijital arşivlendiği portal." },
+            { title: "Akıllı Randevu ve Hatırlatma Sistemi", detail: "Doktor takvimlerinin online portallarla senkronize olduğu, SMS/WhatsApp üzerinden otomatik hatırlatma yapan randevu altyapısı." },
+            { title: "Görüntüleme ve Laboratuvar Entegrasyonu", detail: "Röntgen, MR ve kan testi cihazlarının sonuçlarını doğrudan hasta profiline ve doktorun ekranına yansıtan API entegrasyonu." },
+            { title: "Kriptografik Veri Güvenliği", detail: "Sağlık verilerinin şifrelenmiş veri tabanlarında (Encryption at Rest) tutulmasını sağlayan üst düzey siber güvenlik standartları." }
+          ],
+          cta: "Klinik Yazılımınızı Bize Emanet Edin"
+        };
+      case 'sector-education':
+        return {
+          desc: "Öğrenci işlerinin, akademik süreçlerin ve tahsilat yönetiminin karmaşıklığını ortadan kaldıran; veli, öğretmen ve yönetici odaklı modern Eğitim ve Öğrenme Yönetim (LMS) portalları kurguluyoruz.",
+          features: [
+            { title: "E-Öğrenme ve Canlı Ders Modülü", detail: "Video eğitimlerin, pdf dökümanların sunulduğu, Zoom entegreli canlı ders sınıflarının planlandığı dijital akademi platformu." },
+            { title: "Sınav Analiz ve Kazanım Raporlama", detail: "Optik veya online sınav sonuçlarını analiz ederek öğrencinin konu bazlı (kazanım) zayıflıklarını çıkartan yapay zeka destekli analiz." },
+            { title: "Veli Bilgilendirme Ekranları", detail: "Velilerin çocuklarının devamsızlık durumlarını, yemek menülerini ve etkinlikleri akıllı telefonundan anlık takip edebildiği mobil portallar." },
+            { title: "Okul Tahsilat ve Sanal Pos Entegrasyonu", detail: "Kayıt ücretleri, taksitler ve yemekhane ödemelerinin veliler tarafından güvenli ödeme ağ geçitleriyle anlık ödenebildiği finans modülü." }
+          ],
+          cta: "Eğitim Kurumunuzu Dijitalleştirin"
         };
       default:
         return null;
