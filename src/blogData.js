@@ -250,5 +250,110 @@ export const blogPosts = [
     "kasautomatisering software",
     "precision farming Vlaanderen"
   ]
+},
+{
+  "id": "toekomst-douane-aangiftes-antwerpen",
+  "title": "De Toekomst van Douane-aangiftes in Antwerpen met API's",
+  "category": "Logistiek & Douane",
+  "date": "10 Juli 2024",
+  "readTime": "6 min lees",
+  "description": "Ontdek hoe moderne douane API-integraties de vertragingen in de Antwerpse haven minimaliseren en supply chains versnellen.",
+  "content": "<p>De haven van Antwerpen is het kloppend hart van de Europese handel. Met de toenemende complexiteit van Brexit en nieuwe Europese douaneregels, wordt het handmatig verwerken van aangiftes onmogelijk. API's (Application Programming Interfaces) bieden de uitweg.</p>\n<h2>Geautomatiseerde Douane-afhandeling</h2>\n<p>In plaats van data over te typen in verschillende systemen, zorgen douane-API's voor een directe, beveiligde verbinding tussen uw WMS (Warehouse Management System) en de douaneautoriteiten. Zodra een container de haven bereikt, of nog voor vertrek, wordt de documentatie automatisch gevalideerd.</p>\n<h3>Voordelen voor Antwerpse Expediteurs</h3>\n<ul>\n<li><strong>Snellere Doorloop:</strong> Verminder wachttijden bij de terminals aanzienlijk door proactieve inklaring.</li>\n<li><strong>Foutreductie:</strong> Handmatige invoerfouten leiden vaak tot boetes of vertragingen. API's elimineren deze menselijke foutenmarge tot bijna nul.</li>\n<li><strong>Real-time Tracking:</strong> Volg de status van uw aangiftes live via op maat gemaakte dashboards.</li>\n</ul>\n<h2>Onze Expertise</h2>\n<p>DZY Digital ontwikkelt veilige middleware en API-koppelingen die naadloos integreren met de systemen van de Belgische douane. Beveilig uw logistieke toekomst vandaag nog.</p>\n",
+  "tags": [
+    "API",
+    "Logistiek",
+    "Douane",
+    "Antwerpen"
+  ],
+  "seoKeywords": [
+    "douane API integratie",
+    "Antwerpen logistiek software",
+    "expediteur software België",
+    "geautomatiseerde douaneaangifte"
+  ]
+},
+{
+  "id": "lokale-hr-software-vlaamse-kmo",
+  "title": "Waarom Lokale HR-Software Beter Werkt voor Vlaamse KMO's",
+  "category": "HR Tech",
+  "date": "18 Juli 2024",
+  "readTime": "7 min lees",
+  "description": "De Belgische sociale wetgeving is complex. Standaard internationale HR-pakketten schieten tekort voor de specifieke noden van Vlaamse KMO's.",
+  "content": "<p>Van paritaire comités tot maaltijdcheques en complexe verlofregelingen: de Belgische loon- en arbeidswetgeving is een labyrint. Grote internationale HR-platformen proberen dit vaak te stroomlijnen, maar missen de lokale nuance die cruciaal is voor foutloze verloning.</p>\n<h2>De Valkuilen van Globale Oplossingen</h2>\n<p>Veel Vlaamse KMO's lopen tegen de grenzen aan van software die gebouwd is voor de Amerikaanse of bredere Europese markt. Integraties met lokale sociale secretariaten zoals SD Worx, Acerta of Liantis ontbreken vaak of werken via omslachtige exportbestanden.</p>\n<h3>Maatwerk HR-Dashboards</h3>\n<p>Door te kiezen voor een op maat gemaakt HR-systeem, of een portal dat perfect geïntegreerd is met uw sociale secretariaat, bespaart uw HR-afdeling zeeën van tijd:</p>\n<ul>\n<li><strong>Directe Koppelingen:</strong> Stuur ziektebriefjes en gewerkte uren via veilige API's rechtstreeks naar uw loonverwerker.</li>\n<li><strong>Belgische Conformiteit:</strong> Software die automatisch rekening houdt met specifieke cao's en indexeringen.</li>\n<li><strong>Medewerkersportaal:</strong> Een intuïtieve mobiele app voor werknemers om verlof aan te vragen en loonbrieven te raadplegen.</li>\n</ul>\n<h2>Conclusie</h2>\n<p>Lokaal maatwerk in HR-tech is geen luxe, maar een noodzaak voor efficiëntie. DZY Digital bouwt de bruggen tussen uw bedrijfsvoering en de Belgische wetgeving.</p>\n",
+  "tags": [
+    "HR Tech",
+    "KMO",
+    "Vlaanderen",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "HR software Vlaanderen",
+    "SD Worx integratie",
+    "Belgische loonadministratie software",
+    "KMO HR tech"
+  ]
+},
+{
+  "id": "groene-technologie-esg-rapportage",
+  "title": "Groene Technologie: Hoe Software Helpt bij ESG-Rapportage",
+  "category": "Duurzaamheid",
+  "date": "24 Juli 2024",
+  "readTime": "8 min lees",
+  "description": "Met de nieuwe Europese ESG-richtlijnen wordt duurzaamheidsrapportage verplicht. Hoe cloudsoftware u helpt om aan deze normen te voldoen.",
+  "content": "<p>Environmental, Social, and Governance (ESG) is niet langer enkel een zorg voor beursgenoteerde bedrijven. Met de invoering van de CSRD (Corporate Sustainability Reporting Directive) worden ook veel Vlaamse en Antwerpse bedrijven verplicht om transparant te rapporteren over hun ecologische voetafdruk.</p>\n<h2>De Data-uitdaging</h2>\n<p>Het verzamelen van data over energieverbruik, afvalbeheer en supply chain emissies is een gigantische administratieve taak als dit via spreadsheets verloopt. Er is behoefte aan geautomatiseerde datacollectie.</p>\n<h3>Smart Dashboards voor Duurzaamheid</h3>\n<p>Bij DZY Digital ontwikkelen we op maat gemaakte ESG-dashboards die naadloos integreren met uw bestaande ERP- en IoT-systemen:</p>\n<ul>\n<li><strong>Real-time Emissiemonitoring:</strong> Sensoren meten het energieverbruik van uw fabrieken of kantoorgebouwen en vertalen dit direct naar CO2-equivalenten.</li>\n<li><strong>Geautomatiseerde Rapportage:</strong> Genereer met één klik rapporten die voldoen aan de Europese CSRD-standaarden.</li>\n<li><strong>Supply Chain Transparantie:</strong> Traceer de milieu-impact van uw leveranciers via beveiligde data-uitwisselingsplatformen.</li>\n</ul>\n<h2>Conclusie</h2>\n<p>Duurzaamheid begint bij inzicht. Maatwerksoftware maakt de transitie naar een groene bedrijfsvoering meetbaar, beheersbaar en conform de Europese wetgeving.</p>\n",
+  "tags": [
+    "ESG",
+    "Duurzaamheid",
+    "CSRD",
+    "Cloud"
+  ],
+  "seoKeywords": [
+    "ESG rapportage software",
+    "CSRD software België",
+    "duurzaamheid dashboards",
+    "CO2 monitoring software"
+  ]
+},
+{
+  "id": "slimme-magazijnen-wms-concurrentievoordeel",
+  "title": "Slimme Magazijnen: WMS Systemen als Concurrentievoordeel",
+  "category": "Logistiek & Magazijn",
+  "date": "02 Augustus 2024",
+  "readTime": "6 min lees",
+  "description": "De e-commerce boom vereist snellere leveringen. Hoe een geavanceerd Warehouse Management System (WMS) uw magazijn in Vlaanderen transformeert.",
+  "content": "<p>De verwachtingen van consumenten en B2B-klanten liggen hoger dan ooit: \"Vandaag besteld, morgen geleverd\" is de norm. Magazijnen die nog opereren op basis van papieren picklijsten verliezen de strijd om de klant.</p>\n<h2>Van Papier naar Cloud</h2>\n<p>Een modern Warehouse Management System (WMS) digitaliseert elke stap van de magazijnvloer. Door gebruik te maken van barcodescanners, RFID-technologie en cloud-databases, weet u op elk moment tot op het item nauwkeurig wat uw voorraad is en waar het zich bevindt.</p>\n<h3>Voordelen van een Maatwerk WMS</h3>\n<ul>\n<li><strong>Geoptimaliseerde Pickroutes:</strong> Algoritmes berekenen de kortste looproute voor orderpickers, wat de efficiëntie met soms wel 40% verhoogt.</li>\n<li><strong>Real-time Inventarisatie:</strong> Voorkom 'out-of-stock' verkopen door directe synchronisatie met uw webshop of ERP-systeem.</li>\n<li><strong>Foutloze Verzending:</strong> Scan-verificatie bij het inpakken zorgt ervoor dat de juiste producten in de juiste doos belanden.</li>\n</ul>\n<h2>DZY Digital in Actie</h2>\n<p>Wij bouwen WMS-oplossingen die exact passen bij uw logistieke flow, of u nu kleine consumentenelektronica of grote industriële onderdelen verwerkt in de regio Antwerpen.</p>\n",
+  "tags": [
+    "WMS",
+    "Magazijn",
+    "Logistiek",
+    "E-commerce"
+  ],
+  "seoKeywords": [
+    "WMS systeem België",
+    "magazijn software op maat",
+    "orderpicking optimalisatie",
+    "RFID magazijn software"
+  ]
+},
+{
+  "id": "blockchain-supply-chain-antwerpen",
+  "title": "Blockchain in de Antwerpse Haven: Transparantie in de Supply Chain",
+  "category": "Blockchain & Innovatie",
+  "date": "10 Augustus 2024",
+  "readTime": "7 min lees",
+  "description": "Blockchain is meer dan crypto. Ontdek hoe distributed ledger technologie (DLT) logistieke ketens beveiligt tegen fraude en documentenvervalsing.",
+  "content": "<p>In complexe internationale supply chains zijn vertrouwen en transparantie vaak ver te zoeken. Zendingen wisselen talloze keren van eigenaar, en papieren documenten zoals Bill of Ladings zijn gevoelig voor fraude en vertragingen. Hier biedt Blockchain-technologie een revolutionaire oplossing.</p>\n<h2>Distributed Ledger Technologie (DLT)</h2>\n<p>Blockchain functioneert als een gedecentraliseerd, onveranderbaar digitaal grootboek. Zodra informatie over een container, certificaat of temperatuurmeting op de blockchain wordt vastgelegd, kan deze niet meer ongemerkt worden gewijzigd.</p>\n<h3>Toepassingen in Logistiek</h3>\n<ul>\n<li><strong>Smart Contracts:</strong> Betalingen tussen expediteurs en transporteurs worden automatisch uitgevoerd zodra een GPS-sensor bevestigt dat de goederen zijn afgeleverd.</li>\n<li><strong>Oorsprongscertificaten:</strong> Voorkom vervalsing van dure goederen (zoals diamanten in Antwerpen) door de volledige herkomstgeschiedenis digitaal en cryptografisch vast te leggen.</li>\n<li><strong>Papierloze Handel:</strong> Veilige, onmiddellijke overdracht van eigendomsdocumenten zonder de noodzaak voor fysieke koeriersdiensten.</li>\n</ul>\n<h2>Innovatie met DZY Digital</h2>\n<p>Onze ontwikkelaars ontwerpen private blockchain-netwerken (zoals Hyperledger) specifiek voor enterprise consortia in de Antwerpse logistieke sector om vertrouwen te digitaliseren.</p>\n",
+  "tags": [
+    "Blockchain",
+    "Supply Chain",
+    "Antwerpen",
+    "Innovatie"
+  ],
+  "seoKeywords": [
+    "blockchain logistiek Antwerpen",
+    "smart contracts supply chain",
+    "digitale bill of lading",
+    "distributed ledger haven"
+  ]
 }
 ];
