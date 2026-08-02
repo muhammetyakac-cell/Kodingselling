@@ -670,5 +670,110 @@ export const blogPosts = [
     "OEE verhogen software",
     "Excel vervangen productie"
   ]
+},
+{
+  "id": "digitale-handtekening-contractbeheer",
+  "title": "Contractbeheer in de Cloud: Waarom Digitale Handtekeningen de Norm Zijn",
+  "category": "Legal & Administratie",
+  "date": "02 December 2024",
+  "readTime": "6 min lees",
+  "description": "Papieren contracten per post versturen is traag en onveilig. Hoe e-signatures en contract management software de B2B-sector versnellen.",
+  "content": "<p>Het sluiten van een zakelijke deal duurt vaak langer door de administratie eromheen dan door de daadwerkelijke onderhandeling. Het printen, ondertekenen, scannen en terugsturen van documenten is een frustrerend en tijdrovend proces voor zowel u als uw klant.</p>\n<h2>De Wettelijke Waarde van e-Signatures</h2>\n<p>In Europa regelt de eIDAS-verordening de geldigheid van digitale handtekeningen. Een geavanceerde of gekwalificeerde elektronische handtekening (zoals via itsme in België) heeft exact dezelfde juridische waarde als een handgeschreven handtekening, maar is veel veiliger door encryptie.</p>\n<h3>Slim Contractbeheer (CLM)</h3>\n<p>Het gaat niet alleen om de handtekening. Een Contract Lifecycle Management (CLM) systeem biedt:</p>\n<ul>\n<li><strong>Sjablonen:</strong> Genereer NDA's en verkoopcontracten met één klik vanuit uw CRM.</li>\n<li><strong>Geautomatiseerde Herinneringen:</strong> Krijg automatisch bericht wanneer een contract (zoals een huur- of licentieovereenkomst) dreigt af te lopen.</li>\n<li><strong>Centrale Opslag:</strong> Alle getekende documenten veilig, doorzoekbaar en GDPR-conform opgeslagen in de cloud.</li>\n</ul>\n<h2>Versnel Uw Sales Cycle</h2>\n<p>DZY Digital integreert e-signature API's (zoals DocuSign of Connective) rechtstreeks in uw webapplicaties. Zo sluit u deals in minuten in plaats van dagen.</p>\n",
+  "tags": [
+    "Digitale Handtekening",
+    "Contracten",
+    "Administratie",
+    "Legal"
+  ],
+  "seoKeywords": [
+    "digitale handtekening integratie",
+    "contract management software België",
+    "itsme integratie",
+    "e-signature KMO"
+  ]
+},
+{
+  "id": "e-health-belgie-patientenervaring",
+  "title": "e-Health in België: De Transformatie van de Patiëntervaring",
+  "category": "Zorg & HealthTech",
+  "date": "10 December 2024",
+  "readTime": "8 min lees",
+  "description": "De zorg digitaliseert in sneltempo. Van teleconsultaties tot gezondheidsapps: hoe e-Health de Belgische patiënt centraal stelt.",
+  "content": "<p>De zorgsector in België staat onder druk door een vergrijzende bevolking en personeelstekorten. e-Health oplossingen bieden de noodzakelijke ademruimte door efficiëntie te verhogen en de zorg toegankelijker te maken voor de patiënt.</p>\n<h2>Voorbij het Traditionele Doktersbezoek</h2>\n<p>Gezondheidszorg vindt steeds vaker op afstand plaats. Telemedicine platforms stellen artsen in staat om veilige videoconsultaties te voeren. Dit bespaart reistijd voor de patiënt en optimaliseert de agenda van de specialist.</p>\n<h3>Beveiligde Gezondheidsportalen</h3>\n<ul>\n<li><strong>Toegang tot het Medisch Dossier:</strong> Patiënten hebben steeds vaker de wens (én het recht) om hun labresultaten, vaccinaties en voorschriften digitaal in te zien via eHealth-platform integraties.</li>\n<li><strong>Remote Patient Monitoring (RPM):</strong> Patiënten met chronische aandoeningen meten hun vitale functies (zoals bloeddruk) thuis via slimme apparaten. Deze data wordt direct en veilig (GDPR/KVKK-conform) naar de specialist gestuurd.</li>\n<li><strong>Digitaal Triage Systeem:</strong> Patiënten vullen vooraf hun symptomen in via een beveiligde app, waardoor de arts sneller en gerichter kan diagnosticeren.</li>\n</ul>\n<h2>Onze Zorgtechnologie</h2>\n<p>DZY Digital bouwt medische applicaties waarbij databeveiliging en gebruiksvriendelijkheid voor oudere patiënten hand in hand gaan. Wij maken de zorg van morgen vandaag mogelijk.</p>\n",
+  "tags": [
+    "e-Health",
+    "Zorg",
+    "HealthTech",
+    "GDPR"
+  ],
+  "seoKeywords": [
+    "e-health software België",
+    "telemedicine app ontwikkeling",
+    "patiëntenportaal KMO",
+    "medische applicatie bouwen"
+  ]
+},
+{
+  "id": "omnichannel-retail-fysiek-online",
+  "title": "Omnichannel Retail: Verbind uw Fysieke Winkel met E-commerce",
+  "category": "Retail & E-commerce",
+  "date": "18 December 2024",
+  "readTime": "7 min lees",
+  "description": "Retailers verliezen klanten door gescheiden systemen. Ontdek hoe Omnichannel software online en offline verkoop naadloos integreert.",
+  "content": "<p>Consumenten denken niet in kanalen (fysiek versus online); ze denken aan merken. Een klant verwacht dat hij online kan zien of een jas op voorraad is in uw winkel in Antwerpen, deze daar kan reserveren (Click & Collect) en eventueel later via de post kan retourneren. Dat is Omnichannel Retail.</p>\n<h2>Het Gevaar van Gescheiden Silo's</h2>\n<p>Veel Belgische retailers hebben een kassa-systeem (POS) in de winkel en een aparte webshop (bijv. Shopify of Magento). Als deze twee niet real-time communiceren, verkoopt u online producten die in de winkel net zijn afgerekend. Dit leidt tot geannuleerde bestellingen en boze klanten.</p>\n<h3>De Omnichannel Oplossing</h3>\n<p>Door uw POS en e-commerce te verbinden via een gecentraliseerd ERP- of PIM-systeem (Product Information Management), creëert u één enkele bron van waarheid:</p>\n<ul>\n<li><strong>Real-time Voorraad:</strong> Zodra de scanner bij de kassa piept, wordt het product online als 'uitverkocht' gemarkeerd.</li>\n<li><strong>Gecentraliseerde Klantendata:</strong> Spaarpunten (loyalty) verdiend in de winkel, kunnen probleemloos online worden ingewisseld.</li>\n<li><strong>Endless Aisle:</strong> Is een maat niet op voorraad in de winkel? De verkoper bestelt het direct via een tablet vanuit het magazijn, waarna het de volgende dag bij de klant thuis wordt geleverd.</li>\n</ul>\n<h2>Maak uw Retail Toekomstbestendig</h2>\n<p>DZY Digital bouwt de middleware en API-koppelingen die uw fysieke kassa's verbinden met de cloud. Geef uw klanten de ultieme, kanaalonafhankelijke winkelervaring.</p>\n",
+  "tags": [
+    "Omnichannel",
+    "Retail",
+    "E-commerce",
+    "POS"
+  ],
+  "seoKeywords": [
+    "omnichannel retail België",
+    "POS webshop integratie",
+    "click and collect software",
+    "voorraadbeheer retail"
+  ]
+},
+{
+  "id": "cloud-migratie-voorkom-dataverlies-kmo",
+  "title": "Cloud Migratie voor KMO's: Veilig Naar De Cloud Zonder Dataverlies",
+  "category": "Cloud & Infrastructuur",
+  "date": "04 Januari 2025",
+  "readTime": "6 min lees",
+  "description": "Lokale servers (on-premise) zijn duur en kwetsbaar. Een stappenplan voor een succesvolle, veilige migratie naar de cloud voor Belgische bedrijven.",
+  "content": "<p>De zoemende serverkast in een stoffige bezemkast behoort tot het verleden. Naast de hoge onderhouds- en stroomkosten, vormen on-premise servers een enorm risico bij brand, diefstal of een cyberaanval. De stap naar de cloud is onvermijdelijk.</p>\n<h2>Waarom Nu Migreren?</h2>\n<p>Moderne cloud-oplossingen (zoals AWS, Google Cloud of Azure) bieden schaalbaarheid en veiligheidsstandaarden die voor een individuele KMO onbetaalbaar zouden zijn om zelf op te zetten.</p>\n<h3>Het Migratie Stappenplan</h3>\n<p>Een cloud-migratie voelt vaak als een openhartoperatie voor een bedrijf. Bij DZY Digital hanteren we een strikte methode om uitval (downtime) te minimaliseren:</p>\n<ul>\n<li><strong>Audit & Mapping:</strong> We analyseren uw huidige databases, applicaties en de netwerkarchitectuur om afhankelijkheden in kaart te brengen.</li>\n<li><strong>Refactoring (Optioneel):</strong> Waar mogelijk herbouwen we verouderde 'monolithische' applicaties naar wendbare microservices.</li>\n<li><strong>Gefaseerde Migratie:</strong> We verplaatsen data in stappen, vaak met een tijdelijke hybride opzet, waarbij we voortdurend testen op integriteit en snelheid.</li>\n</ul>\n<h2>Veiligheid als Fundament</h2>\n<p>Gegevens in de cloud zijn veilig, mits de architectuur correct is opgezet met geautomatiseerde back-ups, encryptie en strikte Identity Access Management (IAM). Laat uw migratie over aan de cloud-architecten van DZY Digital in Antwerpen.</p>\n",
+  "tags": [
+    "Cloud",
+    "Migratie",
+    "AWS",
+    "Infrastructuur"
+  ],
+  "seoKeywords": [
+    "cloud migratie KMO België",
+    "on premise naar cloud",
+    "data migratie Antwerpen",
+    "veilig naar de cloud"
+  ]
+},
+{
+  "id": "voip-integratie-slimmer-bellen-crm",
+  "title": "VoIP Integratie: Slimmer Bellen vanuit uw CRM",
+  "category": "Communicatie & CRM",
+  "date": "11 Januari 2025",
+  "readTime": "6 min lees",
+  "description": "Verlies geen tijd meer met het intypen van telefoonnummers of het zoeken naar klantinformatie tijdens een gesprek. Integreer telefonie in uw software.",
+  "content": "<p>Klanten verwachten een snelle en persoonlijke service. Als uw sales- of supportteam bij elke inkomende oproep eerst de klantnaam moet spellen om vervolgens in drie systemen naar de bestelhistorie te zoeken, verliest u zowel tijd als geloofwaardigheid.</p>\n<h2>De Kracht van CTI (Computer Telephony Integration)</h2>\n<p>Voice over IP (VoIP) stelt u in staat om te bellen via het internet. De echte waarde ontstaat echter pas wanneer u dit telefoniesysteem (zoals 3CX of RingCentral) integreert met uw CRM- of helpdesksoftware.</p>\n<h3>Functionaliteiten van een CRM-VoIP Koppeling</h3>\n<ul>\n<li><strong>Click-to-Call:</strong> Klik op een telefoonnummer in uw CRM en uw headset begint direct te bellen. Geen typefouten meer.</li>\n<li><strong>Klantherkenning (Screen Pop-up):</strong> Bij een inkomende oproep opent het klantdossier automatisch op uw scherm nog vóórdat u opneemt. U begroet de klant direct met naam en ziet zijn laatste aankoop.</li>\n<li><strong>Automatische Call Logging:</strong> Elk gesprek wordt gelogd in de tijdlijn van de klant, inclusief tijdsduur en (indien toegestaan) de spraakopname.</li>\n</ul>\n<h2>Verhoog uw Conversie en Service</h2>\n<p>DZY Digital bouwt maatwerk API-koppelingen tussen populaire Belgische VoIP-providers en uw bedrijfssoftware. Transformeer uw telefoonsysteem van een kostenpost naar een commercieel wapen.</p>\n",
+  "tags": [
+    "VoIP",
+    "CRM",
+    "Communicatie",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "VoIP CRM integratie",
+    "click to call software",
+    "CTI integratie België",
+    "klantenservice automatisering"
+  ]
 }
 ];

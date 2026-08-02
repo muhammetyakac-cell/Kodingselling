@@ -1,5 +1,5 @@
 import React from 'react';
-import {
+import { Phone,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
 } from 'lucide-react';
 
@@ -249,6 +249,36 @@ export const servicesData = [
   title: 'Productie Planning Systemen (APS)',
   desc: 'Dynamische Advanced Planning & Scheduling (APS) software ter vervanging van Excel.',
   fullDesc: 'Optimaliseer uw fabrieksvloer. Onze APS-systemen berekenen real-time de meest efficiënte productieroutes op basis van machinecapaciteit, personeelsbeschikbaarheid en materiaalvoorraad. Verminder stilstand en simuleer "what-if" scenario\'s met intelligente algoritmes.'
+},
+{
+  icon: <Building className="w-6 h-6 text-indigo-500" />,
+  title: 'Digitale Handtekeningen & CLM',
+  desc: 'Contract Lifecycle Management met rechtsgeldige e-signature (itsme) integraties.',
+  fullDesc: 'Versnel uw verkoopproces drastisch. Wij integreren veilige e-signature API\'s direct in uw portalen. Daarnaast bouwen we systemen voor Contract Lifecycle Management (CLM) die contracten automatisch genereren, veilig archiveren en u waarschuwen bij naderende vervaldata.'
+},
+{
+  icon: <Activity className="w-6 h-6 text-rose-500" />,
+  title: 'Zorg & e-Health Oplossingen',
+  desc: 'Beveiligde patiëntenportalen en telemedicine applicaties (KVKK/GDPR conform).',
+  fullDesc: 'Digitaliseer de Belgische zorg met onze op maat gemaakte e-Health platformen. Van videoconsultaties (telemedicine) tot applicaties voor Remote Patient Monitoring en elektronische voorschriften. Alles gebouwd met de hoogste medische databeveiliging.'
+},
+{
+  icon: <Store className="w-6 h-6 text-fuchsia-500" />,
+  title: 'Omnichannel Retail Integraties',
+  desc: 'Verbind fysieke kassa\'s (POS) met e-commerce voor gecentraliseerd voorraadbeheer.',
+  fullDesc: 'Bied uw klanten een naadloze winkelervaring. Wij koppelen uw offline kassasystemen in Antwerpen of daarbuiten aan uw webshop en ERP. Dit zorgt voor real-time voorraadupdates, Click & Collect mogelijkheden en een gecentraliseerd spaarpuntensysteem.'
+},
+{
+  icon: <Database className="w-6 h-6 text-sky-500" />,
+  title: 'Cloud Migratie & Architectuur',
+  desc: 'Veilige migratie van uw on-premise data naar wendbare cloud-infrastructuur (AWS/Azure).',
+  fullDesc: 'Maak uw IT-infrastructuur toekomstbestendig. Wij begeleiden uw KMO bij de volledige migratie naar de cloud, zonder dataverlies of merkbare downtime. We optimaliseren uw databases en zorgen voor geautomatiseerde back-ups en ijzersterke netwerkbeveiliging.'
+},
+{
+  icon: <Phone className="w-6 h-6 text-emerald-500" />,
+  title: 'VoIP & Unified Communications',
+  desc: 'Integreer cloud-telefonie naadloos met uw CRM- en supportsoftware.',
+  fullDesc: 'Optimaliseer uw klantenservice met CTI (Computer Telephony Integration). Wij bouwen API-bruggen tussen uw VoIP-centrale en uw bedrijfssoftware. Geniet van functionaliteiten zoals Click-to-Call, automatische klantdossier pop-ups en gecentraliseerde gesprekslogs.'
 }
 
 ];
