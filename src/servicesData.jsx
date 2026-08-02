@@ -369,6 +369,36 @@ export const servicesData = [
   title: 'Peppol e-Invoicing Integratie',
   desc: 'Maak uw facturatiesysteem klaar voor de Belgische B2B e-Invoicing verplichting.',
   fullDesc: 'Voorkom boetes en versnel betalingen. Wij integreren UBL- en Peppol-standaarden direct in uw ERP- of maatwerk facturatiesoftware. Verzend en ontvang gestructureerde, fraudebestendige elektronische facturen volledig automatisch via beveiligde Access Points.'
+},
+{
+  icon: <Database className="w-6 h-6 text-indigo-500" />,
+  title: 'Document Management (DMS)',
+  desc: 'Veilige, doorzoekbare cloud-archieven met geavanceerd versiebeheer.',
+  fullDesc: 'Maak komaf met versnipperde netwerkschijven. Wij implementeren Document Management Systemen (DMS) met OCR-doorzoekbaarheid, strikte toegangsrechten (RLS) en versiebeheer, waardoor u bedrijfsdocumenten en contracten altijd in seconden terugvindt.'
+},
+{
+  icon: <Clock className="w-6 h-6 text-rose-500" />,
+  title: 'Urenregistratie & Payroll Software',
+  desc: 'Digitale prikklokken en mobiele apps, direct gekoppeld aan uw sociaal secretariaat.',
+  fullDesc: 'Digitaliseer uw uren- en verlofregistratie. Onze maatwerk apps sturen goedgekeurde urenstaten en GPS-locaties foutloos en volautomatisch door naar Belgische loonverwerkers (zoals SD Worx en Acerta) voor een stressvrije loonrun.'
+},
+{
+  icon: <Network className="w-6 h-6 text-emerald-500" />,
+  title: 'B2B Matching & Marktplaatsen',
+  desc: 'Schaalbare platform-architecturen voor het delen van capaciteit en diensten.',
+  fullDesc: 'Betreed de platformeconomie. Wij ontwerpen complexe B2B-marktplaatsen die vraag en aanbod naadloos verbinden. Inclusief veilige betalingsafhandeling (escrow via Stripe), robuuste zoekalgoritmes en reviewsystemen om vertrouwen op te bouwen.'
+},
+{
+  icon: <Shield className="w-6 h-6 text-sky-600" />,
+  title: 'Digitale HACCP & Kwaliteitshandboeken',
+  desc: 'Borg voedselveiligheid via IoT-sensoren en mobiele compliance-apps.',
+  fullDesc: 'Vergeet papieren lijsten. Wij bouwen digitale HACCP-applicaties voor de voedingsindustrie. Integreer IoT-temperatuursensoren voor automatische alarmering en borg de volledige traceerbaarheid, zodat u altijd 100% voorbereid bent op een FAVV-controle.'
+},
+{
+  icon: <ShoppingCart className="w-6 h-6 text-amber-500" />,
+  title: 'E-Procurement & Inkoopsoftware',
+  desc: 'Centraliseer uw uitgaven met geautomatiseerde bestel- en goedkeuringsstromen.',
+  fullDesc: 'Krijg grip op uw "Maverick Buying". We ontwikkelen e-procurement portalen (inclusief PunchOut-catalogi) met budgetbeheer, geautomatiseerde goedkeuringsworkflows voor Purchase Orders en automatische factuurcontrole (Three-Way Matching).'
 }
 
 ];

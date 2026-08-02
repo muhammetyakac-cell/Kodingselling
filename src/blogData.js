@@ -1090,5 +1090,110 @@ export const blogPosts = [
     "UBL facturatie software",
     "ERP facturatie koppeling"
   ]
+},
+{
+  "id": "document-management-systeem-dms-vlaanderen",
+  "title": "Nooit Meer Zoeken: De Kracht van een Document Management Systeem (DMS)",
+  "category": "Administratie & DMS",
+  "date": "10 Mei 2025",
+  "readTime": "6 min lees",
+  "description": "Verlies geen uren meer aan het zoeken naar de juiste versie van een contract. Hoe een cloud-gebaseerd DMS uw bestandsbeheer stroomlijnt.",
+  "content": "<p>In veel Vlaamse bedrijven worden documenten opgeslagen in een wirwar van lokale servers, gedeelde mappen en e-mailbijlagen. Dit leidt tot versieconflicten (\"Contract_V3_final_echt_final.docx\") en enorme tijdsverspilling. Een Document Management System (DMS) brengt structuur.</p>\n<h2>Centrale en Veilige Opslag</h2>\n<p>Een modern DMS fungeert als de enige bron van waarheid voor uw bedrijf. Documenten worden niet zomaar opgeslagen, maar geïndexeerd met metadata, zodat u een specifiek leverancierscontract uit 2021 in twee seconden terugvindt.</p>\n<h3>Functies van een Maatwerk DMS</h3>\n<ul>\n<li><strong>Versiebeheer (Version Control):</strong> Als een collega een document bewerkt, wordt de oude versie bewaard. U weet altijd wie, wat en wanneer heeft gewijzigd.</li>\n<li><strong>OCR-doorzoekbaarheid:</strong> Zelfs ingescande PDF's of afbeeldingen van facturen worden door de software gelezen, waardoor u op specifieke woorden in het document kunt zoeken.</li>\n<li><strong>Toegangsrechten (RLS):</strong> Gevoelige HR- of managementdocumenten zijn automatisch afgeschermd voor onbevoegden op basis van hun rol.</li>\n</ul>\n<h2>Compliance en Efficiëntie</h2>\n<p>DZY Digital implementeert veilige DMS-omgevingen die niet alleen tijd besparen, maar er ook voor zorgen dat u voldoet aan de wettelijke bewaartermijnen en GDPR-vereisten.</p>\n",
+  "tags": [
+    "DMS",
+    "Documentbeheer",
+    "Administratie",
+    "Cloud"
+  ],
+  "seoKeywords": [
+    "Document Management Systeem België",
+    "DMS software KMO",
+    "OCR documentbeheer",
+    "digitaal archief software"
+  ]
+},
+{
+  "id": "urenregistratie-digitaliseren-loonverwerking",
+  "title": "Urenregistratie Digitaliseren: Foutloze Verloning in België",
+  "category": "HR Tech & Payroll",
+  "date": "17 Mei 2025",
+  "readTime": "7 min lees",
+  "description": "Handmatige urenbriefjes leiden tot discussies en foutieve loonberekeningen. Hoe digitale prikklokken en software integreren met sociale secretariaten.",
+  "content": "<p>Voor bedrijven in de bouw, horeca of logistiek is het correct bijhouden van gewerkte uren een dagelijkse strijd. Papieren urenbriefjes raken kwijt, zijn onleesbaar of worden te laat ingediend, wat resulteert in stress voor de HR-afdeling bij het naderen van de loonrun.</p>\n<h2>Van Papier naar Cloud-Registratie</h2>\n<p>Door de urenregistratie te digitaliseren via een mobiele app of een slimme prikklok (via badge of biometrie), wordt tijd exact geregistreerd op de werkvloer of op verplaatsing (via GPS-geofencing).</p>\n<h3>Naadloze Payroll Integratie</h3>\n<p>De ware kracht van deze software ligt in de koppeling met de Belgische loonverwerkers:</p>\n<ul>\n<li><strong>Automatische Berekeningen:</strong> Het systeem houdt automatisch rekening met overuren, nachtpremies en cao-specifieke regelingen.</li>\n<li><strong>Directe Export naar SD Worx of Acerta:</strong> Aan het eind van de maand worden de goedgekeurde uren met één druk op de knop, zonder foutmarge, doorgestuurd naar uw sociaal secretariaat.</li>\n<li><strong>Ziekte- en Verlofbeheer:</strong> Werknemers kunnen via dezelfde app verlof aanvragen of een doktersattest uploaden.</li>\n</ul>\n<h2>Tijd is Geld</h2>\n<p>DZY Digital bouwt robuuste tijdregistratiesystemen die het vertrouwen tussen werkgever en werknemer versterken en de administratieve last voor HR drastisch verlagen.</p>\n",
+  "tags": [
+    "HR Tech",
+    "Urenregistratie",
+    "Payroll",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "urenregistratie software België",
+    "digitale prikklok app",
+    "SD Worx integratie uren",
+    "verlofbeheer software KMO"
+  ]
+},
+{
+  "id": "b2b-matching-platforms-kmo",
+  "title": "De Platform Economie: Waarom KMO's B2B Matching Platforms Bouwen",
+  "category": "Platformen & Innovatie",
+  "date": "24 Mei 2025",
+  "readTime": "8 min lees",
+  "description": "Van het delen van bouwmachines tot freelance marktplaatsen. Hoe op maat gemaakte B2B-platformen nieuwe inkomstenstromen genereren.",
+  "content": "<p>De 'platform economie' (denk aan Uber of Airbnb) transformeert nu ook de B2B-markt. Bedrijven bezitten vaak onbenutte capaciteit, zoals machines die stilstaan, lege kantoorruimtes of gespecialiseerd personeel dat \"op de bank\" zit. B2B matching platforms bieden de oplossing.</p>\n<h2>Vraag en Aanbod Verbinden</h2>\n<p>Een matching platform brengt bedrijven met een specifieke nood direct in contact met bedrijven die overschot hebben. Dit creëert een nieuwe, schaalbare inkomstenstroom in de vorm van abonnementskosten of commissies per transactie.</p>\n<h3>Technische Vereisten voor een B2B Marktplaats</h3>\n<ul>\n<li><strong>Geavanceerde Zoekalgoritmes:</strong> Gebruikers moeten snel kunnen filteren op locatie, beschikbaarheid, certificeringen en prijs.</li>\n<li><strong>Escrow en B2B Betalingen:</strong> Veilige betalingsafhandeling (bijv. via Mollie of Stripe Connect) waarbij het geld pas wordt vrijgegeven als de dienst of het product naar behoren is geleverd.</li>\n<li><strong>Reviews en Vertrouwen:</strong> Een in-app reputatiesysteem om de kwaliteit van de aangesloten partners (vendors) te garanderen.</li>\n</ul>\n<h2>Bouw uw Eigen Marktplaats</h2>\n<p>Heeft u een visie om een gefragmenteerde B2B-markt in Vlaanderen te verenigen? DZY Digital ontwerpt de complexe back-end en de intuïtieve front-end die nodig zijn om uw platform succesvol te lanceren.</p>\n",
+  "tags": [
+    "Platformen",
+    "B2B",
+    "Marktplaats",
+    "Innovatie"
+  ],
+  "seoKeywords": [
+    "B2B marktplaats software",
+    "matching platform laten bouwen",
+    "B2B platform ontwikkeling België",
+    "Mollie Stripe Connect integratie"
+  ]
+},
+{
+  "id": "haccp-digitaliseren-voedselveiligheid",
+  "title": "HACCP Digitaliseren: Voedselveiligheid Zonder Papierwerk",
+  "category": "AgriTech & Voeding",
+  "date": "01 Juni 2025",
+  "readTime": "6 min lees",
+  "description": "Voedingsbedrijven en horeca verdrinken in temperatuurlijsten en schoonmaakroosters. Hoe digitale HACCP-apps de voedselveiligheid borgen.",
+  "content": "<p>Voedselveiligheid is ononderhandelbaar. De strenge HACCP-richtlijnen (Hazard Analysis and Critical Control Points) verplichten Belgische voedingsbedrijven om elke stap in hun proces nauwkeurig te loggen. Helaas gebeurt dit nog te vaak op vettige, onleesbare papieren in de keuken of fabriek.</p>\n<h2>De Risico's van Manuele Registratie</h2>\n<p>Papieren registraties worden vaak achteraf, uit het hoofd ingevuld. Dit ondergraaft de voedselveiligheid en leidt tot zware boetes bij een controle van het FAVV. Bovendien is er bij een calamiteit geen data beschikbaar om in te grijpen.</p>\n<h3>IoT en Digitale HACCP</h3>\n<p>Met een digitale HACCP-applicatie, gecombineerd met Internet of Things (IoT), wordt naleving eenvoudig:</p>\n<ul>\n<li><strong>Automatische Temperatuurmonitoring:</strong> Sensoren in de koelcellen sturen hun data direct naar de app. Wordt het te warm? De manager krijgt direct een push-notificatie.</li>\n<li><strong>Digitale Schoonmaakroosters:</strong> Medewerkers vinken taken af op een tablet en ondertekenen digitaal.</li>\n<li><strong>Traceerbaarheid van Lotnummers:</strong> Scan binnengekomen ingrediënten met een barcode en koppel deze automatisch aan uw eindproduct voor sluitende traceerbaarheid.</li>\n</ul>\n<h2>Gegarandeerde Compliance</h2>\n<p>DZY Digital bouwt robuuste applicaties die uw HACCP-verplichtingen transformeren van een administratieve last naar een geautomatiseerd, waterdicht proces.</p>\n",
+  "tags": [
+    "HACCP",
+    "Voedingsindustrie",
+    "FAVV",
+    "IoT"
+  ],
+  "seoKeywords": [
+    "digitale HACCP app",
+    "voedselveiligheid software",
+    "temperatuurregistratie IoT",
+    "FAVV compliance software"
+  ]
+},
+{
+  "id": "e-procurement-inkoopsoftware-kosten-besparen",
+  "title": "Grip op Kosten: Waarom E-Procurement Software Onmisbaar Is",
+  "category": "Finance & Inkoop",
+  "date": "08 Juni 2025",
+  "readTime": "7 min lees",
+  "description": "Gedecentraliseerde aankopen (Maverick Buying) kosten KMO's veel geld. Hoe een centraal e-procurement platform inkoopstromen controleert.",
+  "content": "<p>In veel groeiende bedrijven koopt elke afdeling zijn eigen benodigdheden: van kantoorartikelen tot zware IT-hardware. Zonder gecentraliseerd systeem (Maverick Buying) mist het bedrijf volumekortingen en verliest de CFO het overzicht over de uitgaven totdat de factuur binnenkomt.</p>\n<h2>Centrale Inkoop via E-Procurement</h2>\n<p>E-Procurement software centraliseert alle inkoopaanvragen (Purchase Requisitions) op één platform. Medewerkers kunnen alleen bestellen uit goedgekeurde catalogi van vaste leveranciers (PunchOut catalogi).</p>\n<h3>De Workflow van Goedkeuring tot Factuur</h3>\n<ul>\n<li><strong>Geautomatiseerde Goedkeuringsstromen:</strong> Bestelt een medewerker een nieuwe laptop? De aanvraag gaat automatisch naar zijn manager voor goedkeuring, gebaseerd op het vooraf ingestelde budget.</li>\n<li><strong>PO Generatie:</strong> Na goedkeuring genereert het systeem automatisch een Purchase Order (PO) en verzendt deze naar de leverancier.</li>\n<li><strong>Three-Way Matching:</strong> Wanneer de factuur binnenkomt, controleert de software automatisch of deze overeenkomt met de initiële PO én met de ontvangstbevestiging van het magazijn.</li>\n</ul>\n<h2>Directe ROI</h2>\n<p>Een op maat gemaakt e-procurement portaal van DZY Digital geeft u 100% zichtbaarheid en controle over uw uitgaven (spend management), waardoor uw winstmarges direct verbeteren.</p>\n",
+  "tags": [
+    "E-Procurement",
+    "Inkoop",
+    "Finance",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "e-procurement software België",
+    "inkoopsoftware KMO",
+    "Purchase Order automatisering",
+    "Three way matching facturen"
+  ]
 }
 ];
