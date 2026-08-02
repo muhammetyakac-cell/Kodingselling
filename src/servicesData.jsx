@@ -279,6 +279,36 @@ export const servicesData = [
   title: 'VoIP & Unified Communications',
   desc: 'Integreer cloud-telefonie naadloos met uw CRM- en supportsoftware.',
   fullDesc: 'Optimaliseer uw klantenservice met CTI (Computer Telephony Integration). Wij bouwen API-bruggen tussen uw VoIP-centrale en uw bedrijfssoftware. Geniet van functionaliteiten zoals Click-to-Call, automatische klantdossier pop-ups en gecentraliseerde gesprekslogs.'
+},
+{
+  icon: <Network className="w-6 h-6 text-fuchsia-600" />,
+  title: 'Maatwerk API-Koppelingen',
+  desc: 'Verbind geïsoleerde softwarepakketten (ERP, CRM, Webshop) via naadloze API-bruggen.',
+  fullDesc: 'Voorkom dubbel invoerwerk. Wij ontwikkelen robuuste en extreem veilige middleware-architecturen die uw bestaande softwarepakketten in real-time laten communiceren. Ideaal voor automatische voorraadsynchronisatie of boekhoudkoppelingen.'
+},
+{
+  icon: <Leaf className="w-6 h-6 text-emerald-600" />,
+  title: 'Digitale Productpaspoorten (DPP)',
+  desc: 'Voldoe aan Europese milieuwetgeving met blockchain-gebaseerde traceerbaarheid.',
+  fullDesc: 'Maak uw producten klaar voor de circulaire economie. Wij bouwen beveiligde dataplatformen (inclusief QR en RFID-koppelingen) die de volledige levenscyclus, materialen en CO2-voetafdruk van uw product transparant vastleggen voor consumenten en overheden.'
+},
+{
+  icon: <Globe className="w-6 h-6 text-sky-500" />,
+  title: 'Intranet & Digital Workspaces',
+  desc: 'Verhoog productiviteit met een moderne, gepersonaliseerde digitale werkplek.',
+  fullDesc: 'Vervang logge intranets door dynamische Employee Experience Portals. Wij integreren Single Sign-On (SSO) voor veilige toegang tot alle bedrijfsapps, bouwen gepersonaliseerde HR-dashboards en stimuleren interne communicatie in een mobielvriendelijke omgeving.'
+},
+{
+  icon: <Zap className="w-6 h-6 text-indigo-500" />,
+  title: 'AI-Gedreven Klantenservice',
+  desc: 'Automatiseer eerstelijns support met AI-chatbots getraind op uw eigen bedrijfsdata.',
+  fullDesc: 'Integreer Generatieve AI (zoals GPT-4) op een veilige manier in uw supportkanalen. Onze RAG-architecturen (Retrieval-Augmented Generation) zorgen ervoor dat de chatbot nauwkeurige, meertalige antwoorden geeft op basis van uw handleidingen en ticket-historiek.'
+},
+{
+  icon: <Rocket className="w-6 h-6 text-rose-500" />,
+  title: 'Low-Code Interne Tools',
+  desc: 'Versnel digitalisering met hybride low-code/custom-code applicatieontwikkeling.',
+  fullDesc: 'Heeft u snel een interne app nodig voor voorraadbeheer of dataregistratie? Wij gebruiken geavanceerde low-code platformen gecombineerd met maatwerk logica om uw Time-to-Market te halveren, zonder in te boeten aan schaalbaarheid of veiligheid.'
 }
 
 ];

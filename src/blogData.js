@@ -775,5 +775,110 @@ export const blogPosts = [
     "CTI integratie België",
     "klantenservice automatisering"
   ]
+},
+{
+  "id": "systeemintegratie-b2b-api-koppelingen",
+  "title": "Systeemintegratie in de B2B: Hoe API's Eilanden Verbinden",
+  "category": "Infrastructuur & API",
+  "date": "18 Januari 2025",
+  "readTime": "7 min lees",
+  "description": "Stop met het handmatig overtypen van data. Ontdek hoe maatwerk API-koppelingen uw software-ecosysteem stroomlijnen.",
+  "content": "<p>Veel Vlaamse bedrijven werken met een wirwar aan software: Exact voor de boekhouding, Salesforce voor CRM, Magento voor de webshop en Odoo voor het magazijn. Zonder goede integratie vormen deze systemen geïsoleerde 'datagebieden'.</p>\n<h2>De Kosten van Eiland-Automatisering</h2>\n<p>Als een webshop-order handmatig moet worden overgetypt in de boekhouding, verliest u niet alleen tijd, maar creëert u ook ruimte voor fouten. Een typfout in een verzendadres kan leiden tot dure retouren en ontevreden klanten.</p>\n<h3>De API als Universele Vertaler</h3>\n<p>Een Application Programming Interface (API) laat verschillende softwarepakketten veilig met elkaar praten in real-time. Wij bouwen maatwerk middleware die fungeert als een rotonde voor uw bedrijfsdata:</p>\n<ul>\n<li><strong>Voorraadsynchronisatie:</strong> Zodra de voorraad in het WMS wijzigt, wordt dit binnen milliseconden geüpdatet op de webshop.</li>\n<li><strong>Facturatie-automatisering:</strong> Een gesloten deal in het CRM genereert automatisch een conceptfactuur in uw boekhoudpakket.</li>\n<li><strong>Partner Integraties:</strong> Geef grote B2B-klanten de mogelijkheid om via een beveiligde API rechtstreeks vanuit hun eigen ERP bij u te bestellen.</li>\n</ul>\n<h2>DZY Digital's Integratie-Architectuur</h2>\n<p>Wij ontwarren de complexiteit van uw IT-landschap door stabiele, schaalbare en zwaar beveiligde API-bruggen te bouwen, specifiek afgestemd op de behoeften van Antwerpse KMO's.</p>\n",
+  "tags": [
+    "API",
+    "Systeemintegratie",
+    "Middleware",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "API koppeling bouwen België",
+    "software integratie KMO",
+    "middleware ontwikkeling Antwerpen",
+    "ERP webshop koppeling"
+  ]
+},
+{
+  "id": "digitaal-productpaspoort-dpp-belgie",
+  "title": "Het Digitale Productpaspoort (DPP): Is Uw Bedrijf Klaar?",
+  "category": "Duurzaamheid & Innovatie",
+  "date": "25 Januari 2025",
+  "readTime": "8 min lees",
+  "description": "Europa maakt het Digitaal Productpaspoort verplicht. Wat betekent dit voor Vlaamse producenten en hoe helpt software u te voldoen?",
+  "content": "<p>De transitie naar een circulaire economie versnelt. Binnen de Europese Unie wordt het 'Digitaal Productpaspoort' (DPP) geleidelijk verplicht voor diverse sectoren, waaronder textiel, elektronica en batterijen. Dit paspoort bevat alle informatie over de oorsprong, samenstelling en recycleerbaarheid van een product.</p>\n<h2>Wat Houdt het DPP in?</h2>\n<p>Het paspoort is een digitale identiteit, vaak toegankelijk via een QR-code, NFC-chip of RFID-tag op het product. Het stelt consumenten en recyclebedrijven in staat om exact te zien welke ruwe materialen zijn gebruikt en wat de CO2-voetafdruk is.</p>\n<h3>De Technologische Uitdaging voor Producenten</h3>\n<p>Het verzamelen en veilig delen van deze supply chain-data vereist een robuuste IT-infrastructuur:</p>\n<ul>\n<li><strong>Data Aggregatie:</strong> Informatie van leveranciers, productieprocessen en transporteurs moet centraal worden opgeslagen.</li>\n<li><strong>Blockchain Authenticatie:</strong> Om greenwashing te voorkomen, wordt blockchain-technologie vaak ingezet om de onveranderlijkheid van de ecologische claims te garanderen.</li>\n<li><strong>Publieke API's:</strong> De data moet veilig, maar toegankelijk worden gemaakt voor Europese toezichthouders en eindgebruikers.</li>\n</ul>\n<h2>Uw Softwarepartner voor DPP</h2>\n<p>DZY Digital bouwt de cloud-platformen die Vlaamse producenten nodig hebben om deze complexe datastromen te beheren en naadloos te voldoen aan de nieuwe Europese milieuwetgeving.</p>\n",
+  "tags": [
+    "DPP",
+    "Duurzaamheid",
+    "Blockchain",
+    "Circulaire Economie"
+  ],
+  "seoKeywords": [
+    "Digitaal productpaspoort software",
+    "DPP integratie België",
+    "circulaire economie tech",
+    "blockchain traceerbaarheid"
+  ]
+},
+{
+  "id": "digital-workspace-intranet-kmo",
+  "title": "Bouw een Digital Workspace Die Werknemers Wél Gebruiken",
+  "category": "HR Tech & Productiviteit",
+  "date": "01 Februari 2025",
+  "readTime": "6 min lees",
+  "description": "Vergeet het logge, verouderde intranet. Een moderne Digital Workspace verhoogt de betrokkenheid en productiviteit van uw team in Vlaanderen.",
+  "content": "<p>Veel bedrijven hebben ooit een intranet opgezet dat inmiddels fungeert als een digitaal kerkhof voor oude PDF's en beleidsdocumenten. Met de opkomst van hybride werken is de behoefte aan een gecentraliseerde, dynamische digitale werkplek echter groter dan ooit.</p>\n<h2>Van Intranet naar Digital Workspace</h2>\n<p>Een moderne Digital Workspace (of Employee Experience Portal) gaat verder dan eenrichtingscommunicatie. Het is het centrale startpunt van de werkdag.</p>\n<h3>Cruciale Elementen van een Succesvol Portaal</h3>\n<ul>\n<li><strong>Single Sign-On (SSO):</strong> Medewerkers loggen één keer in en hebben direct, via veilige koppelingen, toegang tot hun e-mail, HR-systeem en declaratietools zonder 10 verschillende wachtwoorden te onthouden.</li>\n<li><strong>Gepersonaliseerde Dashboards:</strong> Een sales-medewerker ziet zijn targets, terwijl een magazijnier de laatste veiligheidsupdates ziet.</li>\n<li><strong>Sociale Integratie:</strong> Functies vergelijkbaar met sociale media om bedrijfscultuur te bevorderen, successen te vieren en peer-to-peer erkenning te stimuleren.</li>\n</ul>\n<h2>Verhoog Medewerkerstevredenheid</h2>\n<p>In een strijd om talent is een soepele digitale ervaring cruciaal. DZY Digital bouwt wendbare, mobielvriendelijke portalen die daadwerkelijk de productiviteit en betrokkenheid van uw medewerkers verhogen.</p>\n",
+  "tags": [
+    "Intranet",
+    "HR Tech",
+    "Productiviteit",
+    "Hybride Werken"
+  ],
+  "seoKeywords": [
+    "digital workspace bouwen",
+    "intranet software België",
+    "employee experience portal",
+    "SSO integratie KMO"
+  ]
+},
+{
+  "id": "ai-klantenservice-chatbots-automatisering",
+  "title": "AI in Klantenservice: Verder dan de Standaard Chatbot",
+  "category": "AI & Support",
+  "date": "08 Februari 2025",
+  "readTime": "7 min lees",
+  "description": "Ontdek hoe generatieve AI en Natural Language Processing (NLP) de B2B klantenservice transformeren van reactief naar proactief.",
+  "content": "<p>Iedereen kent de frustratie van een domme chatbot die alleen \"Ja\" of \"Nee\" begrijpt en u eindeloos in cirkels laat draaien. Met de opkomst van Large Language Models (LLM's) en Generatieve AI is de technologie nu volwassen genoeg om daadwerkelijk complexe klantenservice (support) uit te voeren.</p>\n<h2>De Nieuwe Generatie AI-Assistenten</h2>\n<p>Moderne AI-chatbots worden getraind op uw eigen bedrijfsdocumentatie, producthandleidingen en eerdere support-tickets (RAG-architectuur). Hierdoor kunnen ze genuanceerde antwoorden geven op technische B2B-vragen.</p>\n<h3>Use Cases voor Vlaamse KMO's</h3>\n<ul>\n<li><strong>Ticket Triage:</strong> De AI leest inkomende e-mails of tickets, categoriseert deze op urgentie en wijst ze toe aan de juiste afdeling.</li>\n<li><strong>Geautomatiseerde FAQ-Resolutie:</strong> Bij vragen over levertijden koppelt de AI direct met de ERP-API om de klant real-time statusupdates te geven, zonder menselijke tussenkomst.</li>\n<li><strong>Meertalige Support:</strong> Bied naadloze ondersteuning in het Nederlands, Frans, en Engels zonder extra personeel aan te nemen.</li>\n</ul>\n<h2>AI met een Menselijke Touch</h2>\n<p>AI vervangt uw klantenserviceteam niet; het neemt het repetitieve werk weg, zodat uw medewerkers zich kunnen focussen op complexe cases en relatiebeheer. DZY Digital integreert veilige AI-oplossingen in uw bestaande supportkanalen.</p>\n",
+  "tags": [
+    "AI",
+    "Klantenservice",
+    "Chatbots",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "AI klantenservice software",
+    "slimme chatbot laten maken",
+    "AI support automatisering",
+    "RAG AI KMO België"
+  ]
+},
+{
+  "id": "low-code-no-code-ontwikkeling-kmo",
+  "title": "Waarom Low-Code de Tijd-tot-Markt voor KMO's Halveert",
+  "category": "Innovatie & Development",
+  "date": "15 Februari 2025",
+  "readTime": "7 min lees",
+  "description": "Snel digitaliseren zonder maandenlange ontwikkeltrajecten. Hoe hybride low-code oplossingen de flexibiliteit van uw bedrijf vergroten.",
+  "content": "<p>De traditionele cyclus van softwareontwikkeling (requirements verzamelen, programmeren vanaf nul, langdurig testen) is soms te traag voor de dynamische behoeften van een moderne KMO. Hier bieden Low-Code platformen een formidabel alternatief.</p>\n<h2>Wat is Low-Code?</h2>\n<p>Low-Code platformen maken gebruik van visuele drag-and-drop interfaces gecombineerd met kant-en-klare codeblokken. Dit betekent niet dat ontwikkelaars overbodig zijn, maar wel dat ze veel sneller kunnen bouwen. Voor complexe integraties of bedrijfslogica kan er nog steeds \"custom code\" worden toegevoegd (de hybride aanpak).</p>\n<h3>De Voordelen voor Uw Bedrijf</h3>\n<ul>\n<li><strong>Snellere Time-to-Market:</strong> Wat vroeger maanden duurde, kan nu in weken of zelfs dagen worden ontwikkeld en gelanceerd (Rapid Application Development).</li>\n<li><strong>Lagere Ontwikkelingskosten:</strong> Minder uren coderen betekent een lagere initiële investering.</li>\n<li><strong>Wendbaarheid (Agile):</strong> Omdat de structuur visueel is opgebouwd, kunnen iteraties en aanpassingen op basis van gebruikersfeedback razendsnel worden doorgevoerd.</li>\n</ul>\n<h2>De Aanpak van DZY Digital</h2>\n<p>Wij geloven in het kiezen van de juiste tool voor de juiste taak. Voor kernapplicaties bouwen we op maat (custom code), maar voor interne tools, backoffice workflows en formulieren integreren we krachtige low-code architecturen om u snel ROI te bezorgen.</p>\n",
+  "tags": [
+    "Low-Code",
+    "Ontwikkeling",
+    "Innovatie",
+    "Agile"
+  ],
+  "seoKeywords": [
+    "low-code ontwikkeling België",
+    "snelle applicatiebouw",
+    "interne tools KMO",
+    "Rapid Application Development"
+  ]
 }
 ];
