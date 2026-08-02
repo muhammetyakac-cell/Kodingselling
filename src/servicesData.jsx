@@ -399,6 +399,36 @@ export const servicesData = [
   title: 'E-Procurement & Inkoopsoftware',
   desc: 'Centraliseer uw uitgaven met geautomatiseerde bestel- en goedkeuringsstromen.',
   fullDesc: 'Krijg grip op uw "Maverick Buying". We ontwikkelen e-procurement portalen (inclusief PunchOut-catalogi) met budgetbeheer, geautomatiseerde goedkeuringsworkflows voor Purchase Orders en automatische factuurcontrole (Three-Way Matching).'
+},
+{
+  icon: <Database className="w-6 h-6 text-fuchsia-600" />,
+  title: 'Odoo ERP Ontwikkeling & Maatwerk',
+  desc: 'Implementatie en custom module-ontwikkeling voor het open-source Odoo ERP.',
+  fullDesc: 'Maak uw bedrijfsprocessen schaalbaar. Wij zijn gespecialiseerd in het integreren van Odoo ERP voor Vlaamse KMO\'s. Van het configureren van standaard apps (Voorraad, CRM, Boekhouding) tot het programmeren van complexe maatwerkmodules en Belgische lokalisaties.'
+},
+{
+  icon: <Globe className="w-6 h-6 text-sky-500" />,
+  title: 'Salesforce & HubSpot Customization',
+  desc: 'Haal het maximale uit uw premium CRM met op maat gemaakte API-integraties.',
+  fullDesc: 'Standaard out-of-the-box CRM\'s schieten vaak tekort. Wij bouwen complexe API-koppelingen tussen Salesforce of HubSpot en uw ERP of boekhouding, zorgen voor automatische twee-weg datasynchronisatie en ontwerpen maatwerk workflows specifiek voor uw sales cycle.'
+},
+{
+  icon: <HelpCircle className="w-6 h-6 text-emerald-500" />,
+  title: 'B2B Gamification & E-Learning',
+  desc: 'Verhoog software adoptie met slimme UX en spelelementen voor B2B.',
+  fullDesc: 'Saaie bedrijfssoftware is verleden tijd. Wij passen technieken uit de gamification (leaderboards, badges, progressiebalken) toe op uw interne tools, CRM-dashboards of LMS (E-Learning) portalen om de betrokkenheid en productiviteit van uw werknemers aanzienlijk te verhogen.'
+},
+{
+  icon: <BarChart3 className="w-6 h-6 text-indigo-500" />,
+  title: 'Financiële Consolidatie Software',
+  desc: 'Geautomatiseerde groepsrapportages en intercompany eliminaties voor holdings.',
+  fullDesc: 'Sluit uw boekjaar in dagen, niet in weken. Wij bouwen financiële portalen die data uit de boekhoudpakketten van al uw vennootschappen in real-time consolideren. Inclusief automatische eliminatie van intercompany transacties, valutaconversies en volledige audit trails.'
+},
+{
+  icon: <CreditCard className="w-6 h-6 text-rose-500" />,
+  title: 'FinTech Factoring Platformen',
+  desc: 'API-integraties voor automatische factuurfinanciering en werkkapitaalbeheer.',
+  fullDesc: 'Verbeter uw B2B-cashflow. Wij ontwikkelen integraties tussen uw ERP en moderne digitale factoringmaatschappijen. Dit maakt real-time kredietchecks mogelijk, versnelt factuurfinanciering (binnen 24 uur uitbetaald) en automatiseert de afpunting van facturen.'
 }
 
 ];

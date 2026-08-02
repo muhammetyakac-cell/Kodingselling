@@ -1195,5 +1195,110 @@ export const blogPosts = [
     "Purchase Order automatisering",
     "Three way matching facturen"
   ]
+},
+{
+  "id": "waarom-kmo-vlaanderen-kiezen-odoo-erp",
+  "title": "Waarom KMO's in Vlaanderen Kiezen voor Odoo ERP",
+  "category": "ERP & Odoo",
+  "date": "15 Juni 2025",
+  "readTime": "6 min lees",
+  "description": "Odoo is het populairste open-source ERP in België. Ontdek de voordelen van dit modulaire systeem voor voorraad, sales en boekhouding.",
+  "content": "<p>Veel Belgische bedrijven werken met verouderde ERP-systemen die zwaar, onintuïtief en duur in licentiekosten zijn. Het is geen verrassing dat Odoo, een in België opgericht (open-source) ERP-systeem, in rap tempo de standaard is geworden voor KMO's in Vlaanderen.</p>\n<h2>De Kracht van Modulariteit</h2>\n<p>In tegenstelling tot traditionele systemen (zoals SAP of Microsoft Dynamics), waarbij u direct het hele pakket moet aanschaffen, werkt Odoo met modulaire 'apps'. U begint bijvoorbeeld alleen met CRM en Facturatie. Zodra uw bedrijf groeit, voegt u met één klik Voorraadbeheer, E-commerce of HR toe. Alle apps communiceren naadloos met elkaar.</p>\n<h3>Maatwerk Bovenop de Standaard</h3>\n<p>Hoewel Odoo out-of-the-box zeer krachtig is, heeft vrijwel elk bedrijf unieke processen. Hier komt DZY Digital in beeld:</p>\n<ul>\n<li><strong>Custom Modules:</strong> Wij programmeren specifieke Odoo-modules voor processen die niet standaard in het pakket zitten (zoals een complexe productieplanning).</li>\n<li><strong>Externe API-koppelingen:</strong> We verbinden Odoo met uw specifieke transporteurs (zoals Bpost of DPD) of B2B-klantenportalen.</li>\n<li><strong>Belgische Boekhouding:</strong> Wij zorgen ervoor dat Odoo perfect is afgestemd op het Belgische rekeningenstelsel en de vereisten voor BTW-aangiftes.</li>\n</ul>\n<h2>Odoo Implementatie</h2>\n<p>Een ERP-implementatie valt of staat met de partner die het uitvoert. DZY Digital begeleidt uw KMO bij een vlotte, veilige overstap naar Odoo.</p>\n",
+  "tags": [
+    "Odoo",
+    "ERP",
+    "KMO",
+    "Software op maat"
+  ],
+  "seoKeywords": [
+    "Odoo ERP België",
+    "Odoo partner Antwerpen",
+    "maatwerk Odoo modules",
+    "ERP systeem KMO Vlaanderen"
+  ]
+},
+{
+  "id": "salesforce-hubspot-maatwerk-integratie",
+  "title": "Haal Meer uit Salesforce: Waarom Standaard Niet Werkt",
+  "category": "CRM & Automatisering",
+  "date": "22 Juni 2025",
+  "readTime": "7 min lees",
+  "description": "Salesforce en HubSpot zijn krachtige tools, maar zonder de juiste integraties blijven het veredelde adresboeken. Tijd voor maatwerk.",
+  "content": "<p>Bedrijven investeren tienduizenden euro's in premium CRM-licenties van Salesforce of HubSpot, in de veronderstelling dat hun sales daarmee automatisch stijgen. De realiteit is dat verkopers gefrustreerd raken omdat ze nog steeds handmatig data moeten overtypen vanuit het ERP of de boekhouding.</p>\n<h2>Een CRM moet voor u werken, niet andersom</h2>\n<p>Als uw CRM niet is geïntegreerd met de rest van uw IT-architectuur, wordt het nooit de \"Single Source of Truth\" die de verkopers u beloofden.</p>\n<h3>De Noodzaak van API-Maatwerk</h3>\n<p>DZY Digital is gespecialiseerd in het openbreken van deze grote CRM-pakketten via hun API's:</p>\n<ul>\n<li><strong>Twee-weg Synchronisatie:</strong> Wanneer een prospect in HubSpot klant wordt, wordt deze direct en foutloos aangemaakt in Exact Online of Yuki.</li>\n<li><strong>Custom Dashboards:</strong> Verkopers zien in Salesforce niet alleen de belhistoriek, maar ook de actuele betalingsachterstand (gehaald uit de boekhouding) voordat ze bellen.</li>\n<li><strong>Automated Workflows:</strong> Automatische e-mail flows en taakaanmaak op basis van complexe triggers die specifiek zijn voor uw Belgische B2B sales cycle.</li>\n</ul>\n<h2>Optimaliseer uw Investering</h2>\n<p>Stop met het betalen voor software die maar half gebruikt wordt. Wij bouwen de bruggen die van uw CRM een onmisbare verkooppartner maken.</p>\n",
+  "tags": [
+    "CRM",
+    "Salesforce",
+    "HubSpot",
+    "API"
+  ],
+  "seoKeywords": [
+    "Salesforce integratie België",
+    "HubSpot API koppeling",
+    "CRM optimalisatie KMO",
+    "Salesforce maatwerk Antwerpen"
+  ]
+},
+{
+  "id": "gamification-in-b2b-software",
+  "title": "Gamification in B2B: Hoe Maakt u Saaie Software Leuk?",
+  "category": "UX/UI & Gamification",
+  "date": "29 Juni 2025",
+  "readTime": "6 min lees",
+  "description": "Interne software wordt vaak met tegenzin gebruikt. Leer hoe gamification in B2B-applicaties de gebruikersadoptie drastisch verhoogt.",
+  "content": "<p>Als u honderdduizend euro investeert in een nieuw ERP- of CRM-systeem, maar uw medewerkers blijven stiekem in hun oude Excel-lijstjes werken, heeft de software gefaald. Gebruikersadoptie is de grootste uitdaging bij B2B-software. De oplossing? Gamification.</p>\n<h2>Wat is Gamification?</h2>\n<p>Gamification is het toepassen van spelelementen (zoals punten, badges, of voortgangsbalken) in een niet-speelse omgeving. B2C-apps (zoals Duolingo) doen dit al jaren, maar in B2B-applicaties staat het nog in de kinderschoenen.</p>\n<h3>Praktische Voorbeelden in Bedrijfssoftware</h3>\n<ul>\n<li><strong>Sales Leaderboards:</strong> In plaats van een saaie lijst met cijfers, krijgt uw CRM een interactief dashboard waar verkopers visueel \"racen\" naar hun maandelijkse target.</li>\n<li><strong>Onboarding Quests:</strong> Nieuwe werknemers doorlopen het interne opleidingsportaal (LMS) niet via saaie PDF's, maar via \"levels\" waarbij ze badges ontgrendelen als ze veiligheidsvideo's hebben bekeken.</li>\n<li><strong>Progressie bij Data-invoer:</strong> Een voortgangsbalk die groen oplicht en een kleine confetti-animatie toont wanneer een complex formulier voor 100% foutloos is ingevuld, verhoogt de datakwaliteit aanzienlijk.</li>\n</ul>\n<h2>UX-Design dat Motiveert</h2>\n<p>Bij DZY Digital bouwen we niet alleen functionele back-ends, maar we ontwerpen front-end ervaringen die uw medewerkers daadwerkelijk wíllen gebruiken. We brengen de consumentenervaring naar de bedrijfswereld.</p>\n",
+  "tags": [
+    "Gamification",
+    "UX/UI",
+    "Software Adoptie",
+    "B2B"
+  ],
+  "seoKeywords": [
+    "gamification software B2B",
+    "UX design bedrijfssoftware",
+    "software adoptie verhogen",
+    "interne applicatie UX België"
+  ]
+},
+{
+  "id": "financiele-consolidatie-kmo-belgie",
+  "title": "Financiële Consolidatie: Sluit uw Boekjaar in Dagen, Niet in Weken",
+  "category": "Finance & Audit",
+  "date": "06 Juli 2025",
+  "readTime": "7 min lees",
+  "description": "Hoe holdings en KMO's met meerdere vennootschappen (BV's) weken tijd besparen met geautomatiseerde consolidatiesoftware.",
+  "content": "<p>Heeft uw bedrijf meerdere vestigingen of aparte vennootschappen (werkmaatschappijen) onder één holding? Dan is het afsluiten van de maand of het boekjaar vaak een helse Excel-oefening. Intercompany-transacties (facturen tussen uw eigen bedrijven) moeten handmatig worden weggestreept om een geconsolideerde balans te maken.</p>\n<h2>De Foutmarge van Handmatig Consolideren</h2>\n<p>Wanneer consolidatie via complexe Excel-macro's verloopt, is de kans op \"Copy-Paste\" fouten enorm. Bovendien is de informatie bij het publiceren van de geconsolideerde cijfers vaak al weer weken verouderd.</p>\n<h3>Geautomatiseerde Consolidatie Software</h3>\n<p>DZY Digital ontwikkelt financiële portalen die via API's real-time verbonden zijn met de boekhoudpakketten van al uw vennootschappen (ongeacht of Bedrijf A Exact gebruikt en Bedrijf B Odoo):</p>\n<ul>\n<li><strong>Automatische Eliminaties:</strong> Het systeem herkent intercompany-boekingen (verkoop van A naar B) en elimineert deze automatisch uit het groepsresultaat.</li>\n<li><strong>Valuta Conversies:</strong> Heeft u een vestiging buiten de Eurozone? De software haalt automatisch de dagkoersen op en rekent dit om voor de consolidatie.</li>\n<li><strong>Audit Trail:</strong> Elke consolidatiestap is traceerbaar voor de bedrijfsrevisor, wat de uiteindelijke audit aanzienlijk versnelt en goedkoper maakt.</li>\n</ul>\n<h2>Real-time Inzicht in uw Holding</h2>\n<p>Stop met wachten op Excel. Met een maatwerk consolidatie-dashboard heeft de CFO op elke dag van de maand een accuraat overzicht van de gezondheid van de gehele groep.</p>\n",
+  "tags": [
+    "Consolidatie",
+    "Finance",
+    "Boekhouding",
+    "Holding"
+  ],
+  "seoKeywords": [
+    "financiële consolidatie software",
+    "intercompany eliminatie software",
+    "groepsrapportage België",
+    "CFO dashboard holding"
+  ]
+},
+{
+  "id": "factoring-digitaliseren-b2b-cashflow",
+  "title": "Factoring Digitaliseren: Verbeter Direct uw B2B Cashflow",
+  "category": "FinTech & Cashflow",
+  "date": "13 Juli 2025",
+  "readTime": "8 min lees",
+  "description": "Lange betalingstermijnen wurgen uw KMO. Ontdek hoe digitale factoring portalen openstaande B2B-facturen onmiddellijk omzetten in cash.",
+  "content": "<p>In de B2B-sector (zoals bouw of logistiek) zijn betalingstermijnen van 60 of zelfs 90 dagen helaas de norm. Voor een KMO betekent dit dat het geld maandenlang vastzit in debiteuren, terwijl leveranciers en personeel wél direct betaald moeten worden. Traditionele factoringmaatschappijen zijn vaak log en duur. De oplossing? Digitale (FinTech) Factoring.</p>\n<h2>Wat is Digitale Factoring?</h2>\n<p>In plaats van uw hele debiteurenportefeuille over te dragen aan een bank, kunt u via digitale platformen (Selective Factoring) specifieke facturen verkopen aan investeerders of tech-factoraars. U ontvangt binnen 24 uur tot 95% van het factuurbedrag.</p>\n<h3>API Integraties voor Cashflow</h3>\n<p>DZY Digital bouwt de softwarebruggen tussen uw KMO en deze FinTech platformen:</p>\n<ul>\n<li><strong>Directe Boekhoudkoppeling:</strong> Zodra u een factuur aanmaakt in uw ERP, kan deze via een API direct worden doorgestuurd naar de factoringpartner voor goedkeuring.</li>\n<li><strong>Kredietwaardigheids-checks:</strong> Via integraties met handelsregisters (zoals Graydon) verifieert de software in milliseconden de kredietwaardigheid van uw nieuwe klant, nog voordat u levert.</li>\n<li><strong>Automatische Afpunting:</strong> Wanneer de klant na 60 dagen uiteindelijk aan de factoraar betaalt, wordt dit via webhook-integraties automatisch in uw boekhouding afgepunt.</li>\n</ul>\n<h2>Optimaliseer uw Werkkapitaal</h2>\n<p>Wij ontwikkelen de FinTech infrastructuur die ervoor zorgt dat Belgische ondernemers nooit meer wakker hoeven te liggen van openstaande B2B-facturen. Focus op groei, niet op debiteurenbeheer.</p>\n",
+  "tags": [
+    "FinTech",
+    "Factoring",
+    "Cashflow",
+    "Finance"
+  ],
+  "seoKeywords": [
+    "digitale factoring België",
+    "cashflow optimalisatie software",
+    "factuurfinanciering platform",
+    "debiteurenbeheer software API"
+  ]
 }
 ];
