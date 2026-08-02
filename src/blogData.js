@@ -103,5 +103,152 @@ export const blogPosts = [
       "headless e-commerce",
       "Next.js webshop"
     ]
-  }
+  },
+{
+  "id": "erp-systemen-productiesector-antwerpen",
+  "title": "ERP Systemen: De Motor Achter Succesvolle Productiebedrijven in Vlaanderen",
+  "category": "ERP & Productie",
+  "date": "20 Mei 2024",
+  "readTime": "8 min lees",
+  "description": "Ontdek hoe moderne, cloud-gebaseerde ERP-systemen de productiesector in Antwerpen en Vlaanderen efficiënter, schaalbaarder en winstgevender maken.",
+  "content": "<p>De productiesector in Vlaanderen is volop in beweging. Met stijgende materiaalkosten, de noodzaak tot duurzaamheid en een tekort aan technisch talent, staan productiebedrijven onder enorme druk. De oplossing? Een modern, op microservices gebaseerd <strong>ERP-systeem (Enterprise Resource Planning)</strong>.</p>\n<h2>Waarom Oude Systemen Falen</h2>\n<p>Veel bedrijven vertrouwen nog op verouderde on-premise systemen of gefragmenteerde Excel-sheets. Dit leidt tot silo's, vertragingen in de toeleveringsketen en een gebrek aan real-time inzicht in de voorraad. In de snelle markt van vandaag is dit een onaanvaardbaar risico.</p>\n<h3>De Kracht van Cloud ERP</h3>\n<p>Een cloud-native ERP-systeem, speciaal op maat gemaakt voor uw bedrijfsprocessen, biedt ongekende voordelen:</p>\n<ul>\n<li><strong>Real-time Voorraadbeheer:</strong> Koppel uw magazijn direct aan uw productielijn en verkoopkanalen.</li>\n<li><strong>IoT Integratie:</strong> Verbind sensoren op de fabrieksvloer direct met uw ERP om machinestoringen te voorspellen (Predictive Maintenance).</li>\n<li><strong>Automatisering:</strong> Automatiseer inkooporders zodra de voorraad een kritiek niveau bereikt.</li>\n</ul>\n<h2>DZY Digital's Aanpak</h2>\n<p>Bij DZY Digital in Antwerpen bouwen we geen standaard, logge ERP-pakketten. Wij ontwikkelen agile, modulaire software die perfect aansluit bij de unieke workflow van uw Vlaamse productiebedrijf. Neem vandaag nog contact met ons op voor een digitale audit.</p>\n",
+  "tags": [
+    "ERP",
+    "Productie",
+    "Industrie 4.0",
+    "Cloud"
+  ],
+  "seoKeywords": [
+    "ERP systeem Antwerpen",
+    "productie software",
+    "industrie 4.0 Vlaanderen",
+    "cloud ERP op maat"
+  ]
+},
+{
+  "id": "cyberbeveiliging-kmo-belgie",
+  "title": "Cyberbeveiliging voor KMO's: Voorkom Dataverlies en Ransomware in 2024",
+  "category": "Data & Beveiliging",
+  "date": "25 Mei 2024",
+  "readTime": "7 min lees",
+  "description": "Ransomware-aanvallen op Belgische bedrijven nemen toe. Ontdek de cruciale stappen voor KMO's om hun data, applicaties en klantinformatie veilig te stellen.",
+  "content": "<p>Cyberaanvallen halen dagelijks het nieuws, en het zijn allang niet meer alleen de grote multinationals die het doelwit zijn. Integendeel, hackers richten zich steeds vaker op Belgische KMO's, in de wetenschap dat hun beveiligingsinfrastructuur vaak minder robuust is.</p>\n<h2>De Gevaren van Verouderde Software</h2>\n<p>Legacy software is een van de grootste kwetsbaarheden. Zonder regelmatige beveiligingsupdates vormen deze oude systemen een open deur voor ransomware en phishing-aanvallen. Bovendien brengt een datalek niet alleen financiële schade met zich mee, maar ook enorme imagoschade en mogelijke GDPR-boetes.</p>\n<h3>Onze Beveiligingsfilosofie: Row Level Security (RLS)</h3>\n<p>Bij het ontwikkelen van nieuwe SaaS-platformen en webapplicaties past DZY Digital de hoogste beveiligingsstandaarden toe. Wij geloven in:</p>\n<ul>\n<li><strong>Row Level Security (RLS):</strong> Beveiliging die direct op databaseniveau is ingebouwd, zodat gebruikers (zelfs bij een hack) alleen toegang hebben tot hun eigen data.</li>\n<li><strong>End-to-End Encryptie:</strong> Klantgegevens worden versleuteld opgeslagen en getransporteerd.</li>\n<li><strong>Multi-Factor Authenticatie (MFA):</strong> Standaard geïmplementeerd in al onze administratiepanelen.</li>\n</ul>\n<h2>Conclusie</h2>\n<p>Wacht niet tot het te laat is. Investeer in de vernieuwing van uw legacy systemen en bescherm uw bedrijfscontinuïteit met de veilige cloudarchitecturen van DZY Digital.</p>\n",
+  "tags": [
+    "Cybersecurity",
+    "GDPR",
+    "RLS",
+    "KMO"
+  ],
+  "seoKeywords": [
+    "cyberbeveiliging KMO België",
+    "ransomware voorkomen",
+    "RLS database security",
+    "GDPR software"
+  ]
+},
+{
+  "id": "iot-sensoren-haven-antwerpen",
+  "title": "IoT in de Haven van Antwerpen: Hoe Sensortechnologie Logistiek Transformeert",
+  "category": "IoT & Sensoren",
+  "date": "02 Juni 2024",
+  "readTime": "9 min lees",
+  "description": "De haven van Antwerpen is een proeftuin voor innovatie. Ontdek hoe Internet of Things (IoT) sensoren en data-analyse de supply chain efficiënter maken.",
+  "content": "<p>Als een van de grootste havens van Europa verwerkt Antwerpen miljoenen containers per jaar. Om deze immense logistieke stroom in goede banen te leiden, is digitalisering onmisbaar. De sleutel tot de toekomst? <strong>Internet of Things (IoT)</strong>.</p>\n<h2>Van Passieve Containers naar Smart Assets</h2>\n<p>In plaats van te gissen naar de locatie of conditie van goederen, maken IoT-sensoren het mogelijk om assets real-time te volgen. Temperatuursensoren in koelcontainers (reefers) waarschuwen onmiddellijk bij afwijkingen, waardoor bederf van voedsel of medicijnen wordt voorkomen.</p>\n<h3>Integratie met Bestaande Systemen</h3>\n<p>Het verzamelen van data is één ding, er iets nuttigs mee doen is een tweede. DZY Digital helpt logistieke spelers in Antwerpen door IoT-data via API's naadloos te integreren met bestaande ERP- en Fleet Management Systemen.</p>\n<ul>\n<li><strong>Predictive Maintenance:</strong> Sensoren op kranen en vrachtwagens voorspellen wanneer onderhoud nodig is, wat ongeplande stilstand minimaliseert.</li>\n<li><strong>Geofencing:</strong> Automatische meldingen wanneer een vrachtwagen of container een specifiek havengebied binnenrijdt of verlaat.</li>\n</ul>\n<h2>Klaar voor de Smart Port?</h2>\n<p>IoT is niet langer toekomstmuziek. Bedrijven die nu slimme sensoren en op maat gemaakte webdashboards implementeren, verkrijgen een onoverbrugbaar concurrentievoordeel. Neem contact op voor een IoT-integratiegesprek.</p>\n",
+  "tags": [
+    "IoT",
+    "Haven van Antwerpen",
+    "Logistiek",
+    "Sensoren"
+  ],
+  "seoKeywords": [
+    "IoT haven Antwerpen",
+    "smart port technologie",
+    "sensortechnologie logistiek",
+    "predictive maintenance software"
+  ]
+},
+{
+  "id": "veilige-patientenportalen-zorgsector-belgie",
+  "title": "Zorg op Afstand: Waarom Elke Kliniek een Veilig Patiëntenportaal Nodig Heeft",
+  "category": "Zorg & HealthTech",
+  "date": "10 Juni 2024",
+  "readTime": "7 min lees",
+  "description": "Hoe op maat gemaakte ziekenhuisinformatiesystemen (HBS) en beveiligde patiëntenportalen de Belgische gezondheidszorg toegankelijker en efficiënter maken.",
+  "content": "<p>De verwachtingen van de moderne patiënt zijn veranderd. Men wil niet langer in de wacht staan om een afspraak te maken of dagen wachten op testresultaten. Een geïntegreerd, veilig patiëntenportaal is de norm geworden voor vooruitstrevende klinieken en ziekenhuizen in België.</p>\n<h2>De Voordelen van een Patiëntenportaal</h2>\n<p>Een op maat gemaakte medische webapplicatie biedt voordelen voor zowel de zorgverlener als de patiënt:</p>\n<ul>\n<li><strong>Zelfservice Afsprakenbeheer:</strong> Verminder de administratieve last voor uw onthaal door patiënten online hun afspraken te laten inplannen en beheren.</li>\n<li><strong>Veilige Communicatie:</strong> Een beveiligde chatfunctie voor niet-dringende medische vragen.</li>\n<li><strong>Inzage in Dossiers:</strong> Patiënten hebben 24/7 toegang tot hun medische geschiedenis, voorschriften (e-recepten) en laboratoriumresultaten, volledig in lijn met de Belgische regelgeving.</li>\n</ul>\n<h3>Privacy en KVKK/GDPR</h3>\n<p>In de zorgsector is dataveiligheid de absolute prioriteit. DZY Digital bouwt ZIS (Ziekenhuis Informatie Systemen) en portals met de strengste GDPR-conforme architecturen, inclusief audit logs en strenge toegangscontroles op basis van medische rollen.</p>\n<h2>Digitaliseer uw Zorginstelling</h2>\n<p>Van kleine privéklinieken in Antwerpen tot grote zorgcentra, wij leveren de software die zorgprofessionals de tijd teruggeeft om zich te concentreren op wat echt telt: de patiënt.</p>\n",
+  "tags": [
+    "HealthTech",
+    "Patiëntenportaal",
+    "GDPR",
+    "Zorgsector"
+  ],
+  "seoKeywords": [
+    "patiëntenportaal software België",
+    "ziekenhuis informatiesysteem",
+    "HealthTech Antwerpen",
+    "GDPR medische software"
+  ]
+},
+{
+  "id": "b2b-ecommerce-groei-vlaanderen",
+  "title": "B2B E-commerce in Vlaanderen: Meer dan een Webshop",
+  "category": "E-commerce & B2B",
+  "date": "18 Juni 2024",
+  "readTime": "8 min lees",
+  "description": "Ontdek waarom een traditionele webshop niet volstaat voor B2B-bedrijven en hoe een gespecialiseerd B2B-portaal de verkoop en efficiëntie stimuleert.",
+  "content": "<p>Terwijl B2C (Business-to-Consumer) e-commerce al jaren boomt, maakt B2B (Business-to-Business) e-commerce in Vlaanderen nu een enorme inhaalslag. Toch maken veel bedrijven de fout om een standaard consumentenwebshop in te zetten voor hun zakelijke klanten. Dit werkt zelden.</p>\n<h2>De Complexiteit van B2B Transacties</h2>\n<p>B2B-verkopen zijn complexer. Ze omvatten vaak klantspecifieke prijslijsten, volumekortingen, complexe goedkeuringsstromen en betalingen op factuur. Een simpele Shopify- of WooCommerce-setup schiet hier vaak tekort.</p>\n<h3>Wat Maakt een B2B Portaal Succesvol?</h3>\n<p>Een maatwerk B2B e-commerce platform gebouwd door DZY Digital biedt de volgende functionaliteiten:</p>\n<ul>\n<li><strong>Gepersonaliseerde Catalogi:</strong> Elke dealer of klant ziet alleen de producten en prijzen (inclusief contractuele kortingen) die voor hen relevant zijn.</li>\n<li><strong>ERP en Boekhouding Integratie:</strong> Bestellingen worden onmiddellijk in uw bestaande ERP of boekhoudpakket (zoals Exact of Odoo) geschoten, zonder manuele overtypfouten.</li>\n<li><strong>Nabestellingen en Snel-lijsten:</strong> B2B-kopers weten vaak exact wat ze nodig hebben (via SKU's). Snelle bestelformulieren en CSV-uploads verhogen de conversie aanzienlijk.</li>\n</ul>\n<h2>Automatiseer uw Dealernetwerk</h2>\n<p>Bespaar uw verkoopteam honderden uren aan administratie en bied uw B2B-klanten de moderne, 24/7 bestelervaring die ze verwachten. Neem contact op voor een demo van onze B2B portal-architecturen.</p>\n",
+  "tags": [
+    "B2B",
+    "E-commerce",
+    "Vlaanderen",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "B2B e-commerce Vlaanderen",
+    "maatwerk B2B portaal",
+    "dealer portal software",
+    "ERP e-commerce integratie"
+  ]
+},
+{
+  "id": "open-banking-fintech-belgie",
+  "title": "Open Banking en FinTech: De Financiële Toekomst van België",
+  "category": "FinTech & Open Banking",
+  "date": "26 Juni 2024",
+  "readTime": "7 min lees",
+  "description": "Hoe de PSD2-richtlijn en Open Banking API's nieuwe kansen creëren voor Belgische FinTech start-ups en traditionele KMO's om betalingen te stroomlijnen.",
+  "content": "<p>De financiële sector ondergaat een stille revolutie dankzij PSD2 (Payment Services Directive 2) en de opkomst van Open Banking. Banken zijn nu verplicht om, met toestemming van de klant, financiële data via veilige API's te delen met derde partijen. Dit opent een wereld aan mogelijkheden voor FinTechs en KMO's in België.</p>\n<h2>Wat Betekent Open Banking voor uw Bedrijf?</h2>\n<p>Vroeger waren bankgegevens afgeschermd. Nu kunnen bedrijven deze data gebruiken om snellere, goedkopere en meer gepersonaliseerde diensten aan te bieden.</p>\n<ul>\n<li><strong>Naadloze Betalingen:</strong> Klanten kunnen rechtstreeks vanaf hun bankrekening betalen binnen uw applicatie, zonder dure creditcardkosten of tussenpersonen.</li>\n<li><strong>Geautomatiseerde Boekhouding:</strong> Koppel de bankrekening van uw bedrijf direct aan uw op maat gemaakte beheerpaneel voor real-time cashflow overzichten en automatische factuurafpunting.</li>\n<li><strong>Kredietbeoordeling:</strong> Voor SaaS- of verhuurbedrijven kan Open Banking direct de financiële gezondheid van een potentiële klant verifiëren.</li>\n</ul>\n<h3>API Integraties door DZY Digital</h3>\n<p>Het bouwen van financiële software vereist extreme nauwkeurigheid en veiligheid. Bij DZY Digital integreren we complexe financiële API's (zoals Stripe, Mollie, of directe bank-API's) in uw webapplicaties, met inachtneming van de strengste Europese veiligheidsnormen.</p>\n<h2>Innoveer uw Betaalstromen</h2>\n<p>Of u nu een nieuwe FinTech app lanceert of de betalingsstromen van uw bestaande KMO wilt stroomlijnen, onze ontwikkelaars in Antwerpen staan klaar om uw financiële architectuur te bouwen.</p>\n",
+  "tags": [
+    "FinTech",
+    "Open Banking",
+    "API",
+    "Betalingen"
+  ],
+  "seoKeywords": [
+    "Open Banking België",
+    "FinTech softwareontwikkeling",
+    "PSD2 API integratie",
+    "Mollie Stripe integratie"
+  ]
+},
+{
+  "id": "agritech-innovatie-belgische-landbouw",
+  "title": "AgriTech: Hoe Software de Belgische Land- en Tuinbouw Verduurzaamt",
+  "category": "AgriTech & Duurzaamheid",
+  "date": "04 Juli 2024",
+  "readTime": "8 min lees",
+  "description": "Ontdek de kracht van AgriTech: van IoT-sensoren in kassen tot AI-gestuurde oogstvoorspellingen voor de Belgische agrarische sector.",
+  "content": "<p>De Belgische land- en glastuinbouw staat bekend om haar hoge kwaliteit, maar staat onder druk door klimaatverandering en strenge milieuwetgeving. De oplossing ligt in technologie: <strong>AgriTech (Agricultural Technology)</strong> helpt boeren om met minder middelen een hogere opbrengst te behalen.</p>\n<h2>Datagedreven Landbouw (Precision Farming)</h2>\n<p>Het concept van 'gissen' verdwijnt. Door het plaatsen van IoT-sensoren in kassen of op het veld, verzamelen we real-time data over bodemvochtigheid, temperatuur, CO2-niveaus en lichtintensiteit.</p>\n<h3>Onze AgriTech Oplossingen</h3>\n<p>Bij DZY Digital bouwen we de cloud-dashboards die deze ruwe sensordata omzetten in bruikbare inzichten:</p>\n<ul>\n<li><strong>Slimme Irrigatie-automatisering:</strong> Waterpompen die automatisch activeren, uitsluitend wanneer de bodemsensoren aangeven dat het nodig is. Dit bespaart water en voorkomt overbewatering.</li>\n<li><strong>Traceerbaarheid:</strong> Van zaadje tot supermarktschap. Wij bouwen blockchain-geïnspireerde of beveiligde databanken die de hele levenscyclus van gewassen vastleggen, wat essentieel is voor kwaliteitslabels.</li>\n<li><strong>Rendementsvoorspellingen:</strong> Door historische data te combineren met weersvoorspellingen, helpen we agrarische bedrijven hun oogst en marktaanbod beter in te schatten.</li>\n</ul>\n<h2>Klaar voor de Digitale Oogst?</h2>\n<p>AgriTech maakt landbouw niet alleen efficiënter, maar ook ecologisch duurzamer. Benieuwd hoe op maat gemaakte software uw land- of tuinbouwbedrijf kan moderniseren? Neem contact op met ons team in Antwerpen.</p>\n",
+  "tags": [
+    "AgriTech",
+    "Duurzaamheid",
+    "IoT",
+    "Landbouw"
+  ],
+  "seoKeywords": [
+    "AgriTech software België",
+    "slimme landbouw IoT",
+    "kasautomatisering software",
+    "precision farming Vlaanderen"
+  ]
+}
 ];
