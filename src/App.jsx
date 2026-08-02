@@ -519,7 +519,7 @@ const seoData = {
         "email": "info@dzydigital.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Meir 1",
+          "streetAddress": "Markgravelei 145 bus 4",
           "addressLocality": "Antwerpen",
           "addressRegion": "Antwerpen",
           "postalCode": "2000",
@@ -1219,7 +1219,7 @@ export default function App() {
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-indigo-400" />
                 <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                  <span itemProp="streetAddress">Meir 1</span>, 
+                  <span itemProp="streetAddress">Markgravelei 145 bus 4</span>, 
                   <span itemProp="addressLocality"> Antwerpen</span>, 
                   <span itemProp="addressRegion"> Antwerpen</span>, 
                   <span itemProp="postalCode"> 2000</span>, 
@@ -1228,7 +1228,7 @@ export default function App() {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-indigo-400" />
-                <a href="tel:+32470123456" className="hover:text-white transition-colors" itemProp="telephone">+32 470 12 34 56</a>
+                <a href="tel:+32475940656" className="hover:text-white transition-colors" itemProp="telephone">+32 475 94 06 56</a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-indigo-400" />
@@ -1998,16 +1998,16 @@ function ContactView() {
           <motion.div variants={fadeUpVariant} className="lg:col-span-2 space-y-6">
             <div className="glass-panel-dark text-white rounded-3xl p-8 shadow-lg h-full flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-bold mb-4">İletişim Bilgileri</h3>
+                <h3 className="text-2xl font-bold mb-4">Contactinformatie</h3>
                 <div className="mb-6 rounded-xl bg-emerald-500/10 border border-emerald-400/30 p-4">
-                  <p className="text-emerald-300 font-semibold">24 saat içinde dönüş • 48 saatte teknik ön analiz</p>
-                  <p className="text-slate-300 text-sm mt-1">SLA taahhüdümüzle talebinizi hızlıca aksiyona çeviriyoruz.</p>
+                  <p className="text-emerald-300 font-semibold">Reactie binnen 24 uur • Technische vooranalyse in 48 uur</p>
+                  <p className="text-slate-300 text-sm mt-1">Met onze SLA-belofte zetten we uw verzoek snel om in actie.</p>
                 </div>
                 <div className="space-y-6">
-                  <InfoRow icon={<MapPin className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Merkez Ofis" value={"Meir 1 Antwerpen, Antwerpen, Türkiye\n(AR-GE ve Operasyon Merkezi)"} />
-                  <InfoRow icon={<Mail className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="E-Posta" value="info@dzydigital.com" />
-                  <InfoRow icon={<Phone className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Telefon" value="+32 470 12 34 56" />
-                  <InfoRow icon={<Clock className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Çalışma Saatleri" value={"Pazartesi - Cuma\n09:00 - 18:00 (GMT+3)"} />
+                  <InfoRow icon={<MapPin className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Hoofdkantoor" value={"Markgravelei 145 bus 4, 2018 Antwerpen, België\n(Hoofdkantoor)"} />
+                  <InfoRow icon={<Mail className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="E-mail" value="info@dzydigital.com" />
+                  <InfoRow icon={<Phone className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Telefoon" value="+32 475 94 06 56" />
+                  <InfoRow icon={<Clock className="w-6 h-6 text-indigo-400 mt-1 mr-4 flex-shrink-0" />} title="Kantooruren" value={"Maandag - Vrijdag\n09:00 - 18:00 (CET)"} />
                 </div>
               </div>
               <div className="mt-12 pt-8 border-t border-slate-800">

@@ -178,7 +178,7 @@
   contact: [
     {
       q: 'Hoe kan ik contact met jullie opnemen?',
-      a: 'U kunt contact met ons opnemen door het contactformulier op onze website in te vullen, via e-mail op info@dzydigital.com of telefonisch op +32 470 12 34 56. U kunt ook een bezoek brengen aan ons kantoor op de Meir in Antwerpen. We beantwoorden alle aanvragen binnen 24 uur.'
+      a: 'U kunt contact met ons opnemen door het contactformulier op onze website in te vullen, via e-mail op info@dzydigital.com of telefonisch op +32 475 94 06 56. U kunt ook een bezoek brengen aan ons kantoor op de Markgravelei in Antwerpen. We beantwoorden alle aanvragen binnen 24 uur.'
     },
     {
       q: 'Wat houdt een gratis technische vooranalyse in?',
