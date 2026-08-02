@@ -189,6 +189,36 @@ export const servicesData = [
   title: 'Maatwerk CRM voor KMO\'s',
   desc: 'Slanke en doeltreffende CRM-systemen ontworpen rondom úw unieke verkoopproces.',
   fullDesc: 'Vergeet de complexe, dure standaardpakketten. Wij bouwen razendsnelle, op maat gemaakte CRM-applicaties die uw salesteam daadwerkelijk wil gebruiken. Met perfecte integraties naar uw Belgische boekhoudpakket, e-mail en VoIP systemen voor maximale conversie.'
+},
+{
+  icon: <Clock className="w-6 h-6 text-fuchsia-600" />,
+  title: 'B2B Reserverings- en Verhuursystemen',
+  desc: 'Automatiseer complexe verhuur van materieel en ruimtes met klantspecifieke contracten.',
+  fullDesc: 'Standaard boekingstools schieten tekort voor B2B. Wij bouwen maatwerk reserveringsplatformen voor het verhuren van zwaar materieel, laboratoria of werkruimtes, inclusief dynamische prijsstaffels, borgbeheer en na-facturatie via API-koppelingen met uw boekhoudpakket.'
+},
+{
+  icon: <MapPin className="w-6 h-6 text-emerald-500" />,
+  title: 'Smart City & IoT Dataplatformen',
+  desc: 'Zet stadsdata om in actiegerichte dashboards voor mobiliteit en milieubeheer.',
+  fullDesc: 'Voor overheden en slimme steden ontwikkelen wij robuuste cloud-portalen die miljoenen datapunten van IoT-sensoren (verkeer, fijnstof, afval) verwerken. Onze Big Data oplossingen visualiseren deze stromen, waardoor proactief stadsbeheer en Smart City initiatieven mogelijk worden.'
+},
+{
+  icon: <Search className="w-6 h-6 text-indigo-500" />,
+  title: 'Supply Chain Traceerbaarheid (Track & Trace)',
+  desc: 'End-to-end logistieke traceerbaarheid van boer tot bord voor de voedingsindustrie.',
+  fullDesc: 'Garandeer voedselveiligheid en transparantie met onze geavanceerde Track & Trace software. Door integratie van RFID, QR-codes en temperatuursensoren (cold chain) bouwen we platformen waarmee u elke stap in uw supply chain feilloos documenteert volgens de normen van het FAVV.'
+},
+{
+  icon: <Wallet className="w-6 h-6 text-rose-500" />,
+  title: 'FinTech Auditing & OCR Rapportages',
+  desc: 'Automatiseer uw financiële controleprocessen en data-extractie met AI.',
+  fullDesc: 'Transformeer uw accountancy- of auditkantoor met Continuous Auditing. Wij ontwikkelen software die facturen en declaraties uitleest via slimme OCR, fraude detecteert via AI-patroonherkenning, en financiële consolidaties automatisch genereert voor KMO\'s en holdings.'
+},
+{
+  icon: <Zap className="w-6 h-6 text-amber-500" />,
+  title: 'Energy Management Systemen (EMS)',
+  desc: 'Verlaag energiekosten en CO2-uitstoot met geautomatiseerde stroomcontrole.',
+  fullDesc: 'Integreer slimme meters, zonnepanelen, laadpalen en uw HVAC-infrastructuur in één centraal, op maat gemaakt EMS-dashboard. Beheer uw piekvraag (peak shaving), stuur dynamisch laadsessies aan en voldoe moeiteloos aan de CSRD-verplichtingen voor duurzaamheidsrapportage.'
 }
 
 ];
