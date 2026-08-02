@@ -339,6 +339,36 @@ export const servicesData = [
   title: 'B2B Event Management Systemen',
   desc: 'White-label portalen voor congresregistratie, facturatie en lead retrieval.',
   fullDesc: 'Organiseer professionele B2B-evenementen en vakbeurzen met maatwerk software. Wij bieden gepersonaliseerde registratiestromen, naadloze B2B-facturatie, razendsnelle on-site badge printing via QR en mobiele lead retrieval apps voor uw sponsors.'
+},
+{
+  icon: <Shapes className="w-6 h-6 text-fuchsia-500" />,
+  title: 'AR Configuratoren voor B2B Sales',
+  desc: 'Visualiseer complexe industriële producten met 3D Augmented Reality.',
+  fullDesc: 'Versnel uw sales cycle aanzienlijk. Wij ontwikkelen 3D product configuratoren (gekoppeld aan uw CPQ-systeem) waarmee uw verkoopteam via tablets machines en componenten real-time en op ware grootte in de fabriekshal van de klant kan projecteren.'
+},
+{
+  icon: <Rocket className="w-6 h-6 text-indigo-500" />,
+  title: 'SaaS Platform Ontwikkeling',
+  desc: 'Transformeer uw consultancy-diensten in een schaalbaar, maandelijks abonnement.',
+  fullDesc: 'Van dienstverlener naar techbedrijf. Wij fungeren als uw technische partner en bouwen multi-tenant SaaS-applicaties op cloud-native architecturen. Inclusief geautomatiseerde facturatie (Stripe integratie) en strikte Row-Level Security voor al uw klanten.'
+},
+{
+  icon: <Building2 className="w-6 h-6 text-amber-500" />,
+  title: 'ConTech & Werfbeheer Portalen',
+  desc: 'Centraliseer werfcommunicatie, BIM-integraties en RSZ-aanwezigheidsregistratie.',
+  fullDesc: 'Digitaliseer de Belgische bouwsector. Wij bouwen portals die architecten, aannemers en onderaannemers verbinden. Met functies voor digitale punch-lists, 4D/5D BIM koppelingen en directe integratie met Check-in-at-work ter vermindering van faalkosten.'
+},
+{
+  icon: <Shield className="w-6 h-6 text-red-600" />,
+  title: 'Cybersecurity & Penetration Testing',
+  desc: 'Beveiligingsaudits en ethisch hacken om kwetsbaarheden in uw IT-netwerk bloot te leggen.',
+  fullDesc: 'Wees hackers een stap voor. Naast het bouwen van veilige software, voeren we geavanceerde Pen-Tests uit op uw infrastructuur. Wij leveren gedetailleerde compliancerapporten (vereist voor ISO 27001 / NIS2) met concrete stappen om datalekken te dichten.'
+},
+{
+  icon: <CreditCard className="w-6 h-6 text-emerald-500" />,
+  title: 'Peppol e-Invoicing Integratie',
+  desc: 'Maak uw facturatiesysteem klaar voor de Belgische B2B e-Invoicing verplichting.',
+  fullDesc: 'Voorkom boetes en versnel betalingen. Wij integreren UBL- en Peppol-standaarden direct in uw ERP- of maatwerk facturatiesoftware. Verzend en ontvang gestructureerde, fraudebestendige elektronische facturen volledig automatisch via beveiligde Access Points.'
 }
 
 ];

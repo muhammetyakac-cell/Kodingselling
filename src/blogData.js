@@ -985,5 +985,110 @@ export const blogPosts = [
     "lead retrieval app",
     "on-site badge printing software"
   ]
+},
+{
+  "id": "ar-configuratoren-b2b-sales",
+  "title": "AR Configuratoren: Verkoop Complexe B2B Producten Visueel",
+  "category": "Sales & AR",
+  "date": "05 April 2025",
+  "readTime": "6 min lees",
+  "description": "B2B sales cycli duren vaak lang. Ontdek hoe Augmented Reality (AR) configuratoren complexe machines direct in de ruimte van de klant visualiseren.",
+  "content": "<p>Het verkopen van grote, complexe machines, industriële pompen of gespecialiseerde magazijnstellingen is een uitdaging. Klanten kunnen zich moeilijk voorstellen hoe een product op maat er in hun eigen fabriek of magazijn uit zal zien. Gevolg? Lange sales cycli en veel twijfel.</p>\n<h2>Visualiseer de Oplossing met AR</h2>\n<p>Augmented Reality (AR) brengt hier verandering in. Via een tablet of smartphone projecteert de verkoper een 3D-model van het product real-time in de fysieke ruimte van de klant. Past de machine wel door de deuren? Is er genoeg loopruimte over? AR geeft direct antwoord.</p>\n<h3>Gekoppeld aan uw CPQ-systeem</h3>\n<ul>\n<li><strong>Configure, Price, Quote (CPQ):</strong> Terwijl de klant in AR opties toevoegt (bijv. een extra transportband of een andere motor), berekent de software op de achtergrond direct de nieuwe prijs.</li>\n<li><strong>Foutloze Offertes:</strong> Omdat het 3D-model is gebaseerd op werkelijke CAD-data en de componenten vooraf zijn geprogrammeerd, kan de verkoper nooit een configuratie verkopen die technisch onmogelijk is.</li>\n</ul>\n<h2>Moderniseer uw Sales Pitch</h2>\n<p>DZY Digital bouwt visuele 3D-configuratoren voor B2B-bedrijven in Vlaanderen. Geef uw salesteam een onmiskenbaar concurrentievoordeel en versnel de besluitvorming van uw klanten.</p>\n",
+  "tags": [
+    "AR",
+    "Sales",
+    "Configurator",
+    "CPQ"
+  ],
+  "seoKeywords": [
+    "AR configurator B2B",
+    "3D product configurator",
+    "CPQ software integratie",
+    "sales software industrie"
+  ]
+},
+{
+  "id": "van-dienstverlener-naar-saas-bedrijf",
+  "title": "Van Dienstverlener naar SaaS-bedrijf: De Digitale Transitie",
+  "category": "Software Ontwikkeling",
+  "date": "12 April 2025",
+  "readTime": "8 min lees",
+  "description": "Steeds meer Belgische consultancy- en adviesbureaus transformeren hun kennis in een schaalbaar SaaS-product. Hoe werkt dit?",
+  "content": "<p>Als consultancybureau verkoopt u uren. Uw groei wordt daardoor altijd beperkt door het aantal medewerkers dat u kunt aannemen. Om deze grens te doorbreken, digitaliseren steeds meer Vlaamse dienstverleners hun unieke methodologieën tot een Software-as-a-Service (SaaS) product.</p>\n<h2>Productization van Diensten</h2>\n<p>Stel, u bent een auditbureau dat energiemanagement-advies geeft. In plaats van elke klant handmatig te adviseren, bouwt u een portal waarin klanten hun data uploaden en uw gepatenteerde algoritme automatisch het adviesrapport genereert. Klanten betalen nu een maandelijks abonnement in plaats van een uurtarief.</p>\n<h3>De Technische Vereisten voor SaaS</h3>\n<ul>\n<li><strong>Multi-tenant Architectuur:</strong> Eén applicatie moet duizenden klanten tegelijk kunnen bedienen, waarbij elke klant (tenant) uitsluitend zijn eigen data ziet (via stricte RLS-beveiliging).</li>\n<li><strong>Geautomatiseerde Facturatie:</strong> Integratie met betaalproviders zoals Stripe voor naadloos abonnementenbeheer (MRR).</li>\n<li><strong>Hoge Beschikbaarheid:</strong> Cloud-native hosting via AWS of Azure, zodat de software altijd beschikbaar is.</li>\n</ul>\n<h2>Uw Kennis, Onze Code</h2>\n<p>Heeft u een unieke bedrijfsmethodiek die schreeuwt om digitalisering? DZY Digital fungeert als uw technische co-founder en bouwt het SaaS-platform waarmee u de markt kunt domineren.</p>\n",
+  "tags": [
+    "SaaS",
+    "Software",
+    "Cloud",
+    "Business Model"
+  ],
+  "seoKeywords": [
+    "SaaS laten bouwen België",
+    "software ontwikkeling Antwerpen",
+    "multi tenant architectuur",
+    "productization consultancy"
+  ]
+},
+{
+  "id": "contech-bouwsector-digitaliseren-vlaanderen",
+  "title": "ConTech: Waarom de Bouwsector Sneller Moet Digitaliseren",
+  "category": "Bouw & ConTech",
+  "date": "19 April 2025",
+  "readTime": "7 min lees",
+  "description": "De bouwsector (Construction Tech) hinkt achterop qua digitalisering. Hoe werfbeheer software en BIM-integraties faalkosten reduceren.",
+  "content": "<p>In de Vlaamse bouwsector zijn de marges klein en de risico's groot. Fouten in de communicatie tussen architecten, aannemers en onderaannemers leiden tot torenhoge faalkosten. ConTech (Construction Technology) biedt de oplossing voor een efficiëntere werf.</p>\n<h2>De Digitale Werf</h2>\n<p>Een bouwproject beheren via WhatsApp-groepen en rondzwervende e-mails is vragen om problemen. Een gecentraliseerd projectportaal zorgt ervoor dat iedereen werkt met de laatste versie van het plan.</p>\n<h3>Cruciale Software in de Bouw</h3>\n<ul>\n<li><strong>BIM Integratie (Building Information Modeling):</strong> Koppel 3D-modellen aan planning (4D) en budget (5D). Als een leiding in het ontwerp wordt verlegd, past het systeem automatisch de stuklijst en de kostenraming aan.</li>\n<li><strong>Mobiel Werfbeheer:</strong> Werfleiders kunnen via een app direct opleverpunten (punch lists) afvinken, foto's nemen van gebreken en deze onmiddellijk toewijzen aan de juiste onderaannemer.</li>\n<li><strong>Tijdsregistratie & Check-in-at-work:</strong> Automatische koppelingen met de RSZ voor de wettelijke verplichte aanwezigheidsregistratie op Belgische werven.</li>\n</ul>\n<h2>Bouw met Data</h2>\n<p>DZY Digital bouwt ConTech applicaties die de chaos op de werf vervangen door gestroomlijnde, meetbare processen. Verlaag uw faalkosten en verhoog de veiligheid.</p>\n",
+  "tags": [
+    "ConTech",
+    "Bouw",
+    "BIM",
+    "Werfbeheer"
+  ],
+  "seoKeywords": [
+    "werfbeheer software België",
+    "BIM integratie software",
+    "Checkin at work app",
+    "bouwsector software op maat"
+  ]
+},
+{
+  "id": "ethisch-hacken-kmo-pen-test-nodig",
+  "title": "Ethisch Hacken: Waarom Elke KMO Een Pen-Test Nodig Heeft",
+  "category": "Cybersecurity & Audit",
+  "date": "26 April 2025",
+  "readTime": "6 min lees",
+  "description": "U denkt dat uw bedrijfsnetwerk veilig is? Een Penetration Test (Pen-Test) legt de verborgen kwetsbaarheden bloot voordat criminelen dat doen.",
+  "content": "<p>Veel Belgische bedrijven investeren duizenden euro's in firewalls en antivirussoftware, maar testen deze systemen zelden in de praktijk. Een Penetration Test (pen-test), of 'ethisch hacken', is de ultieme stresstest voor uw IT-infrastructuur.</p>\n<h2>Wat is een Pen-Test?</h2>\n<p>Bij een pen-test huren bedrijven gecertificeerde ethische hackers in (zoals een Red Team) om hun systemen opzettelijk aan te vallen, met behulp van dezelfde technieken als echte cybercriminelen. Het doel is niet om schade aan te richten, maar om de gaten in de beveiliging in kaart te brengen.</p>\n<h3>Fases van een Pen-Test</h3>\n<ul>\n<li><strong>Reconnaissance:</strong> De hackers verzamelen openbare informatie (OSINT) over uw bedrijf en medewerkers om mogelijke phishing-doelwitten te identificeren.</li>\n<li><strong>Vulnerability Exploitation:</strong> Er wordt actief geprobeerd om binnen te dringen via ongepatchte software, zwakke wachtwoorden of verkeerd geconfigureerde cloud-servers.</li>\n<li><strong>Rapportage en Remediëring:</strong> U ontvangt een gedetailleerd rapport (vaak verplicht voor ISO 27001 of NIS2-compliance) met concrete, prioritaire stappen om de gevonden lekken te dichten.</li>\n</ul>\n<h2>Proactieve Veiligheid</h2>\n<p>DZY Digital beveiligt niet alleen de software die we bouwen, maar we voeren ook grondige veiligheidsaudits uit op uw bestaande infrastructuur om dataverlies en reputatieschade te voorkomen.</p>\n",
+  "tags": [
+    "Cybersecurity",
+    "Pen-Testing",
+    "Ethical Hacking",
+    "NIS2"
+  ],
+  "seoKeywords": [
+    "Pen test laten uitvoeren",
+    "ethisch hacken België",
+    "cybersecurity audit KMO",
+    "ISO 27001 compliance software"
+  ]
+},
+{
+  "id": "verplichte-b2b-einvoicing-peppol-belgie",
+  "title": "Verplichte B2B e-Invoicing in België: Bent U Klaar voor Peppol?",
+  "category": "Finance & Automatisering",
+  "date": "03 Mei 2025",
+  "readTime": "7 min lees",
+  "description": "De Belgische overheid verplicht binnenkort e-invoicing tussen bedrijven via het Peppol-netwerk. Hoe u uw ERP-systeem hierop voorbereidt.",
+  "content": "<p>De dagen van de PDF-factuur per e-mail zijn geteld. Om BTW-fraude tegen te gaan en de efficiëntie te verhogen, maakt de Belgische overheid gestructureerde elektronische facturatie (e-Invoicing) via het Europese Peppol-netwerk verplicht voor B2B-transacties.</p>\n<h2>Wat is Peppol?</h2>\n<p>Peppol (Pan-European Public Procurement OnLine) is een beveiligd, internationaal netwerk dat ervoor zorgt dat facturatie-softwarepakketten wereldwijd op een gestandaardiseerde manier met elkaar kunnen 'praten', in een formaat (UBL - Universal Business Language) dat direct leesbaar is door machines.</p>\n<h3>De Voordelen voor Uw Bedrijf</h3>\n<p>Hoewel het als een verplichting voelt, biedt de overstap enorme voordelen voor uw cashflow:</p>\n<ul>\n<li><strong>Snellere Betalingen:</strong> Omdat de factuur direct in het ERP van uw klant belandt (en automatisch wordt herkend), vindt betaling vaak veel sneller plaats.</li>\n<li><strong>Eliminatie van Spookfacturen:</strong> Omdat afzenders op het Peppol-netwerk streng geverifieerd worden, hebben fraudeurs en phishing-campagnes geen kans.</li>\n<li><strong>Geen OCR-fouten:</strong> U heeft geen scansoftware meer nodig om facturen in te lezen; de data staat al in het juiste digitale veld.</li>\n</ul>\n<h2>Integreer uw Systeem</h2>\n<p>DZY Digital bouwt Peppol Access Point integraties voor bestaande, maatwerk ERP- en facturatiesystemen. Voorkom boetes en moderniseer uw facturatiestroom vandaag nog.</p>\n",
+  "tags": [
+    "e-Invoicing",
+    "Peppol",
+    "Finance",
+    "B2B"
+  ],
+  "seoKeywords": [
+    "Peppol integratie België",
+    "B2B e-invoicing verplicht",
+    "UBL facturatie software",
+    "ERP facturatie koppeling"
+  ]
 }
 ];
