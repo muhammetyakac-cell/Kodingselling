@@ -565,5 +565,110 @@ export const blogPosts = [
     "peak shaving software",
     "slim laden bedrijfsnetwerk"
   ]
+},
+{
+  "id": "eigen-lms-vlaanderen-b2b",
+  "title": "Het Belang van een Eigen LMS voor Uw Bedrijf in België",
+  "category": "EdTech & HR",
+  "date": "24 Oktober 2024",
+  "readTime": "6 min lees",
+  "description": "Waarom externe cursussen vaak hun doel missen. Ontdek de kracht van een op maat gemaakt Learning Management System (LMS) voor uw personeel.",
+  "content": "<p>In de huidige krappe Vlaamse arbeidsmarkt is het behouden en bijscholen van personeel (upskilling en reskilling) belangrijker dan ooit. Veel bedrijven vertrouwen hiervoor op externe aanbieders of algemene cursussen, maar deze sluiten zelden perfect aan bij de specifieke bedrijfsprocessen.</p>\n<h2>Wat is een Maatwerk LMS?</h2>\n<p>Een Learning Management System (LMS) is een digitaal portaal waar uw werknemers cursussen, certificaten en inwerkprogramma's (onboarding) kunnen volgen. Bij DZY Digital ontwerpen we deze systemen in de huisstijl van uw bedrijf, met functionaliteiten die u echt nodig heeft.</p>\n<h3>Voordelen van een Eigen Platform</h3>\n<ul>\n<li><strong>Gestroomlijnde Onboarding:</strong> Nieuwe medewerkers kunnen zelfstandig introductievideo's bekijken en veiligheidsquizzen invullen voordat ze de fabrieksvloer betreden.</li>\n<li><strong>Certificatenbeheer:</strong> Het systeem waarschuwt automatisch wanneer veiligheidscertificaten (zoals VCA of heftruckattesten) dreigen te verlopen.</li>\n<li><strong>Integratie met HR:</strong> Trainingsresultaten worden direct gekoppeld aan het personeelsdossier van de medewerker.</li>\n</ul>\n<h2>Investeren in Kennis</h2>\n<p>Een eigen opleidingsportaal betaalt zichzelf snel terug door een snellere inwerktijd en minder verloop. Klaar om uw eigen bedrijfsschool te lanceren? Neem contact op.</p>\n",
+  "tags": [
+    "LMS",
+    "HR",
+    "Opleiding",
+    "EdTech"
+  ],
+  "seoKeywords": [
+    "LMS systeem op maat",
+    "e-learning platform België",
+    "onboarding software KMO",
+    "VCA certificaten beheer"
+  ]
+},
+{
+  "id": "cyber-risk-dashboards-kmo",
+  "title": "Inzicht in Uw Digitale Kwetsbaarheid: Cyber Risk Dashboards",
+  "category": "Cybersecurity & Data",
+  "date": "02 November 2024",
+  "readTime": "7 min lees",
+  "description": "Een firewall is niet genoeg. Hoe actieve monitoring via Cyber Risk Dashboards Antwerpse KMO's beschermt tegen dataverlies.",
+  "content": "<p>Cybersecurity wordt vaak gezien als een eenmalige IT-taak: installeer een antivirus en een firewall, en u bent veilig. In werkelijkheid veranderen cyberdreigingen per minuut. Belgische bedrijven hebben behoefte aan real-time inzicht in hun digitale veiligheid.</p>\n<h2>Het Gevaar van Blinde Vlekken</h2>\n<p>Zonder overzicht weet u niet of een medewerker inlogt vanaf een onbeveiligd netwerk of dat er verdachte inlogpogingen zijn op uw server. Cyber Risk Dashboards lossen dit probleem op.</p>\n<h3>Real-time Beveiligingsmonitoring</h3>\n<p>Onze security dashboards verzamelen data van al uw endpoints (laptops, servers, telefoons) en netwerken:</p>\n<ul>\n<li><strong>Live Threat Detection:</strong> AI-algoritmes detecteren ongewoon gedrag, zoals het massaal downloaden of versleutelen van bestanden (wat kan wijzen op ransomware).</li>\n<li><strong>Vulnerability Scanning:</strong> Het systeem scant uw netwerk automatisch op ongepatchte software en openstaande poorten.</li>\n<li><strong>Compliance Rapportage:</strong> Bewijs aan klanten of verzekeraars dat u voldoet aan de GDPR en de nieuwe NIS2-richtlijn via automatisch gegenereerde rapporten.</li>\n</ul>\n<h2>Blijf Hackers een Stap Voor</h2>\n<p>DZY Digital implementeert security monitoring tools die in één oogopslag laten zien waar de zwakke plekken van uw netwerk zich bevinden, nog voordat hackers ze vinden.</p>\n",
+  "tags": [
+    "Cybersecurity",
+    "Dashboards",
+    "NIS2",
+    "Monitoring"
+  ],
+  "seoKeywords": [
+    "cyber risk dashboard",
+    "security monitoring België",
+    "NIS2 compliance software",
+    "ransomware detectie KMO"
+  ]
+},
+{
+  "id": "digitale-werkbonnen-field-service",
+  "title": "Zeg Vaarwel tegen de Papieren Werkbon: Field Service Automatisering",
+  "category": "Field Service",
+  "date": "09 November 2024",
+  "readTime": "6 min lees",
+  "description": "Hoe installatie- en onderhoudsbedrijven in Vlaanderen hun efficiëntie verdubbelen met digitale werkbonnen en Field Service Apps.",
+  "content": "<p>Onderhoudstechnici, installateurs en loodgieters verliezen dagelijks uren aan administratie. Papieren werkbonnen raken kwijt, urenstaten zijn onleesbaar en facturatie loopt vaak weken vertraging op. De oplossing? Een mobiele Field Service Applicatie.</p>\n<h2>De Digitale Technicus</h2>\n<p>Met een maatwerk applicatie op tablet of smartphone heeft uw buitendienst alle informatie altijd op zak. Dit verandert niet alleen hun werkdag, maar ook uw volledige cashflow.</p>\n<h3>Functies van Field Service Software</h3>\n<ul>\n<li><strong>Digitale Werkbonnen:</strong> Technici vullen verbruikte materialen en gewerkte uren digitaal in, inclusief voor-en-na foto's van de installatie.</li>\n<li><strong>Digitale Handtekening:</strong> De klant tekent direct op de tablet af, waarna de werkbon als PDF wordt gemaild en onmiddellijk in uw boekhouding (voor facturatie) verschijnt.</li>\n<li><strong>GPS & Routeplanning:</strong> Dispatchers op kantoor wijzen urgente storingen direct toe aan de dichtstbijzijnde beschikbare technicus.</li>\n</ul>\n<h2>Snellere Facturatie, Minder Fouten</h2>\n<p>Door de administratie van de buitendienst te digitaliseren, reduceert u de facturatietijd van weken naar uren. DZY Digital bouwt gebruiksvriendelijke mobiele apps die uw technici zonder technische voorkennis kunnen bedienen.</p>\n",
+  "tags": [
+    "Field Service",
+    "Automatisering",
+    "Mobiele Apps",
+    "Werkbonnen"
+  ],
+  "seoKeywords": [
+    "digitale werkbon software",
+    "field service management België",
+    "app voor techniekers",
+    "werkbon facturatie"
+  ]
+},
+{
+  "id": "legal-tech-advocatenkantoren-vlaanderen",
+  "title": "Legal Tech: Hoe Advocatenkantoren Efficiënter Werken",
+  "category": "Legal Tech",
+  "date": "16 November 2024",
+  "readTime": "7 min lees",
+  "description": "De juridische sector in België moderniseert. Hoe Legal Tech-software advocatenkantoren helpt met documentbeheer, tijdsregistratie en e-Discovery.",
+  "content": "<p>Advocatenkantoren en notarissen kampen vaak met immense hoeveelheden documenten, strikte deadlines en complexe tijdsregistraties. Traditionele softwarepakketten zijn vaak onvoldoende afgestemd op de specifieke, sterk gereguleerde Belgische rechtspraktijk. Hier komt Legal Tech in het spel.</p>\n<h2>Van Papier naar Digitaal Dossier</h2>\n<p>Het beheer van fysieke of gefragmenteerde digitale dossiers leidt tot inefficiëntie en veiligheidsrisico's. Een maatwerk Legal Portal centraliseert de volledige communicatie rond een zaak.</p>\n<h3>Wat biedt Maatwerk Legal Tech?</h3>\n<ul>\n<li><strong>Geautomatiseerde Documentgeneratie:</strong> Genereer standaardcontracten of dagvaardingen automatisch op basis van cliëntdata.</li>\n<li><strong>Frictieloze Tijdsregistratie (Billables):</strong> Koppel uw telefooncentrale, e-mail en agendasoftware direct aan het cliëntdossier, zodat geen enkele gedeclareerde minuut verloren gaat.</li>\n<li><strong>Beveiligde Cliëntportalen:</strong> Deel vertrouwelijk bewijsmateriaal en vonnissen via een versleuteld portaal in plaats van onveilige e-mailbijlagen.</li>\n</ul>\n<h2>Veiligheid Voorop</h2>\n<p>Gezien het beroepsgeheim is de hoogste mate van cybersecurity vereist. Bij DZY Digital bouwen we juridische software met end-to-end encryptie en stricte toegangscontroles (RLS). Optimaliseer de workflows van uw kantoor vandaag nog.</p>\n",
+  "tags": [
+    "Legal Tech",
+    "Advocatuur",
+    "Portaal",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "Legal tech software België",
+    "advocatenkantoor software",
+    "tijdsregistratie advocaten",
+    "digitaal dossier beheer"
+  ]
+},
+{
+  "id": "waarom-excel-niet-voldoet-productieplanning",
+  "title": "Waarom Excel Niet Voldoet voor Uw Productieplanning (APS)",
+  "category": "Industrie 4.0",
+  "date": "23 November 2024",
+  "readTime": "8 min lees",
+  "description": "Productiebedrijven in Vlaanderen sturen hun complexe fabrieken vaak nog aan via Excel. Waarom Advanced Planning & Scheduling (APS) software noodzakelijk is.",
+  "content": "<p>Veel Vlaamse productiebedrijven leveren technisch hoogstaande producten, maar plannen hun productievloer nog met verouderde spreadsheets. Hoewel Excel fantastisch is voor simpele lijsten, breekt het zodra meerdere afhankelijkheden, machine-uitval of spoedorders samenkomen.</p>\n<h2>De Beperkingen van Spreadsheets</h2>\n<p>Een Excel-planning is statisch. Als een grondstof vertraagd is of een machine uitvalt, kost het de planner uren om alle gevolgen (het rimpel-effect) voor de rest van de week handmatig uit te rekenen. Dit leidt tot machine-stilstand en gemiste deadlines.</p>\n<h3>Advanced Planning & Scheduling (APS)</h3>\n<p>Een op maat gemaakt APS-systeem neemt deze wiskundige complexiteit over. Het is dynamische software die verbonden is met uw ERP en voorraadbeheer:</p>\n<ul>\n<li><strong>Real-time Herplanning:</strong> Een spoedorder? Het algoritme berekent binnen seconden de nieuwe, meest efficiënte planning zonder andere deadlines te compromitteren.</li>\n<li><strong>Capaciteitsbegrenzing:</strong> Het systeem 'weet' exact hoeveel uur een machine kan draaien en welke operator daarvoor nodig is (finiete capaciteitsplanning).</li>\n<li><strong>Scenario Analyses (What-If):</strong> Simuleer de impact van het aannemen van een groot nieuw contract voordat u 'ja' zegt tegen de klant.</li>\n</ul>\n<h2>Verhoog uw OEE (Overall Equipment Effectiveness)</h2>\n<p>Laat uw productie niet afhangen van één Excel-expert in uw bedrijf. DZY Digital ontwikkelt cloud-gebaseerde planningssoftware die uw productielijnen efficiënter, voorspelbaarder en winstgevender maakt.</p>\n",
+  "tags": [
+    "Productie",
+    "APS",
+    "Industrie 4.0",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "productieplanning software APS",
+    "machineplanning België",
+    "OEE verhogen software",
+    "Excel vervangen productie"
+  ]
 }
 ];

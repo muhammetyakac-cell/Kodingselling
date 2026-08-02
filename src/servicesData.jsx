@@ -219,6 +219,36 @@ export const servicesData = [
   title: 'Energy Management Systemen (EMS)',
   desc: 'Verlaag energiekosten en CO2-uitstoot met geautomatiseerde stroomcontrole.',
   fullDesc: 'Integreer slimme meters, zonnepanelen, laadpalen en uw HVAC-infrastructuur in één centraal, op maat gemaakt EMS-dashboard. Beheer uw piekvraag (peak shaving), stuur dynamisch laadsessies aan en voldoe moeiteloos aan de CSRD-verplichtingen voor duurzaamheidsrapportage.'
+},
+{
+  icon: <GraduationCap className="w-6 h-6 text-indigo-500" />,
+  title: 'B2B Opleidings- & LMS Platformen',
+  desc: 'Eigen Learning Management Systemen (LMS) voor medewerkers en B2B-klanten.',
+  fullDesc: 'Stroomlijn onboarding, veiligheidstrainingen en certificeringen met een maatwerk leeromgeving. Wij bouwen interactieve EdTech portalen die niet alleen cursussen aanbieden, maar direct gekoppeld zijn aan uw HR-systeem voor automatische opvolging van vereiste kwalificaties (zoals VCA).'
+},
+{
+  icon: <Shield className="w-6 h-6 text-red-500" />,
+  title: 'Cyber Risk & Monitoring Dashboards',
+  desc: 'Real-time inzicht in uw digitale kwetsbaarheden en netwerkbeveiliging.',
+  fullDesc: 'Voldoe aan de strenge NIS2-richtlijnen. Wij ontwikkelen geavanceerde security dashboards die uw IT-infrastructuur monitoren. Detecteer ongebruikelijke patronen via AI, scan automatisch op kwetsbaarheden en genereer met één druk op de knop compliance rapporten voor audits en verzekeraars.'
+},
+{
+  icon: <Shapes className="w-6 h-6 text-sky-600" />,
+  title: 'Digitale Werkbonnen (Field Service)',
+  desc: 'Verhoog de efficiëntie van uw buitendienst met mobiele Field Service apps.',
+  fullDesc: 'Gooi papieren werkbonnen weg. Wij bouwen mobiele (iOS/Android) of Progressive Web Apps voor uw technici. Inclusief digitale handtekeningen, urenregistratie, fotodocumentatie en automatische GPS-routeplanning, direct geïntegreerd in uw boekhoudpakket voor bliksemsnelle facturatie.'
+},
+{
+  icon: <Landmark className="w-6 h-6 text-slate-700" />,
+  title: 'Legal Tech & Workflow Automatisering',
+  desc: 'Beveiligde cliëntportalen en geautomatiseerde tijdsregistratie voor de advocatuur.',
+  fullDesc: 'Moderniseer uw advocaten- of notariskantoor. Wij ontwikkelen Legal Tech oplossingen met de hoogste beveiligingsstandaarden (end-to-end encryptie). Automatiseer documentgeneratie, billable hours en faciliteer veilige communicatie via afgeschermde portalen voor uw cliënten.'
+},
+{
+  icon: <Cpu className="w-6 h-6 text-amber-600" />,
+  title: 'Productie Planning Systemen (APS)',
+  desc: 'Dynamische Advanced Planning & Scheduling (APS) software ter vervanging van Excel.',
+  fullDesc: 'Optimaliseer uw fabrieksvloer. Onze APS-systemen berekenen real-time de meest efficiënte productieroutes op basis van machinecapaciteit, personeelsbeschikbaarheid en materiaalvoorraad. Verminder stilstand en simuleer "what-if" scenario\'s met intelligente algoritmes.'
 }
 
 ];
