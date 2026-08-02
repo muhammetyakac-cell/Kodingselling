@@ -309,6 +309,36 @@ export const servicesData = [
   title: 'Low-Code Interne Tools',
   desc: 'Versnel digitalisering met hybride low-code/custom-code applicatieontwikkeling.',
   fullDesc: 'Heeft u snel een interne app nodig voor voorraadbeheer of dataregistratie? Wij gebruiken geavanceerde low-code platformen gecombineerd met maatwerk logica om uw Time-to-Market te halveren, zonder in te boeten aan schaalbaarheid of veiligheid.'
+},
+{
+  icon: <Microscope className="w-6 h-6 text-emerald-500" />,
+  title: 'Kwaliteitscontrole (QMS) Systemen',
+  desc: 'Digitaliseer uw kwaliteitsinspecties met mobiele apps voor de productievloer.',
+  fullDesc: 'Elimineer papieren klemborden. We ontwikkelen cloud-gebaseerde Quality Management Systems (QMS) specifiek voor tablets op de fabrieksvloer. Met fotodocumentatie, digitale handtekeningen en automatische rapportages garandeert u ISO- en IFS-compliance zonder administratieve rompslomp.'
+},
+{
+  icon: <Cpu className="w-6 h-6 text-fuchsia-600" />,
+  title: 'Robotica & Cobot Integratie (HMI)',
+  desc: 'Verbind collaboratieve robots (cobots) naadloos met uw ERP en Machine Vision.',
+  fullDesc: 'Maak uw robots slim. Wij bouwen intuïtieve Human-Machine Interfaces (HMI) en robuuste API\'s die cobots (zoals Universal Robots) verbinden met uw bedrijfsnetwerk, camera-systemen (AI) en planningssoftware voor geautomatiseerde en foutloze productie.'
+},
+{
+  icon: <BarChart3 className="w-6 h-6 text-indigo-500" />,
+  title: 'Predictive Finance & AI Dashboards',
+  desc: 'Voorspel cashflow en klantverloop (churn) met geavanceerde Machine Learning.',
+  fullDesc: 'Kijk in de toekomst, niet naar het verleden. Onze FinTech specialisten integreren Predictive Analytics in uw financiële software. We ontwikkelen AI-modellen die liquiditeitsproblemen voorspellen, budgetten dynamisch aanpassen en klantverloop proactief signaleren.'
+},
+{
+  icon: <Leaf className="w-6 h-6 text-green-600" />,
+  title: 'Afvalbeheer & Cleantech Software',
+  desc: 'Optimaliseer recyclingroutes en OVAM-administratie voor de circulaire economie.',
+  fullDesc: 'Speciaal voor de cleantech- en afvalverwerkingssector ontwerpen wij ERP-modules voor omgekeerde logistiek. Integreer weegbruggen, optimaliseer ophaalroutes op basis van IoT-sensoren in containers en automatiseer de wettelijke milieuregistraties.'
+},
+{
+  icon: <UserCog className="w-6 h-6 text-rose-500" />,
+  title: 'B2B Event Management Systemen',
+  desc: 'White-label portalen voor congresregistratie, facturatie en lead retrieval.',
+  fullDesc: 'Organiseer professionele B2B-evenementen en vakbeurzen met maatwerk software. Wij bieden gepersonaliseerde registratiestromen, naadloze B2B-facturatie, razendsnelle on-site badge printing via QR en mobiele lead retrieval apps voor uw sponsors.'
 }
 
 ];
