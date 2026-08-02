@@ -355,5 +355,110 @@ export const blogPosts = [
     "digitale bill of lading",
     "distributed ledger haven"
   ]
+},
+{
+  "id": "b2b-klantenportaal-vlaanderen",
+  "title": "Waarom B2B E-commerce in Vlaanderen een Klantenportaal Nodig Heeft",
+  "category": "E-commerce & B2B",
+  "date": "15 Augustus 2024",
+  "readTime": "7 min lees",
+  "description": "Een webshop is niet genoeg voor zakelijke klanten. Ontdek hoe een B2B klantenportaal de klantervaring en uw omzet verbetert.",
+  "content": "<p>De tijd dat zakelijke bestellingen uitsluitend via telefoon of e-mail verliepen, ligt achter ons. Toch worstelen veel Vlaamse groothandelaars en distributeurs met de overstap naar digitaal, vaak omdat een standaard B2C-webshop niet voldoet aan B2B-eisen.</p>\n<h2>De Noodzaak van een B2B Klantenportaal</h2>\n<p>B2B-aankopen zijn repetitief en gebaseerd op contractuele afspraken. Een zakelijk klantenportaal biedt functionaliteiten die verder gaan dan een eenvoudige catalogus:</p>\n<ul>\n<li><strong>Klantspecifieke Prijzen:</strong> Toon direct de overeengekomen kortingen en prijsstaffels per klant.</li>\n<li><strong>Ordergeschiedenis en Herbestellen:</strong> Laat klanten met één klik hun vaste maandelijkse bestelling herhalen.</li>\n<li><strong>Facturen en Kredietlimieten:</strong> Bied klanten direct inzicht in hun openstaande saldo's, facturen en beschikbare kredietlimieten via naadloze ERP-integratie.</li>\n</ul>\n<h3>Automatisering van de Backoffice</h3>\n<p>Wanneer bestellingen via een portaal binnenkomen, schiet de software deze direct in uw boekhoudpakket. Dit elimineert de noodzaak voor manuele invoer, waardoor uw team tijd wint voor echte klantenservice. DZY Digital ontwerpt B2B e-commerce platformen die de groei van uw KMO versnellen.</p>\n",
+  "tags": [
+    "B2B",
+    "E-commerce",
+    "Portaal",
+    "Vlaanderen"
+  ],
+  "seoKeywords": [
+    "B2B klantenportaal België",
+    "groothandel e-commerce software",
+    "ERP webshop integratie",
+    "maatwerk B2B platform"
+  ]
+},
+{
+  "id": "business-intelligence-kmo-antwerpen",
+  "title": "Datagestuurde Beslissingen: Business Intelligence voor KMO's",
+  "category": "Data & BI",
+  "date": "22 Augustus 2024",
+  "readTime": "6 min lees",
+  "description": "Hoe Business Intelligence (BI) tools Vlaamse KMO's helpen om ruwe bedrijfsdata om te zetten in strategische inzichten en hogere winstmarges.",
+  "content": "<p>Veel Antwerpse bedrijven zitten op een goudmijn aan data. Verkoopcijfers, websiteverkeer, voorraadniveaus en productiegegevens liggen echter vaak verspreid over verschillende softwaresystemen en Excel-sheets. Hier biedt Business Intelligence (BI) de oplossing.</p>\n<h2>Van Data naar Inzicht</h2>\n<p>BI-software verbindt deze diverse databronnen, reinigt de informatie en presenteert deze in overzichtelijke, real-time dashboards. In plaats van aan het eind van de maand achteraf te rapporteren, stelt BI u in staat om proactief te sturen.</p>\n<h3>Toepassingen voor de KMO</h3>\n<ul>\n<li><strong>Winstmarges per Product:</strong> Zie in één oogopslag welke productlijnen of diensten daadwerkelijk rendabel zijn, inclusief verborgen operationele kosten.</li>\n<li><strong>Voorspellen van Vraag:</strong> Analyseer historische patronen om piekperiodes te voorspellen en uw voorraad daarop af te stemmen.</li>\n<li><strong>Personeelsprestaties:</strong> Krijg objectieve inzichten in de output en efficiëntie van verschillende afdelingen.</li>\n</ul>\n<h2>Onze BI-Oplossingen</h2>\n<p>Bij DZY Digital bouwen we niet zomaar een dashboard; we ontwikkelen een datastrategie. We integreren BI-tools (zoals Power BI of maatwerk dashboards) rechtstreeks in uw bedrijfsapplicaties, zodat data voor u gaat werken, niet andersom.</p>\n",
+  "tags": [
+    "BI",
+    "Data",
+    "Dashboards",
+    "KMO"
+  ],
+  "seoKeywords": [
+    "Business Intelligence KMO",
+    "BI dashboards België",
+    "data analyse software Antwerpen",
+    "PowerBI integratie"
+  ]
+},
+{
+  "id": "vlootbeheer-transport-real-time-tracking",
+  "title": "Vlootbeheer in de 21e Eeuw: Van Excel naar Real-time Tracking",
+  "category": "Logistiek & Transport",
+  "date": "01 September 2024",
+  "readTime": "8 min lees",
+  "description": "Transportbedrijven verliezen geld door inefficiënt vlootbeheer. Ontdek hoe cloud software en telematica de Belgische transportsector optimaliseren.",
+  "content": "<p>De logistieke sector rondom de Antwerpse haven is hypercompetitief. Transportbedrijven die hun vloot nog beheren via whiteboards en Excel, lopen achter. Brandstofkosten stijgen en de roep om duurzaamheid dwingt transporteurs om efficiënter te plannen.</p>\n<h2>De Rol van Telematica en Cloud Software</h2>\n<p>Moderne Fleet Management Systemen (FMS) verzamelen data via telematica-apparatuur (GPS, motormanagement) in de voertuigen en sturen dit live naar de cloud. Dit geeft planners en dispatchers een 360-graden overzicht.</p>\n<h3>Drie Grote Voordelen</h3>\n<ul>\n<li><strong>Brandstofreductie:</strong> Identificeer inefficiënt rijgedrag (zoals onnodig stationair draaien) en optimaliseer routes op basis van real-time verkeersinformatie.</li>\n<li><strong>Predictief Onderhoud:</strong> Ontvang meldingen over motorstoringen of slijtage nog voordat het voertuig stilvalt, wat dure reparaties en vertragingen voorkomt.</li>\n<li><strong>Tachograaf Automatisering:</strong> Automatische uitlezing van tachograafdata zorgt ervoor dat u altijd voldoet aan de Europese rijtijdenwetgeving, zonder handmatige administratie.</li>\n</ul>\n<h2>Maatwerk Logistieke Software</h2>\n<p>DZY Digital ontwikkelt logistieke platforms die niet alleen voertuigen tracken, maar ook communiceren met uw facturatiesysteem en klantenportaal. Transformeer uw wagenpark tot een efficiënte, datagestuurde operatie.</p>\n",
+  "tags": [
+    "Vlootbeheer",
+    "Transport",
+    "GPS",
+    "Logistiek"
+  ],
+  "seoKeywords": [
+    "fleet management software België",
+    "vlootbeheer systeem Antwerpen",
+    "transport software op maat",
+    "real-time GPS tracking"
+  ]
+},
+{
+  "id": "proptech-antwerpen-digitalisering-vastgoed",
+  "title": "PropTech in Antwerpen: De Digitalisering van Vastgoedbeheer",
+  "category": "PropTech & Vastgoed",
+  "date": "08 September 2024",
+  "readTime": "6 min lees",
+  "description": "Hoe Property Technology (PropTech) het beheer van commercieel en residentieel vastgoed in België efficiënter en transparanter maakt.",
+  "content": "<p>De vastgoedmarkt in steden zoals Antwerpen en Brussel is enorm dynamisch. Echter, het beheer van eigendommen—van onderhoudsmeldingen tot huurincasso—is van oudsher een papierintensief en traag proces. Property Technology (PropTech) brengt daar verandering in.</p>\n<h2>Wat is PropTech?</h2>\n<p>PropTech omvat alle innovatieve technologieën die de vastgoedsector optimaliseren. Voor vastgoedbeheerders, syndici en investeerders betekent dit de overstap naar cloud-gebaseerde beheerplatformen die huurders, eigenaren en aannemers met elkaar verbinden.</p>\n<h3>De Impact op Gebouwbeheer</h3>\n<ul>\n<li><strong>Slim Huurdersportaal:</strong> Huurders kunnen via een app storingen melden, hun huurcontract inzien en betalingen beheren. Dit vermindert het aantal e-mails en telefoontjes voor de beheerder drastisch.</li>\n<li><strong>Automatische Indexering en Facturatie:</strong> Het systeem berekent automatisch de jaarlijkse huurindexatie volgens de Belgische gezondheidsindex en stuurt digitale facturen uit.</li>\n<li><strong>IoT Gebouwbeheer:</strong> Verbind slimme thermostaten en toegangssystemen met het portaal om het energieverbruik van commerciële panden te verlagen (Smart Buildings).</li>\n</ul>\n<h2>De Digitale Syndicus</h2>\n<p>DZY Digital bouwt op maat gemaakte PropTech-applicaties die de complexe Belgische vastgoedwetgeving respecteren, en het beheer van uw portfolio schaalbaar en rendabel maken.</p>\n",
+  "tags": [
+    "PropTech",
+    "Vastgoed",
+    "Syndicus",
+    "Antwerpen"
+  ],
+  "seoKeywords": [
+    "PropTech software België",
+    "vastgoedbeheer systeem",
+    "software voor syndicus",
+    "huurdersportaal app"
+  ]
+},
+{
+  "id": "standaard-crm-voldoet-niet-kmo",
+  "title": "Waarom een Standaard CRM Niet Voldoet voor Uw KMO",
+  "category": "CRM & Automatisering",
+  "date": "15 September 2024",
+  "readTime": "7 min lees",
+  "description": "Grote CRM-pakketten zoals Salesforce zijn vaak te complex en te duur voor Belgische KMO's. Waarom maatwerk CRM de betere keuze is.",
+  "content": "<p>Wanneer Belgische KMO's hun verkoopproces willen professionaliseren, kijken ze vaak naar bekende CRM-systemen (Customer Relationship Management) zoals Salesforce of HubSpot. Al snel blijkt dat deze systemen overweldigend zijn, boordevol functies die u nooit gebruikt, maar waar u wel fors voor betaalt.</p>\n<h2>De Illusie van \"One Size Fits All\"</h2>\n<p>Standaard CRM-systemen zijn gebouwd voor massa-adoptie. Ze dwingen uw salesteam om te werken volgens de logica van de software. Dit leidt vaak tot weerstand bij medewerkers: in plaats van een hulpmiddel, wordt het CRM gezien als een administratieve last.</p>\n<h3>De Kracht van een Maatwerk CRM</h3>\n<p>Een CRM dat specifiek is ontwikkeld voor de flow van uw bedrijf, biedt onmiskenbare voordelen:</p>\n<ul>\n<li><strong>Alleen Essentiële Functies:</strong> Een cleane, intuïtieve interface zonder verwarrende menu's.</li>\n<li><strong>Perfecte Integratie:</strong> Naadloze koppelingen met uw bestaande Belgische boekhoudsoftware (zoals Exact Online of Yuki), uw website en uw VoIP-telefooncentrale.</li>\n<li><strong>Automatisering van Uw Specifieke Funnel:</strong> Laat het systeem automatisch contracten genereren, follow-up e-mails sturen of taken aanmaken op het exacte moment dat dit in uw unieke salescyclus past.</li>\n</ul>\n<h2>Bouw Een Systeem Dat Voor U Werkt</h2>\n<p>Bij DZY Digital analyseren we uw verkoopproces en bouwen we een slank, pijlsnel CRM-systeem dat uw salesteam ondersteunt in plaats van afremt. Een eenmalige investering in maatwerk levert op de lange termijn meer op dan dure, maandelijkse licentiekosten.</p>\n",
+  "tags": [
+    "CRM",
+    "Sales",
+    "KMO",
+    "Software op maat"
+  ],
+  "seoKeywords": [
+    "maatwerk CRM software",
+    "Salesforce alternatief KMO",
+    "klantbeheer systeem België",
+    "CRM integratie Exact Online"
+  ]
 }
 ];

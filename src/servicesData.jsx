@@ -159,6 +159,36 @@ export const servicesData = [
   title: 'Private Blockchain Supply Chains',
   desc: 'Beveilig logistieke ketens tegen fraude met gedistribueerde grootboeken en smart contracts.',
   fullDesc: 'Voor hoogwaardige goederen of complexe internationale expedities bouwen wij enterprise blockchain netwerken (zoals Hyperledger). Dit garandeert de onveranderbaarheid van transportdocumenten en maakt geautomatiseerde betalingen via smart contracts mogelijk.'
+},
+{
+  icon: <ShoppingCart className="w-6 h-6 text-fuchsia-500" />,
+  title: 'B2B Klantenportalen & E-commerce',
+  desc: 'Verhoog uw B2B-verkopen met op maat gemaakte bestelplatformen voor uw dealernetwerk.',
+  fullDesc: 'Wij bouwen B2B-platformen die veel verder gaan dan een webshop. Met functionaliteiten zoals klantspecifieke prijslijsten, volumekortingen, automatische nabestellingen en directe ERP-integratie (voor voorraad en facturatie) automatiseren wij uw volledige order-to-cash proces.'
+},
+{
+  icon: <BarChart3 className="w-6 h-6 text-sky-500" />,
+  title: 'Business Intelligence (BI) & Dashboards',
+  desc: 'Zet uw ruwe bedrijfsdata om in visuele, real-time dashboards voor strategische beslissingen.',
+  fullDesc: 'Ontsluit de data uit uw ERP, CRM en financiële systemen. Wij ontwerpen interactieve BI-dashboards (inclusief Power BI integraties) die KPI\'s zoals winstmarges, productie-efficiëntie en verkoopcijfers real-time visualiseren, zodat u datagestuurd kunt sturen.'
+},
+{
+  icon: <Truck className="w-6 h-6 text-indigo-600" />,
+  title: 'Vlootbeheer & Telematica Software',
+  desc: 'Real-time GPS tracking en rittenplanning voor de Belgische transportsector.',
+  fullDesc: 'Krijg 360-graden controle over uw wagenpark. Wij ontwikkelen Fleet Management software die live locatiegegevens, brandstofverbruik en tachograafdata verzamelt. Met slimme algoritmes optimaliseren we uw routes en plannen we predictief onderhoud in om stilstand te minimaliseren.'
+},
+{
+  icon: <Building2 className="w-6 h-6 text-emerald-500" />,
+  title: 'PropTech & Gebouwbeheersystemen',
+  desc: 'Digitaliseer vastgoedbeheer met slimme portalen voor syndici, eigenaren en huurders.',
+  fullDesc: 'Moderniseer de vastgoedsector met onze PropTech oplossingen. Van applicaties voor huurincasso en storingenbeheer tot de integratie van Smart Building sensoren (IoT) voor energie-efficiëntie. Wij maken het beheer van residentieel en commercieel vastgoed transparant en geautomatiseerd.'
+},
+{
+  icon: <Database className="w-6 h-6 text-rose-500" />,
+  title: 'Maatwerk CRM voor KMO\'s',
+  desc: 'Slanke en doeltreffende CRM-systemen ontworpen rondom úw unieke verkoopproces.',
+  fullDesc: 'Vergeet de complexe, dure standaardpakketten. Wij bouwen razendsnelle, op maat gemaakte CRM-applicaties die uw salesteam daadwerkelijk wil gebruiken. Met perfecte integraties naar uw Belgische boekhoudpakket, e-mail en VoIP systemen voor maximale conversie.'
 }
 
 ];
