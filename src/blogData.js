@@ -1405,5 +1405,110 @@ export const blogPosts = [
     "drone inspectie portaal",
     "3D puntenwolk software bouw"
   ]
+},
+{
+  "id": "proptech-antwerpen-slimme-kantoorgebouwen-iot",
+  "title": "PropTech in Antwerpen: Maak uw Kantoorgebouw 'Slim' met IoT",
+  "category": "PropTech & Vastgoed",
+  "date": "24 Augustus 2025",
+  "readTime": "6 min lees",
+  "description": "Lege bureaus en verspilde energie behoren tot het verleden. Hoe Property Technology (PropTech) en IoT vastgoedbeheer transformeren.",
+  "content": "<p>Met de opkomst van hybride werken staan veel Antwerpse kantoorgebouwen voor de helft leeg op een gemiddelde vrijdag, terwijl de verwarming en verlichting op volle toeren draaien. Property Technology (PropTech) biedt de oplossing om gebouwen efficiënter, duurzamer en aangenamer te maken.</p>\n<h2>Het Gebouw als een Computer</h2>\n<p>Door een kantoorgebouw uit te rusten met Internet of Things (IoT) sensoren, creëert u een 'Smart Building'. Deze sensoren meten real-time de temperatuur, luchtkwaliteit (CO2) en bezettingsgraad van vergaderzalen.</p>\n<h3>De Voordelen van Smart Building Software</h3>\n<ul>\n<li><strong>Energie-efficiëntie:</strong> De software koppelt de bezettingssensoren aan het HVAC-systeem (verwarming/koeling). Is een verdieping leeg? Dan gaat de verwarming automatisch omlaag.</li>\n<li><strong>Hot Desking Apps:</strong> Werknemers reserveren via een mobiele app een bureau of vergaderzaal voordat ze naar kantoor komen. Sensoren onder het bureau bevestigen of de plek daadwerkelijk in gebruik is.</li>\n<li><strong>Predictief Gebouwonderhoud:</strong> Sensoren op liften en HVAC-systemen waarschuwen de facility manager voordat er een storing optreedt, wat dure spoedreparaties voorkomt.</li>\n</ul>\n<h2>Verhoog de Waarde van uw Vastgoed</h2>\n<p>DZY Digital ontwikkelt op maat gemaakte PropTech-dashboards voor vastgoedbeheerders, waarmee u niet alleen uw ecologische voetafdruk verkleint, maar ook de huurwaarde van uw pand aanzienlijk verhoogt.</p>\n",
+  "tags": [
+    "PropTech",
+    "IoT",
+    "Vastgoed",
+    "Smart Building"
+  ],
+  "seoKeywords": [
+    "PropTech software België",
+    "Smart building IoT Antwerpen",
+    "hot desking app maken",
+    "vastgoedbeheer software cloud"
+  ]
+},
+{
+  "id": "blockchain-logistiek-supply-chain-transparantie",
+  "title": "Blockchain in Logistiek: Echte Transparantie in de Supply Chain",
+  "category": "Logistiek & Blockchain",
+  "date": "31 Augustus 2025",
+  "readTime": "7 min lees",
+  "description": "Waar komt die container écht vandaan? Ontdek hoe blockchain-technologie fraude in de Antwerpse haven en daarbuiten tegengaat.",
+  "content": "<p>De haven van Antwerpen is een knooppunt van wereldwijde handel. Maar hoe meer schakels er in een supply chain zitten (producent, transporteur, douane, expediteur), hoe groter de kans op fraude, vertragingen en verloren documenten. Blockchain-technologie brengt hier verandering in.</p>\n<h2>Voorbij de Cryptocurrency</h2>\n<p>Blockchain is veel meer dan Bitcoin. In de kern is het een gedistribueerd, onveranderlijk digitaal logboek. Zodra data (zoals een vrachtbrief of temperatuurmeting) op de blockchain is weggeschreven, kan niemand deze achteraf nog stiekem wijzigen.</p>\n<h3>Toepassingen in B2B Logistiek</h3>\n<ul>\n<li><strong>Smart Contracts:</strong> Een contract dat zichzelf uitvoert. Zodra een IoT-sensor bevestigt dat een container in Antwerpen is gelost, maakt het Smart Contract automatisch de betaling aan de transporteur over. Geen factuurdiscussies meer.</li>\n<li><strong>Onweerlegbare Herkomst:</strong> Bewijs aan consumenten en autoriteiten dat diamanten conflictvrij zijn of dat medicijnen tijdens het hele transport exact op 4°C zijn gehouden.</li>\n<li><strong>Papierloze Douane:</strong> Documenten (Bills of Lading) worden veilig gedeeld op de blockchain, waardoor schepen sneller worden ingeklaard.</li>\n</ul>\n<h2>Veilige Data-uitwisseling</h2>\n<p>DZY Digital bouwt enterprise blockchain-applicaties (bijv. via Hyperledger) die logistieke spelers in Vlaanderen in staat stellen om data met concurrenten en partners te delen, zonder hun bedrijfsgeheimen prijs te geven.</p>\n",
+  "tags": [
+    "Blockchain",
+    "Logistiek",
+    "Supply Chain",
+    "Smart Contracts"
+  ],
+  "seoKeywords": [
+    "blockchain supply chain België",
+    "logistiek smart contracts",
+    "Hyperledger ontwikkeling Antwerpen",
+    "traceerbaarheid software haven"
+  ]
+},
+{
+  "id": "ai-hr-recruitment-software-algoritmes",
+  "title": "AI in HR: Hoe Algoritmes de Perfecte Kandidaat Vinden",
+  "category": "HR Tech & AI",
+  "date": "07 September 2025",
+  "readTime": "6 min lees",
+  "description": "De \"War for Talent\" woedt hevig in Vlaanderen. Ontdek hoe AI-gedreven recruitment software HR-afdelingen helpt sneller talent te vinden.",
+  "content": "<p>HR-managers spenderen wekelijks uren aan het doorspitten van honderden cv's, op zoek naar die ene speld in de hooiberg. In een krappe arbeidsmarkt betekent traag reageren vaak dat u de beste kandidaat verliest aan de concurrentie.</p>\n<h2>De Evolutie van het ATS</h2>\n<p>Een traditioneel Applicant Tracking System (ATS) was niet meer dan een digitaal archief. Moderne, AI-gestuurde recruitment platformen acteren als een slimme assistent voor recruiters.</p>\n<h3>Hoe AI het Wervingsproces Versnelt</h3>\n<ul>\n<li><strong>CV-Parsing en Matching:</strong> Natural Language Processing (NLP) algoritmes \"lezen\" cv's in seconden en geven elke kandidaat een match-score op basis van de vereiste vaardigheden in de vacature, onafhankelijk van hoe de kandidaat het heeft opgeschreven.</li>\n<li><strong>Blind Recruiting:</strong> Om onbewuste vooroordelen (bias) tegen te gaan, kan de software automatisch namen, leeftijden en foto's anonimiseren voordat de hiring manager de cv's ziet.</li>\n<li><strong>Chatbot Pre-screening:</strong> Een AI-chatbot stelt de eerste kwalificatievragen (bijv. \"Bent u bereid in ploegen te werken?\") nog voordat de kandidaat officieel solliciteert.</li>\n</ul>\n<h2>Menselijk Waar het Telt</h2>\n<p>AI vervangt het HR-team niet, maar automatiseert het voorwerk. DZY Digital ontwikkelt maatwerk HR-portalen die naadloos integreren met platforms als LinkedIn en VDAB, zodat u zich kunt focussen op het daadwerkelijke sollicitatiegesprek.</p>\n",
+  "tags": [
+    "HR Tech",
+    "AI",
+    "Recruitment",
+    "ATS"
+  ],
+  "seoKeywords": [
+    "AI recruitment software België",
+    "ATS systeem op maat",
+    "CV parsing software",
+    "HR tech portalen"
+  ]
+},
+{
+  "id": "additive-manufacturing-software-3d-printen",
+  "title": "Additive Manufacturing: De Software Achter Industriële 3D-Printers",
+  "category": "Industrie 4.0 & 3D",
+  "date": "14 September 2025",
+  "readTime": "7 min lees",
+  "description": "3D-printen verschuift van prototyping naar massaproductie. Waarom geavanceerde Manufacturing Execution Systems (MES) essentieel zijn.",
+  "content": "<p>Additive Manufacturing (industrieel 3D-printen) is volwassen geworden. In plaats van slechts prototypes te maken, printen Vlaamse bedrijven nu eindonderdelen in metaal en hoogwaardige polymeren voor de luchtvaart, medische sector en machinebouw. Maar om een \"printer farm\" rendabel te beheren, is gespecialiseerde software nodig.</p>\n<h2>De Complexiteit van een Printer Farm</h2>\n<p>Het aansturen van 20 industriële 3D-printers is complexer dan traditionele CNC-bewerkingen. Bestanden moeten worden \"gesliced\", print-opdrachten moeten efficiënt worden genest, en de kwaliteit (laag-per-laag) moet worden gemonitord.</p>\n<h3>Maatwerk MES voor Additive Manufacturing</h3>\n<p>Een standaard ERP of MES (Manufacturing Execution System) begrijpt de 3D-print workflow vaak niet. Een op maat gemaakt portaal biedt:</p>\n<ul>\n<li><strong>Automatische Offertegeneratie:</strong> B2B-klanten uploaden hun CAD/STL-bestand via een beveiligd webportaal. Het algoritme berekent binnen seconden het benodigde materiaal, de printtijd en de exacte prijs.</li>\n<li><strong>Dynamische Nesting:</strong> De software berekent automatisch hoe 50 verschillende klant-onderdelen het meest efficiënt samen in één metaalprinter kunnen worden gebouwd om materiaalverlies te minimaliseren.</li>\n<li><strong>Quality Assurance & Traceability:</strong> Elke geprinte laag wordt gefotografeerd door IoT-camera's in de printer, waarbij AI afwijkingen detecteert nog voordat de 40 uur durende print is voltooid.</li>\n</ul>\n<h2>Digitaliseer uw Productie</h2>\n<p>DZY Digital bouwt de softwarelaag (MES en B2B-portalen) die nodig is om van uw industriële 3D-printers een winstgevende, schaalbare productiefaciliteit te maken.</p>\n",
+  "tags": [
+    "3D Printen",
+    "Additive Manufacturing",
+    "MES",
+    "Industrie 4.0"
+  ],
+  "seoKeywords": [
+    "Additive manufacturing software",
+    "3D printen B2B portaal",
+    "MES voor 3D printers",
+    "CAD offerte software België"
+  ]
+},
+{
+  "id": "foodtech-voedselverspilling-horeca-software",
+  "title": "FoodTech: Hoe Software Voedselverspilling in de Horeca Tegengaat",
+  "category": "FoodTech & Duurzaamheid",
+  "date": "21 September 2025",
+  "readTime": "6 min lees",
+  "description": "Voedselverspilling is niet alleen slecht voor het milieu, maar ook voor de winstmarge. Ontdek hoe FoodTech algoritmes inkoop in de horeca optimaliseren.",
+  "content": "<p>In de Belgische horeca en grootkeukens (catering) eindigt een schokkend percentage van het ingekochte voedsel in de vuilnisbak. Variabele bezoekersaantallen, weer-invloeden en inefficiënt voorraadbeheer maken het voorspellen van de benodigde ingrediënten extreem moeilijk.</p>\n<h2>Van Gissen naar Meten</h2>\n<p>Traditioneel plaatst een chef zijn bestellingen op basis van buikgevoel en de ervaring van vorige week. FoodTech applicaties brengen data-wetenschap (data science) naar de keuken.</p>\n<h3>AI-Gedreven Inkoop (Predictive Ordering)</h3>\n<p>Door uw kassasysteem (POS) te koppelen aan een slim inkoopportaal, neemt de software het rekenwerk over:</p>\n<ul>\n<li><strong>Vraagvoorspelling:</strong> De AI analyseert historische verkoopdata en combineert dit met externe factoren, zoals weersvoorspellingen of lokale evenementen (zoals een groot festival in Antwerpen), om te voorspellen hoeveel kilo tomaten u daadwerkelijk nodig heeft.</li>\n<li><strong>Dynamisch Menu-engineering:</strong> De software stelt voor welke gerechten gepromoot moeten worden op de digitale menukaart om ingrediënten die hun houdbaarheidsdatum naderen (first-in-first-out) als eerste te verkopen.</li>\n<li><strong>Geautomatiseerde Voorraad-alerts:</strong> IoT-weegschalen in de opslagruimte registreren real-time wat er wordt gebruikt en geven een seintje wanneer er bijbesteld moet worden, direct gekoppeld aan uw leveranciers.</li>\n</ul>\n<h2>Verhoog uw Marge, Verlaag uw Afval</h2>\n<p>DZY Digital bouwt FoodTech B2B-platformen die de kloof dichten tussen leveranciers en horecaondernemers. Optimaliseer uw keuken en draag bij aan een duurzamere planeet.</p>\n",
+  "tags": [
+    "FoodTech",
+    "Horeca",
+    "Voedselverspilling",
+    "AI"
+  ],
+  "seoKeywords": [
+    "FoodTech software België",
+    "horeca inkoop automatisering",
+    "voedselverspilling tegengaan software",
+    "predictive ordering restaurant"
+  ]
 }
 ];

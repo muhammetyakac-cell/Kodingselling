@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -459,6 +459,36 @@ export const servicesData = [
   title: 'Drone Data & Photogrammetry Portalen',
   desc: 'Cloud-infrastructuur voor het verwerken van terabytes aan drone-inspectie beelden.',
   fullDesc: 'Voor de bouw en landbouw (AgriTech). Wij bouwen zware backend systemen die ruwe drone beelden automatisch omzetten in 3D-puntenwolken of thermische analyses met behulp van AI. Deel de resultaten vervolgens via een beveiligd, white-label dashboard met uw eindklanten.'
+},
+{
+  icon: <Building className="w-6 h-6 text-fuchsia-600" />,
+  title: 'Smart Building & PropTech Portalen',
+  desc: 'Transformeer kantoorgebouwen met IoT-sensoren, hot desking en energiemanagement.',
+  fullDesc: 'Verlaag energiekosten en verhoog de huurwaarde. Wij bouwen Property Technology (PropTech) platformen voor vastgoedbeheerders. Integreer IoT-sensoren voor real-time inzicht in bezettingsgraad en luchtkwaliteit, en bied huurders intuïtieve apps voor hot-desking en zaalreserveringen.'
+},
+{
+  icon: <Link className="w-6 h-6 text-indigo-500" />,
+  title: 'Blockchain & Supply Chain Development',
+  desc: 'Onweerlegbare traceerbaarheid en Smart Contracts voor de maritieme en logistieke sector.',
+  fullDesc: 'Voorkom fraude in complexe supply chains. We ontwikkelen veilige, private enterprise blockchain-applicaties (bijv. Hyperledger). Digitaliseer vrachtbrieven, garandeer de conflictvrije herkomst van goederen en automatiseer logistieke betalingen met onfeilbare Smart Contracts.'
+},
+{
+  icon: <Users className="w-6 h-6 text-rose-500" />,
+  title: 'AI Recruitment & HR-Tech',
+  desc: 'Versnel uw wervingsproces met geautomatiseerde CV-parsing en matching algoritmes.',
+  fullDesc: 'Win de "War for Talent". Wij ontwikkelen AI-gedreven Applicant Tracking Systems (ATS) en B2B-vacatureplatformen. Onze NLP-algoritmes lezen en anonimiseren cv\'s razendsnel, matchen kandidaten objectief met vacatures en automatiseren de eerste sollicitatierondes via chatbots.'
+},
+{
+  icon: <Printer className="w-6 h-6 text-emerald-500" />,
+  title: 'Additive Manufacturing (MES) Software',
+  desc: 'Stroomlijn industriële 3D-printer farms met automatische offerte- en nestingsystemen.',
+  fullDesc: 'Maak uw 3D-print productie schaalbaar. Wij bouwen gespecialiseerde Manufacturing Execution Systems (MES) voor de Additive Manufacturing industrie. Inclusief B2B-klantenportalen voor directe CAD/STL prijsberekeningen, ordermanagement en dynamische printbed-nesting algoritmes.'
+},
+{
+  icon: <Utensils className="w-6 h-6 text-amber-500" />,
+  title: 'FoodTech & Predictive Ordering',
+  desc: 'Bestrijd voedselverspilling en optimaliseer inkoop met AI-vraagvoorspelling.',
+  fullDesc: 'Data-gedreven keukens. Wij ontwikkelen FoodTech software voor horeca-ketens en grootkeukens (catering). Koppel uw kassasysteem aan onze AI-algoritmes die historische data en weersvoorspellingen analyseren om uw inkoop (predictive ordering) tot op de gram nauwkeurig te optimaliseren.'
 }
 
 ];
