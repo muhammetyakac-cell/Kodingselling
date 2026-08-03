@@ -1,6 +1,6 @@
 export const blogPosts = [
   {
-    "id": "digitale-transformatie-kmo-antwerpen",
+    "slug": "digitale-transformatie-kmo-antwerpen",
     "title": "Digitale Transformatie voor KMO's in Antwerpen: Een Praktische Gids",
     "category": "Digitale Transformatie",
     "date": "15 Mei 2024",
@@ -21,7 +21,7 @@ export const blogPosts = [
     ]
   },
   {
-    "id": "logistiek-haven-antwerpen-software",
+    "slug": "logistiek-haven-antwerpen-software",
     "title": "Waarom Logistieke Bedrijven in de Haven van Antwerpen Maatwerk Software Nodig Hebben",
     "category": "Logistiek",
     "date": "28 Mei 2024",
@@ -42,7 +42,7 @@ export const blogPosts = [
     ]
   },
   {
-    "id": "opkomst-proptech-belgische-vastgoed",
+    "slug": "opkomst-proptech-belgische-vastgoed",
     "title": "De Opkomst van PropTech in de Belgische Vastgoedmarkt",
     "category": "PropTech",
     "date": "10 Juni 2024",
@@ -63,7 +63,7 @@ export const blogPosts = [
     ]
   },
   {
-    "id": "fintech-innovatie-antwerpen",
+    "slug": "fintech-innovatie-antwerpen",
     "title": "FinTech Innovatie: Hoe Antwerpse Bedrijven Hun Betalingssystemen Moderniseren",
     "category": "FinTech",
     "date": "05 Juli 2024",
@@ -84,7 +84,7 @@ export const blogPosts = [
     ]
   },
   {
-    "id": "ecommerce-succes-snelle-webapplicaties",
+    "slug": "ecommerce-succes-snelle-webapplicaties",
     "title": "E-commerce Succes in België: Het Belang van Snelle en Veilige Webapplicaties",
     "category": "E-commerce",
     "date": "20 Juli 2024",
@@ -105,7 +105,7 @@ export const blogPosts = [
     ]
   },
 {
-  "id": "erp-systemen-productiesector-antwerpen",
+  "slug": "erp-systemen-productiesector-antwerpen",
   "title": "ERP Systemen: De Motor Achter Succesvolle Productiebedrijven in Vlaanderen",
   "category": "ERP & Productie",
   "date": "20 Mei 2024",
@@ -126,7 +126,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "cyberbeveiliging-kmo-belgie",
+  "slug": "cyberbeveiliging-kmo-belgie",
   "title": "Cyberbeveiliging voor KMO's: Voorkom Dataverlies en Ransomware in 2024",
   "category": "Data & Beveiliging",
   "date": "25 Mei 2024",
@@ -147,7 +147,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "iot-sensoren-haven-antwerpen",
+  "slug": "iot-sensoren-haven-antwerpen",
   "title": "IoT in de Haven van Antwerpen: Hoe Sensortechnologie Logistiek Transformeert",
   "category": "IoT & Sensoren",
   "date": "02 Juni 2024",
@@ -168,7 +168,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "veilige-patientenportalen-zorgsector-belgie",
+  "slug": "veilige-patientenportalen-zorgsector-belgie",
   "title": "Zorg op Afstand: Waarom Elke Kliniek een Veilig Patiëntenportaal Nodig Heeft",
   "category": "Zorg & HealthTech",
   "date": "10 Juni 2024",
@@ -189,7 +189,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-ecommerce-groei-vlaanderen",
+  "slug": "b2b-ecommerce-groei-vlaanderen",
   "title": "B2B E-commerce in Vlaanderen: Meer dan een Webshop",
   "category": "E-commerce & B2B",
   "date": "18 Juni 2024",
@@ -210,7 +210,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "open-banking-fintech-belgie",
+  "slug": "open-banking-fintech-belgie",
   "title": "Open Banking en FinTech: De Financiële Toekomst van België",
   "category": "FinTech & Open Banking",
   "date": "26 Juni 2024",
@@ -231,7 +231,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "agritech-innovatie-belgische-landbouw",
+  "slug": "agritech-innovatie-belgische-landbouw",
   "title": "AgriTech: Hoe Software de Belgische Land- en Tuinbouw Verduurzaamt",
   "category": "AgriTech & Duurzaamheid",
   "date": "04 Juli 2024",
@@ -252,7 +252,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "toekomst-douane-aangiftes-antwerpen",
+  "slug": "toekomst-douane-aangiftes-antwerpen",
   "title": "De Toekomst van Douane-aangiftes in Antwerpen met API's",
   "category": "Logistiek & Douane",
   "date": "10 Juli 2024",
@@ -273,7 +273,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "lokale-hr-software-vlaamse-kmo",
+  "slug": "lokale-hr-software-vlaamse-kmo",
   "title": "Waarom Lokale HR-Software Beter Werkt voor Vlaamse KMO's",
   "category": "HR Tech",
   "date": "18 Juli 2024",
@@ -294,7 +294,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "groene-technologie-esg-rapportage",
+  "slug": "groene-technologie-esg-rapportage",
   "title": "Groene Technologie: Hoe Software Helpt bij ESG-Rapportage",
   "category": "Duurzaamheid",
   "date": "24 Juli 2024",
@@ -315,7 +315,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "slimme-magazijnen-wms-concurrentievoordeel",
+  "slug": "slimme-magazijnen-wms-concurrentievoordeel",
   "title": "Slimme Magazijnen: WMS Systemen als Concurrentievoordeel",
   "category": "Logistiek & Magazijn",
   "date": "02 Augustus 2024",
@@ -336,7 +336,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "blockchain-supply-chain-antwerpen",
+  "slug": "blockchain-supply-chain-antwerpen",
   "title": "Blockchain in de Antwerpse Haven: Transparantie in de Supply Chain",
   "category": "Blockchain & Innovatie",
   "date": "10 Augustus 2024",
@@ -357,7 +357,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-klantenportaal-vlaanderen",
+  "slug": "b2b-klantenportaal-vlaanderen",
   "title": "Waarom B2B E-commerce in Vlaanderen een Klantenportaal Nodig Heeft",
   "category": "E-commerce & B2B",
   "date": "15 Augustus 2024",
@@ -378,7 +378,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "business-intelligence-kmo-antwerpen",
+  "slug": "business-intelligence-kmo-antwerpen",
   "title": "Datagestuurde Beslissingen: Business Intelligence voor KMO's",
   "category": "Data & BI",
   "date": "22 Augustus 2024",
@@ -399,7 +399,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "vlootbeheer-transport-real-time-tracking",
+  "slug": "vlootbeheer-transport-real-time-tracking",
   "title": "Vlootbeheer in de 21e Eeuw: Van Excel naar Real-time Tracking",
   "category": "Logistiek & Transport",
   "date": "01 September 2024",
@@ -420,7 +420,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "proptech-antwerpen-digitalisering-vastgoed",
+  "slug": "proptech-antwerpen-digitalisering-vastgoed",
   "title": "PropTech in Antwerpen: De Digitalisering van Vastgoedbeheer",
   "category": "PropTech & Vastgoed",
   "date": "08 September 2024",
@@ -441,7 +441,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "standaard-crm-voldoet-niet-kmo",
+  "slug": "standaard-crm-voldoet-niet-kmo",
   "title": "Waarom een Standaard CRM Niet Voldoet voor Uw KMO",
   "category": "CRM & Automatisering",
   "date": "15 September 2024",
@@ -462,7 +462,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-reserveringssystemen-vlaanderen",
+  "slug": "b2b-reserveringssystemen-vlaanderen",
   "title": "Online Reserveren voor B2B: Meer dan een Simpele Agenda",
   "category": "B2B & Automatisering",
   "date": "20 September 2024",
@@ -483,7 +483,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "smart-cities-vlaanderen-iot",
+  "slug": "smart-cities-vlaanderen-iot",
   "title": "Smart Cities in Vlaanderen: De Rol van IoT in Stedelijke Ontwikkeling",
   "category": "Smart City & IoT",
   "date": "28 September 2024",
@@ -504,7 +504,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "supply-chain-traceerbaarheid-belgie",
+  "slug": "supply-chain-traceerbaarheid-belgie",
   "title": "Van Boer tot Bord: Supply Chain Traceerbaarheid in de Belgische Voedingsindustrie",
   "category": "Logistiek & AgriTech",
   "date": "05 Oktober 2024",
@@ -525,7 +525,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digitaal-auditen-financiele-sector",
+  "slug": "digitaal-auditen-financiele-sector",
   "title": "Digitaal Auditen: Waarom de Financiële Sector Transformeert",
   "category": "FinTech & Audit",
   "date": "12 Oktober 2024",
@@ -546,7 +546,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "energiemanagement-kosten-verlagen-software",
+  "slug": "energiemanagement-kosten-verlagen-software",
   "title": "Energiemanagement: Verlaag Kosten met Slimme Software",
   "category": "Energie & IoT",
   "date": "18 Oktober 2024",
@@ -567,7 +567,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "eigen-lms-vlaanderen-b2b",
+  "slug": "eigen-lms-vlaanderen-b2b",
   "title": "Het Belang van een Eigen LMS voor Uw Bedrijf in België",
   "category": "EdTech & HR",
   "date": "24 Oktober 2024",
@@ -588,7 +588,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "cyber-risk-dashboards-kmo",
+  "slug": "cyber-risk-dashboards-kmo",
   "title": "Inzicht in Uw Digitale Kwetsbaarheid: Cyber Risk Dashboards",
   "category": "Cybersecurity & Data",
   "date": "02 November 2024",
@@ -609,7 +609,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digitale-werkbonnen-field-service",
+  "slug": "digitale-werkbonnen-field-service",
   "title": "Zeg Vaarwel tegen de Papieren Werkbon: Field Service Automatisering",
   "category": "Field Service",
   "date": "09 November 2024",
@@ -630,7 +630,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "legal-tech-advocatenkantoren-vlaanderen",
+  "slug": "legal-tech-advocatenkantoren-vlaanderen",
   "title": "Legal Tech: Hoe Advocatenkantoren Efficiënter Werken",
   "category": "Legal Tech",
   "date": "16 November 2024",
@@ -651,7 +651,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "waarom-excel-niet-voldoet-productieplanning",
+  "slug": "waarom-excel-niet-voldoet-productieplanning",
   "title": "Waarom Excel Niet Voldoet voor Uw Productieplanning (APS)",
   "category": "Industrie 4.0",
   "date": "23 November 2024",
@@ -672,7 +672,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digitale-handtekening-contractbeheer",
+  "slug": "digitale-handtekening-contractbeheer",
   "title": "Contractbeheer in de Cloud: Waarom Digitale Handtekeningen de Norm Zijn",
   "category": "Legal & Administratie",
   "date": "02 December 2024",
@@ -693,7 +693,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "e-health-belgie-patientenervaring",
+  "slug": "e-health-belgie-patientenervaring",
   "title": "e-Health in België: De Transformatie van de Patiëntervaring",
   "category": "Zorg & HealthTech",
   "date": "10 December 2024",
@@ -714,7 +714,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "omnichannel-retail-fysiek-online",
+  "slug": "omnichannel-retail-fysiek-online",
   "title": "Omnichannel Retail: Verbind uw Fysieke Winkel met E-commerce",
   "category": "Retail & E-commerce",
   "date": "18 December 2024",
@@ -735,7 +735,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "cloud-migratie-voorkom-dataverlies-kmo",
+  "slug": "cloud-migratie-voorkom-dataverlies-kmo",
   "title": "Cloud Migratie voor KMO's: Veilig Naar De Cloud Zonder Dataverlies",
   "category": "Cloud & Infrastructuur",
   "date": "04 Januari 2025",
@@ -756,7 +756,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "voip-integratie-slimmer-bellen-crm",
+  "slug": "voip-integratie-slimmer-bellen-crm",
   "title": "VoIP Integratie: Slimmer Bellen vanuit uw CRM",
   "category": "Communicatie & CRM",
   "date": "11 Januari 2025",
@@ -777,7 +777,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "systeemintegratie-b2b-api-koppelingen",
+  "slug": "systeemintegratie-b2b-api-koppelingen",
   "title": "Systeemintegratie in de B2B: Hoe API's Eilanden Verbinden",
   "category": "Infrastructuur & API",
   "date": "18 Januari 2025",
@@ -798,7 +798,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digitaal-productpaspoort-dpp-belgie",
+  "slug": "digitaal-productpaspoort-dpp-belgie",
   "title": "Het Digitale Productpaspoort (DPP): Is Uw Bedrijf Klaar?",
   "category": "Duurzaamheid & Innovatie",
   "date": "25 Januari 2025",
@@ -819,7 +819,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digital-workspace-intranet-kmo",
+  "slug": "digital-workspace-intranet-kmo",
   "title": "Bouw een Digital Workspace Die Werknemers Wél Gebruiken",
   "category": "HR Tech & Productiviteit",
   "date": "01 Februari 2025",
@@ -840,7 +840,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "ai-klantenservice-chatbots-automatisering",
+  "slug": "ai-klantenservice-chatbots-automatisering",
   "title": "AI in Klantenservice: Verder dan de Standaard Chatbot",
   "category": "AI & Support",
   "date": "08 Februari 2025",
@@ -861,7 +861,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "low-code-no-code-ontwikkeling-kmo",
+  "slug": "low-code-no-code-ontwikkeling-kmo",
   "title": "Waarom Low-Code de Tijd-tot-Markt voor KMO's Halveert",
   "category": "Innovatie & Development",
   "date": "15 Februari 2025",
@@ -882,7 +882,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "kwaliteitscontrole-qms-digitaliseren",
+  "slug": "kwaliteitscontrole-qms-digitaliseren",
   "title": "Kwaliteitscontrole Digitaliseren: Van Klembord naar Tablet",
   "category": "Industrie & Productie",
   "date": "22 Februari 2025",
@@ -903,7 +903,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "robotica-cobots-vlaanderen-software",
+  "slug": "robotica-cobots-vlaanderen-software",
   "title": "Mens en Machine: De Opkomst van Cobots in Vlaanderen",
   "category": "Robotica & AI",
   "date": "01 Maart 2025",
@@ -924,7 +924,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "predictive-analytics-finance-kmo",
+  "slug": "predictive-analytics-finance-kmo",
   "title": "Predictive Analytics in Finance: Kijk Verder Dan de Balans",
   "category": "FinTech & Data",
   "date": "08 Maart 2025",
@@ -945,7 +945,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "afvalbeheer-recycling-software-circulair",
+  "slug": "afvalbeheer-recycling-software-circulair",
   "title": "Software voor de Circulaire Economie: Afvalbeheer Digitaliseren",
   "category": "Duurzaamheid & Logistiek",
   "date": "15 Maart 2025",
@@ -966,7 +966,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-event-management-software",
+  "slug": "b2b-event-management-software",
   "title": "Zakelijke Evenementen Organiseren: Waarom u Speciale Software Nodig Heeft",
   "category": "Event Tech",
   "date": "22 Maart 2025",
@@ -987,7 +987,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "ar-configuratoren-b2b-sales",
+  "slug": "ar-configuratoren-b2b-sales",
   "title": "AR Configuratoren: Verkoop Complexe B2B Producten Visueel",
   "category": "Sales & AR",
   "date": "05 April 2025",
@@ -1008,7 +1008,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "van-dienstverlener-naar-saas-bedrijf",
+  "slug": "van-dienstverlener-naar-saas-bedrijf",
   "title": "Van Dienstverlener naar SaaS-bedrijf: De Digitale Transitie",
   "category": "Software Ontwikkeling",
   "date": "12 April 2025",
@@ -1029,7 +1029,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "contech-bouwsector-digitaliseren-vlaanderen",
+  "slug": "contech-bouwsector-digitaliseren-vlaanderen",
   "title": "ConTech: Waarom de Bouwsector Sneller Moet Digitaliseren",
   "category": "Bouw & ConTech",
   "date": "19 April 2025",
@@ -1050,7 +1050,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "ethisch-hacken-kmo-pen-test-nodig",
+  "slug": "ethisch-hacken-kmo-pen-test-nodig",
   "title": "Ethisch Hacken: Waarom Elke KMO Een Pen-Test Nodig Heeft",
   "category": "Cybersecurity & Audit",
   "date": "26 April 2025",
@@ -1071,7 +1071,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "verplichte-b2b-einvoicing-peppol-belgie",
+  "slug": "verplichte-b2b-einvoicing-peppol-belgie",
   "title": "Verplichte B2B e-Invoicing in België: Bent U Klaar voor Peppol?",
   "category": "Finance & Automatisering",
   "date": "03 Mei 2025",
@@ -1092,7 +1092,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "document-management-systeem-dms-vlaanderen",
+  "slug": "document-management-systeem-dms-vlaanderen",
   "title": "Nooit Meer Zoeken: De Kracht van een Document Management Systeem (DMS)",
   "category": "Administratie & DMS",
   "date": "10 Mei 2025",
@@ -1113,7 +1113,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "urenregistratie-digitaliseren-loonverwerking",
+  "slug": "urenregistratie-digitaliseren-loonverwerking",
   "title": "Urenregistratie Digitaliseren: Foutloze Verloning in België",
   "category": "HR Tech & Payroll",
   "date": "17 Mei 2025",
@@ -1134,7 +1134,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-matching-platforms-kmo",
+  "slug": "b2b-matching-platforms-kmo",
   "title": "De Platform Economie: Waarom KMO's B2B Matching Platforms Bouwen",
   "category": "Platformen & Innovatie",
   "date": "24 Mei 2025",
@@ -1155,7 +1155,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "haccp-digitaliseren-voedselveiligheid",
+  "slug": "haccp-digitaliseren-voedselveiligheid",
   "title": "HACCP Digitaliseren: Voedselveiligheid Zonder Papierwerk",
   "category": "AgriTech & Voeding",
   "date": "01 Juni 2025",
@@ -1176,7 +1176,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "e-procurement-inkoopsoftware-kosten-besparen",
+  "slug": "e-procurement-inkoopsoftware-kosten-besparen",
   "title": "Grip op Kosten: Waarom E-Procurement Software Onmisbaar Is",
   "category": "Finance & Inkoop",
   "date": "08 Juni 2025",
@@ -1197,7 +1197,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "waarom-kmo-vlaanderen-kiezen-odoo-erp",
+  "slug": "waarom-kmo-vlaanderen-kiezen-odoo-erp",
   "title": "Waarom KMO's in Vlaanderen Kiezen voor Odoo ERP",
   "category": "ERP & Odoo",
   "date": "15 Juni 2025",
@@ -1218,7 +1218,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "salesforce-hubspot-maatwerk-integratie",
+  "slug": "salesforce-hubspot-maatwerk-integratie",
   "title": "Haal Meer uit Salesforce: Waarom Standaard Niet Werkt",
   "category": "CRM & Automatisering",
   "date": "22 Juni 2025",
@@ -1239,7 +1239,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "gamification-in-b2b-software",
+  "slug": "gamification-in-b2b-software",
   "title": "Gamification in B2B: Hoe Maakt u Saaie Software Leuk?",
   "category": "UX/UI & Gamification",
   "date": "29 Juni 2025",
@@ -1260,7 +1260,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "financiele-consolidatie-kmo-belgie",
+  "slug": "financiele-consolidatie-kmo-belgie",
   "title": "Financiële Consolidatie: Sluit uw Boekjaar in Dagen, Niet in Weken",
   "category": "Finance & Audit",
   "date": "06 Juli 2025",
@@ -1281,7 +1281,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "factoring-digitaliseren-b2b-cashflow",
+  "slug": "factoring-digitaliseren-b2b-cashflow",
   "title": "Factoring Digitaliseren: Verbeter Direct uw B2B Cashflow",
   "category": "FinTech & Cashflow",
   "date": "13 Juli 2025",
@@ -1302,7 +1302,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digital-twins-vlaanderen-industrie-simulatie",
+  "slug": "digital-twins-vlaanderen-industrie-simulatie",
   "title": "Digital Twins in de Industrie: Simuleer Voordat u Produceert",
   "category": "Industrie 4.0",
   "date": "20 Juli 2025",
@@ -1323,7 +1323,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "transitie-abonnementen-economie-b2b",
+  "slug": "transitie-abonnementen-economie-b2b",
   "title": "De Transitie naar de Abonnements-economie (Subscription Billing)",
   "category": "Finance & SaaS",
   "date": "27 Juli 2025",
@@ -1344,7 +1344,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "verlaag-brandstofkosten-fleet-management",
+  "slug": "verlaag-brandstofkosten-fleet-management",
   "title": "Verlaag uw Brandstofkosten met Slimme Fleet Management Software",
   "category": "Logistiek & Telematica",
   "date": "03 Augustus 2025",
@@ -1365,7 +1365,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "virtual-reality-vr-b2b-trainingen",
+  "slug": "virtual-reality-vr-b2b-trainingen",
   "title": "VR in B2B: Veilige Trainingen in een Gevaarlijke Omgeving",
   "category": "VR & EdTech",
   "date": "10 Augustus 2025",
@@ -1386,7 +1386,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "drone-data-analyse-portalen-bouw-landbouw",
+  "slug": "drone-data-analyse-portalen-bouw-landbouw",
   "title": "Drones in de Bouw en Landbouw: Data is de Nieuwe Oogst",
   "category": "AgriTech & ConTech",
   "date": "17 Augustus 2025",
@@ -1407,7 +1407,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "proptech-antwerpen-slimme-kantoorgebouwen-iot",
+  "slug": "proptech-antwerpen-slimme-kantoorgebouwen-iot",
   "title": "PropTech in Antwerpen: Maak uw Kantoorgebouw 'Slim' met IoT",
   "category": "PropTech & Vastgoed",
   "date": "24 Augustus 2025",
@@ -1428,7 +1428,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "blockchain-logistiek-supply-chain-transparantie",
+  "slug": "blockchain-logistiek-supply-chain-transparantie",
   "title": "Blockchain in Logistiek: Echte Transparantie in de Supply Chain",
   "category": "Logistiek & Blockchain",
   "date": "31 Augustus 2025",
@@ -1449,7 +1449,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "ai-hr-recruitment-software-algoritmes",
+  "slug": "ai-hr-recruitment-software-algoritmes",
   "title": "AI in HR: Hoe Algoritmes de Perfecte Kandidaat Vinden",
   "category": "HR Tech & AI",
   "date": "07 September 2025",
@@ -1470,7 +1470,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "additive-manufacturing-software-3d-printen",
+  "slug": "additive-manufacturing-software-3d-printen",
   "title": "Additive Manufacturing: De Software Achter Industriële 3D-Printers",
   "category": "Industrie 4.0 & 3D",
   "date": "14 September 2025",
@@ -1491,7 +1491,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "foodtech-voedselverspilling-horeca-software",
+  "slug": "foodtech-voedselverspilling-horeca-software",
   "title": "FoodTech: Hoe Software Voedselverspilling in de Horeca Tegengaat",
   "category": "FoodTech & Duurzaamheid",
   "date": "21 September 2025",
@@ -1512,7 +1512,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "esg-rapportage-belgie-csrd-software",
+  "slug": "esg-rapportage-belgie-csrd-software",
   "title": "ESG Rapportage in België: Hoe Software U Helpt Voldoen aan de CSRD",
   "category": "Duurzaamheid & Compliance",
   "date": "28 September 2025",
@@ -1533,7 +1533,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "wms-vs-wcs-magazijn-automatisering",
+  "slug": "wms-vs-wcs-magazijn-automatisering",
   "title": "WMS vs. WCS: Waarom Uw Magazijn Beide Nodig Heeft",
   "category": "Logistiek & Warehouse",
   "date": "05 Oktober 2025",
@@ -1554,7 +1554,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-loyalty-partner-programmas",
+  "slug": "b2b-loyalty-partner-programmas",
   "title": "B2B Loyalty: Waarom Kortingen Alleen Niet Meer Werken",
   "category": "Sales & Marketing",
   "date": "12 Oktober 2025",
@@ -1575,7 +1575,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "predictive-maintenance-iot-ai",
+  "slug": "predictive-maintenance-iot-ai",
   "title": "Predictive Maintenance: Voorkom Stilstand met IoT en AI",
   "category": "Industrie 4.0 & AI",
   "date": "19 Oktober 2025",
@@ -1596,7 +1596,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "headless-ecommerce-b2b-webshops",
+  "slug": "headless-ecommerce-b2b-webshops",
   "title": "Headless E-commerce: Snelheid en Vrijheid voor B2B Webshops",
   "category": "E-commerce & API",
   "date": "26 Oktober 2025",
@@ -1617,7 +1617,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "rpa-vlaanderen-softwarerobots-administratie",
+  "slug": "rpa-vlaanderen-softwarerobots-administratie",
   "title": "RPA in Vlaanderen: Laat Softwarerobots het Saaie Werk Doen",
   "category": "Automatisering & RPA",
   "date": "02 November 2025",
@@ -1638,7 +1638,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "3d-scanning-reverse-engineering-industrie",
+  "slug": "3d-scanning-reverse-engineering-industrie",
   "title": "Van Fysiek naar Digitaal: De Kracht van 3D Scanning in de Industrie",
   "category": "Industrie 4.0 & 3D",
   "date": "09 November 2025",
@@ -1659,7 +1659,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "cloud-security-posture-management-cspm",
+  "slug": "cloud-security-posture-management-cspm",
   "title": "Is Uw Cloud Wel Echt Veilig? Ontdek CSPM",
   "category": "Cybersecurity & Cloud",
   "date": "16 November 2025",
@@ -1680,7 +1680,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-machineverhuur-reserveringssystemen",
+  "slug": "b2b-machineverhuur-reserveringssystemen",
   "title": "Verhuur van Zware Machines: Waarom Een B2B Portaal Onmisbaar Is",
   "category": "Logistiek & Portalen",
   "date": "23 November 2025",
@@ -1701,7 +1701,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digitale-werkvergunningen-permit-to-work-industrie",
+  "slug": "digitale-werkvergunningen-permit-to-work-industrie",
   "title": "Veiligheid Eerst: Digitaliseer uw Werkvergunningen (Permit to Work)",
   "category": "Industrie & Veiligheid",
   "date": "30 November 2025",
@@ -1722,7 +1722,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "document-ai-waarom-ouderwetse-ocr-niet-voldoet",
+  "slug": "document-ai-waarom-ouderwetse-ocr-niet-voldoet",
   "title": "Document AI: Waarom Ouderwetse OCR Niet Meer Voldoet",
   "category": "AI & Documentbeheer",
   "date": "07 December 2025",
@@ -1743,7 +1743,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-reseller-portalen-cpq-software",
+  "slug": "b2b-reseller-portalen-cpq-software",
   "title": "Waarom Uw Resellers Gefrustreerd Zijn (En Hoe Een CPQ Helpt)",
   "category": "Sales & CPQ",
   "date": "14 December 2025",
@@ -1764,7 +1764,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "pim-systemen-b2b-groothandels",
+  "slug": "pim-systemen-b2b-groothandels",
   "title": "Stop de Excel-Chaos: PIM Systemen voor B2B Groothandels",
   "category": "Data Management & E-commerce",
   "date": "21 December 2025",
@@ -1785,7 +1785,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "demand-forecasting-voorspel-voorraad-ai",
+  "slug": "demand-forecasting-voorspel-voorraad-ai",
   "title": "Demand Forecasting: Voorspel de Toekomst van Uw Voorraad met AI",
   "category": "AI & Supply Chain",
   "date": "28 December 2025",
@@ -1806,7 +1806,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "ev-fleet-management-laadpaal-beheer-software",
+  "slug": "ev-fleet-management-laadpaal-beheer-software",
   "title": "EV Fleet Management: Software voor de Elektrische Vloot van Morgen",
   "category": "Logistiek & Duurzaamheid",
   "date": "04 Januari 2026",
@@ -1827,7 +1827,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "peppol-verplichting-belgie-e-invoicing",
+  "slug": "peppol-verplichting-belgie-e-invoicing",
   "title": "De Peppol Verplichting in België: Bent U Klaar voor E-Invoicing?",
   "category": "Finance & Compliance",
   "date": "11 Januari 2026",
@@ -1848,7 +1848,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "yard-management-wachttijden-laadkaaien",
+  "slug": "yard-management-wachttijden-laadkaaien",
   "title": "Yard Management: Elimineer Wachttijden aan de Laadkaaien",
   "category": "Logistiek & Supply Chain",
   "date": "18 Januari 2026",
@@ -1869,7 +1869,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-klantenportaal-self-service-distributeurs",
+  "slug": "b2b-klantenportaal-self-service-distributeurs",
   "title": "Waarom Uw B2B Klanten een Self-Service Portaal Verwachten",
   "category": "Klantenservice & B2B",
   "date": "25 Januari 2026",
@@ -1890,7 +1890,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "edge-computing-fabrieken-cloud-te-traag",
+  "slug": "edge-computing-fabrieken-cloud-te-traag",
   "title": "Edge Computing: Waarom de Cloud Soms Te Traag is voor Fabrieken",
   "category": "Industrie 4.0 & Edge",
   "date": "01 Februari 2026",
@@ -1911,7 +1911,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "circulaire-economie-digitaal-afvalbeheer",
+  "slug": "circulaire-economie-digitaal-afvalbeheer",
   "title": "Circulaire Economie: Software voor Digitaal Afvalbeheer",
   "category": "Duurzaamheid & Circulair",
   "date": "08 Februari 2026",
@@ -1932,7 +1932,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "m2m-communicatie-machines-beslissen",
+  "slug": "m2m-communicatie-machines-beslissen",
   "title": "M2M Communicatie: Wanneer Machines Zelfstandig Beslissen",
   "category": "IoT & Automatisering",
   "date": "15 Februari 2026",
@@ -1953,7 +1953,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "dam-systemen-visuele-identiteit-b2b",
+  "slug": "dam-systemen-visuele-identiteit-b2b",
   "title": "DAM Systemen: Organiseer de Visuele Identiteit van uw Merk",
   "category": "Marketing Tech & DAM",
   "date": "22 Februari 2026",
@@ -1974,7 +1974,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-dynamic-pricing-optimalisatie",
+  "slug": "b2b-dynamic-pricing-optimalisatie",
   "title": "B2B Dynamic Pricing: Optimaliseer uw Marges in Real-Time",
   "category": "Sales & Pricing",
   "date": "01 Maart 2026",
@@ -1995,7 +1995,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "cafm-software-facility-management",
+  "slug": "cafm-software-facility-management",
   "title": "CAFM Software: Moderniseer uw Facility Management",
   "category": "PropTech & Facility",
   "date": "08 Maart 2026",
@@ -2016,7 +2016,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "supply-chain-control-tower-logistiek",
+  "slug": "supply-chain-control-tower-logistiek",
   "title": "De Supply Chain Control Tower: 360-Graden Zicht op uw Logistiek",
   "category": "Logistiek & Supply Chain",
   "date": "15 Maart 2026",
@@ -2037,7 +2037,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "oms-order-management-ontbrekende-schakel",
+  "slug": "oms-order-management-ontbrekende-schakel",
   "title": "Order Management (OMS): De Ontbrekende Schakel in B2B E-commerce",
   "category": "E-commerce & Logistiek",
   "date": "22 Maart 2026",
@@ -2058,7 +2058,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "smart-contracts-defi-b2b-facturatie",
+  "slug": "smart-contracts-defi-b2b-facturatie",
   "title": "Smart Contracts: Hoe DeFi de B2B Facturatie Verandert",
   "category": "Finance & Blockchain",
   "date": "29 Maart 2026",
@@ -2079,7 +2079,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "headless-cms-content-razendsnel-publiceren",
+  "slug": "headless-cms-content-razendsnel-publiceren",
   "title": "Headless CMS: Publiceer Content Razendsnel naar Elk Platform",
   "category": "Marketing Tech & CMS",
   "date": "05 April 2026",
@@ -2100,7 +2100,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "api-management-beveilig-digitale-deuren",
+  "slug": "api-management-beveilig-digitale-deuren",
   "title": "API Management: Beveilig de Digitale Deuren van uw Bedrijf",
   "category": "Cybersecurity & IT",
   "date": "12 April 2026",
@@ -2121,7 +2121,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "workforce-management-wfm-fabrieken",
+  "slug": "workforce-management-wfm-fabrieken",
   "title": "Workforce Management: Optimaliseer Ploegendiensten in de Fabriek",
   "category": "HR Tech & Industrie",
   "date": "19 April 2026",
@@ -2142,7 +2142,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "telehealth-b2b-zorgverleners-digitaal-samenwerken",
+  "slug": "telehealth-b2b-zorgverleners-digitaal-samenwerken",
   "title": "Telehealth in B2B: Hoe Zorgverleners Digitaal Samenwerken",
   "category": "MedTech & Health",
   "date": "26 April 2026",
@@ -2163,7 +2163,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "digitaal-product-paspoort-dpp-eu-wetgeving",
+  "slug": "digitaal-product-paspoort-dpp-eu-wetgeving",
   "title": "Het Digitale Product Paspoort (DPP): Bereid u voor op de EU Wetgeving",
   "category": "Duurzaamheid & Wetgeving",
   "date": "03 Mei 2026",
@@ -2184,7 +2184,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "low-code-development-app-sneller-klaar",
+  "slug": "low-code-development-app-sneller-klaar",
   "title": "Low-Code Development: Waarom uw Volgende App 5x Sneller Klaar is",
   "category": "App Ontwikkeling & IT",
   "date": "10 Mei 2026",
@@ -2205,7 +2205,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "quantum-computing-route-optimalisatie-logistiek",
+  "slug": "quantum-computing-route-optimalisatie-logistiek",
   "title": "Quantum Computing: De Toekomst van Route-Optimalisatie in de Haven",
   "category": "Deep Tech & Logistiek",
   "date": "17 Mei 2026",
@@ -2226,7 +2226,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "gamification-software-werknemers-graag-leren",
+  "slug": "gamification-software-werknemers-graag-leren",
   "title": "Gamification: Waarom uw Werknemers Plotseling Graag Leren",
   "category": "HR Tech & EdTech",
   "date": "24 Mei 2026",
@@ -2247,7 +2247,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "b2b-event-management-vakbeurzen-digitaliseren",
+  "slug": "b2b-event-management-vakbeurzen-digitaliseren",
   "title": "B2B Event Management: Digitaliseer uw Vakbeurzen en Congressen",
   "category": "Marketing & Events",
   "date": "31 Mei 2026",
@@ -2268,7 +2268,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "itsm-interne-helpdesk-upgrade",
+  "slug": "itsm-interne-helpdesk-upgrade",
   "title": "ITSM: Waarom uw Interne IT-Helpdesk een Upgrade Nodig Heeft",
   "category": "IT & Support",
   "date": "07 Juni 2026",
@@ -2289,7 +2289,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "field-service-management-fsm-technici",
+  "slug": "field-service-management-fsm-technici",
   "title": "Field Service Management (FSM): Stuur uw Technici Efficiënter op Pad",
   "category": "Logistiek & Field Service",
   "date": "14 Juni 2026",
@@ -2310,7 +2310,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "voice-picking-wearables-magazijn",
+  "slug": "voice-picking-wearables-magazijn",
   "title": "Voice Picking in het Magazijn: Werken met Vrije Handen",
   "category": "Logistiek & Warehouse",
   "date": "21 Juni 2026",
@@ -2331,7 +2331,7 @@ export const blogPosts = [
   ]
 },
 {
-  "id": "ai-co-pilot-b2b-sales-offertes",
+  "slug": "ai-co-pilot-b2b-sales-offertes",
   "title": "De AI Co-Pilot: Hoe B2B Sales Teams 3x Sneller Offertes Maken",
   "category": "Sales & AI",
   "date": "28 Juni 2026",
