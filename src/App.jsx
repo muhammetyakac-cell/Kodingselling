@@ -78,18 +78,18 @@ function Activity(props) {
 
 const seoData = {
   home: {
-    title: 'DZY Digital | Akıllı, Güvenli ve Ölçeklenebilir Yazılım Çözümleri',
-    description: 'DZY Digital ile web/mobil uygulamalar, bulut mimarisi, IoT entegrasyonu ve özel yazılım çözümleri. Antwerpen merkezli kurumsal teknoloji danışmanlığı.',
-    keywords: 'yazılım danışmanlığı, özel yazılım geliştirme, mobil uygulama, web tasarım, bulut sistemleri, iot entegrasyonu, saas yazılımları, izmir yazılım firması, dzy digital',
+    title: 'DZY Digital | Slimme, Veilige en Schaalbare Softwareoplossingen',
+    description: 'Web/mobiele applicaties, cloudarchitectuur, IoT-integratie en maatwerksoftwareoplossingen met DZY Digital. Bedrijfstechnologieadvies gevestigd in Antwerpen.',
+    keywords: 'software consultancy, maatwerk softwareontwikkeling, mobiele applicatie, webdesign, cloudsystemen, iot-integratie, saas-software, softwarebedrijf, dzy digital',
     path: '/',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "DZY Yazılım Danışmanlığı",
+        "name": "DZY Software Consultancy",
         "url": "https://www.dzydigital.com",
         "logo": "https://www.dzydigital.com/og-image.png",
-        "description": "Yeni nesil teknoloji danışmanlığı ve yazılım mühendisliği hizmetleri sunan kurumsal yazılım firması.",
+        "description": "Een zakelijk softwarebedrijf dat next-generation technologieadvies en software-engineeringdiensten aanbiedt.",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+90-555-208-3092",
@@ -157,16 +157,16 @@ const seoData = {
     ]
   },
   services: {
-    title: 'Hizmetlerimiz | Web, Mobil, Bulut ve Özel Otomasyon Geliştirme - DZY Digital',
-    description: 'Mobil/web uygulamaları, sanal POS, veri güvenliği, ERP/CRM ve SaaS geliştirme hizmetleri. Antwerpen\'de kurumsal yazılım danışmanlığı.',
-    keywords: 'yazılım hizmetleri, mobil uygulama geliştirme, sanal pos entegrasyonu, veri güvenliği, legacy sistem yenileme, cto danışmanlığı, saas geliştirme, seo optimizasyonu',
+    title: 'Onze Diensten | Web, Mobiel, Cloud & Automatisering - DZY Digital',
+    description: 'Mobiele/webapplicaties, virtuele POS, gegevensbeveiliging, ERP/CRM en SaaS-ontwikkelingsdiensten. Bedrijfssoftwareadvies in Antwerpen.',
+    keywords: 'softwarediensten, ontwikkeling mobiele apps, integratie virtuele POS, gegevensbeveiliging, vernieuwing legacy-systemen, cto-advies, saas-ontwikkeling, seo-optimalisatie',
     path: '/diensten',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "DZY Digital Hizmetleri",
-        "description": "Kurumsal yazılım geliştirme, bulut mimarisi ve dijital dönüşüm hizmetleri.",
+        "name": "DZY Digital Diensten",
+        "description": "Bedrijfssoftwareontwikkeling, cloudarchitectuur en digitale transformatiediensten.",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Mobiele en Web Applicaties" },
           { "@type": "ListItem", "position": 2, "name": "Betalings- en Incassosystemen" },
@@ -182,8 +182,8 @@ const seoData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Hizmetlerimiz", "item": "https://www.dzydigital.com/diensten" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Onze Diensten", "item": "https://www.dzydigital.com/diensten" }
         ]
       },
       {
@@ -193,14 +193,14 @@ const seoData = {
         "description": "iOS ve Android için native ve çapraz platform mobil uygulamalar, responsive web siteleri ve PWA çözümleri.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Yazılım Geliştirme"
+        "serviceType": "Softwareontwikkeling"
       }
     ]
   },
   expertise: {
     title: 'Sectorspecifieke Softwareoplossingen | Lojistik, SaaS ve Akademik Sistemler - DZY Digital',
-    description: 'Lojistik filo yönetimi, SaaS platform geliştirme ve akademik arşiv sistemleri için özel sektörel yazılım çözümleri.',
-    keywords: 'lojistik yazılımları, filo yönetimi, akademik arşiv sistemleri, saas platform geliştirme, sektörel yazılımlar, b2b yazılım entegrasyonu, erp çözümleri',
+    description: 'Sectorspecifieke softwareoplossingen voor logistiek vlootbeheer, ontwikkeling van SaaS-platforms en academische archiefsystemen.',
+    keywords: 'logistieke software, vlootbeheer, academische archiefsystemen, saas platform ontwikkeling, branchespecifieke software, b2b software integratie, erp oplossingen',
     path: '/expertises',
     schema: [
       {
@@ -217,44 +217,44 @@ const seoData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" }
         ]
       }
     ]
   },
   about: {
-    title: 'Hakkımızda | Kurumsal Teknoloji Vizyonu - DZY Digital',
-    description: 'Teknolojiyi işletmelerin sorunlarını çözen bir köprü olarak görüyor, yazılımı uçtan uca mühendislik disipliniyle kurguluyoruz.',
-    keywords: 'dzy digital kimdir, kurumsal yazılım danışmanlığı, izmir yazılım ajansı, cto danışmanlığı, dijital dönüşüm uzmanı, teknoloji danışmanı',
+    title: 'Over ons | Bedrijfstechnologievisie - DZY Digital',
+    description: 'We zien technologie als een brug die de problemen van bedrijven oplost en structureren software end-to-end met een ingenieursdiscipline.',
+    keywords: 'wie is dzy digital, bedrijfssoftware consultancy, softwarebureau, cto consultancy, digitale transformatie expert, technologie consultant',
     path: '/over-ons',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "AboutPage",
         "name": "DZY Digital Hakkında",
-        "description": "Yeni nesil teknoloji danışmanlığı ve yazılım mühendisliği vizyonu."
+        "description": "Next-generation technologieadvies en software-engineeringvisie."
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Hakkımızda", "item": "https://www.dzydigital.com/over-ons" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Over ons", "item": "https://www.dzydigital.com/over-ons" }
         ]
       }
     ]
   },
   contact: {
     title: 'İletişim | Projenizi Başlatın ve Teknoloji Danışmanlığı Alın - DZY Digital',
-    description: 'DZY Digital Antwerpen iletişim. Formu doldurarak projenizi anlatın, 24 saat içinde ücretsiz teknik ön analiz raporu alın.',
-    keywords: 'yazılım teklifi al, izmir yazılım iletişim, dzy digital telefon, yazılım firması adres, ücretsiz danışmanlık',
+    description: 'DZY Digital Antwerpen contact. Vul het formulier in om uw project te beschrijven en ontvang binnen 24 uur een gratis technisch vooranalyserapport.',
+    keywords: 'software offerte aanvragen, software contact, dzy digital telefoon, softwarebedrijf adres, gratis advies',
     path: '/contact',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "DZY Digital - Yazılım Danışmanlığı",
+        "name": "DZY Digital - Software Consultancy",
         "image": "https://www.dzydigital.com/og-image.png",
         "telephone": "+90-555-208-3092",
         "email": "info@dzydigital.com",
@@ -323,7 +323,7 @@ const seoData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "İletişim", "item": "https://www.dzydigital.com/contact" }
         ]
       }
@@ -332,23 +332,23 @@ const seoData = {
   'sector-logistics': {
     title: 'Lojistik ve Filo Yönetimi Çözümleri | DZY Digital',
     description: 'GPS filo takibi, akıllı rota optimizasyonu ve gümrük belge otomasyonu ile lojistik operasyonlarınızı dijitalleştirin.',
-    keywords: 'lojistik filo yönetimi, araç takip sistemi, rota optimizasyon yazılımı, gümrük belge akışı otomasyonu, gps takip',
+    keywords: 'logistiek vlootbeheer, voertuigvolgsysteem, route-optimalisatiesoftware, automatisering documentenstroom douane, gps tracking',
     path: '/sector/logistiek',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Logistiek en Vlootbeheer Software",
-        "description": "Uluslararası taşımacılık, rota optimizasyonu ve canlı filo takibi için özel yazılım çözümleri.",
+        "description": "Maatwerk softwareoplossingen voor internationaal transport, route-optimalisatie en live fleet tracking.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Lojistik Yazılım Geliştirme"
+        "serviceType": "Logistieke Softwareontwikkeling"
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" },
           { "@type": "ListItem", "position": 3, "name": "Lojistik", "item": "https://www.dzydigital.com/sektor/lojistik" }
         ]
@@ -358,7 +358,7 @@ const seoData = {
   'sector-saas': {
     title: 'SaaS ve Platform Ürün Geliştirme | DZY Digital',
     description: 'Multi-tenant SaaS altyapısı, Stripe abonelik entegrasyonu ve ölçeklenebilir bulut mimarisi ile ürününüzü pazara taşıyın.',
-    keywords: 'saas geliştirme, abonelik yazılımı, multi tenant mimari, stripe entegrasyonu, saas altyapısı, bulut platform',
+    keywords: 'saas ontwikkeling, abonnementen software, multi-tenant architectuur, stripe integratie, saas infrastructuur, cloud platform',
     path: '/sector/saas',
     schema: [
       {
@@ -374,7 +374,7 @@ const seoData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" },
           { "@type": "ListItem", "position": 3, "name": "SaaS", "item": "https://www.dzydigital.com/sektor/saas" }
         ]
@@ -384,7 +384,7 @@ const seoData = {
   'sector-academic': {
     title: 'Akademik ve Bilimsel Dijital Arşiv Sistemleri | DZY Digital',
     description: 'KVKK uyumlu bilimsel veri arşivi, Dublin Core entegrasyonu ve güvenli akademik veri paylaşım altyapıları geliştirme.',
-    keywords: 'akademik veri arşivi, bilimsel envanter yazılımı, dijital kütüphane altyapısı, güvenli veri paylaşımı, dublin core',
+    keywords: 'academisch data-archief, wetenschappelijke inventarissoftware, digitale bibliotheekinfrastructuur, veilig delen van gegevens, dublin core',
     path: '/sector/academisch',
     schema: [
       {
@@ -394,13 +394,13 @@ const seoData = {
         "description": "Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel dijital arşiv çözümleri.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Akademik Yazılım Geliştirme"
+        "serviceType": "Academische Softwareontwikkeling"
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" },
           { "@type": "ListItem", "position": 3, "name": "Akademik", "item": "https://www.dzydigital.com/sektor/akademik" }
         ]
@@ -410,7 +410,7 @@ const seoData = {
   'sector-ecommerce': {
     title: 'B2B E-Ticaret ve Pazaryeri Sistemleri | DZY Digital',
     description: 'Bayi ağınızı yönetin, tahsilatları ve B2B siparişleri otomatize edin. Özelleştirilebilir pazaryeri ve e-ticaret altyapıları.',
-    keywords: 'b2b e-ticaret yazılımı, pazaryeri yazılımı, çok satıcılı e-ticaret, b2b sipariş sistemi, bayi yönetim sistemi',
+    keywords: 'b2b e-commerce software, marktplaatssoftware, multi-vendor e-commerce, b2b bestelsysteem, dealer management systeem',
     path: '/sector/ecommerce',
     schema: [
       {
@@ -420,48 +420,48 @@ const seoData = {
         "description": "Kapalı devre bayi siparişleri ve çok satıcılı e-ticaret (marketplace) altyapıları.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "E-Ticaret Yazılım Geliştirme"
+        "serviceType": "E-Commerce Softwareontwikkeling"
       }
     ]
   },
   'sector-tourism': {
-    title: 'Otel ve Turizm Yönetim Yazılımları (PMS) | DZY Digital',
-    description: 'Otelinizin tüm rezervasyon, online ödeme ve kat hizmetleri süreçlerini tek ekranda toplayan yeni nesil bulut PMS çözümleri.',
-    keywords: 'otel yönetim yazılımı, pms yazılımı, bulut otel programı, turizm teknolojileri, online rezervasyon sistemi',
+    title: 'Hotel- en Toerismebeheersoftware (PMS) | DZY Digital',
+    description: 'Cloud PMS-oplossingen van de volgende generatie die alle reserverings-, online betalings- en huishoudprocessen van uw hotel op één scherm samenbrengen.',
+    keywords: 'hotelbeheersoftware, pms software, cloud hotel programma, toerismetechnologieën, online reserveringssysteem',
     path: '/sector/toerisme',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Otel Yönetim Yazılımları (PMS)",
-        "description": "Konaklama işletmeleri için rezervasyon ve muhasebe sistemlerini bulutta birleştiren yazılımlar.",
+        "name": "Hotelbeheersoftware (PMS)",
+        "description": "Software die reserverings- en boekhoudsystemen in de cloud combineert voor accommodatiebedrijven.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Turizm Yazılım Geliştirme"
+        "serviceType": "Toerisme Softwareontwikkeling"
       }
     ]
   },
   'sector-production': {
     title: 'Endüstriyel Üretim Takip ve ERP Sistemleri | DZY Digital',
     description: 'Fabrikanızdaki makinelerden canlı veri alın, üretim süreçlerinizi dijitalleştirin. Modern ve esnek ERP altyapıları.',
-    keywords: 'üretim takip sistemi, endüstriyel iot, modern erp programı, fabrika otomasyon yazılımı, fire analiz',
+    keywords: 'productie trackingsysteem, industriële iot, modern erp programma, fabrieksautomatisering software, uitval analyse',
     path: '/sector/productie',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Üretim Takip ve ERP Yazılımları",
+        "name": "Productie Tracking en ERP Software",
         "description": "Üretim bandından anlık veri alarak fire oranlarını azaltan ERP çözümleri.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "ERP Yazılım Geliştirme"
+        "serviceType": "ERP Softwareontwikkeling"
       }
     ]
   },
   'sector-health': {
     title: 'Sağlık, Klinik ve Hastane Bilgi Sistemleri (HBS) | DZY Digital',
     description: 'KVKK uyumlu hasta kayıt portalı, randevu takip modülü ve e-reçete entegreli yeni nesil hastane yönetim programları.',
-    keywords: 'hastane bilgi sistemi, hbs yazılımı, klinik takip programı, kvkk uyumlu hasta portalı, sağlık teknolojileri',
+    keywords: 'ziekenhuisinformatiesysteem, his software, kliniek tracking programma, gdpr compliant patiëntportaal, gezondheidstechnologieën',
     path: '/sector/gezondheidszorg',
     schema: [
       {
@@ -471,14 +471,14 @@ const seoData = {
         "description": "Klinik ve hastaneler için randevu takibi ve dijital arşiv sağlayan otomasyonlar.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Sağlık Yazılım Geliştirme"
+        "serviceType": "Gezondheidszorg Softwareontwikkeling"
       }
     ]
   },
   'sector-education': {
     title: 'Okul, K-12 ve Eğitim Portalları (LMS) | DZY Digital',
     description: 'Online sınav analizi, veli bilgilendirme sistemi ve e-öğrenme modüllerini tek bir çatıda toplayan okul yönetim altyapıları.',
-    keywords: 'okul yönetim sistemi, lms yazılımı, eğitim portalı geliştirme, online sınav yazılımı, öğrenci takip programı',
+    keywords: 'schoolmanagementsysteem, lms software, onderwijsportaal ontwikkeling, online examen software, studentenvolgsysteem',
     path: '/sector/onderwijs',
     schema: [
       {
@@ -488,14 +488,14 @@ const seoData = {
         "description": "Okullar için veli bilgilendirme, sınav analizi ve e-öğrenme odaklı eğitim yönetim portalları.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Eğitim Yazılım Geliştirme"
+        "serviceType": "Onderwijs Softwareontwikkeling"
       }
     ]
   },
   'sector-fintech': {
     title: 'Finans Teknolojileri ve Açık Bankacılık | DZY Digital',
     description: 'Dijital cüzdan, açık bankacılık regülasyonlarına uyumlu API ve ödeme geçidi çözümleri.',
-    keywords: 'fintech yazılımı, açık bankacılık api, ödeme geçidi entegrasyonu, dijital cüzdan yazılımı, sanal pos entegrasyon',
+    keywords: 'fintech software, open banking api, payment gateway integratie, digitale portemonnee software, virtuele pos integratie',
     path: '/sector/fintech',
     schema: [
       {
@@ -505,48 +505,48 @@ const seoData = {
         "description": "Banka entegrasyonları, cüzdan sistemleri ve açık bankacılık çözümleri.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Finans Yazılım Geliştirme"
+        "serviceType": "Financiële Softwareontwikkeling"
       }
     ]
   },
   'sector-realestate': {
     title: 'Gayrimenkul ve PropTech Sistemleri | DZY Digital',
-    description: 'Büyük emlak portföylerini yönetmek için proptech çözümleri, kira tahsilat otomasyonu ve akıllı bina yazılımları.',
-    keywords: 'proptech yazılımı, gayrimenkul yönetim sistemi, akıllı bina otomasyonu, kira tahsilat yazılımı, emlak yazılımı',
+    description: 'Proptech-oplossingen, automatisering van huurinning en slimme gebouwsoftware voor het beheren van grote vastgoedportefeuilles.',
+    keywords: 'proptech software, vastgoedbeheersysteem, slimme gebouwautomatisering, huurinning software, vastgoed software',
     path: '/sector/vastgoed',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "PropTech ve Gayrimenkul Yazılımları",
+        "name": "PropTech en Vastgoedsoftware",
         "description": "Emlak portföy yönetimi ve akıllı bina yönetim sistemleri.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Gayrimenkul Yazılım Geliştirme"
+        "serviceType": "Vastgoed Softwareontwikkeling"
       }
     ]
   },
   'sector-energy': {
     title: 'Akıllı Şehir ve Enerji Otomasyonları | DZY Digital',
-    description: 'IoT ile güçlendirilmiş akıllı şebeke izleme, enerji tüketim analizleri ve sürdürülebilir enerji yazılımları.',
-    keywords: 'akıllı şehir çözümleri, enerji otomasyonu, iot enerji takibi, akıllı şebeke yazılımı, enerji tüketim analizi',
+    description: 'Smart grid monitoring, analyse van energieverbruik en duurzame energiesoftware aangedreven door IoT.',
+    keywords: 'smart city oplossingen, energieautomatisering, iot energietracking, smart grid software, energieverbruiksanalyse',
     path: '/sector/energie',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Enerji ve Akıllı Şehir Sistemleri",
-        "description": "Enerji tüketim analizleri ve IoT destekli akıllı şehir yazılımları.",
+        "description": "Analyse van energieverbruik en IoT-ondersteunde smart city-software.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Enerji Yazılım Geliştirme"
+        "serviceType": "Energie Softwareontwikkeling"
       }
     ]
   },
   'sector-agritech': {
     title: 'Tarım Teknolojileri ve Agrotech | DZY Digital',
-    description: 'Sera otomasyonu, sensör bazlı akıllı sulama ve tarladan sofraya üretim takip (AgriTech) yazılımları.',
-    keywords: 'agrotech yazılımı, akıllı tarım teknolojileri, sera otomasyonu, akıllı sulama sistemi, tarım iot',
+    description: 'Kasautomatisering, sensorgebaseerde slimme irrigatie en farm-to-fork productie tracking (AgriTech) software.',
+    keywords: 'agrotech software, slimme landbouwtechnologieën, kasautomatisering, slim irrigatiesysteem, landbouw iot',
     path: '/sector/agritech',
     schema: [
       {
@@ -556,31 +556,31 @@ const seoData = {
         "description": "Sera otomasyonu ve sensör bazlı akıllı sulama sistemleri.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Tarım Yazılım Geliştirme"
+        "serviceType": "Landbouw Softwareontwikkeling"
       }
     ]
   },
   'sector-retail': {
     title: 'Perakende ve Mağazacılık (POS) Sistemleri | DZY Digital',
     description: 'Çok şubeli perakende zincirleri için bulut POS, stok yönetimi, crm ve müşteri sadakat programları.',
-    keywords: 'bulut pos yazılımı, mağazacılık sistemi, perakende erp, müşteri sadakat programı yazılımı, çoklu şube yönetimi',
+    keywords: 'cloud pos software, retailsysteem, retail erp, klantloyaliteitsprogramma software, multi-branch beheer',
     path: '/sector/retail',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Perakende ve POS Yazılımları",
-        "description": "Çok şubeli mağazalar için bulut tabanlı POS ve stok yönetim yazılımları.",
+        "name": "Retail en POS Software",
+        "description": "Cloudgebaseerde POS- en voorraadbeheersoftware voor winkels met meerdere filialen.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "Perakende Yazılım Geliştirme"
+        "serviceType": "Retail Softwareontwikkeling"
       }
     ]
   },
   blog: {
-    title: 'Bilgi Bankası & Blog | Teknoloji ve Yazılım Trendleri - DZY Digital',
-    description: 'Yazılım mimarisi, dijital dönüşüm, bulut teknolojileri ve KOBİ\'ler için vaka analizleri barındıran bilgi bankamızı keşfedin.',
-    keywords: 'yazılım blogu, teknoloji makaleleri, dijital dönüşüm hataları, vaka analizi, yazılım rehberi',
+    title: 'Kennisbank & Blog | Technologie- en Softwaretrends - DZY Digital',
+    description: 'Ontdek onze kennisbank met casestudies voor het MKB, softwarearchitectuur, digitale transformatie en cloudtechnologieën.',
+    keywords: 'software blog, technologieartikelen, fouten bij digitale transformatie, casestudy, softwaregids',
     path: '/blog',
     schema: [
       {
@@ -588,7 +588,7 @@ const seoData = {
         "@type": "Blog",
         "name": "DZY Digital Bilgi Bankası",
         "url": "https://www.dzydigital.com/blog",
-        "description": "Yazılım, teknoloji ve dijital dönüşüm üzerine uzman içerikler.",
+        "description": "Deskundige inhoud over software, technologie en digitale transformatie.",
         "publisher": {
           "@type": "Organization",
           "name": "DZY Digital",
@@ -602,7 +602,7 @@ const seoData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.dzydigital.com/" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.dzydigital.com/blog" }
         ]
       }
@@ -842,7 +842,7 @@ export default function App() {
                 "@context": "https://schema.org",
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                  { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": siteUrl + "/" },
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl + "/" },
                   { "@type": "ListItem", "position": 2, "name": "Blog", "item": siteUrl + "/blog" },
                   { "@type": "ListItem", "position": 3, "name": post.title, "item": siteUrl + "/blog/" + post.slug }
                 ]
@@ -1341,135 +1341,135 @@ function SectorLandingView({ tab, nav }) {
         };
       case 'sector-saas':
         return {
-          desc: "Kendi yazılım ürününüzü (SaaS) hızlı ve güvenli şekilde pazara sunmanızı sağlayacak uçtan uca altyapıları kuruyoruz. Çoklu kiracılı (multi-tenant) veri mimarisi, güvenli üyelik ve global abonelik modelleriyle projenizi sıfırdan ölçeklenebilir bir iş modeline dönüştürüyoruz.",
+          desc: "We bouwen end-to-end infrastructuren om uw eigen softwareproduct (SaaS) snel en veilig op de markt te brengen. Met multi-tenant data-architectuur, veilige lidmaatschappen en wereldwijde abonnementsmodellen transformeren we uw project vanaf nul in een schaalbaar bedrijfsmodel.",
           features: [
-            { title: "Güvenli Çoklu Kiracı Yapısı", detail: "Müşterilerinizin verilerini tamamen izole ederek, bağımsız erişim ve yüksek güvenlik standartları sunun." },
-            { title: "Abonelik ve Yinelenen Ödeme Entegrasyonu", detail: "Stripe ve Iyzico entegrasyonları ile aylık/yıllık üyelikler, faturalandırma ve cüzdan yapıları oluşturun." },
-            { title: "Satır Bazlı Güvenlik (Row-Level Security)", detail: "Bulut veritabanınızda (Supabase/PostgreSQL) RLS kuralları ile verilerinizi çekirdek seviyede koruyun." },
-            { title: "MRR / Churn Canlı Raporlama Paneli", detail: "Yönetici panelinde gelir akışınızı, aktif kullanıcı sayılarını ve abonelik kaybı (churn) oranlarını takip edin." }
+            { title: "Veilige Multi-Tenant Structuur", detail: "Isoleer de gegevens van uw klanten volledig voor onafhankelijke toegang en de hoogste veiligheidsstandaarden." },
+            { title: "Abonnement & Terugkerende Betalingen", detail: "Creëer maandelijkse/jaarlijkse lidmaatschappen, facturering en portemonneestructuren met Stripe en Mollie integraties." },
+            { title: "Row-Level Security (RLS)", detail: "Beveilig uw gegevens in de cloud-database (Supabase/PostgreSQL) op het diepste niveau met RLS-regels." },
+            { title: "MRR / Churn Live Rapportage", detail: "Volg uw inkomstenstroom, het aantal actieve gebruikers en het churn-percentage in uw beheerpaneel." }
           ],
-          cta: "SaaS Girişiminizi Hemen Başlatın"
+          cta: "Start uw SaaS Startup Nu"
         };
       case 'sector-academic':
         return {
-          desc: "Akademik kurumlar, müzeler, arşiv merkezleri ve laboratuvarlar için hassas verilerin, bilimsel envanterlerin ve dijital belgelerin güvenli saklanması ve filtrelenmesini sağlayan arşiv sistemleri tasarlıyoruz. Dublin Core ve KVKK uyumlu altyapılar ile verilerinizi geleceğe taşıyoruz.",
+          desc: "We ontwerpen archiefsystemen voor academische instellingen, musea, archiefcentra en laboratoria die veilige opslag en filtering van gevoelige gegevens, wetenschappelijke inventarissen en digitale documenten garanderen. Met Dublin Core en GDPR-compatibele infrastructuren dragen we uw gegevens de toekomst in.",
           features: [
-            { title: "KVKK & GDPR Uyumlu Veri Arşivleme", detail: "Hassas bilimsel verileri, arkeolojik kayıtları veya numune envanterlerini uluslararası standartlarda koruyun." },
-            { title: "Gelişmiş Arama ve Filtreleme Motoru", detail: "Milyonlarca dijital dosya ve veri kaydı arasından saniyeler içinde kategori, tarih ve parametre bazlı arama yapın." },
-            { title: "Hiyerarşik Rol & Yetki Yönetimi", detail: "Ziyaretçiler, araştırmacılar ve kurum personelleri için farklı seviyelerde dosya indirme/görüntüleme yetkileri atayın." },
-            { title: "Uluslararası Akademik Entegrasyonlar", detail: "Dublin Core, OAI-PMH gibi standartlarla uyumlu veri paylaşım kanalları (API) kurgulayın." }
+            { title: "GDPR Compatibele Data Archivering", detail: "Bescherm gevoelige wetenschappelijke gegevens, archeologische archieven of monsterinventarissen volgens internationale normen." },
+            { title: "Geavanceerde Zoek- en Filter Engine", detail: "Doorzoek miljoenen digitale bestanden en gegevensrecords in seconden op categorie, datum en parameters." },
+            { title: "Hiërarchisch Rol & Rechtenbeheer", detail: "Wijs verschillende niveaus van bestandsdownload/weergave-rechten toe voor bezoekers, onderzoekers en personeel." },
+            { title: "Internationale Academische Integraties", detail: "Creëer data-uitwisselingskanalen (API) die compatibel zijn met standaarden zoals Dublin Core en OAI-PMH." }
           ],
-          cta: "Arşivinizi Dijital Dünyaya Taşıyın"
+          cta: "Breng uw Archief naar de Digitale Wereld"
         };
       case 'sector-ecommerce':
         return {
-          desc: "Sadece standart bir e-ticaret sitesi değil, bayilerinizin limit ve iskontolarıyla sipariş verebildiği karmaşık B2B portalları veya farklı satıcıların komisyonla ürün sattığı Pazaryeri (Marketplace) sistemleri kuruyoruz.",
+          desc: "We bouwen niet zomaar een standaard e-commerce site, maar complexe B2B-portalen waar uw dealers bestellingen kunnen plaatsen met hun limieten en kortingen, of Marketplace-systemen waar verschillende verkopers producten verkopen met commissie.",
           features: [
-            { title: "Çok Satıcılı Pazaryeri Mimari", detail: "Satıcıların kendi mağazalarını yönetebildiği, komisyonların otomatik kesilip dağıtıldığı güvenli e-ticaret ekosistemleri." },
-            { title: "B2B Bayi Sipariş ve Cari Yönetimi", detail: "Her bayiye özel tanımlı iskontolar, açık hesap kotaları ve DBS (Doğrudan Borçlandırma Sistemi) entegrasyonu." },
-            { title: "Çoklu Depo ve Stok Senkronizasyonu", detail: "Farklı depo lokasyonlarındaki stokları anlık eşitleyen, yok satmayı engelleyen milisaniyelik kilit algoritmaları." },
-            { title: "ERP & Kargo Çift Yönlü Entegrasyon", detail: "Siparişlerin anında muhasebeye ve kargo firmasına aktarılıp, barkod ve faturaların otomatik basılması." }
+            { title: "Multi-Vendor Marketplace Architectuur", detail: "Veilige e-commerce ecosystemen waar verkopers hun eigen winkels beheren en commissies automatisch worden verdeeld." },
+            { title: "B2B Dealer Bestellingen & Saldo Beheer", detail: "Specifieke kortingen per dealer, open rekening quota's en automatische incasso integratie." },
+            { title: "Multi-Warehouse & Voorraad Synchronisatie", detail: "Milisecunde vergrendelingsalgoritmen die de voorraad over verschillende magazijnlocaties direct synchroniseren om out-of-stock verkopen te voorkomen." },
+            { title: "ERP & Verzending Tweeweg Integratie", detail: "Bestellingen direct doorsturen naar de boekhouding en het verzendbedrijf, met automatisch afdrukken van barcodes en facturen." }
           ],
-          cta: "E-Ticaret Platformunuzu Tasarlayın"
+          cta: "Ontwerp uw E-commerce Platform"
         };
       case 'sector-tourism':
         return {
-          desc: "Konaklama tesislerinin karmaşık operasyonlarını tek bir bulut çatıda toplayan, OTA (Booking, Expedia) platformlarıyla saniyelik çift yönlü entegre çalışan modern Otel Yönetim (PMS) mimarileri geliştiriyoruz.",
+          desc: "We ontwikkelen moderne Property Management System (PMS) architecturen die de complexe operaties van accommodatiefaciliteiten onder één clouddak brengen en in milliseconden tweeweg communiceren met OTA's (Booking, Expedia).",
           features: [
-            { title: "Kanal Yöneticisi (Channel Manager)", detail: "Odadaki son durumu tüm online platformlara saniyeler içinde göndererek Overbooking riskini sıfıra indirin." },
-            { title: "Temassız Check-in ve Mobil Deneyim", detail: "Misafirlerin akıllı telefonlarıyla odaya giriş yapabileceği, oda servisi isteyebileceği dijital ön büro sistemleri." },
-            { title: "Housekeeping Canlı İzleme Modülü", detail: "Odaların temizlik durumlarını kat görevlilerinin tabletlerinden anlık olarak resepsiyona aktaran entegre modüller." },
-            { title: "Dinamik Fiyatlandırma (Revenue Mgt)", detail: "Talep ve bölgedeki etkinlik yoğunluğuna göre oda fiyatlarınızı otomatik ayarlayan akıllı algoritmalar." }
+            { title: "Channel Manager", detail: "Stuur de nieuwste kamerstatus in seconden naar alle online platforms om het risico op overboeking tot nul te reduceren." },
+            { title: "Contactloze Check-in en Mobiele Ervaring", detail: "Digitale frontoffice-systemen waar gasten via hun smartphone kunnen inchecken en roomservice kunnen aanvragen." },
+            { title: "Housekeeping Live Monitoring", detail: "Geïntegreerde modules die de schoonmaakstatus van kamers direct vanaf de tablets van het huishoudelijk personeel naar de receptie sturen." },
+            { title: "Dynamische Prijsstelling (Revenue Mgt)", detail: "Slimme algoritmen die uw kamerprijzen automatisch aanpassen op basis van de vraag en evenementendrukte in de regio." }
           ],
-          cta: "Otel Yazılımınızı Buluta Taşıyın"
+          cta: "Breng uw Hotelsoftware naar de Cloud"
         };
       case 'sector-production':
         return {
-          desc: "Geleneksel, hantal ve karmaşık ERP paketlerinden kurtularak üretim hattınıza özel tasarlanmış, sensör verileriyle beslenen ve esnek mikroservislerle güçlendirilmiş endüstriyel yönetim sistemleri üretiyoruz.",
+          desc: "We ontdoen ons van traditionele, logge en complexe ERP-pakketten en produceren op maat gemaakte industriële beheersystemen voor uw productielijn, gevoed door sensorgegevens en aangedreven door flexibele microservices.",
           features: [
-            { title: "Makine ve Sensör IoT Entegrasyonu", detail: "Üretim hattındaki makinelerden anlık sıcaklık, titreşim ve hız verisi toplayarak üretim duruşlarını erken tahmin edin." },
-            { title: "Gerçek Zamanlı Fire ve Verimlilik Analizi", detail: "Üretim hatasından kaynaklı fire oranlarını anlık tespit ederek hangi vardiyada sorunun başladığını görselleştirin." },
-            { title: "Mobil Depo ve Barkod Süreçleri", detail: "Depo personelinin el terminalleriyle hatasız ürün giriş/çıkışını sağlayan hızlı ve sade mobil arayüzler." },
-            { title: "Mikroservis ERP Mimari", detail: "Tüm sistemi kapatmadan, sadece üretim modülünü veya finans modülünü güncelleyebileceğiniz modern yazılım altyapısı." }
+            { title: "Machine & Sensor IoT Integratie", detail: "Verzamel direct temperatuur-, trillings- en snelheidsgegevens van machines op de productielijn om stilstand vroegtijdig te voorspellen." },
+            { title: "Real-time Uitval- en Efficiëntieanalyse", detail: "Detecteer direct het percentage uitval veroorzaakt door productiefouten en visualiseer in welke dienst het probleem begon." },
+            { title: "Mobiel Magazijn & Barcodeprocessen", detail: "Snelle en eenvoudige mobiele interfaces die zorgen voor een foutloze product in/uitstroom voor het magazijnpersoneel met handscanners." },
+            { title: "Microservice ERP Architectuur", detail: "Moderne software-infrastructuur waar u alleen de productiemodule of de financiële module kunt updaten zonder het hele systeem plat te leggen." }
           ],
-          cta: "Üretim Hattınızı Dijitalleştirin"
+          cta: "Digitaliseer uw Productielijn"
         };
       case 'sector-health':
         return {
-          desc: "Hasta verilerinin güvenliğinin en kritik olduğu sağlık sektöründe; KVKK ve GDPR uyumlu çalışan, hasta randevu, e-reçete ve tahlil süreçlerini bir araya getiren bulut tabanlı Klinik ve Hastane Bilgi Sistemleri (HBS) geliştiriyoruz.",
+          desc: "In de gezondheidszorg, waar de veiligheid van patiëntgegevens het meest cruciaal is, ontwikkelen we cloudgebaseerde Kliniek- en Ziekenhuisinformatiesystemen (HIS) die volledig voldoen aan de GDPR, en patiëntafspraken, e-recepten en laboratoriumprocessen samenbrengen.",
           features: [
-            { title: "Dijital Hasta Kayıt ve Triyaj", detail: "Kağıtsız hastane vizyonuyla hastaların tıbbi geçmişinin, tahlillerinin ve tedavilerinin uçtan uca dijital arşivlendiği portal." },
-            { title: "Akıllı Randevu ve Hatırlatma Sistemi", detail: "Doktor takvimlerinin online portallarla senkronize olduğu, SMS/WhatsApp üzerinden otomatik hatırlatma yapan randevu altyapısı." },
-            { title: "Görüntüleme ve Laboratuvar Entegrasyonu", detail: "Röntgen, MR ve kan testi cihazlarının sonuçlarını doğrudan hasta profiline ve doktorun ekranına yansıtan API entegrasyonu." },
-            { title: "Kriptografik Veri Güvenliği", detail: "Sağlık verilerinin şifrelenmiş veri tabanlarında (Encryption at Rest) tutulmasını sağlayan üst düzey siber güvenlik standartları." }
+            { title: "Digitale Patiëntregistratie en Triage", detail: "Een portaal waar de medische geschiedenis, tests en behandelingen van patiënten end-to-end digitaal worden gearchiveerd met een papierloze ziekenhuisvisie." },
+            { title: "Slim Afspraken- en Herinneringssysteem", detail: "Een afspraak-infrastructuur waar doktersagenda's gesynchroniseerd zijn met online portalen en automatisch herinneringen sturen via SMS/WhatsApp." },
+            { title: "Beeldvorming & Laboratorium Integratie", detail: "API-integratie die de resultaten van röntgen-, MRI- en bloedtestapparatuur direct doorstuurt naar het patiëntenprofiel en het scherm van de arts." },
+            { title: "Cryptografische Databeveiliging", detail: "Hoogwaardige cybersecurity-standaarden die ervoor zorgen dat gezondheidsgegevens worden bewaard in versleutelde databases (Encryption at Rest)." }
           ],
-          cta: "Klinik Yazılımınızı Bize Emanet Edin"
+          cta: "Vertrouw uw Klinieksoftware aan ons Toe"
         };
       case 'sector-education':
         return {
-          desc: "Öğrenci işlerinin, akademik süreçlerin ve tahsilat yönetiminin karmaşıklığını ortadan kaldıran; veli, öğretmen ve yönetici odaklı modern Eğitim ve Öğrenme Yönetim (LMS) portalları kurguluyoruz.",
+          desc: "We ontwerpen moderne Learning Management Systems (LMS) en opleidingsportalen voor ouders, leraren en beheerders, die de complexiteit van studentenzaken, academische processen en het beheer van inning wegnemen.",
           features: [
-            { title: "E-Öğrenme ve Canlı Ders Modülü", detail: "Video eğitimlerin, pdf dökümanların sunulduğu, Zoom entegreli canlı ders sınıflarının planlandığı dijital akademi platformu." },
-            { title: "Sınav Analiz ve Kazanım Raporlama", detail: "Optik veya online sınav sonuçlarını analiz ederek öğrencinin konu bazlı (kazanım) zayıflıklarını çıkartan yapay zeka destekli analiz." },
-            { title: "Veli Bilgilendirme Ekranları", detail: "Velilerin çocuklarının devamsızlık durumlarını, yemek menülerini ve etkinlikleri akıllı telefonundan anlık takip edebildiği mobil portallar." },
-            { title: "Okul Tahsilat ve Sanal Pos Entegrasyonu", detail: "Kayıt ücretleri, taksitler ve yemekhane ödemelerinin veliler tarafından güvenli ödeme ağ geçitleriyle anlık ödenebildiği finans modülü." }
+            { title: "E-Learning en Live Lesmodule", detail: "Een digitaal academieplatform waar videolessen en pdf-documenten worden aangeboden en live lessen met Zoom-integratie worden gepland." },
+            { title: "Examenanalyse en Rapportage", detail: "AI-ondersteunde analyse die optische of online examenresultaten analyseert om de zwakke punten van de student per onderwerp te identificeren." },
+            { title: "Informatieschermen voor Ouders", detail: "Mobiele portalen waar ouders direct vanaf hun smartphone de aanwezigheid, lunchmenu's en evenementen van hun kinderen kunnen volgen." },
+            { title: "School Inning en Virtuele POS Integratie", detail: "Een financiële module waar registratiekosten, termijnen en kantinebetalingen direct en veilig door ouders kunnen worden betaald via betalingsgateways." }
           ],
-          cta: "Eğitim Kurumunuzu Dijitalleştirin"
+          cta: "Digitaliseer uw Onderwijsinstelling"
         };
       case 'sector-fintech':
         return {
-          desc: "Banka ve finans kurumları için regülasyonlara tam uyumlu, modern finansal teknolojiler (FinTech) ve Açık Bankacılık (Open Banking) API altyapıları geliştiriyoruz.",
+          desc: "We ontwikkelen volledig regelgevingsconforme, moderne financiële technologieën (FinTech) en Open Banking API-infrastructuren voor banken en financiële instellingen.",
           features: [
-            { title: "Sanal POS ve Ödeme Geçidi", detail: "Kredi kartı işlemleri, tekrarlayan abonelik (recurring) ödemeleri ve cüzdan sistemleri (Stripe, Iyzico, iPara) entegrasyonları." },
-            { title: "Açık Bankacılık (Open Banking) API", detail: "Farklı bankalardaki hesap hareketlerini tek ekranda toplayan, otomatik mutabakat sağlayan PSD2 uyumlu güvenli API'ler." },
-            { title: "Kripto ve Blockchain Cüzdan", detail: "Web3 projeleri için akıllı kontratlar (smart contracts), token ekonomileri ve güvenli kripto saklama cüzdanları altyapısı." },
-            { title: "Regülasyon ve KYC/AML Süreçleri", detail: "Müşterini Tanı (KYC) ve Kara Para Aklamayı Önleme (AML) süreçlerini otomatize eden kimlik doğrulama sistemleri." }
+            { title: "Virtuele POS & Payment Gateway", detail: "Integratie van creditcardtransacties, terugkerende (abonnement) betalingen en portemonneesystemen (Stripe, Mollie, Adyen)." },
+            { title: "Open Banking API", detail: "Veilige PSD2-conforme API's die rekeningtransacties van verschillende banken op één scherm samenbrengen en automatische afstemming bieden." },
+            { title: "Crypto & Blockchain Portemonnee", detail: "Infrastructuur voor slimme contracten (smart contracts), token economieën en veilige crypto-opslagportemonnees voor Web3-projecten." },
+            { title: "Regelgeving en KYC/AML Processen", detail: "Identiteitsverificatiesystemen die Know Your Customer (KYC) en Anti-Money Laundering (AML) processen automatiseren." }
           ],
-          cta: "Fintech Çözümünüzü Canlandırın"
+          cta: "Breng uw Fintech Oplossing tot Leven"
         };
       case 'sector-realestate':
         return {
-          desc: "Klasik emlakçılığın ötesine geçen PropTech çözümleriyle; devasa gayrimenkul portföylerini, akıllı binaları ve kira tahsilatlarını tek merkezden otonom olarak yönetin.",
+          desc: "Beheer enorme vastgoedportefeuilles, slimme gebouwen en huurinningen autonoom vanuit één centraal punt met PropTech-oplossingen die verder gaan dan de traditionele makelaardij.",
           features: [
-            { title: "Kira Tahsilat Otomasyonu", detail: "Geciken kiraları tespit eden, sanal pos ile online kira ödeme imkanı sunan dijital mülk yönetim modülü." },
-            { title: "Akıllı Bina (Smart Building) Entegrasyonu", detail: "Bina asansörleri, aydınlatmaları ve iklimlendirme sistemleriyle IoT üzerinden haberleşen enerji yönetim panelleri." },
-            { title: "Emlak Portföy ve CRM", detail: "Satılık/kiralık mülklerin tapu bilgileriyle, müşteri taleplerini yapay zeka ile eşleştiren gelişmiş CRM sistemleri." },
-            { title: "Sanal Tur ve 3D Modelleme", detail: "Projelerin inşaat aşamasındayken VR (Sanal Gerçeklik) üzerinden gezilebilmesini sağlayan WebGL tabanlı gösterimler." }
+            { title: "Automatisering Huurinning", detail: "Een digitale vastgoedbeheermodule die achterstallige huren detecteert en online huurbetalingen mogelijk maakt met een virtuele POS." },
+            { title: "Smart Building Integratie", detail: "Energiebeheerpanelen die via IoT communiceren met gebouwliften, verlichting en HVAC-systemen." },
+            { title: "Vastgoedportefeuille & CRM", detail: "Geavanceerde CRM-systemen die de eigendomsgegevens van onroerend goed matchen met klantverzoeken met behulp van kunstmatige intelligentie." },
+            { title: "Virtuele Tour en 3D Modellering", detail: "WebGL-gebaseerde weergaven waarmee projecten tijdens de bouwfase via VR (Virtual Reality) kunnen worden verkend." }
           ],
-          cta: "Gayrimenkul Portföyünüzü Dijitalleştirin"
+          cta: "Digitaliseer uw Vastgoedportefeuille"
         };
       case 'sector-energy':
         return {
-          desc: "Karbon ayak izini düşüren, yenilenebilir enerji kaynaklarını yöneten ve akıllı şehir (Smart City) konseptini hayata geçiren endüstriyel otomasyon yazılımları geliştiriyoruz.",
+          desc: "We ontwikkelen industriële automatiseringssoftware die de CO2-voetafdruk verkleint, hernieuwbare energiebronnen beheert en het Smart City concept tot leven brengt.",
           features: [
-            { title: "Akıllı Şebeke (Smart Grid) İzleme", detail: "Enerji üretim santrallerinden ve dağıtım trafolarından saniyede binlerce veri alarak anlık yük analizi yapın." },
-            { title: "Enerji Tüketim Raporlaması", detail: "Fabrika veya binaların aylık enerji tüketimlerini makine bazlı izleyerek verimsiz noktaları tespit eden AI modülleri." },
-            { title: "Yenilenebilir Santral Yönetimi", detail: "GES (Güneş) ve RES (Rüzgar) santrallerinizin hava durumu tahminiyle üretim kapasitesini modelleyen izleme sistemleri." },
-            { title: "Karbon Ayak İzi Takibi", detail: "Şirketinizin yeşil dönüşüm belgeleri (Green Deal) için karbon salınım metriklerini ISO standartlarında raporlama." }
+            { title: "Smart Grid Monitoring", detail: "Voer onmiddellijke belastinganalyses uit door duizenden datapunten per seconde te ontvangen van energiecentrales en distributietransformatoren." },
+            { title: "Rapportage Energieverbruik", detail: "AI-modules die het maandelijkse energieverbruik van fabrieken of gebouwen per machine monitoren en inefficiënte punten detecteren." },
+            { title: "Beheer Hernieuwbare Centrales", detail: "Monitoring systemen die de productiecapaciteit van uw zonne- (PV) en windenergiecentrales modelleren met weersvoorspellingen." },
+            { title: "CO2-voetafdruk Tracking", detail: "Rapportage van CO2-emissiestatistieken in ISO-standaarden voor de Green Deal certificaten van uw bedrijf." }
           ],
-          cta: "Enerji Tüketiminizi Optimizasyon Edin"
+          cta: "Optimaliseer uw Energieverbruik"
         };
       case 'sector-agritech':
         return {
-          desc: "Tarımda verimi artıran Agrotech (Tarım Teknolojileri) çözümleriyle; sensörler, dronlar ve uydu verilerini kullanarak çiftliklerinizi veri ile yönetmenizi sağlıyoruz.",
+          desc: "We stellen u in staat om uw boerderijen met data te beheren met Agrotech oplossingen die de opbrengst in de landbouw verhogen door gebruik te maken van sensoren, drones en satellietgegevens.",
           features: [
-            { title: "Sera Otomasyon Sistemleri", detail: "Nem, ısı ve CO2 sensörlerinden gelen veriye göre havalandırma ve sulamayı kendi kendine açıp kapatan IoT altyapısı." },
-            { title: "Tarladan Sofraya İzlenebilirlik", detail: "Ürünün tohumdan market rafına gelene kadarki tüm süreçlerini Blockchain tabanlı QR kodlar ile takip eden güven platformu." },
-            { title: "Uydu Destekli Verim Analizi", detail: "Uydu görüntüleriyle tarladaki bitki gelişimini analiz ederek, gübre ve su ihtiyacı olan spesifik bölgeleri tespit eden modül." },
-            { title: "Akıllı Lojistik ve Soğuk Zincir", detail: "Hasat sonrası ürünlerin taşınırken soğuk zincir kırılmalarını anlık bildiren araç içi telemetri entegrasyonu." }
+            { title: "Kas Automatiseringssystemen", detail: "Een IoT-infrastructuur die ventilatie en irrigatie autonoom in- en uitschakelt op basis van gegevens van vocht-, warmte- en CO2-sensoren." },
+            { title: "Traceerbaarheid van Veld tot Vork", detail: "Een vertrouwensplatform dat alle processen van zaad tot winkelschap volgt met op Blockchain gebaseerde QR-codes." },
+            { title: "Satellietondersteunde Opbrengstanalyse", detail: "Een module die de plantontwikkeling in het veld analyseert met satellietbeelden en specifieke gebieden detecteert die meststof en water nodig hebben." },
+            { title: "Slimme Logistiek en Koude Keten", detail: "In-vehicle telemetrie integratie die onmiddellijk meldt wanneer de koude keten wordt verbroken tijdens het transport van producten na de oogst." }
           ],
-          cta: "Tarım İşletmenizi Dijitalleştirin"
+          cta: "Digitaliseer uw Landbouwbedrijf"
         };
       case 'sector-retail':
         return {
-          desc: "Çok şubeli perakende zincirlerinin kasiyerlerinden (POS), merkez depoya kadar tüm bilgi akışını kesintisiz ve milisaniye hızında bağlayan modern mağazacılık sistemleri.",
+          desc: "Moderne retail systemen die alle informatiestromen van kassiers (POS) tot het centrale magazijn van winkelketens met meerdere vestigingen ononderbroken en in milliseconden verbinden.",
           features: [
-            { title: "Bulut Tabanlı Yeni Nesil POS", detail: "Sadece internete bağlanarak her tür tablet ve PC'de çalışabilen, anında yeni şube açabileceğiniz kasa yazılımı." },
-            { title: "Müşteri Sadakat (Loyalty) Programı", detail: "Müşterilerinize özel mobil uygulamalar üzerinden puan kazandırma, doğum günü kuponları ve hediye çeki altyapıları." },
-            { title: "Omnichannel Stok Yönetimi", detail: "Fiziksel mağaza stoku ile E-ticaret sitenizin stokunu canlı birleştirerek Click&Collect (tıkla-gel al) hizmetini sunun." },
-            { title: "Kasa Yanı Upsell Analitiği", detail: "Hangi ürünlerin beraber satıldığını (Market Basket Analysis) analiz ederek kasiyer ekranına anlık ürün önerme algoritması." }
+            { title: "Cloud-gebaseerde Next Gen POS", detail: "Kassasoftware die op elk type tablet of pc werkt door simpelweg verbinding te maken met internet, waardoor u direct nieuwe vestigingen kunt openen." },
+            { title: "Klantloyaliteit (Loyalty) Programma", detail: "Infrastructuur voor het verdienen van punten, verjaardagscoupons en cadeaubonnen via speciale mobiele applicaties voor uw klanten." },
+            { title: "Omnichannel Voorraadbeheer", detail: "Bied Click & Collect diensten aan door de voorraad van de fysieke winkel live te combineren met de voorraad van uw e-commerce site." },
+            { title: "Kassa Upsell Analytics", detail: "Een algoritme dat direct producten aanbeveelt op het kassascherm door te analyseren welke producten samen worden gekocht (Market Basket Analysis)." }
           ],
-          cta: "Mağazalarınızı Tek Merkezden Yönetin"
+          cta: "Beheer uw Winkels Centraal"
         };
       default:
         return null;
@@ -1481,7 +1481,7 @@ function SectorLandingView({ tab, nav }) {
   return (
     <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-4xl mx-auto glass-panel rounded-3xl p-8 md:p-12">
       <a href="/expertises" onClick={(e) => { e.preventDefault(); nav('expertise'); }} className="inline-flex items-center text-indigo-600 font-semibold mb-8 hover:text-indigo-800 transition-colors">
-        <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Sektörel Çözümlere Dön
+        <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Terug naar Sectoroplossingen
       </a>
       
       <div className="space-y-8">
@@ -1497,7 +1497,7 @@ function SectorLandingView({ tab, nav }) {
             </div>
 
             <div className="pt-6 border-t border-slate-100/50">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Öne Çıkan Özellikler</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">Belangrijkste Kenmerken</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {details.features.map((feat, i) => (
                   <motion.div variants={fadeUpVariant} whileHover={{ y: -5 }} key={i} className="p-5 bg-white/50 backdrop-blur-sm rounded-2xl border border-slate-200 hover:border-indigo-300 transition-all shadow-sm">
@@ -1514,8 +1514,8 @@ function SectorLandingView({ tab, nav }) {
             <div className="mt-10 p-8 rounded-3xl bg-indigo-900 text-white text-center shadow-lg relative overflow-hidden">
               <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
               <div className="relative z-10 space-y-6">
-                <h3 className="text-2xl font-bold">Projeniz İçin Teknik Mimari Analizi Alın</h3>
-                <p className="text-indigo-200 max-w-2xl mx-auto">Sektörünüze özel yazılım gereksinimleriniz için 48 saat içinde ücretsiz teknik ön analiz raporu hazırlayalım.</p>
+                <h3 className="text-2xl font-bold">Ontvang een Technische Architectuuranalyse voor uw Project</h3>
+                <p className="text-indigo-200 max-w-2xl mx-auto">Laat ons binnen 48 uur een gratis technisch vooranalyserapport opstellen voor uw sectorspecifieke softwarebehoeften.</p>
                 <a href="/contact" onClick={(e) => { e.preventDefault(); nav('contact'); }} className="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold text-indigo-900 bg-white rounded-xl hover:bg-indigo-50 transition-all hover:shadow-md">
                   {details.cta}
                   <ChevronRight className="w-5 h-5 ml-2" aria-hidden="true" />
@@ -1541,17 +1541,17 @@ function AboutView() {
             <span className="text-2xl font-extrabold text-slate-900 lowercase">dzy<span className="text-emerald-500">.</span></span>
           </div>
           <div className="mt-8">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">DZY Yazılım Danışmanlığı: Dijital Dönüşüm Ortağınız</h1>
-            <h2 className="text-xl font-bold text-slate-800 mb-4">Farklı Disiplinler, Tek Bir Analitik Yaklaşım.</h2>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">DZY Software Consultancy: Uw Digitale Transformatie Partner</h1>
+            <h2 className="text-xl font-bold text-slate-800 mb-4">Verschillende Disciplines, Eén Analytische Aanpak.</h2>
             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
               <p><strong className="text-slate-900">DZY Yazılım Danışmanlığı</strong> firması olarak teknolojiyi şirketlerin dijital dönüşüm süreçlerindeki karmaşık sorunlarını çözen bir köprü olarak görüyoruz.</p>
-              <p>Yazılımı sadece bir arayüz değil; veri akışı, bulut güvenliği ve kurumsal iş mantığını uçtan uca kurgulayan profesyonel bir mühendislik disiplini olarak ele alıyoruz.</p>
+              <p>We beschouwen software niet slechts als een interface, maar als een professionele ingenieursdiscipline die datastromen, cloudbeveiliging en bedrijfslogica end-to-end structureert.</p>
             </div>
             <div className="mt-12 p-8 bg-indigo-50 rounded-2xl border border-indigo-100 flex flex-col md:flex-row gap-6 items-center">
               <Globe className="w-16 h-16 text-indigo-600 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Küresel Vizyon ve Lokalizasyon</h3>
-                <p className="text-slate-700">Projelerinizi yerel sınırların ötesine, uluslararası veri ve ticaret standartlarına uygun şekilde taşıyoruz.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Wereldwijde Visie en Lokalisatie</h3>
+                <p className="text-slate-700">We tillen uw projecten over lokale grenzen heen, in overeenstemming met internationale data- en handelsnormen.</p>
               </div>
             </div>
           </div>
@@ -1560,14 +1560,14 @@ function AboutView() {
 
       <motion.div variants={fadeUpVariant} className="glass-panel rounded-3xl p-10 md:p-14">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Nuldan Canlıya Çalışma Sürecimiz</h2>
-          <p className="text-lg text-slate-600">Şeffaf ve ölçülebilir adımlarla proje yönetimi.</p>
+          <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Ons Werkproces: Van Nul Tot Live</h2>
+          <p className="text-lg text-slate-600">Projectmanagement met transparante en meetbare stappen.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <StepCard step="1" title="Keşif ve Mimari" desc="İhtiyaç analizi ve güvenli sistem mimarisi tasarımı." />
-          <StepCard step="2" title="UI/UX Tasarım" desc="Gebruiker odaklı arayüz tasarımı ve onay süreci." />
-          <StepCard step="3" title="Çevik Geliştirme" desc="Düzenli demolarla iteratif geliştirme." />
-          <StepCard step={<CheckCircle2 className="w-6 h-6" />} title="Test ve Yayın" desc="Kapsamlı testlerin ardından canlıya güvenli geçiş." done />
+          <StepCard step="1" title="Ontdekking en Architectuur" desc="Behoefteanalyse en ontwerp van veilige systeemarchitectuur." />
+          <StepCard step="2" title="UI/UX Ontwerp" desc="Gebruikersgericht interfaceontwerp en goedkeuringsproces." />
+          <StepCard step="3" title="Agile Ontwikkeling" desc="Iteratieve ontwikkeling met regelmatige demo's." />
+          <StepCard step={<CheckCircle2 className="w-6 h-6" />} title="Testen en Lancering" desc="Veilige overgang naar live na uitgebreide tests." done />
         </div>
       </motion.div>
     </motion.div>
@@ -1596,7 +1596,7 @@ function ContactView() {
     email: '',
     primaryNeed: '',
     company: '',
-    budget: 'Seçiniz...',
+    budget: 'Kies...',
     summary: ''
   });
 
@@ -1643,7 +1643,7 @@ function ContactView() {
       })
       .catch(() => {
         setFormStatus('idle');
-        alert('Mesaj gönderilirken bir sorun oluştu. Lütfen tekrar deneyin.');
+        alert('Er is een probleem opgetreden bij het verzenden van het bericht. Probeer het opnieuw.');
       });
   };
 
@@ -1651,8 +1651,8 @@ function ContactView() {
     <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-6xl mx-auto space-y-16">
       <div>
         <motion.div variants={fadeUpVariant} className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Dijital Dönüşüm Projenizi Birlikte Hayata Geçirelim</h1>
-          <p className="text-xl text-slate-600">Kurumsal yazılım mimarisi uzmanlığımızın operasyonel verimliliğinize nasıl değer katabileceğini konuşalım.</p>
+          <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Laten we Samen Uw Digitale Transformatieproject Realiseren</h1>
+          <p className="text-xl text-slate-600">Laten we bespreken hoe onze expertise in bedrijfssoftware-architectuur waarde kan toevoegen aan uw operationele efficiëntie.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -1660,7 +1660,7 @@ function ContactView() {
             {formStatus !== 'success' ? (
               <>
                 <div className="mb-8">
-                  <div className="text-sm text-slate-500 mb-2">Adım {formStep} / 2</div>
+                  <div className="text-sm text-slate-500 mb-2">Stap {formStep} / 2</div>
                   <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
                     <div className={`h-full bg-indigo-600 transition-all ${formStep === 1 ? 'w-1/2' : 'w-full'}`}></div>
                   </div>
@@ -1669,19 +1669,19 @@ function ContactView() {
                 {formStep === 1 && (
                   <form onSubmit={handleStepOne} className="space-y-6">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-900 mb-2">Ad Soyad</label>
+                      <label className="block text-sm font-semibold text-slate-900 mb-2">Naam en Achternaam</label>
                       <input required type="text" value={formData.name} onChange={(e) => updateField('name', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="John Doe" />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-900 mb-2">E-Posta</label>
+                      <label className="block text-sm font-semibold text-slate-900 mb-2">E-mailadres</label>
                       <input required type="email" value={formData.email} onChange={(e) => updateField('email', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="ornek@sirket.com" />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-900 mb-2">Öncelikli İhtiyacınız</label>
-                      <input required type="text" value={formData.primaryNeed} onChange={(e) => updateField('primaryNeed', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Örn: Operasyon paneli ve mobil uygulama" />
+                      <label className="block text-sm font-semibold text-slate-900 mb-2">Primaire Behoefte</label>
+                      <input required type="text" value={formData.primaryNeed} onChange={(e) => updateField('primaryNeed', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Bijv: Operationeel paneel en mobiele app" />
                     </div>
                     <button type="submit" className="w-full py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors inline-flex justify-center items-center">
-                      Detay Adımına Geç
+                      Ga naar Details
                       <ChevronRight className="w-5 h-5 ml-2" />
                     </button>
                   </form>
@@ -1690,30 +1690,30 @@ function ContactView() {
                 {formStep === 2 && (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-900 mb-2">Şirket Adı</label>
+                      <label className="block text-sm font-semibold text-slate-900 mb-2">Bedrijfsnaam</label>
                       <input required type="text" value={formData.company} onChange={(e) => updateField('company', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Şirket A.Ş." />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-900 mb-2">Proje Bütçe Aralığı</label>
+                      <label className="block text-sm font-semibold text-slate-900 mb-2">Project Budgetbereik</label>
                       <select value={formData.budget} onChange={(e) => updateField('budget', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-slate-700">
-                        <option>Seçiniz...</option>
-                        <option>1.000$ - 5.000$ (Başlangıç Projeleri)</option>
-                        <option>5.000$ - 10.000$ (Orta Ölçekli Sistemler)</option>
-                        <option>10.000$ - 50.000$ (Kapsamlı Platformlar)</option>
-                        <option>50.000$ - 150.000$ (Kurumsal Dönüşüm)</option>
-                        <option>150.000$+ (Büyük Ölçekli Yatırımlar)</option>
-                        <option>Sadece Danışmanlık / Retainer</option>
+                        <option>Kies...</option>
+                        <option>€1.000 - €5.000 (Startprojecten)</option>
+                        <option>€5.000 - €10.000 (Middelgrote Systemen)</option>
+                        <option>€10.000 - €50.000 (Uitgebreide Platformen)</option>
+                        <option>€50.000 - €150.000 (Bedrijfstransformatie)</option>
+                        <option>€150.000+ (Grootschalige Investeringen)</option>
+                        <option>Alleen Consultancy / Retainer</option>
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-900 mb-2">Proje Özeti</label>
-                      <textarea required rows="4" value={formData.summary} onChange={(e) => updateField('summary', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none" placeholder="Vizyonunuzu kısaca anlatın..."></textarea>
+                      <label className="block text-sm font-semibold text-slate-900 mb-2">Projectsamenvatting</label>
+                      <textarea required rows="4" value={formData.summary} onChange={(e) => updateField('summary', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none" placeholder="Beschrijf kort uw visie..."></textarea>
                     </div>
                     <div className="flex gap-3">
-                      <button type="button" onClick={() => setFormStep(1)} className="w-1/3 py-4 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-colors">Geri</button>
+                      <button type="button" onClick={() => setFormStep(1)} className="w-1/3 py-4 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-colors">Terug</button>
                       <button type="submit" disabled={formStatus === 'sending'} className="w-2/3 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors flex items-center justify-center disabled:opacity-70">
-                        {formStatus === 'idle' && 'Mesajı Gönder'}
-                        {formStatus === 'sending' && 'Gönderiliyor...'}
+                        {formStatus === 'idle' && 'Bericht Verzenden'}
+                        {formStatus === 'sending' && 'Bezig met verzenden...'}
                       </button>
                     </div>
                   </form>
@@ -1722,13 +1722,13 @@ function ContactView() {
             ) : (
               <div className="space-y-6">
                 <div className="p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 font-semibold inline-flex items-center">
-                  <CheckCircle2 className="w-5 h-5 mr-2" /> Talebiniz alındı. Teşekkür ederiz!
+                  <CheckCircle2 className="w-5 h-5 mr-2" /> Uw verzoek is ontvangen. Dank u wel!
                 </div>
                 <div className="rounded-2xl border border-indigo-200 bg-indigo-50 p-6">
-                  <h4 className="text-xl font-bold text-slate-900 mb-2">Hemen toplantı zamanı seçin</h4>
-                  <p className="text-slate-700 mb-4">Sıcak lead'inizi bekletmeden toplantıya çevirmek için aşağıdaki takvim bağlantısından uygun slotu seçebilirsiniz.</p>
+                  <h4 className="text-xl font-bold text-slate-900 mb-2">Kies direct een vergadertijd</h4>
+                  <p className="text-slate-700 mb-4">U kunt via de onderstaande kalenderlink een geschikt moment kiezen om direct een afspraak in te plannen.</p>
                   <a href="https://calendly.com" target="_blank" rel="noreferrer" className="inline-flex items-center px-5 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700">
-                    Takvimden Randevu Al (Calendly)
+                    Afspraak Maken via Kalender (Calendly)
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </a>
                 </div>
@@ -1763,8 +1763,8 @@ function ContactView() {
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="md:w-1/3">
             <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6"><HelpCircle className="w-7 h-7 text-indigo-600" /></div>
-            <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Aklınıza Takılanlar</h2>
-            <p className="text-slate-600 leading-relaxed">Kurumsal proje öncesi en çok sorulan soruları şeffaflıkla cevapladık.</p>
+            <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Veelgestelde Vragen</h2>
+            <p className="text-slate-600 leading-relaxed">We hebben de meest gestelde vragen voor aanvang van een zakelijk project transparant beantwoord.</p>
           </div>
           <div className="md:w-2/3 w-full space-y-4">
             {contactFaqs.map((faq, idx) => (
@@ -1800,7 +1800,7 @@ function InfoRow({ icon, title, value }) {
 function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { text: "Merhaba! DZY Yazılım Danışma'ya hoş geldiniz. Projenizle ilgili nasıl yardımcı olabilirim?", sender: 'bot', time: new Date() }
+    { text: "Hallo! Welkom bij DZY Software Consultancy. Hoe kan ik u helpen met uw project?", sender: 'bot', time: new Date() }
   ]);
   const [inputValue, setInputValue] = useState('');
   const messagesEndRef = useRef(null);
@@ -1828,7 +1828,7 @@ function ChatWidget() {
       })
       .catch(() => {
         setMessages((prev) => [...prev, {
-          text: 'Mesajınız alındı. Ekibimiz en kısa sürede sizinle iletişime geçecek.',
+          text: 'Uw bericht is ontvangen. Ons team neemt zo spoedig mogelijk contact met u op.',
           sender: 'bot',
           time: new Date()
         }]);
@@ -1843,14 +1843,14 @@ function ChatWidget() {
             <div className="flex items-center">
               <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center font-bold mr-3">D</div>
               <div>
-                <h4 className="font-bold text-sm">DZY Canlı Destek</h4>
-                <p className="text-xs text-emerald-400 flex items-center"><span className="w-2 h-2 rounded-full bg-emerald-400 mr-1 animate-pulse"></span> Çevrimiçi</p>
+                <h4 className="font-bold text-sm">DZY Live Support</h4>
+                <p className="text-xs text-emerald-400 flex items-center"><span className="w-2 h-2 rounded-full bg-emerald-400 mr-1 animate-pulse"></span> Online</p>
               </div>
             </div>
             <button onClick={() => setIsOpen(false)} className="text-slate-400 hover:text-white transition-colors"><X className="w-5 h-5" /></button>
           </div>
           <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
-            <div className="text-xs text-center text-slate-400 mb-4">Realtime Demo Altyapısı</div>
+            <div className="text-xs text-center text-slate-400 mb-4">Realtime Demo Infrastructuur</div>
             {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[85%] p-3 rounded-2xl text-sm ${msg.sender === 'user' ? 'bg-indigo-600 text-white rounded-tr-none' : 'bg-white border border-slate-200 text-slate-700 rounded-tl-none shadow-sm'}`}>
@@ -1862,7 +1862,7 @@ function ChatWidget() {
           </div>
           <div className="p-3 bg-white border-t border-slate-200">
             <form onSubmit={handleSend} className="flex relative">
-              <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="Mesajınızı yazın..." className="flex-1 py-2 pl-4 pr-10 bg-slate-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="Typ uw bericht..." className="flex-1 py-2 pl-4 pr-10 bg-slate-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
               <button type="submit" disabled={!inputValue.trim()} className="absolute right-1 top-1 bottom-1 w-8 flex items-center justify-center text-indigo-600 disabled:text-slate-400 bg-white rounded-full shadow-sm">
                 <Send className="w-4 h-4" />
               </button>
@@ -1874,7 +1874,7 @@ function ChatWidget() {
       <button onClick={() => setIsOpen(!isOpen)} className="w-16 h-16 bg-slate-900 text-white rounded-full flex items-center justify-center shadow-lg shadow-slate-400/50 hover:scale-105 hover:bg-indigo-600 transition-all duration-300 relative group">
         {isOpen ? <X className="w-7 h-7" /> : <MessageSquare className="w-7 h-7" />}
         {!isOpen && <span className="absolute top-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>}
-        {!isOpen && <span className="absolute right-full mr-4 bg-slate-800 text-white text-sm px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Bize Canlı Ulaşın</span>}
+        {!isOpen && <span className="absolute right-full mr-4 bg-slate-800 text-white text-sm px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Neem Live Contact Met Ons Op</span>}
       </button>
     </div>
   );
@@ -1884,8 +1884,8 @@ function BlogView({ nav }) {
   return (
     <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-5xl mx-auto space-y-12">
       <motion.div variants={fadeUpVariant} className="text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Bilgi Bankası & Vaka Analizleri</h1>
-        <p className="text-xl text-slate-600">Teknoloji trendleri, mimari çözümlerimiz ve başarı hikayelerimiz.</p>
+        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Kennisbank & Casestudies</h1>
+        <p className="text-xl text-slate-600">Technologietrends, onze architecturale oplossingen en succesverhalen.</p>
       </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map(post => (
@@ -1898,7 +1898,7 @@ function BlogView({ nav }) {
               <h3 className="text-xl font-bold text-slate-900 mb-3 line-clamp-2">{post.title}</h3>
               <p className="text-slate-600 mb-6 flex-1 line-clamp-3">{post.excerpt}</p>
               <a href={'/blog/' + post.slug} onClick={(e) => { e.preventDefault(); nav('blog-post', post.slug); }} className="inline-flex items-center text-indigo-600 font-bold hover:text-indigo-800 transition-colors">
-                Yazıyı Oku <ChevronRight className="w-4 h-4 ml-1" />
+                Lees Artikel <ChevronRight className="w-4 h-4 ml-1" />
               </a>
             </div>
           </motion.div>
@@ -1910,12 +1910,12 @@ function BlogView({ nav }) {
 
 function BlogPostView({ slug, nav }) {
   const post = blogPosts.find(p => p.slug === slug);
-  if (!post) return <div className="text-center py-20"><h1 className="text-2xl font-bold">Yazı Bulunamadı.</h1><button onClick={() => nav('blog')} className="mt-4 text-indigo-600 underline">Geri Dön</button></div>;
+  if (!post) return <div className="text-center py-20"><h1 className="text-2xl font-bold">Artikel niet gevonden.</h1><button onClick={() => nav('blog')} className="mt-4 text-indigo-600 underline">Terug Dön</button></div>;
 
   return (
     <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-4xl mx-auto glass-panel rounded-3xl p-8 md:p-12">
       <a href="/blog" onClick={(e) => { e.preventDefault(); nav('blog'); }} className="inline-flex items-center text-indigo-600 font-semibold mb-8 hover:text-indigo-800 transition-colors">
-        <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Bilgi Bankasına Dön
+        <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Terug naar de Kennisbank
       </a>
       <div className="mb-8 flex items-center justify-between text-sm text-slate-500 border-b border-slate-100 pb-4">
         <div><span className="font-bold text-indigo-600">{post.category}</span> &bull; {post.date}</div>
