@@ -263,7 +263,7 @@ const seoData = {
           "streetAddress": "Markgravelei 145 bus 4",
           "addressLocality": "Antwerpen",
           "addressRegion": "Antwerpen",
-          "postalCode": "2000",
+          "postalCode": "2018",
           "addressCountry": "BE"
         },
         "geo": {
@@ -963,7 +963,7 @@ export default function App() {
                   <span itemProp="streetAddress">Markgravelei 145 bus 4</span>, 
                   <span itemProp="addressLocality"> Antwerpen</span>, 
                   <span itemProp="addressRegion"> Antwerpen</span>, 
-                  <span itemProp="postalCode"> 2000</span>, 
+                  <span itemProp="postalCode"> 2018</span>, 
                   <span itemProp="addressCountry"> BE</span>
                 </span>
               </div>
