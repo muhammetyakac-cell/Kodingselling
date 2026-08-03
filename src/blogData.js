@@ -1615,5 +1615,110 @@ export const blogPosts = [
     "B2B webshop Next.js",
     "mach architecture e-commerce"
   ]
+},
+{
+  "id": "rpa-vlaanderen-softwarerobots-administratie",
+  "title": "RPA in Vlaanderen: Laat Softwarerobots het Saaie Werk Doen",
+  "category": "Automatisering & RPA",
+  "date": "02 November 2025",
+  "readTime": "6 min lees",
+  "description": "Zitten uw medewerkers urenlang data over te typen van het ene naar het andere systeem? Ontdek Robotic Process Automation (RPA).",
+  "content": "<p>Veel administratieve processen in KMO's bestaan uit repetitieve, regelgebaseerde taken. Denk aan het downloaden van facturen uit een e-mailbox, het controleren van de bedragen, en deze vervolgens handmatig overtypen in een stokoud ERP-systeem zonder API-mogelijkheden. Dit is geestdodend werk en gevoelig voor fouten.</p>\n<h2>Maak Kennis met de Softwarerobot</h2>\n<p>Robotic Process Automation (RPA) lost dit op. Een RPA-bot is een stukje software dat de muisklikken en toetsenbordaanslagen van een menselijke gebruiker exact imiteert. Het \"kijkt\" naar het scherm, kopieert data, opent applicaties en plakt de data waar het hoort.</p>\n<h3>Use Cases voor RPA in B2B</h3>\n<ul>\n<li><strong>Orderverwerking:</strong> De bot leest binnenkomende bestelformulieren (PDF), logt in op het ordermanagement systeem en voert de bestelling foutloos in, 24/7.</li>\n<li><strong>Data Migratie:</strong> Bij de overstap naar een nieuwe applicatie kan een bot historische data overzetten zonder dat u een dure API hoeft te bouwen.</li>\n<li><strong>HR Onboarding:</strong> Zodra een nieuwe medewerker tekent, maakt de bot automatisch een e-mailadres aan, wijst softwarelicenties toe en genereert de contracten.</li>\n</ul>\n<h2>Focus op Waarde, Niet op Clicks</h2>\n<p>DZY Digital programmeert robuuste RPA-bots (via platforms als UiPath of Power Automate) die het administratieve zware werk doen, zodat uw medewerkers zich kunnen richten op taken die menselijke intelligentie vereisen.</p>\n",
+  "tags": [
+    "RPA",
+    "Automatisering",
+    "Administratie",
+    "Softwarebots"
+  ],
+  "seoKeywords": [
+    "RPA software België",
+    "Robotic Process Automation Vlaanderen",
+    "administratie automatiseren KMO",
+    "UiPath ontwikkelaar Antwerpen"
+  ]
+},
+{
+  "id": "3d-scanning-reverse-engineering-industrie",
+  "title": "Van Fysiek naar Digitaal: De Kracht van 3D Scanning in de Industrie",
+  "category": "Industrie 4.0 & 3D",
+  "date": "09 November 2025",
+  "readTime": "7 min lees",
+  "description": "Een defect onderdeel waarvan de originele tekening kwijt is? 3D Scanning en Reverse Engineering bieden de oplossing voor de Vlaamse maakindustrie.",
+  "content": "<p>De onderhoudsafdeling van een Antwerpse raffinaderij staat soms voor een groot probleem: een kritiek pomponderdeel uit 1980 is gebroken, de originele fabrikant is failliet, en er zijn geen CAD-tekeningen meer beschikbaar. Zonder dit onderdeel ligt de productie stil.</p>\n<h2>Reverse Engineering met 3D Scanners</h2>\n<p>Dankzij geavanceerde 3D-laserscanners kan het defecte (of versleten) onderdeel met een nauwkeurigheid van enkele micrometers worden gedigitaliseerd naar een puntenwolk (Point Cloud).</p>\n<h3>De Workflow: Van Scan naar Productie</h3>\n<p>Het scannen is slechts de eerste stap. De ware waarde zit in de softwarematige nabewerking:</p>\n<ul>\n<li><strong>CAD Reconstructie:</strong> Gespecialiseerde software zet de miljoenen gescande puntjes om in een bewerkbaar, parametrisch CAD-model (zoals SolidWorks of Siemens NX).</li>\n<li><strong>Slijtage Correctie:</strong> Ingenieurs kunnen in de software de fysieke slijtage van het oude onderdeel digitaal \"opvullen\", zodat de nieuwe tekening de originele, onversleten dimensies heeft.</li>\n<li><strong>Direct naar de CNC of 3D-printer:</strong> Het gegenereerde model wordt direct naar een CNC-machine of een metaal-3D-printer gestuurd om een vervangstuk te produceren.</li>\n</ul>\n<h2>Verleng de Levensduur van uw Machines</h2>\n<p>DZY Digital ontwikkelt de cloud-infrastructuur en API-koppelingen om deze zware 3D-bestanden veilig te beheren en naadloos te integreren in uw PLM (Product Lifecycle Management) systeem.</p>\n",
+  "tags": [
+    "3D Scanning",
+    "Reverse Engineering",
+    "CAD",
+    "Industrie 4.0"
+  ],
+  "seoKeywords": [
+    "3D scanning software België",
+    "reverse engineering CAD Antwerpen",
+    "point cloud software industrie",
+    "digitale reserveonderdelen"
+  ]
+},
+{
+  "id": "cloud-security-posture-management-cspm",
+  "title": "Is Uw Cloud Wel Echt Veilig? Ontdek CSPM",
+  "category": "Cybersecurity & Cloud",
+  "date": "16 November 2025",
+  "readTime": "6 min lees",
+  "description": "U bent naar AWS of Azure gemigreerd, maar bent u ook veilig? Hoe Cloud Security Posture Management (CSPM) datalekken door misconfiguratie voorkomt.",
+  "content": "<p>Bedrijven migreren massaal naar de cloud (AWS, Azure, Google Cloud). Er heerst echter een gevaarlijke misvatting: \"De cloud is van nature veilig\". Hoewel Amazon of Microsoft de fysieke servers beveiligen, bent <em>u</em> verantwoordelijk voor hoe u de diensten configureert (het Shared Responsibility Model).</p>\n<h2>De Gevaren van Misconfiguratie</h2>\n<p>Meer dan 90% van de datalekken in de cloud ontstaat niet door briljante hackers, maar door simpele menselijke fouten. Een ontwikkelaar zet per ongeluk een S3-storage bucket op 'Publiek' in plaats van 'Privé', waardoor duizenden klantendossiers plotseling op straat liggen.</p>\n<h3>Wat doet CSPM?</h3>\n<p>Cloud Security Posture Management (CSPM) software monitort uw cloud-omgeving continu en automatisch:</p>\n<ul>\n<li><strong>Real-time Scans:</strong> Het systeem scant uw infrastructuur elke minuut op afwijkende configuraties. Wordt er een publieke database gedetecteerd? Dan gaat er direct een alarm af.</li>\n<li><strong>Auto-Remediation:</strong> Bij kritieke fouten kan de CSPM-software de fout zelfstandig en onmiddellijk herstellen (bijv. de poort sluiten) zonder op menselijk ingrijpen te wachten.</li>\n<li><strong>Compliance Mapping:</strong> Controleer automatisch of uw cloud-architectuur voldoet aan kaders zoals de GDPR, ISO 27001 of NIS2.</li>\n</ul>\n<h2>Beveilig uw Cloud Architectuur</h2>\n<p>DZY Digital integreert CSPM-tools in uw bestaande cloud-omgeving. Wij zorgen ervoor dat uw infrastructuur veilig is vanaf de eerste regel code (DevSecOps).</p>\n",
+  "tags": [
+    "Cloud Security",
+    "CSPM",
+    "AWS",
+    "NIS2"
+  ],
+  "seoKeywords": [
+    "Cloud security posture management",
+    "AWS beveiliging België",
+    "Azure misconfiguratie detectie",
+    "DevSecOps Antwerpen"
+  ]
+},
+{
+  "id": "b2b-machineverhuur-reserveringssystemen",
+  "title": "Verhuur van Zware Machines: Waarom Een B2B Portaal Onmisbaar Is",
+  "category": "Logistiek & Portalen",
+  "date": "23 November 2025",
+  "readTime": "7 min lees",
+  "description": "Verhuurt u graafmachines, hoogwerkers of compressoren? Waarom een B2B e-commerce portaal voor machineverhuur uw omzet doet stijgen.",
+  "content": "<p>De verhuur van zware industriële machines en gereedschappen in België verloopt nog opvallend analoog. B2B-klanten bellen of mailen om te vragen of er volgende week een 12-meter hoogwerker beschikbaar is. Dit kost tijd voor beide partijen en leidt tot dubbele boekingen.</p>\n<h2>De Transitie naar Online Verhuur</h2>\n<p>B2B-klanten verwachten tegenwoordig de \"Bol.com-ervaring\". Ze willen 's avonds op de bank, of direct vanaf de werf, kunnen zien welke machines beschikbaar zijn en deze met één klik reserveren voor hun project.</p>\n<h3>Functionaliteiten van een B2B Verhuurportaal</h3>\n<ul>\n<li><strong>Live Beschikbaarheid (ERP-koppeling):</strong> Het webportaal praat real-time met uw ERP. Als een machine in reparatie is of verhuurd is, is deze simpelweg niet aanklikbaar.</li>\n<li><strong>Klant-specifieke Prijzen:</strong> Wanneer een trouwe aannemer inlogt, ziet hij automatisch zijn onderhandelde kortingstarieven (staffelprijzen) en niet de standaardlijstprijs.</li>\n<li><strong>Digitale Contracten en Borg:</strong> Bij de reservering tekent de klant direct digitaal het huurcontract (via itsme) en kan de borg via SEPA of creditcard gereserveerd worden.</li>\n</ul>\n<h2>Verminder Telefoontjes, Verhoog Omzet</h2>\n<p>DZY Digital bouwt gespecialiseerde e-commerce oplossingen voor de machineverhuur. Transformeer uw website van een digitale brochure naar een geautomatiseerde inkomstenbron.</p>\n",
+  "tags": [
+    "E-commerce",
+    "Machineverhuur",
+    "Portaal",
+    "B2B"
+  ],
+  "seoKeywords": [
+    "B2B machineverhuur software",
+    "materieelverhuur portaal België",
+    "online reserveringssysteem verhuur",
+    "ERP koppeling verhuursoftware"
+  ]
+},
+{
+  "id": "digitale-werkvergunningen-permit-to-work-industrie",
+  "title": "Veiligheid Eerst: Digitaliseer uw Werkvergunningen (Permit to Work)",
+  "category": "Industrie & Veiligheid",
+  "date": "30 November 2025",
+  "readTime": "7 min lees",
+  "description": "In chemie en zware industrie zijn Permit to Work (PTW) systemen levensreddend. Hoe digitale werkvergunningen bureaucratie verminderen en veiligheid borgen.",
+  "content": "<p>Wanneer externe aannemers in de Antwerpse petrochemie onderhoud uitvoeren (bijv. lassen of werken in besloten ruimtes), is een Werkvergunning (Permit to Work of PTW) wettelijk verplicht. Het handmatig afhandelen van deze papieren vergunningen duurt vaak uren, waardoor de onderaannemer lang moet wachten bij de poort.</p>\n<h2>De Gevaren van Papieren Vergunningen</h2>\n<p>Papieren werkvergunningen raken beschadigd in de regen, handtekeningen zijn onleesbaar, en het is onmogelijk om centraal te overzien wie er momenteel op de site aan het werk is. Dit creëert levensgevaarlijke blinde vlekken tijdens een evacuatie.</p>\n<h3>Het Digitale PTW Systeem</h3>\n<p>Een digitaal Permit to Work systeem stroomlijnt de veiligheidsvoorschriften:</p>\n<ul>\n<li><strong>Vooraf Aanvragen:</strong> De onderaannemer vult de risicoanalyse (TRA/LMRA) al de dag vóór de werkzaamheden digitaal in, waardoor het veiligheidsteam deze vooraf kan goedkeuren.</li>\n<li><strong>Mobiele Handtekeningen:</strong> Geen heen-en-weer geloop meer naar de controlekamer. De installatieverantwoordelijke keurt de vergunning op de werkvloer goed via een industriële tablet.</li>\n<li><strong>Lockout-Tagout (LOTO) Integratie:</strong> Het systeem dwingt af dat de digitale vergunning pas wordt geactiveerd als de operator heeft bevestigd dat de energiebronnen (zoals stroom en kleppen) succesvol zijn vergrendeld.</li>\n</ul>\n<h2>Gegarandeerde Veiligheid</h2>\n<p>DZY Digital ontwikkelt cloud-gebaseerde veiligheidsportalen die de zware industrie helpen om incidenten te voorkomen, contractor management te stroomlijnen en altijd 100% compliant te zijn met VCA- en Seveso-wetgeving.</p>\n",
+  "tags": [
+    "Veiligheid",
+    "Permit to Work",
+    "Industrie",
+    "HSE"
+  ],
+  "seoKeywords": [
+    "Digitale werkvergunningen software",
+    "Permit to Work systeem België",
+    "LOTO software industrie",
+    "HSE veiligheidssoftware Antwerpen"
+  ]
 }
 ];

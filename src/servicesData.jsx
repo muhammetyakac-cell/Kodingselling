@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -519,6 +519,36 @@ export const servicesData = [
   title: 'Headless E-commerce & API-First',
   desc: 'Razendsnelle B2B webshops gebouwd met moderne frameworks (Next.js / React).',
   fullDesc: 'Doorbreek de grenzen van traditionele platformen (Magento/WooCommerce). Wij bouwen API-first, headless commerce architecturen. Koppel een bliksemsnelle frontend aan een robuuste backend, perfect voor complexe B2B-prijzen, omnichannel verkoop (apps, kiosken) en superieure SEO.'
+},
+{
+  icon: <Bot className="w-6 h-6 text-fuchsia-600" />,
+  title: 'RPA & Softwarebots',
+  desc: 'Automatiseer repetitief administratief werk met Robotic Process Automation.',
+  fullDesc: 'Laat robots het data-entry werk doen. Wij ontwikkelen RPA-oplossingen (bijv. met UiPath) die muisklikken en typwerk imiteren. Automatiseer factuurverwerking, order-entry in oude ERP-systemen en data-migraties zonder dat u ingewikkelde API\'s hoeft te ontwikkelen.'
+},
+{
+  icon: <Scan className="w-6 h-6 text-emerald-500" />,
+  title: '3D Scan & PLM Integratie',
+  desc: 'Beheer complexe 3D Point Clouds en Reverse Engineering data in de cloud.',
+  fullDesc: 'Voor de moderne maakindustrie. Wij bouwen backend systemen voor het opslaan, renderen en delen van zware 3D-laserscan data (puntenwolken). Integreer naadloos met uw Product Lifecycle Management (PLM) systeem om reverse engineering processen te versnellen.'
+},
+{
+  icon: <CloudLightning className="w-6 h-6 text-sky-500" />,
+  title: 'Cloud Security (CSPM)',
+  desc: 'Bewaak uw AWS/Azure architectuur tegen datalekken door misconfiguraties.',
+  fullDesc: 'Uw cloud is alleen veilig als deze correct is geconfigureerd. Wij implementeren Cloud Security Posture Management (CSPM) software. Het systeem scant uw netwerk 24/7, repareert open poorten automatisch (auto-remediation) en bewaakt uw NIS2 en ISO 27001 compliance.'
+},
+{
+  icon: <CalendarRange className="w-6 h-6 text-indigo-500" />,
+  title: 'B2B Verhuur Portalen',
+  desc: 'E-commerce platformen voor de online verhuur van zware industriële machines.',
+  fullDesc: 'Digitaliseer uw machineverhuur. Wij bouwen B2B-reserveringssystemen die live verbonden zijn met de beschikbaarheid in uw ERP. Inclusief klant-specifieke staffelprijzen, digitale borg-reserveringen en elektronische handtekeningen (itsme) voor het huurcontract.'
+},
+{
+  icon: <HardHat className="w-6 h-6 text-amber-500" />,
+  title: 'Digitale Werkvergunningen (PTW)',
+  desc: 'HSE en Permit to Work software voor de chemie en zware industrie.',
+  fullDesc: 'Borg veiligheid op industriële sites. Wij ontwikkelen mobiele applicaties voor digitale werkvergunningen (Permit to Work). Laat aannemers vooraf risicoanalyses (TRA) invullen, keur vergunningen digitaal goed op het veld en beheer Lockout-Tagout (LOTO) procedures veilig via de tablet.'
 }
 
 ];
