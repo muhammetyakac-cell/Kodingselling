@@ -2035,5 +2035,110 @@ export const blogPosts = [
     "3PL data dashboard België",
     "Exception management supply chain"
   ]
+},
+{
+  "id": "oms-order-management-ontbrekende-schakel",
+  "title": "Order Management (OMS): De Ontbrekende Schakel in B2B E-commerce",
+  "category": "E-commerce & Logistiek",
+  "date": "22 Maart 2026",
+  "readTime": "6 min lees",
+  "description": "Een B2B webshop is mooi, maar wat gebeurt er als een order uit meerdere magazijnen moet komen? Ontdek Order Management Systems (OMS).",
+  "content": "<p>Veel groothandels lanceren een nieuwe webshop en denken dat ze klaar zijn. Maar de ware complexiteit van B2B e-commerce begint pas ná de checkout. Als een klant 50 boormachines bestelt, en u heeft er 30 in Antwerpen en 20 in uw filiaal in Gent, hoe zorgt u dan voor een efficiënte levering?</p>\n<h2>Wat is een OMS?</h2>\n<p>Een Order Management System (OMS) zit als een slimme spin in het web tussen uw webshop, uw ERP en uw fysieke magazijnen. Het orkestreert de order-routing op basis van complexe bedrijfsregels.</p>\n<h3>De Intelligentie van Order Routing</h3>\n<ul>\n<li><strong>Split Shipments:</strong> Het OMS besluit automatisch of de order moet worden opgesplitst (30 uit Antwerpen, 20 uit Gent) of dat het goedkoper is om eerst de 20 stuks naar Antwerpen te sturen (cross-docking) voor één gezamenlijke levering.</li>\n<li><strong>Drop-shipping:</strong> Indien een product niet op voorraad is, kan het OMS de order direct (als een API-call) doorsturen naar de originele fabrikant, die het rechtstreeks aan uw eindklant levert.</li>\n<li><strong>Retour Management:</strong> Beheer terugbetalingen en retourlogistiek efficiënt, zelfs als de originele bestelling uit meerdere distributiecentra kwam.</li>\n</ul>\n<h2>Perfecte Orderafhandeling</h2>\n<p>DZY Digital implementeert OMS-architecturen die uw belofte aan de klant ('Morgen in huis') waarmaken, tegen de laagst mogelijke interne logistieke kosten.</p>\n",
+  "tags": [
+    "OMS",
+    "E-commerce",
+    "Order Routing",
+    "Logistiek"
+  ],
+  "seoKeywords": [
+    "Order management system België",
+    "OMS e-commerce integratie",
+    "B2B order routing software",
+    "drop-shipping automatisering Antwerpen"
+  ]
+},
+{
+  "id": "smart-contracts-defi-b2b-facturatie",
+  "title": "Smart Contracts: Hoe DeFi de B2B Facturatie Verandert",
+  "category": "Finance & Blockchain",
+  "date": "29 Maart 2026",
+  "readTime": "7 min lees",
+  "description": "Factoring en Supply Chain Finance zijn traditioneel traag en duur. Hoe Decentralized Finance (DeFi) en Smart Contracts liquiditeit versnellen.",
+  "content": "<p>Voor veel KMO's in Vlaanderen is liquiditeit een constante zorg. B2B-klanten betalen vaak pas na 60 of 90 dagen. Traditionele factoring (waarbij u uw openstaande facturen aan een bank verkoopt) is log, vereist veel papierwerk en rekent hoge commissies. Blockchain en DeFi (Decentralized Finance) bieden een razendsnel alternatief.</p>\n<h2>Programmeerbaar Geld</h2>\n<p>In een DeFi-omgeving wordt een B2B-factuur omgezet (getokeniseerd) in een digitaal bezit op de blockchain. Via een <strong>Smart Contract</strong> wordt de betalingsvoorwaarde in computercode vastgelegd.</p>\n<h3>Toepassingen van Smart Contracts</h3>\n<ul>\n<li><strong>Geautomatiseerde Escrow:</strong> Een klant stort het geld voor een grote machine-aankoop in een Smart Contract. Zodra de IoT-sensor van het transportbedrijf bevestigt dat de machine is afgeleverd, geeft de code het geld onmiddellijk vrij. Geen advocaten, geen bankgaranties.</li>\n<li><strong>Micro-Factoring:</strong> Verkoop een individuele factuur van €5.000 via een decentrale pool. Binnen enkele seconden heeft u het werkkapitaal op uw rekening, gedekt door cryptografische zekerheid.</li>\n<li><strong>Transparante Supply Chain Finance:</strong> Leveranciers dieper in uw keten (Tier 2 of 3) kunnen meeprofiteren van úw hoge kredietrating via blockchain-verificatie.</li>\n</ul>\n<h2>De Toekomst van B2B Finance</h2>\n<p>DZY Digital bouwt enterprise blockchain-portalen die de veiligheid van traditioneel bankieren combineren met de snelheid van DeFi-protocollen, volledig gericht op de B2B-markt.</p>\n",
+  "tags": [
+    "DeFi",
+    "Smart Contracts",
+    "Blockchain",
+    "Finance"
+  ],
+  "seoKeywords": [
+    "Smart contracts B2B België",
+    "DeFi supply chain finance",
+    "factoring blockchain software",
+    "tokenization facturen KMO"
+  ]
+},
+{
+  "id": "headless-cms-content-razendsnel-publiceren",
+  "title": "Headless CMS: Publiceer Content Razendsnel naar Elk Platform",
+  "category": "Marketing Tech & CMS",
+  "date": "05 April 2026",
+  "readTime": "6 min lees",
+  "description": "Waarom traditionele systemen zoals WordPress niet meer voldoen voor grote bedrijven. De voordelen van een Headless Content Management Systeem.",
+  "content": "<p>Als u in een traditioneel CMS (zoals WordPress) een blogpost schrijft, bent u niet alleen de tekst aan het opslaan, maar dicteert het systeem ook direct hoe de HTML eruit ziet. Maar wat als u diezelfde tekst ook in uw mobiele app, op een smartwatch of op een digitaal billboard wilt tonen? Dan loopt u vast.</p>\n<h2>Content Zonder 'Hoofd'</h2>\n<p>Een <strong>Headless CMS</strong> (zoals Contentful of Sanity) slaat alleen de pure tekst en data op. Er is geen ingebouwde 'voorkant' (frontend/head). Het systeem levert de content uitsluitend via API's aan elk denkbaar apparaat.</p>\n<h3>Waarom B2B Marketeers Overstappen</h3>\n<ul>\n<li><strong>Omnichannel Publicatie:</strong> Schrijf een persbericht één keer in het CMS, en de API pusht het tegelijkertijd naar uw bedrijfswebsite, uw B2B klantenportaal en de app van uw medewerkers.</li>\n<li><strong>Veiligheid en Schaalbaarheid:</strong> Omdat het CMS niet direct verbonden is met de voorkant van de website, is het onmogelijk voor hackers om via een zwakke website-plugin toegang te krijgen tot uw kerndatabase.</li>\n<li><strong>Design Vrijheid:</strong> Uw developers kunnen de frontend bouwen in razendsnelle frameworks zoals React of Vue.js, zonder gehinderd te worden door de logge PHP-code van een traditioneel CMS.</li>\n</ul>\n<h2>Toekomstbestendige Marketing</h2>\n<p>DZY Digital migreert verouderde bedrijfswebsites naar headless architecturen. Geef uw marketingteam de ultieme flexibiliteit en uw klanten een razendsnelle surfervaring.</p>\n",
+  "tags": [
+    "Headless CMS",
+    "Content",
+    "API",
+    "Marketing Tech"
+  ],
+  "seoKeywords": [
+    "Headless CMS bureau België",
+    "Contentful implementatie Antwerpen",
+    "API first website bouwen",
+    "Sanity CMS B2B"
+  ]
+},
+{
+  "id": "api-management-beveilig-digitale-deuren",
+  "title": "API Management: Beveilig de Digitale Deuren van uw Bedrijf",
+  "category": "Cybersecurity & IT",
+  "date": "12 April 2026",
+  "readTime": "7 min lees",
+  "description": "Uw ERP deelt data met 10 externe applicaties via API's. Hoe zorgt u dat deze 'digitale deuren' veilig, snel en controleerbaar blijven?",
+  "content": "<p>Moderne bedrijven draaien op API's (Application Programming Interfaces). Uw webshop praat via een API met uw betaalprovider, uw CRM praat met uw e-mailsoftware, en uw logistieke partner haalt ordestatussen op via uw ERP-API. Maar wie controleert hoeveel data er precies door die digitale deuren naar buiten stroomt?</p>\n<h2>De Gevaren van Onbeheerde API's</h2>\n<p>Als een externe ontwikkelaar per ongeluk een <em>loop</em> (oneindige lus) programmeert, kan hij uw ERP-server overspoelen met 10.000 API-verzoeken per seconde (een onbedoelde DDoS-aanval). Zonder goed beheer ligt uw hele bedrijfsvoering stil.</p>\n<h3>De API Gateway</h3>\n<p>Een API Management Platform (zoals Kong of Azure API Management) fungeert als de intelligente portier voor al uw inkomende en uitgaande dataverkeer:</p>\n<ul>\n<li><strong>Rate Limiting:</strong> Stel in dat een specifieke externe partner maximaal 100 verzoeken per minuut mag doen. Zo beschermt u de rekenkracht van uw ERP.</li>\n<li><strong>Authenticatie (OAuth2):</strong> Zorg ervoor dat elke API-call wordt gecontroleerd op een geldig, versleuteld token, zodat hackers geen klantendata kunnen wegsluizen.</li>\n<li><strong>Monetization (API-as-a-Product):</strong> Heeft uw bedrijf zeer waardevolle data (bijv. maritieme weerdata in de haven)? Via een API Gateway kunt u externe partijen automatisch laten betalen per 1.000 API-calls.</li>\n</ul>\n<h2>Regisseer uw Data</h2>\n<p>DZY Digital bouwt enterprise API-gateways die uw complexe IT-landschap stroomlijnen, beveiligen en voorbereiden op enorme schaalbaarheid.</p>\n",
+  "tags": [
+    "API",
+    "Cybersecurity",
+    "Integratie",
+    "Cloud"
+  ],
+  "seoKeywords": [
+    "API management platform België",
+    "API gateway integratie",
+    "rate limiting ERP software",
+    "API beveiliging KMO Antwerpen"
+  ]
+},
+{
+  "id": "workforce-management-wfm-fabrieken",
+  "title": "Workforce Management: Optimaliseer Ploegendiensten in de Fabriek",
+  "category": "HR Tech & Industrie",
+  "date": "19 April 2026",
+  "readTime": "6 min lees",
+  "description": "Ploegenroosters maken in Excel is een nachtmerrie voor HR. Hoe AI-gedreven WFM-software de planning in de industrie optimaliseert.",
+  "content": "<p>Een Antwerpse fabriek draait 24/7 in een 5-ploegensysteem. Vorige nacht belden twee heftruckchauffeurs zich ziek. De productiemanager moet om 03:00 uur 's nachts in een complex Excel-bestand zoeken wie er de juiste veiligheidscertificaten heeft, niet in overtreding is met de arbeidstijdenwet (rusttijden), en bereid is over te werken. Dit is onhoudbaar.</p>\n<h2>Van Excel naar AI-Planning</h2>\n<p>Workforce Management (WFM) software digitaliseert en automatiseert complexe personeelsplanningen, specifiek voor ploegendiensten, logistiek en retail.</p>\n<h3>Functionaliteiten van een Modern WFM</h3>\n<ul>\n<li><strong>AI-Gedreven Roostering:</strong> De software voorspelt op basis van historische productiedata en seizoenspieken exact hoeveel operatoren er nodig zijn op dinsdagmiddag, en genereert automatisch het meest optimale rooster.</li>\n<li><strong>Compliance Engine:</strong> Het systeem kent de complexe Belgische CAO's en arbeidstijdenwetgeving. U kunt simpelweg geen medewerker inplannen als deze te weinig rusturen heeft gehad sinds zijn vorige shift.</li>\n<li><strong>Medewerkers App:</strong> Arbeiders kunnen via een intuïtieve smartphone-app diensten ruilen met collega's, verlof aanvragen of openstaande (overwerk) shifts claimen, zonder dat HR hoeft in te grijpen.</li>\n</ul>\n<h2>Gelukkiger Personeel, Hogere Productie</h2>\n<p>DZY Digital integreert geavanceerde WFM-platformen met uw bestaande payroll- en HR-systemen. Bespaar de plant manager tientallen uren planwerk en geef uw arbeiders meer flexibiliteit.</p>\n",
+  "tags": [
+    "WFM",
+    "HR Tech",
+    "Planning",
+    "Industrie"
+  ],
+  "seoKeywords": [
+    "Workforce management software België",
+    "ploegenrooster software industrie",
+    "personeelsplanning app KMO",
+    "arbeidstijdenwet compliance software"
+  ]
 }
 ];

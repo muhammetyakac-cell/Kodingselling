@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature, TowerControl, Calculator, Images, Radio, Wrench} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature, TowerControl, Calculator, Images, Radio, Wrench, PackageOpen, Lock, MonitorUp} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -639,6 +639,36 @@ export const servicesData = [
   title: 'Supply Chain Control Towers',
   desc: 'Real-time, end-to-end zichtbaarheid en Exception Management in de logistiek.',
   fullDesc: 'De cockpit voor uw logistieke operaties. Wij consolideren data uit uw ERP, WMS, TMS en die van uw transporteurs (API/EDI) in één overkoepelend dashboard. Krijg grip op vertragingen, stuur proactief bij met AI (Exception Management) en deel inzicht veilig met ketenpartners.'
+},
+{
+  icon: <PackageOpen className="w-6 h-6 text-fuchsia-600" />,
+  title: 'Order Management Systems (OMS)',
+  desc: 'Orkestreer complexe B2B order-routing, split-shipments en drop-shipping.',
+  fullDesc: 'De ontbrekende schakel in B2B e-commerce. Ons OMS fungeert als intelligente middleware tussen uw webshop, ERP en magazijnen. Optimaliseer logistieke kosten door het systeem autonoom te laten beslissen uit welk distributiecentrum (of via welke drop-shipper) een order het efficiëntst verzonden kan worden.'
+},
+{
+  icon: <Lock className="w-6 h-6 text-sky-500" />,
+  title: 'DeFi & Smart Contract Development',
+  desc: 'Beveilig en versnel B2B-transacties met blockchain-gebaseerde escrow en factoring.',
+  fullDesc: 'Programmeerbaar geld voor B2B. Wij ontwikkelen veilige Smart Contracts en enterprise DeFi-oplossingen. Automatiseer betalingen zodra aan IoT-voorwaarden is voldaan (escrow), versnel uw werkkapitaal via gedecentraliseerde micro-factoring en garandeer absolute transparantie in de financiële supply chain.'
+},
+{
+  icon: <MonitorUp className="w-6 h-6 text-indigo-500" />,
+  title: 'Headless CMS Integraties',
+  desc: 'API-first content management (Contentful/Sanity) voor omnichannel publicaties.',
+  fullDesc: 'Neem afscheid van logge WordPress-installaties. Wij bouwen Headless CMS architecturen. Scheid uw content (backend) van het design (frontend). Publiceer artikelen, B2B handleidingen en persberichten razendsnel en tegelijkertijd naar uw webshop, mobiele apps en werf-kiosken via schaalbare API\'s.'
+},
+{
+  icon: <Network className="w-6 h-6 text-emerald-500" />,
+  title: 'API Management & Gateways',
+  desc: 'Beveilig, monitor en monetiseer de data-stromen tussen uw ERP en externe partners.',
+  fullDesc: 'Bescherm de digitale deuren van uw bedrijf. Wij implementeren robuuste API-gateways (Kong/Azure). Bescherm uw ERP tegen overbelasting met Rate Limiting, garandeer veilige B2B-data uitwisseling met OAuth2-authenticatie en transformeer waardevolle bedrijfsdata in een nieuwe inkomstenbron (API Monetization).'
+},
+{
+  icon: <UserCog className="w-6 h-6 text-amber-500" />,
+  title: 'Workforce Management (WFM)',
+  desc: 'AI-gedreven personeelsplanning voor ploegendiensten in de industrie en logistiek.',
+  fullDesc: 'Stop de Excel-chaos in HR. Wij integreren Workforce Management (WFM) portalen gericht op fabrieken en magazijnen. Genereer automatische, CAO-compliant ploegenroosters, voorspel personeelsbehoefte op basis van productiedata en geef arbeiders controle via mobiele apps voor shift-ruilen en verlofaanvragen.'
 }
 
 ];
