@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -429,6 +429,36 @@ export const servicesData = [
   title: 'FinTech Factoring Platformen',
   desc: 'API-integraties voor automatische factuurfinanciering en werkkapitaalbeheer.',
   fullDesc: 'Verbeter uw B2B-cashflow. Wij ontwikkelen integraties tussen uw ERP en moderne digitale factoringmaatschappijen. Dit maakt real-time kredietchecks mogelijk, versnelt factuurfinanciering (binnen 24 uur uitbetaald) en automatiseert de afpunting van facturen.'
+},
+{
+  icon: <MonitorPlay className="w-6 h-6 text-sky-500" />,
+  title: 'Digital Twin Software & Integratie',
+  desc: 'Simuleer productielijnen in een virtuele 3D-omgeving via IoT real-time data.',
+  fullDesc: 'Minimaliseer productierisico\'s. We ontwikkelen de backend-architectuur voor Digital Twins. Door uw fysieke sensoren (IoT) te koppelen aan geavanceerde 3D-modellen, kunt u virtuele inbedrijfstelling (virtual commissioning) en predictive maintenance uitvoeren zonder uw fabrieksvloer te verstoren.'
+},
+{
+  icon: <Receipt className="w-6 h-6 text-fuchsia-600" />,
+  title: 'B2B Subscription Management',
+  desc: 'Beheer complexe abonnementsmodellen (Recurring Revenue) en self-service portalen.',
+  fullDesc: 'Maak de transitie naar de abonnementeneconomie. Wij bouwen maatwerk billing-portalen geïntegreerd met Stripe of Chargebee. Beheer moeiteloos pro-rata facturatie, dunning management (bij gefaalde betalingen) en geef uw B2B-klanten een eigen dashboard om abonnementen aan te passen.'
+},
+{
+  icon: <Truck className="w-6 h-6 text-amber-500" />,
+  title: 'Fleet Management & Telematica Dashboards',
+  desc: 'Zet ruwe OBD- en GPS-data om in actiegerichte rapporten voor brandstofbesparing.',
+  fullDesc: 'Krijg controle over uw wagenpark. Wij ontwerpen cloud-dashboards die verbonden zijn met de telematica van uw voertuigen. Analyseer rijgedrag (eco-scores), automatiseer onderhoudsmeldingen op basis van echte draaiuren en stel geofencing in ter preventie van diefstal.'
+},
+{
+  icon: <Glasses className="w-6 h-6 text-emerald-500" />,
+  title: 'Virtual Reality (VR) Training Portalen',
+  desc: 'Immersive Learning: Veilige, virtuele veiligheidstrainingen voor de industrie.',
+  fullDesc: 'Train uw personeel risicoloos in gevaarlijke omgevingen. We integreren VR-hardware met uw bestaande (HR) systemen. Door de xAPI-standaard te gebruiken, worden de prestaties en keuzes van werknemers in de VR-simulatie direct, veilig en aantoonbaar opgeslagen in hun personeelsdossier.'
+},
+{
+  icon: <Wind className="w-6 h-6 text-indigo-500" />,
+  title: 'Drone Data & Photogrammetry Portalen',
+  desc: 'Cloud-infrastructuur voor het verwerken van terabytes aan drone-inspectie beelden.',
+  fullDesc: 'Voor de bouw en landbouw (AgriTech). Wij bouwen zware backend systemen die ruwe drone beelden automatisch omzetten in 3D-puntenwolken of thermische analyses met behulp van AI. Deel de resultaten vervolgens via een beveiligd, white-label dashboard met uw eindklanten.'
 }
 
 ];
