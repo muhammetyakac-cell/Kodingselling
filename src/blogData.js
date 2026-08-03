@@ -1930,5 +1930,110 @@ export const blogPosts = [
     "digitaal materiaalpaspoort",
     "waste management ERP Antwerpen"
   ]
+},
+{
+  "id": "m2m-communicatie-machines-beslissen",
+  "title": "M2M Communicatie: Wanneer Machines Zelfstandig Beslissen",
+  "category": "IoT & Automatisering",
+  "date": "15 Februari 2026",
+  "readTime": "6 min lees",
+  "description": "Wat gebeurt er als een silo zelf nieuwe grondstoffen bestelt bij de leverancier? Ontdek de kracht van Machine-to-Machine (M2M) communicatie in de industrie.",
+  "content": "<p>We zijn gewend geraakt aan het idee van het Internet of Things (IoT), waarbij we via een dashboard op onze smartphone een machine kunnen monitoren. Maar de echte efficiëntiewinst ontstaat pas wanneer we de menselijke tussenkomst volledig elimineren: Machine-to-Machine (M2M) communicatie.</p>\n<h2>Gesloten Lussen Zonder Mensen</h2>\n<p>Bij M2M-communicatie praten apparaten via een beveiligd netwerk rechtstreeks met elkaar of met centrale ERP-systemen, en voeren ze autonoom acties uit op basis van voorgeprogrammeerde logica.</p>\n<h3>Praktijkvoorbeelden in de Vlaamse Industrie</h3>\n<ul>\n<li><strong>Vendor Managed Inventory (VMI):</strong> Een weegsensor in een bulksilo van een plasticfabriek detecteert dat de voorraad polypropyleen onder de 20% zakt. De silo stuurt autonoom een signaal naar het ERP-systeem van de leverancier om een nieuwe vrachtwagen in te plannen.</li>\n<li><strong>Adaptieve Productielijnen:</strong> Als een CNC-machine detecteert dat een boorkop begint te slijten en trager werkt, communiceert de machine direct met de toevoerband om de aanvoersnelheid van nieuwe materialen te verlagen, zodat er geen file ontstaat.</li>\n</ul>\n<h2>De Middleware is de Sleutel</h2>\n<p>Machines spreken zelden dezelfde 'taal' (protocollen zoals MQTT, OPC-UA of Modbus). DZY Digital bouwt de robuuste middleware en API's die deze protocollen vertalen, zodat uw volledige machinepark naadloos en veilig met elkaar kan communiceren.</p>\n",
+  "tags": [
+    "M2M",
+    "IoT",
+    "Automatisering",
+    "Industrie 4.0"
+  ],
+  "seoKeywords": [
+    "M2M communicatie software België",
+    "Machine to Machine integratie",
+    "OPC-UA MQTT vertaling",
+    "Vendor Managed Inventory IoT"
+  ]
+},
+{
+  "id": "dam-systemen-visuele-identiteit-b2b",
+  "title": "DAM Systemen: Organiseer de Visuele Identiteit van uw Merk",
+  "category": "Marketing Tech & DAM",
+  "date": "22 Februari 2026",
+  "readTime": "7 min lees",
+  "description": "Zijn uw marketeers uren kwijt aan het zoeken naar het juiste bedrijfslogo of die ene productfoto? Waarom B2B-bedrijven een Digital Asset Management (DAM) systeem nodig hebben.",
+  "content": "<p>In het digitale tijdperk produceert de marketingafdeling van een gemiddeld B2B-bedrijf duizenden 'assets': productfoto's in hoge resolutie, 3D-renders, installatie-video's, logo's en whitepapers. Als deze bestanden verspreid staan over SharePoint, Dropbox en lokale harde schijven, ontstaat er chaos.</p>\n<h2>Meer dan een Digitale Map</h2>\n<p>Een Digital Asset Management (DAM) systeem is geen veredelde mappenstructuur. Het is een intelligente, visuele database gebaseerd op krachtige metadata.</p>\n<h3>De Voordelen van een Modern DAM</h3>\n<ul>\n<li><strong>AI-Tagging:</strong> Zodra u een afbeelding uploadt, scant de ingebouwde AI de foto en voegt automatisch tags toe (bijv. \"Heftruck\", \"Buiten\", \"Geel\"). Zoekopdrachten leveren direct resultaat op.</li>\n<li><strong>Merkconsistentie (Brand Portal):</strong> Geef uw distributeurs of externe pers toegang tot een specifiek afgeschermd deel van uw DAM, zodat zij altijd de meest actuele en goedgekeurde logo's gebruiken.</li>\n<li><strong>Versiebeheer en Rechten:</strong> Voorkom dat uw sales-team een verouderde productbrochure met de verkeerde prijzen naar een klant stuurt.</li>\n</ul>\n<h2>Naadloze Integratie</h2>\n<p>DZY Digital implementeert enterprise-grade DAM systemen (zoals Bynder of Cloudinary) en koppelt deze direct aan uw PIM, CMS en e-commerce platform. Wijzig een afbeelding in het DAM, en het wordt automatisch geüpdatet op al uw kanalen.</p>\n",
+  "tags": [
+    "DAM",
+    "Marketing Tech",
+    "Branding",
+    "Assets"
+  ],
+  "seoKeywords": [
+    "Digital Asset Management België",
+    "DAM systeem integratie",
+    "Brand portal B2B software",
+    "AI tagging marketing assets"
+  ]
+},
+{
+  "id": "b2b-dynamic-pricing-optimalisatie",
+  "title": "B2B Dynamic Pricing: Optimaliseer uw Marges in Real-Time",
+  "category": "Sales & Pricing",
+  "date": "01 Maart 2026",
+  "readTime": "7 min lees",
+  "description": "In B2B wordt de prijs vaak vastgezet in jaarcontracten. Ontdek hoe Dynamic Pricing software uw winstmarge beschermt tegen volatiele inkoopprijzen.",
+  "content": "<p>De grondstofprijzen (staal, hout, elektronica) en transportkosten fluctueren tegenwoordig wekelijks. Toch hanteren veel Belgische groothandels nog statische PDF-prijslijsten die eens per jaar worden geprint. Dit leidt tot enorme margeverliezen wanneer de inkoopprijzen plotseling stijgen.</p>\n<h2>Van Statisch naar Dynamisch</h2>\n<p>Dynamic Pricing (of algorithmic pricing) is niet alleen voor vliegtickets of Amazon. Het stelt B2B-bedrijven in staat om hun verkoopprijzen continu en geautomatiseerd aan te passen op basis van vooraf ingestelde parameters.</p>\n<h3>Variabelen voor de Prijs-Algoritmes</h3>\n<p>Een slimme pricing-engine berekent de optimale prijs op basis van:</p>\n<ul>\n<li><strong>Actuele Inkoopprijzen:</strong> De software is via API's gekoppeld aan grondstoffenbeurzen (bijv. staalprijzen) en past de verkoopprijs proportioneel aan.</li>\n<li><strong>Voorraadniveaus:</strong> Heeft u een overschot aan een specifiek onderdeel in uw Antwerpse magazijn? De software verlaagt automatisch de prijs met 5% op uw B2B webshop om de rotatie te verhogen.</li>\n<li><strong>Concurrentie-Analyse (Webscraping):</strong> Monitor de publieke prijzen van uw concurrenten en pas uw prijzen strategisch aan zonder ooit onder uw minimale marge-drempel te duiken.</li>\n</ul>\n<h2>Bescherm uw Bodemlijn</h2>\n<p>DZY Digital ontwikkelt op maat gemaakte B2B pricing-engines die integreren met uw ERP en e-commerce. Neem afscheid van margeverlies door verouderde prijslijsten.</p>\n",
+  "tags": [
+    "Dynamic Pricing",
+    "B2B",
+    "E-commerce",
+    "Marges"
+  ],
+  "seoKeywords": [
+    "Dynamic pricing software België",
+    "B2B prijsoptimalisatie ERP",
+    "algoritmische prijsbepaling groothandel",
+    "webscraping concurrentie prijzen"
+  ]
+},
+{
+  "id": "cafm-software-facility-management",
+  "title": "CAFM Software: Moderniseer uw Facility Management",
+  "category": "PropTech & Facility",
+  "date": "08 Maart 2026",
+  "readTime": "6 min lees",
+  "description": "Een kapotte lamp, een defecte airco of schoonmaakbeheer? Waarom grote kantoorgebouwen niet zonder CAFM (Computer-Aided Facility Management) kunnen.",
+  "content": "<p>Het beheren van een groot bedrijfspand of een campus is een complexe logistieke operatie. Zonder centraal systeem belanden klachten (tickets) van medewerkers in een algemene mailbox, vergeet men het wettelijke onderhoud van de liften, en weet niemand of het schoonmaakbedrijf daadwerkelijk is langs geweest.</p>\n<h2>Wat is CAFM?</h2>\n<p>Computer-Aided Facility Management (CAFM) software centraliseert alle data met betrekking tot het gebouwbeheer, van ruimtereserveringen tot preventief onderhoud.</p>\n<h3>De Modulaire Aanpak van CAFM</h3>\n<ul>\n<li><strong>Ticketing Systeem (Helpdesk):</strong> Een medewerker scant een QR-code op een defect koffiezetapparaat en vult via zijn smartphone direct een melding in. De facility manager wijst deze digitaal toe aan de juiste technicus.</li>\n<li><strong>Preventief Onderhoud:</strong> Het systeem beheert de contracten en schema's voor brandblussers, HVAC en liften, en stuurt ruim op tijd een herinnering naar de externe leverancier.</li>\n<li><strong>Space Management:</strong> Visualiseer de plattegronden van uw gebouw en optimaliseer de bezetting. Koppel dit aan IoT-sensoren om schoonmaakploegen alleen naar bureaus te sturen die daadwerkelijk zijn gebruikt (Smart Cleaning).</li>\n</ul>\n<h2>Efficiënter Gebouwbeheer</h2>\n<p>DZY Digital bouwt en implementeert robuuste CAFM-portalen die de communicatie tussen huurders, facility managers en externe aannemers in Vlaanderen stroomlijnen.</p>\n",
+  "tags": [
+    "CAFM",
+    "Facility Management",
+    "PropTech",
+    "Ticketing"
+  ],
+  "seoKeywords": [
+    "CAFM software België",
+    "Facility management systeem",
+    "gebouwbeheer software Antwerpen",
+    "smart cleaning integratie"
+  ]
+},
+{
+  "id": "supply-chain-control-tower-logistiek",
+  "title": "De Supply Chain Control Tower: 360-Graden Zicht op uw Logistiek",
+  "category": "Logistiek & Supply Chain",
+  "date": "15 Maart 2026",
+  "readTime": "8 min lees",
+  "description": "Uw goederen reizen per schip, trein en vrachtwagen. Hoe behoudt u overzicht bij verstoringen? De Supply Chain Control Tower brengt alles samen.",
+  "content": "<p>Moderne toeleveringsketens zijn fragiel. Een file in de haven van Antwerpen, een staking bij een spoorwegmaatschappij of vertragingen bij de douane kunnen een gigantische impact hebben op uw assemblageband. Hoe reageert u proactief als uw data verspreid zit over tien verschillende systemen en logistieke partners?</p>\n<h2>De Cockpit van de Supply Chain</h2>\n<p>Een Supply Chain Control Tower is een gecentraliseerd data-dashboard dat real-time informatie (via API's en EDI) verzamelt uit uw ERP, WMS, TMS, en de systemen van uw transporteurs (3PL/4PL).</p>\n<h3>Van Inzicht naar Actie</h3>\n<p>Een Control Tower doet meer dan alleen een pinnetje op een kaart tonen (visibility). Het is een actie-gericht platform:</p>\n<ul>\n<li><strong>End-to-End Visibility:</strong> U ziet de exacte locatie en status van een order, vanaf het moment dat het de fabriek in Azië verlaat tot de levering in Europa.</li>\n<li><strong>Exception Management:</strong> De software waarschuwt u uitsluitend bij uitzonderingen. Als een zeeschip 3 dagen vertraging oploopt, berekent de AI direct de financiële impact en stelt voor om een deel van de kritieke vracht over te hevelen naar luchtvracht.</li>\n<li><strong>Keten-Samenwerking:</strong> Deel uw Control Tower (of een beperkte weergave ervan) veilig met uw leveranciers en klanten, zodat iedereen over dezelfde actuele 'Single Source of Truth' beschikt.</li>\n</ul>\n<h2>Beheers de Complexiteit</h2>\n<p>DZY Digital ontwikkelt maatwerk Control Tower architecturen voor logistieke dienstverleners en grote verladers. Wij ontsluiten datasilo's en geven u de controle over uw supply chain terug.</p>\n",
+  "tags": [
+    "Control Tower",
+    "Supply Chain",
+    "Logistiek",
+    "Data"
+  ],
+  "seoKeywords": [
+    "Supply chain control tower software",
+    "End to end visibility logistiek",
+    "3PL data dashboard België",
+    "Exception management supply chain"
+  ]
 }
 ];

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature, TowerControl, Calculator, Images, Radio, Wrench} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -609,6 +609,36 @@ export const servicesData = [
   title: 'Circulaire & Waste Management Software',
   desc: 'Portalen voor het traceren van reststromen en B2B afval-marktplaatsen.',
   fullDesc: 'Monetiseer de circulaire economie. Wij ontwikkelen software voor afvalverwerkers en producenten. Digitaliseer de weegbrug-processen, creëer elektronische materiaalpaspoorten en bouw B2B-marktplaatsen om industriële reststromen te verhandelen als nieuwe grondstoffen.'
+},
+{
+  icon: <Radio className="w-6 h-6 text-fuchsia-600" />,
+  title: 'M2M & IoT Communicatie',
+  desc: 'Laat machines autonoom communiceren via OPC-UA en MQTT protocollen.',
+  fullDesc: 'Machine-to-Machine communicatie voor de Industrie 4.0. Wij bouwen de middleware die ervoor zorgt dat uw sensoren, CNC-machines en silo\'s autonoom beslissingen nemen en veilig data uitwisselen met uw centrale ERP-systemen zonder menselijke tussenkomst.'
+},
+{
+  icon: <Images className="w-6 h-6 text-indigo-500" />,
+  title: 'Digital Asset Management (DAM)',
+  desc: 'Centraliseer en organiseer bedrijfsfoto\'s, 3D-renders en marketingmaterialen.',
+  fullDesc: 'Breng structuur in uw marketingbestanden. Wij implementeren B2B DAM-systemen met AI-gestuurde image-tagging en Brand Portals voor uw distributeurs. Integreer uw DAM direct met uw PIM en e-commerce platform voor consistente merkcommunicatie.'
+},
+{
+  icon: <Calculator className="w-6 h-6 text-emerald-500" />,
+  title: 'B2B Dynamic Pricing Engines',
+  desc: 'Automatiseer prijsberekeningen op basis van inkoopprijzen en voorraadniveaus.',
+  fullDesc: 'Bescherm uw marges in een volatiele markt. Wij ontwikkelen algoritmes voor Dynamic Pricing die continu uw inkoopprijzen (grondstoffen), concurrentiedata en voorraad analyseren, om zo uw B2B verkoopprijzen in real-time te optimaliseren in uw webshop en ERP.'
+},
+{
+  icon: <Wrench className="w-6 h-6 text-sky-500" />,
+  title: 'Facility Management (CAFM)',
+  desc: 'Computer-Aided Facility Management voor het beheer van kantoorgebouwen.',
+  fullDesc: 'Stroomlijn het gebouwbeheer voor facility managers. Wij bouwen portalen voor het melden van defecten (ticketing), het plannen van wettelijk preventief onderhoud (liften, HVAC) en het aansturen van externe schoonmaakploegen op basis van sensordata (Smart Cleaning).'
+},
+{
+  icon: <TowerControl className="w-6 h-6 text-rose-500" />,
+  title: 'Supply Chain Control Towers',
+  desc: 'Real-time, end-to-end zichtbaarheid en Exception Management in de logistiek.',
+  fullDesc: 'De cockpit voor uw logistieke operaties. Wij consolideren data uit uw ERP, WMS, TMS en die van uw transporteurs (API/EDI) in één overkoepelend dashboard. Krijg grip op vertragingen, stuur proactief bij met AI (Exception Management) en deel inzicht veilig met ketenpartners.'
 }
 
 ];
