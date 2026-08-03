@@ -1825,5 +1825,110 @@ export const blogPosts = [
     "split billing laadpalen",
     "smart charging KMO Antwerpen"
   ]
+},
+{
+  "id": "peppol-verplichting-belgie-e-invoicing",
+  "title": "De Peppol Verplichting in België: Bent U Klaar voor E-Invoicing?",
+  "category": "Finance & Compliance",
+  "date": "11 Januari 2026",
+  "readTime": "6 min lees",
+  "description": "Vanaf 1 januari 2026 is elektronische facturatie (via het Peppol-netwerk) verplicht voor Belgische B2B-transacties. Wat betekent dit voor uw ERP?",
+  "content": "<p>Een PDF-factuur mailen naar een klant is straks verleden tijd. De Belgische overheid verplicht B2B-ondernemingen om over te stappen op gestructureerde elektronische facturen (UBL) via het beveiligde Peppol-netwerk. Dit is niet zomaar een IT-update; het raakt het hart van uw financiële administratie.</p>\n<h2>Wat is Peppol?</h2>\n<p>Peppol is geen software, maar een Europees netwerk dat fungeert als een soort 'beveiligde telecomprovider' voor facturen. Bedrijf A verstuurt een data-bestand vanuit zijn ERP, het Peppol Access Point versleutelt dit en levert het direct af in het ERP van Bedrijf B. Zonder menselijke tussenkomst.</p>\n<h3>De Uitdaging voor KMO's</h3>\n<ul>\n<li><strong>Verouderde ERP-systemen:</strong> Veel oudere boekhoudpakketten of maatwerk software (legacy systemen) kunnen geen UBL XML-bestanden genereren of inlezen.</li>\n<li><strong>Foutieve Stamdata:</strong> Bij Peppol is een correct KBO/BTW-nummer cruciaal. Als uw CRM vol typefouten staat, zal het netwerk de factuur weigeren.</li>\n<li><strong>Workflow Automatisering:</strong> E-invoicing is pas waardevol als ook het goedkeuringsproces (approval flow) intern is gedigitaliseerd.</li>\n</ul>\n<h2>Naadloze Integratie</h2>\n<p>DZY Digital bouwt de middleware die uw huidige (verouderde) ERP-systeem verbindt met een gecertificeerd Peppol Access Point. Zorg dat u compliant bent voordat de boetes ingaan, en geniet direct van snellere betalingen.</p>\n",
+  "tags": [
+    "Peppol",
+    "E-invoicing",
+    "Finance",
+    "ERP"
+  ],
+  "seoKeywords": [
+    "Peppol e-invoicing software België",
+    "UBL facturatie verplichting 2026",
+    "ERP Peppol koppeling Antwerpen",
+    "elektronisch factureren B2B"
+  ]
+},
+{
+  "id": "yard-management-wachttijden-laadkaaien",
+  "title": "Yard Management: Elimineer Wachttijden aan de Laadkaaien",
+  "category": "Logistiek & Supply Chain",
+  "date": "18 Januari 2026",
+  "readTime": "7 min lees",
+  "description": "Vrachtwagens die urenlang in de file staan voor uw distributiecentrum kosten geld. Hoe een Yard Management System (YMS) de chaos ordent.",
+  "content": "<p>In veel logistieke hubs rond Antwerpen heerst chaos op de 'yard' (het buitenterrein). Vrachtwagens komen onaangekondigd aan, chauffeurs spreken de taal niet, en magazijniers weten niet welke vrachtwagen prioriteit heeft. De oplossing is een Yard Management System (YMS).</p>\n<h2>De Digitale Portier</h2>\n<p>Een YMS digitaliseert het volledige proces vanaf het moment dat een vrachtwagen het terrein nadert tot het moment dat deze weer vertrekt.</p>\n<h3>Functionaliteiten van een YMS</h3>\n<ul>\n<li><strong>Time Slot Management:</strong> Transporteurs boeken vooraf een tijdslot via een online portaal. Komt de chauffeur buiten zijn slot aan? Dan wordt hij automatisch naar een wachtparking verwezen.</li>\n<li><strong>Zelfservice Kiosken:</strong> De chauffeur meldt zich aan via een meertalige touch-kiosk aan de poort, scant een QR-code en ontvangt direct een SMS met het juiste dock-nummer in zijn eigen taal.</li>\n<li><strong>Live Tracking op het Terrein:</strong> Door middel van camera's (License Plate Recognition) of RFID-tags weet u exact welke trailer bij welk dock staat, wat cruciaal is voor gekoelde transporten (shunting).</li>\n</ul>\n<h2>Verhoog de Throughput</h2>\n<p>DZY Digital ontwikkelt cloud-gebaseerde YMS-platformen die de wachttijden (demurrage) drastisch verlagen, de veiligheid op het terrein verhogen en naadloos communiceren met uw WMS.</p>\n",
+  "tags": [
+    "Yard Management",
+    "Logistiek",
+    "YMS",
+    "Supply Chain"
+  ],
+  "seoKeywords": [
+    "Yard Management System België",
+    "time slot booking logistiek",
+    "dock scheduling software",
+    "vrachtwagen aanmeldsysteem kiosk"
+  ]
+},
+{
+  "id": "b2b-klantenportaal-self-service-distributeurs",
+  "title": "Waarom Uw B2B Klanten een Self-Service Portaal Verwachten",
+  "category": "Klantenservice & B2B",
+  "date": "25 Januari 2026",
+  "readTime": "6 min lees",
+  "description": "B2B-inkopers willen u niet bellen om de status van hun order op te vragen. Ontdek de ROI van een modern self-service klantenportaal.",
+  "content": "<p>Als u een pallet schroeven bestelt voor uw fabriek, verwacht u dezelfde transparantie als wanneer u thuis een boek bestelt. Toch dwingen veel B2B-leveranciers hun klanten nog steeds om tijdens kantooruren te bellen voor factuurkopieën of Track & Trace links.</p>\n<h2>De Evolutie van B2B Klantenservice</h2>\n<p>Een B2B Klantenportaal is niet zomaar een webshop. Het is een digitale kluis waar de klant 24/7 toegang heeft tot zijn volledige zakelijke relatie met uw bedrijf.</p>\n<h3>Wat Biedt een B2B Portaal?</h3>\n<ul>\n<li><strong>Facturen & Openstaande Saldi:</strong> Klanten kunnen al hun historische facturen downloaden en direct hun actuele kredietlimiet bekijken.</li>\n<li><strong>Orderhistorie & Quick-Reorder:</strong> B2B-inkopers bestellen vaak maandelijks exact dezelfde materialen. Via het portaal kunnen ze met één klik een oude order dupliceren.</li>\n<li><strong>RMA & Retouren (Garantie):</strong> Een defect onderdeel? De klant meldt dit digitaal aan, uploadt een foto, en volgt real-time de status van de reparatie of vervanging (RMA flow).</li>\n</ul>\n<h2>Verlicht uw Customer Service</h2>\n<p>Door veelgestelde vragen (Waar is mijn bestelling? Mag ik factuur X nog eens?) te automatiseren, bespaart uw binnendienst uren per week. DZY Digital bouwt B2B portalen die veilig data putten uit uw complexe ERP-omgeving.</p>\n",
+  "tags": [
+    "B2B Portaal",
+    "Self-Service",
+    "Customer Success",
+    "E-commerce"
+  ],
+  "seoKeywords": [
+    "B2B klantenportaal maken",
+    "self service portaal groothandel",
+    "ERP orderhistorie portaal",
+    "RMA portaal software België"
+  ]
+},
+{
+  "id": "edge-computing-fabrieken-cloud-te-traag",
+  "title": "Edge Computing: Waarom de Cloud Soms Te Traag is voor Fabrieken",
+  "category": "Industrie 4.0 & Edge",
+  "date": "01 Februari 2026",
+  "readTime": "7 min lees",
+  "description": "Als een robotarm een defect detecteert, kan hij geen seconde wachten op een antwoord van de cloud. De oplossing: Edge Computing.",
+  "content": "<p>De cloud is fantastisch voor het opslaan van historische data en het draaien van zware rapportages. Maar wanneer een camera op een lopende band in een Antwerpse fabriek met 120 frames per seconde controleert of een fles goed is afgesloten, is de cloud te traag (latency) en te duur qua bandbreedte.</p>\n<h2>Wat is Edge Computing?</h2>\n<p>Bij Edge Computing draait het algoritme of de Artificial Intelligence niet in een datacenter in Dublin, maar op een industriële minicomputer direct naast de machine (de 'Edge' of rand van het netwerk).</p>\n<h3>Voordelen van the Edge</h3>\n<ul>\n<li><strong>Ultra-lage Latency (Snelheid):</strong> De beslissing (bijv. de transportband stoppen omdat er een defect is) wordt binnen enkele milliseconden lokaal genomen, zonder afhankelijk te zijn van de internetverbinding.</li>\n<li><strong>Bandbreedte Besparing:</strong> Waarom zou u terabytes aan nutteloze videobeelden van perfecte producten naar de cloud sturen? De Edge-computer filtert de data en stuurt alleen een logje naar de cloud als er iets mis is.</li>\n<li><strong>Dataprivacy (On-Premise):</strong> Defensiebedrijven of ziekenhuizen willen vaak niet dat gevoelige productie- of patiëntendata hun gebouw fysiek verlaat.</li>\n</ul>\n<h2>Het Hybride Model</h2>\n<p>DZY Digital ontwerpt hybride architecturen. We trainen het complexe AI-model in de zware cloud (Azure/AWS), maar we <em>deployen</em> het lichtgewicht model lokaal op uw Edge-devices voor razendsnelle, offline-capabele industriële automatisering.</p>\n",
+  "tags": [
+    "Edge Computing",
+    "IoT",
+    "Industrie 4.0",
+    "Latency"
+  ],
+  "seoKeywords": [
+    "Edge computing industrie",
+    "IoT lokale data verwerking",
+    "machine vision AI Edge",
+    "latency productie optimalisatie"
+  ]
+},
+{
+  "id": "circulaire-economie-digitaal-afvalbeheer",
+  "title": "Circulaire Economie: Software voor Digitaal Afvalbeheer",
+  "category": "Duurzaamheid & Circulair",
+  "date": "08 Februari 2026",
+  "readTime": "6 min lees",
+  "description": "Afval is grondstof op de verkeerde plek. Hoe software voor Waste Management helpt bij het digitaliseren van de circulaire economie.",
+  "content": "<p>België en Europa sturen aan op een circulaire economie. Bedrijven worden niet alleen afgerekend op wat ze produceren, maar ook op wat er met hun producten gebeurt aan het einde van de levenscyclus (Extended Producer Responsibility). Afvalbeheer is big business geworden.</p>\n<h2>Van Stortplaats naar Grondstoffenbeurs</h2>\n<p>Het beheren van afvalstromen vereist specifieke tracking. Wanneer een sloopproject 10 ton betonpuin oplevert, moet dit digitaal worden gevolgd totdat het is verwerkt tot nieuw granulaat. Software is hierin de sleutel.</p>\n<h3>Waste Management Software</h3>\n<ul>\n<li><strong>Materiaalpaspoorten:</strong> Creëer een digitaal paspoort voor een gebouw of machine, zodat u over 20 jaar exact weet welke recyclebare materialen erin zitten.</li>\n<li><strong>B2B Marktplaatsen voor Reststromen:</strong> Wat voor het ene bedrijf chemisch afval is, kan voor een ander de perfecte grondstof zijn. Wij bouwen portalen die vraag en aanbod van reststromen matchen.</li>\n<li><strong>Digitale Begeleidingsbrieven:</strong> Transport van afval vereist strenge documentatie. Automatiseer deze documentenstroom voor afvalinzamelaars, inclusief weegbrug-integraties.</li>\n</ul>\n<h2>Traceability is Goud Waard</h2>\n<p>DZY Digital bouwt de ERP- en portaaloplossingen voor afvalverwerkers en producenten om de transitie naar een winstgevend, circulair model (Cradle-to-Cradle) mogelijk te maken en dit aantoonbaar te rapporteren.</p>\n",
+  "tags": [
+    "Circulaire Economie",
+    "Afvalbeheer",
+    "Duurzaamheid",
+    "B2B Marktplaats"
+  ],
+  "seoKeywords": [
+    "Afvalbeheer software België",
+    "circulaire economie portaal",
+    "digitaal materiaalpaspoort",
+    "waste management ERP Antwerpen"
+  ]
 }
 ];

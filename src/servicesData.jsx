@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -579,6 +579,36 @@ export const servicesData = [
   title: 'EV Fleet & Laadpaal Beheer',
   desc: 'Cloud-portalen voor de financiële afhandeling en load-balancing van elektrische vloten.',
   fullDesc: 'Beheer de vergroening van uw wagenpark digitaal. Wij bouwen portalen voor EV Fleet Management. Integreer automatische split-billing voor thuislaadkosten via payroll, beheer Smart Charging prioriteiten (load balancing) op kantoor en monitor de live actieradius van elektrische bestelwagens.'
+},
+{
+  icon: <FileSignature className="w-6 h-6 text-fuchsia-600" />,
+  title: 'Peppol & E-Invoicing Integraties',
+  desc: 'Maak uw oude ERP klaar voor de Belgische Peppol e-invoicing verplichting (2026).',
+  fullDesc: 'Wees compliant zonder uw ERP te vervangen. Wij bouwen middleware die uw bestaande facturatieflow (PDF/XML) vertaalt naar het vereiste UBL-formaat en deze naadloos aflevert via het Peppol-netwerk. Inclusief geautomatiseerde inkomende factuurverwerking (AP automation).'
+},
+{
+  icon: <Truck className="w-6 h-6 text-sky-500" />,
+  title: 'Yard Management Systems (YMS)',
+  desc: 'Elimineer files aan de laadkaai met time-slot booking en digitale poort-kiosken.',
+  fullDesc: 'Digitaliseer het buitenterrein van uw distributiecentrum. Ons YMS biedt transporteurs een online portaal om laad- en losafspraken te boeken. Gecombineerd met meertalige selfservice kiosken voor chauffeurs en live dock-monitoring, verlaagt u wachttijden (demurrage) drastisch.'
+},
+{
+  icon: <LayoutDashboard className="w-6 h-6 text-indigo-500" />,
+  title: 'B2B Self-Service Portalen',
+  desc: 'Verlicht uw binnendienst met geavanceerde portalen voor orderhistorie en RMA\'s.',
+  fullDesc: 'Geef B2B-klanten de controle. Wij bouwen beveiligde klantenzones die real-time data uit uw ERP ontsluiten. Uw distributeurs kunnen 24/7 hun facturen downloaden, actuele kredietlimieten bekijken, oude orders met één klik dupliceren en retouren (RMA) digitaal aanmelden.'
+},
+{
+  icon: <Cpu className="w-6 h-6 text-emerald-500" />,
+  title: 'Edge Computing voor Industrie 4.0',
+  desc: 'Razendsnelle lokale dataverwerking en AI zonder cloud-latency (on-premise).',
+  fullDesc: 'Voor missiekritieke systemen in fabrieken waar de cloud te traag is. Wij deployen Machine Vision en IoT-algoritmes lokaal (op Edge-devices) voor beslissingen in milliseconden. Bespaar bandbreedte en garandeer maximale dataprivacy (bijv. in laboratoria of defensie).'
+},
+{
+  icon: <Recycle className="w-6 h-6 text-amber-500" />,
+  title: 'Circulaire & Waste Management Software',
+  desc: 'Portalen voor het traceren van reststromen en B2B afval-marktplaatsen.',
+  fullDesc: 'Monetiseer de circulaire economie. Wij ontwikkelen software voor afvalverwerkers en producenten. Digitaliseer de weegbrug-processen, creëer elektronische materiaalpaspoorten en bouw B2B-marktplaatsen om industriële reststromen te verhandelen als nieuwe grondstoffen.'
 }
 
 ];
