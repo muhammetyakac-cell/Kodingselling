@@ -98,7 +98,7 @@ const seoData = {
         },
         "sameAs": [
           "https://www.instagram.com/dzydigital",
-          "https://www.linkedin.com/company/dzy-digital"
+          "https://www.linkedin.com/company/dzydigital"
         ],
         "areaServed": {
           "@type": "Country",
@@ -981,7 +981,7 @@ export default function App() {
           <div className="flex flex-col items-start md:items-end space-y-4">
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/dzydigital" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
-              <a href="https://www.linkedin.com/company/dzy-digital" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://www.linkedin.com/company/dzydigital" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
             </div>
             <div className="text-sm text-slate-500">&copy; {new Date().getFullYear()} DZY Digital. Alle Rechten Voorbehouden.</div>
           </div>
