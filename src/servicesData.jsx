@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature, TowerControl, Calculator, Images, Radio, Wrench, PackageOpen, Lock, MonitorUp} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature, TowerControl, Calculator, Images, Radio, Wrench, PackageOpen, Lock, MonitorUp, Gamepad2, QrCode, Stethoscope} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -669,6 +669,36 @@ export const servicesData = [
   title: 'Workforce Management (WFM)',
   desc: 'AI-gedreven personeelsplanning voor ploegendiensten in de industrie en logistiek.',
   fullDesc: 'Stop de Excel-chaos in HR. Wij integreren Workforce Management (WFM) portalen gericht op fabrieken en magazijnen. Genereer automatische, CAO-compliant ploegenroosters, voorspel personeelsbehoefte op basis van productiedata en geef arbeiders controle via mobiele apps voor shift-ruilen en verlofaanvragen.'
+},
+{
+  icon: <Stethoscope className="w-6 h-6 text-fuchsia-600" />,
+  title: 'MedTech & B2B Telehealth Portalen',
+  desc: 'Beveiligde data-uitwisseling (HL7/DICOM) tussen ziekenhuizen, labo\'s en apotheken.',
+  fullDesc: 'Stroomlijn de medische toeleveringsketen. Wij bouwen zwaarbeveiligde (GDPR/HIPAA compliant) e-Health portalen. Maak multidisciplinair overleg (MDO) mogelijk via beveiligde video-verbindingen, deel medische 3D-scans veilig in de cloud en automatiseer B2B e-voorschriften.'
+},
+{
+  icon: <QrCode className="w-6 h-6 text-emerald-500" />,
+  title: 'Digitale Product Paspoorten (DPP)',
+  desc: 'Consolideer circulaire data en bereid u voor op de nieuwe EU-wetgeving (2027).',
+  fullDesc: 'Maak uw producten transparant en compliant. Wij ontwikkelen de cloud-infrastructuur voor het Digitale Product Paspoort (DPP). Koppel uw ERP en PIM via API\'s om materiaal- en reparatiedata te consolideren achter één QR-code, veilig verankerd op de blockchain (tegen greenwashing).'
+},
+{
+  icon: <Zap className="w-6 h-6 text-sky-500" />,
+  title: 'Low-Code Applicatie Ontwikkeling',
+  desc: 'Razendsnelle ontwikkeling van interne B2B bedrijfsapplicaties (Power Apps).',
+  fullDesc: 'Digitaliseer uw interne processen 5x sneller. Voor interne workflows, urenregistraties of onkostendeclaraties bouwen wij robuuste applicaties met behulp van Low-Code platformen. Verlaag uw time-to-market drastisch en behoud flexibiliteit, zonder zware IT-investeringen.'
+},
+{
+  icon: <Network className="w-6 h-6 text-indigo-500" />,
+  title: 'Quantum-Inspired Route Optimalisatie',
+  desc: 'Zware wiskundige algoritmes voor complexe logistieke supply chain problemen.',
+  fullDesc: 'Los onmogelijke planningsproblemen op. Voor de logistieke sector en havens ontwikkelen wij wiskundige optimalisatie-modellen (geïnspireerd op Quantum Computing). Optimaliseer in real-time de belading van zeeschepen (stowage) en bereken de perfecte routes voor 1000+ vrachtwagens tegelijk.'
+},
+{
+  icon: <Gamepad2 className="w-6 h-6 text-rose-500" />,
+  title: 'Gamification voor E-learning & HR',
+  desc: 'Verhoog betrokkenheid bij veiligheidstrainingen met leaderboards en badges.',
+  fullDesc: 'Maak droge B2B opleidingen verslavend. Wij integreren gamification-mechanismen in uw Learning Management System (LMS). Gebruik microlearning, virtuele badges en competitieve leaderboards om de voltooiingsgraad van uw veiligheids- of compliance-trainingen te maximaliseren.'
 }
 
 ];

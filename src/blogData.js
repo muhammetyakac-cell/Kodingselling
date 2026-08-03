@@ -2140,5 +2140,110 @@ export const blogPosts = [
     "personeelsplanning app KMO",
     "arbeidstijdenwet compliance software"
   ]
+},
+{
+  "id": "telehealth-b2b-zorgverleners-digitaal-samenwerken",
+  "title": "Telehealth in B2B: Hoe Zorgverleners Digitaal Samenwerken",
+  "category": "MedTech & Health",
+  "date": "26 April 2026",
+  "readTime": "6 min lees",
+  "description": "Telehealth is meer dan een dokter op video. Ontdek hoe B2B e-Health portalen de samenwerking tussen ziekenhuizen, labo's en apotheken transformeren.",
+  "content": "<p>Als we aan Telehealth of e-Health denken, denken we vaak aan een patiënt die via een app met zijn huisarts videobelt. Maar de echte revolutie speelt zich af op de achtergrond, in de B2B-communicatie tussen verschillende zorgactoren.</p>\n<h2>De Versnipperde Zorg</h2>\n<p>Een typisch patiëntentraject omvat een huisarts, een medisch laboratorium (voor bloedanalyses), een specialist in het ziekenhuis en een apotheker. Als deze partijen communiceren via verouderde systemen of papieren dossiers, ontstaan er fatale fouten en levensgevaarlijke vertragingen.</p>\n<h3>B2B Zorgportalen</h3>\n<p>Gespecialiseerde MedTech software stroomlijnt deze keten veilig en efficiënt:</p>\n<ul>\n<li><strong>Beveiligde Data-Uitwisseling:</strong> Verzend medische beelden (DICOM) of labresultaten (HL7-standaard) direct en versleuteld van de scanner van het ziekenhuis naar de tablet van de specialist, zonder privacy-risico's (GDPR/HIPAA compliant).</li>\n<li><strong>e-Voorschriften Portalen:</strong> Apotheken ontvangen voorschriften digitaal en real-time, waardoor de voorraad proactief kan worden beheerd voordat de patiënt überhaupt de apotheek binnenstapt.</li>\n<li><strong>Multidisciplinair Overleg (MDO):</strong> Beveiligde video-omgevingen waar artsen uit verschillende ziekenhuizen samen live een 3D-scan kunnen annoteren en bespreken.</li>\n</ul>\n<h2>Naadloze Zorgverlening</h2>\n<p>DZY Digital ontwikkelt B2B e-Health platformen die voldoen aan de strengste medische regelgeving in België, en zo de brug slaan tussen zorgprofessionals.</p>\n",
+  "tags": [
+    "Telehealth",
+    "e-Health",
+    "MedTech",
+    "B2B"
+  ],
+  "seoKeywords": [
+    "e-health software België",
+    "B2B zorgportaal MedTech",
+    "HL7 integratie ziekenhuizen",
+    "DICOM medische beelden portaal"
+  ]
+},
+{
+  "id": "digitaal-product-paspoort-dpp-eu-wetgeving",
+  "title": "Het Digitale Product Paspoort (DPP): Bereid u voor op de EU Wetgeving",
+  "category": "Duurzaamheid & Wetgeving",
+  "date": "03 Mei 2026",
+  "readTime": "7 min lees",
+  "description": "De EU verplicht binnenkort een Digitaal Product Paspoort voor industriële goederen. Wat is het, en hoe kan software u hierop voorbereiden?",
+  "content": "<p>Vanaf 2027 rolt de Europese Unie geleidelijk het Digitaal Product Paspoort (DPP) uit. Dit betekent dat producten (zoals batterijen, elektronica en textiel) voorzien moeten zijn van een scancode die de volledige levensloop en samenstelling van het product ontsluit. Bent u hier klaar voor?</p>\n<h2>Transparantie als Verplichting</h2>\n<p>Het doel van de EU is om de circulaire economie te stimuleren. Als een consument of recycler de QR-code op een boormachine scant, moeten zij direct kunnen zien uit welke materialen deze bestaat, hoe deze gerepareerd kan worden en wat de CO2-voetafdruk tijdens productie was.</p>\n<h3>De Technische Uitdaging voor Producenten</h3>\n<p>Voor fabrikanten is dit een gigantisch data-vraagstuk. De data zit momenteel verspreid over uw ERP, uw PIM-systeem en de systemen van uw toeleveranciers (supply chain).</p>\n<ul>\n<li><strong>Data Consolidatie:</strong> Gespecialiseerde DPP-software verzamelt (via API's) de stuklijsten (BOM) en compliance-certificaten uit al uw systemen en voegt deze samen.</li>\n<li><strong>Blockchain Authenticatie:</strong> Om te voorkomen dat data gemanipuleerd wordt (greenwashing), wordt de kern-data van het paspoort vaak cryptografisch verankerd op een blockchain.</li>\n<li><strong>Rechtenbeheer:</strong> Niet iedereen mag alles zien. De software zorgt ervoor dat een recycler de demontage-instructies ziet, maar dat uw bedrijfsgeheimen (zoals de exacte marges of leveranciersprijzen) verborgen blijven.</li>\n</ul>\n<h2>Maak van een Plicht een USP</h2>\n<p>DZY Digital bouwt de cloud-infrastructuur om uw Digitale Product Paspoorten veilig te genereren, te hosten en te koppelen aan uw ERP. Wees de wetgeving voor en toon uw B2B-klanten absolute transparantie.</p>\n",
+  "tags": [
+    "DPP",
+    "Duurzaamheid",
+    "Blockchain",
+    "EU"
+  ],
+  "seoKeywords": [
+    "Digitaal Product Paspoort software",
+    "DPP EU wetgeving integratie",
+    "blockchain materiaalpaspoort België",
+    "circulaire economie data"
+  ]
+},
+{
+  "id": "low-code-development-app-sneller-klaar",
+  "title": "Low-Code Development: Waarom uw Volgende App 5x Sneller Klaar is",
+  "category": "App Ontwikkeling & IT",
+  "date": "10 Mei 2026",
+  "readTime": "6 min lees",
+  "description": "Er is een chronisch tekort aan programmeurs. Hoe Low-Code platformen B2B-bedrijven helpen om interne applicaties razendsnel te ontwikkelen.",
+  "content": "<p>Elk bedrijf heeft wel een papieren proces of een Excel-bestand dat eigenlijk een app zou moeten zijn (bijv. onkostenregistratie of urenregistratie op de bouwwerf). Traditionele softwareontwikkeling duurt vaak maanden en is duur, waardoor deze interne projecten nooit van de grond komen.</p>\n<h2>Programmeren met Blokken</h2>\n<p>Low-Code (en No-Code) platformen (zoals Mendix, OutSystems of Microsoft Power Apps) veranderen de spelregels. In plaats van miljoenen regels code te typen, 'tekenen' ontwikkelaars de applicatie door visuele bouwstenen aan elkaar te koppelen.</p>\n<h3>Waarom B2B Kiest voor Low-Code</h3>\n<ul>\n<li><strong>Time-to-Market:</strong> Een applicatie die traditioneel 6 maanden duurt om te bouwen, kan met Low-Code in 4 weken live staan. Dit betekent een veel snellere Return on Investment (ROI).</li>\n<li><strong>Makkelijker Aanpassen (Agile):</strong> Verandert uw bedrijfsproces? In een Low-Code platform past de developer visueel de workflow (het pijltje) aan, in plaats van de hele database-architectuur te moeten herschrijven.</li>\n<li><strong>Citizen Developers:</strong> Business analisten of procesmanagers kunnen (met enige training) zélf kleine aanpassingen doen, zonder dat ze de zwaar overbelaste IT-afdeling hoeven te storen.</li>\n</ul>\n<h2>Toch Maatwerk Nodig?</h2>\n<p>Hoewel Low-Code fantastisch is voor standaard interne processen, vereisen complexe, klantgerichte B2B-portalen vaak nog steeds maatwerk. DZY Digital adviseert u onafhankelijk of uw project het beste gebaat is bij Low-Code, of bij een robuuste maatwerk (React/Node.js) architectuur.</p>\n",
+  "tags": [
+    "Low-Code",
+    "App Ontwikkeling",
+    "Agile",
+    "IT"
+  ],
+  "seoKeywords": [
+    "Low-code app ontwikkeling België",
+    "Mendix Power Apps alternatief",
+    "interne bedrijfsapplicatie maken",
+    "snelle app ontwikkeling KMO"
+  ]
+},
+{
+  "id": "quantum-computing-route-optimalisatie-logistiek",
+  "title": "Quantum Computing: De Toekomst van Route-Optimalisatie in de Haven",
+  "category": "Deep Tech & Logistiek",
+  "date": "17 Mei 2026",
+  "readTime": "7 min lees",
+  "description": "Als u 100 vrachtwagens en 1.000 bestemmingen heeft, lopen gewone computers vast. Hoe Quantum Computing de logistiek in Antwerpen zal revolutioneren.",
+  "content": "<p>Het 'Handelsreizigersprobleem' (Travelling Salesman Problem) is een klassiek knelpunt in de logistiek. Als een vrachtwagen 5 pakketjes moet bezorgen, zijn er 120 mogelijke routes. Bij 20 pakketjes zijn er meer mogelijke routes dan er zandkorrels op aarde zijn. Een gewone supercomputer heeft jaren nodig om de allerbeste route te vinden.</p>\n<h2>Voorbij de Eentjes en Nulletjes</h2>\n<p>Traditionele computers rekenen sequentieel (stap voor stap) met bits (0 of 1). <strong>Quantum Computers</strong> gebruiken Qubits, die dankzij kwantummechanica (superpositie) 0 én 1 tegelijk kunnen zijn. Hierdoor kunnen ze miljoenen mogelijke routes <em>tegelijkertijd</em> doorrekenen.</p>\n<h3>De Impact op B2B Supply Chains</h3>\n<ul>\n<li><strong>Dynamische Route-Optimalisatie:</strong> Niet alleen de kortste weg vinden, maar real-time herberekenen op basis van filevorming in Antwerpen, weersomstandigheden en laadvolumes, in enkele seconden.</li>\n<li><strong>Scheepsbelading (Stowage Planning):</strong> Bereken de absolute optimale gewichtsverdeling van duizenden containers op een zeeschip om brandstofverbruik te minimaliseren, rekening houdend met de losvolgorde in verschillende havens.</li>\n<li><strong>Portfolio Optimalisatie:</strong> Voor de financiële sector; razendsnel het risico van duizenden B2B-leningen doorrekenen onder verschillende economische scenario's.</li>\n</ul>\n<h2>Vandaag Al Voorbereiden</h2>\n<p>Hoewel echte quantum computers nog in het laboratorium staan, ontwikkelt DZY Digital vandaag al 'Quantum-Inspired' algoritmes (die draaien op klassieke hardware) om uw huidige supply chain wiskundig te optimaliseren, klaar voor de quantum-sprong.</p>\n",
+  "tags": [
+    "Quantum Computing",
+    "Logistiek",
+    "Algoritmes",
+    "Deep Tech"
+  ],
+  "seoKeywords": [
+    "Quantum computing logistiek België",
+    "route optimalisatie algoritme haven",
+    "quantum inspired supply chain",
+    "complexe wiskundige modellen IT"
+  ]
+},
+{
+  "id": "gamification-software-werknemers-graag-leren",
+  "title": "Gamification: Waarom uw Werknemers Plotseling Graag Leren",
+  "category": "HR Tech & EdTech",
+  "date": "24 Mei 2026",
+  "readTime": "6 min lees",
+  "description": "Verplichte veiligheidstrainingen zijn vaak slaapverwekkend. Hoe B2B Gamification software droge e-learning omzet in een competitieve uitdaging.",
+  "content": "<p>Iedereen kent het: de jaarlijkse verplichte e-learning module over cybersecurity of VCA-veiligheid. Werknemers klikken zo snel mogelijk door de slides heen om bij de multiple-choice test te komen. De kennis blijft absoluut niet hangen. Dit is een verspilling van tijd en geld.</p>\n<h2>Spelenderwijs Leren in B2B</h2>\n<p>Gamification past de verslavende psychologische mechanismen van videogames (punten, badges, leaderboards) toe op niet-game omgevingen, zoals bedrijfsopleidingen.</p>\n<h3>Hoe Gamification HR Transformeert</h3>\n<ul>\n<li><strong>Competitie en Leaderboards:</strong> Als Jan van de verkoopafdeling ziet dat zijn collega Peter een hogere score heeft op de 'Phishing Herkenning' module, zal Jan de module opnieuw doen om zijn score te verbeteren. Intrinsieke motivatie stijgt enorm.</li>\n<li><strong>Microlearning:</strong> In plaats van een saaie training van 2 uur, stuurt het LMS (Learning Management System) elke dag een quiz van 3 minuten naar de smartphone van de medewerker. Kennisinzinking (de vergeetcurve) wordt hiermee doorbroken.</li>\n<li><strong>Directe Feedback (Beloningen):</strong> Bij het correct afronden van een moeilijke simulatie ontvangt de werknemer direct een virtuele 'Badge' of 'Munt', die gekoppeld kan worden aan echte bedrijfsbeloningen (bijv. een gratis lunch in de kantine).</li>\n</ul>\n<h2>Betrokkenheid is Meetbaar</h2>\n<p>DZY Digital bouwt op maat gemaakte, gegamificeerde e-learning portalen en integreert deze met uw bestaande HR-systemen. Maak van verplicht leren een activiteit waar uw medewerkers naar uitkijken.</p>\n",
+  "tags": [
+    "Gamification",
+    "HR Tech",
+    "E-learning",
+    "LMS"
+  ],
+  "seoKeywords": [
+    "Gamification software bedrijven België",
+    "B2B e-learning platform op maat",
+    "LMS leaderboard integratie",
+    "veiligheidstraining app ontwikkelen"
+  ]
 }
 ];
