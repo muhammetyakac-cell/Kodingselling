@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature, TowerControl, Calculator, Images, Radio, Wrench, PackageOpen, Lock, MonitorUp, Gamepad2, QrCode, Stethoscope} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone, Recycle, LayoutDashboard, FileSignature, TowerControl, Calculator, Images, Radio, Wrench, PackageOpen, Lock, MonitorUp, Gamepad2, QrCode, Stethoscope, CalendarHeart, LifeBuoy, Headphones, BrainCircuit} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -699,6 +699,36 @@ export const servicesData = [
   title: 'Gamification voor E-learning & HR',
   desc: 'Verhoog betrokkenheid bij veiligheidstrainingen met leaderboards en badges.',
   fullDesc: 'Maak droge B2B opleidingen verslavend. Wij integreren gamification-mechanismen in uw Learning Management System (LMS). Gebruik microlearning, virtuele badges en competitieve leaderboards om de voltooiingsgraad van uw veiligheids- of compliance-trainingen te maximaliseren.'
+},
+{
+  icon: <CalendarHeart className="w-6 h-6 text-fuchsia-600" />,
+  title: 'B2B Event & Ticketing Portalen',
+  desc: 'Software voor registratie, badge-printing en lead-retrieval op vakbeurzen.',
+  fullDesc: 'Digitaliseer uw zakelijke evenementen. Wij bouwen B2B event management portalen met gepersonaliseerde registratieflows. Integreer on-site oplossingen zoals QR-toegangscontrole, razendsnelle naambadge-printers en mobiele lead-retrieval apps voor uw sales team, direct gekoppeld aan uw CRM.'
+},
+{
+  icon: <LifeBuoy className="w-6 h-6 text-sky-500" />,
+  title: 'ITSM & Helpdesk Systemen',
+  desc: 'IT Service Management (ITSM) voor proactief interne IT-support.',
+  fullDesc: 'Transformeer uw interne IT van reactief naar proactief. Wij implementeren ITSM-systemen (zoals ServiceNow) inclusief een Self-Service portaal voor werknemers. Automatiseer ticket-routering, beheer hardware (CMDB) en stroomlijn goedkeuringsflows voor nieuwe software of hardware-aanvragen.'
+},
+{
+  icon: <MapPin className="w-6 h-6 text-indigo-500" />,
+  title: 'Field Service Management (FSM)',
+  desc: 'Mobiele applicaties en dispatching-algoritmes voor de technische buitendienst.',
+  fullDesc: 'Optimaliseer uw reparaties en onderhoud op locatie. Wij bouwen Field Service Management (FSM) apps met offline functionaliteit. Plan technici via slimme GPS-dispatching, laat klanten digitaal aftekenen voor werkbonnen (digital signature) en synchroniseer de urenregistratie direct met uw ERP.'
+},
+{
+  icon: <Headphones className="w-6 h-6 text-emerald-500" />,
+  title: 'Voice Picking & Wearables',
+  desc: 'Hands-free orderpicking in magazijnen gestuurd door spraakherkenning.',
+  fullDesc: 'Verhoog de picksnelheid in uw magazijn. Wij integreren Voice Picking (Pick-by-Voice) middleware met uw bestaande WMS. Rust uw medewerkers uit met industriële headsets zodat zij compleet hands-free én eyes-free bestellingen kunnen verzamelen, wat de veiligheid en productiviteit aanzienlijk verhoogt.'
+},
+{
+  icon: <BrainCircuit className="w-6 h-6 text-amber-500" />,
+  title: 'Private AI Co-Pilots voor Sales',
+  desc: 'Train Large Language Models (LLM) op uw eigen bedrijfsdata voor razendsnelle offertes.',
+  fullDesc: 'Geef uw B2B-sales team een oneerlijk voordeel. Wij bouwen Private AI Co-Pilots geïntegreerd in uw CRM. Genereer automatische antwoorden op complexe RFP\'s, vat verkoopgesprekken samen en creëer technische offertes in minuten in plaats van dagen, zonder dat uw bedrijfsdata publiek wordt gedeeld.'
 }
 
 ];

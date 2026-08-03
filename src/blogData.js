@@ -2245,5 +2245,110 @@ export const blogPosts = [
     "LMS leaderboard integratie",
     "veiligheidstraining app ontwikkelen"
   ]
+},
+{
+  "id": "b2b-event-management-vakbeurzen-digitaliseren",
+  "title": "B2B Event Management: Digitaliseer uw Vakbeurzen en Congressen",
+  "category": "Marketing & Events",
+  "date": "31 Mei 2026",
+  "readTime": "6 min lees",
+  "description": "Een B2B beurs organiseren in Antwerpen of Brussel? Waarom u Excel-gastenlijsten moet inruilen voor Event Management Software.",
+  "content": "<p>Het organiseren van een B2B klantevent, seminar of vakbeurs is een logistieke nachtmerrie. Uitnodigingen versturen, dieetwensen verzamelen en badges printen; als dit handmatig via Excel gebeurt, is de kans op fouten 100%.</p>\n<h2>De Digitale Event Flow</h2>\n<p>Moderne Event Management platformen automatiseren de gehele bezoekersreis (visitor journey):</p>\n<ul>\n<li><strong>Gepersonaliseerde Registratie:</strong> Bezoekers ontvangen een unieke link. Het registratieformulier toont automatisch verschillende vragen afhankelijk van of de persoon een 'VIP', 'Pers' of 'Reguliere Klant' is.</li>\n<li><strong>Geautomatiseerde Toegangscontrole:</strong> Bij de ingang scannen bezoekers simpelweg een QR-code vanaf hun smartphone. Binnen 2 seconden rolt er een geprinte naambadge (inclusief RFID-chip) uit de printer. Geen rijen meer.</li>\n<li><strong>Lead Retrieval App:</strong> Standhouders of uw sales-mensen gebruiken een mobiele app om de QR-code op de badge van een bezoeker te scannen. De lead zit direct in uw CRM (bijv. Salesforce), zonder visitekaartjes over te typen.</li>\n</ul>\n<h2>Maximaliseer de Event ROI</h2>\n<p>DZY Digital bouwt en integreert B2B event portalen. Wij koppelen uw registratiedata direct aan uw marketing automation, zodat u na het event gepersonaliseerde follow-up e-mails kunt sturen op basis van de bezochte sessies.</p>\n",
+  "tags": [
+    "Event Management",
+    "B2B",
+    "Ticketing",
+    "Marketing"
+  ],
+  "seoKeywords": [
+    "B2B event management software België",
+    "registratiesysteem zakelijk evenement",
+    "lead retrieval app beurs",
+    "badge print software Antwerpen"
+  ]
+},
+{
+  "id": "itsm-interne-helpdesk-upgrade",
+  "title": "ITSM: Waarom uw Interne IT-Helpdesk een Upgrade Nodig Heeft",
+  "category": "IT & Support",
+  "date": "07 Juni 2026",
+  "readTime": "6 min lees",
+  "description": "Medewerkers die e-mailen over een vergeten wachtwoord kosten uw IT-team uren. Hoe IT Service Management (ITSM) uw interne processen automatiseert.",
+  "content": "<p>In veel KMO's fungeert de IT-afdeling als een veredelde brandweer. De inbox stroomt vol met meldingen zoals \"Mijn laptop start niet op\" of \"Kan ik toegang krijgen tot map X?\". Er is geen prioritering en geen overzicht, wat leidt tot gefrustreerde werknemers en overbelaste IT'ers.</p>\n<h2>Structuur met ITSM</h2>\n<p>IT Service Management (ITSM) software structureert de manier waarop IT-diensten worden geleverd. Het transformeert IT van een reactieve helpdesk naar een proactieve service provider.</p>\n<h3>De Drie Pijlers van ITSM</h3>\n<ul>\n<li><strong>Self-Service Portaal:</strong> Gebruikers loggen in op een portaal waar ze zelf veelvoorkomende problemen kunnen oplossen (Knowledge Base) of een gestructureerde aanvraag kunnen indienen (bijv. 'Nieuwe Muis Aanvragen' uit een catalogus).</li>\n<li><strong>Incident & Problem Management:</strong> Als vijf mensen melden dat de printer stuk is, bundelt de ITSM-software dit tot één 'Problem'. De IT'er lost de root-cause op, en alle vijf de gebruikers krijgen automatisch bericht.</li>\n<li><strong>Asset Management (CMDB):</strong> Het systeem weet exact welke werknemer welke laptop (inclusief serienummer en afschrijvingsdatum) heeft. Bij uitdiensttreding genereert het systeem automatisch een inlever-taak.</li>\n</ul>\n<h2>Verlaag IT Kosten</h2>\n<p>DZY Digital implementeert ITSM-platformen (zoals ServiceNow of Jira Service Management). Wij automatiseren de goedkeuringsflows zodat uw IT-team zich kan focussen op strategische projecten.</p>\n",
+  "tags": [
+    "ITSM",
+    "Helpdesk",
+    "IT",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "ITSM software België",
+    "IT Service Management implementatie",
+    "interne IT helpdesk portaal",
+    "ServiceNow Jira integratie Antwerpen"
+  ]
+},
+{
+  "id": "field-service-management-fsm-technici",
+  "title": "Field Service Management (FSM): Stuur uw Technici Efficiënter op Pad",
+  "category": "Logistiek & Field Service",
+  "date": "14 Juni 2026",
+  "readTime": "7 min lees",
+  "description": "Uw technicus arriveert bij de klant, maar heeft het verkeerde wisselstuk bij. Hoe Field Service Management (FSM) uw buitendienst optimaliseert.",
+  "content": "<p>Bedrijven die installaties of reparaties uitvoeren bij klanten (HVAC, telecom, industriële machines) kennen de pijn: papieren werkbonnen raken kwijt, planners verliezen het overzicht in hun planbord, en facturatie loopt weken vertraging op omdat de handtekening van de klant ontbreekt.</p>\n<h2>Digitaliseer de Buitendienst</h2>\n<p>Field Service Management (FSM) software digitaliseert het volledige proces, van de binnenkomende storingsmelding tot de uiteindelijke factuur.</p>\n<h3>Functies van de FSM App</h3>\n<ul>\n<li><strong>Slimme Dispatching:</strong> Het planningsalgoritme wijst een urgente storing automatisch toe aan de technicus die (volgens GPS) het dichtstbij is, over de juiste vaardigheden beschikt én de benodigde onderdelen in zijn bestelwagen heeft liggen.</li>\n<li><strong>Digitale Werkbonnen:</strong> De technicus krijgt op zijn tablet de volledige historie van de machine te zien. Na de reparatie vult hij de uren en onderdelen in, laat de klant digitaal tekenen, en de data gaat direct naar het ERP.</li>\n<li><strong>Offline Functionaliteit:</strong> Als de reparatie in een kelder plaatsvindt waar geen 4G-bereik is, blijft de app werken. Zodra de technicus naar buiten loopt, synchroniseert de app automatisch met de cloud.</li>\n</ul>\n<h2>Snellere Facturatie, Blije Klanten</h2>\n<p>DZY Digital bouwt native FSM-applicaties en verbindt deze met uw ERP/CRM. Hierdoor kunt u vaak nog op dezelfde dag dat de reparatie is uitgevoerd, de factuur versturen.</p>\n",
+  "tags": [
+    "FSM",
+    "Field Service",
+    "Logistiek",
+    "Apps"
+  ],
+  "seoKeywords": [
+    "Field Service Management software België",
+    "digitale werkbonnen app KMO",
+    "buitendienst planning software",
+    "offline field service applicatie"
+  ]
+},
+{
+  "id": "voice-picking-wearables-magazijn",
+  "title": "Voice Picking in het Magazijn: Werken met Vrije Handen",
+  "category": "Logistiek & Warehouse",
+  "date": "21 Juni 2026",
+  "readTime": "6 min lees",
+  "description": "Scanners vastpakken, neerleggen en weer vastpakken kost seconden per pick. Ontdek hoe Voice Picking de productiviteit in Belgische magazijnen verhoogt.",
+  "content": "<p>In een distributiecentrum is efficiëntie alles. Traditioneel werken orderpickers met een handscanner of tablet. Het probleem: bij het tillen van zware dozen moeten ze de scanner telkens wegleggen en weer oppakken. Dit leidt niet alleen tot tijdverlies, maar ook tot schade aan dure scanners die op de grond vallen.</p>\n<h2>Wat is Voice Picking?</h2>\n<p>Bij Voice Picking (of Pick-by-Voice) draagt de magazijnmedewerker een industriële headset. Het WMS-systeem 'praat' tegen de medewerker (bijv. \"Ga naar gang 4, vak B\"). De medewerker bevestigt dit door in de microfoon de controlecijfers van het vak uit te spreken (bijv. \"Vijf Nul\"), waarna het systeem het aantal te picken stuks doorgeeft.</p>\n<h3>Voordelen van Voice in het WMS</h3>\n<ul>\n<li><strong>Hands-free & Eyes-free:</strong> De werknemer heeft altijd twee handen vrij om zware dozen veilig te tillen. Hij hoeft niet meer naar een klein schermpje te turen, wat ook ergonomisch beter is.</li>\n<li><strong>Verhoogde Productiviteit:</strong> Omdat de medewerker constant in beweging is en niet hoeft te typen, stijgt de picksnelheid (lines per hour) vaak met 15% tot 25%.</li>\n<li><strong>Meertaligheid:</strong> In magazijnen met veel internationale krachten is Voice Picking ideaal. De software vertaalt de opdrachten automatisch, zodat de medewerker de instructies in zijn eigen moedertaal (bijv. Pools of Roemeens) hoort.</li>\n</ul>\n<h2>Implementeer Voice Technologie</h2>\n<p>DZY Digital integreert Voice Picking middleware en robuuste wearables naadloos in uw bestaande WMS. Moderniseer uw orderpicking zonder uw hele IT-architectuur om te gooien.</p>\n",
+  "tags": [
+    "Voice Picking",
+    "Logistiek",
+    "WMS",
+    "Wearables"
+  ],
+  "seoKeywords": [
+    "Voice picking software België",
+    "Pick by voice WMS integratie",
+    "magazijn orderpicking optimalisatie",
+    "hands free orderpicken Antwerpen"
+  ]
+},
+{
+  "id": "ai-co-pilot-b2b-sales-offertes",
+  "title": "De AI Co-Pilot: Hoe B2B Sales Teams 3x Sneller Offertes Maken",
+  "category": "Sales & AI",
+  "date": "28 Juni 2026",
+  "readTime": "7 min lees",
+  "description": "Sales reps besteden slechts 30% van hun tijd aan verkopen; de rest gaat naar administratie. Hoe een AI Co-Pilot dit probleem voorgoed oplost.",
+  "content": "<p>In complexe B2B-markten (zoals IT, bouw of machinebouw) kan het opstellen van een overtuigende offerte dagen duren. De sales representative moet in oude contracten zoeken naar vergelijkbare clausules, productspecificaties opzoeken en technische vragen uitzetten bij engineering. Dit vertraagt de salescyclus enorm.</p>\n<h2>De Digitale Sales Assistent (Co-Pilot)</h2>\n<p>Een AI Co-Pilot (gebouwd op Large Language Models zoals GPT-4) is geïntegreerd in het CRM-systeem van de verkoper en fungeert als een briljante, supersnelle assistent.</p>\n<h3>Hoe de AI Co-Pilot uw Sales Versnelt</h3>\n<ul>\n<li><strong>Automatische RFP Beantwoording:</strong> Ontvangt u een Request for Proposal (RFP) van 50 pagina's? De AI scant het document, zoekt in uw interne bedrijfsdatabase naar hoe u deze vragen in het verleden heeft beantwoord, en genereert een eerste concept binnen 2 minuten.</li>\n<li><strong>E-mail & Meeting Samenvattingen:</strong> Na een uur durend verkoopgesprek via Teams of Zoom genereert de AI automatisch een samenvatting (inclusief de 'Next Steps') en zet deze direct in uw Salesforce of HubSpot.</li>\n<li><strong>Intelligente Up-Selling:</strong> Tijdens het maken van de offerte fluistert de AI: \"Klanten die Product A kopen, nemen vaak ook Servicecontract B. Wil je dit toevoegen met 5% korting?\"</li>\n</ul>\n<h2>Focus op de Menselijke Relatie</h2>\n<p>Door het administratieve zware werk over te nemen, kan uw sales team doen waar ze echt goed in zijn: relaties bouwen met klanten. DZY Digital bouwt Private AI Co-Pilots die strikt getraind zijn op úw bedrijfsdata, zonder dat deze data ooit met de buitenwereld wordt gedeeld.</p>\n",
+  "tags": [
+    "AI",
+    "Sales",
+    "Co-Pilot",
+    "CRM"
+  ],
+  "seoKeywords": [
+    "AI sales co-pilot software",
+    "RFP automatisering België",
+    "AI CRM integratie B2B",
+    "offertes maken met kunstmatige intelligentie"
+  ]
 }
 ];
