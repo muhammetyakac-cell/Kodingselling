@@ -1720,5 +1720,110 @@ export const blogPosts = [
     "LOTO software industrie",
     "HSE veiligheidssoftware Antwerpen"
   ]
+},
+{
+  "id": "document-ai-waarom-ouderwetse-ocr-niet-voldoet",
+  "title": "Document AI: Waarom Ouderwetse OCR Niet Meer Voldoet",
+  "category": "AI & Documentbeheer",
+  "date": "07 December 2025",
+  "readTime": "6 min lees",
+  "description": "OCR leest tekst, maar begrijpt het niet. Ontdek hoe Document AI (met Machine Learning) de data-extractie uit complexe facturen en contracten automatiseert.",
+  "content": "<p>Veel Belgische bedrijven gebruiken OCR (Optical Character Recognition) om gescande facturen of PDF's in te lezen. Het probleem? Traditionele OCR zoekt naar specifieke coördinaten op een pagina. Als een leverancier het Totaalbedrag plotseling drie centimeter naar links schuift, breekt het systeem.</p>\n<h2>Van Lezen naar Begrijpen met AI</h2>\n<p>Document AI gaat verder dan het herkennen van letters; het begrijpt de context. Dankzij getrainde Machine Learning modellen 'weet' de software dat een bedrag naast het woord 'Total', 'Totaal' of 'Somme' hoogstwaarschijnlijk het totaalbedrag is, ongeacht waar het op de pagina staat.</p>\n<h3>Toepassingen in B2B</h3>\n<ul>\n<li><strong>Factuurverwerking (Accounts Payable):</strong> De AI extraheert automatisch IBAN-nummers, BTW-bedragen en lijn-items uit duizenden verschillende factuurlay-outs zonder voorafgaande configuratie.</li>\n<li><strong>Contractanalyse:</strong> Bij een fusie of overname kan Document AI duizenden contracten scannen om afwijkende aansprakelijkheidsclausules of einddata te markeren.</li>\n<li><strong>Douane Documenten:</strong> Versnel logistieke processen in de haven door vrachtbrieven (CMR's) automatisch te verwerken, zelfs als deze deels handgeschreven zijn.</li>\n</ul>\n<h2>Foutloze Administratie</h2>\n<p>DZY Digital implementeert geavanceerde Document AI-engines (zoals Google Document AI of Azure Form Recognizer) in uw bestaande ERP-omgeving. Verminder manuele data-entry met 95% en elimineer dure typefouten.</p>\n",
+  "tags": [
+    "Document AI",
+    "OCR",
+    "Machine Learning",
+    "Administratie"
+  ],
+  "seoKeywords": [
+    "Document AI software België",
+    "slimme OCR factuurverwerking",
+    "Machine Learning documenten",
+    "data extractie automatisering Antwerpen"
+  ]
+},
+{
+  "id": "b2b-reseller-portalen-cpq-software",
+  "title": "Waarom Uw Resellers Gefrustreerd Zijn (En Hoe Een CPQ Helpt)",
+  "category": "Sales & CPQ",
+  "date": "14 December 2025",
+  "readTime": "7 min lees",
+  "description": "Uw verdelers moeten te lang wachten op een offerte voor maatwerk producten. Hoe Configure, Price, Quote (CPQ) software uw resellerkanaal versnelt.",
+  "content": "<p>Verkoopt uw KMO complexe producten via een netwerk van verdelers (resellers) of installateurs? Dan kent u dit probleem: een reseller belt uw salesafdeling voor een prijsaanvraag van een maatwerk machine. Uw verkoper moet in Excel rekenen, de technische haalbaarheid checken bij engineering, en drie dagen later gaat de offerte pas de deur uit. In de tussentijd heeft de eindklant al bij de concurrent gekocht.</p>\n<h2>Empower uw Resellers met CPQ</h2>\n<p>Met een <strong>Configure, Price, Quote (CPQ)</strong> portaal geeft u de controle terug aan de reseller. Ze loggen in op een beveiligd B2B-portaal (volledig in uw huisstijl) en configureren het product zelf.</p>\n<h3>De Kracht van de Configuratie-Engine</h3>\n<ul>\n<li><strong>Foutloze Combinaties:</strong> De software is geprogrammeerd met uw technische bedrijfslogica. Als een reseller Motor A kiest, kan hij onmogelijk Behuizing B selecteren als deze niet past.</li>\n<li><strong>Directe Prijsberekening:</strong> Terwijl de reseller klikt, berekent het systeem real-time de prijs, inclusief hun specifieke dealerkorting.</li>\n<li><strong>Automatische Offertegeneratie:</strong> Met één druk op de knop genereert het portaal een professionele PDF-offerte (met uw logo en dat van de reseller) die direct naar de eindklant gestuurd kan worden.</li>\n</ul>\n<h2>Verhoog de Channel Sales</h2>\n<p>Resellers kiezen de weg van de minste weerstand. DZY Digital bouwt B2B Reseller Portalen die het zo makkelijk maken om uw producten te verkopen, dat ze simpelweg uw concurrenten negeren.</p>\n",
+  "tags": [
+    "CPQ",
+    "Reseller",
+    "Sales",
+    "B2B E-commerce"
+  ],
+  "seoKeywords": [
+    "CPQ software België",
+    "B2B reseller portaal maken",
+    "Configure Price Quote integratie",
+    "partner portaal groothandel"
+  ]
+},
+{
+  "id": "pim-systemen-b2b-groothandels",
+  "title": "Stop de Excel-Chaos: PIM Systemen voor B2B Groothandels",
+  "category": "Data Management & E-commerce",
+  "date": "21 December 2025",
+  "readTime": "6 min lees",
+  "description": "Zitten uw productbeschrijvingen verspreid over Excel-lijsten, het ERP en Dropbox? Ontdek waarom een PIM-systeem essentieel is voor B2B e-commerce.",
+  "content": "<p>Groothandels in België beheren vaak tienduizenden SKU's. Als het tijd is om een nieuwe webshop te lanceren of een catalogus te printen, breekt de paniek uit. De Franse vertalingen staan in een Excel-bestand van vorig jaar, de hoge-resolutie foto's staan op de laptop van de marketingmanager, en de technische specificaties zitten vast in het ERP-systeem.</p>\n<h2>Eén Bron van Waarheid: Het PIM-Systeem</h2>\n<p>Een <strong>Product Information Management (PIM)</strong> systeem fungeert als het centrale zenuwstelsel voor al uw productdata. Het haalt ruwe, kale data (zoals SKU en prijs) uit uw ERP en verrijkt deze.</p>\n<h3>Wat Doet een PIM?</h3>\n<ul>\n<li><strong>Data Verrijking:</strong> In het PIM voegen marketeers commerciële teksten, handleidingen (PDF's), SEO-meta tags en productvideo's toe aan het kale SKU-nummer.</li>\n<li><strong>Meertaligheid:</strong> Beheer productteksten overzichtelijk in het Nederlands, Frans en Engels, eventueel ondersteund door geïntegreerde AI-vertalingen.</li>\n<li><strong>Omnichannel Distributie:</strong> Vanuit het PIM stuurt u met één klik de perfect opgemaakte productdata naar uw Magento webshop, een Amazon/Bol.com feed, én naar InDesign voor uw geprinte catalogus.</li>\n</ul>\n<h2>Schaalbare E-commerce</h2>\n<p>DZY Digital integreert marktleidende PIM-systemen (zoals Akeneo of Pimcore) met uw bestaande ERP (Odoo, Exact, SAP). Stop met zoeken naar de juiste productfoto en begin met verkopen.</p>\n",
+  "tags": [
+    "PIM",
+    "E-commerce",
+    "Data Management",
+    "Groothandel"
+  ],
+  "seoKeywords": [
+    "PIM systeem integratie België",
+    "Akeneo Pimcore partner Antwerpen",
+    "product data management groothandel",
+    "ERP PIM webshop koppeling"
+  ]
+},
+{
+  "id": "demand-forecasting-voorspel-voorraad-ai",
+  "title": "Demand Forecasting: Voorspel de Toekomst van Uw Voorraad met AI",
+  "category": "AI & Supply Chain",
+  "date": "28 December 2025",
+  "readTime": "7 min lees",
+  "description": "Te veel voorraad kost geld, te weinig voorraad kost klanten. Hoe Machine Learning en Demand Forecasting uw supply chain optimaliseren.",
+  "content": "<p>Voorraadsbeheer is traditioneel een balanceeract. Vlaamse distributeurs gebruiken vaak simpele 'min-max' regels in hun ERP: \"Als de voorraad onder de 50 zakt, bestel dan 100 nieuwe\". Dit is statisch en houdt geen rekening met seizoenspatronen, economische trends of externe factoren.</p>\n<h2>Voorspellen met Machine Learning</h2>\n<p>AI-gedreven <strong>Demand Forecasting</strong> analyseert historische verkoopdata in combinatie met honderden externe variabelen (zoals weersvoorspellingen, feestdagen, Google Trends en macro-economische data) om de toekomstige vraag veel nauwkeuriger te voorspellen.</p>\n<h3>De Impact op uw Supply Chain</h3>\n<ul>\n<li><strong>Dode Voorraad Minimaliseren:</strong> Het algoritme herkent producten waarvan de trend afneemt, nog voordat uw inkoper het doorheeft, waardoor u geen kapitaal vastzet in incourante voorraad (Dead Stock).</li>\n<li><strong>Promotie-Analyse:</strong> Plan een Black Friday-actie in en de AI berekent direct het 'halo-effect' (de impact van de promotie op de verkoop van gerelateerde accessoires).</li>\n<li><strong>Dynamische Veiligheidsvoorraad:</strong> Het systeem past uw veiligheidsvoorraad automatisch aan op basis van de grilligheid (volatiliteit) van de supply chain van uw leveranciers.</li>\n</ul>\n<h2>Grip op uw Werkkapitaal</h2>\n<p>DZY Digital ontwikkelt slimme forecasting dashboards die naadloos op uw bestaande WMS of ERP inpluggen. Verhoog uw leverbetrouwbaarheid (Service Level) terwijl u tegelijkertijd de magazijnkosten verlaagt.</p>\n",
+  "tags": [
+    "AI",
+    "Supply Chain",
+    "Demand Forecasting",
+    "Voorraadbeheer"
+  ],
+  "seoKeywords": [
+    "demand forecasting software België",
+    "AI voorraad voorspelling",
+    "machine learning supply chain Antwerpen",
+    "dead stock verminderen KMO"
+  ]
+},
+{
+  "id": "ev-fleet-management-laadpaal-beheer-software",
+  "title": "EV Fleet Management: Software voor de Elektrische Vloot van Morgen",
+  "category": "Logistiek & Duurzaamheid",
+  "date": "04 Januari 2026",
+  "readTime": "6 min lees",
+  "description": "De vergroening van het wagenpark brengt nieuwe uitdagingen met zich mee. Hoe beheert u laadsessies, thuislaadvergoedingen en actieradius in één portaal?",
+  "content": "<p>Door de veranderende Belgische fiscaliteit stappen KMO's massaal over op elektrische bedrijfswagens (EV's). Maar het beheren van een elektrische vloot vereist totaal andere software dan het beheren van dieselwagens. Tankkaarten maken plaats voor laadpassen en laadpalen (thuis én op kantoor).</p>\n<h2>De Complexiteit van EV-Laden</h2>\n<p>Hoe vergoedt u de elektriciteit die een werknemer thuis laadt? Hoe voorkomt u dat het stroomnet van uw kantoorgebouw overbelast raakt als 20 werknemers tegelijk hun auto inpluggen om 09:00 uur 's ochtends?</p>\n<h3>Smart EV Fleet Management Portalen</h3>\n<p>Een gespecialiseerd EV-dashboard biedt inzicht en controle:</p>\n<ul>\n<li><strong>Geautomatiseerde Split-Billing:</strong> Het systeem leest de data van de slimme thuislaadpaal van de werknemer uit en vergoedt automatisch (via een koppeling met SD Worx of uw boekhouding) de geladen stroom op basis van het actuele CREG-tarief.</li>\n<li><strong>Smart Charging (Dynamic Load Balancing):</strong> De software communiceert met uw laadpalen op kantoor. Het verdeelt de beschikbare stroom slim op basis van prioriteit (bijv. de wagen van de buitendienst moet sneller vol zijn dan die van de binnendienst).</li>\n<li><strong>Actieradius en Routeplanning:</strong> Vooral cruciaal voor elektrische bestelwagens in de logistiek: plan routes niet alleen op basis van afstand, maar op basis van actuele accustatus en laadpaal-dichtheid onderweg.</li>\n</ul>\n<h2>Toekomstbestendig Wagenparkbeheer</h2>\n<p>DZY Digital bouwt de cloud-integraties tussen uw EV's, de laadinfrastructuur en uw HR-systemen. Maak de overstap naar elektrisch rijden rimpelloos voor uw medewerkers én uw administratie.</p>\n",
+  "tags": [
+    "EV",
+    "Fleet Management",
+    "Duurzaamheid",
+    "Smart Charging"
+  ],
+  "seoKeywords": [
+    "EV fleet management software België",
+    "laadpaal beheer portaal",
+    "split billing laadpalen",
+    "smart charging KMO Antwerpen"
+  ]
 }
 ];

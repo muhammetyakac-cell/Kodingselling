@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award, HardHat, Bot, CloudLightning, Scan, CalendarRange, BatteryCharging, FileSearch, DatabaseBackup, TrendingUp, MonitorSmartphone} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -549,6 +549,36 @@ export const servicesData = [
   title: 'Digitale Werkvergunningen (PTW)',
   desc: 'HSE en Permit to Work software voor de chemie en zware industrie.',
   fullDesc: 'Borg veiligheid op industriële sites. Wij ontwikkelen mobiele applicaties voor digitale werkvergunningen (Permit to Work). Laat aannemers vooraf risicoanalyses (TRA) invullen, keur vergunningen digitaal goed op het veld en beheer Lockout-Tagout (LOTO) procedures veilig via de tablet.'
+},
+{
+  icon: <FileSearch className="w-6 h-6 text-fuchsia-600" />,
+  title: 'Document AI & OCR Automatisering',
+  desc: 'Extraheer automatisch data uit facturen, contracten en CMR\'s met Machine Learning.',
+  fullDesc: 'Ouderwetse OCR volstaat niet meer. Wij implementeren geavanceerde Document AI-oplossingen (Google/Azure) die de context van bedrijfsdocumenten écht begrijpen. Automatiseer uw Accounts Payable, douane-documentatie en contractanalyses met 99% nauwkeurigheid zonder handmatige datainvoer.'
+},
+{
+  icon: <MonitorSmartphone className="w-6 h-6 text-indigo-500" />,
+  title: 'B2B Reseller Portalen & CPQ',
+  desc: 'Configure, Price, Quote (CPQ) software voor uw distributeurs en installateurs.',
+  fullDesc: 'Versnel uw channel sales. We bouwen self-service reseller portalen voorzien van een krachtige CPQ-engine. Laat uw B2B-partners zelfstandig complexe, maatwerk producten configureren, bereken real-time hun specifieke kortingen en genereer foutloze PDF-offertes met één klik.'
+},
+{
+  icon: <DatabaseBackup className="w-6 h-6 text-sky-500" />,
+  title: 'PIM Systemen voor Groothandels',
+  desc: 'Product Information Management (PIM) als één bron van waarheid voor uw e-commerce.',
+  fullDesc: 'Elimineer de chaos van verspreide Excel-lijsten. Wij integreren robuuste PIM-systemen (zoals Akeneo of Pimcore) met uw ERP. Centraliseer technische specificaties, media, meertalige vertalingen en distribueer deze data foutloos naar uw B2B webshop, geprinte catalogi en marketplaces.'
+},
+{
+  icon: <TrendingUp className="w-6 h-6 text-emerald-500" />,
+  title: 'AI Demand Forecasting & Voorraad',
+  desc: 'Voorspel toekomstige vraag en optimaliseer werkkapitaal met Machine Learning.',
+  fullDesc: 'Optimaliseer uw supply chain proactief. Wij ontwikkelen slimme forecasting dashboards die historische ERP-data combineren met weersvoorspellingen en markttrends. Verlaag dode voorraden, voorspel de impact van promoties en verhoog uw leverbetrouwbaarheid (Service Level).'
+},
+{
+  icon: <BatteryCharging className="w-6 h-6 text-rose-500" />,
+  title: 'EV Fleet & Laadpaal Beheer',
+  desc: 'Cloud-portalen voor de financiële afhandeling en load-balancing van elektrische vloten.',
+  fullDesc: 'Beheer de vergroening van uw wagenpark digitaal. Wij bouwen portalen voor EV Fleet Management. Integreer automatische split-billing voor thuislaadkosten via payroll, beheer Smart Charging prioriteiten (load balancing) op kantoor en monitor de live actieradius van elektrische bestelwagens.'
 }
 
 ];
