@@ -1510,5 +1510,110 @@ export const blogPosts = [
     "voedselverspilling tegengaan software",
     "predictive ordering restaurant"
   ]
+},
+{
+  "id": "esg-rapportage-belgie-csrd-software",
+  "title": "ESG Rapportage in België: Hoe Software U Helpt Voldoen aan de CSRD",
+  "category": "Duurzaamheid & Compliance",
+  "date": "28 September 2025",
+  "readTime": "8 min lees",
+  "description": "De Europese CSRD-richtlijn verplicht duizenden bedrijven om te rapporteren over hun ecologische voetafdruk. Hoe software deze data-nachtmerrie voorkomt.",
+  "content": "<p>Vanaf 2024/2025 treedt de Corporate Sustainability Reporting Directive (CSRD) in werking. Zelfs als uw KMO niet direct rapportageplichtig is, zullen uw grote B2B-klanten u om uw ESG-data (Environmental, Social, and Governance) vragen om hún rapportages compleet te maken. Geen data betekent geen contract.</p>\n<h2>De Data Uitdaging</h2>\n<p>Het verzamelen van data over CO2-uitstoot, afvalstromen en diversiteit op de werkvloer is extreem versnipperd. Het zit in energiefacturen, HR-software en kilometerregistraties. Het handmatig consolideren in Excel is tijdrovend en foutgevoelig.</p>\n<h3>ESG Rapportage Software</h3>\n<p>DZY Digital bouwt geautomatiseerde ESG-portalen die via API's direct inpluggen op uw bestaande systemen:</p>\n<ul>\n<li><strong>Automatische Data-extractie:</strong> De software leest automatisch slimme energiemeters uit en importeert vloot-data (brandstofverbruik) om uw Scope 1 en 2 emissies real-time te berekenen.</li>\n<li><strong>Leveranciers Portalen (Scope 3):</strong> Nodig uw toeleveranciers uit in een beveiligd portaal waar zij gestructureerd hun milieu-data kunnen uploaden, wat essentieel is voor uw Scope 3 berekening.</li>\n<li><strong>Audit-Proof Rapporten:</strong> Genereer met één druk op de knop CSRD-conforme rapportages, volledig in het vereiste digitale formaat (ESEF) voor accountants en overheden.</li>\n</ul>\n<h2>Maak van Duurzaamheid een USP</h2>\n<p>Door uw ESG-data digitaal op orde te hebben, bent u niet alleen compliant, maar wint u ook aanbestedingen van bedrijven die duurzaamheid eisen in hun supply chain.</p>\n",
+  "tags": [
+    "ESG",
+    "CSRD",
+    "Duurzaamheid",
+    "Compliance"
+  ],
+  "seoKeywords": [
+    "ESG rapportage software België",
+    "CSRD software KMO",
+    "Scope 3 emissies berekenen",
+    "duurzaamheidsrapportage tool Antwerpen"
+  ]
+},
+{
+  "id": "wms-vs-wcs-magazijn-automatisering",
+  "title": "WMS vs. WCS: Waarom Uw Magazijn Beide Nodig Heeft",
+  "category": "Logistiek & Warehouse",
+  "date": "05 Oktober 2025",
+  "readTime": "6 min lees",
+  "description": "U heeft een Warehouse Management System (WMS), maar uw transportbanden lopen vast. Waarom een WCS cruciaal is voor magazijnautomatisering.",
+  "content": "<p>Naarmate e-commerce en B2B-distributie groeien, automatiseren Belgische magazijnen in sneltempo. Ze installeren kilometers aan transportbanden, sorteermachines en Automated Guided Vehicles (AGV's). De vergissing? Denken dat het WMS (Warehouse Management System) deze machines efficiënt kan aansturen.</p>\n<h2>Het Verschil Tussen WMS en WCS</h2>\n<p>Een WMS is het 'brein' voor logistiek (voorraad, orderpicking, verzending). Een <strong>WCS (Warehouse Control System)</strong> is het zenuwstelsel dat de daadwerkelijke machines op milliseconde-niveau aanstuurt.</p>\n<h3>De Kracht van de Middleware</h3>\n<ul>\n<li><strong>Real-time Routering:</strong> Terwijl een doos over de transportband rolt, scant het WCS de barcode. Binnen een fractie van een seconde beslist het WCS of de wissel naar links (inpakken) of rechts (kwaliteitscontrole) moet, zonder het tragere WMS te belasten.</li>\n<li><strong>Machine Onafhankelijkheid:</strong> Als u in de toekomst sorteermachines van merk A en robots van merk B combineert, fungeert het WCS als de vertaler, zodat u niet vastzit aan één hardwareleverancier (vendor lock-in).</li>\n<li><strong>Flessenhals Detectie:</strong> Het WCS-dashboard toont direct waar een doos is vastgelopen, nog voordat de lijn stilvalt.</li>\n</ul>\n<h2>Stroomlijn uw Distributiecentrum</h2>\n<p>DZY Digital ontwikkelt krachtige WCS-architecturen die naadloos integreren met uw bestaande ERP/WMS en de PLC's van uw fysieke magazijnmachines aansturen.</p>\n",
+  "tags": [
+    "WCS",
+    "WMS",
+    "Logistiek",
+    "Automatisering"
+  ],
+  "seoKeywords": [
+    "Warehouse Control System België",
+    "WCS WMS integratie",
+    "magazijn automatisering software",
+    "transportbanden aansturing software"
+  ]
+},
+{
+  "id": "b2b-loyalty-partner-programmas",
+  "title": "B2B Loyalty: Waarom Kortingen Alleen Niet Meer Werken",
+  "category": "Sales & Marketing",
+  "date": "12 Oktober 2025",
+  "readTime": "7 min lees",
+  "description": "B2B-klanten zijn niet langer loyaal voor enkel een staffelkorting. Hoe digitale partnerprogramma's (Partner Relationship Management) loyaliteit opbouwen.",
+  "content": "<p>In de B2C-markt zijn spaarpunten en loyalty-apps de norm. In de B2B-wereld (zoals groothandels of fabrikanten met een dealernetwerk) beperkt loyaliteit zich vaak tot een simpele jaarlijkse volumekorting in het ERP. Dit bouwt geen echte merkloyaliteit op.</p>\n<h2>Partner Relationship Management (PRM)</h2>\n<p>Om distributeurs of installateurs aan uw merk te binden, moet u waarde toevoegen die verder gaat dan de prijs. Een digitaal partnerportaal is de sleutel tot een succesvol B2B Loyalty programma.</p>\n<h3>Functies van een B2B Partner Portaal</h3>\n<ul>\n<li><strong>Tiered Rewards (Gamification):</strong> Installateurs die het niveau 'Gold Partner' bereiken, krijgen niet alleen betere marges, maar ook voorrang bij technische support en toegang tot exclusieve leads in hun regio.</li>\n<li><strong>MDF Beheer (Market Development Funds):</strong> Geef partners een digitaal marketingbudget dat ze direct in het portaal kunnen besteden aan co-branded flyers of online advertenties.</li>\n<li><strong>Certificering en E-learning:</strong> Koppel de kortingsstructuur aan kennis. Partners moeten eerst via het portaal een technische training voltooien voordat ze het nieuwste product mogen verkopen.</li>\n</ul>\n<h2>Bouw een Ecosysteem</h2>\n<p>DZY Digital ontwikkelt PRM-software die uw dealernetwerk transformeert in een loyaal ecosysteem, waarbij uw succes direct gekoppeld is aan hun betrokkenheid.</p>\n",
+  "tags": [
+    "Loyalty",
+    "B2B",
+    "PRM",
+    "Sales"
+  ],
+  "seoKeywords": [
+    "B2B loyalty software België",
+    "Partner Relationship Management systeem",
+    "b2b partner programma portaal",
+    "klantenbinding software groothandel"
+  ]
+},
+{
+  "id": "predictive-maintenance-iot-ai",
+  "title": "Predictive Maintenance: Voorkom Stilstand met IoT en AI",
+  "category": "Industrie 4.0 & AI",
+  "date": "19 Oktober 2025",
+  "readTime": "7 min lees",
+  "description": "Machines die kapot gaan kosten geld. Machines die onnodig onderhouden worden ook. Ontdek hoe AI het perfecte onderhoudsmoment voorspelt.",
+  "content": "<p>In de maakindustrie of bij kritieke infrastructuur (zoals bruggen of pompgemalen) hanteert men vaak Preventief Onderhoud: onderdelen worden standaard na 10.000 uur vervangen. Vaak is het onderdeel echter nog perfect in orde. Dit is weggegooid geld. Predictive Maintenance pakt dit anders aan.</p>\n<h2>Luisteren naar de Machine</h2>\n<p>Door het plaatsen van goedkope IoT-sensoren (trilling, temperatuur, akoestisch) op de bestaande machines, begint de machine te praten. Vanaf dat moment is het een data-vraagstuk.</p>\n<h3>De Rol van Artificial Intelligence</h3>\n<p>Ruwe sensordata is onbruikbaar zonder analyse. Onze algoritmes leren het 'normale' gedrag van een motor of pomp (Machine Learning):</p>\n<ul>\n<li><strong>Anomalie Detectie:</strong> Zodra de AI een minuscule afwijking in het trillingspatroon detecteert (vaak weken voordat een lager daadwerkelijk breekt), stuurt het systeem een alert.</li>\n<li><strong>Geautomatiseerde Werkbonnen:</strong> Het Predictive Maintenance platform creëert direct een digitale werkbon in uw ERP of Field Service app, inclusief het bestelnummer van het reserveonderdeel.</li>\n<li><strong>Restlevensduur Voorspelling (RUL):</strong> De software vertelt u niet alleen dát het stuk gaat, maar ook of u de productie nog veilig tot het weekend kunt draaien.</li>\n</ul>\n<h2>Zero Downtime</h2>\n<p>DZY Digital bouwt de AI-modellen en cloud-dashboards die uw reactieve onderhoudsafdeling transformeren tot een proactief, datagedreven team.</p>\n",
+  "tags": [
+    "Predictive Maintenance",
+    "IoT",
+    "AI",
+    "Industrie 4.0"
+  ],
+  "seoKeywords": [
+    "predictive maintenance software België",
+    "IoT trillingssensoren AI",
+    "voorspellend onderhoud software",
+    "machine learning industrie Antwerpen"
+  ]
+},
+{
+  "id": "headless-ecommerce-b2b-webshops",
+  "title": "Headless E-commerce: Snelheid en Vrijheid voor B2B Webshops",
+  "category": "E-commerce & API",
+  "date": "26 Oktober 2025",
+  "readTime": "8 min lees",
+  "description": "Traditionele e-commerce platforms zijn log. Waarom B2B-bedrijven massaal overstappen op een 'Headless' architectuur voor ultieme flexibiliteit.",
+  "content": "<p>Wanneer een traditionele B2B webshop (zoals Magento of WooCommerce) te groot wordt, lopen bedrijven tegen muren aan. Het aanpassen van het design is traag, en het systeem koppelen aan een nieuw ERP of PIM-systeem is een drama. De oplossing ligt in het scheiden van de voor- en achterkant: Headless E-commerce.</p>\n<h2>Wat betekent 'Headless'?</h2>\n<p>In een headless architectuur (API-first) wordt de frontend (het \"hoofd\", ofwel wat de klant ziet) volledig losgekoppeld van de backend (de motor die prijzen en winkelmandjes berekent). Ze communiceren uitsluitend via snelle API's.</p>\n<h3>De Voordelen voor B2B</h3>\n<ul>\n<li><strong>Ongeëvenaarde Snelheid:</strong> De frontend wordt gebouwd met moderne frameworks (zoals React of Next.js). Pagina's laden in milliseconden, wat cruciaal is voor uw Google SEO en conversie.</li>\n<li><strong>Omnichannel Vrijheid:</strong> U kunt dezelfde backend-API gebruiken om niet alleen uw webshop te voeden, maar ook een mobiele app voor uw klanten of een bestel-zuil (kiosk) in uw fysieke filiaal.</li>\n<li><strong>Best-of-Breed:</strong> U bent niet meer gebonden aan de ingebouwde zoekfunctie van uw webshop. Koppel moeiteloos een AI-zoekmachine (zoals Algolia) of een specialistisch PIM-systeem aan.</li>\n</ul>\n<h2>Future-Proof uw Webshop</h2>\n<p>DZY Digital is pionier in headless e-commerce architecturen in Vlaanderen. Wij migreren logge, verouderde platformen naar wendbare, razendsnelle systemen die klaar zijn voor de toekomst.</p>\n",
+  "tags": [
+    "Headless",
+    "E-commerce",
+    "API",
+    "React"
+  ],
+  "seoKeywords": [
+    "headless e-commerce België",
+    "API first webshop bouwen",
+    "B2B webshop Next.js",
+    "mach architecture e-commerce"
+  ]
 }
 ];

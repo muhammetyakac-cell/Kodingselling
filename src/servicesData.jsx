@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Clock, MapPin,
   Smartphone, CreditCard, Activity, Shield, Cpu, Building2, UserCog, LayoutTemplate, Network, BarChart3, Store, Database, Search, Truck, Microscope, Leaf, Globe, Building, GraduationCap, PackageCheck, Shapes, Landmark, Wallet, Home, Zap, Sprout, ShoppingCart, Rocket, HelpCircle
-, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link} from 'lucide-react';
+, Wind, MonitorPlay, Glasses, Receipt, Utensils, Users, Printer, Link, Code2, Settings, Award} from 'lucide-react';
 
 export const servicesData = [
   {
@@ -489,6 +489,36 @@ export const servicesData = [
   title: 'FoodTech & Predictive Ordering',
   desc: 'Bestrijd voedselverspilling en optimaliseer inkoop met AI-vraagvoorspelling.',
   fullDesc: 'Data-gedreven keukens. Wij ontwikkelen FoodTech software voor horeca-ketens en grootkeukens (catering). Koppel uw kassasysteem aan onze AI-algoritmes die historische data en weersvoorspellingen analyseren om uw inkoop (predictive ordering) tot op de gram nauwkeurig te optimaliseren.'
+},
+{
+  icon: <BarChart3 className="w-6 h-6 text-emerald-600" />,
+  title: 'ESG & CSRD Rapportage Software',
+  desc: 'Automatiseer ecologische data-extractie voor Europese compliance (CSRD).',
+  fullDesc: 'Maak duurzaamheidsrapportage pijnloos. Wij bouwen portalen die via API\'s integreren met uw ERP, HR-systemen en slimme meters. Bereken automatisch Scope 1, 2 en 3 emissies en genereer met één druk op de knop audit-proof rapportages in het vereiste digitale formaat.'
+},
+{
+  icon: <Settings className="w-6 h-6 text-sky-500" />,
+  title: 'Warehouse Control Systems (WCS)',
+  desc: 'Middleware voor de real-time aansturing van transportbanden, sorters en AGV\'s.',
+  fullDesc: 'Het zenuwstelsel van uw magazijn. Ons WCS overbrugt de kloof tussen uw logge WMS en uw fysieke PLC\'s. Optimaliseer de routering van dozen op de transportband in milliseconden, vermijd flessenhalzen en integreer machines van verschillende merken zonder vendor lock-in.'
+},
+{
+  icon: <Award className="w-6 h-6 text-rose-500" />,
+  title: 'B2B Partner & Loyalty Platforms',
+  desc: 'Bouw netwerkloyaliteit via Partner Relationship Management (PRM) portalen.',
+  fullDesc: 'Ga verder dan volumekortingen. Wij ontwikkelen PRM-platformen voor fabrikanten en groothandels. Integreer gamification (partner tiers), beheer marketingfondsen (MDF) en voorzie installateurs van exclusieve e-learning content om de band met uw merk onbreekbaar te maken.'
+},
+{
+  icon: <Activity className="w-6 h-6 text-indigo-500" />,
+  title: 'Predictive Maintenance AI',
+  desc: 'Voorkom machine-uitval door IoT-trillingssensoren te koppelen aan Machine Learning.',
+  fullDesc: 'Transformeer van reactief naar predictief onderhoud. Wij trainen AI-modellen op uw IoT-sensordata (trilling, akoestiek). Detecteer minuscule afwijkingen weken voordat een onderdeel breekt en laat het systeem automatisch werkbonnen aanmaken in uw ERP.'
+},
+{
+  icon: <Code2 className="w-6 h-6 text-fuchsia-500" />,
+  title: 'Headless E-commerce & API-First',
+  desc: 'Razendsnelle B2B webshops gebouwd met moderne frameworks (Next.js / React).',
+  fullDesc: 'Doorbreek de grenzen van traditionele platformen (Magento/WooCommerce). Wij bouwen API-first, headless commerce architecturen. Koppel een bliksemsnelle frontend aan een robuuste backend, perfect voor complexe B2B-prijzen, omnichannel verkoop (apps, kiosken) en superieure SEO.'
 }
 
 ];
