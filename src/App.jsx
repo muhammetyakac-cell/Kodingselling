@@ -92,9 +92,9 @@ const seoData = {
         "description": "Een zakelijk softwarebedrijf dat next-generation technologieadvies en software-engineeringdiensten aanbiedt.",
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+90-555-208-3092",
+          "telephone": "+32-475-940-656",
           "contactType": "customer service",
-          "availableLanguage": ["Turkish", "English"]
+          "availableLanguage": ["Dutch", "English", "Turkish"]
         },
         "sameAs": [
           "https://www.instagram.com/dzydigital",
@@ -102,7 +102,7 @@ const seoData = {
         ],
         "areaServed": {
           "@type": "Country",
-          "name": "Türkiye"
+          "name": "België"
         }
       },
       {
@@ -189,8 +189,8 @@ const seoData = {
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Mobiele en Web Applicaties Geliştirme",
-        "description": "iOS ve Android için native ve çapraz platform mobil uygulamalar, responsive web siteleri ve PWA çözümleri.",
+        "name": "Ontwikkeling van Mobiele en Web Applicaties",
+        "description": "Native en cross-platform mobiele applicaties voor iOS en Android, responsive websites en PWA-oplossingen.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "Softwareontwikkeling"
@@ -198,7 +198,7 @@ const seoData = {
     ]
   },
   expertise: {
-    title: 'Sectorspecifieke Softwareoplossingen | Lojistik, SaaS ve Akademik Sistemler - DZY Digital',
+    title: 'Sectorspecifieke Softwareoplossingen | Logistiek, SaaS en Academische Systemen - DZY Digital',
     description: 'Sectorspecifieke softwareoplossingen voor logistiek vlootbeheer, ontwikkeling van SaaS-platforms en academische archiefsystemen.',
     keywords: 'logistieke software, vlootbeheer, academische archiefsystemen, saas platform ontwikkeling, branchespecifieke software, b2b software integratie, erp oplossingen',
     path: '/expertises',
@@ -206,11 +206,11 @@ const seoData = {
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Sektörel Dijital Dönüşüm Çözümleri",
+        "name": "Sectorale Digitale Transformatie Oplossingen",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Lojistik ve Filo Yönetimi" },
-          { "@type": "ListItem", "position": 2, "name": "SaaS Platformları" },
-          { "@type": "ListItem", "position": 3, "name": "Akademik Dijital Arşiv Sistemleri" }
+          { "@type": "ListItem", "position": 1, "name": "Logistiek en Vlootbeheer" },
+          { "@type": "ListItem", "position": 2, "name": "SaaS Platformen" },
+          { "@type": "ListItem", "position": 3, "name": "Academische Digitale Archiefsystemen" }
         ]
       },
       {
@@ -218,7 +218,7 @@ const seoData = {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" }
+          { "@type": "ListItem", "position": 2, "name": "Sectoroplossingen", "item": "https://www.dzydigital.com/expertises" }
         ]
       }
     ]
@@ -232,7 +232,7 @@ const seoData = {
       {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        "name": "DZY Digital Hakkında",
+        "name": "Over DZY Digital",
         "description": "Next-generation technologieadvies en software-engineeringvisie."
       },
       {
@@ -246,7 +246,7 @@ const seoData = {
     ]
   },
   contact: {
-    title: 'İletişim | Projenizi Başlatın ve Teknoloji Danışmanlığı Alın - DZY Digital',
+    title: 'Contact | Start uw Project en Ontvang Technologieadvies - DZY Digital',
     description: 'DZY Digital Antwerpen contact. Vul het formulier in om uw project te beschrijven en ontvang binnen 24 uur een gratis technisch vooranalyserapport.',
     keywords: 'software offerte aanvragen, software contact, dzy digital telefoon, softwarebedrijf adres, gratis advies',
     path: '/contact',
@@ -256,7 +256,7 @@ const seoData = {
         "@type": "LocalBusiness",
         "name": "DZY Digital - Software Consultancy",
         "image": "https://www.dzydigital.com/og-image.png",
-        "telephone": "+90-555-208-3092",
+        "telephone": "+32-475-940-656",
         "email": "info@dzydigital.com",
         "address": {
           "@type": "PostalAddress",
@@ -268,8 +268,8 @@ const seoData = {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "38.3850",
-          "longitude": "27.1720"
+          "latitude": "51.2094",
+          "longitude": "4.3953"
         },
         "openingHoursSpecification": [
           {
@@ -324,14 +324,14 @@ const seoData = {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
-          { "@type": "ListItem", "position": 2, "name": "İletişim", "item": "https://www.dzydigital.com/contact" }
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.dzydigital.com/contact" }
         ]
       }
     ]
   },
   'sector-logistics': {
-    title: 'Lojistik ve Filo Yönetimi Çözümleri | DZY Digital',
-    description: 'GPS filo takibi, akıllı rota optimizasyonu ve gümrük belge otomasyonu ile lojistik operasyonlarınızı dijitalleştirin.',
+    title: 'Logistiek en Vlootbeheer Oplossingen | DZY Digital',
+    description: 'Digitaliseer uw logistieke operaties met GPS vloottracking, slimme route-optimalisatie en automatisering van douanedocumenten.',
     keywords: 'logistiek vlootbeheer, voertuigvolgsysteem, route-optimalisatiesoftware, automatisering documentenstroom douane, gps tracking',
     path: '/sector/logistiek',
     schema: [
@@ -349,49 +349,49 @@ const seoData = {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" },
-          { "@type": "ListItem", "position": 3, "name": "Lojistik", "item": "https://www.dzydigital.com/sektor/lojistik" }
+          { "@type": "ListItem", "position": 2, "name": "Sectoroplossingen", "item": "https://www.dzydigital.com/expertises" },
+          { "@type": "ListItem", "position": 3, "name": "Logistiek", "item": "https://www.dzydigital.com/sektor/lojistik" }
         ]
       }
     ]
   },
   'sector-saas': {
-    title: 'SaaS ve Platform Ürün Geliştirme | DZY Digital',
-    description: 'Multi-tenant SaaS altyapısı, Stripe abonelik entegrasyonu ve ölçeklenebilir bulut mimarisi ile ürününüzü pazara taşıyın.',
+    title: 'SaaS en Platform Productontwikkeling | DZY Digital',
+    description: 'Breng uw product op de markt met multi-tenant SaaS-infrastructuur, Stripe-abonnementsintegratie en schaalbare cloudarchitectuur.',
     keywords: 'saas ontwikkeling, abonnementen software, multi-tenant architectuur, stripe integratie, saas infrastructuur, cloud platform',
     path: '/sector/saas',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "SaaS Platform Geliştirme",
-        "description": "Abonelik bazlı SaaS ürünleriniz için çoklu kiracılı, güvenli ve ölçeklenebilir bulut altyapıları.",
+        "name": "SaaS Platform Ontwikkeling",
+        "description": "Multi-tenant, veilige en schaalbare cloudinfrastructuren voor uw abonnementsgebaseerde SaaS-producten.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
-        "serviceType": "SaaS Geliştirme"
+        "serviceType": "SaaS Ontwikkeling"
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" },
+          { "@type": "ListItem", "position": 2, "name": "Sectoroplossingen", "item": "https://www.dzydigital.com/expertises" },
           { "@type": "ListItem", "position": 3, "name": "SaaS", "item": "https://www.dzydigital.com/sektor/saas" }
         ]
       }
     ]
   },
   'sector-academic': {
-    title: 'Akademik ve Bilimsel Dijital Arşiv Sistemleri | DZY Digital',
-    description: 'KVKK uyumlu bilimsel veri arşivi, Dublin Core entegrasyonu ve güvenli akademik veri paylaşım altyapıları geliştirme.',
+    title: 'Academische en Wetenschappelijke Digitale Archiefsystemen | DZY Digital',
+    description: 'Ontwikkeling van GDPR-conforme wetenschappelijke data-archieven, Dublin Core integratie en veilige academische data-uitwisselingsinfrastructuren.',
     keywords: 'academisch data-archief, wetenschappelijke inventarissoftware, digitale bibliotheekinfrastructuur, veilig delen van gegevens, dublin core',
     path: '/sector/academisch',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Akademik Dijital Arşiv Sistemleri",
-        "description": "Araştırma verileri, numune yönetimi ve güvenli paylaşım için kurumlara özel dijital arşiv çözümleri.",
+        "name": "Academische Digitale Archiefsystemen",
+        "description": "Digitale archiefoplossingen op maat voor instellingen, voor onderzoeksgegevens, monsterbeheer en veilig delen.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "Academische Softwareontwikkeling"
@@ -401,23 +401,23 @@ const seoData = {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Sektörel Çözümler", "item": "https://www.dzydigital.com/expertises" },
-          { "@type": "ListItem", "position": 3, "name": "Akademik", "item": "https://www.dzydigital.com/sektor/akademik" }
+          { "@type": "ListItem", "position": 2, "name": "Sectoroplossingen", "item": "https://www.dzydigital.com/expertises" },
+          { "@type": "ListItem", "position": 3, "name": "Academisch", "item": "https://www.dzydigital.com/sektor/akademik" }
         ]
       }
     ]
   },
   'sector-ecommerce': {
-    title: 'B2B E-Ticaret ve Pazaryeri Sistemleri | DZY Digital',
-    description: 'Bayi ağınızı yönetin, tahsilatları ve B2B siparişleri otomatize edin. Özelleştirilebilir pazaryeri ve e-ticaret altyapıları.',
+    title: 'B2B E-commerce en Marktplaatssystemen | DZY Digital',
+    description: 'Beheer uw dealernetwerk, automatiseer incasso en B2B-bestellingen. Aanpasbare marktplaats- en e-commerce infrastructuren.',
     keywords: 'b2b e-commerce software, marktplaatssoftware, multi-vendor e-commerce, b2b bestelsysteem, dealer management systeem',
     path: '/sector/ecommerce',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "B2B E-Ticaret Sistemleri",
-        "description": "Kapalı devre bayi siparişleri ve çok satıcılı e-ticaret (marketplace) altyapıları.",
+        "name": "B2B E-commerce Systemen",
+        "description": "Gesloten dealer bestelsystemen en multi-vendor e-commerce (marketplace) infrastructuren.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "E-Commerce Softwareontwikkeling"
@@ -442,8 +442,8 @@ const seoData = {
     ]
   },
   'sector-production': {
-    title: 'Endüstriyel Üretim Takip ve ERP Sistemleri | DZY Digital',
-    description: 'Fabrikanızdaki makinelerden canlı veri alın, üretim süreçlerinizi dijitalleştirin. Modern ve esnek ERP altyapıları.',
+    title: 'Industriële Productie Tracking en ERP Systemen | DZY Digital',
+    description: 'Ontvang live data van machines in uw fabriek en digitaliseer uw productieprocessen. Moderne en flexibele ERP-infrastructuren.',
     keywords: 'productie trackingsysteem, industriële iot, modern erp programma, fabrieksautomatisering software, uitval analyse',
     path: '/sector/productie',
     schema: [
@@ -451,7 +451,7 @@ const seoData = {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Productie Tracking en ERP Software",
-        "description": "Üretim bandından anlık veri alarak fire oranlarını azaltan ERP çözümleri.",
+        "description": "ERP-oplossingen die het uitvalpercentage verlagen door real-time gegevens van de productielijn te ontvangen.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "ERP Softwareontwikkeling"
@@ -459,16 +459,16 @@ const seoData = {
     ]
   },
   'sector-health': {
-    title: 'Sağlık, Klinik ve Hastane Bilgi Sistemleri (HBS) | DZY Digital',
-    description: 'KVKK uyumlu hasta kayıt portalı, randevu takip modülü ve e-reçete entegreli yeni nesil hastane yönetim programları.',
+    title: 'Gezondheid, Kliniek en Ziekenhuisinformatiesystemen (HIS) | DZY Digital',
+    description: 'GDPR-conforme patiëntregistratieportalen, afspraakbeheermodules en e-receptintegratie voor next-gen ziekenhuisbeheerprogrammas.',
     keywords: 'ziekenhuisinformatiesysteem, his software, kliniek tracking programma, gdpr compliant patiëntportaal, gezondheidstechnologieën',
     path: '/sector/gezondheidszorg',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Sağlık ve Hastane Bilgi Sistemleri",
-        "description": "Klinik ve hastaneler için randevu takibi ve dijital arşiv sağlayan otomasyonlar.",
+        "name": "Gezondheids- en Ziekenhuisinformatiesystemen",
+        "description": "Automatiseringen voor klinieken en ziekenhuizen die afspraakbeheer en digitale archivering bieden.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "Gezondheidszorg Softwareontwikkeling"
@@ -476,16 +476,16 @@ const seoData = {
     ]
   },
   'sector-education': {
-    title: 'Okul, K-12 ve Eğitim Portalları (LMS) | DZY Digital',
-    description: 'Online sınav analizi, veli bilgilendirme sistemi ve e-öğrenme modüllerini tek bir çatıda toplayan okul yönetim altyapıları.',
+    title: 'School, K-12 en Onderwijsportalen (LMS) | DZY Digital',
+    description: 'Schoolbeheerinfrastructuren die online examenanalyse, ouderinformatiesystemen en e-learningmodules onder één dak brengen.',
     keywords: 'schoolmanagementsysteem, lms software, onderwijsportaal ontwikkeling, online examen software, studentenvolgsysteem',
     path: '/sector/onderwijs',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Eğitim ve LMS Platformları",
-        "description": "Okullar için veli bilgilendirme, sınav analizi ve e-öğrenme odaklı eğitim yönetim portalları.",
+        "name": "Onderwijs- en LMS-platforms",
+        "description": "Onderwijsbeheerportalen voor scholen gericht op ouderinformatie, examenanalyse en e-learning.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "Onderwijs Softwareontwikkeling"
@@ -493,16 +493,16 @@ const seoData = {
     ]
   },
   'sector-fintech': {
-    title: 'Finans Teknolojileri ve Açık Bankacılık | DZY Digital',
-    description: 'Dijital cüzdan, açık bankacılık regülasyonlarına uyumlu API ve ödeme geçidi çözümleri.',
+    title: 'Financiële Technologieën en Open Banking | DZY Digital',
+    description: 'Digitale portemonnee, API conform open banking regelgeving en payment gateway-oplossingen.',
     keywords: 'fintech software, open banking api, payment gateway integratie, digitale portemonnee software, virtuele pos integratie',
     path: '/sector/fintech',
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Finans Teknolojileri (FinTech)",
-        "description": "Banka entegrasyonları, cüzdan sistemleri ve açık bankacılık çözümleri.",
+        "name": "Financiële Technologieën (FinTech)",
+        "description": "Bankintegraties, portemonneesystemen en open banking-oplossingen.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "Financiële Softwareontwikkeling"
@@ -510,7 +510,7 @@ const seoData = {
     ]
   },
   'sector-realestate': {
-    title: 'Gayrimenkul ve PropTech Sistemleri | DZY Digital',
+    title: 'Vastgoed en PropTech Systemen | DZY Digital',
     description: 'Proptech-oplossingen, automatisering van huurinning en slimme gebouwsoftware voor het beheren van grote vastgoedportefeuilles.',
     keywords: 'proptech software, vastgoedbeheersysteem, slimme gebouwautomatisering, huurinning software, vastgoed software',
     path: '/sector/vastgoed',
@@ -519,7 +519,7 @@ const seoData = {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "PropTech en Vastgoedsoftware",
-        "description": "Emlak portföy yönetimi ve akıllı bina yönetim sistemleri.",
+        "description": "Vastgoedportefeuillebeheer en slimme gebouwbeheersystemen.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "Vastgoed Softwareontwikkeling"
@@ -527,7 +527,7 @@ const seoData = {
     ]
   },
   'sector-energy': {
-    title: 'Akıllı Şehir ve Enerji Otomasyonları | DZY Digital',
+    title: 'Smart City en Energie Automatisering | DZY Digital',
     description: 'Smart grid monitoring, analyse van energieverbruik en duurzame energiesoftware aangedreven door IoT.',
     keywords: 'smart city oplossingen, energieautomatisering, iot energietracking, smart grid software, energieverbruiksanalyse',
     path: '/sector/energie',
@@ -535,7 +535,7 @@ const seoData = {
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Enerji ve Akıllı Şehir Sistemleri",
+        "name": "Energie- en Smart City-systemen",
         "description": "Analyse van energieverbruik en IoT-ondersteunde smart city-software.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
@@ -544,7 +544,7 @@ const seoData = {
     ]
   },
   'sector-agritech': {
-    title: 'Tarım Teknolojileri ve Agrotech | DZY Digital',
+    title: 'Landbouwtechnologieën en Agrotech | DZY Digital',
     description: 'Kasautomatisering, sensorgebaseerde slimme irrigatie en farm-to-fork productie tracking (AgriTech) software.',
     keywords: 'agrotech software, slimme landbouwtechnologieën, kasautomatisering, slim irrigatiesysteem, landbouw iot',
     path: '/sector/agritech',
@@ -552,8 +552,8 @@ const seoData = {
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Tarım Teknolojileri (AgriTech)",
-        "description": "Sera otomasyonu ve sensör bazlı akıllı sulama sistemleri.",
+        "name": "Landbouwtechnologieën (AgriTech)",
+        "description": "Kasautomatisering en sensorgebaseerde slimme irrigatiesystemen.",
         "provider": { "@type": "Organization", "name": "DZY Digital" },
         "areaServed": "BE",
         "serviceType": "Landbouw Softwareontwikkeling"
@@ -561,8 +561,8 @@ const seoData = {
     ]
   },
   'sector-retail': {
-    title: 'Perakende ve Mağazacılık (POS) Sistemleri | DZY Digital',
-    description: 'Çok şubeli perakende zincirleri için bulut POS, stok yönetimi, crm ve müşteri sadakat programları.',
+    title: 'Retail en Winkel (POS) Systemen | DZY Digital',
+    description: 'Cloud POS, voorraadbeheer, CRM en klantloyaliteitsprogrammas voor retailketens met meerdere vestigingen.',
     keywords: 'cloud pos software, retailsysteem, retail erp, klantloyaliteitsprogramma software, multi-branch beheer',
     path: '/sector/retail',
     schema: [
@@ -586,7 +586,7 @@ const seoData = {
       {
         "@context": "https://schema.org",
         "@type": "Blog",
-        "name": "DZY Digital Bilgi Bankası",
+        "name": "DZY Digital Kennisbank",
         "url": "https://www.dzydigital.com/blog",
         "description": "Deskundige inhoud over software, technologie en digitale transformatie.",
         "publisher": {
