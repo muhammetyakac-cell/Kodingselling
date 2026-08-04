@@ -31,7 +31,7 @@ const homeBoxesData = [
     bg: 'bg-indigo-50',
     title: 'End-to-End Ontwikkeling',
     desc: 'We schrijven niet zomaar code; we ontwerpen hoogwaardige digitale producten die volledig zijn geïntegreerd in het web, mobiel en cloud ecosysteem.',
-    fullDesc: 'Modern web teknolojileri ve güvenilir backend altyapıları ile fikrinizi canlıya taşıyoruz.'
+    fullDesc: 'We brengen uw idee tot leven met moderne webtechnologieën en betrouwbare backend-infrastructuur.'
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const homeBoxesData = [
     bg: 'bg-slate-50',
     title: 'Row Level Security (RLS)',
     desc: 'We beschermen uw gegevens direct op databaseniveau met onbreekbare RLS-regels.',
-    fullDesc: 'Veri güvenliğini uygulama seviyesinden öteye taşıyarak bulut çekirdeğinde koruyoruz.'
+    fullDesc: 'We beschermen gegevensbeveiliging tot in de cloud-kern en brengen het verder dan het applicatieniveau.'
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const homeBoxesData = [
     bg: 'bg-emerald-50',
     title: 'Naadloze Betalingen',
     desc: 'We automatiseren uw cashflow met wereldwijde betalingssystemen, portemonnee-infrastructuren en commissieverdelingsmodellen.',
-    fullDesc: 'Abonelik ve tek seferlik ödeme modellerini güvenli şekilde entegre ediyoruz.'
+    fullDesc: 'We integreren abonnementen en eenmalige betaalmodellen op een veilige manier.'
   }
 ];
 
@@ -781,7 +781,7 @@ export default function App() {
       setIsAdminAuthenticated(true);
     } catch (error) {
       setIsAdminAuthenticated(false);
-      setAdminError('Şifre hatalı veya admin verilerine erişilemiyor.');
+      setAdminError('Wachtwoord onjuist of admingegevens niet toegankelijk.');
     } finally {
       setIsAdminLoading(false);
     }
@@ -810,7 +810,7 @@ export default function App() {
           return {
             title: post.title + ' | DZY Digital',
             description: post.excerpt,
-            keywords: 'yazılım, dijital dönüşüm, teknoloji makalesi, ' + post.category.toLowerCase(),
+            keywords: 'software, digitale transformatie, technologieartikel, ' + post.category.toLowerCase(),
             path: '/blog/' + post.slug,
             schema: [
               {
@@ -944,7 +944,7 @@ export default function App() {
       </main>
 
       <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800" itemScope itemType="https://schema.org/LocalBusiness">
-        <meta itemProp="name" content="DZY Digital - Yazılım Danışmanlığı" />
+        <meta itemProp="name" content="DZY Digital - Software Consultancy" />
         <meta itemProp="image" content="https://www.dzydigital.com/og-image.png" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-8 md:mb-0">
@@ -1032,7 +1032,7 @@ function AdminPanelModal({
 
         {!isAuthenticated ? (
           <div className="p-8 space-y-6">
-            <p className="text-slate-600">Bu alana erişmek için ENV'e eklenen admin şifresini girin (`ADMIN_KEY`).</p>
+            <p className="text-slate-600">Voer het beheerderswachtwoord in dat aan de ENV is toegevoegd om toegang te krijgen (`ADMIN_KEY`).</p>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -1544,7 +1544,7 @@ function AboutView() {
             <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">DZY Software Consultancy: Uw Digitale Transformatie Partner</h1>
             <h2 className="text-xl font-bold text-slate-800 mb-4">Verschillende Disciplines, Eén Analytische Aanpak.</h2>
             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
-              <p><strong className="text-slate-900">DZY Yazılım Danışmanlığı</strong> firması olarak teknolojiyi şirketlerin dijital dönüşüm süreçlerindeki karmaşık sorunlarını çözen bir köprü olarak görüyoruz.</p>
+              <p><strong className="text-slate-900">DZY Software Consultancy</strong> zien we technologie als een brug die de complexe problemen in de digitale transformatieprocessen van bedrijven oplost.</p>
               <p>We beschouwen software niet slechts als een interface, maar als een professionele ingenieursdiscipline die datastromen, cloudbeveiliging en bedrijfslogica end-to-end structureert.</p>
             </div>
             <div className="mt-12 p-8 bg-indigo-50 rounded-2xl border border-indigo-100 flex flex-col md:flex-row gap-6 items-center">
@@ -1691,7 +1691,7 @@ function ContactView() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label className="block text-sm font-semibold text-slate-900 mb-2">Bedrijfsnaam</label>
-                      <input required type="text" value={formData.company} onChange={(e) => updateField('company', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Şirket A.Ş." />
+                      <input required type="text" value={formData.company} onChange={(e) => updateField('company', e.target.value)} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Bedrijf N.V." />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-slate-900 mb-2">Project Budgetbereik</label>
