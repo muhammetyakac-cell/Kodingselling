@@ -1627,17 +1627,17 @@ function ContactView() {
         if (!response.ok) {
           throw new Error('Lead submission failed');
         }
-        console.log("Form başarıyla gönderildi, etiket tetikleniyor...");
+        console.log("Form submitted successfully, triggering tag...");
         setFormStatus('success');
 
-        // --- GOOGLE ADS DÖNÜŞÜM ETİKETİ VE DEBUG ---[cite: 1]
+        // --- GOOGLE ADS CONVERSION TAG ---
         if (window.gtag) {
           window.gtag('event', 'conversion', {
             'send_to': 'AW-18130314578/0icoCPCp3aUcENLKmsVD'
           });
-          console.log("Google Ads Etiketi Başarıyla Gönderildi!");
+          console.log("Google Ads Tag Sent Successfully!");
         } else {
-          console.error("HATA: window.gtag tanımlı değil! index.html kontrol edilmeli.");
+          console.error("ERROR: window.gtag is not defined! Check index.html.");
         }
         // ------------------------------------------
       })
