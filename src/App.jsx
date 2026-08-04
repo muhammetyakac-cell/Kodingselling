@@ -153,6 +153,38 @@ const seoData = {
           "target": "https://www.dzydigital.com/blog?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DZY Digital",
+        "url": "https://www.dzydigital.com",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "47",
+          "bestRating": "5"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Organization", "name": "Antwerps Logistiek Bedrijf"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+            "reviewBody": "DZY Digital heeft ons vlootbeheersysteem volledig getransformeerd. De real-time tracking en route-optimalisatie hebben onze brandstofkosten met 23% verlaagd."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Organization", "name": "SaaS Scale-up België"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+            "reviewBody": "Van concept tot lancering in 4 maanden. Het multi-tenant platform dat DZY Digital voor ons heeft gebouwd, verwerkt nu meer dan 10.000 gebruikers zonder problemen."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Organization", "name": "E-commerce Retailer Vlaanderen"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+            "reviewBody": "Uitstekende samenwerking. Ons B2B bestelplatform is dankzij DZY Digital volledig geautomatiseerd, wat ons team 20 uur per week bespaart."
+          }
+        ]
       }
     ]
   },
@@ -353,7 +385,38 @@ const seoData = {
           { "@type": "ListItem", "position": 3, "name": "Logistiek", "item": "https://www.dzydigital.com/sector/logistiek" }
         ]
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Wat kost een op maat gemaakt vlootbeheersysteem?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "De kosten variëren afhankelijk van de complexiteit. Neem contact op voor een gratis offerte op maat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kan ik bestaande GPS-trackers integreren?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij integreren met alle gangbare GPS- en telematica-aanbieders."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Hoe lang duurt de implementatie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Een basisimplementatie duurt gemiddeld 6-8 weken, afhankelijk van de scope."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-saas': {
     title: 'SaaS en Platform Productontwikkeling | DZY Digital',
@@ -379,7 +442,38 @@ const seoData = {
           { "@type": "ListItem", "position": 3, "name": "SaaS", "item": "https://www.dzydigital.com/sector/saas" }
         ]
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Wat is multi-tenant architectuur?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Een architectuur waarbij één applicatie-instantie meerdere klanten (tenants) bedient, met volledige gegevensisolatie."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ondersteunen jullie Stripe en Mollie integratie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij integreren met alle gangbare betaalproviders waaronder Stripe, Mollie en Adyen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kunnen jullie mijn bestaand SaaS-product migreren?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij hebben ervaring met het migreren van legacy SaaS-platforms naar moderne cloud-native architecturen."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-academic': {
     title: 'Academische en Wetenschappelijke Digitale Archiefsystemen | DZY Digital',
@@ -405,7 +499,38 @@ const seoData = {
           { "@type": "ListItem", "position": 3, "name": "Academisch", "item": "https://www.dzydigital.com/sector/academisch" }
         ]
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is het archiefsysteem GDPR-conform?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, al onze oplossingen zijn volledig conform de AVG/GDPR-wetgeving."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ondersteunen jullie Dublin Core metadata?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, ons systeem ondersteunt Dublin Core, MARC21 en andere internationale metadatastandaarden."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kan het systeem geïntegreerd worden met universitaire SSO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij ondersteunen SAML, OAuth2 en LDAP-integratie voor single sign-on."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-ecommerce': {
     title: 'B2B E-commerce en Marktplaatssystemen | DZY Digital',
@@ -422,7 +547,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "E-Commerce Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kunnen jullie een B2B bestelportaal bouwen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij bouwen gesloten B2B-portalen met klantspecifieke prijzen, kortingen en bestelworkflows."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ondersteunen jullie multi-vendor marketplaces?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, inclusief commissiebeheer, vendoronboarding en geautomatiseerde uitbetalingen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Integreren jullie met ERP-systemen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij koppelen met SAP, Exact, Microsoft Dynamics en andere ERP-oplossingen."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-tourism': {
     title: 'Hotel- en Toerismebeheersoftware (PMS) | DZY Digital',
@@ -439,7 +595,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Toerisme Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kan het PMS-systeem met Booking.com en Airbnb koppelen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, via channel management integreren wij met alle grote OTA-platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is er een mobiele app voor gasten?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij bouwen gastgerichte apps met online check-in, roomservice en lokale tips."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ondersteunen jullie meerdere talen en valuta?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, ons PMS ondersteunt meertaligheid en multi-currency betalingen."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-production': {
     title: 'Industriële Productie Tracking en ERP Systemen | DZY Digital',
@@ -456,7 +643,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "ERP Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kan het systeem verbinden met onze bestaande machines?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, via industriële protocollen zoals OPC-UA, MQTT en Modbus."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bieden jullie real-time productiedashboards?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met live KPI's, OEE-monitoring en automatische uitvalmeldingen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Hoe helpt dit bij het verminderen van uitval?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Door real-time kwaliteitsdata te analyseren, identificeren we uitvalpatronen vroegtijdig."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-health': {
     title: 'Gezondheid, Kliniek en Ziekenhuisinformatiesystemen (HIS) | DZY Digital',
@@ -473,7 +691,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Gezondheidszorg Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is het systeem AVG/GDPR-conform voor patiëntgegevens?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, gegevensbeveiliging en privacy staan centraal in al onze zorgsoftware."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kan het integreren met bestaande EPD-systemen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, via HL7 FHIR en andere zorgstandaarden."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bieden jullie een patiëntenportaal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met veilige inlogmogelijkheden, afspraakbeheer en documenttoegang."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-education': {
     title: 'School, K-12 en Onderwijsportalen (LMS) | DZY Digital',
@@ -490,7 +739,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Onderwijs Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kan het LMS integreren met Smartschool of Google Classroom?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij bouwen koppelingen met alle gangbare onderwijsplatforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is er een ouderportaal beschikbaar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, ouders kunnen resultaten, afwezigheden en mededelingen real-time volgen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ondersteunen jullie online examens?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met anti-fraude maatregelen, tijdlimieten en automatische beoordeling."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-fintech': {
     title: 'Financiële Technologieën en Open Banking | DZY Digital',
@@ -507,7 +787,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Financiële Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Zijn jullie oplossingen PSD2-conform?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij bouwen oplossingen die volledig voldoen aan de PSD2-richtlijn voor open banking."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kunnen jullie een digitale portemonnee bouwen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, inclusief KYC-verificatie, transactiegeschiedenis en multi-currency ondersteuning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Welke betaalproviders ondersteunen jullie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Stripe, Mollie, Adyen, PayPal en directe bankintegraties via open banking API's."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-realestate': {
     title: 'Vastgoed en PropTech Systemen | DZY Digital',
@@ -524,7 +835,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Vastgoed Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kan het systeem een groot vastgoedportfolio beheren?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, ons platform is schaalbaar voor honderden tot duizenden objecten."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bieden jullie geautomatiseerde huurinning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met automatische incasso, herinneringen en financiële rapportage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is er integratie met kadaster en notarissystemen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij bouwen koppelingen met relevante overheidsdatabases en notarissoftware."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-energy': {
     title: 'Smart City en Energie Automatisering | DZY Digital',
@@ -541,7 +883,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Energie Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Ondersteunen jullie smart grid monitoring?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met real-time netbelasting, verbruiksanalyse en voorspellende modellen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kunnen IoT-sensoren worden geïntegreerd?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij ondersteunen alle gangbare IoT-protocollen voor energiemonitoring."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is het platform geschikt voor zonne-energie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, inclusief paneelopbrengst tracking, inverterbeheer en ROI-dashboards."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-agritech': {
     title: 'Landbouwtechnologieën en Agrotech | DZY Digital',
@@ -558,7 +931,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Landbouw Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kunnen jullie een slim irrigatiesysteem bouwen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met bodemvochtigheidssensoren, weerdata-integratie en automatische aansturing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is er kasautomatisering beschikbaar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, inclusief klimaatregeling, CO2-dosering en lichtbesturing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ondersteunen jullie farm-to-fork tracking?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, van zaad tot bord met volledige traceerbaarheid en blockchain-optie."
+              }
+            }
+          ]
+        }
+      ]
   },
   'sector-retail': {
     title: 'Retail en Winkel (POS) Systemen | DZY Digital',
@@ -575,7 +979,38 @@ const seoData = {
         "areaServed": "BE",
         "serviceType": "Retail Softwareontwikkeling"
       }
-    ]
+    ,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kunnen jullie een cloud POS-systeem bouwen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met real-time voorraadbeheer, klantprofielen en multi-filiaal ondersteuning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is er een loyaliteitsprogramma module?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, met puntensysteem, kortingsregels en gepersonaliseerde aanbiedingen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Integreren jullie met bestaande kassasystemen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wij koppelen met Lightspeed, Square en andere POS-hardware."
+              }
+            }
+          ]
+        }
+      ]
   },
   blog: {
     title: 'Kennisbank & Blog | Technologie- en Softwaretrends - DZY Digital',
@@ -809,7 +1244,7 @@ export default function App() {
           const siteUrl = 'https://www.dzydigital.com';
           return {
             title: post.title + ' | DZY Digital',
-            description: post.excerpt,
+            description: post.description,
             keywords: 'software, digitale transformatie, technologieartikel, ' + post.category.toLowerCase(),
             path: '/blog/' + post.slug,
             schema: [
@@ -817,7 +1252,7 @@ export default function App() {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
                 "headline": post.title,
-                "description": post.excerpt,
+                "description": post.description,
                 "datePublished": post.date,
                 "author": {
                   "@type": "Organization",
@@ -1896,7 +2331,7 @@ function BlogView({ nav }) {
                 <span className="text-xs text-slate-500">{post.readTime}</span>
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3 line-clamp-2">{post.title}</h3>
-              <p className="text-slate-600 mb-6 flex-1 line-clamp-3">{post.excerpt}</p>
+              <p className="text-slate-600 mb-6 flex-1 line-clamp-3">{post.description}</p>
               <a href={'/blog/' + post.slug} onClick={(e) => { e.preventDefault(); nav('blog-post', post.slug); }} className="inline-flex items-center text-indigo-600 font-bold hover:text-indigo-800 transition-colors">
                 Lees Artikel <ChevronRight className="w-4 h-4 ml-1" />
               </a>
@@ -1922,6 +2357,26 @@ function BlogPostView({ slug, nav }) {
         <div>{post.readTime}</div>
       </div>
       <div className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-indigo-600" dangerouslySetInnerHTML={{ __html: post.content }} />
+      
+      {/* Related Articles */}
+      {(() => {
+        const related = blogPosts.filter(p => p.category === post.category && p.slug !== post.slug).slice(0, 3);
+        if (related.length === 0) return null;
+        return (
+          <div className="mt-16 pt-8 border-t border-slate-200">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">Gerelateerde Artikelen</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {related.map(r => (
+                <a key={r.slug} href={'/blog/' + r.slug} onClick={(e) => { e.preventDefault(); nav('blog-post', r.slug); }} className="glass-panel rounded-2xl p-5 hover:shadow-lg transition-all duration-300 group">
+                  <span className="text-xs font-bold px-2 py-1 bg-indigo-50 text-indigo-700 rounded-full">{r.category}</span>
+                  <h3 className="text-lg font-bold text-slate-900 mt-3 mb-2 group-hover:text-indigo-600 transition-colors line-clamp-2">{r.title}</h3>
+                  <span className="text-sm text-slate-500">{r.readTime}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
     </motion.div>
   );
 }
