@@ -17,7 +17,7 @@ import {
   MapPin, Mail, Phone, Clock, MessageSquare,
   Send, X, Menu, ChevronDown, ChevronUp,
   Code2, Server, Cloud, CheckCircle2,
-  HelpCircle, ArrowLeft, Building, GraduationCap,
+  HelpCircle, ArrowLeft, ArrowRight, Building, GraduationCap,
   PackageCheck, Shapes, Landmark, Wallet, Home,
   Zap, Sprout, ShoppingCart
 } from 'lucide-react';
@@ -1135,12 +1135,14 @@ export default function App() {
   const getTabFromPath = (path) => {
     if (path.startsWith('/blog/categorie/')) return 'blog-category';
     if (path.startsWith('/blog/')) return 'blog-post';
+    if (path.startsWith('/diensten/')) return 'service-detail';
     return pathToTab[path] || 'home';
   };
   
   const [activeTab, setActiveTab] = useState(getTabFromPath(window.location.pathname));
   const [currentSlug, setCurrentSlug] = useState(() => {
     if (window.location.pathname.startsWith('/blog/')) return window.location.pathname.split('/blog/')[1];
+    if (window.location.pathname.startsWith('/diensten/')) return window.location.pathname.split('/diensten/')[1];
     return null;
   });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -1175,6 +1177,9 @@ export default function App() {
       if (path.startsWith('/blog/')) {
         setCurrentSlug(path.split('/blog/')[1]);
       }
+      if (path.startsWith('/diensten/')) {
+        setCurrentSlug(path.split('/diensten/')[1]);
+      }
     };
     window.addEventListener('popstate', onPopState);
     return () => {
@@ -1190,6 +1195,9 @@ export default function App() {
     if (tab === 'blog-post' && slug) {
       setCurrentSlug(slug);
       path = '/blog/' + slug;
+    } else if (tab === 'service-detail' && slug) {
+      setCurrentSlug(slug);
+      path = '/diensten/' + slug;
     }
     window.history.pushState({}, '', path);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1231,6 +1239,7 @@ export default function App() {
     if (activeTab === 'contact') return <ContactView />;
     if (activeTab === 'blog') return <BlogView nav={nav} />;
     if (activeTab === 'blog-post') return <BlogPostView slug={currentSlug} nav={nav} />;
+    if (activeTab === 'service-detail') return <ServiceDetailView slug={currentSlug} nav={nav} />;
     if (activeTab.startsWith('sector-')) return <SectorLandingView tab={activeTab} nav={nav} />;
     return <HomeView nav={nav} />;
   };
@@ -1239,52 +1248,119 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-indigo-100 selection:text-indigo-900">
       <SEOManager 
         activeTab={activeTab} 
-        dynamicSeo={activeTab === 'blog-post' ? (() => {
-          const post = blogPosts.find(p => p.slug === currentSlug);
-          if (!post) return null;
+        dynamicSeo={(activeTab === 'blog-post' || activeTab === 'service-detail') ? (() => {
           const siteUrl = 'https://www.dzydigital.com';
-          return {
-            title: post.title + ' | DZY Digital',
-            description: post.description,
-            keywords: 'software, digitale transformatie, technologieartikel, ' + post.category.toLowerCase(),
-            path: '/blog/' + post.slug,
-            schema: [
+          if (activeTab === 'blog-post') {
+            const post = blogPosts.find(p => p.slug === currentSlug);
+            if (!post) return null;
+            return {
+              title: post.title + ' | DZY Digital',
+              description: post.description,
+              keywords: 'software, digitale transformatie, technologieartikel, ' + post.category.toLowerCase(),
+              path: '/blog/' + post.slug,
+              schema: [
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  "headline": post.title,
+                  "description": post.description,
+                  "datePublished": post.date,
+                  "author": {
+                    "@type": "Person",
+                    "name": "Muhammet Yakac",
+                    "url": "https://www.linkedin.com/in/muhammetyakac/"
+                  },
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "DZY Digital",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": siteUrl + '/og-image.png'
+                    }
+                  },
+                  "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": siteUrl + '/blog/' + post.slug
+                  },
+                  "image": siteUrl + '/og-image.png'
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl + "/" },
+                    { "@type": "ListItem", "position": 2, "name": "Blog", "item": siteUrl + "/blog" },
+                    { "@type": "ListItem", "position": 3, "name": post.title, "item": siteUrl + "/blog/" + post.slug }
+                  ]
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Person",
+                  "name": "Muhammet Yakac",
+                  "jobTitle": "Oprichter & Software Engineer",
+                  "worksFor": {
+                    "@type": "Organization",
+                    "name": "DZY Digital"
+                  },
+                  "url": "https://www.linkedin.com/in/muhammetyakac/"
+                }
+              ]
+            };
+          }
+          if (activeTab === 'service-detail') {
+            const CITIES = ['antwerpen', 'brussel', 'gent', 'brugge', 'leuven', 'mechelen'];
+            const capitalize = (s) => s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+            
+            let baseSlug = currentSlug;
+            let city = null;
+            
+            for (const c of CITIES) {
+              if (currentSlug && currentSlug.endsWith('-' + c)) {
+                baseSlug = currentSlug.substring(0, currentSlug.length - c.length - 1);
+                city = c;
+                break;
+              }
+            }
+
+            const service = servicesData.find(s => s.slug === baseSlug);
+            if (!service) return null;
+
+            const displayTitle = city ? `${service.title} in ${capitalize(city)}` : service.title;
+            const displayDesc = city ? `${service.desc} Lokaal beschikbaar voor bedrijven in regio ${capitalize(city)}.` : service.desc;
+
+            const schema = [
               {
                 "@context": "https://schema.org",
-                "@type": "BlogPosting",
-                "headline": post.title,
-                "description": post.description,
-                "datePublished": post.date,
-                "author": {
-                  "@type": "Organization",
-                  "name": "DZY Digital",
-                  "url": siteUrl
-                },
-                "publisher": {
-                  "@type": "Organization",
-                  "name": "DZY Digital",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": siteUrl + '/og-image.png'
-                  }
-                },
-                "mainEntityOfPage": {
-                  "@type": "WebPage",
-                  "@id": siteUrl + '/blog/' + post.slug
-                },
-                "image": siteUrl + '/og-image.png'
+                "@type": "Service",
+                "name": displayTitle,
+                "description": displayDesc,
+                "provider": { "@type": "Organization", "name": "DZY Digital" },
+                "serviceType": "Softwareontwikkeling"
               },
               {
                 "@context": "https://schema.org",
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl + "/" },
-                  { "@type": "ListItem", "position": 2, "name": "Blog", "item": siteUrl + "/blog" },
-                  { "@type": "ListItem", "position": 3, "name": post.title, "item": siteUrl + "/blog/" + post.slug }
+                  { "@type": "ListItem", "position": 2, "name": "Onze Diensten", "item": siteUrl + "/diensten" },
+                  { "@type": "ListItem", "position": 3, "name": displayTitle, "item": siteUrl + "/diensten/" + currentSlug }
                 ]
               }
-            ]
-          };
+            ];
+
+            if (city) {
+              schema[0].areaServed = { "@type": "City", "name": capitalize(city) };
+            }
+
+            return {
+              title: displayTitle + ' | DZY Digital',
+              description: displayDesc,
+              keywords: 'software, digitale transformatie, maatwerk software, ' + (city ? city : ''),
+              path: '/diensten/' + currentSlug,
+              schema: schema
+            };
+          }
+          return null;
         })() : null} 
       />
       <motion.header 
@@ -1538,6 +1614,61 @@ const fadeUpVariant = {
   hidden: { opacity: 0, y: 30 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
 };
+
+
+function ServiceDetailView({ slug, nav }) {
+  const CITIES = ['antwerpen', 'brussel', 'gent', 'brugge', 'leuven', 'mechelen'];
+  const capitalize = (s) => s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+  
+  let baseSlug = slug;
+  let city = null;
+  
+  for (const c of CITIES) {
+    if (slug.endsWith('-' + c)) {
+      baseSlug = slug.substring(0, slug.length - c.length - 1);
+      city = c;
+      break;
+    }
+  }
+
+  const service = servicesData.find(s => s.slug === baseSlug);
+  if (!service) return <div className="text-center py-20"><h1 className="text-2xl font-bold">Dienst niet gevonden.</h1><button onClick={() => nav('services')} className="mt-4 text-indigo-600 underline">Terug naar diensten</button></div>;
+
+  const displayTitle = city ? `${service.title} in ${capitalize(city)}` : service.title;
+  const displayDesc = city ? `${service.desc} Lokaal beschikbaar voor bedrijven in regio ${capitalize(city)}.` : service.desc;
+
+  return (
+    <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-4xl mx-auto glass-panel rounded-3xl p-8 md:p-12">
+      <a href="/diensten" onClick={(e) => { e.preventDefault(); nav('services'); }} className="inline-flex items-center text-indigo-600 font-semibold mb-8 hover:text-indigo-800 transition-colors">
+        <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Terug naar Diensten
+      </a>
+      {city && (
+        <div className="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 font-bold rounded-full text-sm mb-6 ml-4">
+          📍 Regio {capitalize(city)}
+        </div>
+      )}
+      <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-2xl ${service.bg}`}>
+        {service.icon}
+      </div>
+      <h1 className="text-4xl font-extrabold text-slate-900 mb-6">{displayTitle}</h1>
+      <p className="text-xl text-slate-600 mb-8">{displayDesc}</p>
+      <div className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-indigo-600">
+        <p>{service.fullDesc}</p>
+        {city && (
+          <p className="font-semibold mt-4">
+            Bent u op zoek naar een betrouwbare technologiepartner in {capitalize(city)}? DZY Digital helpt lokale ondernemingen met digitale transformatie en maatwerk software.
+          </p>
+        )}
+      </div>
+      <div className="mt-12 pt-8 border-t border-slate-200">
+        <button onClick={() => nav('contact')} className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition-colors inline-flex items-center">
+          Vraag een offerte aan voor {city ? `uw project in ${capitalize(city)}` : 'deze dienst'}
+          <ArrowRight className="w-5 h-5 ml-2" />
+        </button>
+      </div>
+    </motion.div>
+  );
+}
 
 function HomeView({ nav }) {
   const [expandedBox, setExpandedBox] = useState(null);
@@ -2370,6 +2501,23 @@ function BlogPostView({ slug, nav }) {
       </div>
       <div className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-indigo-600" dangerouslySetInnerHTML={{ __html: post.content }} />
       
+      {/* Author Profile */}
+      <div className="mt-16 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center md:items-start gap-6 bg-slate-50 p-6 rounded-2xl">
+        <div className="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-700 text-2xl font-bold flex-shrink-0">
+          MY
+        </div>
+        <div>
+          <h3 className="text-xl font-bold text-slate-900 mb-1">Muhammet Yakac</h3>
+          <p className="text-sm font-semibold text-indigo-600 mb-3">Oprichter & Software Engineer bij DZY Digital</p>
+          <p className="text-slate-600 mb-4">
+            Specialist in digitale transformatie, cloud architectuur en het bouwen van schaalbare, veilige SaaS en webapplicaties voor bedrijven.
+          </p>
+          <a href="https://www.linkedin.com/in/muhammetyakac/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-bold text-slate-700 hover:text-indigo-600 transition-colors">
+            Bekijk LinkedIn Profiel
+          </a>
+        </div>
+      </div>
+
       {/* Related Articles */}
       {(() => {
         const related = blogPosts.filter(p => p.category === post.category && p.slug !== post.slug).slice(0, 3);
