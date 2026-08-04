@@ -350,7 +350,7 @@ const seoData = {
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Sectoroplossingen", "item": "https://www.dzydigital.com/expertises" },
-          { "@type": "ListItem", "position": 3, "name": "Logistiek", "item": "https://www.dzydigital.com/sektor/lojistik" }
+          { "@type": "ListItem", "position": 3, "name": "Logistiek", "item": "https://www.dzydigital.com/sector/logistiek" }
         ]
       }
     ]
@@ -376,7 +376,7 @@ const seoData = {
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Sectoroplossingen", "item": "https://www.dzydigital.com/expertises" },
-          { "@type": "ListItem", "position": 3, "name": "SaaS", "item": "https://www.dzydigital.com/sektor/saas" }
+          { "@type": "ListItem", "position": 3, "name": "SaaS", "item": "https://www.dzydigital.com/sector/saas" }
         ]
       }
     ]
@@ -402,7 +402,7 @@ const seoData = {
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dzydigital.com/" },
           { "@type": "ListItem", "position": 2, "name": "Sectoroplossingen", "item": "https://www.dzydigital.com/expertises" },
-          { "@type": "ListItem", "position": 3, "name": "Academisch", "item": "https://www.dzydigital.com/sektor/akademik" }
+          { "@type": "ListItem", "position": 3, "name": "Academisch", "item": "https://www.dzydigital.com/sector/academisch" }
         ]
       }
     ]
@@ -1627,7 +1627,7 @@ function ContactView() {
         if (!response.ok) {
           throw new Error('Lead submission failed');
         }
-        console.log("Form submitted successfully, triggering tag...");
+        // console.log("Form submitted successfully, triggering tag...");
         setFormStatus('success');
 
         // --- GOOGLE ADS CONVERSION TAG ---
@@ -1635,9 +1635,9 @@ function ContactView() {
           window.gtag('event', 'conversion', {
             'send_to': 'AW-18130314578/0icoCPCp3aUcENLKmsVD'
           });
-          console.log("Google Ads Tag Sent Successfully!");
+          // console.log("Google Ads Tag Sent Successfully!");
         } else {
-          console.error("ERROR: window.gtag is not defined! Check index.html.");
+          // console.error("ERROR: window.gtag is not defined! Check index.html.");
         }
         // ------------------------------------------
       })
@@ -1910,7 +1910,7 @@ function BlogView({ nav }) {
 
 function BlogPostView({ slug, nav }) {
   const post = blogPosts.find(p => p.slug === slug);
-  if (!post) return <div className="text-center py-20"><h1 className="text-2xl font-bold">Artikel niet gevonden.</h1><button onClick={() => nav('blog')} className="mt-4 text-indigo-600 underline">Terug Dön</button></div>;
+  if (!post) return <div className="text-center py-20"><h1 className="text-2xl font-bold">Artikel niet gevonden.</h1><button onClick={() => nav('blog')} className="mt-4 text-indigo-600 underline">Terug naar blog</button></div>;
 
   return (
     <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-4xl mx-auto glass-panel rounded-3xl p-8 md:p-12">
