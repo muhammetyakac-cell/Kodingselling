@@ -2,17 +2,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://www.dzydigital.com/sitemap-pages.xml</loc>
-  </sitemap>
+    <lastmod>2026-08-05</lastmod>
+</sitemap>
   <sitemap>
     <loc>https://www.dzydigital.com/sitemap-blog.xml</loc>
-  </sitemap>
+    <lastmod>2026-08-05</lastmod>
+</sitemap>
   <sitemap>
     <loc>https://www.dzydigital.com/sitemap-services.xml</loc>
-  </sitemap>
+    <lastmod>2026-08-05</lastmod>
+</sitemap>
   <sitemap>
     <loc>https://www.dzydigital.com/sitemap-categories.xml</loc>
-  </sitemap>
+    <lastmod>2026-08-05</lastmod>
+</sitemap>
   <sitemap>
     <loc>https://www.dzydigital.com/sitemap-local.xml</loc>
-  </sitemap>
+    <lastmod>2026-08-05</lastmod>
+</sitemap>
 </sitemapindex>

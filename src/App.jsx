@@ -1174,7 +1174,9 @@ export default function App() {
     const onPopState = () => {
       const path = window.location.pathname;
       setActiveTab(getTabFromPath(path));
-      if (path.startsWith('/blog/')) {
+      if (path.startsWith('/blog/categorie/')) {
+        setCurrentSlug(decodeURIComponent(path.split('/blog/categorie/')[1]));
+      } else if (path.startsWith('/blog/')) {
         setCurrentSlug(path.split('/blog/')[1]);
       }
       if (path.startsWith('/diensten/')) {
@@ -1371,7 +1373,7 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <a href="/" onClick={(e) => { e.preventDefault(); nav('home'); }} className="flex items-center group" aria-label="DZY Anasayfa">
+            <a href="/" onClick={(e) => { e.preventDefault(); nav('home'); }} className="flex items-center group" aria-label="DZY Startpagina">
               <motion.span 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

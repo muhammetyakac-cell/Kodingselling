@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "node prerender.js"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
@@ -22,7 +23,10 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
     "autoprefixer": "^10.4.21",
+    "express": "^5.2.1",
     "postcss": "^8.5.6",
+    "puppeteer": "^25.5.0",
+    "react-snap": "^1.23.0",
     "tailwindcss": "^3.4.17",
     "vite": "^5.4.19"
   }
